@@ -566,7 +566,7 @@ summary::-webkit-details-marker { display: none; }
   }
 }
 
-.theme-toggle { min-height: 2.375rem; flex: none; }
+.theme-toggle { min-height: 2.375rem; }
 .theme-toggle[aria-pressed="true"] [data-icon="moon"],
 .theme-toggle[aria-pressed="false"] [data-icon="sun"] { display: none; }
 

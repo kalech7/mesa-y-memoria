@@ -121,10 +121,14 @@ def test_profiles_restore_private_chat_and_show_expired_session(profiles_browser
     page.get_by_role("button", name="Saltar a la siguiente visita", exact=True).click()
     playwright.expect(page.locator(".profiles-visit")).to_contain_text("Visita 2")
     playwright.expect(page.locator(".profiles-record")).to_contain_text("Vencido")
-    assert page.evaluate("document.documentElement.scrollWidth <= window.innerWidth")
-    for width in (768, 1024, 1440):
+    for width in (320, 360, 768, 1024, 1440):
         page.set_viewport_size({"width": width, "height": 900})
-        assert page.evaluate("document.documentElement.scrollWidth <= window.innerWidth")
+        assert page.evaluate("document.documentElement.scrollWidth <= window.innerWidth"), page.evaluate("""() => ({
+          viewport: innerWidth, content: document.documentElement.scrollWidth,
+          overflowing: [...document.querySelectorAll('body *')].filter(el =>
+            el.getBoundingClientRect().right + scrollX > innerWidth + 0.5
+          ).map(el => [el.tagName, el.id, el.getAttribute('class'), el.getBoundingClientRect().width])
+        })""")
     assert not errors
     assert [call["action"] for call in calls].count("start") == 1
     page.close()

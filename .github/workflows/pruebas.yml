@@ -14,7 +14,7 @@ jobs:
       MKL_NUM_THREADS: "2"
       OMP_NUM_THREADS: "2"
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
       - name: Preparar Python y las dependencias bloqueadas
         run: |
           python3 -m venv "$RUNNER_TEMP/bootstrap"
