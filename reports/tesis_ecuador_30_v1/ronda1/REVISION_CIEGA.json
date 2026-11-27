@@ -1,0 +1,212 @@
+[
+  {
+    "caso": "P01",
+    "pedido_primera_visita": "Hoy quiero tallarines con verduras para la cena.",
+    "pedido_segunda_visita": "Por esta vez me gustaría jugo de tomate de árbol para beber.",
+    "X": "Estoy revisando las fechas en que me llega el mensaje para elegir. Me aparece «bebida» lunes, martes, miércoles, jueves y viernes. «Cena» aparece solo el viernes.",
+    "Y": "Estoy revisando las fechas en que me llega el mensaje para elegir. Me aparece «cena» lunes, martes, miércoles, jueves y viernes. «Bebida» aparece solo el viernes."
+  },
+  {
+    "caso": "P02",
+    "pedido_primera_visita": "Hoy quisiera un estofado de garbanzos para la cena.",
+    "pedido_segunda_visita": "Por esta vez voy a pedir una limonada para tomar.",
+    "X": "En estos cinco días voy a llevar la cuenta de lo que pido. Para la cena voy a volver a elegir en cada fecha. La bebida la elijo una sola vez, en la última fecha.",
+    "Y": "En estos cinco días voy a llevar la cuenta de lo que pido. Para la bebida voy a volver a elegir en cada fecha. La cena la elijo una sola vez, en la última fecha."
+  },
+  {
+    "caso": "P03",
+    "pedido_primera_visita": "Hoy me apetece una sopa de habas para cenar.",
+    "pedido_segunda_visita": "Ahora, para mi bebida de esta visita, prefiero jugo de naranjilla.",
+    "X": "Tengo que mandar al grupo del paseo las opciones que voy eligiendo. De cena esperan un mensaje mío cada uno de los cinco días. De bebida esperan uno en todo el paseo.",
+    "Y": "Tengo que mandar al grupo del paseo las opciones que voy eligiendo. De bebida esperan un mensaje mío cada uno de los cinco días. De cena esperan uno en todo el paseo."
+  },
+  {
+    "caso": "P04",
+    "pedido_primera_visita": "Hoy quisiera cenar guatita.",
+    "pedido_segunda_visita": "Para el desayuno de hoy me apetece muchín de yuca.",
+    "X": "Hice cuentas para la compra. Esta semana debo cubrir cinco desayunos y una cena.",
+    "Y": "Hice cuentas para la compra. Esta semana debo cubrir cinco cenas y un desayuno."
+  },
+  {
+    "caso": "P05",
+    "pedido_primera_visita": "Para la cena de esta noche quiero un plato de tapao de pescado.",
+    "pedido_segunda_visita": "Hoy quisiera una taza de chocolate caliente para beber.",
+    "X": "Cuento los días que me toca pedir cada cosa. Para la bebida marqué cinco y para la cena marqué uno.",
+    "Y": "Cuento los días que me toca pedir cada cosa. Para la cena marqué cinco y para la bebida marqué uno."
+  },
+  {
+    "caso": "P06",
+    "pedido_primera_visita": "Me provoca una crema de choclo para la cena de hoy.",
+    "pedido_segunda_visita": "Para tomar en esta visita quiero naranjada.",
+    "X": "En el calendario de la oficina puse cinco bebidas que todavía me falta escoger. Para cena marqué una sola fecha, cuando vaya el viernes.",
+    "Y": "En el calendario de la oficina puse cinco cenas que todavía me falta escoger. Para bebida marqué una sola fecha, cuando vaya el viernes."
+  },
+  {
+    "caso": "P07",
+    "pedido_primera_visita": "Para la cena de hoy prefiero llapingachos con huevo.",
+    "pedido_segunda_visita": "Esta vez me gustaría desayunar una humita de choclo.",
+    "X": "Estoy organizando los cinco días que voy a estar fuera. La cena la decido día por día durante el viaje. El único desayuno que me corresponde elegir es el de la salida.",
+    "Y": "Estoy organizando los cinco días que voy a estar fuera. El desayuno lo decido día por día durante el viaje. La única cena que me corresponde elegir es la de la salida."
+  },
+  {
+    "caso": "P08",
+    "pedido_primera_visita": "¿Me pones un plato de repe lojano para esta noche?",
+    "pedido_segunda_visita": "Para el desayuno de hoy quisiera un quimbolito.",
+    "X": "Con la cena termino en un día. Con los desayunos tengo para casi toda la semana.",
+    "Y": "Con el desayuno termino en un día. Con las cenas tengo para casi toda la semana."
+  },
+  {
+    "caso": "P09",
+    "pedido_primera_visita": "Para cenar hoy quiero maduro con queso.",
+    "pedido_segunda_visita": "Para el desayuno de esta visita quiero avena con manzana.",
+    "X": "Estoy pasando a limpio lo que me toca escoger. Después del lunes quedan cuatro cenas más en mi lista, una por día. El desayuno del lunes es el único que figura.",
+    "Y": "Estoy pasando a limpio lo que me toca escoger. Después del lunes quedan cuatro desayunos más en mi lista, uno por día. La cena del lunes es la única que figura."
+  },
+  {
+    "caso": "P10",
+    "pedido_primera_visita": "Hoy quiero menestra de lenteja para cenar.",
+    "pedido_segunda_visita": "Para desayunar en esta visita, prefiero yogur con granola.",
+    "X": "Me encargo del menú del curso los próximos cinco días. Todos esos días tengo que contestar qué cena se va a pedir; qué desayuno se pide me lo consultan solo al cierre.",
+    "Y": "Me encargo del menú del curso los próximos cinco días. Todos esos días tengo que contestar qué desayuno se va a pedir; qué cena se pide me lo consultan solo al cierre."
+  },
+  {
+    "caso": "P11",
+    "pedido_primera_visita": "Para la cena de hoy se me antoja arroz con menestra.",
+    "pedido_segunda_visita": "Esta vez quiero jugo de babaco para tomar.",
+    "X": "Estoy llenando los encargos del comedor. El lunes tengo que indicar cena y bebida. Los otros cuatro días que voy, me van a consultar únicamente por la bebida.",
+    "Y": "Estoy llenando los encargos del comedor. El lunes tengo que indicar cena y bebida. Los otros cuatro días que voy, me van a consultar únicamente por la cena."
+  },
+  {
+    "caso": "P12",
+    "pedido_primera_visita": "Para la cena de hoy me decidí por una cazuela de verde.",
+    "pedido_segunda_visita": "Hoy quiero jugo de babaco para tomar.",
+    "X": "Estoy viendo los pedidos que vienen. De cena por ahora tengo uno solo. Los pedidos de bebida se reparten entre varios días.",
+    "Y": "Estoy viendo los pedidos que vienen. De bebida por ahora tengo uno solo. Los pedidos de cena se reparten entre varios días."
+  },
+  {
+    "caso": "P13",
+    "pedido_primera_visita": "Para la cena de esta noche se me antoja camarón apanado.",
+    "pedido_segunda_visita": "Hoy me gustaría pedir colada de avena de bebida.",
+    "X": "Solo un día de estos me encargo de la bebida. La cena sí me toca en varias fechas.",
+    "Y": "Solo un día de estos me encargo de la cena. La bebida sí me toca en varias fechas."
+  },
+  {
+    "caso": "P14",
+    "pedido_primera_visita": "Hoy quiero un locro de zapallo para cenar.",
+    "pedido_segunda_visita": "Para el desayuno de esta visita, quisiera pan de yuca.",
+    "X": "Me dejaron el cuaderno de la casa. De lunes a viernes me toca apuntar el desayuno; para la cena solo me dejaron el espacio del jueves.",
+    "Y": "Me dejaron el cuaderno de la casa. De lunes a viernes me toca apuntar la cena; para el desayuno solo me dejaron el espacio del jueves."
+  },
+  {
+    "caso": "P15",
+    "pedido_primera_visita": "Para la cena de hoy, ponme yahuarlocro.",
+    "pedido_segunda_visita": "Esta mañana voy a desayunar tigrillo.",
+    "X": "Revisé los turnos que me tocaron. Tengo varios desayunos por organizar y apenas una cena.",
+    "Y": "Revisé los turnos que me tocaron. Tengo varias cenas por organizar y apenas un desayuno."
+  },
+  {
+    "caso": "P16",
+    "pedido_primera_visita": "Hoy quisiera arroz con choclo para la cena.",
+    "pedido_segunda_visita": "Para este desayuno me gustaría un tigrillo de verde.",
+    "X": "Estoy repasando mi turno en el comedor. El martes tengo que coordinar desayuno y cena. Los otros cuatro días paso solamente a coordinar la cena.",
+    "Y": "Estoy repasando mi turno en el comedor. El martes tengo que coordinar desayuno y cena. Los otros cuatro días paso solamente a coordinar el desayuno."
+  },
+  {
+    "caso": "P17",
+    "pedido_primera_visita": "¿Qué tal un viche de pescado para mi cena de hoy? Eso quiero.",
+    "pedido_segunda_visita": "Esta vez quiero empezar el día con pan de almidón para el desayuno.",
+    "X": "Dejé marcado en el calendario cuándo me toca pensar el menú. Hay desayunos en varias fechas y cena en una sola.",
+    "Y": "Dejé marcado en el calendario cuándo me toca pensar el menú. Hay cenas en varias fechas y desayuno en una sola."
+  },
+  {
+    "caso": "P18",
+    "pedido_primera_visita": "Hoy me gustaría un seco de pollo para cenar.",
+    "pedido_segunda_visita": "Para el desayuno de esta vez prefiero tortilla de maíz.",
+    "X": "Ya cuadré con mi hermana quién se encarga del menú. A mí me quedan los desayunos de toda la semana de clases. De las cenas me toca una, la del miércoles.",
+    "Y": "Ya cuadré con mi hermana quién se encarga del menú. A mí me quedan las cenas de toda la semana de clases. De los desayunos me toca uno, el del miércoles."
+  },
+  {
+    "caso": "P19",
+    "pedido_primera_visita": "Para cenar hoy me apetece encocado de pescado.",
+    "pedido_segunda_visita": "Esta vez me provoca un jugo de taxo para tomar.",
+    "X": "Ya vi la lista de encargos. La cena figura en cinco fechas distintas. La bebida figura en una.",
+    "Y": "Ya vi la lista de encargos. La bebida figura en cinco fechas distintas. La cena figura en una."
+  },
+  {
+    "caso": "P20",
+    "pedido_primera_visita": "Esta noche me gustaría cenar llapingachos.",
+    "pedido_segunda_visita": "Esta vez, para el desayuno, me provoca una humita de sal.",
+    "X": "En el chat de la familia ya repartimos los días. Yo veo qué habrá de desayuno varias veces esta semana y qué habrá de cena una vez.",
+    "Y": "En el chat de la familia ya repartimos los días. Yo veo qué habrá de cena varias veces esta semana y qué habrá de desayuno una vez."
+  },
+  {
+    "caso": "P21",
+    "pedido_primera_visita": "Hoy voy a cenar arroz marinero.",
+    "pedido_segunda_visita": "Para beber hoy quisiera café con leche.",
+    "X": "Casi todos los días de esta semana me toca decidir qué servir de bebida. La cena quedó a mi cargo una sola vez.",
+    "Y": "Casi todos los días de esta semana me toca decidir qué servir de cena. La bebida quedó a mi cargo una sola vez."
+  },
+  {
+    "caso": "P22",
+    "pedido_primera_visita": "Hoy me apetece un corviche para la cena.",
+    "pedido_segunda_visita": "De bebida para hoy quiero agua de hierbaluisa.",
+    "X": "En mi cuaderno puse una sola fecha para la bebida. La cena la tengo anotada de lunes a viernes.",
+    "Y": "En mi cuaderno puse una sola fecha para la cena. La bebida la tengo anotada de lunes a viernes."
+  },
+  {
+    "caso": "P23",
+    "pedido_primera_visita": "Para cenar hoy, quiero pescado con patacones.",
+    "pedido_segunda_visita": "En esta visita prefiero agua de hierbaluisa como bebida.",
+    "X": "Voy a ayudar cinco días en una feria. Cada día paso por la mesa a escoger cena; bebida solo me piden escoger el día que se inaugura.",
+    "Y": "Voy a ayudar cinco días en una feria. Cada día paso por la mesa a escoger bebida; cena solo me piden escoger el día que se inaugura."
+  },
+  {
+    "caso": "P24",
+    "pedido_primera_visita": "Para la cena de hoy quiero una tortilla de papa.",
+    "pedido_segunda_visita": "De bebida, para esta vez quiero té de cedrón.",
+    "X": "Acabo de ordenar los papeles para hacer los pedidos. Dejé una ficha de cena para cada uno de los cinco días; de bebida me quedó una única ficha para el jueves.",
+    "Y": "Acabo de ordenar los papeles para hacer los pedidos. Dejé una ficha de bebida para cada uno de los cinco días; de cena me quedó una única ficha para el jueves."
+  },
+  {
+    "caso": "P25",
+    "pedido_primera_visita": "Para la cena de hoy prefiero pescado en salsa de coco.",
+    "pedido_segunda_visita": "Esta vez quiero desayunar un tamal de maíz.",
+    "X": "Ya vi el orden de las próximas reuniones. Para cada una de las cinco tengo que proponer un desayuno. De cenas solo voy a proponer la de la primera reunión.",
+    "Y": "Ya vi el orden de las próximas reuniones. Para cada una de las cinco tengo que proponer una cena. De desayunos solo voy a proponer el de la primera reunión."
+  },
+  {
+    "caso": "P26",
+    "pedido_primera_visita": "Hoy se me antoja un plato de mote pata para la cena.",
+    "pedido_segunda_visita": "Para desayunar hoy elijo una empanada de viento.",
+    "X": "Para el desayuno solo tengo que ocuparme de este turno. Para la cena ya tengo varios turnos en el calendario.",
+    "Y": "Para la cena solo tengo que ocuparme de este turno. Para el desayuno ya tengo varios turnos en el calendario."
+  },
+  {
+    "caso": "P27",
+    "pedido_primera_visita": "Esta noche quiero seco de chivo para la cena.",
+    "pedido_segunda_visita": "Hoy prefiero tortilla de tiesto para el desayuno.",
+    "X": "Estoy cuadrando las comidas de la semana. Me toca resolver el desayuno varios días y la cena una sola vez.",
+    "Y": "Estoy cuadrando las comidas de la semana. Me toca resolver la cena varios días y el desayuno una sola vez."
+  },
+  {
+    "caso": "P28",
+    "pedido_primera_visita": "Me gustaría una porción de pastel de papa para cenar esta noche.",
+    "pedido_segunda_visita": "Esta mañana quisiera desayunar bolón de queso.",
+    "X": "Estuve viendo cómo nos repartimos las comidas. Me quedé con la cena de varios días. Para el desayuno solo me apunté una vez.",
+    "Y": "Estuve viendo cómo nos repartimos las comidas. Me quedé con el desayuno de varios días. Para la cena solo me apunté una vez."
+  },
+  {
+    "caso": "P29",
+    "pedido_primera_visita": "Esta noche quiero una sopa de quinua para la cena.",
+    "pedido_segunda_visita": "Para este desayuno quiero bolón de verde.",
+    "X": "Estoy poniendo recordatorios en el teléfono. El de la cena lo dejé de lunes a viernes y el del desayuno quedó solo para el martes.",
+    "Y": "Estoy poniendo recordatorios en el teléfono. El del desayuno lo dejé de lunes a viernes y el de la cena quedó solo para el martes."
+  },
+  {
+    "caso": "P30",
+    "pedido_primera_visita": "Mi pedido para la cena de hoy es caldo de gallina.",
+    "pedido_segunda_visita": "Para tomar en esta ocasión, deme jugo de mora.",
+    "X": "Tengo una hoja para cada fecha. En la parte de la cena hay que llenar varias hojas. En la de la bebida basta una.",
+    "Y": "Tengo una hoja para cada fecha. En la parte de la bebida hay que llenar varias hojas. En la de la cena basta una."
+  }
+]

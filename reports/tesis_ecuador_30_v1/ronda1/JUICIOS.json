@@ -1,0 +1,302 @@
+[
+  {
+    "caso": "P01",
+    "X": 2,
+    "Y": 1,
+    "evidencia_X": "«bebida» lunes, martes, miércoles, jueves y viernes",
+    "evidencia_Y": "«cena» lunes, martes, miércoles, jueves y viernes",
+    "pedidos_equivalentes": true,
+    "alcance_abierto": true,
+    "observacion": "Cuenta clara de consultas. Enumerar los cinco días y repetir las etiquetas entre comillas suena a leer una pantalla. «Por esta vez» en el pedido orienta a una elección puntual, sin descartar explícitamente que sea la habitual."
+  },
+  {
+    "caso": "P02",
+    "X": 1,
+    "Y": 2,
+    "evidencia_X": "Para la cena voy a volver a elegir en cada fecha.",
+    "evidencia_Y": "Para la bebida voy a volver a elegir en cada fecha.",
+    "pedidos_equivalentes": true,
+    "alcance_abierto": true,
+    "observacion": "Se distingue volver a elegir de elegir lo mismo. «En cada fecha» y «en la última fecha» son algo formularios para una charla. La segunda petición marca esta ocasión."
+  },
+  {
+    "caso": "P03",
+    "X": 1,
+    "Y": 2,
+    "evidencia_X": "De cena esperan un mensaje mío cada uno de los cinco días.",
+    "evidencia_Y": "De bebida esperan un mensaje mío cada uno de los cinco días.",
+    "pedidos_equivalentes": true,
+    "alcance_abierto": true,
+    "observacion": "El contexto del paseo hace verosímil mandar opciones al grupo. El mensaje se refiere a «las opciones que voy eligiendo», aunque podría representar la decisión del grupo."
+  },
+  {
+    "caso": "P04",
+    "X": 2,
+    "Y": 1,
+    "evidencia_X": "debo cubrir cinco desayunos y una cena",
+    "evidencia_Y": "debo cubrir cinco cenas y un desayuno",
+    "pedidos_equivalentes": true,
+    "alcance_abierto": true,
+    "observacion": "Inversión transparente y concisa. Hacer cuentas para la compra expresa cuántas comidas cubrirá la persona, pero deja implícito para quién compra y quién elegirá los platos."
+  },
+  {
+    "caso": "P05",
+    "X": 2,
+    "Y": 1,
+    "evidencia_X": "Para la bebida marqué cinco y para la cena marqué uno.",
+    "evidencia_Y": "Para la cena marqué cinco y para la bebida marqué uno.",
+    "pedidos_equivalentes": true,
+    "alcance_abierto": true,
+    "observacion": "La primera frase identifica explícitamente lo contado como días para hacer pedidos. El intercambio conserva ese sentido en ambas versiones."
+  },
+  {
+    "caso": "P06",
+    "X": 2,
+    "Y": 1,
+    "evidencia_X": "cinco bebidas que todavía me falta escoger",
+    "evidencia_Y": "cinco cenas que todavía me falta escoger",
+    "pedidos_equivalentes": true,
+    "alcance_abierto": true,
+    "observacion": "Contraste legible, aunque cinco opciones pendientes podrían escogerse todas a la vez. La referencia al calendario ayuda. «Para cena» y «para bebida» suenan a rótulos."
+  },
+  {
+    "caso": "P07",
+    "X": 1,
+    "Y": 2,
+    "evidencia_X": "La cena la decido día por día durante el viaje.",
+    "evidencia_Y": "El desayuno lo decido día por día durante el viaje.",
+    "pedidos_equivalentes": true,
+    "alcance_abierto": true,
+    "observacion": "Situación creíble y simétrica. Decidir día por día mantiene abierto tanto repetir el pedido como cambiarlo."
+  },
+  {
+    "caso": "P08",
+    "X": null,
+    "Y": null,
+    "evidencia_X": "Con la cena termino en un día. Con los desayunos tengo para casi toda la semana.",
+    "evidencia_Y": "Con el desayuno termino en un día. Con las cenas tengo para casi toda la semana.",
+    "pedidos_equivalentes": true,
+    "alcance_abierto": true,
+    "observacion": "Ambigua en ambos sentidos. «Termino en un día» puede describir el tiempo para organizar el menú y «tengo para casi toda la semana» las provisiones disponibles. La lectura de varias elecciones favorecería V2 en X y V1 en Y, pero también es plausible que la comida de varios días ya esté resuelta. El pedido por sí mismo es claro."
+  },
+  {
+    "caso": "P09",
+    "X": 1,
+    "Y": 2,
+    "evidencia_X": "Después del lunes quedan cuatro cenas más en mi lista, una por día.",
+    "evidencia_Y": "Después del lunes quedan cuatro desayunos más en mi lista, uno por día.",
+    "pedidos_equivalentes": true,
+    "alcance_abierto": true,
+    "observacion": "La historia indica que la lista es de cosas que debe escoger. Deducir una primera fecha más otras cuatro no exige suponer una costumbre alimentaria."
+  },
+  {
+    "caso": "P10",
+    "X": 1,
+    "Y": 2,
+    "evidencia_X": "Todos esos días tengo que contestar qué cena se va a pedir",
+    "evidencia_Y": "Todos esos días tengo que contestar qué desayuno se va a pedir",
+    "pedidos_equivalentes": true,
+    "alcance_abierto": true,
+    "observacion": "La frecuencia de consultas es explícita. Hay riesgo de atribución de titular: al encargarse del menú del curso podría decidir para el grupo, de modo que su plato personal podría ser irrelevante. Redacción escrita y simétrica."
+  },
+  {
+    "caso": "P11",
+    "X": 2,
+    "Y": 1,
+    "evidencia_X": "Los otros cuatro días que voy, me van a consultar únicamente por la bebida.",
+    "evidencia_Y": "Los otros cuatro días que voy, me van a consultar únicamente por la cena.",
+    "pedidos_equivalentes": true,
+    "alcance_abierto": true,
+    "observacion": "El lunes se preguntan ambas cosas. Las otras cuatro consultas deshacen el empate. El comedor es un contexto plausible, aunque «llenando los encargos» suena menos espontáneo."
+  },
+  {
+    "caso": "P12",
+    "X": 2,
+    "Y": 1,
+    "evidencia_X": "Los pedidos de bebida se reparten entre varios días.",
+    "evidencia_Y": "Los pedidos de cena se reparten entre varios días.",
+    "pedidos_equivalentes": true,
+    "alcance_abierto": true,
+    "observacion": "La comparación de un pedido con varios días es suficiente para ordenar oportunidades. «Pedidos que vienen» podría describir encargos de terceros y deja implícita su relación con la preferencia propia."
+  },
+  {
+    "caso": "P13",
+    "X": 1,
+    "Y": 2,
+    "evidencia_X": "La cena sí me toca en varias fechas.",
+    "evidencia_Y": "La bebida sí me toca en varias fechas.",
+    "pedidos_equivalentes": true,
+    "alcance_abierto": true,
+    "observacion": "El contraste enfático con «Solo un día» resulta verosímil al hablar. «Colada de avena de bebida» se entiende, aunque repite la función del pedido."
+  },
+  {
+    "caso": "P14",
+    "X": 2,
+    "Y": 1,
+    "evidencia_X": "De lunes a viernes me toca apuntar el desayuno",
+    "evidencia_Y": "De lunes a viernes me toca apuntar la cena",
+    "pedidos_equivalentes": true,
+    "alcance_abierto": true,
+    "observacion": "El cuaderno y el espacio del jueves sustentan las dos frecuencias. «Apuntar» puede consistir en registrar decisiones ajenas; no garantiza consultas de gustos propios."
+  },
+  {
+    "caso": "P15",
+    "X": 2,
+    "Y": 1,
+    "evidencia_X": "Tengo varios desayunos por organizar y apenas una cena.",
+    "evidencia_Y": "Tengo varias cenas por organizar y apenas un desayuno.",
+    "pedidos_equivalentes": true,
+    "alcance_abierto": true,
+    "observacion": "Breve y clara en las dos versiones. La unidad es el turno que se debe organizar. Los nombres de platos aportan contexto alimentario; su presencia por sí sola no valida la variedad regional del habla."
+  },
+  {
+    "caso": "P16",
+    "X": 1,
+    "Y": 2,
+    "evidencia_X": "Los otros cuatro días paso solamente a coordinar la cena.",
+    "evidencia_Y": "Los otros cuatro días paso solamente a coordinar el desayuno.",
+    "pedidos_equivalentes": true,
+    "alcance_abierto": true,
+    "observacion": "El martes figura para ambos y los otros cuatro días fijan la prioridad. «Coordinar» el comedor indica responsabilidad de servicio, que podría recaer sobre comidas de terceros y no sobre las propias elecciones."
+  },
+  {
+    "caso": "P17",
+    "X": 2,
+    "Y": 1,
+    "evidencia_X": "Hay desayunos en varias fechas y cena en una sola.",
+    "evidencia_Y": "Hay cenas en varias fechas y desayuno en una sola.",
+    "pedidos_equivalentes": true,
+    "alcance_abierto": true,
+    "observacion": "Inversión clara. «¿Qué tal ...? Eso quiero» acaba afirmando el pedido. El segundo pedido repite «empezar el día» y «para el desayuno» y tiene un tono algo construido."
+  },
+  {
+    "caso": "P18",
+    "X": 2,
+    "Y": 1,
+    "evidencia_X": "A mí me quedan los desayunos de toda la semana de clases.",
+    "evidencia_Y": "A mí me quedan las cenas de toda la semana de clases.",
+    "pedidos_equivalentes": true,
+    "alcance_abierto": true,
+    "observacion": "«Ya cuadré con mi hermana» introduce con naturalidad la distribución. Se reparten responsabilidades familiares, así que no se sabe si cada menú tendrá en cuenta la preferencia de quien habla."
+  },
+  {
+    "caso": "P19",
+    "X": 1,
+    "Y": 2,
+    "evidencia_X": "La cena figura en cinco fechas distintas.",
+    "evidencia_Y": "La bebida figura en cinco fechas distintas.",
+    "pedidos_equivalentes": true,
+    "alcance_abierto": true,
+    "observacion": "La lista de encargos da una lectura clara. Las oraciones cortas con «figura» suenan a leer un registro. Un número de encargos distinto sigue sin establecer la vigencia del plato."
+  },
+  {
+    "caso": "P20",
+    "X": 2,
+    "Y": 1,
+    "evidencia_X": "qué habrá de desayuno varias veces esta semana y qué habrá de cena una vez",
+    "evidencia_Y": "qué habrá de cena varias veces esta semana y qué habrá de desayuno una vez",
+    "pedidos_equivalentes": true,
+    "alcance_abierto": true,
+    "observacion": "La frecuencia se entiende en el reparto familiar. «Yo veo qué habrá» puede ser informarse del menú o decidirlo; no deja claro que quien habla sea la persona que va a elegir."
+  },
+  {
+    "caso": "P21",
+    "X": 2,
+    "Y": 1,
+    "evidencia_X": "Casi todos los días de esta semana me toca decidir qué servir de bebida.",
+    "evidencia_Y": "Casi todos los días de esta semana me toca decidir qué servir de cena.",
+    "pedidos_equivalentes": true,
+    "alcance_abierto": true,
+    "observacion": "Inversión clara entre casi toda la semana y una vez. El verbo «servir» puede referirse a otras personas; el calendario no dice que sus preferencias propias gobiernen el menú."
+  },
+  {
+    "caso": "P22",
+    "X": 1,
+    "Y": 2,
+    "evidencia_X": "La cena la tengo anotada de lunes a viernes.",
+    "evidencia_Y": "La bebida la tengo anotada de lunes a viernes.",
+    "pedidos_equivalentes": true,
+    "alcance_abierto": true,
+    "observacion": "Calendario conciso con una sola fecha para la otra categoría. La anotación puede representar un compromiso previamente acordado además de una decisión por tomar."
+  },
+  {
+    "caso": "P23",
+    "X": 1,
+    "Y": 2,
+    "evidencia_X": "Cada día paso por la mesa a escoger cena",
+    "evidencia_Y": "Cada día paso por la mesa a escoger bebida",
+    "pedidos_equivalentes": true,
+    "alcance_abierto": true,
+    "observacion": "La feria, los cinco días y el encargo de la inauguración hacen concretas las dos frecuencias. «Escoger» alinea los pedidos con la decisión futura."
+  },
+  {
+    "caso": "P24",
+    "X": 1,
+    "Y": 2,
+    "evidencia_X": "una ficha de cena para cada uno de los cinco días",
+    "evidencia_Y": "una ficha de bebida para cada uno de los cinco días",
+    "pedidos_equivalentes": true,
+    "alcance_abierto": true,
+    "observacion": "Da una unidad verificable por día y una sola ficha para la otra comida. El escenario de fichas es específico y de registro administrativo; ambos lados conservan el mismo tono."
+  },
+  {
+    "caso": "P25",
+    "X": 2,
+    "Y": 1,
+    "evidencia_X": "Para cada una de las cinco tengo que proponer un desayuno.",
+    "evidencia_Y": "Para cada una de las cinco tengo que proponer una cena.",
+    "pedidos_equivalentes": true,
+    "alcance_abierto": true,
+    "observacion": "La diferencia en el número de propuestas es clara. Proponer un menú en reuniones no implica comer lo que a uno le gusta; posible mezcla de preferencias propias y responsabilidad grupal."
+  },
+  {
+    "caso": "P26",
+    "X": 1,
+    "Y": 2,
+    "evidencia_X": "Para la cena ya tengo varios turnos en el calendario.",
+    "evidencia_Y": "Para el desayuno ya tengo varios turnos en el calendario.",
+    "pedidos_equivalentes": true,
+    "alcance_abierto": true,
+    "observacion": "Inversión reconocible por «este turno» frente a «varios turnos». No explica la actividad que cumple en cada turno y deja implícita la consulta de preferencias."
+  },
+  {
+    "caso": "P27",
+    "X": 2,
+    "Y": 1,
+    "evidencia_X": "Me toca resolver el desayuno varios días y la cena una sola vez.",
+    "evidencia_Y": "Me toca resolver la cena varios días y el desayuno una sola vez.",
+    "pedidos_equivalentes": true,
+    "alcance_abierto": true,
+    "observacion": "La distribución por días es explícita. «Estoy cuadrando las comidas» resulta verosímil al organizar una semana. Nada indica que se repetirá el mismo plato."
+  },
+  {
+    "caso": "P28",
+    "X": 1,
+    "Y": 2,
+    "evidencia_X": "Me quedé con la cena de varios días.",
+    "evidencia_Y": "Me quedé con el desayuno de varios días.",
+    "pedidos_equivalentes": true,
+    "alcance_abierto": true,
+    "observacion": "«Solo me apunté una vez» completa la comparación. El reparto de tareas suena conversacional, pero no identifica si la persona elige o cocina para otras."
+  },
+  {
+    "caso": "P29",
+    "X": 1,
+    "Y": 2,
+    "evidencia_X": "El de la cena lo dejé de lunes a viernes",
+    "evidencia_Y": "El del desayuno lo dejé de lunes a viernes",
+    "pedidos_equivalentes": true,
+    "alcance_abierto": true,
+    "observacion": "La frecuencia de recordatorios es inequívoca. La finalidad de la alarma puede ser comer, cocinar o elegir. Inferir futuras consultas sobre el gusto de la persona añade un supuesto."
+  },
+  {
+    "caso": "P30",
+    "X": 1,
+    "Y": 2,
+    "evidencia_X": "En la parte de la cena hay que llenar varias hojas.",
+    "evidencia_Y": "En la parte de la bebida hay que llenar varias hojas.",
+    "pedidos_equivalentes": true,
+    "alcance_abierto": true,
+    "observacion": "La primera frase fija una hoja por fecha, lo que permite interpretar «varias». «Deme» es un tratamiento formal plausible al pedir. El lenguaje de la agenda suena administrativo y no aclara para quién se llena el pedido."
+  }
+]

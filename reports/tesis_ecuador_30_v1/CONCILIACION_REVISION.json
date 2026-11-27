@@ -1,0 +1,271 @@
+{
+  "estado": "Revisión semántica IA cerrada antes de inferencia",
+  "procedimiento": "Treinta pares de dos autores IA. Una tercera instancia de IA revisó los mismos pares en tres rondas. Se permutaron el orden y los lados entre rondas con identificadores nuevos. La persona gramatical y la frecuencia de futuras elecciones eran los criterios de reparación. Se conservaron todos los pares y todos los juicios, también los ambiguos.",
+  "rondas": [
+    {
+      "ronda": 1,
+      "carpeta": "ronda1",
+      "sha256": {
+        "PARES": "105a0181524650561eec1b64bd81430497e313506c87fa45ed635275f2241bbb",
+        "CLAVE": "692605dcb8965498e49dc0fdb8548be56c619a76a0d9422275285ba40c96eb6c",
+        "REVISION_CIEGA": "b7e94a5381d471e8874f4f1dfcbdd68b76afc0b627754a393b19c06fdcd7bf75",
+        "JUICIOS": "100354c71df096ce54d6d09d21707f00cae50243be603ea11c441efaffb6852b"
+      },
+      "pares": 30,
+      "agendas": 60,
+      "decisiones_coincidentes": 58,
+      "decisiones_ambiguas": [
+        [
+          "P08",
+          "X"
+        ],
+        [
+          "P08",
+          "Y"
+        ]
+      ],
+      "decisiones_discrepantes": [],
+      "pedidos_equivalentes": 30,
+      "alcance_abierto": 30,
+      "titular_propio": null,
+      "titular_dudoso": null,
+      "fragmentos_no_textuales": [],
+      "pares_modificados_desde_ronda_anterior": null
+    },
+    {
+      "ronda": 2,
+      "carpeta": "ronda2",
+      "sha256": {
+        "PARES": "b2212fca99e1ab54504545e5f68878fd46ddafcb1032a7ecd8e6c4621ee39711",
+        "CLAVE": "964625caa1d7fd484991a05747af7a34aadfd53cb5740d0533d96aa569c7fa12",
+        "REVISION_CIEGA": "a7532b24d0a3ca8d8553c3d8a79572c5a863a9085812bca0d9a735ea4cea3153",
+        "JUICIOS": "7aff34e583338be21e2c1c6e72779c904cd4208d5ecccf958bd2763b6b5b5e96"
+      },
+      "pares": 30,
+      "agendas": 60,
+      "decisiones_coincidentes": 60,
+      "decisiones_ambiguas": [],
+      "decisiones_discrepantes": [],
+      "pedidos_equivalentes": 30,
+      "alcance_abierto": 30,
+      "titular_propio": 28,
+      "titular_dudoso": [
+        "H-ADAB",
+        "H-B04B"
+      ],
+      "fragmentos_no_textuales": [],
+      "pares_modificados_desde_ronda_anterior": [
+        {
+          "id": "EC01",
+          "campos": [
+            "agenda_first",
+            "agenda_second"
+          ]
+        },
+        {
+          "id": "EC02",
+          "campos": [
+            "agenda_first",
+            "agenda_second"
+          ]
+        },
+        {
+          "id": "EC03",
+          "campos": [
+            "agenda_first",
+            "agenda_second"
+          ]
+        },
+        {
+          "id": "EC05",
+          "campos": [
+            "agenda_first",
+            "agenda_second"
+          ]
+        },
+        {
+          "id": "EC08",
+          "campos": [
+            "agenda_first",
+            "agenda_second"
+          ]
+        },
+        {
+          "id": "EC09",
+          "campos": [
+            "agenda_first",
+            "agenda_second"
+          ]
+        },
+        {
+          "id": "EC10",
+          "campos": [
+            "agenda_first",
+            "agenda_second"
+          ]
+        },
+        {
+          "id": "EC11",
+          "campos": [
+            "agenda_first",
+            "agenda_second"
+          ]
+        },
+        {
+          "id": "EC12",
+          "campos": [
+            "agenda_first",
+            "agenda_second"
+          ]
+        },
+        {
+          "id": "EC15",
+          "campos": [
+            "agenda_first",
+            "agenda_second"
+          ]
+        },
+        {
+          "id": "EC17",
+          "campos": [
+            "agenda_first",
+            "agenda_second"
+          ]
+        },
+        {
+          "id": "EC18",
+          "campos": [
+            "agenda_first",
+            "agenda_second"
+          ]
+        },
+        {
+          "id": "EC19",
+          "campos": [
+            "agenda_first",
+            "agenda_second"
+          ]
+        },
+        {
+          "id": "EC20",
+          "campos": [
+            "agenda_first",
+            "agenda_second"
+          ]
+        },
+        {
+          "id": "EC21",
+          "campos": [
+            "agenda_first",
+            "agenda_second"
+          ]
+        },
+        {
+          "id": "EC22",
+          "campos": [
+            "agenda_first",
+            "agenda_second"
+          ]
+        },
+        {
+          "id": "EC23",
+          "campos": [
+            "agenda_first",
+            "agenda_second"
+          ]
+        },
+        {
+          "id": "EC24",
+          "campos": [
+            "agenda_first",
+            "agenda_second"
+          ]
+        },
+        {
+          "id": "EC25",
+          "campos": [
+            "agenda_first",
+            "agenda_second"
+          ]
+        },
+        {
+          "id": "EC26",
+          "campos": [
+            "agenda_first",
+            "agenda_second"
+          ]
+        },
+        {
+          "id": "EC27",
+          "campos": [
+            "agenda_first",
+            "agenda_second"
+          ]
+        },
+        {
+          "id": "EC28",
+          "campos": [
+            "agenda_first",
+            "agenda_second"
+          ]
+        },
+        {
+          "id": "EC30",
+          "campos": [
+            "agenda_first",
+            "agenda_second"
+          ]
+        }
+      ]
+    },
+    {
+      "ronda": 3,
+      "carpeta": ".",
+      "sha256": {
+        "PARES": "5ae63d70b7048203e39b17b63d0adbc92bdea209a770c67c988145ed90e7d646",
+        "CLAVE": "b6878b1c4ba485c5322b0979281913efa1e6af22ff870af57c7a55415e2cccc1",
+        "REVISION_CIEGA": "232855dc1e1a290a2be5ce460f55277039267bac802e6ac73b81dbe4730acaed",
+        "JUICIOS": "de7af3ec87ed6a2c0b017de9bfbb37a059835e5dc1fe179fa67f6210069fcd24"
+      },
+      "pares": 30,
+      "agendas": 60,
+      "decisiones_coincidentes": 60,
+      "decisiones_ambiguas": [],
+      "decisiones_discrepantes": [],
+      "pedidos_equivalentes": 30,
+      "alcance_abierto": 30,
+      "titular_propio": 30,
+      "titular_dudoso": [],
+      "fragmentos_no_textuales": [],
+      "pares_modificados_desde_ronda_anterior": [
+        {
+          "id": "EC04",
+          "campos": [
+            "agenda_first",
+            "agenda_second"
+          ]
+        },
+        {
+          "id": "EC06",
+          "campos": [
+            "second"
+          ]
+        },
+        {
+          "id": "EC14",
+          "campos": [
+            "second"
+          ]
+        },
+        {
+          "id": "EC16",
+          "campos": [
+            "agenda_first",
+            "agenda_second"
+          ]
+        }
+      ]
+    }
+  ],
+  "limites": "Las tres rondas corresponden a un mismo revisor IA que ya conocía las redacciones anteriores. Los juicios cubren la interpretación de estos textos. La naturalidad regional, las decisiones de usuarios ecuatorianos y la representatividad de sus variedades lingüísticas requieren observaciones humanas. Cada archivo JUICIOS conserva sus observaciones textuales."
+}

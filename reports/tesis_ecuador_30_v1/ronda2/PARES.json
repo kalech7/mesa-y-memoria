@@ -1,0 +1,302 @@
+[
+  {
+    "id": "EC01",
+    "opening": "Hoy quiero un locro de zapallo para cenar.",
+    "second": "Para el desayuno de esta visita, quisiera pan de yuca.",
+    "first_food": "locro de zapallo",
+    "second_food": "pan de yuca",
+    "second_attribute": "breakfast_preference",
+    "agenda_first": "En el cuaderno de la casa tengo apuntado cuándo me preguntan qué quiero comer. De lunes a viernes elijo mi cena. Para el desayuno solo me preguntan el jueves.",
+    "agenda_second": "En el cuaderno de la casa tengo apuntado cuándo me preguntan qué quiero comer. De lunes a viernes elijo mi desayuno. Para la cena solo me preguntan el jueves."
+  },
+  {
+    "id": "EC02",
+    "opening": "Para la cena de hoy se me antoja arroz con menestra.",
+    "second": "Esta vez quiero jugo de babaco para tomar.",
+    "first_food": "arroz con menestra",
+    "second_food": "jugo de babaco",
+    "second_attribute": "drink_preference",
+    "agenda_first": "En el comedor me van a preguntar el lunes qué quiero cenar y qué quiero tomar. Los otros cuatro días que voy solo me tocará elegir mi cena.",
+    "agenda_second": "En el comedor me van a preguntar el lunes qué quiero cenar y qué quiero tomar. Los otros cuatro días que voy solo me tocará elegir mi bebida."
+  },
+  {
+    "id": "EC03",
+    "opening": "Esta noche quiero una sopa de quinua para la cena.",
+    "second": "Para este desayuno quiero bolón de verde.",
+    "first_food": "sopa de quinua",
+    "second_food": "bolón de verde",
+    "second_attribute": "breakfast_preference",
+    "agenda_first": "Puse alarmas en el teléfono para pedir mi comida a tiempo. De lunes a viernes me avisa cuando toca escoger mi cena. Para escoger mi desayuno sonará solo el martes.",
+    "agenda_second": "Puse alarmas en el teléfono para pedir mi comida a tiempo. De lunes a viernes me avisa cuando toca escoger mi desayuno. Para escoger mi cena sonará solo el martes."
+  },
+  {
+    "id": "EC04",
+    "opening": "Para cenar hoy, quiero pescado con patacones.",
+    "second": "En esta visita prefiero agua de hierbaluisa como bebida.",
+    "first_food": "pescado con patacones",
+    "second_food": "agua de hierbaluisa",
+    "second_attribute": "drink_preference",
+    "agenda_first": "Voy a ayudar cinco días en una feria. Cada día paso por la mesa a escoger cena; bebida solo me piden escoger el día que se inaugura.",
+    "agenda_second": "Voy a ayudar cinco días en una feria. Cada día paso por la mesa a escoger bebida; cena solo me piden escoger el día que se inaugura."
+  },
+  {
+    "id": "EC05",
+    "opening": "Hoy me gustaría un seco de pollo para cenar.",
+    "second": "Para el desayuno de esta vez prefiero tortilla de maíz.",
+    "first_food": "seco de pollo",
+    "second_food": "tortilla de maíz",
+    "second_attribute": "breakfast_preference",
+    "agenda_first": "Le conté a mi hermana cómo voy a comer esta semana de clases. Cada día en el bar me van a preguntar qué quiero cenar. Para el desayuno solo voy a escoger algo el miércoles.",
+    "agenda_second": "Le conté a mi hermana cómo voy a comer esta semana de clases. Cada día en el bar me van a preguntar qué quiero desayunar. Para la cena solo voy a escoger algo el miércoles."
+  },
+  {
+    "id": "EC06",
+    "opening": "Hoy quiero tallarines con verduras para la cena.",
+    "second": "Por esta vez me gustaría jugo de tomate de árbol para beber.",
+    "first_food": "tallarines con verduras",
+    "second_food": "jugo de tomate de árbol",
+    "second_attribute": "drink_preference",
+    "agenda_first": "Estoy revisando las fechas en que me llega el mensaje para elegir. Me aparece «cena» lunes, martes, miércoles, jueves y viernes. «Bebida» aparece solo el viernes.",
+    "agenda_second": "Estoy revisando las fechas en que me llega el mensaje para elegir. Me aparece «bebida» lunes, martes, miércoles, jueves y viernes. «Cena» aparece solo el viernes."
+  },
+  {
+    "id": "EC07",
+    "opening": "Para la cena de hoy prefiero llapingachos con huevo.",
+    "second": "Esta vez me gustaría desayunar una humita de choclo.",
+    "first_food": "llapingachos con huevo",
+    "second_food": "humita de choclo",
+    "second_attribute": "breakfast_preference",
+    "agenda_first": "Estoy organizando los cinco días que voy a estar fuera. La cena la decido día por día durante el viaje. El único desayuno que me corresponde elegir es el de la salida.",
+    "agenda_second": "Estoy organizando los cinco días que voy a estar fuera. El desayuno lo decido día por día durante el viaje. La única cena que me corresponde elegir es la de la salida."
+  },
+  {
+    "id": "EC08",
+    "opening": "Me provoca una crema de choclo para la cena de hoy.",
+    "second": "Para tomar en esta visita quiero naranjada.",
+    "first_food": "crema de choclo",
+    "second_food": "naranjada",
+    "second_attribute": "drink_preference",
+    "agenda_first": "Ya vi cuándo puedo hacer mis pedidos en la oficina. Me preguntan qué quiero cenar cada uno de los cinco días. Qué quiero tomar, solo el viernes.",
+    "agenda_second": "Ya vi cuándo puedo hacer mis pedidos en la oficina. Me preguntan qué quiero tomar cada uno de los cinco días. Qué quiero cenar, solo el viernes."
+  },
+  {
+    "id": "EC09",
+    "opening": "Hoy quiero menestra de lenteja para cenar.",
+    "second": "Para desayunar en esta visita, prefiero yogur con granola.",
+    "first_food": "menestra de lenteja",
+    "second_food": "yogur con granola",
+    "second_attribute": "breakfast_preference",
+    "agenda_first": "El curso dura cinco días y cada quien escoge lo suyo. Cada día me van a preguntar qué quiero cenar. Mi desayuno me lo dan a elegir solo al cierre.",
+    "agenda_second": "El curso dura cinco días y cada quien escoge lo suyo. Cada día me van a preguntar qué quiero desayunar. Mi cena me la dan a elegir solo al cierre."
+  },
+  {
+    "id": "EC10",
+    "opening": "Para la cena de hoy quiero una tortilla de papa.",
+    "second": "De bebida, para esta vez quiero té de cedrón.",
+    "first_food": "tortilla de papa",
+    "second_food": "té de cedrón",
+    "second_attribute": "drink_preference",
+    "agenda_first": "Me dieron unas fichas en blanco para pedir lo mío. Tengo una para elegir qué voy a cenar cada día de los cinco. Para escoger mi bebida tengo una sola ficha, la del jueves.",
+    "agenda_second": "Me dieron unas fichas en blanco para pedir lo mío. Tengo una para elegir qué voy a tomar cada día de los cinco. Para escoger mi cena tengo una sola ficha, la del jueves."
+  },
+  {
+    "id": "EC11",
+    "opening": "Hoy quisiera arroz con choclo para la cena.",
+    "second": "Para este desayuno me gustaría un tigrillo de verde.",
+    "first_food": "arroz con choclo",
+    "second_food": "tigrillo de verde",
+    "second_attribute": "breakfast_preference",
+    "agenda_first": "Ya sé cuándo me toca pasar por el comedor. El martes escojo mi desayuno y mi cena. Los otros cuatro días solo paso a escoger qué voy a cenar.",
+    "agenda_second": "Ya sé cuándo me toca pasar por el comedor. El martes escojo mi desayuno y mi cena. Los otros cuatro días solo paso a escoger qué voy a desayunar."
+  },
+  {
+    "id": "EC12",
+    "opening": "Hoy me apetece una sopa de habas para cenar.",
+    "second": "Ahora, para mi bebida de esta visita, prefiero jugo de naranjilla.",
+    "first_food": "sopa de habas",
+    "second_food": "jugo de naranjilla",
+    "second_attribute": "drink_preference",
+    "agenda_first": "En el paseo cada quien manda su pedido por el chat. Me van a escribir los cinco días para saber qué quiero cenar. Me preguntarán qué quiero tomar una sola vez en todo el paseo.",
+    "agenda_second": "En el paseo cada quien manda su pedido por el chat. Me van a escribir los cinco días para saber qué quiero tomar. Me preguntarán qué quiero cenar una sola vez en todo el paseo."
+  },
+  {
+    "id": "EC13",
+    "opening": "Para cenar hoy quiero maduro con queso.",
+    "second": "Para el desayuno de esta visita quiero avena con manzana.",
+    "first_food": "maduro con queso",
+    "second_food": "avena con manzana",
+    "second_attribute": "breakfast_preference",
+    "agenda_first": "Estoy pasando a limpio lo que me toca escoger. Después del lunes quedan cuatro cenas más en mi lista, una por día. El desayuno del lunes es el único que figura.",
+    "agenda_second": "Estoy pasando a limpio lo que me toca escoger. Después del lunes quedan cuatro desayunos más en mi lista, uno por día. La cena del lunes es la única que figura."
+  },
+  {
+    "id": "EC14",
+    "opening": "Hoy quisiera un estofado de garbanzos para la cena.",
+    "second": "Por esta vez voy a pedir una limonada para tomar.",
+    "first_food": "estofado de garbanzos",
+    "second_food": "limonada",
+    "second_attribute": "drink_preference",
+    "agenda_first": "En estos cinco días voy a llevar la cuenta de lo que pido. Para la cena voy a volver a elegir en cada fecha. La bebida la elijo una sola vez, en la última fecha.",
+    "agenda_second": "En estos cinco días voy a llevar la cuenta de lo que pido. Para la bebida voy a volver a elegir en cada fecha. La cena la elijo una sola vez, en la última fecha."
+  },
+  {
+    "id": "EC15",
+    "opening": "Para la cena de hoy prefiero pescado en salsa de coco.",
+    "second": "Esta vez quiero desayunar un tamal de maíz.",
+    "first_food": "pescado en salsa de coco",
+    "second_food": "tamal de maíz",
+    "second_attribute": "breakfast_preference",
+    "agenda_first": "En las próximas reuniones cada persona pide lo suyo. Yo voy a escoger mi cena en cada una de las cinco reuniones. Solo elegiré mi desayuno en la primera reunión.",
+    "agenda_second": "En las próximas reuniones cada persona pide lo suyo. Yo voy a escoger mi desayuno en cada una de las cinco reuniones. Solo elegiré mi cena en la primera reunión."
+  },
+  {
+    "id": "EC16",
+    "opening": "Esta noche quiero seco de chivo para la cena.",
+    "second": "Hoy prefiero tortilla de tiesto para el desayuno.",
+    "first_food": "seco de chivo",
+    "second_food": "tortilla de tiesto",
+    "second_attribute": "breakfast_preference",
+    "agenda_first": "Estoy cuadrando las comidas de la semana. Me toca resolver la cena varios días y el desayuno una sola vez.",
+    "agenda_second": "Estoy cuadrando las comidas de la semana. Me toca resolver el desayuno varios días y la cena una sola vez."
+  },
+  {
+    "id": "EC17",
+    "opening": "Para cenar hoy me apetece encocado de pescado.",
+    "second": "Esta vez me provoca un jugo de taxo para tomar.",
+    "first_food": "encocado de pescado",
+    "second_food": "jugo de taxo",
+    "second_attribute": "drink_preference",
+    "agenda_first": "Ya me explicaron cómo quedan mis encargos. Voy a hacer un pedido de cena en cinco fechas distintas. Para beber solo voy a escoger algo en una.",
+    "agenda_second": "Ya me explicaron cómo quedan mis encargos. Voy a hacer un pedido de bebida en cinco fechas distintas. Para cenar solo voy a escoger algo en una."
+  },
+  {
+    "id": "EC18",
+    "opening": "¿Me pones un plato de repe lojano para esta noche?",
+    "second": "Para el desayuno de hoy quisiera un quimbolito.",
+    "first_food": "repe lojano",
+    "second_food": "quimbolito",
+    "second_attribute": "breakfast_preference",
+    "agenda_first": "Cuando vaya al comedor, me van a preguntar qué quiero cenar cinco días seguidos. Qué quiero desayunar me lo van a preguntar un solo día.",
+    "agenda_second": "Cuando vaya al comedor, me van a preguntar qué quiero desayunar cinco días seguidos. Qué quiero cenar me lo van a preguntar un solo día."
+  },
+  {
+    "id": "EC19",
+    "opening": "Hoy me apetece un corviche para la cena.",
+    "second": "De bebida para hoy quiero agua de hierbaluisa.",
+    "first_food": "corviche",
+    "second_food": "agua de hierbaluisa",
+    "second_attribute": "drink_preference",
+    "agenda_first": "En mi cuaderno marqué cuándo podré elegir yo. Para la bebida tengo una sola fecha. Para la cena me dejan escoger de lunes a viernes, día por día.",
+    "agenda_second": "En mi cuaderno marqué cuándo podré elegir yo. Para la cena tengo una sola fecha. Para la bebida me dejan escoger de lunes a viernes, día por día."
+  },
+  {
+    "id": "EC20",
+    "opening": "Para la cena de hoy, ponme yahuarlocro.",
+    "second": "Esta mañana voy a desayunar tigrillo.",
+    "first_food": "yahuarlocro",
+    "second_food": "tigrillo",
+    "second_attribute": "breakfast_preference",
+    "agenda_first": "Revisé mis turnos. Cuando salga voy a poder escoger mi cena en varios de ellos. Desayuno para mí solo voy a pedir en uno.",
+    "agenda_second": "Revisé mis turnos. Cuando salga voy a poder escoger mi desayuno en varios de ellos. Cena para mí solo voy a pedir en uno."
+  },
+  {
+    "id": "EC21",
+    "opening": "Para la cena de esta noche se me antoja camarón apanado.",
+    "second": "Hoy me gustaría pedir colada de avena de bebida.",
+    "first_food": "camarón apanado",
+    "second_food": "colada de avena",
+    "second_attribute": "drink_preference",
+    "agenda_first": "Solo un día de estos me van a dar a elegir qué quiero tomar. Para cenar sí podré elegir en varias fechas.",
+    "agenda_second": "Solo un día de estos me van a dar a elegir qué quiero cenar. Para tomar sí podré elegir en varias fechas."
+  },
+  {
+    "id": "EC22",
+    "opening": "Hoy quisiera cenar guatita.",
+    "second": "Para el desayuno de hoy me apetece muchín de yuca.",
+    "first_food": "guatita",
+    "second_food": "muchín de yuca",
+    "second_attribute": "breakfast_preference",
+    "agenda_first": "Hice cuentas para mis compras. Esta semana voy a escoger mi cena en cinco días distintos y mi desayuno en uno.",
+    "agenda_second": "Hice cuentas para mis compras. Esta semana voy a escoger mi desayuno en cinco días distintos y mi cena en uno."
+  },
+  {
+    "id": "EC23",
+    "opening": "Para la cena de hoy me decidí por una cazuela de verde.",
+    "second": "Hoy quiero jugo de babaco para tomar.",
+    "first_food": "cazuela de verde",
+    "second_food": "jugo de babaco",
+    "second_attribute": "drink_preference",
+    "agenda_first": "Vi los pedidos que voy a hacer para mí. Para la bebida solo elegiré una vez. Mi cena la voy a pedir en varios días distintos.",
+    "agenda_second": "Vi los pedidos que voy a hacer para mí. Para la cena solo elegiré una vez. Mi bebida la voy a pedir en varios días distintos."
+  },
+  {
+    "id": "EC24",
+    "opening": "¿Qué tal un viche de pescado para mi cena de hoy? Eso quiero.",
+    "second": "Esta vez quiero empezar el día con pan de almidón para el desayuno.",
+    "first_food": "viche de pescado",
+    "second_food": "pan de almidón",
+    "second_attribute": "breakfast_preference",
+    "agenda_first": "Dejé marcado en el calendario cuándo me toca decidir lo que voy a comer. Mi cena la elijo en varias fechas. Para escoger mi desayuno marqué una sola.",
+    "agenda_second": "Dejé marcado en el calendario cuándo me toca decidir lo que voy a comer. Mi desayuno lo elijo en varias fechas. Para escoger mi cena marqué una sola."
+  },
+  {
+    "id": "EC25",
+    "opening": "Hoy voy a cenar arroz marinero.",
+    "second": "Para beber hoy quisiera café con leche.",
+    "first_food": "arroz marinero",
+    "second_food": "café con leche",
+    "second_attribute": "drink_preference",
+    "agenda_first": "Estos días voy a comer fuera. Casi a diario me preguntarán qué cena quiero para mí. Para la bebida me darán a escoger una sola vez.",
+    "agenda_second": "Estos días voy a comer fuera. Casi a diario me preguntarán qué bebida quiero para mí. Para la cena me darán a escoger una sola vez."
+  },
+  {
+    "id": "EC26",
+    "opening": "Me gustaría una porción de pastel de papa para cenar esta noche.",
+    "second": "Esta mañana quisiera desayunar bolón de queso.",
+    "first_food": "pastel de papa",
+    "second_food": "bolón de queso",
+    "second_attribute": "breakfast_preference",
+    "agenda_first": "Ya vi para qué comidas me anoté. Voy a pedir mi cena en varios días de la semana. Para escoger mi desayuno solo me apunté una vez.",
+    "agenda_second": "Ya vi para qué comidas me anoté. Voy a pedir mi desayuno en varios días de la semana. Para escoger mi cena solo me apunté una vez."
+  },
+  {
+    "id": "EC27",
+    "opening": "Mi pedido para la cena de hoy es caldo de gallina.",
+    "second": "Para tomar en esta ocasión, deme jugo de mora.",
+    "first_food": "caldo de gallina",
+    "second_food": "jugo de mora",
+    "second_attribute": "drink_preference",
+    "agenda_first": "Tengo una hoja por día para hacer mi pedido. En varias tendré que marcar qué quiero cenar. Para la bebida solo tendré que elegir en una.",
+    "agenda_second": "Tengo una hoja por día para hacer mi pedido. En varias tendré que marcar qué quiero beber. Para la cena solo tendré que elegir en una."
+  },
+  {
+    "id": "EC28",
+    "opening": "Hoy se me antoja un plato de mote pata para la cena.",
+    "second": "Para desayunar hoy elijo una empanada de viento.",
+    "first_food": "mote pata",
+    "second_food": "empanada de viento",
+    "second_attribute": "breakfast_preference",
+    "agenda_first": "Ya me dieron mis turnos. Solo en uno voy a escoger qué quiero desayunar. En varios de los otros voy a escoger qué quiero cenar.",
+    "agenda_second": "Ya me dieron mis turnos. Solo en uno voy a escoger qué quiero cenar. En varios de los otros voy a escoger qué quiero desayunar."
+  },
+  {
+    "id": "EC29",
+    "opening": "Para la cena de esta noche quiero un plato de tapao de pescado.",
+    "second": "Hoy quisiera una taza de chocolate caliente para beber.",
+    "first_food": "tapao de pescado",
+    "second_food": "chocolate caliente",
+    "second_attribute": "drink_preference",
+    "agenda_first": "Cuento los días que me toca pedir cada cosa. Para la cena marqué cinco y para la bebida marqué uno.",
+    "agenda_second": "Cuento los días que me toca pedir cada cosa. Para la bebida marqué cinco y para la cena marqué uno."
+  },
+  {
+    "id": "EC30",
+    "opening": "Esta noche me gustaría cenar llapingachos.",
+    "second": "Esta vez, para el desayuno, me provoca una humita de sal.",
+    "first_food": "llapingachos",
+    "second_food": "humita de sal",
+    "second_attribute": "breakfast_preference",
+    "agenda_first": "En el chat de mi familia cada uno manda lo que quiere para sí. Esta semana me preguntarán varios días qué quiero cenar y una sola vez qué quiero desayunar.",
+    "agenda_second": "En el chat de mi familia cada uno manda lo que quiere para sí. Esta semana me preguntarán varios días qué quiero desayunar y una sola vez qué quiero cenar."
+  }
+]

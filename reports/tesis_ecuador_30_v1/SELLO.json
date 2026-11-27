@@ -1,0 +1,109 @@
+{
+  "inputs": {
+    "PARES.json": "5ae63d70b7048203e39b17b63d0adbc92bdea209a770c67c988145ed90e7d646",
+    "CLAVE.json": "b6878b1c4ba485c5322b0979281913efa1e6af22ff870af57c7a55415e2cccc1",
+    "REVISION_CIEGA.json": "232855dc1e1a290a2be5ce460f55277039267bac802e6ac73b81dbe4730acaed",
+    "JUICIOS.json": "de7af3ec87ed6a2c0b017de9bfbb37a059835e5dc1fe179fa67f6210069fcd24",
+    "PROTOCOLO.md": "e876d84cb8da9addc7551d54e41c8972e186bc1a674a846e83dca4d299eff9c8",
+    "CONCILIACION_REVISION.json": "d121ac3bbfb3f5a7b1005e4514901403cbe7dde2750e4fc9dc1217e1898e7151",
+    "ronda1/PARES.json": "105a0181524650561eec1b64bd81430497e313506c87fa45ed635275f2241bbb",
+    "ronda1/CLAVE.json": "692605dcb8965498e49dc0fdb8548be56c619a76a0d9422275285ba40c96eb6c",
+    "ronda1/REVISION_CIEGA.json": "b7e94a5381d471e8874f4f1dfcbdd68b76afc0b627754a393b19c06fdcd7bf75",
+    "ronda1/JUICIOS.json": "100354c71df096ce54d6d09d21707f00cae50243be603ea11c441efaffb6852b",
+    "ronda2/PARES.json": "b2212fca99e1ab54504545e5f68878fd46ddafcb1032a7ecd8e6c4621ee39711",
+    "ronda2/CLAVE.json": "964625caa1d7fd484991a05747af7a34aadfd53cb5740d0533d96aa569c7fa12",
+    "ronda2/REVISION_CIEGA.json": "a7532b24d0a3ca8d8553c3d8a79572c5a863a9085812bca0d9a735ea4cea3153",
+    "ronda2/JUICIOS.json": "7aff34e583338be21e2c1c6e72779c904cd4208d5ecccf958bd2763b6b5b5e96"
+  },
+  "sources": {
+    "research/tesis_ecuador_worlds.py": "84dfdb04254c08072ec9c7a69f51eff99219aed036bdb8db7e5666ab491ac752",
+    "research/tesis_ecuador_eval.py": "35a283290f9ea99ee273d38e83f3024e83ea32d158ea010f6f1c5767acb071aa",
+    "research/tesis_timing_v7_verify.py": "b0ba4c2ee231471ff95b7c9150056a2249a3bed379c5e9d348e9f4f34654e761"
+  },
+  "v7": {
+    "PLAN.json": "2c965cdf1372d310752b3c956d76ebfe6a5324578db82fa218788de51049cb55",
+    "LOCK.json": "9168a9d6db6be3d7392e2f4df7b1e05063a4861d4f14156b13a3990d78e7a29d",
+    "ADAPTADORES.json": "3185175ae9b6ef6b3af0a936df872cd70e4197346faa1f85ca35005439baa6bf"
+  },
+  "earlier_reviews": {
+    "ronda1": {
+      "matching_orientations": 58,
+      "matching_pairs": 29
+    },
+    "ronda2": {
+      "matching_orientations": 60,
+      "matching_pairs": 30
+    }
+  },
+  "review": {
+    "matching_orientations": 60,
+    "matching_pairs": 30
+  },
+  "audit": {
+    "pairs": 30,
+    "roots": 60,
+    "worlds": 480,
+    "packets": {
+      "EC-packet-1": [
+        "EC01",
+        "EC16",
+        "EC02",
+        "EC17",
+        "EC03",
+        "EC18",
+        "EC04",
+        "EC19",
+        "EC05",
+        "EC20"
+      ],
+      "EC-packet-2": [
+        "EC06",
+        "EC21",
+        "EC07",
+        "EC22",
+        "EC08",
+        "EC23",
+        "EC09",
+        "EC24",
+        "EC10",
+        "EC25"
+      ],
+      "EC-packet-3": [
+        "EC11",
+        "EC26",
+        "EC12",
+        "EC27",
+        "EC13",
+        "EC28",
+        "EC14",
+        "EC29",
+        "EC15",
+        "EC30"
+      ]
+    },
+    "worlds_sha256": "b64e5754f50f0da81633cd05b9d88dc40813ec17cd3794e7bed32a9674ca4f04",
+    "distinct_external_agendas": 60,
+    "historical_agenda_overlap": {
+      "v6_train": [],
+      "v6_validation": [],
+      "v6_reserved": [],
+      "v7_train": [],
+      "v7_validation": [],
+      "v7_reserved": []
+    },
+    "distinct_public_prompts_checked": 240,
+    "private_metadata_in_prompts": false,
+    "future_accuracy": {
+      "ask_now": {
+        "ASK-WAIT": 0.8500000000000001,
+        "WAIT-ASK": 0.65,
+        "WAIT-WAIT": 0.5
+      },
+      "save": {
+        "ASK-WAIT": 0.65,
+        "WAIT-ASK": 0.8500000000000001,
+        "WAIT-WAIT": 0.5
+      }
+    }
+  }
+}
