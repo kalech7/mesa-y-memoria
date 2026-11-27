@@ -1,0 +1,302 @@
+[
+  {
+    "id": "EC01",
+    "opening": "¿Me sirve seco de lentejas con maduro para la cena de hoy?",
+    "second": "Para desayunar quisiera tortilla de verde con quesillo.",
+    "first_food": "seco de lentejas con maduro",
+    "second_food": "tortilla de verde con quesillo",
+    "second_attribute": "breakfast_preference",
+    "agenda_first": "En la hostería pagué cinco noches. Puedo escoger mi cena en las cinco. Para escoger mi desayuno me dejaron una sola ocasión.",
+    "agenda_second": "En la hostería pagué cinco noches. Puedo escoger mi desayuno en las cinco. Para escoger mi cena me dejaron una sola ocasión."
+  },
+  {
+    "id": "EC02",
+    "opening": "Esta noche quisiera cenar encocado de camarón con yuca.",
+    "second": "Para tomar hoy, refresco de guanábana con limón, por favor.",
+    "first_food": "encocado de camarón con yuca",
+    "second_food": "refresco de guanábana con limón",
+    "second_attribute": "drink_preference",
+    "agenda_first": "En el comedor pagué aparte una sola oportunidad para escoger mi bebida. Para mi cena tengo cinco pases y los voy usando en días distintos.",
+    "agenda_second": "En el comedor pagué aparte una sola oportunidad para escoger mi cena. Para mi bebida tengo cinco pases y los voy usando en días distintos."
+  },
+  {
+    "id": "EC03",
+    "opening": "Para mi cena, póngame sopa de melloco con queso.",
+    "second": "Hoy me apetece mollete con queso de hoja para el desayuno.",
+    "first_food": "sopa de melloco con queso",
+    "second_food": "mollete con queso de hoja",
+    "second_attribute": "breakfast_preference",
+    "agenda_first": "Voy a estar unos días en Cuenca. Donde me hospedo me ofrecieron hacer pedidos para llevar. Escogeré mi cena en cinco visitas y mi desayuno en una.",
+    "agenda_second": "Voy a estar unos días en Cuenca. Donde me hospedo me ofrecieron hacer pedidos para llevar. Escogeré mi desayuno en cinco visitas y mi cena en una."
+  },
+  {
+    "id": "EC04",
+    "opening": "Hoy quiero corvina en salsa de maní para cenar.",
+    "second": "De bebida quisiera morocho con pasas.",
+    "first_food": "corvina en salsa de maní",
+    "second_food": "morocho con pasas",
+    "second_attribute": "drink_preference",
+    "agenda_first": "Mi hermana me regaló unas comidas que escojo yo. Tendré una fecha para pedir mi bebida. Para escoger mi cena puedo ir una vez al día hasta completar cinco.",
+    "agenda_second": "Mi hermana me regaló unas comidas que escojo yo. Tendré una fecha para pedir mi cena. Para escoger mi bebida puedo ir una vez al día hasta completar cinco."
+  },
+  {
+    "id": "EC05",
+    "opening": "¿Hay tortilla de tiesto con aguacate? Eso quisiera para la cena.",
+    "second": "Para mi desayuno me quedo con humita de queso manaba.",
+    "first_food": "tortilla de tiesto con aguacate",
+    "second_food": "humita de queso manaba",
+    "second_attribute": "breakfast_preference",
+    "agenda_first": "Ya me explicaron lo de la pensión. Cinco veces me van a preguntar qué quiero para mi cena. Lo de mi desayuno solo lo voy a poder elegir una vez.",
+    "agenda_second": "Ya me explicaron lo de la pensión. Cinco veces me van a preguntar qué quiero para mi desayuno. Lo de mi cena solo lo voy a poder elegir una vez."
+  },
+  {
+    "id": "EC06",
+    "opening": "A mí me gustaría cenar frejolada con verde asado esta noche.",
+    "second": "Me gustaría jugo de capulí para tomar.",
+    "first_food": "frejolada con verde asado",
+    "second_food": "jugo de capulí",
+    "second_attribute": "drink_preference",
+    "agenda_first": "El taller tiene un formulario de comida para cada persona. Solo en un formulario podré escoger mi bebida. En cinco formularios, uno cada día, podré escoger mi cena.",
+    "agenda_second": "El taller tiene un formulario de comida para cada persona. Solo en un formulario podré escoger mi cena. En cinco formularios, uno cada día, podré escoger mi bebida."
+  },
+  {
+    "id": "EC07",
+    "opening": "¿Me sirve pechuga al jugo con mote para la cena de hoy?",
+    "second": "Esta mañana quiero desayunar tamal lojano con curtido.",
+    "first_food": "pechuga al jugo con mote",
+    "second_food": "tamal lojano con curtido",
+    "second_attribute": "breakfast_preference",
+    "agenda_first": "Estoy con un pase para la cafetería del barrio. Me alcanza para elegir mi cena en cinco días diferentes. Para elegir mi desayuno tengo una sola oportunidad con el pase.",
+    "agenda_second": "Estoy con un pase para la cafetería del barrio. Me alcanza para elegir mi desayuno en cinco días diferentes. Para elegir mi cena tengo una sola oportunidad con el pase."
+  },
+  {
+    "id": "EC08",
+    "opening": "Esta noche quisiera cenar sango de choclo con camarón.",
+    "second": "¿Me da batido de chirimoya para beber?",
+    "first_food": "sango de choclo con camarón",
+    "second_food": "batido de chirimoya",
+    "second_attribute": "drink_preference",
+    "agenda_first": "Anoté los días que me invitan a comer. Para mi bebida haré un solo pedido. Cinco días distintos voy a sentarme a elegir qué quiero para mi cena.",
+    "agenda_second": "Anoté los días que me invitan a comer. Para mi cena haré un solo pedido. Cinco días distintos voy a sentarme a elegir qué quiero para mi bebida."
+  },
+  {
+    "id": "EC09",
+    "opening": "Para mi cena, póngame menestra de arveja con plátano.",
+    "second": "Para desayunar quisiera arepa de zapallo con queso.",
+    "first_food": "menestra de arveja con plátano",
+    "second_food": "arepa de zapallo con queso",
+    "second_attribute": "breakfast_preference",
+    "agenda_first": "En la caja me dieron cinco vales para elegir mi cena. Los vales se usan uno por día. Para mi desayuno solo tengo uno y también puedo escoger qué pedir.",
+    "agenda_second": "En la caja me dieron cinco vales para elegir mi desayuno. Los vales se usan uno por día. Para mi cena solo tengo uno y también puedo escoger qué pedir."
+  },
+  {
+    "id": "EC10",
+    "opening": "Hoy quiero locro de sambo para cenar.",
+    "second": "Para tomar hoy, infusión de hierbaluisa con panela, por favor.",
+    "first_food": "locro de sambo",
+    "second_food": "infusión de hierbaluisa con panela",
+    "second_attribute": "drink_preference",
+    "agenda_first": "Ya cuadré mis comidas durante las prácticas. Solo voy a poder escoger mi bebida una vez. En cambio, tendré cinco días para que me pregunten qué quiero para mi cena.",
+    "agenda_second": "Ya cuadré mis comidas durante las prácticas. Solo voy a poder escoger mi cena una vez. En cambio, tendré cinco días para que me pregunten qué quiero para mi bebida."
+  },
+  {
+    "id": "EC11",
+    "opening": "¿Hay pescado sudado con patacón? Eso quisiera para la cena.",
+    "second": "Hoy me apetece bolón de maní para el desayuno.",
+    "first_food": "pescado sudado con patacón",
+    "second_food": "bolón de maní",
+    "second_attribute": "breakfast_preference",
+    "agenda_first": "Mi tía y yo vamos a ir a la misma feria, pero cada quien se paga lo suyo. Yo voy a elegir mi cena en cinco visitas. De todas las visitas habrá una sola en la que escogeré mi desayuno.",
+    "agenda_second": "Mi tía y yo vamos a ir a la misma feria, pero cada quien se paga lo suyo. Yo voy a elegir mi desayuno en cinco visitas. De todas las visitas habrá una sola en la que escogeré mi cena."
+  },
+  {
+    "id": "EC12",
+    "opening": "A mí me gustaría cenar pastel de yuca con champiñones esta noche.",
+    "second": "De bebida quisiera jugo de arazá.",
+    "first_food": "pastel de yuca con champiñones",
+    "second_food": "jugo de arazá",
+    "second_attribute": "drink_preference",
+    "agenda_first": "Vi mi reserva para la salida a Mindo. Me ofrecen elegir mi bebida en una ocasión. Para mi cena, sí van a preguntarme qué quiero en cada uno de cinco días.",
+    "agenda_second": "Vi mi reserva para la salida a Mindo. Me ofrecen elegir mi cena en una ocasión. Para mi bebida, sí van a preguntarme qué quiero en cada uno de cinco días."
+  },
+  {
+    "id": "EC13",
+    "opening": "¿Me sirve ensalada de papa con chochos para la cena de hoy?",
+    "second": "Para mi desayuno me quedo con tostado con queso fresco.",
+    "first_food": "ensalada de papa con chochos",
+    "second_food": "tostado con queso fresco",
+    "second_attribute": "breakfast_preference",
+    "agenda_first": "En mi cuenta del comedor aparecen cinco ocasiones para pedir lo que yo quiera de cena. Para elegir mi desayuno me sale una sola ocasión.",
+    "agenda_second": "En mi cuenta del comedor aparecen cinco ocasiones para pedir lo que yo quiera de desayuno. Para elegir mi cena me sale una sola ocasión."
+  },
+  {
+    "id": "EC14",
+    "opening": "Esta noche quisiera cenar arroz con calamar y pimiento.",
+    "second": "Me gustaría agua de jamaica con piña para tomar.",
+    "first_food": "arroz con calamar y pimiento",
+    "second_food": "agua de jamaica con piña",
+    "second_attribute": "drink_preference",
+    "agenda_first": "Me mandaron el detalle de mis comidas en la residencia. Hay un único día en que elegiré mi bebida. Aparte tengo cinco fechas para escoger mi cena, una por día.",
+    "agenda_second": "Me mandaron el detalle de mis comidas en la residencia. Hay un único día en que elegiré mi cena. Aparte tengo cinco fechas para escoger mi bebida, una por día."
+  },
+  {
+    "id": "EC15",
+    "opening": "Para mi cena, póngame caldo de bolas de verde con maní.",
+    "second": "Esta mañana quiero desayunar pan de almidón con cuajada.",
+    "first_food": "caldo de bolas de verde con maní",
+    "second_food": "pan de almidón con cuajada",
+    "second_attribute": "breakfast_preference",
+    "agenda_first": "Ya revisé qué incluye lo que pagué. Me van a pedir cinco elecciones para mi cena, una en cada visita. Para mi desayuno me pedirán la elección en una sola visita.",
+    "agenda_second": "Ya revisé qué incluye lo que pagué. Me van a pedir cinco elecciones para mi desayuno, una en cada visita. Para mi cena me pedirán la elección en una sola visita."
+  },
+  {
+    "id": "EC16",
+    "opening": "Hoy quiero cazuela de atún y plátano para cenar.",
+    "second": "¿Me da batido de tomate de árbol con avena para beber?",
+    "first_food": "cazuela de atún y plátano",
+    "second_food": "batido de tomate de árbol con avena",
+    "second_attribute": "drink_preference",
+    "agenda_first": "En el curso solo podré encargar mi bebida a mi gusto una vez. En cambio, durante los cinco días que voy, podré armar mi cena día por día.",
+    "agenda_second": "En el curso solo podré encargar mi cena a mi gusto una vez. En cambio, durante los cinco días que voy, podré armar mi bebida día por día."
+  },
+  {
+    "id": "EC17",
+    "opening": "¿Hay mote con palmito salteado? Eso quisiera para la cena.",
+    "second": "Para desayunar quisiera tortilla de maíz con huevo.",
+    "first_food": "mote con palmito salteado",
+    "second_food": "tortilla de maíz con huevo",
+    "second_attribute": "breakfast_preference",
+    "agenda_first": "Hice espacio para pasar por el puesto cinco días y elegir mi cena en cada pasada. Para elegir mi desayuno voy a tener un solo turno.",
+    "agenda_second": "Hice espacio para pasar por el puesto cinco días y elegir mi desayuno en cada pasada. Para elegir mi cena voy a tener un solo turno."
+  },
+  {
+    "id": "EC18",
+    "opening": "A mí me gustaría cenar pollo al jugo con habas tiernas esta noche.",
+    "second": "Para tomar hoy, limonada de coco con cedrón, por favor.",
+    "first_food": "pollo al jugo con habas tiernas",
+    "second_food": "limonada de coco con cedrón",
+    "second_attribute": "drink_preference",
+    "agenda_first": "En mi pedido del hospedaje hay una visita en la que yo diré qué quiero para mi bebida. Para escoger mi cena sí voy a poder hacerlo cinco días distintos.",
+    "agenda_second": "En mi pedido del hospedaje hay una visita en la que yo diré qué quiero para mi cena. Para escoger mi bebida sí voy a poder hacerlo cinco días distintos."
+  },
+  {
+    "id": "EC19",
+    "opening": "¿Me sirve sopa de quinua con achogcha para la cena de hoy?",
+    "second": "Hoy me apetece pan de maíz con quesillo para el desayuno.",
+    "first_food": "sopa de quinua con achogcha",
+    "second_food": "pan de maíz con quesillo",
+    "second_attribute": "breakfast_preference",
+    "agenda_first": "Los chicos del local ya anotaron mis visitas. Para mi cena tendrán que tomarme la orden cinco días. Para mi desayuno me la tomarán en una sola visita.",
+    "agenda_second": "Los chicos del local ya anotaron mis visitas. Para mi desayuno tendrán que tomarme la orden cinco días. Para mi cena me la tomarán en una sola visita."
+  },
+  {
+    "id": "EC20",
+    "opening": "Esta noche quisiera cenar bistec de berenjena con arroz.",
+    "second": "De bebida quisiera colada de uvilla.",
+    "first_food": "bistec de berenjena con arroz",
+    "second_food": "colada de uvilla",
+    "second_attribute": "drink_preference",
+    "agenda_first": "Compré un cupón para escoger mi bebida y cinco cupones para escoger mi cena. Hay que canjear los cinco en días diferentes.",
+    "agenda_second": "Compré un cupón para escoger mi cena y cinco cupones para escoger mi bebida. Hay que canjear los cinco en días diferentes."
+  },
+  {
+    "id": "EC21",
+    "opening": "Para mi cena, póngame repe de arveja con guineo.",
+    "second": "Para mi desayuno me quedo con tigrillo con aguacate.",
+    "first_food": "repe de arveja con guineo",
+    "second_food": "tigrillo con aguacate",
+    "second_attribute": "breakfast_preference",
+    "agenda_first": "En la fonda llevo una tarjeta para mis propios pedidos. Tengo cinco casillas para pedir mi cena en días diferentes. Para pedir mi desayuno apenas tengo una casilla.",
+    "agenda_second": "En la fonda llevo una tarjeta para mis propios pedidos. Tengo cinco casillas para pedir mi desayuno en días diferentes. Para pedir mi cena apenas tengo una casilla."
+  },
+  {
+    "id": "EC22",
+    "opening": "Hoy quiero lomo de cerdo con mote pillo para cenar.",
+    "second": "Me gustaría jugo de badea para tomar.",
+    "first_food": "lomo de cerdo con mote pillo",
+    "second_food": "jugo de badea",
+    "second_attribute": "drink_preference",
+    "agenda_first": "Me dieron a escoger mi bebida para una sola parada del viaje. En cinco paradas diferentes podré elegir personalmente qué quiero para mi cena.",
+    "agenda_second": "Me dieron a escoger mi cena para una sola parada del viaje. En cinco paradas diferentes podré elegir personalmente qué quiero para mi bebida."
+  },
+  {
+    "id": "EC23",
+    "opening": "¿Hay corviche de camarón? Eso quisiera para la cena.",
+    "second": "Esta mañana quiero desayunar empanada de verde con queso de hoja.",
+    "first_food": "corviche de camarón",
+    "second_food": "empanada de verde con queso de hoja",
+    "second_attribute": "breakfast_preference",
+    "agenda_first": "Mi grupo va a entrenar cinco días y cada uno se pide lo suyo al salir. A mí me tocará elegir mi cena al final de cada entrenamiento. Solo después de uno voy a elegir mi desayuno.",
+    "agenda_second": "Mi grupo va a entrenar cinco días y cada uno se pide lo suyo al salir. A mí me tocará elegir mi desayuno al final de cada entrenamiento. Solo después de uno voy a elegir mi cena."
+  },
+  {
+    "id": "EC24",
+    "opening": "A mí me gustaría cenar guiso de habas con mote esta noche.",
+    "second": "¿Me da té de toronjil con manzana para beber?",
+    "first_food": "guiso de habas con mote",
+    "second_food": "té de toronjil con manzana",
+    "second_attribute": "drink_preference",
+    "agenda_first": "Compré un paquete de comidas para mí. Cuando me llamen para pedir mi bebida, va a ser una sola vez. Para pedir mi cena, me van a llamar cinco veces en días distintos.",
+    "agenda_second": "Compré un paquete de comidas para mí. Cuando me llamen para pedir mi cena, va a ser una sola vez. Para pedir mi bebida, me van a llamar cinco veces en días distintos."
+  },
+  {
+    "id": "EC25",
+    "opening": "¿Me sirve pescado en hoja de bijao para la cena de hoy?",
+    "second": "Para desayunar quisiera humita de sal con cebolla.",
+    "first_food": "pescado en hoja de bijao",
+    "second_food": "humita de sal con cebolla",
+    "second_attribute": "breakfast_preference",
+    "agenda_first": "La persona de recepción apuntó que yo elegiré mi cena en cinco de mis visitas al comedor. De todas las visitas hay una sola en la que escogeré mi desayuno.",
+    "agenda_second": "La persona de recepción apuntó que yo elegiré mi desayuno en cinco de mis visitas al comedor. De todas las visitas hay una sola en la que escogeré mi cena."
+  },
+  {
+    "id": "EC26",
+    "opening": "Esta noche quisiera cenar tallarín saltado con chochos.",
+    "second": "Para tomar hoy, refresco de mandarina con menta, por favor.",
+    "first_food": "tallarín saltado con chochos",
+    "second_food": "refresco de mandarina con menta",
+    "second_attribute": "drink_preference",
+    "agenda_first": "Ya averigüé cómo es donde me voy a quedar en la Sierra. Tengo un turno para elegir mi bebida. Para elegir qué quiero de cena hay cinco turnos, en cinco días distintos.",
+    "agenda_second": "Ya averigüé cómo es donde me voy a quedar en la Sierra. Tengo un turno para elegir mi cena. Para elegir qué quiero de bebida hay cinco turnos, en cinco días distintos."
+  },
+  {
+    "id": "EC27",
+    "opening": "Para mi cena, póngame maito de tilapia con yuca.",
+    "second": "Hoy me apetece bizcocho de anís con nata para el desayuno.",
+    "first_food": "maito de tilapia con yuca",
+    "second_food": "bizcocho de anís con nata",
+    "second_attribute": "breakfast_preference",
+    "agenda_first": "Mi primo me dijo que deje los pedidos a mi nombre. En cinco ocasiones voy a escoger qué quiero para mi cena. Para mi desayuno solo podré escoger en una.",
+    "agenda_second": "Mi primo me dijo que deje los pedidos a mi nombre. En cinco ocasiones voy a escoger qué quiero para mi desayuno. Para mi cena solo podré escoger en una."
+  },
+  {
+    "id": "EC28",
+    "opening": "Hoy quiero ensalada tibia de mote y zapallo para cenar.",
+    "second": "De bebida quisiera agua de hierbabuena con naranjilla.",
+    "first_food": "ensalada tibia de mote y zapallo",
+    "second_food": "agua de hierbabuena con naranjilla",
+    "second_attribute": "drink_preference",
+    "agenda_first": "A la señora del comedor le expliqué cuándo me voy a acercar. Iré una vez a escoger mi bebida. Para mi cena iré en cinco fechas. Cada vez que llegue le diré qué quiero.",
+    "agenda_second": "A la señora del comedor le expliqué cuándo me voy a acercar. Iré una vez a escoger mi cena. Para mi bebida iré en cinco fechas. Cada vez que llegue le diré qué quiero."
+  },
+  {
+    "id": "EC29",
+    "opening": "¿Hay sopa de cebada con alverja? Eso quisiera para la cena.",
+    "second": "Para mi desayuno me quedo con maduro asado con cuajada.",
+    "first_food": "sopa de cebada con alverja",
+    "second_food": "maduro asado con cuajada",
+    "second_attribute": "breakfast_preference",
+    "agenda_first": "Ya resolví cuándo paso a comer en mi descanso. Para mi cena tengo que acercarme cinco veces a decirles qué quiero. Para que me tomen el pedido de mi desayuno voy una sola vez.",
+    "agenda_second": "Ya resolví cuándo paso a comer en mi descanso. Para mi desayuno tengo que acercarme cinco veces a decirles qué quiero. Para que me tomen el pedido de mi cena voy una sola vez."
+  },
+  {
+    "id": "EC30",
+    "opening": "A mí me gustaría cenar verde asado con salsa de queso esta noche.",
+    "second": "Me gustaría batido de babaco con yogur para tomar.",
+    "first_food": "verde asado con salsa de queso",
+    "second_food": "batido de babaco con yogur",
+    "second_attribute": "drink_preference",
+    "agenda_first": "Estoy organizando mis paradas para comer durante la pasantía. Solamente en una podré escoger qué quiero para mi bebida. En cinco paradas distintas podré escoger mi cena.",
+    "agenda_second": "Estoy organizando mis paradas para comer durante la pasantía. Solamente en una podré escoger qué quiero para mi cena. En cinco paradas distintas podré escoger mi bebida."
+  }
+]
