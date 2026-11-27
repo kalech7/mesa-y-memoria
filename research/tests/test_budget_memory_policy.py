@@ -197,13 +197,10 @@ def test_fresh_zero_lora_delta_guard_accepts_only_zero_b_and_frozen_base(factory
         verify_fresh_lora_zero_delta(policy)
 
 
-def test_cpu_tokenizer_direct_from_instruct_has_exact_candidates_without_project_checkpoint():
+def test_cpu_tokenizer_direct_from_instruct_has_exact_candidates_without_project_checkpoint(qwen_05b_dir):
     transformers = pytest.importorskip('transformers')
-    model_root = Path('models/Qwen2.5-0.5B-Instruct')
-    if not model_root.is_dir():
-        pytest.skip('Local Instruct unavailable; no downloads')
     policy = BudgetMemoryPolicy.__new__(BudgetMemoryPolicy)
-    policy.tokenizer = transformers.AutoTokenizer.from_pretrained(model_root, local_files_only=True, trust_remote_code=False)
+    policy.tokenizer = transformers.AutoTokenizer.from_pretrained(qwen_05b_dir, local_files_only=True, trust_remote_code=False)
     policy._candidate_cache = {}
     for kind, values in [('action', ACTIONS), ('answer', ['agua', 'té de menta', 'DEFER'])]:
         for value, ids in zip(values, policy.candidate_token_ids(values, kind)):
@@ -212,14 +209,11 @@ def test_cpu_tokenizer_direct_from_instruct_has_exact_candidates_without_project
     assert len(policy.encode_prompt(policy.prompt(observation(), ACTIONS))) <= MAX_PROMPT_TOKENS
 
 
-def test_cpu_direct_load_and_fresh_lora_do_not_change_instruct_logits():
+def test_cpu_direct_load_and_fresh_lora_do_not_change_instruct_logits(qwen_05b_dir):
     torch = pytest.importorskip('torch')
     pytest.importorskip('transformers')
     pytest.importorskip('peft')
-    model_root = Path('models/Qwen2.5-0.5B-Instruct')
-    if not model_root.is_dir():
-        pytest.skip('Local Instruct unavailable; no downloads')
-    policy = BudgetMemoryPolicy(str(model_root), device='cpu', precision='bfloat16', seed=101)
+    policy = BudgetMemoryPolicy(str(qwen_05b_dir), device='cpu', precision='bfloat16', seed=101)
     assert policy.origin_checkpoint is None and not policy.training_enabled
     assert not any('lora_' in name for name, _ in policy.model.named_parameters())
     assert not any(parameter.requires_grad for parameter in policy.model.parameters())
@@ -238,15 +232,12 @@ def test_cpu_direct_load_and_fresh_lora_do_not_change_instruct_logits():
     del policy
 
 
-def test_cpu_real_tokenizer_public_environment_prompts_fit_without_any_model_generation(tmp_path):
+def test_cpu_real_tokenizer_public_environment_prompts_fit_without_any_model_generation(tmp_path, qwen_05b_dir):
     transformers = pytest.importorskip('transformers')
     from research.budget_memory_data import FAMILIES, make_episode
     from research.budget_memory_env import run_episode
-    model_root = Path('models/Qwen2.5-0.5B-Instruct')
-    if not model_root.is_dir():
-        pytest.skip('Local Instruct unavailable; no downloads')
     policy = BudgetMemoryPolicy.__new__(BudgetMemoryPolicy)
-    policy.tokenizer = transformers.AutoTokenizer.from_pretrained(model_root, local_files_only=True, trust_remote_code=False)
+    policy.tokenizer = transformers.AutoTokenizer.from_pretrained(qwen_05b_dir, local_files_only=True, trust_remote_code=False)
     policy._candidate_cache = {}
     lengths = []
     def inspect(obs, candidates, kind):

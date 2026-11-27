@@ -1,0 +1,66 @@
+{
+  "plan_sha256": "2c965cdf1372d310752b3c956d76ebfe6a5324578db82fa218788de51049cb55",
+  "selected": {
+    "101": {
+      "sft": {
+        "epoch": 6,
+        "adapter": "epoch-6/adapter",
+        "weights": {
+          "adapter_model.safetensors": "7dbdcceba967d5ac82a3c213c9fc0f5a76262a3a2d2523e47f3038873728e8ce",
+          "adapter_config.json": "e3e88d492aa86e4199ce411cd5d52a63361c7867cd7e9f0814be1799f2f5acb0"
+        },
+        "cutoff": 4.0
+      },
+      "sft-pares": {
+        "epoch": 6,
+        "adapter": "epoch-6/adapter",
+        "weights": {
+          "adapter_model.safetensors": "95960a2bbdbb85739f967253eb54588c7c84c1bb9cf7ae08341e49008e8c2863",
+          "adapter_config.json": "e3e88d492aa86e4199ce411cd5d52a63361c7867cd7e9f0814be1799f2f5acb0"
+        },
+        "cutoff": 2.875
+      }
+    },
+    "202": {
+      "sft": {
+        "epoch": 6,
+        "adapter": "epoch-6/adapter",
+        "weights": {
+          "adapter_model.safetensors": "c746fafa7194d4b4a42c7a845ef95df9f6e0092502ef63de18f1530e092c0de0",
+          "adapter_config.json": "e3e88d492aa86e4199ce411cd5d52a63361c7867cd7e9f0814be1799f2f5acb0"
+        },
+        "cutoff": 3.0
+      },
+      "sft-pares": {
+        "epoch": 6,
+        "adapter": "epoch-6/adapter",
+        "weights": {
+          "adapter_model.safetensors": "409c0c2de71cb614693e65daba559f2a2949bd4bee753190b466e01229f9c61b",
+          "adapter_config.json": "e3e88d492aa86e4199ce411cd5d52a63361c7867cd7e9f0814be1799f2f5acb0"
+        },
+        "cutoff": 4.125
+      }
+    },
+    "303": {
+      "sft": {
+        "epoch": 2,
+        "adapter": "epoch-2/adapter",
+        "weights": {
+          "adapter_model.safetensors": "62ca06cd2ba37afe0c52e451449f02651c1b72fde98804cd6e2c689d242bc9d1",
+          "adapter_config.json": "e3e88d492aa86e4199ce411cd5d52a63361c7867cd7e9f0814be1799f2f5acb0"
+        },
+        "cutoff": 0.0
+      },
+      "sft-pares": {
+        "epoch": 6,
+        "adapter": "epoch-6/adapter",
+        "weights": {
+          "adapter_model.safetensors": "c7b8690a8b51b420466a5b942394f94978103d065a56b481db4ea61f3eb259c5",
+          "adapter_config.json": "e3e88d492aa86e4199ce411cd5d52a63361c7867cd7e9f0814be1799f2f5acb0"
+        },
+        "cutoff": 0.0
+      }
+    }
+  },
+  "planner_cutoff": "always"
+}

@@ -1,0 +1,72 @@
+{
+  "adapter": "epoch-6/adapter",
+  "epoch": 6,
+  "cutoff": 0.0,
+  "future": 0.6383333333333333,
+  "free_pairs": 0.3333333333333333,
+  "weights": {
+    "adapter_model.safetensors": "c7b8690a8b51b420466a5b942394f94978103d065a56b481db4ea61f3eb259c5",
+    "adapter_config.json": "e3e88d492aa86e4199ce411cd5d52a63361c7867cd7e9f0814be1799f2f5acb0"
+  },
+  "candidates": [
+    {
+      "adapter": "epoch-2/adapter",
+      "epoch": 2,
+      "cutoff": "always",
+      "future": 0.6316666666666667,
+      "free_pairs": 0.13333333333333333
+    },
+    {
+      "adapter": "epoch-4/adapter",
+      "epoch": 4,
+      "cutoff": "always",
+      "future": 0.6316666666666667,
+      "free_pairs": 0.13333333333333333
+    },
+    {
+      "adapter": "epoch-6/adapter",
+      "epoch": 6,
+      "cutoff": 0.0,
+      "future": 0.6383333333333333,
+      "free_pairs": 0.3333333333333333
+    }
+  ],
+  "training": [
+    {
+      "epoch": 1,
+      "mean_loss": 1.45334681669871,
+      "order_sha256": "868c45c9e29ddd6192427040141fdd04984962790bcde68ad12b6870a90882ba"
+    },
+    {
+      "epoch": 2,
+      "mean_loss": 1.0466790437698363,
+      "order_sha256": "4d3a2f8644a889fafebf38b2cfd89cf1daf95454a8b2d63027c7742760ff0f24"
+    },
+    {
+      "epoch": 3,
+      "mean_loss": 0.8244410375754039,
+      "order_sha256": "58b2a50ff15e4666b928c5bbe23c851daed8cf3d062bd24daf8dc78370df7e9c"
+    },
+    {
+      "epoch": 4,
+      "mean_loss": 0.6230262329181036,
+      "order_sha256": "2ec0d22ec42587fbf4dfe0208e2050600a3d81a78967eae61ac45afca410c703"
+    },
+    {
+      "epoch": 5,
+      "mean_loss": 0.45183608134587605,
+      "order_sha256": "a783e1ac0392d7ee11e4606ec0dd5e2fb4b829207ef7904bbb15d41da3d4600d"
+    },
+    {
+      "epoch": 6,
+      "mean_loss": 0.2295794863253832,
+      "order_sha256": "f7bd302b20272f8256c225634e35557ece5c3dd66f5420234dbc16f09bd5569e"
+    }
+  ],
+  "budget": {
+    "forward_batches": 90,
+    "decisions": 720,
+    "input_tokens": 141012,
+    "padded_input_tokens": 153992
+  }
+}

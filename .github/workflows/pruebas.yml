@@ -1,0 +1,32 @@
+name: Pruebas del laboratorio
+
+on: [push, pull_request]
+
+permissions:
+  contents: read
+
+jobs:
+  cpu:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    env:
+      HF_HUB_OFFLINE: "1"
+      MKL_NUM_THREADS: "2"
+      OMP_NUM_THREADS: "2"
+    steps:
+      - uses: actions/checkout@v4
+      - name: Preparar Python y las dependencias bloqueadas
+        run: |
+          python3 -m venv "$RUNNER_TEMP/bootstrap"
+          "$RUNNER_TEMP/bootstrap/bin/pip" install uv==0.11.8
+          "$RUNNER_TEMP/bootstrap/bin/uv" sync --locked --python 3.12 --group research
+      - name: Instalar Chromium
+        run: .venv/bin/playwright install --with-deps --only-shell chromium
+      - name: Verificar entorno, adaptadores y valoraciones
+        run: |
+          .venv/bin/python -m scripts.check_environment
+          .venv/bin/python -m research.tesis_timing_v7_pairs
+          .venv/bin/python -m research.score_ai_reviews reports/tesis_revision_ia_100_v1 > "$RUNNER_TEMP/acuerdo.json"
+          diff -u reports/tesis_revision_ia_100_v1/ACUERDO.json "$RUNNER_TEMP/acuerdo.json"
+      - name: Ejecutar las dos suites
+        run: .venv/bin/python -m pytest -q -rs

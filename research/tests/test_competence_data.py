@@ -96,8 +96,20 @@ def test_teacher_routes_have_one_natural_select_and_six_complete_phase_targets(c
     assert all(json.loads(row["completion"])==row["action"] for row in examples)
 
 
-def test_previous_bank_discovery_includes_every_canonical_observed_bank():
-    paths=discover_previous_banks()
+def test_previous_bank_discovery_includes_every_canonical_observed_bank(tmp_path, monkeypatch):
+    monkeypatch.setattr("research.competence_data.ROOT", tmp_path)
+    data = tmp_path / "research/data"
+    files = [data / "bank_1_1" / f"{split}.jsonl" for split in
+             ("dev_smoke", "train", "validation", "test_id", "test_ood", "test_external")]
+    files += [data / bank / "validation.jsonl" for bank in
+              ("development_v2_20261024_001", "development_varied_v3_20261025_001",
+               "development_varied_v3_20261025_002", "development_varied_v3_20261025_003")]
+    episode = {"root_id": "fixture", "initial_memory": [], "user_messages": [], "current_query": {}}
+    for path in files:
+        path.parent.mkdir(parents=True, exist_ok=True)
+        path.write_text(json.dumps(episode) + "\n")
+    (data / "sft_teacher.jsonl").write_text('{"prompt":"training text"}\n')
+    paths = discover_previous_banks()
     for name in ("development_v2_20261024_001","development_varied_v3_20261025_001",
                  "development_varied_v3_20261025_002","development_varied_v3_20261025_003"):
         assert f"research/data/{name}/validation.jsonl" in paths

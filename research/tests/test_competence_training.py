@@ -130,8 +130,22 @@ def test_teacher_token_preflight_never_truncates():
         training.profile_teacher(backend, examples)
 
 
-def test_historical_202_is_selected_7140_not_last_14280():
-    assert training.historical_b1(202).name == "step_007140"
+def test_historical_202_is_selected_7140_not_last_14280(tmp_path):
+    selected = tmp_path / "step_007140"
+    selected.mkdir()
+    (tmp_path / "step_014280").mkdir()
+    manifest = selected / "local_checkpoint.json"
+    write_json(manifest, {"step": 7140})
+    summary = tmp_path / "summary.json"
+    write_json(summary, {"selected_checkpoint": str(selected), "last_step": 14280})
+    review = tmp_path / "review.json"
+    write_json(review, {"rows": [{"method": "B1", "training_seed": 202, "checkpoint_path": str(selected),
+                                 "checkpoint_manifest_sha256": file_hash(manifest), "training_summary_path": str(summary),
+                                 "training_summary_sha256": file_hash(summary)}]})
+    assert training.historical_b1(202, review) == selected
+    write_json(summary, {"selected_checkpoint": str(tmp_path / "step_014280")})
+    with pytest.raises(ValueError, match="selection evidence changed"):
+        training.historical_b1(202, review)
 
 
 def test_teacher_uses_actual_ask_prefixes_and_ignores_private_gold(tmp_path):

@@ -1,0 +1,74 @@
+{
+  "review_type": "AI",
+  "human_decisions_supplied": 0,
+  "bank_manifest_sha256": "74468df63da63bc2e9b8654e37248387cf9529dbbb2e0b14aee2f1f51a722acf",
+  "source_sha256": {
+    "A_antes.json": "c13f6d834569018c279a7641487582dcd3747241a2b0934a58e58ae36d90fd6c",
+    "A_final.json": "2de47d62626fc0e8ffb290e02fc9ad72de6214233d32aa9e6e591c051f002795",
+    "B_antes.json": "b2af34b54f4de2ecaca342a2c93cae047608c067322d0fceae07baba490ce696",
+    "B_final.json": "f04bd5d1f014a391751cbfa6e231a7f36f4119b7fb1fa3fe1ef33c03c3b7a44f"
+  },
+  "reviewers": [
+    "IA-pragmatica-A",
+    "IA-memoria-B"
+  ],
+  "cases": 100,
+  "initial_joint_agreement": {
+    "agree": 100,
+    "n": 100,
+    "fields": [
+      "information_sufficient",
+      "decisive_slot",
+      "need_future"
+    ]
+  },
+  "agreement": {
+    "information_sufficient": {
+      "agree": 100,
+      "n": 100,
+      "kappa": 1.0
+    },
+    "need_future": {
+      "agree": 100,
+      "n": 100,
+      "kappa": 1.0
+    },
+    "decisive_slot": {
+      "agree": 100,
+      "n": 100,
+      "kappa": 1.0
+    },
+    "admissible_answers": {
+      "agree": 100,
+      "n": 100,
+      "kappa": 1.0
+    },
+    "writable_scope": {
+      "agree": 100,
+      "n": 100,
+      "kappa": 1.0
+    },
+    "both_plausible": {
+      "agree": 33,
+      "n": 33,
+      "kappa": null
+    }
+  },
+  "differences": {},
+  "matches_synthetic_key_out_of_100": {
+    "IA-pragmatica-A": {
+      "information_sufficient": 100,
+      "need_future": 100,
+      "decisive_slot": 100,
+      "admissible_answers": 100,
+      "writable_scope": 100
+    },
+    "IA-memoria-B": {
+      "information_sufficient": 100,
+      "need_future": 100,
+      "decisive_slot": 100,
+      "admissible_answers": 100,
+      "writable_scope": 100
+    }
+  }
+}

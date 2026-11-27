@@ -16,14 +16,19 @@ El coordinador debe entregar solo la carpeta `reviewer_a` o `reviewer_b` a cada 
 
 ## Para quien coordina
 
-Verifica que el banco sigue congelado y ejecuta la conciliación con las respuestas originales recibidas.
+Desde la raíz, exporta los dos paquetes ciegos. El comando comprueba las huellas del banco v1 y de los materiales distribuidos contra el manifiesto congelado. Cada ZIP contiene los tres archivos de un único revisor. Entrega un ZIP por persona por separado. Para mantener la revisión ciega, entrega los ZIP directamente, ya que el repositorio también contiene la clave sintética del coordinador.
 
 ```bash
-python -m research.tesis_bank verify --bank research/data/tesis_bank_v1
-python -m research.tesis_bank review \
-  --bank research/data/tesis_bank_v1 \
-  --review-a valoraciones_a.json --review-b valoraciones_b.json \
-  --output reports/revision_humana_tesis_primera.json
+python -m research.review_packets export --output outputs/revision-humana
+```
+
+Al recibir las dos valoraciones humanas originales, guárdalas en esa carpeta y ejecuta la conciliación. Los archivos de trabajo quedan fuera del control de versiones.
+
+```bash
+python -m research.review_packets reconcile-human \
+  --review-a outputs/revision-humana/valoraciones_a.json \
+  --review-b outputs/revision-humana/valoraciones_b.json \
+  --output outputs/revision-humana/primera.json
 ```
 
 El informe conserva los hashes de ambos archivos, los denominadores, el acuerdo entre personas y los identificadores con diferencias respecto a la construcción sintética. Al adjudicar, lee también las justificaciones sobre el alcance posterior a cada réplica. El informe automático compara el alcance estructurado anterior a preguntar. Los identificadores de revisor sirven para distinguir archivos. La independencia de las personas y la autoría de las valoraciones las verifica el coordinador.

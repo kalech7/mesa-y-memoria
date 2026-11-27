@@ -157,12 +157,12 @@ def fixture_bank(tmp_path):
 
 def test_varied_bank_refuses_test_and_unfrozen_labels(tmp_path):
     episodes, bank, _ = fixture_bank(tmp_path)
-    assert len(load_bank(bank, expected_roots=2)[0]) == 2
+    assert len(load_bank(bank, expected_roots=2, historical_splits={})[0]) == 2
     episodes[0]["split"] = "test_id"
     bank.write_text("\n".join(canonical(e) for e in episodes))
     write_json(bank.with_name("manifest.json"), {"data_role": "prospective_development_only", "bank_sha256": file_hash(bank)})
     with pytest.raises(ValueError, match="non-development"):
-        load_bank(bank, expected_roots=2)
+        load_bank(bank, expected_roots=2, historical_splits={})
 
 
 def test_preflight_preserves_roles_and_plans_I1_question_context(tmp_path):
@@ -197,6 +197,7 @@ def test_means_respect_world_and_realization_hierarchy():
 
 def test_prepare_and_execute_injected_fixture_preserves_physical_alias_states(tmp_path, monkeypatch):
     episodes, bank, prompts = fixture_bank(tmp_path)
+    monkeypatch.setattr("research.varied_evaluation.historical_banks", lambda: ({}, {}))
     labels = [{"method": m, "training_seed": 101, "checkpoint_path": "fake_" + m, "selected_step": 0}
               for m in ("B1", "B3", "B2-I", "B2-L")]
     classes = [{"fingerprint": "effective_same", "representative": labels[0], "labels": labels}]

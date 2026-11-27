@@ -8,14 +8,14 @@ from research.src.env.user_simulator import QUESTIONS
 from .chat_history import memory_match, recommendation_memory
 from .food_recipes import folded, preparation, preparation_request, recipe_dish
 from .profiles_chat import MAX_MESSAGE, ProfilesChats, citations, confirmed_write, context_value, iso_date
-from .profiles_evidence import query_attribute, query_context, query_date
+from .profiles_evidence import chat_question, query_attribute, query_context, query_date
 from .profiles_runtime import ProfilesError
 from .recommendations import DISHES, EXCLUSION, meal_request, preference_ingredients
 
 
 STORAGE = Path(__file__).resolve().parents[1] / "outputs/final_food_chats"
 ARMS = ("SFT-ramas", "GRPO-continuacion")
-RECALL = re.compile(r"\b(?:recuerd\w*|acuerdas|guardad\w*|habitual\w*|suel[eo]|prefiero|preferencias?)\b", re.I)
+RECALL = re.compile(r"\b(?:recu[eé]rd\w*|recordarme|acuerdas|guardad\w*|habitual\w*|suel[eo]|prefiero|preferencias?)\b", re.I)
 ALTERNATIVE = re.compile(r"\b(?:otr[ao]\s+(?:opci[oó]n|alternativa|idea|plato|cena|bebida|desayuno)|"
                          r"algo\s+(?:diferente|distinto))\b", re.I)
 DO_NOT_STORE = re.compile(r"\bno\s+(?:quiero\s+que\s+)?(?:(?:te|l[oa])\s+)?"
@@ -71,7 +71,8 @@ class FinalFoodChats(ProfilesChats):
         text = text.strip()
         when = iso_date(body.get("date", state["date"]))
         context = context_value(body.get("context", state["context"]))
-        query_text = text.rsplit("¿", 1)[-1]
+        question = chat_question(text)
+        query_text = question or text
         attribute = self.topic(query_text, state["attribute"])
         pending = state["pending"] is not None
         number = f"{state['visit']}_{state['revision'] + 1}"
@@ -82,7 +83,7 @@ class FinalFoodChats(ProfilesChats):
                                 if message.get("recommendation", {}).get("chosen")), None)
         if previous and previous.get("requested_food"):
             turn["answers_food_exclusion"] = True
-        is_question = "¿" in text or "?" in text
+        is_question = question is not None
         recall = is_question and RECALL.search(query_text)
         # Recipe questions can fall between a suggestion and "otra opción".
         # Keep them in the real chat but outside the meal-specific constraints.

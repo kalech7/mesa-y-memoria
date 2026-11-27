@@ -1,0 +1,1315 @@
+[
+  {
+    "audit_id": "caso-9ea42f5ff0b41f",
+    "reviewer_id": "IA-memoria-B",
+    "information_sufficient": true,
+    "need_future": false,
+    "decisive_slot": null,
+    "admissible_answers": [
+      "huevos con espinaca"
+    ],
+    "writable_scope": "interval",
+    "both_plausible": null,
+    "rationale": "La fecha de la consulta (2034-06-12) cae dentro del período expresamente anunciado «hasta el 2034-06-13 inclusive». Guardo huevos con espinaca como excepción con ese límite y pan de yuca como elección a recuperar desde el día siguiente."
+  },
+  {
+    "audit_id": "caso-10fe297dd29bf4",
+    "reviewer_id": "IA-memoria-B",
+    "information_sufficient": true,
+    "need_future": true,
+    "decisive_slot": "TEMPORAL_SCOPE",
+    "admissible_answers": [
+      "tortilla de verde"
+    ],
+    "writable_scope": "none",
+    "both_plausible": null,
+    "rationale": "«Pensándolo bien, tengo otra idea. Para el desayuno, prefiero tortilla de verde.» resuelve el pedido del 2034-07-22 con tortilla de verde. «Otra idea» tampoco fija cuándo caduca. Conservaría la cita como episodio y preguntaría por su duración antes de modificar la preferencia confirmada de maduros asados."
+  },
+  {
+    "audit_id": "caso-4eb4386c5bcf39",
+    "reviewer_id": "IA-memoria-B",
+    "information_sufficient": true,
+    "need_future": true,
+    "decisive_slot": "TEMPORAL_SCOPE",
+    "admissible_answers": [
+      "locro de papa"
+    ],
+    "writable_scope": "none",
+    "both_plausible": null,
+    "rationale": "«Pensándolo bien, tengo otra idea. En cuanto a la cena, prefiero locro de papa.» resuelve el pedido del 2034-06-04 con locro de papa. «Otra idea» tampoco fija cuándo caduca. Conservaría la cita como episodio y preguntaría por su duración antes de modificar la preferencia confirmada de choclo con queso."
+  },
+  {
+    "audit_id": "caso-a029da8edf1f8d",
+    "reviewer_id": "IA-memoria-B",
+    "information_sufficient": true,
+    "need_future": true,
+    "decisive_slot": "TEMPORAL_SCOPE",
+    "admissible_answers": [
+      "menestra de fréjol"
+    ],
+    "writable_scope": "none",
+    "both_plausible": null,
+    "rationale": "«Pensándolo bien, tengo otra idea. Para la cena, prefiero menestra de fréjol.» resuelve el pedido del 2034-06-04 con menestra de fréjol. «Otra idea» tampoco fija cuándo caduca. Conservaría la cita como episodio y preguntaría por su duración antes de modificar la preferencia confirmada de estofado de garbanzos."
+  },
+  {
+    "audit_id": "caso-e251e7274de6a9",
+    "reviewer_id": "IA-memoria-B",
+    "information_sufficient": true,
+    "need_future": false,
+    "decisive_slot": null,
+    "admissible_answers": [
+      "batido de naranjilla"
+    ],
+    "writable_scope": "interval",
+    "both_plausible": null,
+    "rationale": "La fecha de la consulta (2034-06-14) cae dentro del período expresamente anunciado «hasta el 2034-06-16 inclusive». Guardo batido de naranjilla como excepción con ese límite y café pasado como elección a recuperar desde el día siguiente."
+  },
+  {
+    "audit_id": "caso-1ac3c5e27c950a",
+    "reviewer_id": "IA-memoria-B",
+    "information_sufficient": true,
+    "need_future": false,
+    "decisive_slot": null,
+    "admissible_answers": [
+      "agua de coco"
+    ],
+    "writable_scope": "none",
+    "both_plausible": null,
+    "rationale": "El 2034-06-19, «conservar la elección general» remite a agua de coco, ya confirmado en la memoria. La excepción de batido de naranjilla venció al comenzar el 2034-06-19. Uso ese valor sin añadir una nueva preferencia."
+  },
+  {
+    "audit_id": "caso-5058083863f6cf",
+    "reviewer_id": "IA-memoria-B",
+    "information_sufficient": true,
+    "need_future": false,
+    "decisive_slot": null,
+    "admissible_answers": [
+      "tacos de hongos"
+    ],
+    "writable_scope": "interval",
+    "both_plausible": null,
+    "rationale": "La fecha de la consulta (2034-04-18) cae dentro del período expresamente anunciado «hasta el 2034-04-21 inclusive». Guardo tacos de hongos como excepción con ese límite y choclo con queso como elección a recuperar desde el día siguiente."
+  },
+  {
+    "audit_id": "caso-5877732b679c80",
+    "reviewer_id": "IA-memoria-B",
+    "information_sufficient": true,
+    "need_future": false,
+    "decisive_slot": null,
+    "admissible_answers": [
+      "pescado al horno"
+    ],
+    "writable_scope": "none",
+    "both_plausible": null,
+    "rationale": "El 2034-04-06, «conservar la elección general» remite a pescado al horno, ya confirmado en la memoria. Uso ese valor sin añadir una nueva preferencia."
+  },
+  {
+    "audit_id": "caso-e421e349e220ce",
+    "reviewer_id": "IA-memoria-B",
+    "information_sufficient": true,
+    "need_future": false,
+    "decisive_slot": null,
+    "admissible_answers": [
+      "tacos de hongos"
+    ],
+    "writable_scope": "interval",
+    "both_plausible": null,
+    "rationale": "La fecha de la consulta (2034-05-26) cae dentro del período expresamente anunciado «hasta el 2034-05-27 inclusive». Guardo tacos de hongos como excepción con ese límite y pescado al horno como elección a recuperar desde el día siguiente."
+  },
+  {
+    "audit_id": "caso-cdf84a88943dfa",
+    "reviewer_id": "IA-memoria-B",
+    "information_sufficient": true,
+    "need_future": true,
+    "decisive_slot": "TEMPORAL_SCOPE",
+    "admissible_answers": [
+      "jugo de tomate de árbol"
+    ],
+    "writable_scope": "none",
+    "both_plausible": null,
+    "rationale": "«Pensándolo bien, tengo otra idea. En cuanto a la bebida, prefiero jugo de tomate de árbol.» resuelve el pedido del 2034-07-07 con jugo de tomate de árbol. «Otra idea» tampoco fija cuándo caduca. Conservaría la cita como episodio y preguntaría por su duración antes de modificar la preferencia confirmada de limonada con hierbabuena."
+  },
+  {
+    "audit_id": "caso-a9ae2f6eaf17fb",
+    "reviewer_id": "IA-memoria-B",
+    "information_sufficient": true,
+    "need_future": true,
+    "decisive_slot": "TEMPORAL_SCOPE",
+    "admissible_answers": [
+      "avena con canela"
+    ],
+    "writable_scope": "none",
+    "both_plausible": null,
+    "rationale": "«Pensándolo bien, tengo otra idea. Para el desayuno, prefiero avena con canela.» resuelve el pedido del 2034-04-30 con avena con canela. «Otra idea» tampoco fija cuándo caduca. Conservaría la cita como episodio y preguntaría por su duración antes de modificar la preferencia confirmada de cachapa con queso."
+  },
+  {
+    "audit_id": "caso-c2973b4b4ba5dc",
+    "reviewer_id": "IA-memoria-B",
+    "information_sufficient": true,
+    "need_future": false,
+    "decisive_slot": null,
+    "admissible_answers": [
+      "pan de yuca"
+    ],
+    "writable_scope": "none",
+    "both_plausible": null,
+    "rationale": "El 2034-04-09, «conservar la elección general» remite a pan de yuca, ya confirmado en la memoria. Uso ese valor sin añadir una nueva preferencia."
+  },
+  {
+    "audit_id": "caso-525c7580ed031b",
+    "reviewer_id": "IA-memoria-B",
+    "information_sufficient": true,
+    "need_future": false,
+    "decisive_slot": null,
+    "admissible_answers": [
+      "jugo de guayaba"
+    ],
+    "writable_scope": "none",
+    "both_plausible": null,
+    "rationale": "El 2034-06-10, «conservar la elección general» remite a jugo de guayaba, ya confirmado en la memoria. Uso ese valor sin añadir una nueva preferencia."
+  },
+  {
+    "audit_id": "caso-a3f7058b73d5f8",
+    "reviewer_id": "IA-memoria-B",
+    "information_sufficient": true,
+    "need_future": false,
+    "decisive_slot": null,
+    "admissible_answers": [
+      "horchata lojana"
+    ],
+    "writable_scope": "none",
+    "both_plausible": null,
+    "rationale": "«Hoy en casa; cancelaron la reunión.» sitúa el pedido del 2034-07-18 en casa. La memoria asigna batido de naranjilla a la oficina y horchata lojana como opción general. Corresponde horchata lojana; el lugar de hoy por sí solo no cambia ninguna de las preferencias."
+  },
+  {
+    "audit_id": "caso-2b2c4558970fec",
+    "reviewer_id": "IA-memoria-B",
+    "information_sufficient": true,
+    "need_future": false,
+    "decisive_slot": null,
+    "admissible_answers": [
+      "agua mineral"
+    ],
+    "writable_scope": "none",
+    "both_plausible": null,
+    "rationale": "«Al final estoy en casa.» sitúa el pedido del 2034-06-29 en casa. La memoria asigna agua de coco a la oficina y agua mineral como opción general. Corresponde agua mineral; el lugar de hoy por sí solo no cambia ninguna de las preferencias."
+  },
+  {
+    "audit_id": "caso-124a3a5efd6f2a",
+    "reviewer_id": "IA-memoria-B",
+    "information_sufficient": true,
+    "need_future": false,
+    "decisive_slot": null,
+    "admissible_answers": [
+      "maduros asados"
+    ],
+    "writable_scope": "ongoing",
+    "both_plausible": null,
+    "rationale": "«Cambió mi elección de siempre. Para el desayuno, prefiero maduros asados de forma habitual.» sustituye la elección habitual de cachapa con queso por maduros asados. «De forma habitual» respalda usarla el 2034-07-15 y conservarla para la próxima consulta."
+  },
+  {
+    "audit_id": "caso-119a62711ea450",
+    "reviewer_id": "IA-memoria-B",
+    "information_sufficient": true,
+    "need_future": false,
+    "decisive_slot": null,
+    "admissible_answers": [
+      "avena con canela"
+    ],
+    "writable_scope": "none",
+    "both_plausible": null,
+    "rationale": "El 2034-05-21, «conservar la elección general» remite a avena con canela, ya confirmado en la memoria. La excepción de tostadas con tomate venció al comenzar el 2034-05-21. Uso ese valor sin añadir una nueva preferencia."
+  },
+  {
+    "audit_id": "caso-fd95397c4c3dd0",
+    "reviewer_id": "IA-memoria-B",
+    "information_sufficient": true,
+    "need_future": true,
+    "decisive_slot": "TEMPORAL_SCOPE",
+    "admissible_answers": [
+      "estofado de garbanzos"
+    ],
+    "writable_scope": "none",
+    "both_plausible": null,
+    "rationale": "«Pensándolo bien, tengo otra idea. En cuanto a la cena, prefiero estofado de garbanzos.» resuelve el pedido del 2034-06-29 con estofado de garbanzos. «Otra idea» tampoco fija cuándo caduca. Conservaría la cita como episodio y preguntaría por su duración antes de modificar la preferencia confirmada de arroz con lentejas."
+  },
+  {
+    "audit_id": "caso-af88fdcd3b2fd2",
+    "reviewer_id": "IA-memoria-B",
+    "information_sufficient": true,
+    "need_future": false,
+    "decisive_slot": null,
+    "admissible_answers": [
+      "pescado al horno"
+    ],
+    "writable_scope": "none",
+    "both_plausible": null,
+    "rationale": "El 2034-05-02, «conservar la elección general» remite a pescado al horno, ya confirmado en la memoria. La excepción de sopa de zapallo venció al comenzar el 2034-05-02. Uso ese valor sin añadir una nueva preferencia."
+  },
+  {
+    "audit_id": "caso-f2568bbb0cf129",
+    "reviewer_id": "IA-memoria-B",
+    "information_sufficient": true,
+    "need_future": false,
+    "decisive_slot": null,
+    "admissible_answers": [
+      "tortilla de yuca"
+    ],
+    "writable_scope": "interval",
+    "both_plausible": null,
+    "rationale": "La fecha de la consulta (2034-06-25) cae dentro del período expresamente anunciado «hasta el 2034-06-26 inclusive». Guardo tortilla de yuca como excepción con ese límite y menestra de fréjol como elección a recuperar desde el día siguiente."
+  },
+  {
+    "audit_id": "caso-3b41520dd6319b",
+    "reviewer_id": "IA-memoria-B",
+    "information_sufficient": true,
+    "need_future": false,
+    "decisive_slot": null,
+    "admissible_answers": [
+      "pan de yuca"
+    ],
+    "writable_scope": "ongoing",
+    "both_plausible": null,
+    "rationale": "«Cambió mi elección de siempre. Para el desayuno, prefiero pan de yuca de forma habitual.» sustituye la elección habitual de tamal de maíz por pan de yuca. «De forma habitual» respalda usarla el 2034-04-04 y conservarla para la próxima consulta."
+  },
+  {
+    "audit_id": "caso-0bd32fba153805",
+    "reviewer_id": "IA-memoria-B",
+    "information_sufficient": true,
+    "need_future": false,
+    "decisive_slot": null,
+    "admissible_answers": [
+      "agua mineral"
+    ],
+    "writable_scope": "interval",
+    "both_plausible": null,
+    "rationale": "La fecha de la consulta (2034-06-27) cae dentro del período expresamente anunciado «hasta el 2034-06-28 inclusive». Guardo agua mineral como excepción con ese límite y agua de coco como elección a recuperar desde el día siguiente."
+  },
+  {
+    "audit_id": "caso-7af021d8ebf169",
+    "reviewer_id": "IA-memoria-B",
+    "information_sufficient": true,
+    "need_future": false,
+    "decisive_slot": null,
+    "admissible_answers": [
+      "agua de cedrón"
+    ],
+    "writable_scope": "ongoing",
+    "both_plausible": null,
+    "rationale": "«Cambió mi elección de siempre. Para la bebida, prefiero agua de cedrón de forma habitual.» sustituye la elección habitual de batido de naranjilla por agua de cedrón. «De forma habitual» respalda usarla el 2034-04-15 y conservarla para la próxima consulta."
+  },
+  {
+    "audit_id": "caso-92c69c0f881014",
+    "reviewer_id": "IA-memoria-B",
+    "information_sufficient": true,
+    "need_future": false,
+    "decisive_slot": null,
+    "admissible_answers": [
+      "agua de coco"
+    ],
+    "writable_scope": "interval",
+    "both_plausible": null,
+    "rationale": "La fecha de la consulta (2034-07-09) cae dentro del período expresamente anunciado «hasta el 2034-07-12 inclusive». Guardo agua de coco como excepción con ese límite y agua de cedrón como elección a recuperar desde el día siguiente."
+  },
+  {
+    "audit_id": "caso-7dbf2d2e228a3e",
+    "reviewer_id": "IA-memoria-B",
+    "information_sufficient": true,
+    "need_future": true,
+    "decisive_slot": "TEMPORAL_SCOPE",
+    "admissible_answers": [
+      "tacos de hongos"
+    ],
+    "writable_scope": "none",
+    "both_plausible": null,
+    "rationale": "«Pensándolo bien, tengo otra idea. Para la cena, prefiero tacos de hongos.» resuelve el pedido del 2034-04-17 con tacos de hongos. «Otra idea» tampoco fija cuándo caduca. Conservaría la cita como episodio y preguntaría por su duración antes de modificar la preferencia confirmada de mote con queso."
+  },
+  {
+    "audit_id": "caso-fb38257f443a12",
+    "reviewer_id": "IA-memoria-B",
+    "information_sufficient": true,
+    "need_future": false,
+    "decisive_slot": null,
+    "admissible_answers": [
+      "humita de choclo"
+    ],
+    "writable_scope": "interval",
+    "both_plausible": null,
+    "rationale": "La fecha de la consulta (2034-05-25) cae dentro del período expresamente anunciado «hasta el 2034-05-28 inclusive». Guardo humita de choclo como excepción con ese límite y pan de yuca como elección a recuperar desde el día siguiente."
+  },
+  {
+    "audit_id": "caso-4cf3ad33616fa4",
+    "reviewer_id": "IA-memoria-B",
+    "information_sufficient": false,
+    "need_future": false,
+    "decisive_slot": "CURRENT_CONTEXT",
+    "admissible_answers": [
+      "tacos de hongos",
+      "pescado al horno"
+    ],
+    "writable_scope": "none",
+    "both_plausible": null,
+    "rationale": "«Entre el trabajo y la casa tengo opciones diferentes; todavía falta definir el lugar.» deja abierta la ubicación del 2034-04-29. La memoria respalda pescado al horno en la oficina y tacos de hongos en casa. Preguntaría el lugar para esta comida. Ambas preferencias ya constan y siguen vigentes."
+  },
+  {
+    "audit_id": "caso-d90869c4658e52",
+    "reviewer_id": "IA-memoria-B",
+    "information_sufficient": true,
+    "need_future": true,
+    "decisive_slot": "TEMPORAL_SCOPE",
+    "admissible_answers": [
+      "infusión de menta"
+    ],
+    "writable_scope": "none",
+    "both_plausible": null,
+    "rationale": "«Pensándolo bien, tengo otra idea. Para la bebida, prefiero infusión de menta.» resuelve el pedido del 2034-06-27 con infusión de menta. «Otra idea» tampoco fija cuándo caduca. Conservaría la cita como episodio y preguntaría por su duración antes de modificar la preferencia confirmada de jugo de guayaba."
+  },
+  {
+    "audit_id": "caso-169a707eb327d5",
+    "reviewer_id": "IA-memoria-B",
+    "information_sufficient": true,
+    "need_future": false,
+    "decisive_slot": null,
+    "admissible_answers": [
+      "agua de cedrón"
+    ],
+    "writable_scope": "interval",
+    "both_plausible": null,
+    "rationale": "La fecha de la consulta (2034-05-15) cae dentro del período expresamente anunciado «hasta el 2034-05-17 inclusive». Guardo agua de cedrón como excepción con ese límite y horchata lojana como elección a recuperar desde el día siguiente."
+  },
+  {
+    "audit_id": "caso-5340a3e8d986b6",
+    "reviewer_id": "IA-memoria-B",
+    "information_sufficient": true,
+    "need_future": false,
+    "decisive_slot": null,
+    "admissible_answers": [
+      "maduros asados"
+    ],
+    "writable_scope": "none",
+    "both_plausible": null,
+    "rationale": "El 2034-05-26, «conservar la elección general» remite a maduros asados, ya confirmado en la memoria. Uso ese valor sin añadir una nueva preferencia."
+  },
+  {
+    "audit_id": "caso-ce2ebbf5ce6bc8",
+    "reviewer_id": "IA-memoria-B",
+    "information_sufficient": true,
+    "need_future": false,
+    "decisive_slot": null,
+    "admissible_answers": [
+      "té de jazmín"
+    ],
+    "writable_scope": "ongoing",
+    "both_plausible": null,
+    "rationale": "«Cambió mi elección de siempre. En cuanto a la bebida, prefiero té de jazmín de forma habitual.» sustituye la elección habitual de horchata lojana por té de jazmín. «De forma habitual» respalda usarla el 2034-05-21 y conservarla para la próxima consulta."
+  },
+  {
+    "audit_id": "caso-abf563431e75e9",
+    "reviewer_id": "IA-memoria-B",
+    "information_sufficient": true,
+    "need_future": false,
+    "decisive_slot": null,
+    "admissible_answers": [
+      "limonada con hierbabuena"
+    ],
+    "writable_scope": "none",
+    "both_plausible": null,
+    "rationale": "«Hoy estoy en la oficina, junto a la sala grande.» sitúa el pedido del 2034-06-06 en oficina. La memoria asigna limonada con hierbabuena a la oficina y agua de coco como opción general. Corresponde limonada con hierbabuena; el lugar de hoy por sí solo no cambia ninguna de las preferencias."
+  },
+  {
+    "audit_id": "caso-7614cfa68a2d5a",
+    "reviewer_id": "IA-memoria-B",
+    "information_sufficient": true,
+    "need_future": false,
+    "decisive_slot": null,
+    "admissible_answers": [
+      "agua de cedrón"
+    ],
+    "writable_scope": "none",
+    "both_plausible": null,
+    "rationale": "El 2034-07-21, «conservar la elección general» remite a agua de cedrón, ya confirmado en la memoria. Uso ese valor sin añadir una nueva preferencia."
+  },
+  {
+    "audit_id": "caso-c363c4c54cf3a7",
+    "reviewer_id": "IA-memoria-B",
+    "information_sufficient": true,
+    "need_future": false,
+    "decisive_slot": null,
+    "admissible_answers": [
+      "jugo de maracuyá"
+    ],
+    "writable_scope": "ongoing",
+    "both_plausible": null,
+    "rationale": "«Cambió mi elección de siempre. Para la bebida, prefiero jugo de maracuyá de forma habitual.» sustituye la elección habitual de agua mineral por jugo de maracuyá. «De forma habitual» respalda usarla el 2034-06-16 y conservarla para la próxima consulta."
+  },
+  {
+    "audit_id": "caso-267a593f7894c5",
+    "reviewer_id": "IA-memoria-B",
+    "information_sufficient": true,
+    "need_future": false,
+    "decisive_slot": null,
+    "admissible_answers": [
+      "cachapa con queso"
+    ],
+    "writable_scope": "none",
+    "both_plausible": null,
+    "rationale": "El 2034-05-17, «conservar la elección general» remite a cachapa con queso, ya confirmado en la memoria. Uso ese valor sin añadir una nueva preferencia."
+  },
+  {
+    "audit_id": "caso-96b4837a19ded9",
+    "reviewer_id": "IA-memoria-B",
+    "information_sufficient": true,
+    "need_future": false,
+    "decisive_slot": null,
+    "admissible_answers": [
+      "jugo de tomate de árbol"
+    ],
+    "writable_scope": "interval",
+    "both_plausible": null,
+    "rationale": "La fecha de la consulta (2034-05-31) cae dentro del período expresamente anunciado «hasta el 2034-06-03 inclusive». Guardo jugo de tomate de árbol como excepción con ese límite y café pasado como elección a recuperar desde el día siguiente."
+  },
+  {
+    "audit_id": "caso-24a2491a733036",
+    "reviewer_id": "IA-memoria-B",
+    "information_sufficient": true,
+    "need_future": true,
+    "decisive_slot": "TEMPORAL_SCOPE",
+    "admissible_answers": [
+      "limonada con hierbabuena"
+    ],
+    "writable_scope": "none",
+    "both_plausible": null,
+    "rationale": "«Pensándolo bien, tengo otra idea. En cuanto a la bebida, prefiero limonada con hierbabuena.» resuelve el pedido del 2034-04-23 con limonada con hierbabuena. «Otra idea» tampoco fija cuándo caduca. Conservaría la cita como episodio y preguntaría por su duración antes de modificar la preferencia confirmada de agua de cedrón."
+  },
+  {
+    "audit_id": "caso-a1aa717f12eb9e",
+    "reviewer_id": "IA-memoria-B",
+    "information_sufficient": true,
+    "need_future": false,
+    "decisive_slot": null,
+    "admissible_answers": [
+      "arroz con lentejas"
+    ],
+    "writable_scope": "ongoing",
+    "both_plausible": null,
+    "rationale": "«Cambió mi elección de siempre. Para la cena, prefiero arroz con lentejas de forma habitual.» sustituye la elección habitual de tacos de hongos por arroz con lentejas. «De forma habitual» respalda usarla el 2034-07-11 y conservarla para la próxima consulta."
+  },
+  {
+    "audit_id": "caso-3b62333f3175b2",
+    "reviewer_id": "IA-memoria-B",
+    "information_sufficient": true,
+    "need_future": true,
+    "decisive_slot": "TEMPORAL_SCOPE",
+    "admissible_answers": [
+      "pescado al horno"
+    ],
+    "writable_scope": "none",
+    "both_plausible": null,
+    "rationale": "«Pensándolo bien, tengo otra idea. En cuanto a la cena, prefiero pescado al horno.» resuelve el pedido del 2034-06-27 con pescado al horno. «Otra idea» tampoco fija cuándo caduca. Conservaría la cita como episodio y preguntaría por su duración antes de modificar la preferencia confirmada de menestra de fréjol."
+  },
+  {
+    "audit_id": "caso-a922fd728b18ed",
+    "reviewer_id": "IA-memoria-B",
+    "information_sufficient": true,
+    "need_future": true,
+    "decisive_slot": "TEMPORAL_SCOPE",
+    "admissible_answers": [
+      "agua mineral"
+    ],
+    "writable_scope": "none",
+    "both_plausible": null,
+    "rationale": "«Pensándolo bien, tengo otra idea. En cuanto a la bebida, prefiero agua mineral.» resuelve el pedido del 2034-05-17 con agua mineral. «Otra idea» tampoco fija cuándo caduca. Conservaría la cita como episodio y preguntaría por su duración antes de modificar la preferencia confirmada de agua de coco."
+  },
+  {
+    "audit_id": "caso-d6fae286a7d913",
+    "reviewer_id": "IA-memoria-B",
+    "information_sufficient": false,
+    "need_future": false,
+    "decisive_slot": "CURRENT_CONTEXT",
+    "admissible_answers": [
+      "sopa de zapallo",
+      "tacos de hongos"
+    ],
+    "writable_scope": "none",
+    "both_plausible": null,
+    "rationale": "«La elección cambia según el lugar. Lo del sitio todavía no te lo he dicho.» deja abierta la ubicación del 2034-06-04. La memoria respalda tacos de hongos en la oficina y sopa de zapallo en casa. Preguntaría el lugar para esta comida. Ambas preferencias ya constan y siguen vigentes."
+  },
+  {
+    "audit_id": "caso-2ebf0eae3457e8",
+    "reviewer_id": "IA-memoria-B",
+    "information_sufficient": false,
+    "need_future": false,
+    "decisive_slot": "CURRENT_CONTEXT",
+    "admissible_answers": [
+      "avena con canela",
+      "tortilla de verde"
+    ],
+    "writable_scope": "none",
+    "both_plausible": null,
+    "rationale": "«Entre el trabajo y la casa tengo opciones diferentes; todavía falta definir el lugar.» deja abierta la ubicación del 2034-06-09. La memoria respalda tortilla de verde en la oficina y avena con canela en casa. Preguntaría el lugar para esta comida. Ambas preferencias ya constan y siguen vigentes."
+  },
+  {
+    "audit_id": "caso-d963310c2bbc8c",
+    "reviewer_id": "IA-memoria-B",
+    "information_sufficient": false,
+    "need_future": false,
+    "decisive_slot": "CURRENT_CONTEXT",
+    "admissible_answers": [
+      "tortilla de verde",
+      "huevos con espinaca"
+    ],
+    "writable_scope": "none",
+    "both_plausible": null,
+    "rationale": "«Entre el trabajo y la casa tengo opciones diferentes; todavía falta definir el lugar.» deja abierta la ubicación del 2034-04-14. La memoria respalda huevos con espinaca en la oficina y tortilla de verde en casa. Preguntaría el lugar para esta comida. Ambas preferencias ya constan y siguen vigentes."
+  },
+  {
+    "audit_id": "caso-cc982293e1d58a",
+    "reviewer_id": "IA-memoria-B",
+    "information_sufficient": true,
+    "need_future": false,
+    "decisive_slot": null,
+    "admissible_answers": [
+      "infusión de menta"
+    ],
+    "writable_scope": "none",
+    "both_plausible": null,
+    "rationale": "El 2034-07-20, «conservar la elección general» remite a infusión de menta, ya confirmado en la memoria. La excepción de té de jazmín venció al comenzar el 2034-07-20. Uso ese valor sin añadir una nueva preferencia."
+  },
+  {
+    "audit_id": "caso-c7cdc3519bcdd9",
+    "reviewer_id": "IA-memoria-B",
+    "information_sufficient": false,
+    "need_future": false,
+    "decisive_slot": "CURRENT_CONTEXT",
+    "admissible_answers": [
+      "huevos con espinaca",
+      "pan de yuca"
+    ],
+    "writable_scope": "none",
+    "both_plausible": null,
+    "rationale": "«La elección cambia según el lugar. Lo del sitio todavía no te lo he dicho.» deja abierta la ubicación del 2034-05-02. La memoria respalda pan de yuca en la oficina y huevos con espinaca en casa. Preguntaría el lugar para esta comida. Ambas preferencias ya constan y siguen vigentes."
+  },
+  {
+    "audit_id": "caso-985f0c30919df4",
+    "reviewer_id": "IA-memoria-B",
+    "information_sufficient": true,
+    "need_future": false,
+    "decisive_slot": null,
+    "admissible_answers": [
+      "agua de cedrón"
+    ],
+    "writable_scope": "none",
+    "both_plausible": null,
+    "rationale": "«Al final estoy en casa.» sitúa el pedido del 2034-06-25 en casa. La memoria asigna jugo de maracuyá a la oficina y agua de cedrón como opción general. Corresponde agua de cedrón; el lugar de hoy por sí solo no cambia ninguna de las preferencias."
+  },
+  {
+    "audit_id": "caso-e1c6765e008c71",
+    "reviewer_id": "IA-memoria-B",
+    "information_sufficient": true,
+    "need_future": false,
+    "decisive_slot": null,
+    "admissible_answers": [
+      "infusión de menta"
+    ],
+    "writable_scope": "interval",
+    "both_plausible": null,
+    "rationale": "La fecha de la consulta (2034-05-17) cae dentro del período expresamente anunciado «hasta el 2034-05-18 inclusive». Guardo infusión de menta como excepción con ese límite y jugo de guayaba como elección a recuperar desde el día siguiente."
+  },
+  {
+    "audit_id": "caso-4092b172c6208c",
+    "reviewer_id": "IA-memoria-B",
+    "information_sufficient": true,
+    "need_future": false,
+    "decisive_slot": null,
+    "admissible_answers": [
+      "tostadas con tomate"
+    ],
+    "writable_scope": "interval",
+    "both_plausible": null,
+    "rationale": "La fecha de la consulta (2034-05-31) cae dentro del período expresamente anunciado «hasta el 2034-06-03 inclusive». Guardo tostadas con tomate como excepción con ese límite y cachapa con queso como elección a recuperar desde el día siguiente."
+  },
+  {
+    "audit_id": "caso-2a791c2b71da87",
+    "reviewer_id": "IA-memoria-B",
+    "information_sufficient": true,
+    "need_future": false,
+    "decisive_slot": null,
+    "admissible_answers": [
+      "café pasado"
+    ],
+    "writable_scope": "ongoing",
+    "both_plausible": null,
+    "rationale": "«Cambió mi elección de siempre. En cuanto a la bebida, prefiero café pasado de forma habitual.» sustituye la elección habitual de jugo de tomate de árbol por café pasado. «De forma habitual» respalda usarla el 2034-04-21 y conservarla para la próxima consulta."
+  },
+  {
+    "audit_id": "caso-7b245a1dec135b",
+    "reviewer_id": "IA-memoria-B",
+    "information_sufficient": false,
+    "need_future": false,
+    "decisive_slot": "CURRENT_CONTEXT",
+    "admissible_answers": [
+      "tortilla de yuca",
+      "mote con queso"
+    ],
+    "writable_scope": "none",
+    "both_plausible": null,
+    "rationale": "«Entre el trabajo y la casa tengo opciones diferentes; todavía falta definir el lugar.» deja abierta la ubicación del 2034-06-20. La memoria respalda mote con queso en la oficina y tortilla de yuca en casa. Preguntaría el lugar para esta comida. Ambas preferencias ya constan y siguen vigentes."
+  },
+  {
+    "audit_id": "caso-24cc4f8cfeed2e",
+    "reviewer_id": "IA-memoria-B",
+    "information_sufficient": true,
+    "need_future": false,
+    "decisive_slot": null,
+    "admissible_answers": [
+      "jugo de tomate de árbol"
+    ],
+    "writable_scope": "ongoing",
+    "both_plausible": null,
+    "rationale": "«Cambió mi elección de siempre. Para la bebida, prefiero jugo de tomate de árbol de forma habitual.» sustituye la elección habitual de agua de coco por jugo de tomate de árbol. «De forma habitual» respalda usarla el 2034-04-19 y conservarla para la próxima consulta."
+  },
+  {
+    "audit_id": "caso-b0845a410f2e0d",
+    "reviewer_id": "IA-memoria-B",
+    "information_sufficient": false,
+    "need_future": false,
+    "decisive_slot": "CURRENT_CONTEXT",
+    "admissible_answers": [
+      "avena con canela",
+      "humita de choclo"
+    ],
+    "writable_scope": "none",
+    "both_plausible": null,
+    "rationale": "«Entre el trabajo y la casa tengo opciones diferentes; todavía falta definir el lugar.» deja abierta la ubicación del 2034-04-12. La memoria respalda humita de choclo en la oficina y avena con canela en casa. Preguntaría el lugar para esta comida. Ambas preferencias ya constan y siguen vigentes."
+  },
+  {
+    "audit_id": "caso-82309579f40760",
+    "reviewer_id": "IA-memoria-B",
+    "information_sufficient": true,
+    "need_future": true,
+    "decisive_slot": "TEMPORAL_SCOPE",
+    "admissible_answers": [
+      "agua de cedrón"
+    ],
+    "writable_scope": "none",
+    "both_plausible": null,
+    "rationale": "«Pensándolo bien, tengo otra idea. Para la bebida, prefiero agua de cedrón.» resuelve el pedido del 2034-07-26 con agua de cedrón. «Otra idea» tampoco fija cuándo caduca. Conservaría la cita como episodio y preguntaría por su duración antes de modificar la preferencia confirmada de horchata lojana."
+  },
+  {
+    "audit_id": "caso-a767d3feda4f0b",
+    "reviewer_id": "IA-memoria-B",
+    "information_sufficient": false,
+    "need_future": false,
+    "decisive_slot": "CURRENT_CONTEXT",
+    "admissible_answers": [
+      "sopa de zapallo",
+      "locro de papa"
+    ],
+    "writable_scope": "none",
+    "both_plausible": null,
+    "rationale": "«Entre el trabajo y la casa tengo opciones diferentes; todavía falta definir el lugar.» deja abierta la ubicación del 2034-07-09. La memoria respalda locro de papa en la oficina y sopa de zapallo en casa. Preguntaría el lugar para esta comida. Ambas preferencias ya constan y siguen vigentes."
+  },
+  {
+    "audit_id": "caso-4147f4d8032287",
+    "reviewer_id": "IA-memoria-B",
+    "information_sufficient": true,
+    "need_future": false,
+    "decisive_slot": null,
+    "admissible_answers": [
+      "tostadas con tomate"
+    ],
+    "writable_scope": "none",
+    "both_plausible": null,
+    "rationale": "El 2034-05-25, «conservar la elección general» remite a tostadas con tomate, ya confirmado en la memoria. La excepción de papaya picada venció al comenzar el 2034-05-25. Uso ese valor sin añadir una nueva preferencia."
+  },
+  {
+    "audit_id": "caso-5eccc61b66ee71",
+    "reviewer_id": "IA-memoria-B",
+    "information_sufficient": true,
+    "need_future": false,
+    "decisive_slot": null,
+    "admissible_answers": [
+      "verduras al wok"
+    ],
+    "writable_scope": "interval",
+    "both_plausible": null,
+    "rationale": "La fecha de la consulta (2034-06-10) cae dentro del período expresamente anunciado «hasta el 2034-06-12 inclusive». Guardo verduras al wok como excepción con ese límite y tacos de hongos como elección a recuperar desde el día siguiente."
+  },
+  {
+    "audit_id": "caso-71c3cd587951f0",
+    "reviewer_id": "IA-memoria-B",
+    "information_sufficient": true,
+    "need_future": false,
+    "decisive_slot": null,
+    "admissible_answers": [
+      "tortilla de yuca"
+    ],
+    "writable_scope": "ongoing",
+    "both_plausible": null,
+    "rationale": "«Cambió mi elección de siempre. En cuanto a la cena, prefiero tortilla de yuca de forma habitual.» sustituye la elección habitual de menestra de fréjol por tortilla de yuca. «De forma habitual» respalda usarla el 2034-04-21 y conservarla para la próxima consulta."
+  },
+  {
+    "audit_id": "caso-be4d3c66333170",
+    "reviewer_id": "IA-memoria-B",
+    "information_sufficient": true,
+    "need_future": false,
+    "decisive_slot": null,
+    "admissible_answers": [
+      "menestra de fréjol"
+    ],
+    "writable_scope": "none",
+    "both_plausible": null,
+    "rationale": "El 2034-05-31, «conservar la elección general» remite a menestra de fréjol, ya confirmado en la memoria. La excepción de sopa de zapallo venció al comenzar el 2034-05-31. Uso ese valor sin añadir una nueva preferencia."
+  },
+  {
+    "audit_id": "caso-43dee47c687fff",
+    "reviewer_id": "IA-memoria-B",
+    "information_sufficient": true,
+    "need_future": false,
+    "decisive_slot": null,
+    "admissible_answers": [
+      "cachapa con queso"
+    ],
+    "writable_scope": "ongoing",
+    "both_plausible": null,
+    "rationale": "«Cambió mi elección de siempre. Para el desayuno, prefiero cachapa con queso de forma habitual.» sustituye la elección habitual de pan de centeno por cachapa con queso. «De forma habitual» respalda usarla el 2034-04-28 y conservarla para la próxima consulta."
+  },
+  {
+    "audit_id": "caso-0538e79556d52e",
+    "reviewer_id": "IA-memoria-B",
+    "information_sufficient": true,
+    "need_future": true,
+    "decisive_slot": "TEMPORAL_SCOPE",
+    "admissible_answers": [
+      "verduras al wok"
+    ],
+    "writable_scope": "none",
+    "both_plausible": null,
+    "rationale": "«Pensándolo bien, tengo otra idea. Para la cena, prefiero verduras al wok.» resuelve el pedido del 2034-06-02 con verduras al wok. «Otra idea» tampoco fija cuándo caduca. Conservaría la cita como episodio y preguntaría por su duración antes de modificar la preferencia confirmada de locro de papa."
+  },
+  {
+    "audit_id": "caso-c443553dc34f25",
+    "reviewer_id": "IA-memoria-B",
+    "information_sufficient": true,
+    "need_future": false,
+    "decisive_slot": null,
+    "admissible_answers": [
+      "jugo de tomate de árbol"
+    ],
+    "writable_scope": "none",
+    "both_plausible": null,
+    "rationale": "«Hoy estoy en la oficina, junto a la sala grande.» sitúa el pedido del 2034-07-29 en oficina. La memoria asigna jugo de tomate de árbol a la oficina y jugo de maracuyá como opción general. Corresponde jugo de tomate de árbol; el lugar de hoy por sí solo no cambia ninguna de las preferencias."
+  },
+  {
+    "audit_id": "caso-22da240293269f",
+    "reviewer_id": "IA-memoria-B",
+    "information_sufficient": true,
+    "need_future": true,
+    "decisive_slot": "TEMPORAL_SCOPE",
+    "admissible_answers": [
+      "humita de choclo"
+    ],
+    "writable_scope": "none",
+    "both_plausible": null,
+    "rationale": "«Pensándolo bien, tengo otra idea. Para el desayuno, prefiero humita de choclo.» resuelve el pedido del 2034-06-26 con humita de choclo. «Otra idea» tampoco fija cuándo caduca. Conservaría la cita como episodio y preguntaría por su duración antes de modificar la preferencia confirmada de tamal de maíz."
+  },
+  {
+    "audit_id": "caso-da69fd5768a8d2",
+    "reviewer_id": "IA-memoria-B",
+    "information_sufficient": true,
+    "need_future": false,
+    "decisive_slot": null,
+    "admissible_answers": [
+      "tortilla de yuca"
+    ],
+    "writable_scope": "ongoing",
+    "both_plausible": null,
+    "rationale": "«Cambió mi elección de siempre. Para la cena, prefiero tortilla de yuca de forma habitual.» sustituye la elección habitual de locro de papa por tortilla de yuca. «De forma habitual» respalda usarla el 2034-05-09 y conservarla para la próxima consulta."
+  },
+  {
+    "audit_id": "caso-3b63c25097484a",
+    "reviewer_id": "IA-memoria-B",
+    "information_sufficient": true,
+    "need_future": false,
+    "decisive_slot": null,
+    "admissible_answers": [
+      "huevos con espinaca"
+    ],
+    "writable_scope": "ongoing",
+    "both_plausible": null,
+    "rationale": "«Cambió mi elección de siempre. Para el desayuno, prefiero huevos con espinaca de forma habitual.» sustituye la elección habitual de humita de choclo por huevos con espinaca. «De forma habitual» respalda usarla el 2034-07-23 y conservarla para la próxima consulta."
+  },
+  {
+    "audit_id": "caso-17b6d1dd3fcb68",
+    "reviewer_id": "IA-memoria-B",
+    "information_sufficient": true,
+    "need_future": false,
+    "decisive_slot": null,
+    "admissible_answers": [
+      "estofado de garbanzos"
+    ],
+    "writable_scope": "none",
+    "both_plausible": null,
+    "rationale": "El 2034-07-03, «conservar la elección general» remite a estofado de garbanzos, ya confirmado en la memoria. La excepción de mote con queso venció al comenzar el 2034-07-03. Uso ese valor sin añadir una nueva preferencia."
+  },
+  {
+    "audit_id": "caso-ee3056b3ce2f13",
+    "reviewer_id": "IA-memoria-B",
+    "information_sufficient": true,
+    "need_future": false,
+    "decisive_slot": null,
+    "admissible_answers": [
+      "cachapa con queso"
+    ],
+    "writable_scope": "none",
+    "both_plausible": null,
+    "rationale": "El 2034-07-10, «conservar la elección general» remite a cachapa con queso, ya confirmado en la memoria. La excepción de pan de yuca venció al comenzar el 2034-07-10. Uso ese valor sin añadir una nueva preferencia."
+  },
+  {
+    "audit_id": "caso-67cd6243541e74",
+    "reviewer_id": "IA-memoria-B",
+    "information_sufficient": true,
+    "need_future": false,
+    "decisive_slot": null,
+    "admissible_answers": [
+      "tamal de maíz"
+    ],
+    "writable_scope": "interval",
+    "both_plausible": null,
+    "rationale": "La fecha de la consulta (2034-07-01) cae dentro del período expresamente anunciado «hasta el 2034-07-03 inclusive». Guardo tamal de maíz como excepción con ese límite y pan de centeno como elección a recuperar desde el día siguiente."
+  },
+  {
+    "audit_id": "caso-1732c4e2c9fc8a",
+    "reviewer_id": "IA-memoria-B",
+    "information_sufficient": true,
+    "need_future": false,
+    "decisive_slot": null,
+    "admissible_answers": [
+      "batido de naranjilla"
+    ],
+    "writable_scope": "none",
+    "both_plausible": null,
+    "rationale": "«Para este menú, hoy estoy en la oficina.» sitúa el pedido del 2034-06-05 en oficina. La memoria asigna batido de naranjilla a la oficina y agua de coco como opción general. Corresponde batido de naranjilla; el lugar de hoy por sí solo no cambia ninguna de las preferencias."
+  },
+  {
+    "audit_id": "caso-613d9aee886dde",
+    "reviewer_id": "IA-memoria-B",
+    "information_sufficient": true,
+    "need_future": true,
+    "decisive_slot": "TEMPORAL_SCOPE",
+    "admissible_answers": [
+      "jugo de maracuyá"
+    ],
+    "writable_scope": "none",
+    "both_plausible": null,
+    "rationale": "«Pensándolo bien, tengo otra idea. Para la bebida, prefiero jugo de maracuyá.» resuelve el pedido del 2034-04-17 con jugo de maracuyá. «Otra idea» tampoco fija cuándo caduca. Conservaría la cita como episodio y preguntaría por su duración antes de modificar la preferencia confirmada de limonada con hierbabuena."
+  },
+  {
+    "audit_id": "caso-7cb9c3db0e1857",
+    "reviewer_id": "IA-memoria-B",
+    "information_sufficient": true,
+    "need_future": false,
+    "decisive_slot": null,
+    "admissible_answers": [
+      "tortilla de yuca"
+    ],
+    "writable_scope": "ongoing",
+    "both_plausible": null,
+    "rationale": "«Cambió mi elección de siempre. En cuanto a la cena, prefiero tortilla de yuca de forma habitual.» sustituye la elección habitual de sopa de zapallo por tortilla de yuca. «De forma habitual» respalda usarla el 2034-05-26 y conservarla para la próxima consulta."
+  },
+  {
+    "audit_id": "caso-605b507528f4c2",
+    "reviewer_id": "IA-memoria-B",
+    "information_sufficient": true,
+    "need_future": false,
+    "decisive_slot": null,
+    "admissible_answers": [
+      "tacos de hongos"
+    ],
+    "writable_scope": "none",
+    "both_plausible": null,
+    "rationale": "El 2034-04-08, «conservar la elección general» remite a tacos de hongos, ya confirmado en la memoria. Uso ese valor sin añadir una nueva preferencia."
+  },
+  {
+    "audit_id": "caso-3ecd0093378e12",
+    "reviewer_id": "IA-memoria-B",
+    "information_sufficient": true,
+    "need_future": false,
+    "decisive_slot": null,
+    "admissible_answers": [
+      "verduras al wok"
+    ],
+    "writable_scope": "ongoing",
+    "both_plausible": null,
+    "rationale": "«Cambió mi elección de siempre. Para la cena, prefiero verduras al wok de forma habitual.» sustituye la elección habitual de locro de papa por verduras al wok. «De forma habitual» respalda usarla el 2034-05-08 y conservarla para la próxima consulta."
+  },
+  {
+    "audit_id": "caso-e29bd4ec99e0fb",
+    "reviewer_id": "IA-memoria-B",
+    "information_sufficient": true,
+    "need_future": false,
+    "decisive_slot": null,
+    "admissible_answers": [
+      "estofado de garbanzos"
+    ],
+    "writable_scope": "interval",
+    "both_plausible": null,
+    "rationale": "La fecha de la consulta (2034-05-16) cae dentro del período expresamente anunciado «hasta el 2034-05-17 inclusive». Guardo estofado de garbanzos como excepción con ese límite y tortilla de yuca como elección a recuperar desde el día siguiente."
+  },
+  {
+    "audit_id": "caso-bcf794017c68fe",
+    "reviewer_id": "IA-memoria-B",
+    "information_sufficient": true,
+    "need_future": false,
+    "decisive_slot": null,
+    "admissible_answers": [
+      "jugo de maracuyá"
+    ],
+    "writable_scope": "ongoing",
+    "both_plausible": null,
+    "rationale": "«Cambió mi elección de siempre. Para la bebida, prefiero jugo de maracuyá de forma habitual.» sustituye la elección habitual de té de jazmín por jugo de maracuyá. «De forma habitual» respalda usarla el 2034-07-08 y conservarla para la próxima consulta."
+  },
+  {
+    "audit_id": "caso-d4213cbc8c8df4",
+    "reviewer_id": "IA-memoria-B",
+    "information_sufficient": false,
+    "need_future": false,
+    "decisive_slot": "CURRENT_CONTEXT",
+    "admissible_answers": [
+      "pan de yuca",
+      "maduros asados"
+    ],
+    "writable_scope": "none",
+    "both_plausible": null,
+    "rationale": "«Entre el trabajo y la casa tengo opciones diferentes; todavía falta definir el lugar.» deja abierta la ubicación del 2034-06-09. La memoria respalda maduros asados en la oficina y pan de yuca en casa. Preguntaría el lugar para esta comida. Ambas preferencias ya constan y siguen vigentes."
+  },
+  {
+    "audit_id": "caso-bead71cc1d1ea1",
+    "reviewer_id": "IA-memoria-B",
+    "information_sufficient": true,
+    "need_future": true,
+    "decisive_slot": "TEMPORAL_SCOPE",
+    "admissible_answers": [
+      "pan de yuca"
+    ],
+    "writable_scope": "none",
+    "both_plausible": null,
+    "rationale": "«Pensándolo bien, tengo otra idea. Para el desayuno, prefiero pan de yuca.» resuelve el pedido del 2034-05-23 con pan de yuca. «Otra idea» tampoco fija cuándo caduca. Conservaría la cita como episodio y preguntaría por su duración antes de modificar la preferencia confirmada de avena con canela."
+  },
+  {
+    "audit_id": "caso-da34eade927d6b",
+    "reviewer_id": "IA-memoria-B",
+    "information_sufficient": true,
+    "need_future": false,
+    "decisive_slot": null,
+    "admissible_answers": [
+      "batido de naranjilla"
+    ],
+    "writable_scope": "none",
+    "both_plausible": null,
+    "rationale": "El 2034-04-12, «conservar la elección general» remite a batido de naranjilla, ya confirmado en la memoria. Uso ese valor sin añadir una nueva preferencia."
+  },
+  {
+    "audit_id": "caso-c28aeafe18be9d",
+    "reviewer_id": "IA-memoria-B",
+    "information_sufficient": false,
+    "need_future": false,
+    "decisive_slot": "CURRENT_CONTEXT",
+    "admissible_answers": [
+      "mote con queso",
+      "pescado al horno"
+    ],
+    "writable_scope": "none",
+    "both_plausible": null,
+    "rationale": "«Entre el trabajo y la casa tengo opciones diferentes; todavía falta definir el lugar.» deja abierta la ubicación del 2034-07-19. La memoria respalda pescado al horno en la oficina y mote con queso en casa. Preguntaría el lugar para esta comida. Ambas preferencias ya constan y siguen vigentes."
+  },
+  {
+    "audit_id": "caso-79306ec1008bff",
+    "reviewer_id": "IA-memoria-B",
+    "information_sufficient": true,
+    "need_future": false,
+    "decisive_slot": null,
+    "admissible_answers": [
+      "yogur con mango"
+    ],
+    "writable_scope": "ongoing",
+    "both_plausible": null,
+    "rationale": "«Cambió mi elección de siempre. En cuanto a el desayuno, prefiero yogur con mango de forma habitual.» sustituye la elección habitual de humita de choclo por yogur con mango. «De forma habitual» respalda usarla el 2034-07-16 y conservarla para la próxima consulta."
+  },
+  {
+    "audit_id": "caso-0db3b95f9e5a0b",
+    "reviewer_id": "IA-memoria-B",
+    "information_sufficient": true,
+    "need_future": false,
+    "decisive_slot": null,
+    "admissible_answers": [
+      "batido de naranjilla"
+    ],
+    "writable_scope": "none",
+    "both_plausible": null,
+    "rationale": "El 2034-04-12, «conservar la elección general» remite a batido de naranjilla, ya confirmado en la memoria. La excepción de café pasado venció al comenzar el 2034-04-12. Uso ese valor sin añadir una nueva preferencia."
+  },
+  {
+    "audit_id": "caso-aaf97aa770efdf",
+    "reviewer_id": "IA-memoria-B",
+    "information_sufficient": true,
+    "need_future": false,
+    "decisive_slot": null,
+    "admissible_answers": [
+      "ensalada de quinua"
+    ],
+    "writable_scope": "interval",
+    "both_plausible": null,
+    "rationale": "La fecha de la consulta (2034-05-06) cae dentro del período expresamente anunciado «hasta el 2034-05-08 inclusive». Guardo ensalada de quinua como excepción con ese límite y choclo con queso como elección a recuperar desde el día siguiente."
+  },
+  {
+    "audit_id": "caso-dd14623716599b",
+    "reviewer_id": "IA-memoria-B",
+    "information_sufficient": false,
+    "need_future": false,
+    "decisive_slot": "CURRENT_CONTEXT",
+    "admissible_answers": [
+      "humita de choclo",
+      "papaya picada"
+    ],
+    "writable_scope": "none",
+    "both_plausible": null,
+    "rationale": "«La elección cambia según el lugar. Lo del sitio todavía no te lo he dicho.» deja abierta la ubicación del 2034-04-01. La memoria respalda papaya picada en la oficina y humita de choclo en casa. Preguntaría el lugar para esta comida. Ambas preferencias ya constan y siguen vigentes."
+  },
+  {
+    "audit_id": "caso-f0991ea3955fbd",
+    "reviewer_id": "IA-memoria-B",
+    "information_sufficient": true,
+    "need_future": false,
+    "decisive_slot": null,
+    "admissible_answers": [
+      "locro de papa"
+    ],
+    "writable_scope": "ongoing",
+    "both_plausible": null,
+    "rationale": "«Cambió mi elección de siempre. Para la cena, prefiero locro de papa de forma habitual.» sustituye la elección habitual de menestra de fréjol por locro de papa. «De forma habitual» respalda usarla el 2034-07-25 y conservarla para la próxima consulta."
+  },
+  {
+    "audit_id": "caso-6b986f728b7dd1",
+    "reviewer_id": "IA-memoria-B",
+    "information_sufficient": true,
+    "need_future": false,
+    "decisive_slot": null,
+    "admissible_answers": [
+      "yogur con mango"
+    ],
+    "writable_scope": "interval",
+    "both_plausible": null,
+    "rationale": "La fecha de la consulta (2034-07-01) cae dentro del período expresamente anunciado «hasta el 2034-07-02 inclusive». Guardo yogur con mango como excepción con ese límite y papaya picada como elección a recuperar desde el día siguiente."
+  },
+  {
+    "audit_id": "caso-0374c8ab7467bb",
+    "reviewer_id": "IA-memoria-B",
+    "information_sufficient": true,
+    "need_future": false,
+    "decisive_slot": null,
+    "admissible_answers": [
+      "yogur con mango"
+    ],
+    "writable_scope": "interval",
+    "both_plausible": null,
+    "rationale": "La fecha de la consulta (2034-06-08) cae dentro del período expresamente anunciado «hasta el 2034-06-09 inclusive». Guardo yogur con mango como excepción con ese límite y pan de centeno como elección a recuperar desde el día siguiente."
+  },
+  {
+    "audit_id": "caso-c18a66d04fac3b",
+    "reviewer_id": "IA-memoria-B",
+    "information_sufficient": true,
+    "need_future": false,
+    "decisive_slot": null,
+    "admissible_answers": [
+      "agua de coco"
+    ],
+    "writable_scope": "interval",
+    "both_plausible": null,
+    "rationale": "La fecha de la consulta (2034-07-25) cae dentro del período expresamente anunciado «hasta el 2034-07-27 inclusive». Guardo agua de coco como excepción con ese límite y horchata lojana como elección a recuperar desde el día siguiente."
+  },
+  {
+    "audit_id": "caso-bb36b8b118f68a",
+    "reviewer_id": "IA-memoria-B",
+    "information_sufficient": true,
+    "need_future": false,
+    "decisive_slot": null,
+    "admissible_answers": [
+      "jugo de guayaba"
+    ],
+    "writable_scope": "none",
+    "both_plausible": null,
+    "rationale": "«Hoy en casa; cancelaron la reunión.» sitúa el pedido del 2034-06-06 en casa. La memoria asigna infusión de menta a la oficina y jugo de guayaba como opción general. Corresponde jugo de guayaba; el lugar de hoy por sí solo no cambia ninguna de las preferencias."
+  },
+  {
+    "audit_id": "caso-6a0f2dce810ca0",
+    "reviewer_id": "IA-memoria-B",
+    "information_sufficient": true,
+    "need_future": true,
+    "decisive_slot": "TEMPORAL_SCOPE",
+    "admissible_answers": [
+      "maduros asados"
+    ],
+    "writable_scope": "none",
+    "both_plausible": null,
+    "rationale": "«Pensándolo bien, tengo otra idea. En cuanto a el desayuno, prefiero maduros asados.» resuelve el pedido del 2034-05-24 con maduros asados. «Otra idea» tampoco fija cuándo caduca. Conservaría la cita como episodio y preguntaría por su duración antes de modificar la preferencia confirmada de tortilla de verde."
+  },
+  {
+    "audit_id": "caso-f440ae268be447",
+    "reviewer_id": "IA-memoria-B",
+    "information_sufficient": true,
+    "need_future": false,
+    "decisive_slot": null,
+    "admissible_answers": [
+      "agua mineral"
+    ],
+    "writable_scope": "ongoing",
+    "both_plausible": null,
+    "rationale": "«Cambió mi elección de siempre. En cuanto a la bebida, prefiero agua mineral de forma habitual.» sustituye la elección habitual de agua de coco por agua mineral. «De forma habitual» respalda usarla el 2034-07-05 y conservarla para la próxima consulta."
+  },
+  {
+    "audit_id": "caso-6c4b62b8880fe5",
+    "reviewer_id": "IA-memoria-B",
+    "information_sufficient": false,
+    "need_future": false,
+    "decisive_slot": "CURRENT_CONTEXT",
+    "admissible_answers": [
+      "sopa de zapallo",
+      "pescado al horno"
+    ],
+    "writable_scope": "none",
+    "both_plausible": null,
+    "rationale": "«La elección cambia según el lugar. Lo del sitio todavía no te lo he dicho.» deja abierta la ubicación del 2034-04-04. La memoria respalda pescado al horno en la oficina y sopa de zapallo en casa. Preguntaría el lugar para esta comida. Ambas preferencias ya constan y siguen vigentes."
+  },
+  {
+    "audit_id": "caso-6ae2e3dc72dd59",
+    "reviewer_id": "IA-memoria-B",
+    "information_sufficient": true,
+    "need_future": true,
+    "decisive_slot": "TEMPORAL_SCOPE",
+    "admissible_answers": [
+      "pan de yuca"
+    ],
+    "writable_scope": "none",
+    "both_plausible": null,
+    "rationale": "«Pensándolo bien, tengo otra idea. En cuanto a el desayuno, prefiero pan de yuca.» resuelve el pedido del 2034-04-20 con pan de yuca. «Otra idea» tampoco fija cuándo caduca. Conservaría la cita como episodio y preguntaría por su duración antes de modificar la preferencia confirmada de cachapa con queso."
+  },
+  {
+    "audit_id": "caso-51c35d2033cbf6",
+    "reviewer_id": "IA-memoria-B",
+    "information_sufficient": true,
+    "need_future": false,
+    "decisive_slot": null,
+    "admissible_answers": [
+      "tostadas con tomate"
+    ],
+    "writable_scope": "ongoing",
+    "both_plausible": null,
+    "rationale": "«Cambió mi elección de siempre. En cuanto a el desayuno, prefiero tostadas con tomate de forma habitual.» sustituye la elección habitual de maduros asados por tostadas con tomate. «De forma habitual» respalda usarla el 2034-06-18 y conservarla para la próxima consulta."
+  },
+  {
+    "audit_id": "caso-bfd935ea8a8c8b",
+    "reviewer_id": "IA-memoria-B",
+    "information_sufficient": true,
+    "need_future": true,
+    "decisive_slot": "TEMPORAL_SCOPE",
+    "admissible_answers": [
+      "sopa de zapallo"
+    ],
+    "writable_scope": "none",
+    "both_plausible": null,
+    "rationale": "«Pensándolo bien, tengo otra idea. Para la cena, prefiero sopa de zapallo.» resuelve el pedido del 2034-05-07 con sopa de zapallo. «Otra idea» tampoco fija cuándo caduca. Conservaría la cita como episodio y preguntaría por su duración antes de modificar la preferencia confirmada de locro de papa."
+  },
+  {
+    "audit_id": "caso-33a2e953181f91",
+    "reviewer_id": "IA-memoria-B",
+    "information_sufficient": true,
+    "need_future": true,
+    "decisive_slot": "TEMPORAL_SCOPE",
+    "admissible_answers": [
+      "limonada con hierbabuena"
+    ],
+    "writable_scope": "none",
+    "both_plausible": null,
+    "rationale": "«Pensándolo bien, tengo otra idea. Para la bebida, prefiero limonada con hierbabuena.» resuelve el pedido del 2034-05-02 con limonada con hierbabuena. «Otra idea» tampoco fija cuándo caduca. Conservaría la cita como episodio y preguntaría por su duración antes de modificar la preferencia confirmada de agua de coco."
+  },
+  {
+    "audit_id": "caso-8b7f91d5e1cd64",
+    "reviewer_id": "IA-memoria-B",
+    "information_sufficient": false,
+    "need_future": false,
+    "decisive_slot": "CURRENT_CONTEXT",
+    "admissible_answers": [
+      "tacos de hongos",
+      "verduras al wok"
+    ],
+    "writable_scope": "none",
+    "both_plausible": null,
+    "rationale": "«La elección cambia según el lugar. Lo del sitio todavía no te lo he dicho.» deja abierta la ubicación del 2034-05-26. La memoria respalda verduras al wok en la oficina y tacos de hongos en casa. Preguntaría el lugar para esta comida. Ambas preferencias ya constan y siguen vigentes."
+  },
+  {
+    "audit_id": "caso-a0447cdcfb0649",
+    "reviewer_id": "IA-memoria-B",
+    "information_sufficient": true,
+    "need_future": false,
+    "decisive_slot": null,
+    "admissible_answers": [
+      "horchata lojana"
+    ],
+    "writable_scope": "none",
+    "both_plausible": null,
+    "rationale": "El 2034-07-26, «conservar la elección general» remite a horchata lojana, ya confirmado en la memoria. Uso ese valor sin añadir una nueva preferencia."
+  },
+  {
+    "audit_id": "caso-921b2f11b12cd5",
+    "reviewer_id": "IA-memoria-B",
+    "information_sufficient": true,
+    "need_future": false,
+    "decisive_slot": null,
+    "admissible_answers": [
+      "locro de papa"
+    ],
+    "writable_scope": "none",
+    "both_plausible": null,
+    "rationale": "El 2034-04-25, «conservar la elección general» remite a locro de papa, ya confirmado en la memoria. Uso ese valor sin añadir una nueva preferencia."
+  },
+  {
+    "audit_id": "caso-c8dac8a2a37db7",
+    "reviewer_id": "IA-memoria-B",
+    "information_sufficient": true,
+    "need_future": false,
+    "decisive_slot": null,
+    "admissible_answers": [
+      "pescado al horno"
+    ],
+    "writable_scope": "none",
+    "both_plausible": null,
+    "rationale": "El 2034-04-12, «conservar la elección general» remite a pescado al horno, ya confirmado en la memoria. La excepción de menestra de fréjol venció al comenzar el 2034-04-12. Uso ese valor sin añadir una nueva preferencia."
+  },
+  {
+    "audit_id": "caso-8706cbef8745ea",
+    "reviewer_id": "IA-memoria-B",
+    "information_sufficient": true,
+    "need_future": false,
+    "decisive_slot": null,
+    "admissible_answers": [
+      "locro de papa"
+    ],
+    "writable_scope": "ongoing",
+    "both_plausible": null,
+    "rationale": "«Cambió mi elección de siempre. En cuanto a la cena, prefiero locro de papa de forma habitual.» sustituye la elección habitual de choclo con queso por locro de papa. «De forma habitual» respalda usarla el 2034-06-15 y conservarla para la próxima consulta."
+  },
+  {
+    "audit_id": "caso-7df124dbce5dc4",
+    "reviewer_id": "IA-memoria-B",
+    "information_sufficient": true,
+    "need_future": false,
+    "decisive_slot": null,
+    "admissible_answers": [
+      "tacos de hongos"
+    ],
+    "writable_scope": "interval",
+    "both_plausible": null,
+    "rationale": "La fecha de la consulta (2034-06-08) cae dentro del período expresamente anunciado «hasta el 2034-06-09 inclusive». Guardo tacos de hongos como excepción con ese límite y locro de papa como elección a recuperar desde el día siguiente."
+  }
+]

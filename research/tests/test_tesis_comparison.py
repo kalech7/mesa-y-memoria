@@ -30,7 +30,21 @@ def test_shared_train_order_preserves_roots_and_is_input_order_independent():
         ordered_train([episode("x", "F0", split="evaluation")], 101)
 
 
-def test_clean_parents_are_seed_specific_and_require_all_selection_evidence():
+def test_clean_parents_are_seed_specific_and_require_all_selection_evidence(tmp_path, monkeypatch):
+    from llm_local_001.model import artifact_hashes
+    from research.src.artifacts import file_hash, write_json
+
+    hashes = {}
+    for seed in SEEDS:
+        checkpoint = tmp_path / str(seed) / "training/step_000840"
+        checkpoint.mkdir(parents=True)
+        (checkpoint / "adapter_model.safetensors").write_bytes(f"fixture for seed {seed}".encode())
+        manifest = checkpoint / "local_checkpoint.json"
+        write_json(manifest, {"config": {"precision": "float32"}, "base_artifacts_sha256": {},
+                              "artifacts_sha256": artifact_hashes(checkpoint)})
+        hashes[seed] = file_hash(manifest)
+    monkeypatch.setattr("research.tesis_comparison.CLEAN_CAMPAIGN", tmp_path)
+    monkeypatch.setattr("research.tesis_comparison.PARENT_MANIFESTS", hashes)
     parents = parent_records(SEEDS)
     assert set(parents) == set(SEEDS)
     assert len({record["adapter_sha256"] for record in parents.values()}) == 3

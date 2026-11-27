@@ -1,0 +1,1315 @@
+[
+  {
+    "audit_id": "caso-a029da8edf1f8d",
+    "reviewer_id": "IA-pragmatica-A",
+    "information_sufficient": true,
+    "need_future": true,
+    "decisive_slot": "TEMPORAL_SCOPE",
+    "admissible_answers": [
+      "menestra de fréjol"
+    ],
+    "writable_scope": "none",
+    "both_plausible": true,
+    "rationale": "Para la lista de hoy elige menestra de fréjol. «Tengo otra idea» permite cambiar el menú sin comprometer las compras de la próxima semana. La primera réplica permite guardar menestra en lugar del estofado como cena habitual desde ahora. La segunda conserva el estofado para mañana y circunscribe la menestra al día de hoy. Las dos lecturas cabían en «tengo otra idea»."
+  },
+  {
+    "audit_id": "caso-9ea42f5ff0b41f",
+    "reviewer_id": "IA-pragmatica-A",
+    "information_sufficient": true,
+    "need_future": false,
+    "decisive_slot": null,
+    "admissible_answers": [
+      "huevos con espinaca"
+    ],
+    "writable_scope": "interval",
+    "both_plausible": null,
+    "rationale": "El 12 de junio cae dentro de la excepción de huevos con espinaca, que incluye el día 13. Al terminar se recupera el pan de yuca habitual."
+  },
+  {
+    "audit_id": "caso-da34eade927d6b",
+    "reviewer_id": "IA-pragmatica-A",
+    "information_sufficient": true,
+    "need_future": false,
+    "decisive_slot": null,
+    "admissible_answers": [
+      "batido de naranjilla"
+    ],
+    "writable_scope": "none",
+    "both_plausible": null,
+    "rationale": "La petición de conservar la opción general remite al batido de naranjilla que figura en el único recuerdo de bebida. No hay cambio que registrar."
+  },
+  {
+    "audit_id": "caso-ce2ebbf5ce6bc8",
+    "reviewer_id": "IA-pragmatica-A",
+    "information_sufficient": true,
+    "need_future": false,
+    "decisive_slot": null,
+    "admissible_answers": [
+      "té de jazmín"
+    ],
+    "writable_scope": "ongoing",
+    "both_plausible": null,
+    "rationale": "«Cambió mi elección de siempre» y «de forma habitual» convierten el té de jazmín en el nuevo hábito de bebida y reemplazan la horchata."
+  },
+  {
+    "audit_id": "caso-6b986f728b7dd1",
+    "reviewer_id": "IA-pragmatica-A",
+    "information_sufficient": true,
+    "need_future": false,
+    "decisive_slot": null,
+    "admissible_answers": [
+      "yogur con mango"
+    ],
+    "writable_scope": "interval",
+    "both_plausible": null,
+    "rationale": "El 1 de julio corresponde yogur con mango. Se indica hasta el 2 inclusive y se anuncia la vuelta a la papaya después."
+  },
+  {
+    "audit_id": "caso-3ecd0093378e12",
+    "reviewer_id": "IA-pragmatica-A",
+    "information_sufficient": true,
+    "need_future": false,
+    "decisive_slot": null,
+    "admissible_answers": [
+      "verduras al wok"
+    ],
+    "writable_scope": "ongoing",
+    "both_plausible": null,
+    "rationale": "La persona identifica expresamente las verduras al wok como su nueva cena habitual. La declaración sustituye al locro de papa."
+  },
+  {
+    "audit_id": "caso-a922fd728b18ed",
+    "reviewer_id": "IA-pragmatica-A",
+    "information_sufficient": true,
+    "need_future": true,
+    "decisive_slot": "TEMPORAL_SCOPE",
+    "admissible_answers": [
+      "agua mineral"
+    ],
+    "writable_scope": "none",
+    "both_plausible": true,
+    "rationale": "Se puede anotar agua mineral en este menú. El contraste con el agua de coco anterior permite tanto una elección puntual como un cambio de hábito. La primera réplica permite guardar el agua mineral para la fecha de hoy y mantener agua de coco en las demás. La segunda justifica sustituirla por agua mineral a partir de hoy. Las dos permiten anotar la misma bebida ahora."
+  },
+  {
+    "audit_id": "caso-169a707eb327d5",
+    "reviewer_id": "IA-pragmatica-A",
+    "information_sufficient": true,
+    "need_future": false,
+    "decisive_slot": null,
+    "admissible_answers": [
+      "agua de cedrón"
+    ],
+    "writable_scope": "interval",
+    "both_plausible": null,
+    "rationale": "El agua de cedrón es la elección del 15 de mayo. El límite inclusivo del 17 y la vuelta a lo de siempre permiten registrar la excepción completa."
+  },
+  {
+    "audit_id": "caso-17b6d1dd3fcb68",
+    "reviewer_id": "IA-pragmatica-A",
+    "information_sufficient": true,
+    "need_future": false,
+    "decisive_slot": null,
+    "admissible_answers": [
+      "estofado de garbanzos"
+    ],
+    "writable_scope": "none",
+    "both_plausible": null,
+    "rationale": "El intervalo del mote con queso termina antes del 3 de julio. La persona pide usar la elección general, el estofado, sin actualizarla."
+  },
+  {
+    "audit_id": "caso-8b7f91d5e1cd64",
+    "reviewer_id": "IA-pragmatica-A",
+    "information_sufficient": false,
+    "need_future": false,
+    "decisive_slot": "CURRENT_CONTEXT",
+    "admissible_answers": [
+      "tacos de hongos",
+      "verduras al wok"
+    ],
+    "writable_scope": "none",
+    "both_plausible": true,
+    "rationale": "En la oficina rigen las verduras al wok y en casa los tacos de hongos. La reunión del edificio da contexto a la charla pero no sitúa esta cena. La primera respuesta ubica la cena en la oficina, donde se prefieren verduras al wok. La segunda permite usar los tacos generales en casa. Mantendría ambas preferencias de largo plazo sin extender el contexto de hoy."
+  },
+  {
+    "audit_id": "caso-0538e79556d52e",
+    "reviewer_id": "IA-pragmatica-A",
+    "information_sufficient": true,
+    "need_future": true,
+    "decisive_slot": "TEMPORAL_SCOPE",
+    "admissible_answers": [
+      "verduras al wok"
+    ],
+    "writable_scope": "none",
+    "both_plausible": true,
+    "rationale": "El pedido actual de verduras al wok desplaza al locro para la compra de hoy. Conviene preguntar si también modifica lo que espera para otra ocasión. La primera réplica limita las verduras al wok al día actual y conserva locro para mañana. La segunda hace de las verduras la nueva cena habitual. Las dos explican el mismo cambio en la compra de hoy."
+  },
+  {
+    "audit_id": "caso-c28aeafe18be9d",
+    "reviewer_id": "IA-pragmatica-A",
+    "information_sufficient": false,
+    "need_future": false,
+    "decisive_slot": "CURRENT_CONTEXT",
+    "admissible_answers": [
+      "mote con queso",
+      "pescado al horno"
+    ],
+    "writable_scope": "none",
+    "both_plausible": true,
+    "rationale": "En casa se aplicaría el mote y en la oficina el pescado. El hablante deja expresamente por definir el lugar; las dos reglas ya están guardadas. Con la primera réplica se elige mote con queso en casa. Con la segunda se usa pescado al horno en la oficina. Ubicar al hablante hoy resuelve la consulta sin fijar la ubicación de otra visita ni modificar sus gustos."
+  },
+  {
+    "audit_id": "caso-6c4b62b8880fe5",
+    "reviewer_id": "IA-pragmatica-A",
+    "information_sufficient": false,
+    "need_future": false,
+    "decisive_slot": "CURRENT_CONTEXT",
+    "admissible_answers": [
+      "sopa de zapallo",
+      "pescado al horno"
+    ],
+    "writable_scope": "none",
+    "both_plausible": true,
+    "rationale": "La mención de la reunión no selecciona el lugar de la comida. Siguen siendo admisibles la sopa general y el pescado reservado para la oficina. En casa corresponde la sopa general; en la oficina, el pescado al horno. La primera respuesta también explica por qué se mencionó una reunión. Cada réplica sitúa solo el menú de hoy y ambas preferencias previas siguen vigentes."
+  },
+  {
+    "audit_id": "caso-7cb9c3db0e1857",
+    "reviewer_id": "IA-pragmatica-A",
+    "information_sufficient": true,
+    "need_future": false,
+    "decisive_slot": null,
+    "admissible_answers": [
+      "tortilla de yuca"
+    ],
+    "writable_scope": "ongoing",
+    "both_plausible": null,
+    "rationale": "La persona contrasta su elección de siempre con la tortilla de yuca y precisa que la prefiere habitualmente. Se puede actualizar la cena general."
+  },
+  {
+    "audit_id": "caso-119a62711ea450",
+    "reviewer_id": "IA-pragmatica-A",
+    "information_sufficient": true,
+    "need_future": false,
+    "decisive_slot": null,
+    "admissible_answers": [
+      "avena con canela"
+    ],
+    "writable_scope": "none",
+    "both_plausible": null,
+    "rationale": "El desayuno especial de tostadas termina antes del día 21. Para ese día pide continuar con la avena general; no comunica un gusto nuevo."
+  },
+  {
+    "audit_id": "caso-921b2f11b12cd5",
+    "reviewer_id": "IA-pragmatica-A",
+    "information_sufficient": true,
+    "need_future": false,
+    "decisive_slot": null,
+    "admissible_answers": [
+      "locro de papa"
+    ],
+    "writable_scope": "none",
+    "both_plausible": null,
+    "rationale": "La única cena general en memoria es locro de papa. La instrucción explícita de conservarla resuelve la lista sin editar el registro."
+  },
+  {
+    "audit_id": "caso-da69fd5768a8d2",
+    "reviewer_id": "IA-pragmatica-A",
+    "information_sufficient": true,
+    "need_future": false,
+    "decisive_slot": null,
+    "admissible_answers": [
+      "tortilla de yuca"
+    ],
+    "writable_scope": "ongoing",
+    "both_plausible": null,
+    "rationale": "«De forma habitual» da vigencia futura a la tortilla de yuca y «cambió» vincula la declaración con la sustitución del locro."
+  },
+  {
+    "audit_id": "caso-6ae2e3dc72dd59",
+    "reviewer_id": "IA-pragmatica-A",
+    "information_sufficient": true,
+    "need_future": true,
+    "decisive_slot": "TEMPORAL_SCOPE",
+    "admissible_answers": [
+      "pan de yuca"
+    ],
+    "writable_scope": "none",
+    "both_plausible": true,
+    "rationale": "Hay acuerdo sobre qué poner hoy en el cuaderno: pan de yuca. Falta conocer si también debe reemplazar la cachapa de siguientes desayunos. La primera réplica limita el pan de yuca al día de la consulta y conserva la cachapa para otros días. La segunda confirma el pan como hábito desde hoy. Comprar pan ahora es compatible con cualquiera de los dos plazos."
+  },
+  {
+    "audit_id": "caso-cc982293e1d58a",
+    "reviewer_id": "IA-pragmatica-A",
+    "information_sufficient": true,
+    "need_future": false,
+    "decisive_slot": null,
+    "admissible_answers": [
+      "infusión de menta"
+    ],
+    "writable_scope": "none",
+    "both_plausible": null,
+    "rationale": "El 20 de julio la excepción de té de jazmín ya venció. La infusión de menta es la elección general que pide conservar."
+  },
+  {
+    "audit_id": "caso-dd14623716599b",
+    "reviewer_id": "IA-pragmatica-A",
+    "information_sufficient": false,
+    "need_future": false,
+    "decisive_slot": "CURRENT_CONTEXT",
+    "admissible_answers": [
+      "humita de choclo",
+      "papaya picada"
+    ],
+    "writable_scope": "none",
+    "both_plausible": true,
+    "rationale": "La papaya corresponde al desayuno en la oficina y la humita al general. El hablante avisa que falta el sitio; averiguarlo permite usar los registros existentes. Si hoy se quedó en casa, respondería humita; si fue a la oficina, papaya. Ambas posibilidades estaban expresamente abiertas. Para el futuro conservaría la humita general y la papaya de oficina."
+  },
+  {
+    "audit_id": "caso-af88fdcd3b2fd2",
+    "reviewer_id": "IA-pragmatica-A",
+    "information_sufficient": true,
+    "need_future": false,
+    "decisive_slot": null,
+    "admissible_answers": [
+      "pescado al horno"
+    ],
+    "writable_scope": "none",
+    "both_plausible": null,
+    "rationale": "La sopa era una excepción con fin exclusivo el 2 de mayo, fecha de la consulta. Corresponde la cena general de pescado sin otra escritura."
+  },
+  {
+    "audit_id": "caso-d90869c4658e52",
+    "reviewer_id": "IA-pragmatica-A",
+    "information_sufficient": true,
+    "need_future": true,
+    "decisive_slot": "TEMPORAL_SCOPE",
+    "admissible_answers": [
+      "infusión de menta"
+    ],
+    "writable_scope": "none",
+    "both_plausible": true,
+    "rationale": "Al preparar la lista elige infusión de menta. La expresión de preferencia carece de un plazo que autorice sustituir el jugo de guayaba en futuras compras. Una réplica limita la infusión de menta al día actual y devuelve el jugo de guayaba al menú de mañana. La otra autoriza guardarla para compras futuras como bebida general. La lista de hoy admite ambas intenciones."
+  },
+  {
+    "audit_id": "caso-c443553dc34f25",
+    "reviewer_id": "IA-pragmatica-A",
+    "information_sufficient": true,
+    "need_future": false,
+    "decisive_slot": null,
+    "admissible_answers": [
+      "jugo de tomate de árbol"
+    ],
+    "writable_scope": "none",
+    "both_plausible": null,
+    "rationale": "«Hoy estoy en la oficina» activa la bebida ya registrada para ese lugar, el jugo de tomate de árbol. El lugar de hoy no modifica la regla general."
+  },
+  {
+    "audit_id": "caso-7b245a1dec135b",
+    "reviewer_id": "IA-pragmatica-A",
+    "information_sufficient": false,
+    "need_future": false,
+    "decisive_slot": "CURRENT_CONTEXT",
+    "admissible_answers": [
+      "tortilla de yuca",
+      "mote con queso"
+    ],
+    "writable_scope": "none",
+    "both_plausible": true,
+    "rationale": "Para trabajar en la oficina estaría el mote con queso y para casa la tortilla de yuca. El texto declara que aún falta definir ese lugar. En casa respondería tortilla de yuca; junto a la sala de la oficina, mote con queso. Es el lugar actual lo que cambia entre las dos réplicas. Se conservan las preferencias ya registradas para otras visitas."
+  },
+  {
+    "audit_id": "caso-c18a66d04fac3b",
+    "reviewer_id": "IA-pragmatica-A",
+    "information_sufficient": true,
+    "need_future": false,
+    "decisive_slot": null,
+    "admissible_answers": [
+      "agua de coco"
+    ],
+    "writable_scope": "interval",
+    "both_plausible": null,
+    "rationale": "Para el 25 de julio corresponde el agua de coco y se puede mantener hasta el 27 inclusive. Después vuelve la horchata del recuerdo general."
+  },
+  {
+    "audit_id": "caso-f2568bbb0cf129",
+    "reviewer_id": "IA-pragmatica-A",
+    "information_sufficient": true,
+    "need_future": false,
+    "decisive_slot": null,
+    "admissible_answers": [
+      "tortilla de yuca"
+    ],
+    "writable_scope": "interval",
+    "both_plausible": null,
+    "rationale": "La excepción de tortilla de yuca alcanza tanto el 25 como el 26 de junio. La persona anuncia que luego retoma la cena anterior."
+  },
+  {
+    "audit_id": "caso-3b63c25097484a",
+    "reviewer_id": "IA-pragmatica-A",
+    "information_sufficient": true,
+    "need_future": false,
+    "decisive_slot": null,
+    "admissible_answers": [
+      "huevos con espinaca"
+    ],
+    "writable_scope": "ongoing",
+    "both_plausible": null,
+    "rationale": "Los huevos con espinaca pasan a ser el desayuno de siempre. La modificación explícita del hábito alcanza las próximas consultas."
+  },
+  {
+    "audit_id": "caso-4092b172c6208c",
+    "reviewer_id": "IA-pragmatica-A",
+    "information_sufficient": true,
+    "need_future": false,
+    "decisive_slot": null,
+    "admissible_answers": [
+      "tostadas con tomate"
+    ],
+    "writable_scope": "interval",
+    "both_plausible": null,
+    "rationale": "El 31 de mayo aplica el nuevo desayuno de tostadas. El 3 de junio aún queda incluido y después regresa la cachapa con queso."
+  },
+  {
+    "audit_id": "caso-c7cdc3519bcdd9",
+    "reviewer_id": "IA-pragmatica-A",
+    "information_sufficient": false,
+    "need_future": false,
+    "decisive_slot": "CURRENT_CONTEXT",
+    "admissible_answers": [
+      "huevos con espinaca",
+      "pan de yuca"
+    ],
+    "writable_scope": "none",
+    "both_plausible": true,
+    "rationale": "El pan de yuca está asociado a la oficina y los huevos con espinaca a la elección general. Faltó decir en qué lugar desayunará hoy. En la oficina corresponde pan de yuca. Si se canceló la reunión y está en casa aplican los huevos con espinaca. Ambas réplicas ubican únicamente el desayuno de hoy; los dos registros se conservan."
+  },
+  {
+    "audit_id": "caso-3b41520dd6319b",
+    "reviewer_id": "IA-pragmatica-A",
+    "information_sufficient": true,
+    "need_future": false,
+    "decisive_slot": null,
+    "admissible_answers": [
+      "pan de yuca"
+    ],
+    "writable_scope": "ongoing",
+    "both_plausible": null,
+    "rationale": "El pan de yuca se presenta como el nuevo desayuno habitual. «Cambió mi elección de siempre» permite sustituir al tamal también para visitas posteriores."
+  },
+  {
+    "audit_id": "caso-2ebf0eae3457e8",
+    "reviewer_id": "IA-pragmatica-A",
+    "information_sufficient": false,
+    "need_future": false,
+    "decisive_slot": "CURRENT_CONTEXT",
+    "admissible_answers": [
+      "avena con canela",
+      "tortilla de verde"
+    ],
+    "writable_scope": "none",
+    "both_plausible": true,
+    "rationale": "Tortilla de verde en la oficina y avena en casa satisfacen opciones diferentes del mismo diálogo. Ir de compras no resuelve dónde desayunará. El mensaje de casa permite responder avena con canela y el de oficina permite tortilla de verde. El hablante ubica este menú y no modifica sus gustos; conservaría la avena general y la tortilla de oficina para el futuro."
+  },
+  {
+    "audit_id": "caso-a1aa717f12eb9e",
+    "reviewer_id": "IA-pragmatica-A",
+    "information_sufficient": true,
+    "need_future": false,
+    "decisive_slot": null,
+    "admissible_answers": [
+      "arroz con lentejas"
+    ],
+    "writable_scope": "ongoing",
+    "both_plausible": null,
+    "rationale": "La nueva cena habitual es arroz con lentejas según la declaración directa. Los tacos dejan de ser la elección general."
+  },
+  {
+    "audit_id": "caso-4cf3ad33616fa4",
+    "reviewer_id": "IA-pragmatica-A",
+    "information_sufficient": false,
+    "need_future": false,
+    "decisive_slot": "CURRENT_CONTEXT",
+    "admissible_answers": [
+      "tacos de hongos",
+      "pescado al horno"
+    ],
+    "writable_scope": "none",
+    "both_plausible": true,
+    "rationale": "El hablante tiene pescado al horno para la oficina y tacos como opción general. Sin el dato de lugar, escoger uno dejaría sin justificar la elección. En casa propondría los tacos generales; en la oficina propondría pescado. Las dos aclaraciones especifican el sitio de la comida actual y dejan intactos los recuerdos aplicables en futuras visitas."
+  },
+  {
+    "audit_id": "caso-ee3056b3ce2f13",
+    "reviewer_id": "IA-pragmatica-A",
+    "information_sufficient": true,
+    "need_future": false,
+    "decisive_slot": null,
+    "admissible_answers": [
+      "cachapa con queso"
+    ],
+    "writable_scope": "none",
+    "both_plausible": null,
+    "rationale": "El pan de yuca solo aplicaba antes del día 10 de julio. Para la consulta de ese día rige la cachapa confirmada y no se declara cambio alguno."
+  },
+  {
+    "audit_id": "caso-24cc4f8cfeed2e",
+    "reviewer_id": "IA-pragmatica-A",
+    "information_sufficient": true,
+    "need_future": false,
+    "decisive_slot": null,
+    "admissible_answers": [
+      "jugo de tomate de árbol"
+    ],
+    "writable_scope": "ongoing",
+    "both_plausible": null,
+    "rationale": "Al decir que el jugo de tomate de árbol es ahora su bebida habitual, el hablante autoriza actualizar el agua de coco anterior."
+  },
+  {
+    "audit_id": "caso-1732c4e2c9fc8a",
+    "reviewer_id": "IA-pragmatica-A",
+    "information_sufficient": true,
+    "need_future": false,
+    "decisive_slot": null,
+    "admissible_answers": [
+      "batido de naranjilla"
+    ],
+    "writable_scope": "none",
+    "both_plausible": null,
+    "rationale": "La persona sitúa este menú en la oficina y existe un batido para ese contexto. Se lee ese recuerdo sin reemplazar el agua de coco general."
+  },
+  {
+    "audit_id": "caso-0bd32fba153805",
+    "reviewer_id": "IA-pragmatica-A",
+    "information_sufficient": true,
+    "need_future": false,
+    "decisive_slot": null,
+    "admissible_answers": [
+      "agua mineral"
+    ],
+    "writable_scope": "interval",
+    "both_plausible": null,
+    "rationale": "La fecha del menú es 27 de junio y se prefiere agua mineral hasta el 28 inclusive. El agua de coco anterior se conserva para después."
+  },
+  {
+    "audit_id": "caso-10fe297dd29bf4",
+    "reviewer_id": "IA-pragmatica-A",
+    "information_sufficient": true,
+    "need_future": true,
+    "decisive_slot": "TEMPORAL_SCOPE",
+    "admissible_answers": [
+      "tortilla de verde"
+    ],
+    "writable_scope": "none",
+    "both_plausible": true,
+    "rationale": "La nueva idea para este desayuno es tortilla de verde. Podría ser una alternativa a los maduros de hoy o un nuevo desayuno estable; falta el alcance. La primera respuesta convierte la tortilla de verde en desayuno habitual en lugar de los maduros. La segunda la restringe a la fecha de hoy y conserva los maduros para mañana. La lista puntual no excluía ninguna intención."
+  },
+  {
+    "audit_id": "caso-4147f4d8032287",
+    "reviewer_id": "IA-pragmatica-A",
+    "information_sufficient": true,
+    "need_future": false,
+    "decisive_slot": null,
+    "admissible_answers": [
+      "tostadas con tomate"
+    ],
+    "writable_scope": "none",
+    "both_plausible": null,
+    "rationale": "La papaya termina justo al comenzar el 25 de mayo. Las tostadas son la opción general solicitada para ese desayuno."
+  },
+  {
+    "audit_id": "caso-5058083863f6cf",
+    "reviewer_id": "IA-pragmatica-A",
+    "information_sufficient": true,
+    "need_future": false,
+    "decisive_slot": null,
+    "admissible_answers": [
+      "tacos de hongos"
+    ],
+    "writable_scope": "interval",
+    "both_plausible": null,
+    "rationale": "El pedido actual de tacos abarca el 18 de abril y se extiende hasta el 21 inclusive. La vuelta anunciada permite mantener el choclo como hábito."
+  },
+  {
+    "audit_id": "caso-92c69c0f881014",
+    "reviewer_id": "IA-pragmatica-A",
+    "information_sufficient": true,
+    "need_future": false,
+    "decisive_slot": null,
+    "admissible_answers": [
+      "agua de coco"
+    ],
+    "writable_scope": "interval",
+    "both_plausible": null,
+    "rationale": "La elección temporal de agua de coco incluye la consulta del 9 y termina el 12 de julio inclusive. Después vuelve el agua de cedrón general."
+  },
+  {
+    "audit_id": "caso-bead71cc1d1ea1",
+    "reviewer_id": "IA-pragmatica-A",
+    "information_sufficient": true,
+    "need_future": true,
+    "decisive_slot": "TEMPORAL_SCOPE",
+    "admissible_answers": [
+      "pan de yuca"
+    ],
+    "writable_scope": "none",
+    "both_plausible": true,
+    "rationale": "«Tengo otra idea» determina el pan de yuca para la lista de hoy. No especifica por cuántos desayunos desplaza la avena con canela. Si se elige solo hoy, dejaría pan de yuca para esta fecha y avena para los demás días. Si pide seguir comprándolo, guardaría el pan como nuevo hábito. Las dos intenciones permiten comer pan hoy."
+  },
+  {
+    "audit_id": "caso-e421e349e220ce",
+    "reviewer_id": "IA-pragmatica-A",
+    "information_sufficient": true,
+    "need_future": false,
+    "decisive_slot": null,
+    "admissible_answers": [
+      "tacos de hongos"
+    ],
+    "writable_scope": "interval",
+    "both_plausible": null,
+    "rationale": "Hay un límite expreso para la cena de tacos, el 27 de mayo inclusive. Hoy 26 corresponde servirlos y luego volver al pescado general."
+  },
+  {
+    "audit_id": "caso-71c3cd587951f0",
+    "reviewer_id": "IA-pragmatica-A",
+    "information_sufficient": true,
+    "need_future": false,
+    "decisive_slot": null,
+    "admissible_answers": [
+      "tortilla de yuca"
+    ],
+    "writable_scope": "ongoing",
+    "both_plausible": null,
+    "rationale": "La tortilla de yuca se describe como elección habitual tras anunciar un cambio de lo de siempre. Puede sustituir a la menestra en la memoria general."
+  },
+  {
+    "audit_id": "caso-51c35d2033cbf6",
+    "reviewer_id": "IA-pragmatica-A",
+    "information_sufficient": true,
+    "need_future": false,
+    "decisive_slot": null,
+    "admissible_answers": [
+      "tostadas con tomate"
+    ],
+    "writable_scope": "ongoing",
+    "both_plausible": null,
+    "rationale": "Para el desayuno se eligen habitualmente tostadas con tomate. El propio hablante declara haber cambiado la opción general de maduros."
+  },
+  {
+    "audit_id": "caso-4eb4386c5bcf39",
+    "reviewer_id": "IA-pragmatica-A",
+    "information_sufficient": true,
+    "need_future": true,
+    "decisive_slot": "TEMPORAL_SCOPE",
+    "admissible_answers": [
+      "locro de papa"
+    ],
+    "writable_scope": "none",
+    "both_plausible": true,
+    "rationale": "El locro es la idea elegida para la cena de hoy. La mención del cuaderno no especifica si se quiere modificar el hábito de choclo con queso. La respuesta «a partir de hoy» autoriza sustituir el choclo por locro como cena habitual. La otra confirma el locro solo para el día, preservando el choclo para después. Las dos encajan con querer locro esta noche."
+  },
+  {
+    "audit_id": "caso-0374c8ab7467bb",
+    "reviewer_id": "IA-pragmatica-A",
+    "information_sufficient": true,
+    "need_future": false,
+    "decisive_slot": null,
+    "admissible_answers": [
+      "yogur con mango"
+    ],
+    "writable_scope": "interval",
+    "both_plausible": null,
+    "rationale": "El yogur con mango aplica al desayuno del 8 de junio y también al del 9. Luego se retoma el pan de centeno anterior."
+  },
+  {
+    "audit_id": "caso-b0845a410f2e0d",
+    "reviewer_id": "IA-pragmatica-A",
+    "information_sufficient": false,
+    "need_future": false,
+    "decisive_slot": "CURRENT_CONTEXT",
+    "admissible_answers": [
+      "avena con canela",
+      "humita de choclo"
+    ],
+    "writable_scope": "none",
+    "both_plausible": true,
+    "rationale": "La humita vale en la oficina; para casa sigue la avena general. Definir dónde desayuna hoy basta para resolver la consulta sin actualizar preferencias. La réplica de oficina activa la humita; la de casa activa la avena. Para visitas posteriores seguiría guardando ambos hábitos con su alcance original y solo usaría el lugar recién dicho para esta ocasión."
+  },
+  {
+    "audit_id": "caso-267a593f7894c5",
+    "reviewer_id": "IA-pragmatica-A",
+    "information_sufficient": true,
+    "need_future": false,
+    "decisive_slot": null,
+    "admissible_answers": [
+      "cachapa con queso"
+    ],
+    "writable_scope": "none",
+    "both_plausible": null,
+    "rationale": "El permiso para conservar la elección general remite a la cachapa con queso. No se aporta una opción alternativa para el desayuno."
+  },
+  {
+    "audit_id": "caso-2a791c2b71da87",
+    "reviewer_id": "IA-pragmatica-A",
+    "information_sufficient": true,
+    "need_future": false,
+    "decisive_slot": null,
+    "admissible_answers": [
+      "café pasado"
+    ],
+    "writable_scope": "ongoing",
+    "both_plausible": null,
+    "rationale": "El café pasado reemplaza al jugo de tomate de árbol. La expresión «de forma habitual» permite utilizarlo también después de este menú."
+  },
+  {
+    "audit_id": "caso-1ac3c5e27c950a",
+    "reviewer_id": "IA-pragmatica-A",
+    "information_sufficient": true,
+    "need_future": false,
+    "decisive_slot": null,
+    "admissible_answers": [
+      "agua de coco"
+    ],
+    "writable_scope": "none",
+    "both_plausible": null,
+    "rationale": "El 19 de junio ya terminó la excepción del batido de naranjilla. La persona reafirma que se use la bebida general, que es agua de coco."
+  },
+  {
+    "audit_id": "caso-c363c4c54cf3a7",
+    "reviewer_id": "IA-pragmatica-A",
+    "information_sufficient": true,
+    "need_future": false,
+    "decisive_slot": null,
+    "admissible_answers": [
+      "jugo de maracuyá"
+    ],
+    "writable_scope": "ongoing",
+    "both_plausible": null,
+    "rationale": "La nueva elección habitual para la bebida es jugo de maracuyá. El cambio explícito deja atrás el agua mineral como opción general."
+  },
+  {
+    "audit_id": "caso-7dbf2d2e228a3e",
+    "reviewer_id": "IA-pragmatica-A",
+    "information_sufficient": true,
+    "need_future": true,
+    "decisive_slot": "TEMPORAL_SCOPE",
+    "admissible_answers": [
+      "tacos de hongos"
+    ],
+    "writable_scope": "none",
+    "both_plausible": true,
+    "rationale": "Los tacos son la elección para la cena que se va a comprar. Falta precisar si quiere dejar el mote con queso únicamente hoy o de forma duradera. La primera respuesta autoriza tacos de hongos hoy y permite recuperar el mote habitual mañana. La segunda permite sustituir el mote por tacos como hábito. Las dos intenciones son compatibles con la lista actual."
+  },
+  {
+    "audit_id": "caso-985f0c30919df4",
+    "reviewer_id": "IA-pragmatica-A",
+    "information_sufficient": true,
+    "need_future": false,
+    "decisive_slot": null,
+    "admissible_answers": [
+      "agua de cedrón"
+    ],
+    "writable_scope": "none",
+    "both_plausible": null,
+    "rationale": "La persona confirma que está en casa. El jugo de maracuyá se reservaba para la oficina y aquí se aplica el agua de cedrón general."
+  },
+  {
+    "audit_id": "caso-82309579f40760",
+    "reviewer_id": "IA-pragmatica-A",
+    "information_sufficient": true,
+    "need_future": true,
+    "decisive_slot": "TEMPORAL_SCOPE",
+    "admissible_answers": [
+      "agua de cedrón"
+    ],
+    "writable_scope": "none",
+    "both_plausible": true,
+    "rationale": "El agua de cedrón resuelve la bebida de la compra de hoy. La reformulación de la idea no indica si seguirá desplazando la horchata después. Para las siguientes compras, guardaría el agua de cedrón como nuevo hábito. Si mañana se vuelve a la pauta anterior, acotaría el agua de cedrón a hoy y preservaría la horchata general. Ambas réplicas aclaran una duración omitida."
+  },
+  {
+    "audit_id": "caso-c2973b4b4ba5dc",
+    "reviewer_id": "IA-pragmatica-A",
+    "information_sufficient": true,
+    "need_future": false,
+    "decisive_slot": null,
+    "admissible_answers": [
+      "pan de yuca"
+    ],
+    "writable_scope": "none",
+    "both_plausible": null,
+    "rationale": "El único hábito pertinente es pan de yuca y la persona pide conservar su elección general. Se puede responder sin añadir otra preferencia."
+  },
+  {
+    "audit_id": "caso-e29bd4ec99e0fb",
+    "reviewer_id": "IA-pragmatica-A",
+    "information_sufficient": true,
+    "need_future": false,
+    "decisive_slot": null,
+    "admissible_answers": [
+      "estofado de garbanzos"
+    ],
+    "writable_scope": "interval",
+    "both_plausible": null,
+    "rationale": "La consulta del 16 de mayo cae dentro de la excepción de estofado, válida hasta el 17 inclusive. Después vuelve la tortilla de yuca anterior."
+  },
+  {
+    "audit_id": "caso-79306ec1008bff",
+    "reviewer_id": "IA-pragmatica-A",
+    "information_sufficient": true,
+    "need_future": false,
+    "decisive_slot": null,
+    "admissible_answers": [
+      "yogur con mango"
+    ],
+    "writable_scope": "ongoing",
+    "both_plausible": null,
+    "rationale": "El cambio explícito de elección de siempre establece yogur con mango como desayuno habitual en lugar de humita."
+  },
+  {
+    "audit_id": "caso-bfd935ea8a8c8b",
+    "reviewer_id": "IA-pragmatica-A",
+    "information_sufficient": true,
+    "need_future": true,
+    "decisive_slot": "TEMPORAL_SCOPE",
+    "admissible_answers": [
+      "sopa de zapallo"
+    ],
+    "writable_scope": "none",
+    "both_plausible": true,
+    "rationale": "La sopa de zapallo sustituye al locro en la lista que prepara ahora. La expresión «prefiero» permite saber qué desea, pero deja abierta su duración. Si confirma «solo para hoy», guardaría sopa como excepción del día y mantendría locro para mañana. Si la prefiere también en siguientes compras, guardaría sopa como cena habitual. La preferencia inicial carecía de plazo."
+  },
+  {
+    "audit_id": "caso-e251e7274de6a9",
+    "reviewer_id": "IA-pragmatica-A",
+    "information_sufficient": true,
+    "need_future": false,
+    "decisive_slot": null,
+    "admissible_answers": [
+      "batido de naranjilla"
+    ],
+    "writable_scope": "interval",
+    "both_plausible": null,
+    "rationale": "Se elige batido de naranjilla el 14 de junio y se fija su final para el 16 inclusive. La memoria debe permitir volver luego al café pasado."
+  },
+  {
+    "audit_id": "caso-d6fae286a7d913",
+    "reviewer_id": "IA-pragmatica-A",
+    "information_sufficient": false,
+    "need_future": false,
+    "decisive_slot": "CURRENT_CONTEXT",
+    "admissible_answers": [
+      "sopa de zapallo",
+      "tacos de hongos"
+    ],
+    "writable_scope": "none",
+    "both_plausible": true,
+    "rationale": "La regla particular elige tacos en la oficina y la general indica sopa en casa. La persona dice que falta el sitio para esta comida. En la primera réplica, la cancelación sitúa esta cena en casa y se sirve sopa. En la segunda corresponde servir tacos en la oficina. Anotaría el lugar solo para esta consulta y conservaría las dos reglas para visitas futuras."
+  },
+  {
+    "audit_id": "caso-a9ae2f6eaf17fb",
+    "reviewer_id": "IA-pragmatica-A",
+    "information_sufficient": true,
+    "need_future": true,
+    "decisive_slot": "TEMPORAL_SCOPE",
+    "admissible_answers": [
+      "avena con canela"
+    ],
+    "writable_scope": "none",
+    "both_plausible": true,
+    "rationale": "La petición de avena con canela da una respuesta concreta para hoy. No indica si se debe conservar o desplazar la cachapa a partir de otra sesión. En la primera rama guardaría avena con canela para esta fecha y dejaría la cachapa como elección general. En la segunda la avena pasa a ser el hábito que usar en las compras posteriores. Ambas precisiones eran posibles."
+  },
+  {
+    "audit_id": "caso-5877732b679c80",
+    "reviewer_id": "IA-pragmatica-A",
+    "information_sufficient": true,
+    "need_future": false,
+    "decisive_slot": null,
+    "admissible_answers": [
+      "pescado al horno"
+    ],
+    "writable_scope": "none",
+    "both_plausible": null,
+    "rationale": "La indicación de usar la elección general se resuelve con el único registro de cena, pescado al horno. No comunica ningún cambio."
+  },
+  {
+    "audit_id": "caso-67cd6243541e74",
+    "reviewer_id": "IA-pragmatica-A",
+    "information_sufficient": true,
+    "need_future": false,
+    "decisive_slot": null,
+    "admissible_answers": [
+      "tamal de maíz"
+    ],
+    "writable_scope": "interval",
+    "both_plausible": null,
+    "rationale": "La nueva excepción de tamal se puede aplicar el 1 de julio y hasta el día 3 inclusive. El pan de centeno vuelve al terminar el plazo."
+  },
+  {
+    "audit_id": "caso-f440ae268be447",
+    "reviewer_id": "IA-pragmatica-A",
+    "information_sufficient": true,
+    "need_future": false,
+    "decisive_slot": null,
+    "admissible_answers": [
+      "agua mineral"
+    ],
+    "writable_scope": "ongoing",
+    "both_plausible": null,
+    "rationale": "La persona declara que el agua mineral es la bebida que ahora prefiere de forma habitual. Se puede cambiar el hábito previo de agua de coco."
+  },
+  {
+    "audit_id": "caso-96b4837a19ded9",
+    "reviewer_id": "IA-pragmatica-A",
+    "information_sufficient": true,
+    "need_future": false,
+    "decisive_slot": null,
+    "admissible_answers": [
+      "jugo de tomate de árbol"
+    ],
+    "writable_scope": "interval",
+    "both_plausible": null,
+    "rationale": "El 31 de mayo cae dentro del plazo para el jugo de tomate de árbol. El plazo incluye el 3 de junio y el café conserva vigencia después."
+  },
+  {
+    "audit_id": "caso-124a3a5efd6f2a",
+    "reviewer_id": "IA-pragmatica-A",
+    "information_sufficient": true,
+    "need_future": false,
+    "decisive_slot": null,
+    "admissible_answers": [
+      "maduros asados"
+    ],
+    "writable_scope": "ongoing",
+    "both_plausible": null,
+    "rationale": "Se reemplaza la cachapa con queso por los maduros asados para el desayuno de siempre. El hablante marca expresamente esa duración."
+  },
+  {
+    "audit_id": "caso-7af021d8ebf169",
+    "reviewer_id": "IA-pragmatica-A",
+    "information_sufficient": true,
+    "need_future": false,
+    "decisive_slot": null,
+    "admissible_answers": [
+      "agua de cedrón"
+    ],
+    "writable_scope": "ongoing",
+    "both_plausible": null,
+    "rationale": "La preferencia habitual pasa del batido al agua de cedrón. La frase modifica el hábito de bebida más allá de la compra presente."
+  },
+  {
+    "audit_id": "caso-525c7580ed031b",
+    "reviewer_id": "IA-pragmatica-A",
+    "information_sufficient": true,
+    "need_future": false,
+    "decisive_slot": null,
+    "admissible_answers": [
+      "jugo de guayaba"
+    ],
+    "writable_scope": "none",
+    "both_plausible": null,
+    "rationale": "Mantener la opción general de bebida significa usar el jugo de guayaba, único recuerdo pertinente. La solicitud no genera otro registro."
+  },
+  {
+    "audit_id": "caso-a767d3feda4f0b",
+    "reviewer_id": "IA-pragmatica-A",
+    "information_sufficient": false,
+    "need_future": false,
+    "decisive_slot": "CURRENT_CONTEXT",
+    "admissible_answers": [
+      "sopa de zapallo",
+      "locro de papa"
+    ],
+    "writable_scope": "none",
+    "both_plausible": true,
+    "rationale": "El locro se aplica en la oficina y la sopa representa la cena general. Todavía no se sabe si el menú se usará en el trabajo o en casa. Si está en la oficina comería locro y si terminó en casa elegiría sopa. Se resuelve el lugar de este menú sin nueva escritura de gustos. En lo sucesivo seguirán sopa general y locro en oficina."
+  },
+  {
+    "audit_id": "caso-33a2e953181f91",
+    "reviewer_id": "IA-pragmatica-A",
+    "information_sufficient": true,
+    "need_future": true,
+    "decisive_slot": "TEMPORAL_SCOPE",
+    "admissible_answers": [
+      "limonada con hierbabuena"
+    ],
+    "writable_scope": "none",
+    "both_plausible": true,
+    "rationale": "La limonada es una elección clara para la lista. Falta preguntar si las próximas compras deben usarla en lugar del agua de coco. Ambas respuestas completan el plazo omitido. La primera permite guardar la limonada solo para el día de la consulta y volver luego al agua de coco. La segunda la establece como la nueva bebida habitual."
+  },
+  {
+    "audit_id": "caso-5340a3e8d986b6",
+    "reviewer_id": "IA-pragmatica-A",
+    "information_sufficient": true,
+    "need_future": false,
+    "decisive_slot": null,
+    "admissible_answers": [
+      "maduros asados"
+    ],
+    "writable_scope": "none",
+    "both_plausible": null,
+    "rationale": "La petición de usar el desayuno de siempre remite a los maduros asados. La conversación no introduce otro plato ni modifica el alcance."
+  },
+  {
+    "audit_id": "caso-f0991ea3955fbd",
+    "reviewer_id": "IA-pragmatica-A",
+    "information_sufficient": true,
+    "need_future": false,
+    "decisive_slot": null,
+    "admissible_answers": [
+      "locro de papa"
+    ],
+    "writable_scope": "ongoing",
+    "both_plausible": null,
+    "rationale": "Al tratar el locro como lo que ahora elige de forma habitual, modifica el registro general de cena que antes indicaba menestra."
+  },
+  {
+    "audit_id": "caso-fb38257f443a12",
+    "reviewer_id": "IA-pragmatica-A",
+    "information_sufficient": true,
+    "need_future": false,
+    "decisive_slot": null,
+    "admissible_answers": [
+      "humita de choclo"
+    ],
+    "writable_scope": "interval",
+    "both_plausible": null,
+    "rationale": "La elección de humita para el desayuno cubre el día 25 y hasta el 28 de mayo inclusive. Al terminar vuelve el pan de yuca previo."
+  },
+  {
+    "audit_id": "caso-fd95397c4c3dd0",
+    "reviewer_id": "IA-pragmatica-A",
+    "information_sufficient": true,
+    "need_future": true,
+    "decisive_slot": "TEMPORAL_SCOPE",
+    "admissible_answers": [
+      "estofado de garbanzos"
+    ],
+    "writable_scope": "none",
+    "both_plausible": true,
+    "rationale": "El estofado es la nueva idea para cenar en este menú. Que todavía prefiera estofado en otra sesión requeriría precisar la vigencia. Ponerlo como habitual respalda guardar estofado de garbanzos de ahora en adelante; limitarlo a hoy deja arroz con lentejas para días posteriores. Los dos plazos son compatibles con cambiar la cena de este menú."
+  },
+  {
+    "audit_id": "caso-cdf84a88943dfa",
+    "reviewer_id": "IA-pragmatica-A",
+    "information_sufficient": true,
+    "need_future": true,
+    "decisive_slot": "TEMPORAL_SCOPE",
+    "admissible_answers": [
+      "jugo de tomate de árbol"
+    ],
+    "writable_scope": "none",
+    "both_plausible": true,
+    "rationale": "El cuaderno de hoy debe llevar jugo de tomate de árbol. El turno deja abierta la posibilidad de que la limonada siga siendo la bebida general. Si la persona pide anotarlo como habitual, guardaría jugo de tomate de árbol desde hoy. Si limita la elección al día, guardaría la excepción y mantendría la limonada para días posteriores. Ninguna contradice la elección del cuaderno de hoy."
+  },
+  {
+    "audit_id": "caso-6a0f2dce810ca0",
+    "reviewer_id": "IA-pragmatica-A",
+    "information_sufficient": true,
+    "need_future": true,
+    "decisive_slot": "TEMPORAL_SCOPE",
+    "admissible_answers": [
+      "maduros asados"
+    ],
+    "writable_scope": "none",
+    "both_plausible": true,
+    "rationale": "La petición de maduros resuelve el desayuno presente. Para reemplazar la tortilla de verde de futuras ocasiones hace falta aclarar cuánto dura esta decisión. La primera respuesta autoriza maduros solo como excepción de hoy y mantiene la tortilla de verde general. La segunda permite guardar maduros asados como desayuno habitual. Ambas completan información que faltaba."
+  },
+  {
+    "audit_id": "caso-22da240293269f",
+    "reviewer_id": "IA-pragmatica-A",
+    "information_sufficient": true,
+    "need_future": true,
+    "decisive_slot": "TEMPORAL_SCOPE",
+    "admissible_answers": [
+      "humita de choclo"
+    ],
+    "writable_scope": "none",
+    "both_plausible": true,
+    "rationale": "La persona prefiere humita para la compra actual. En ningún punto precisa si esa elección desplaza también al tamal de otras compras. La primera respuesta deja la humita como excepción para hoy y el tamal como hábito para mañana. La segunda sustituye el tamal por humita en las compras futuras. El desayuno anunciado admite esos dos posibles plazos."
+  },
+  {
+    "audit_id": "caso-2b2c4558970fec",
+    "reviewer_id": "IA-pragmatica-A",
+    "information_sufficient": true,
+    "need_future": false,
+    "decisive_slot": null,
+    "admissible_answers": [
+      "agua mineral"
+    ],
+    "writable_scope": "none",
+    "both_plausible": null,
+    "rationale": "«Al final estoy en casa» descarta la condición de oficina del agua de coco. La respuesta usa el agua mineral general y conserva ambas preferencias."
+  },
+  {
+    "audit_id": "caso-613d9aee886dde",
+    "reviewer_id": "IA-pragmatica-A",
+    "information_sufficient": true,
+    "need_future": true,
+    "decisive_slot": "TEMPORAL_SCOPE",
+    "admissible_answers": [
+      "jugo de maracuyá"
+    ],
+    "writable_scope": "none",
+    "both_plausible": true,
+    "rationale": "El nuevo jugo se puede anotar hoy. Sería prematuro interpretar la frase como sustitución permanente de la limonada sin consultar el alcance. Si el cambio vale solo hoy, guardaría el jugo de maracuyá por el día, conservando limonada habitual. Si pide usarlo en las siguientes compras, el jugo pasa a ser la nueva bebida general. Ambas continuaciones son naturales."
+  },
+  {
+    "audit_id": "caso-5eccc61b66ee71",
+    "reviewer_id": "IA-pragmatica-A",
+    "information_sufficient": true,
+    "need_future": false,
+    "decisive_slot": null,
+    "admissible_answers": [
+      "verduras al wok"
+    ],
+    "writable_scope": "interval",
+    "both_plausible": null,
+    "rationale": "La cena de verduras al wok se selecciona para el día 10 y hasta el 12 de junio inclusive. La preferencia general por tacos queda disponible después."
+  },
+  {
+    "audit_id": "caso-c8dac8a2a37db7",
+    "reviewer_id": "IA-pragmatica-A",
+    "information_sufficient": true,
+    "need_future": false,
+    "decisive_slot": null,
+    "admissible_answers": [
+      "pescado al horno"
+    ],
+    "writable_scope": "none",
+    "both_plausible": null,
+    "rationale": "El intervalo de la menestra termina antes del 12 de abril. Para hoy pide la opción general y corresponde pescado al horno."
+  },
+  {
+    "audit_id": "caso-8706cbef8745ea",
+    "reviewer_id": "IA-pragmatica-A",
+    "information_sufficient": true,
+    "need_future": false,
+    "decisive_slot": null,
+    "admissible_answers": [
+      "locro de papa"
+    ],
+    "writable_scope": "ongoing",
+    "both_plausible": null,
+    "rationale": "«Cambió mi elección de siempre» autoriza registrar el locro como la nueva cena habitual y dejar atrás el choclo con queso."
+  },
+  {
+    "audit_id": "caso-bcf794017c68fe",
+    "reviewer_id": "IA-pragmatica-A",
+    "information_sufficient": true,
+    "need_future": false,
+    "decisive_slot": null,
+    "admissible_answers": [
+      "jugo de maracuyá"
+    ],
+    "writable_scope": "ongoing",
+    "both_plausible": null,
+    "rationale": "La bebida habitual pasa a ser jugo de maracuyá en este turno. La afirmación tiene alcance suficiente para sustituir el té general."
+  },
+  {
+    "audit_id": "caso-aaf97aa770efdf",
+    "reviewer_id": "IA-pragmatica-A",
+    "information_sufficient": true,
+    "need_future": false,
+    "decisive_slot": null,
+    "admissible_answers": [
+      "ensalada de quinua"
+    ],
+    "writable_scope": "interval",
+    "both_plausible": null,
+    "rationale": "El menú del 6 de mayo debe llevar ensalada de quinua. La fecha de vencimiento incluye el día 8 y luego se retoma el choclo con queso."
+  },
+  {
+    "audit_id": "caso-a3f7058b73d5f8",
+    "reviewer_id": "IA-pragmatica-A",
+    "information_sufficient": true,
+    "need_future": false,
+    "decisive_slot": null,
+    "admissible_answers": [
+      "horchata lojana"
+    ],
+    "writable_scope": "none",
+    "both_plausible": null,
+    "rationale": "La cancelación de la reunión sitúa a la persona en casa. Se aplica la horchata general y el batido permanece como preferencia de oficina."
+  },
+  {
+    "audit_id": "caso-7614cfa68a2d5a",
+    "reviewer_id": "IA-pragmatica-A",
+    "information_sufficient": true,
+    "need_future": false,
+    "decisive_slot": null,
+    "admissible_answers": [
+      "agua de cedrón"
+    ],
+    "writable_scope": "none",
+    "both_plausible": null,
+    "rationale": "La opción general que pide conservar es agua de cedrón. La memoria ya basta para responder al menú de bebida de hoy."
+  },
+  {
+    "audit_id": "caso-d963310c2bbc8c",
+    "reviewer_id": "IA-pragmatica-A",
+    "information_sufficient": false,
+    "need_future": false,
+    "decisive_slot": "CURRENT_CONTEXT",
+    "admissible_answers": [
+      "tortilla de verde",
+      "huevos con espinaca"
+    ],
+    "writable_scope": "none",
+    "both_plausible": true,
+    "rationale": "En la oficina el desayuno serían huevos con espinaca y en casa tortilla de verde. El hablante deja abierto dónde se aplicará el menú. Primero, en la oficina caben los huevos con espinaca. Segundo, en casa corresponde la tortilla general. Ninguna respuesta modifica los gustos; basta asociar el lugar declarado a la consulta actual."
+  },
+  {
+    "audit_id": "caso-be4d3c66333170",
+    "reviewer_id": "IA-pragmatica-A",
+    "information_sufficient": true,
+    "need_future": false,
+    "decisive_slot": null,
+    "admissible_answers": [
+      "menestra de fréjol"
+    ],
+    "writable_scope": "none",
+    "both_plausible": null,
+    "rationale": "El 31 de mayo ya caducó la excepción de sopa. Retomar la menestra satisface la indicación de conservar la cena general."
+  },
+  {
+    "audit_id": "caso-0db3b95f9e5a0b",
+    "reviewer_id": "IA-pragmatica-A",
+    "information_sufficient": true,
+    "need_future": false,
+    "decisive_slot": null,
+    "admissible_answers": [
+      "batido de naranjilla"
+    ],
+    "writable_scope": "none",
+    "both_plausible": null,
+    "rationale": "El café se limitaba al intervalo que termina antes del 12 de abril. El batido es la elección de bebida general disponible para hoy."
+  },
+  {
+    "audit_id": "caso-43dee47c687fff",
+    "reviewer_id": "IA-pragmatica-A",
+    "information_sufficient": true,
+    "need_future": false,
+    "decisive_slot": null,
+    "admissible_answers": [
+      "cachapa con queso"
+    ],
+    "writable_scope": "ongoing",
+    "both_plausible": null,
+    "rationale": "Se anuncia que cambió el desayuno de siempre y se especifica cachapa con queso. Queda autorizado actualizar el pan de centeno anterior."
+  },
+  {
+    "audit_id": "caso-7df124dbce5dc4",
+    "reviewer_id": "IA-pragmatica-A",
+    "information_sufficient": true,
+    "need_future": false,
+    "decisive_slot": null,
+    "admissible_answers": [
+      "tacos de hongos"
+    ],
+    "writable_scope": "interval",
+    "both_plausible": null,
+    "rationale": "La elección de tacos aplica el 8 y el 9 de junio inclusive. La persona quiere volver a su cena usual de locro después de ese plazo."
+  },
+  {
+    "audit_id": "caso-3b62333f3175b2",
+    "reviewer_id": "IA-pragmatica-A",
+    "information_sufficient": true,
+    "need_future": true,
+    "decisive_slot": "TEMPORAL_SCOPE",
+    "admissible_answers": [
+      "pescado al horno"
+    ],
+    "writable_scope": "none",
+    "both_plausible": true,
+    "rationale": "La nueva idea es pescado al horno, suficiente para el menú de hoy. La frase deja sin resolver si debe reemplazar la menestra para la siguiente visita. Si solo es por hoy, el pescado queda limitado a la fecha y mañana vuelve la menestra. Si hay que anotarlo como habitual, guardaría pescado al horno desde hoy para las futuras cenas. Ambas lecturas cuadran con la frase inicial."
+  },
+  {
+    "audit_id": "caso-bb36b8b118f68a",
+    "reviewer_id": "IA-pragmatica-A",
+    "information_sufficient": true,
+    "need_future": false,
+    "decisive_slot": null,
+    "admissible_answers": [
+      "jugo de guayaba"
+    ],
+    "writable_scope": "none",
+    "both_plausible": null,
+    "rationale": "La persona indica que estará en casa porque se canceló la reunión. Aplica el jugo general y queda intacta la infusión prevista para oficina."
+  },
+  {
+    "audit_id": "caso-abf563431e75e9",
+    "reviewer_id": "IA-pragmatica-A",
+    "information_sufficient": true,
+    "need_future": false,
+    "decisive_slot": null,
+    "admissible_answers": [
+      "limonada con hierbabuena"
+    ],
+    "writable_scope": "none",
+    "both_plausible": null,
+    "rationale": "Estar hoy junto a la sala grande de la oficina activa la opción contextual de limonada. El agua de coco general no requiere modificación."
+  },
+  {
+    "audit_id": "caso-d4213cbc8c8df4",
+    "reviewer_id": "IA-pragmatica-A",
+    "information_sufficient": false,
+    "need_future": false,
+    "decisive_slot": "CURRENT_CONTEXT",
+    "admissible_answers": [
+      "pan de yuca",
+      "maduros asados"
+    ],
+    "writable_scope": "none",
+    "both_plausible": true,
+    "rationale": "Hay pan de yuca general y maduros para la oficina. Falta saber dónde desayunará hoy para decidir entre esos recuerdos confirmados. En la rama de casa hay pan de yuca; en la de oficina, maduros. Estas respuestas alternativas fijan el lugar de hoy. Para otro día se mantienen pan general y maduros en la oficina."
+  },
+  {
+    "audit_id": "caso-a0447cdcfb0649",
+    "reviewer_id": "IA-pragmatica-A",
+    "information_sufficient": true,
+    "need_future": false,
+    "decisive_slot": null,
+    "admissible_answers": [
+      "horchata lojana"
+    ],
+    "writable_scope": "none",
+    "both_plausible": null,
+    "rationale": "La bebida general es horchata lojana y se pide expresamente conservar esa elección para la consulta. No hay preferencia nueva que guardar."
+  },
+  {
+    "audit_id": "caso-605b507528f4c2",
+    "reviewer_id": "IA-pragmatica-A",
+    "information_sufficient": true,
+    "need_future": false,
+    "decisive_slot": null,
+    "admissible_answers": [
+      "tacos de hongos"
+    ],
+    "writable_scope": "none",
+    "both_plausible": null,
+    "rationale": "Para la cena consta un único hábito de tacos de hongos. La indicación de mantener lo general basta para reproducirlo sin una nueva escritura."
+  },
+  {
+    "audit_id": "caso-24a2491a733036",
+    "reviewer_id": "IA-pragmatica-A",
+    "information_sufficient": true,
+    "need_future": true,
+    "decisive_slot": "TEMPORAL_SCOPE",
+    "admissible_answers": [
+      "limonada con hierbabuena"
+    ],
+    "writable_scope": "none",
+    "both_plausible": true,
+    "rationale": "La limonada reemplaza el agua de cedrón en la lista presente. El deseo expresado no aclara si también modifica la siguiente consulta. La primera continuación permite sustituir el agua de cedrón por limonada con hierbabuena de forma habitual. La segunda solo autoriza una excepción fechada para hoy; mañana reaparece el agua. La declaración inicial admite las dos."
+  },
+  {
+    "audit_id": "caso-e1c6765e008c71",
+    "reviewer_id": "IA-pragmatica-A",
+    "information_sufficient": true,
+    "need_future": false,
+    "decisive_slot": null,
+    "admissible_answers": [
+      "infusión de menta"
+    ],
+    "writable_scope": "interval",
+    "both_plausible": null,
+    "rationale": "La infusión de menta es la bebida del 17 de mayo y sigue aplicando el 18 inclusive. Después se vuelve al jugo de guayaba general."
+  }
+]

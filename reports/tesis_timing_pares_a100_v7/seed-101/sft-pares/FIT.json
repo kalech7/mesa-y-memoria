@@ -1,0 +1,72 @@
+{
+  "adapter": "epoch-6/adapter",
+  "epoch": 6,
+  "cutoff": 2.875,
+  "future": 0.6383333333333333,
+  "free_pairs": 0.13333333333333333,
+  "weights": {
+    "adapter_model.safetensors": "95960a2bbdbb85739f967253eb54588c7c84c1bb9cf7ae08341e49008e8c2863",
+    "adapter_config.json": "e3e88d492aa86e4199ce411cd5d52a63361c7867cd7e9f0814be1799f2f5acb0"
+  },
+  "candidates": [
+    {
+      "adapter": "epoch-2/adapter",
+      "epoch": 2,
+      "cutoff": 1.5,
+      "future": 0.635,
+      "free_pairs": 0.06666666666666667
+    },
+    {
+      "adapter": "epoch-4/adapter",
+      "epoch": 4,
+      "cutoff": 5.875,
+      "future": 0.645,
+      "free_pairs": 0.06666666666666667
+    },
+    {
+      "adapter": "epoch-6/adapter",
+      "epoch": 6,
+      "cutoff": 2.875,
+      "future": 0.6383333333333333,
+      "free_pairs": 0.13333333333333333
+    }
+  ],
+  "training": [
+    {
+      "epoch": 1,
+      "mean_loss": 1.428708537419637,
+      "order_sha256": "18ef27145604988198e6d339dbb7258d4b25f23b50920c16ea628fbc11356314"
+    },
+    {
+      "epoch": 2,
+      "mean_loss": 0.9891788442929585,
+      "order_sha256": "a561fc5ab12fda0fb7167abf803be75599c2a5dbf574959b35b2535b4aeb4a9a"
+    },
+    {
+      "epoch": 3,
+      "mean_loss": 0.7440205732981364,
+      "order_sha256": "b6e202f52b6d96b77e7bfcc1ce711cfe94980749f9f31346796c77a8e19ea721"
+    },
+    {
+      "epoch": 4,
+      "mean_loss": 0.35068874061107635,
+      "order_sha256": "d196258861fed8fbf29f69ad2c910ca88ddd54800bcb202051a003b5c42bd838"
+    },
+    {
+      "epoch": 5,
+      "mean_loss": 0.4995059732347727,
+      "order_sha256": "36911d7ddd7c817b6d5b54bd3ad154c98b953b793f22e89407bcfb0cffb05ab4"
+    },
+    {
+      "epoch": 6,
+      "mean_loss": 0.4263169108889997,
+      "order_sha256": "0f4f0403cc35655c083165de4e8550a243937cd98b921c655e8d0976ec8f01a8"
+    }
+  ],
+  "budget": {
+    "forward_batches": 90,
+    "decisions": 720,
+    "input_tokens": 141012,
+    "padded_input_tokens": 153984
+  }
+}

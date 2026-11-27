@@ -126,6 +126,34 @@ def test_third_party_and_exclusions_never_become_personal_preferences(tmp_path):
     assert not trial.state["memory"] and not trial.public
 
 
+@pytest.mark.parametrize("question", [
+    "¿Qué cena tengo guardada mañana?", "Qué cena tengo guardada mañana",
+    "que cena tengo guardada mañana", "Recuerdas qué prefiero para cenar mañana",
+    "Y para mañana, qué cena tengo guardada",
+])
+def test_recall_of_tomorrow_excludes_today_only_exception(tmp_path, question):
+    trial = Trial(tmp_path)
+    trial.say("Mi cena habitual es locro de papa.")
+    trial.say("Solo por hoy prefiero sopa de zapallo para la cena.")
+    memory = deepcopy(trial.state["memory"])
+    reply = trial.say(question)
+    assert reply["response"]["value"] == "locro de papa"
+    assert reply["trace"]["query"]["date"] == "2026-11-19"
+    assert trial.state["memory"] == memory and trial.state["date"] == "2026-11-18"
+
+
+def test_unpunctuated_recall_interrupts_a_clarification_without_confirming_it(tmp_path):
+    trial = Trial(tmp_path, ["ASK"])
+    trial.say("Mi bebida habitual es agua mineral.")
+    assert trial.say("Hoy quiero sopa para cenar.")["trace"]["action"] == "ASK"
+    reply = trial.say("Qué bebida tengo guardada")
+    assert reply["response"]["value"] == "agua mineral"
+    assert trial.state["pending"] is None and trial.state["questions_remaining"] == 0
+    assert [(r["attribute"], r["value"]) for r in trial.state["memory"]] == [
+        ("drink_preference", "agua mineral"),
+    ]
+
+
 @pytest.mark.parametrize("alternative", ["Dame otra opción.", "Dame otra opción para cenar."])
 def test_alternative_after_recipe_keeps_target_day_and_restrictions(tmp_path, alternative):
     trial = Trial(tmp_path)

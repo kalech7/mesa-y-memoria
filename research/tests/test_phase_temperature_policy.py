@@ -174,14 +174,10 @@ def test_default_likelihood_remains_untempered_like_base(policy_factory, monkeyp
 
 
 @pytest.mark.parametrize('phase', list(DEFAULT_PHASE_TEMPERATURES))
-def test_actual_qwen_tokenizer_identifies_uncached_reference_preamble_on_cpu(phase):
+def test_actual_qwen_tokenizer_identifies_uncached_reference_preamble_on_cpu(phase, qwen_05b_dir):
     transformers = pytest.importorskip('transformers')
     from research.phase_temperature_policy import PROMPT_ROOT
-    parent = Path('research/runs/reward_review_20261104_002/warmup/optimizer/last/local_checkpoint.json')
-    if not parent.is_file():
-        pytest.skip('Local parent checkpoint unavailable; no downloads')
-    model_root = json.loads(parent.read_text())['config']['model_path']
-    tokenizer = transformers.AutoTokenizer.from_pretrained(model_root, local_files_only=True, trust_remote_code=False)
+    tokenizer = transformers.AutoTokenizer.from_pretrained(qwen_05b_dir, local_files_only=True, trust_remote_code=False)
     policy = PhaseTemperaturePolicy.__new__(PhaseTemperaturePolicy)
     policy.tokenizer, policy._phase_cache = tokenizer, {}
     text = (PROMPT_ROOT / f'{phase}.txt').read_text().rstrip() + '\n\nOBSERVACION\n{}'

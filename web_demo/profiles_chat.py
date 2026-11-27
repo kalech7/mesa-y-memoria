@@ -27,7 +27,7 @@ from research.tesis_shared_budget_env import ACTIONS, QUESTION_ACTIONS
 
 from .chat import _render_answer
 from .profiles_runtime import DEFAULT_RUN, ProfilesError, ProfilesRuntime
-from .profiles_evidence import decision, evidence, query_attribute, query_context, query_date, respond_to_query
+from .profiles_evidence import chat_question, decision, evidence, query_attribute, query_context, query_date, respond_to_query
 
 
 DEFAULT_STORAGE = Path(__file__).resolve().parents[1] / "outputs/profiles_v5_chats"
@@ -247,13 +247,13 @@ class ProfilesChats:
         when = iso_date(body.get("date", state["date"]))
         context = context_value(body.get("context", state["context"]))
         pending = state["pending"]
-        independent_query = "?" in text or "¿" in text
+        question = chat_question(text)
+        independent_query = question is not None
         if pending and independent_query:
             pending = None
         if pending is None:
             state["asked_slots"] = []
-        question = text.rsplit("¿", 1)[-1] if "¿" in text else text
-        attribute = pending["attribute"] if pending else self.topic(question, state["attribute"])
+        attribute = pending["attribute"] if pending else self.topic(question or text, state["attribute"])
         if attribute not in ATTRIBUTES:
             raise ProfilesError("No se pudo identificar cena, desayuno o bebida.")
         turn = {"turn_id": f"u{state['visit']}_{state['revision'] + 1}", "role": "user",

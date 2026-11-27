@@ -1,0 +1,72 @@
+{
+  "adapter": "epoch-6/adapter",
+  "epoch": 6,
+  "cutoff": 3.0,
+  "future": 0.645,
+  "free_pairs": 0.2,
+  "weights": {
+    "adapter_model.safetensors": "c746fafa7194d4b4a42c7a845ef95df9f6e0092502ef63de18f1530e092c0de0",
+    "adapter_config.json": "e3e88d492aa86e4199ce411cd5d52a63361c7867cd7e9f0814be1799f2f5acb0"
+  },
+  "candidates": [
+    {
+      "adapter": "epoch-2/adapter",
+      "epoch": 2,
+      "cutoff": 0.0,
+      "future": 0.6283333333333333,
+      "free_pairs": 0.16666666666666666
+    },
+    {
+      "adapter": "epoch-4/adapter",
+      "epoch": 4,
+      "cutoff": 1.125,
+      "future": 0.6316666666666667,
+      "free_pairs": 0.1
+    },
+    {
+      "adapter": "epoch-6/adapter",
+      "epoch": 6,
+      "cutoff": 3.0,
+      "future": 0.645,
+      "free_pairs": 0.2
+    }
+  ],
+  "training": [
+    {
+      "epoch": 1,
+      "mean_loss": 0.7432207743326823,
+      "order_sha256": "ee6a5612af38c26b40992d3c9377db2c63e0a47f8f7d844b0dae18d070086671"
+    },
+    {
+      "epoch": 2,
+      "mean_loss": 0.3831938902537028,
+      "order_sha256": "020159acf445bafa11b64389c089f5fb48361eb805f4157a8dd8994ef00d23e9"
+    },
+    {
+      "epoch": 3,
+      "mean_loss": 0.3401992122332255,
+      "order_sha256": "4ccfaa8f44cc22e2b83e730d8ac751ff735779fa3c3f23cb4f23cd0877f20010"
+    },
+    {
+      "epoch": 4,
+      "mean_loss": 0.3170414209365845,
+      "order_sha256": "0796a9b74f4f0b78f1446e009afb7e156d31aab548282b222b96f6e0915f8be5"
+    },
+    {
+      "epoch": 5,
+      "mean_loss": 0.23188779552777608,
+      "order_sha256": "0a67e2efc24d2438661963d37961c1bd3a5b2a8b36d6f044a78f240248112e76"
+    },
+    {
+      "epoch": 6,
+      "mean_loss": 0.2013224204381307,
+      "order_sha256": "0b07c370714631a44dba0bbbe0ec0ee1958f6639f248fe9086fa863675acd98f"
+    }
+  ],
+  "budget": {
+    "forward_batches": 90,
+    "decisions": 720,
+    "input_tokens": 141012,
+    "padded_input_tokens": 153856
+  }
+}

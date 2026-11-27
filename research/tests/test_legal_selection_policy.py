@@ -161,14 +161,10 @@ def test_profile_hash_catalog_and_temperatures_are_frozen(toy):
         policy._set_phase_temperatures({'select': 2., 'respond': .6, 'write': .35})
 
 
-def test_actual_qwen_tokenizer_roundtrips_all_canonical_choices_including_eos_on_cpu():
+def test_actual_qwen_tokenizer_roundtrips_all_canonical_choices_including_eos_on_cpu(qwen_05b_dir):
     transformers = pytest.importorskip('transformers')
-    parent = Path('research/runs/reward_review_20261104_002/warmup/optimizer/last/local_checkpoint.json')
-    if not parent.is_file():
-        pytest.skip('Local parent unavailable; no downloads')
-    model_root = json.loads(parent.read_text())['config']['model_path']
     policy = LegalSelectionPolicy.__new__(LegalSelectionPolicy)
-    policy.tokenizer = transformers.AutoTokenizer.from_pretrained(model_root, local_files_only=True, trust_remote_code=False)
+    policy.tokenizer = transformers.AutoTokenizer.from_pretrained(qwen_05b_dir, local_files_only=True, trust_remote_code=False)
     catalog = policy._completion_catalog()
     for text, ids in zip(ACTION_CATALOG, catalog):
         assert ids[-1] == policy.tokenizer.eos_token_id

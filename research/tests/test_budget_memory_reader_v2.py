@@ -76,7 +76,7 @@ def test_reader_still_frozen_and_requires_full_menu(factory):
         reader.answer({**obs,'answer_menu':['agua','DEFER']},['agua','DEFER'],seed=101,decision_id='bad/q1')
 
 
-def test_production_prompt_exactly_matches_calibrated_ten_original_train_cases():
+def test_production_prompt_exactly_matches_calibrated_ten_original_train_cases(qwen_05b_dir):
     from scripts.calibrate_budget_reader import observation_from_logged_case
     source=Path('research/runs/reward_review_budget_20261105_001/FULL_HISTORY_READER.json')
     inference=Path('reports/reward_review_budget_20261105_001/reader_calibration_001/INFERENCE.jsonl')
@@ -87,7 +87,7 @@ def test_production_prompt_exactly_matches_calibrated_ten_original_train_cases()
     assert len(recorded)==len(rows)==10
     policy=ReadableBudgetPolicy.__new__(ReadableBudgetPolicy)
     from transformers import AutoTokenizer
-    policy.tokenizer=AutoTokenizer.from_pretrained('models/Qwen2.5-0.5B-Instruct',local_files_only=True)
+    policy.tokenizer = AutoTokenizer.from_pretrained(qwen_05b_dir, local_files_only=True)
     policy._candidate_cache={}
     for i,row in enumerate(rows):
         obs=observation_from_logged_case(row)
@@ -97,13 +97,13 @@ def test_production_prompt_exactly_matches_calibrated_ten_original_train_cases()
         assert len(policy.encode_prompt(text))<=MAX_PROMPT_TOKENS
 
 
-def test_two_slot_prompt_budget_on_original_train_subsets_and_synthetic_capacity():
+def test_two_slot_prompt_budget_on_original_train_subsets_and_synthetic_capacity(qwen_05b_dir):
     from itertools import combinations
     from transformers import AutoTokenizer
     from research.budget_memory_env import VALUE_MENUS
     from scripts.calibrate_budget_reader import observation_from_logged_case
     policy=ReadableBudgetPolicy.__new__(ReadableBudgetPolicy)
-    policy.tokenizer=AutoTokenizer.from_pretrained('models/Qwen2.5-0.5B-Instruct',local_files_only=True)
+    policy.tokenizer = AutoTokenizer.from_pretrained(qwen_05b_dir, local_files_only=True)
     policy._candidate_cache={}
     observations=[]
     source=Path('research/runs/reward_review_budget_20261105_001/FULL_HISTORY_READER.json')

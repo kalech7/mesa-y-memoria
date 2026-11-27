@@ -228,6 +228,13 @@ class ExperimentalBoundaryTests(unittest.TestCase):
 
 @unittest.skipUnless(TORCH_AVAILABLE, 'torch is absent; run under the recorded isolated pilot interpreter')
 class RealNeuralLearningTests(unittest.TestCase):
+    def setUp(self):
+        import torch
+
+        # SmallPolicy configures deterministic CPU training for its run.
+        self.addCleanup(torch.set_deterministic_debug_mode, torch.get_deterministic_debug_mode())
+        self.addCleanup(torch.set_num_threads, torch.get_num_threads())
+
     def test_discounted_returns_include_later_session_rewards(self):
         from rl_small_pilot.rl_trainer import discounted_returns
         self.assertEqual(discounted_returns([1., -1., 2.], gamma=.5), [1., 0., 2.])

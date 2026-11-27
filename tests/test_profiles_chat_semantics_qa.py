@@ -71,11 +71,12 @@ def test_invalid_calendar_query_is_rejected_without_mutating_chat(tmp_path):
     assert loaded == previous
 
 
-def test_query_context_can_differ_from_current_location(tmp_path):
+@pytest.mark.parametrize("question", ["¿Qué ceno en casa?", "que ceno en casa"])
+def test_query_context_can_differ_from_current_location(tmp_path, question):
     chat = Conversation(tmp_path, context="oficina")
     chat.send("Mi cena habitual es pasta.")
     chat.send("Para la cena en la oficina prefiero arroz de forma habitual.")
-    chat.send("¿Qué ceno en casa?")
+    chat.send(question)
     assert chat.response["value"] == "pasta"
     assert chat.state["context"] == "oficina"
 
@@ -120,10 +121,11 @@ def test_unknown_duration_keeps_future_alternatives(tmp_path):
     assert not any(record["value"] == "pasta" for record in chat.state["memory"])
 
 
-def test_final_question_selects_attribute_independently_of_new_write(tmp_path):
+@pytest.mark.parametrize("question", ["¿Qué cena tengo?", "Qué cena tengo"])
+def test_final_question_selects_attribute_independently_of_new_write(tmp_path, question):
     chat = Conversation(tmp_path)
     chat.send("Mi cena habitual es pasta.")
-    chat.send("Mi bebida habitual es agua mineral. ¿Qué cena tengo?")
+    chat.send(f"Mi bebida habitual es agua mineral. {question}")
     assert chat.response["value"] == "pasta"
     assert any(record["attribute"] == "drink_preference" and record["value"] == "agua mineral"
                for record in chat.state["memory"])

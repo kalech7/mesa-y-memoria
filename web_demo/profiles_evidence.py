@@ -15,6 +15,21 @@ from research.tesis_profiles_parser_v5 import _original_id, normalized_observati
 ATTRIBUTES = {"cenar": ("la cena", "dinner_preference"),
               "desayunar": ("el desayuno", "breakfast_preference"),
               "beber": ("la bebida", "drink_preference")}
+# A direct question can follow a declaration in the same message. Match the
+# interrogative clause alone so it can be read without authorizing a write.
+CHAT_QUESTION = re.compile(
+    r"¿[^¿?]*(?:\?|$)|(?:^|(?<=[.!?;,\n]))\s*(?:y\s+)?"
+    r"(?:(?:(?:para\s+)?(?:hoy|ma[ñn]ana|pasado\s+ma[ñn]ana)|en\s+(?:la\s+)?(?:casa|oficina))[,\s]+)?(?:"
+    r"(?:(?:dime|recu[eé]rdame)\s+)?(?:qu[eé]|cu[aá]l(?:es)?)\s+"
+    r"(?:cenas?|desayunos?|bebidas?|platos?|preferencias?|opci[oó]n|opciones|"
+    r"ceno|bebo|suelo|prefiero|tengo|tienes|recuerdas|hay|puedo|"
+    r"me\s+(?:gusta|recomiendas|sugieres)|(?:es|son)\s+(?:mi|mis|el|la|las|los))\b"
+    r"|(?:te\s+acuerdas|recuerdas|me\s+recuerdas|puedes\s+recordarme|me\s+puedes\s+recordar)\b"
+    r")[^.!?;¿\n]*\??|(?:^|(?<=[.!?;\n]))\s*[^.!?;¿\n]+\?",
+    re.I,
+)
+
+
 NAMED_OTHER = re.compile(r"\b[Pp]ara\s+(?!m[ií]\b)([A-ZÁÉÍÓÚÑ][a-záéíóúñ]+)\s*,?\s*(?:yo\s+)?(?:prefiero|quiero|anota|guarda)\b")
 OTHER_RECIPIENT = re.compile(r"\bpara\s+(?:mi|tu|su)\s+(?:herman[oa]|pareja|madre|padre|sobrin[oa]|"
                              r"amig[oa]|hij[oa]|abuel[oa]|prim[oa])s?\b", re.I)
@@ -36,13 +51,18 @@ SCOPE_REPLIES = (
 )
 
 
+def chat_question(text):
+    matches = list(CHAT_QUESTION.finditer(text))
+    return matches[-1].group().strip(" ¿?\t\n") if matches else None
+
+
 def public_representation(raw):
     observation = deepcopy(raw)
     adaptations = []
     for turn in observation["user_messages"]:
         if turn["role"] != "user":
             continue
-        text = turn["text"]
+        text = CHAT_QUESTION.sub(" ", turn["text"])
         if turn.get("in_reply_to"):
             for pattern, representation in SCOPE_REPLIES:
                 if re.fullmatch(pattern, text.strip(" .!"), re.I):
