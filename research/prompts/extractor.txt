@@ -1,0 +1,1 @@
+Extrae únicamente preferencias alimentarias explícitas de los mensajes de usuario en orden cronológico. Devuelve {"records":[...]} con el esquema de memoria del protocolo, citas literales, fuente y alcance. No adivines intenciones ni duración. Conserva incertidumbre y relaciones entre contexto, fecha y valor. Usa unknown cuando falte alcance. No se proporcionan eventos futuros.

@@ -1,0 +1,59 @@
+{
+  "informes_sha256": {
+    "CPU.json": {
+      "original": "9c385f18089f6c6d132c4fbad467cbe96657e54d3fceaac4125f3e353e4a0d5f",
+      "portatil": "9c385f18089f6c6d132c4fbad467cbe96657e54d3fceaac4125f3e353e4a0d5f"
+    },
+    "VALIDATION.json": {
+      "original": "41a5d42936fddbed4f6d29705c44e79035a3d123bcde7b8b46b2358439ba9a66",
+      "portatil": "41a5d42936fddbed4f6d29705c44e79035a3d123bcde7b8b46b2358439ba9a66"
+    },
+    "PLAN.json": {
+      "original": "2bbbe2f948ef678dc75eb7699bd265d0f9d177d6eb2ac19df164ed79be75f030",
+      "portatil": "ab36e898a8387feb399e60bea5ed5d5b982535ba8e0fccf0e62f92017c09cd7d"
+    },
+    "TRAIN_PLAN.json": {
+      "original": "35c019949a1a255f1e3c40f018cad73f0e26fae54fbed2f5f2e0ae2120d53968",
+      "portatil": "a6a2fb6722e79e852e972ca5baa901e5fed6f1ddbced9e19d091969c1461c5d0"
+    },
+    "TRAIN_RESULT.json": {
+      "original": "dbcd07c1653680762a2d296eb1db0e0cbb4f2595bf86c97b96c9194329a79ded",
+      "portatil": "5a91df729818180a88a422d9cb0519cce1270d92171435c065e2e6310a5ba1e5"
+    },
+    "LOCK.json": {
+      "original": "f0255c4b9e5ffaec36b79c23cce065115fb2f7bf973bb05323849b5b8638db7a",
+      "portatil": "042671353a89c17ce61ce5b286970b7053359527396177a341e7dc9e71ca85ab"
+    },
+    "RESERVED_RESULTS.json": {
+      "original": "2ef9c9a8da3606838007c40fe386c0e767a19bec998b0c0a67840bcb9d803243",
+      "portatil": "21246938287f3df2a181c346f850a96f779f8aafbdd7c5017830da8374502cb6"
+    },
+    "DEMO_PAR.json": {
+      "original": "50aef96404755b8d6715fce1cb762c82f052a3e7b4eb56272b88c24401d115dd",
+      "portatil": "f520a793da122f38c2e611466447bd78b318c639cb78fcdfc4a6c4fa6aa34e22"
+    },
+    "PAIR_MARGIN_DIAGNOSTIC.json": {
+      "original": "d3fbdfac3a93389ddbfb9618b5a382da7659581720f0c6b495d37bc8c1a18585",
+      "portatil": "70a90e68983727e0841850a890b4009faef6e631cb7733115a97fa87d50a1172"
+    }
+  },
+  "configuraciones_sha256": {
+    "963ef0f18ec73601bf6a5c234990f060e5a3106e5d3abaf142d5644b8258b07e": "030ade3557597f9c24b79ef189ae3331490d130ade346b0342e21b6fd0110142",
+    "e3e88d492aa86e4199ce411cd5d52a63361c7867cd7e9f0814be1799f2f5acb0": "0289ae0324503dc4020cb8017467a5fe81a1ac64a83421f69ad7a667e5a8c3bc"
+  },
+  "pesos_sin_modificaciones_sha256": {
+    "reports/tesis_profiles_qwen_a100_v5/seed-101/common-parent/checkpoint-000/adapter": "70ea39c231390f4f67c78352161ce4fae6f742de6bbc47a3ef9f01c5506f5aa4",
+    "reports/tesis_timing_qwen_a100_v6/seed-101/SFT-ramas/checkpoint-002/adapter": "4654bdb3fe96751447cee399e57f2d9babc08613e802d40c9d9a4eb551585260",
+    "reports/tesis_timing_qwen_a100_v6/seed-101/GRPO-continuacion/checkpoint-002/adapter": "90f001eee7c2d8b3487ff85b758d28009b5fe5e0b8b1da9ffd25cdbc5573a70a",
+    "reports/tesis_timing_qwen_a100_v6/seed-101/GRPO-inmediato/checkpoint-002/adapter": "30307c1ed785d31014950e47b3e313af54e79ed0ac1fc7a4d6676e7f37b45601",
+    "reports/tesis_timing_qwen_a100_v6/seed-101/GRPO-continuacion-fija/checkpoint-001/adapter": "11fecb57ec995cc23aa7e09ac36df06590d6adf23b2972f136d0512246a312a7",
+    "reports/tesis_timing_qwen_a100_v6/seed-202/SFT-ramas/checkpoint-001/adapter": "2edbdbdd45366d82abc4ca93e2d28870598691d741139154eef9c7ea2daedbff",
+    "reports/tesis_timing_qwen_a100_v6/seed-202/GRPO-continuacion/checkpoint-001/adapter": "26721b9ab02694ceb3fa4c60f16b632ad20b8f9dd79e67e01a35971d4a86c9ff",
+    "reports/tesis_timing_qwen_a100_v6/seed-202/GRPO-inmediato/checkpoint-001/adapter": "22915e6f7515d7aa8f542d60bf474c575a255e5a022f69b1240be7988f2a01de",
+    "reports/tesis_timing_qwen_a100_v6/seed-202/GRPO-continuacion-fija/checkpoint-001/adapter": "26721b9ab02694ceb3fa4c60f16b632ad20b8f9dd79e67e01a35971d4a86c9ff",
+    "reports/tesis_timing_qwen_a100_v6/seed-303/SFT-ramas/checkpoint-002/adapter": "66c5777fe12f3afd6a68fe36fee29e39131bfa0ebf9f9c58ce6854b249e6e431",
+    "reports/tesis_timing_qwen_a100_v6/seed-303/GRPO-continuacion/checkpoint-002/adapter": "ea40d9642a845bc82d81bfa2e3462df4b4fd00245f8d9e768bc48441f7b9e1cd",
+    "reports/tesis_timing_qwen_a100_v6/seed-303/GRPO-inmediato/checkpoint-002/adapter": "45b7cf07122a0dae9afb8440220b9bc625c328d70a9b847043e892dc5941f413",
+    "reports/tesis_timing_qwen_a100_v6/seed-303/GRPO-continuacion-fija/checkpoint-002/adapter": "28b3c573095fcca36a8fb1c11e5197888386865d118b379e0f379864052975ed"
+  }
+}

@@ -1,0 +1,20 @@
+[
+  {
+    "audit_id": "caso-40f513bace9db6",
+    "visit": 2,
+    "question": "¿Ahora estás en el trabajo o en casa?",
+    "answers": [
+      "Estoy en casa; cambié de plan.",
+      "Vine a la oficina."
+    ]
+  },
+  {
+    "audit_id": "caso-8f68f143447871",
+    "visit": 1,
+    "question": "¿Quieres repetir la humita como opción habitual o solo hoy?",
+    "answers": [
+      "Solo fue por hoy; para las otras compras piensa en las tostadas.",
+      "Me gustó para dejarla en la lista base de esta semana y las que vienen."
+    ]
+  }
+]

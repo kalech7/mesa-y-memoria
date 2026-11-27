@@ -1,0 +1,113 @@
+[
+  {
+    "id": "qa-entrena-comensales-por-turno",
+    "family": "terceros_y_rectificacion",
+    "turns": [
+      {"text": "mi compa de piso pidió sin poyo, pero ya cenó. para mi plato nada de zanahora, limon ni cebolla. qué me hago?", "excluded": ["zanahoria", "limon", "cebolla"]},
+      {"text": "al final lo compartimos con él. mantenemos las tres cosas que dije para mí y se suma lo de que él no quiere pollo. qué cenamos de la lista?", "excluded": ["zanahoria", "limon", "cebolla", "pollo"]},
+      {"text": "me acaba de avisar que sí acepta pollo. para los dos sigue sin zanahoria ni limón ni cebolla, y ahora pone que no tiene pepno. cuál hacemos para cenar?", "excluded": ["zanahoria", "limon", "cebolla", "pepino"]}
+    ]
+  },
+  {
+    "id": "qa-entrena-cena-de-manana",
+    "family": "historial_y_revision",
+    "turns": [
+      {"text": "Solo para la cena de hoy, evita lentejas y tomate. q se puede hacer de esa lista?", "excluded": ["lenteja", "tomate"]},
+      {"text": "para hoy agrega que tampoco queda ceboya. qué hago de cenar con esos tres fuera?", "excluded": ["lenteja", "tomate", "cebolla"]},
+      {"text": "ahora estoy viendo la cena de mañana. las tres cosas de hoy sí sirven mañana; lo único de mañana es que no habrá papas. qué hago mañana de cenar?", "excluded": ["papa"]},
+      {"text": "mañana sí habrá papa, ya compré. para esa cena de mañana quita pescao y quinua y dime qué sugieres", "excluded": ["pescado", "quinua"]}
+    ]
+  },
+  {
+    "id": "qa-entrena-huebo-hueso",
+    "family": "acumulacion_rectificacion",
+    "turns": [
+      {"text": "qué ceno sin huebo, tomte ni pescdo? lo demás está disponible.", "excluded": ["huevo", "tomate", "pescado"]},
+      {"text": "perdona, escribí mal lo del huebo; sí puedo comer huevo y ni tomate ni pescado cambian. quita además el arros. con eso qué ceno?", "excluded": ["tomate", "pescado", "arroz"]},
+      {"text": "si de tomate ya tengo, pero poyo no hay. pescado y arroz igual fuera. qué podría hacer de cenar con ese cambio?", "excluded": ["pescado", "arroz", "pollo"]},
+      {"text": "el pescado sí llegó, pero sin papa hoy. sigue sin poyo ni arroz. qué me queda de cena?", "excluded": ["papa", "pollo", "arroz"]}
+    ]
+  },
+  {
+    "id": "qa-entrena-primera-lista-mal",
+    "family": "aclaracion_y_revision",
+    "turns": [
+      {"text": "dame una opción para cenar, sin arros ni la otra cosa que todavía no me acuerdo cómo se llama. cuál puedo hacer?", "excluded": ["arroz"], "clarify": true},
+      {"text": "ya recordé, es la cebolla. y el arroz quedó bien después de todo. o sea para mi cena solo quita ceboya y pescao. qué ceno?", "excluded": ["cebolla", "pescado"]},
+      {"text": "del pescado sí encontré una porción. la cebolla no la puedo usar, y de pollo me acabo de quedar sin nada. qué recomiendas cenar?", "excluded": ["cebolla", "pollo"]}
+    ]
+  },
+  {
+    "id": "qa-entrena-alacena-revisada",
+    "family": "sin_opciones",
+    "turns": [
+      {"text": "me salvas con una cena del menú? le falta a mi alacena aciete y papaz, no puedo usar ninguno", "excluded": ["aceite", "papa"], "clarify": true},
+      {"text": "ya sí tengo aceite; las papas no. la zanahora tampoco me sirve para esta cena. ¿qué cocino de la lista?", "excluded": ["papa", "zanahoria"]},
+      {"text": "sí conseguí papas. la zanahoria sigue fuera, tampoco tengo tomte, huebo ni pescdo. en ese caso qué se puede cenar?", "excluded": ["zanahoria", "tomate", "huevo", "pescado"]}
+    ]
+  },
+  {
+    "id": "qa-entrena-pedido-de-la-oficina",
+    "family": "terceros_y_rectificacion",
+    "turns": [
+      {"text": "para la oficina de mañana pidieron sin papas. para mi cena de ahora lo que quiero evitar son arros y pescado. qué preparo?", "excluded": ["arroz", "pescado"]},
+      {"text": "para mí sigue lo de hoy sin arroz ni pescao. y para mi propio plato mejor tampoco papas. entonces qué ceno ahora?", "excluded": ["arroz", "pescado", "papa"]},
+      {"text": "papa para mí sí, mamá trajo. solo para la oficina es sin papas. mi cena sigue sin pescao y arros, y ahora quita qunua también. qué otra cena puedo hacer?", "excluded": ["pescado", "arroz", "quinua"]}
+    ]
+  },
+  {
+    "id": "qa-entrena-ingrediente-equivocado",
+    "family": "acumulacion_rectificacion",
+    "turns": [
+      {"text": "de eso qué puedo cenar sin papa ni qunua ni pescado? cocino para uno.", "excluded": ["papa", "quinua", "pescado"]},
+      {"text": "me expliqué mal: del pescao sí tengo, el que no encontré fue pepino. mantén papa y quinua fuera. qué cena hago?", "excluded": ["pepino", "papa", "quinua"]},
+      {"text": "sigo sin pepino. de lo otro, quinua sí hay, papas también; la que falta es lentja. así qué puedo cenar?", "excluded": ["pepino", "lenteja"]},
+      {"text": "corrección rápida, pepino sí. sin lentejas igual y también saca huebo y pllo. qué preparo para cenar?", "excluded": ["lenteja", "huevo", "pollo"]}
+    ]
+  },
+  {
+    "id": "qa-entrena-no-confundir-aceptacion",
+    "family": "cambio_contrafactual",
+    "turns": [
+      {"text": "para la cena no me sirve arroz, ni huevo, ni pollo, ni limon. q queda con lo que sí hay?", "excluded": ["arroz", "huevo", "pollo", "limon"]},
+      {"text": "mejor cambio: con el limón estamos, pero el pepno no. los tres primeros de mi mensaje siguen fuera. qué hago de cenar?", "excluded": ["arroz", "huevo", "pollo", "pepino"]},
+      {"text": "ahora sí huevo. no metas pepino, arroz ni pollo, y ya no puedo usar limón tampoco. qué recomendarías para cenar?", "excluded": ["pepino", "arroz", "pollo", "limon"]}
+    ]
+  },
+  {
+    "id": "qa-entrena-antes-ahora",
+    "family": "historial_y_revision",
+    "turns": [
+      {"text": "anoche sí usé huebos y arros. esta noche puedo comer ambos; solo descarta poyo, pescao y cebolla. qué me hago de cena?", "excluded": ["pollo", "pescado", "cebolla"]},
+      {"text": "el de anoche que no quiero repetir ahora es arroz. permite cebolla y mantén sin pollo ni pescado. qué hago para cenar ahora?", "excluded": ["arroz", "pollo", "pescado"]},
+      {"text": "mi pareja se lleva los huevos, así que también sin huevo, y ninguno de los tres que descarté antes. cuál podemos preparar de cena?", "excluded": ["huevo", "arroz", "pollo", "pescado"]}
+    ]
+  },
+  {
+    "id": "qa-entrena-nombre-por-mensaje",
+    "family": "aclaracion_y_revision",
+    "turns": [
+      {"text": "q podría hacer para cenar? la lista tiene un ingrediente q no puedo usar y no te he escrito cuál.", "excluded": [], "clarify": true},
+      {"text": "me refería al aceite. para la cena sí tengo papa y pollo, el que no tengo es aceite. qué puedo preparar?", "excluded": ["aceite"]},
+      {"text": "el vecino me consiguió aceite, ya vuelve a valer. las cosas que no quiero cocinar hoy son papa y qunoa. sugiéreme una cena de esas.", "excluded": ["papa", "quinua"]}
+    ]
+  },
+  {
+    "id": "qa-entrena-inventario-de-nuevo",
+    "family": "sin_opciones",
+    "turns": [
+      {"text": "sin cabezas de cebolla, ni limón, ni pollo, ni qunoa ni arrozz, cuál de esos platos puedo cenar?", "excluded": ["cebolla", "limon", "pollo", "quinua", "arroz"], "clarify": true},
+      {"text": "ya tengo lenjas y el arros volvió a estar disponible. la cebolla, el limón, el pollo y la quinua no cambiaron. qué ceno de lo que queda?", "excluded": ["cebolla", "limon", "pollo", "quinua"]},
+      {"text": "otro ajuste a lo disponible: ahora sí limon, no zanahoria, tampoco cebolla, pollo ni quinua. qué hago para cenar?", "excluded": ["zanahoria", "cebolla", "pollo", "quinua"]}
+    ]
+  },
+  {
+    "id": "qa-entrena-plato-para-mi-o-para-dos",
+    "family": "terceros_y_rectificacion",
+    "turns": [
+      {"text": "para cenar con Dani que no come lentejas ni tomtes. yo no tengo ganas de pescao ni poyo. qué elegimos los dos?", "excluded": ["lenteja", "tomate", "pescado", "pollo"]},
+      {"text": "cambio de planes, él ya comió. para mí tomate y lentejas valen; mantengo sin pollo y pescado y tampoco quiero hveo. qué me hago de cena?", "excluded": ["pollo", "pescado", "huevo"]},
+      {"text": "rectifico otra vez, huevo sí, tomate solo era cosa de Dani. para mí no uses lentejas, pollo ni pescado. qué me preparo para cenar?", "excluded": ["lenteja", "pollo", "pescado"]}
+    ]
+  }
+]

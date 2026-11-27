@@ -1,0 +1,6 @@
+# Versions observed in the existing local runtime; G0 still requires model smoke.
+PyYAML==6.0.3
+pytest>=8,<10
+torch==2.7.1
+transformers==4.49.0
+peft==0.14.0

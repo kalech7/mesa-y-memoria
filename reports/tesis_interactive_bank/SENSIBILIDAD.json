@@ -1,0 +1,168 @@
+{
+  "status": "verified",
+  "original": {
+    "manifest_sha256": "74468df63da63bc2e9b8654e37248387cf9529dbbb2e0b14aee2f1f51a722acf",
+    "counts": {
+      "train": {
+        "episodes": 80,
+        "historical_records": 180,
+        "public_identities_reproduced": 80
+      },
+      "validation": {
+        "episodes": 53,
+        "historical_records": 119,
+        "public_identities_reproduced": 53
+      },
+      "evaluation": {
+        "episodes": 67,
+        "historical_records": 151,
+        "public_identities_reproduced": 67
+      }
+    },
+    "isolation": {
+      "status": "verified",
+      "identity_version": "behavioral_identity_v3_roles",
+      "partitions": {
+        "train": {
+          "episodes": 80,
+          "roots": 60,
+          "behavioral_identities": 80,
+          "observable_identities": 60
+        },
+        "validation": {
+          "episodes": 53,
+          "roots": 40,
+          "behavioral_identities": 53,
+          "observable_identities": 40
+        },
+        "evaluation": {
+          "episodes": 67,
+          "roots": 50,
+          "behavioral_identities": 67,
+          "observable_identities": 50
+        }
+      },
+      "historical_overlap": 0,
+      "limits": "Exact identity with alpha-renamed references and user-role normalization; not universal paraphrase equivalence.",
+      "templates_and_recipe_ids_disjoint": true,
+      "paired_public_prefixes": {
+        "train:F3": 8,
+        "train:F4": 12,
+        "validation:F3": 5,
+        "validation:F4": 8,
+        "evaluation:F4": 10,
+        "evaluation:F3": 7
+      }
+    }
+  },
+  "interactive": {
+    "seed": 684023,
+    "counts": {
+      "train": {
+        "episodes": 80,
+        "historical_records": 426,
+        "opening_turns": 640,
+        "same_day_different_session": 29,
+        "first_visit_partial": 26,
+        "second_visit_temporary": 33,
+        "probe_reuse": 80,
+        "probe_unrelated_preference": 80,
+        "first_visit_refused": 14,
+        "second_visit_reuse": 25,
+        "second_visit_revision": 22,
+        "probe_first_day_after_interval": 11,
+        "first_visit_direct": 8,
+        "probe_last_day_of_interval": 9,
+        "paired_public_prefixes_verified": 20,
+        "roots": 60,
+        "bank_sha256": "72da8550714d6a95466a6a28bc1a5b011a2470d6939b7bbc5d77692ab93e0ee6"
+      },
+      "validation": {
+        "episodes": 53,
+        "historical_records": 282,
+        "opening_turns": 424,
+        "same_day_different_session": 17,
+        "second_visit_temporary": 30,
+        "probe_reuse": 53,
+        "probe_unrelated_preference": 53,
+        "first_visit_refused": 10,
+        "second_visit_revision": 14,
+        "probe_last_day_of_interval": 5,
+        "probe_first_day_after_interval": 6,
+        "first_visit_partial": 12,
+        "first_visit_direct": 8,
+        "second_visit_reuse": 9,
+        "paired_public_prefixes_verified": 13,
+        "roots": 40,
+        "bank_sha256": "762a45c562dbf941ddc6fc18b9f966f3663557baadfa3d1d68202d28c03d885a"
+      },
+      "evaluation": {
+        "episodes": 67,
+        "historical_records": 357,
+        "opening_turns": 536,
+        "same_day_different_session": 10,
+        "first_visit_partial": 16,
+        "second_visit_reuse": 22,
+        "probe_reuse": 67,
+        "probe_unrelated_preference": 67,
+        "first_visit_direct": 15,
+        "second_visit_revision": 20,
+        "second_visit_temporary": 25,
+        "probe_first_day_after_interval": 9,
+        "first_visit_refused": 7,
+        "probe_last_day_of_interval": 6,
+        "paired_public_prefixes_verified": 17,
+        "roots": 50,
+        "bank_sha256": "126cdb55978bfbc7f0c8e79ed03cba6cc4b45cf4aa590b4e66324146cf1efa9f"
+      }
+    },
+    "interactive_roots_overlapping_original": 0,
+    "recipe_world_and_template_overlap_between_splits": 0,
+    "coarse_preference_overlap_between_splits_by_family": {
+      "F3": 7,
+      "F0": 3
+    },
+    "coarse_preference_overlap_with_original_by_family": {
+      "F3": 12,
+      "F0": 18,
+      "F2": 2,
+      "F4": 2,
+      "F1": 1
+    }
+  },
+  "limits": [
+    "A coarse key shares a food, attribute and family while ignoring wording, dates, context and later events.",
+    "Food and scope concepts are shared across splits. Identity checks do not prove unrestricted paraphrase generalization.",
+    "The audit checks evaluator-only fields and initial state identities. It does not evaluate or rank reserved policies.",
+    "Conversations are deterministic simulations with authored variation and fixed model-independent reply trajectories."
+  ],
+  "comparison": {
+    "compared_seeds": [
+      684023,
+      683915
+    ],
+    "cross_experiment_identity_overlap": {
+      "root_id": {
+        "count": 0,
+        "split_pairs": {}
+      },
+      "world_id": {
+        "count": 0,
+        "split_pairs": {}
+      },
+      "origin_root": {
+        "count": 0,
+        "split_pairs": {}
+      },
+      "recipe_id": {
+        "count": 0,
+        "split_pairs": {}
+      },
+      "normalized_public": {
+        "count": 0,
+        "split_pairs": {}
+      }
+    },
+    "scope": "Identity and authored recipe checks; food vocabulary and scenario concepts shared."
+  }
+}

@@ -1,0 +1,242 @@
+[
+  {
+    "audit_id": "caso-27c1a07c73f40b",
+    "reviewer_id": "",
+    "visits": [
+      {
+        "admissible_response": "",
+        "writable_scope": null,
+        "valid_from": null,
+        "valid_through": null,
+        "context": null
+      },
+      {
+        "admissible_response": "",
+        "writable_scope": null,
+        "valid_from": null,
+        "valid_through": null,
+        "context": null
+      }
+    ],
+    "question_visit": null,
+    "question_text": "",
+    "both_replies_plausible": null,
+    "rationale": ""
+  },
+  {
+    "audit_id": "caso-6a2e610bdfd6dd",
+    "reviewer_id": "",
+    "visits": [
+      {
+        "admissible_response": "",
+        "writable_scope": null,
+        "valid_from": null,
+        "valid_through": null,
+        "context": null
+      },
+      {
+        "admissible_response": "",
+        "writable_scope": null,
+        "valid_from": null,
+        "valid_through": null,
+        "context": null
+      }
+    ],
+    "question_visit": null,
+    "question_text": "",
+    "both_replies_plausible": null,
+    "rationale": ""
+  },
+  {
+    "audit_id": "caso-379742cb0d75b0",
+    "reviewer_id": "",
+    "visits": [
+      {
+        "admissible_response": "",
+        "writable_scope": null,
+        "valid_from": null,
+        "valid_through": null,
+        "context": null
+      },
+      {
+        "admissible_response": "",
+        "writable_scope": null,
+        "valid_from": null,
+        "valid_through": null,
+        "context": null
+      }
+    ],
+    "question_visit": null,
+    "question_text": "",
+    "both_replies_plausible": null,
+    "rationale": ""
+  },
+  {
+    "audit_id": "caso-8f68f143447871",
+    "reviewer_id": "",
+    "visits": [
+      {
+        "admissible_response": "",
+        "writable_scope": null,
+        "valid_from": null,
+        "valid_through": null,
+        "context": null
+      },
+      {
+        "admissible_response": "",
+        "writable_scope": null,
+        "valid_from": null,
+        "valid_through": null,
+        "context": null
+      }
+    ],
+    "question_visit": null,
+    "question_text": "",
+    "both_replies_plausible": null,
+    "rationale": ""
+  },
+  {
+    "audit_id": "caso-e1e43f735a3620",
+    "reviewer_id": "",
+    "visits": [
+      {
+        "admissible_response": "",
+        "writable_scope": null,
+        "valid_from": null,
+        "valid_through": null,
+        "context": null
+      },
+      {
+        "admissible_response": "",
+        "writable_scope": null,
+        "valid_from": null,
+        "valid_through": null,
+        "context": null
+      }
+    ],
+    "question_visit": null,
+    "question_text": "",
+    "both_replies_plausible": null,
+    "rationale": ""
+  },
+  {
+    "audit_id": "caso-40f513bace9db6",
+    "reviewer_id": "",
+    "visits": [
+      {
+        "admissible_response": "",
+        "writable_scope": null,
+        "valid_from": null,
+        "valid_through": null,
+        "context": null
+      },
+      {
+        "admissible_response": "",
+        "writable_scope": null,
+        "valid_from": null,
+        "valid_through": null,
+        "context": null
+      }
+    ],
+    "question_visit": null,
+    "question_text": "",
+    "both_replies_plausible": null,
+    "rationale": ""
+  },
+  {
+    "audit_id": "caso-88b1ec37e40399",
+    "reviewer_id": "",
+    "visits": [
+      {
+        "admissible_response": "",
+        "writable_scope": null,
+        "valid_from": null,
+        "valid_through": null,
+        "context": null
+      },
+      {
+        "admissible_response": "",
+        "writable_scope": null,
+        "valid_from": null,
+        "valid_through": null,
+        "context": null
+      }
+    ],
+    "question_visit": null,
+    "question_text": "",
+    "both_replies_plausible": null,
+    "rationale": ""
+  },
+  {
+    "audit_id": "caso-c582f1af64496d",
+    "reviewer_id": "",
+    "visits": [
+      {
+        "admissible_response": "",
+        "writable_scope": null,
+        "valid_from": null,
+        "valid_through": null,
+        "context": null
+      },
+      {
+        "admissible_response": "",
+        "writable_scope": null,
+        "valid_from": null,
+        "valid_through": null,
+        "context": null
+      }
+    ],
+    "question_visit": null,
+    "question_text": "",
+    "both_replies_plausible": null,
+    "rationale": ""
+  },
+  {
+    "audit_id": "caso-05b8dbd1549402",
+    "reviewer_id": "",
+    "visits": [
+      {
+        "admissible_response": "",
+        "writable_scope": null,
+        "valid_from": null,
+        "valid_through": null,
+        "context": null
+      },
+      {
+        "admissible_response": "",
+        "writable_scope": null,
+        "valid_from": null,
+        "valid_through": null,
+        "context": null
+      }
+    ],
+    "question_visit": null,
+    "question_text": "",
+    "both_replies_plausible": null,
+    "rationale": ""
+  },
+  {
+    "audit_id": "caso-2d5939fbfc22d2",
+    "reviewer_id": "",
+    "visits": [
+      {
+        "admissible_response": "",
+        "writable_scope": null,
+        "valid_from": null,
+        "valid_through": null,
+        "context": null
+      },
+      {
+        "admissible_response": "",
+        "writable_scope": null,
+        "valid_from": null,
+        "valid_through": null,
+        "context": null
+      }
+    ],
+    "question_visit": null,
+    "question_text": "",
+    "both_replies_plausible": null,
+    "rationale": ""
+  }
+]

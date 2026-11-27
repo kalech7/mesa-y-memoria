@@ -1,0 +1,20 @@
+[
+  {"id":"captura","attribute":"dinner_preference","turns":["que puedo comoer hoy si ayer comi pooolo y no quiero comer pollo"],"excluded":["pollo"]},
+  {"id":"errata_en_la_exclusion","attribute":"dinner_preference","turns":["Qué puedo comer hoy? sin pooolo"],"excluded":["pollo"]},
+  {"id":"varios_alimentos","attribute":"dinner_preference","turns":["¿Qué puedo cenar sin huevo ni cebolla ni pescado?"],"excluded":["cebolla","huevo","pescado"]},
+  {"id":"quiere_variedad","attribute":"dinner_preference","turns":["Ayer comí pescado y no quiero repetirlo. ¿Qué puedo cenar hoy?"],"excluded":["pescado"]},
+  {"id":"consumo_es_historia","attribute":"dinner_preference","turns":["Ayer comí arroz. ¿Qué puedo cenar hoy?"],"excluded":[]},
+  {"id":"ingrediente_fuera_del_vocabulario","attribute":"dinner_preference","turns":["¿Qué puedo cenar sin cebollín?"],"excluded":["cebollin"]},
+  {"id":"lacteos","attribute":"breakfast_preference","turns":["¿Qué puedo desayunar sin lácteos ni avena?"],"excluded":["avena","lacteo"]},
+  {"id":"bebidas","attribute":"drink_preference","turns":["¿Qué bebida me recomiendas sin café ni limón?"],"excluded":["cafe","limon"]},
+  {"id":"negacion_doble","attribute":"dinner_preference","turns":["No quiero dejar de comer pollo. ¿Qué puedo preparar hoy?"],"excluded":[]},
+  {"id":"cambio_de_idea","attribute":"dinner_preference","turns":["Hoy no quiero pescado ni huevo.","Ahora sí quiero pescado. ¿Qué puedo cenar?"],"excluded":["huevo"]},
+  {"id":"aclaracion_de_exclusion","attribute":"dinner_preference","turns":["¿Qué puedo cenar sin eso?","Sin huevo tampoco."],"follow_up":true,"excluded":["huevo"]},
+  {"id":"respuesta_de_una_palabra","attribute":"dinner_preference","turns":["¿Qué puedo comer sin eso?","Huevo"],"answering":true,"excluded":["huevo"]},
+  {"id":"recomendacion_abierta","attribute":"dinner_preference","turns":["Recomiéndame una cena sin huevo."],"excluded":["huevo"]},
+  {"id":"referencia_ambigua","attribute":"dinner_preference","turns":["¿Qué puedo comer sin eso?"],"excluded":[],"clarify":true},
+  {"id":"alergia_explicita","attribute":"dinner_preference","turns":["Tengo alergia al huevo. ¿Qué puedo cenar?"],"excluded":["huevo"],"clarify":true},
+  {"id":"opciones_agotadas","attribute":"dinner_preference","turns":["¿Qué puedo comer sin huevo ni arroz ni pescado ni quinua ni garbanzos?"],"excluded":["arroz","garbanzo","huevo","pescado","quinua"],"clarify":true},
+  {"id":"consulta_de_memoria","attribute":"dinner_preference","turns":["¿Qué prefiero para cenar?"],"memory":true},
+  {"id":"consulta_de_capacidad","attribute":"dinner_preference","turns":["¿Qué puedo preguntarte sobre mis recuerdos?"],"memory":true}
+]

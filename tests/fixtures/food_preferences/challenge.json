@@ -1,0 +1,1769 @@
+[
+  {
+    "case": {
+      "scenario_id": "challenge-r01",
+      "user_id": "challenge-user-01",
+      "category": "R01",
+      "split": "challenge",
+      "family": "independent_rephrasing",
+      "reference_time": "2026-10-25T12:00:00+00:00",
+      "events": [
+        {
+          "message_id": "challenge-r01-e1",
+          "session_id": "challenge-r01-session-1",
+          "at": "2026-10-01T09:00:00+00:00",
+          "role": "user",
+          "channel": "chat",
+          "source": "USER_STATEMENT",
+          "text": "Cuando es día de trabajo, mi desayuno favorito es avena. En sábados y domingos desayuno tostadas."
+        }
+      ],
+      "query": "Si mañana es lunes, ¿qué desayuno encaja con mis gustos?"
+    },
+    "expected": {
+      "scenario_id": "challenge-r01",
+      "category": "R01",
+      "expected_context": {
+        "day_scope": "WEEKDAY",
+        "meal_scope": "BREAKFAST"
+      },
+      "expected_food_items": [
+        "avena"
+      ],
+      "acceptable_actions": [
+        "ANSWER"
+      ],
+      "expected_evidence_ids": [
+        "challenge-r01-e1"
+      ],
+      "relevant_evidence_ids": [
+        "challenge-r01-e1"
+      ],
+      "expected_conflict_type": null,
+      "requires_clarification": false,
+      "rationale": "Lunes selecciona el desayuno laboral; el desayuno de descanso sigue siendo válido.",
+      "forbidden_food_items": []
+    },
+    "private": {
+      "scenario_id": "challenge-r01",
+      "clarification_responses": {}
+    }
+  },
+  {
+    "case": {
+      "scenario_id": "challenge-r02",
+      "user_id": "challenge-user-02",
+      "category": "R02",
+      "split": "challenge",
+      "family": "independent_rephrasing",
+      "reference_time": "2026-10-25T12:00:00+00:00",
+      "events": [
+        {
+          "message_id": "challenge-r02-e1",
+          "session_id": "challenge-r02-session-1",
+          "at": "2026-10-01T09:00:00+00:00",
+          "role": "user",
+          "channel": "chat",
+          "source": "USER_STATEMENT",
+          "text": "Mi almuerzo preferido de lunes a viernes lleva arroz. El sábado y el domingo, a mediodía, prefiero tofu."
+        }
+      ],
+      "query": "Para almorzar un miércoles, ¿qué había dicho que me gustaba?"
+    },
+    "expected": {
+      "scenario_id": "challenge-r02",
+      "category": "R02",
+      "expected_context": {
+        "day_scope": "WEEKDAY",
+        "meal_scope": "LUNCH"
+      },
+      "expected_food_items": [
+        "arroz"
+      ],
+      "acceptable_actions": [
+        "ANSWER"
+      ],
+      "expected_evidence_ids": [
+        "challenge-r02-e1"
+      ],
+      "relevant_evidence_ids": [
+        "challenge-r02-e1"
+      ],
+      "expected_conflict_type": null,
+      "requires_clarification": false,
+      "rationale": "La consulta explicita miércoles y almuerzo, sin usar la alternativa de descanso.",
+      "forbidden_food_items": []
+    },
+    "private": {
+      "scenario_id": "challenge-r02",
+      "clarification_responses": {}
+    }
+  },
+  {
+    "case": {
+      "scenario_id": "challenge-r03",
+      "user_id": "challenge-user-03",
+      "category": "R03",
+      "split": "challenge",
+      "family": "independent_rephrasing",
+      "reference_time": "2026-10-25T12:00:00+00:00",
+      "events": [
+        {
+          "message_id": "challenge-r03-e1",
+          "session_id": "challenge-r03-session-1",
+          "at": "2026-10-01T09:00:00+00:00",
+          "role": "user",
+          "channel": "chat",
+          "source": "USER_STATEMENT",
+          "text": "Las cenas de los días laborables me gustan con sopa; en las cenas del fin de semana elijo pizza."
+        }
+      ],
+      "query": "Es jueves y voy a cenar: ¿qué prefiero?"
+    },
+    "expected": {
+      "scenario_id": "challenge-r03",
+      "category": "R03",
+      "expected_context": {
+        "day_scope": "WEEKDAY",
+        "meal_scope": "DINNER"
+      },
+      "expected_food_items": [
+        "sopa"
+      ],
+      "acceptable_actions": [
+        "ANSWER"
+      ],
+      "expected_evidence_ids": [
+        "challenge-r03-e1"
+      ],
+      "relevant_evidence_ids": [
+        "challenge-r03-e1"
+      ],
+      "expected_conflict_type": null,
+      "requires_clarification": false,
+      "rationale": "Jueves es laborable y la tarea se refiere a cena.",
+      "forbidden_food_items": []
+    },
+    "private": {
+      "scenario_id": "challenge-r03",
+      "clarification_responses": {}
+    }
+  },
+  {
+    "case": {
+      "scenario_id": "challenge-r04",
+      "user_id": "challenge-user-04",
+      "category": "R04",
+      "split": "challenge",
+      "family": "independent_rephrasing",
+      "reference_time": "2026-10-25T12:00:00+00:00",
+      "events": [
+        {
+          "message_id": "challenge-r04-e1",
+          "session_id": "challenge-r04-session-1",
+          "at": "2026-10-01T09:00:00+00:00",
+          "role": "user",
+          "channel": "chat",
+          "source": "USER_STATEMENT",
+          "text": "Para merendar en días de trabajo me encanta fruta. En las meriendas del sábado y domingo me apetece queso."
+        }
+      ],
+      "query": "¿Qué me gusta merendar los viernes?"
+    },
+    "expected": {
+      "scenario_id": "challenge-r04",
+      "category": "R04",
+      "expected_context": {
+        "day_scope": "WEEKDAY",
+        "meal_scope": "SNACK"
+      },
+      "expected_food_items": [
+        "fruta"
+      ],
+      "acceptable_actions": [
+        "ANSWER"
+      ],
+      "expected_evidence_ids": [
+        "challenge-r04-e1"
+      ],
+      "relevant_evidence_ids": [
+        "challenge-r04-e1"
+      ],
+      "expected_conflict_type": null,
+      "requires_clarification": false,
+      "rationale": "Viernes selecciona merienda laboral, no la de descanso.",
+      "forbidden_food_items": []
+    },
+    "private": {
+      "scenario_id": "challenge-r04",
+      "clarification_responses": {}
+    }
+  },
+  {
+    "case": {
+      "scenario_id": "challenge-r05",
+      "user_id": "challenge-user-05",
+      "category": "R05",
+      "split": "challenge",
+      "family": "independent_rephrasing",
+      "reference_time": "2026-10-25T12:00:00+00:00",
+      "events": [
+        {
+          "message_id": "challenge-r05-e1",
+          "session_id": "challenge-r05-session-1",
+          "at": "2026-10-01T09:00:00+00:00",
+          "role": "user",
+          "channel": "chat",
+          "source": "USER_STATEMENT",
+          "text": "Los desayunos del sábado y del domingo los disfruto con tostadas. Durante la semana laboral prefiero avena al desayunar."
+        }
+      ],
+      "query": "Un domingo al desayuno, ¿cuál de esos alimentos prefiero?"
+    },
+    "expected": {
+      "scenario_id": "challenge-r05",
+      "category": "R05",
+      "expected_context": {
+        "day_scope": "WEEKEND",
+        "meal_scope": "BREAKFAST"
+      },
+      "expected_food_items": [
+        "tostadas"
+      ],
+      "acceptable_actions": [
+        "ANSWER"
+      ],
+      "expected_evidence_ids": [
+        "challenge-r05-e1"
+      ],
+      "relevant_evidence_ids": [
+        "challenge-r05-e1"
+      ],
+      "expected_conflict_type": null,
+      "requires_clarification": false,
+      "rationale": "El domingo corresponde a la partición de descanso y desayuno.",
+      "forbidden_food_items": []
+    },
+    "private": {
+      "scenario_id": "challenge-r05",
+      "clarification_responses": {}
+    }
+  },
+  {
+    "case": {
+      "scenario_id": "challenge-r06",
+      "user_id": "challenge-user-06",
+      "category": "R06",
+      "split": "challenge",
+      "family": "independent_rephrasing",
+      "reference_time": "2026-10-25T12:00:00+00:00",
+      "events": [
+        {
+          "message_id": "challenge-r06-e1",
+          "session_id": "challenge-r06-session-1",
+          "at": "2026-10-01T09:00:00+00:00",
+          "role": "user",
+          "channel": "chat",
+          "source": "USER_STATEMENT",
+          "text": "En mis almuerzos de fin de semana lo que me gusta es tofu. En los almuerzos de días laborales me quedo con arroz."
+        }
+      ],
+      "query": "Hoy es sábado; para el almuerzo, ¿cuál es mi preferencia?"
+    },
+    "expected": {
+      "scenario_id": "challenge-r06",
+      "category": "R06",
+      "expected_context": {
+        "day_scope": "WEEKEND",
+        "meal_scope": "LUNCH"
+      },
+      "expected_food_items": [
+        "tofu"
+      ],
+      "acceptable_actions": [
+        "ANSWER"
+      ],
+      "expected_evidence_ids": [
+        "challenge-r06-e1"
+      ],
+      "relevant_evidence_ids": [
+        "challenge-r06-e1"
+      ],
+      "expected_conflict_type": null,
+      "requires_clarification": false,
+      "rationale": "La afirmación explícita sábado fija el día sin inferirlo de la fecha de ejecución.",
+      "forbidden_food_items": []
+    },
+    "private": {
+      "scenario_id": "challenge-r06",
+      "clarification_responses": {}
+    }
+  },
+  {
+    "case": {
+      "scenario_id": "challenge-r07",
+      "user_id": "challenge-user-07",
+      "category": "R07",
+      "split": "challenge",
+      "family": "independent_rephrasing",
+      "reference_time": "2026-10-25T12:00:00+00:00",
+      "events": [
+        {
+          "message_id": "challenge-r07-e1",
+          "session_id": "challenge-r07-session-1",
+          "at": "2026-10-01T09:00:00+00:00",
+          "role": "user",
+          "channel": "chat",
+          "source": "USER_STATEMENT",
+          "text": "Cuando ceno un sábado o un domingo prefiero pizza. Si ceno de lunes a viernes, prefiero sopa."
+        }
+      ],
+      "query": "¿Qué alimento me apetece para cenar el sábado?"
+    },
+    "expected": {
+      "scenario_id": "challenge-r07",
+      "category": "R07",
+      "expected_context": {
+        "day_scope": "WEEKEND",
+        "meal_scope": "DINNER"
+      },
+      "expected_food_items": [
+        "pizza"
+      ],
+      "acceptable_actions": [
+        "ANSWER"
+      ],
+      "expected_evidence_ids": [
+        "challenge-r07-e1"
+      ],
+      "relevant_evidence_ids": [
+        "challenge-r07-e1"
+      ],
+      "expected_conflict_type": null,
+      "requires_clarification": false,
+      "rationale": "La cena del sábado usa la preferencia de descanso.",
+      "forbidden_food_items": []
+    },
+    "private": {
+      "scenario_id": "challenge-r07",
+      "clarification_responses": {}
+    }
+  },
+  {
+    "case": {
+      "scenario_id": "challenge-r08",
+      "user_id": "challenge-user-08",
+      "category": "R08",
+      "split": "challenge",
+      "family": "independent_rephrasing",
+      "reference_time": "2026-10-25T12:00:00+00:00",
+      "events": [
+        {
+          "message_id": "challenge-r08-e1",
+          "session_id": "challenge-r08-session-1",
+          "at": "2026-10-01T09:00:00+00:00",
+          "role": "user",
+          "channel": "chat",
+          "source": "USER_STATEMENT",
+          "text": "A la hora de la merienda de los fines de semana me gusta queso. Para la merienda de días de oficina me gusta fruta."
+        }
+      ],
+      "query": "¿Qué prefiero en la merienda del domingo?"
+    },
+    "expected": {
+      "scenario_id": "challenge-r08",
+      "category": "R08",
+      "expected_context": {
+        "day_scope": "WEEKEND",
+        "meal_scope": "SNACK"
+      },
+      "expected_food_items": [
+        "queso"
+      ],
+      "acceptable_actions": [
+        "ANSWER"
+      ],
+      "expected_evidence_ids": [
+        "challenge-r08-e1"
+      ],
+      "relevant_evidence_ids": [
+        "challenge-r08-e1"
+      ],
+      "expected_conflict_type": null,
+      "requires_clarification": false,
+      "rationale": "La merienda dominical tiene una evidencia propia.",
+      "forbidden_food_items": []
+    },
+    "private": {
+      "scenario_id": "challenge-r08",
+      "clarification_responses": {}
+    }
+  },
+  {
+    "case": {
+      "scenario_id": "challenge-r09",
+      "user_id": "challenge-user-09",
+      "category": "R09",
+      "split": "challenge",
+      "family": "independent_rephrasing",
+      "reference_time": "2026-10-25T12:00:00+00:00",
+      "events": [
+        {
+          "message_id": "challenge-r09-e1",
+          "session_id": "challenge-r09-session-1",
+          "at": "2026-10-01T09:00:00+00:00",
+          "role": "user",
+          "channel": "chat",
+          "source": "USER_STATEMENT",
+          "text": "No me agrada el arroz, sea cual sea el día o la comida."
+        }
+      ],
+      "query": "¿Qué preferencia tengo acerca del arroz?"
+    },
+    "expected": {
+      "scenario_id": "challenge-r09",
+      "category": "R09",
+      "expected_context": {
+        "day_scope": null,
+        "meal_scope": null
+      },
+      "expected_food_items": [],
+      "acceptable_actions": [
+        "ANSWER"
+      ],
+      "expected_evidence_ids": [
+        "challenge-r09-e1"
+      ],
+      "relevant_evidence_ids": [
+        "challenge-r09-e1"
+      ],
+      "expected_conflict_type": null,
+      "requires_clarification": false,
+      "rationale": "Negación explícita de gusto general: informar rechazo, sin convertirlo en recomendación.",
+      "forbidden_food_items": [
+        "arroz"
+      ]
+    },
+    "private": {
+      "scenario_id": "challenge-r09",
+      "clarification_responses": {}
+    }
+  },
+  {
+    "case": {
+      "scenario_id": "challenge-r10",
+      "user_id": "challenge-user-10",
+      "category": "R10",
+      "split": "challenge",
+      "family": "independent_rephrasing",
+      "reference_time": "2026-10-25T12:00:00+00:00",
+      "events": [
+        {
+          "message_id": "challenge-r10-e1",
+          "session_id": "challenge-r10-session-1",
+          "at": "2026-10-01T09:00:00+00:00",
+          "role": "user",
+          "channel": "chat",
+          "source": "USER_STATEMENT",
+          "text": "Sin distinguir días ni comidas, disfruto el queso."
+        },
+        {
+          "message_id": "challenge-r10-e2",
+          "session_id": "challenge-r10-session-2",
+          "at": "2026-10-02T09:00:00+00:00",
+          "role": "user",
+          "channel": "chat",
+          "source": "USER_STATEMENT",
+          "text": "Sin distinguir días ni comidas, detesto el queso."
+        }
+      ],
+      "query": "¿Qué gusto tengo respecto al queso?"
+    },
+    "expected": {
+      "scenario_id": "challenge-r10",
+      "category": "R10",
+      "expected_context": {
+        "day_scope": null,
+        "meal_scope": null
+      },
+      "expected_food_items": [],
+      "acceptable_actions": [
+        "PRESERVE_CONFLICT",
+        "CLARIFY"
+      ],
+      "expected_evidence_ids": [
+        "challenge-r10-e1",
+        "challenge-r10-e2"
+      ],
+      "relevant_evidence_ids": [
+        "challenge-r10-e1",
+        "challenge-r10-e2"
+      ],
+      "expected_conflict_type": "SAME_SCOPE",
+      "requires_clarification": false,
+      "rationale": "Hay dos polaridades incompatibles sobre el mismo alimento y alcance sin corrección declarada.",
+      "forbidden_food_items": []
+    },
+    "private": {
+      "scenario_id": "challenge-r10",
+      "clarification_responses": {}
+    }
+  },
+  {
+    "case": {
+      "scenario_id": "challenge-r11",
+      "user_id": "challenge-user-11",
+      "category": "R11",
+      "split": "challenge",
+      "family": "independent_rephrasing",
+      "reference_time": "2026-10-25T12:00:00+00:00",
+      "events": [
+        {
+          "message_id": "challenge-r11-e1",
+          "session_id": "challenge-r11-session-1",
+          "at": "2026-10-01T09:00:00+00:00",
+          "role": "user",
+          "channel": "chat",
+          "source": "USER_STATEMENT",
+          "text": "Sea cual sea el día y la comida, a mí me gusta tofu."
+        },
+        {
+          "message_id": "challenge-r11-e2",
+          "session_id": "challenge-r11-session-2",
+          "at": "2026-10-02T09:00:00+00:00",
+          "role": "user",
+          "channel": "chat",
+          "source": "USER_STATEMENT",
+          "text": "A mi hermana le encanta pizza en cualquier comida."
+        }
+      ],
+      "query": "¿Qué alimento he dicho que me gusta a mí?"
+    },
+    "expected": {
+      "scenario_id": "challenge-r11",
+      "category": "R11",
+      "expected_context": {
+        "day_scope": null,
+        "meal_scope": null
+      },
+      "expected_food_items": [
+        "tofu"
+      ],
+      "acceptable_actions": [
+        "ANSWER"
+      ],
+      "expected_evidence_ids": [
+        "challenge-r11-e1"
+      ],
+      "relevant_evidence_ids": [
+        "challenge-r11-e1"
+      ],
+      "expected_conflict_type": null,
+      "requires_clarification": false,
+      "rationale": "La preferencia de la hermana no debe atribuirse al usuario.",
+      "forbidden_food_items": []
+    },
+    "private": {
+      "scenario_id": "challenge-r11",
+      "clarification_responses": {}
+    }
+  },
+  {
+    "case": {
+      "scenario_id": "challenge-r12",
+      "user_id": "challenge-user-12",
+      "category": "R12",
+      "split": "challenge",
+      "family": "independent_rephrasing",
+      "reference_time": "2026-10-25T12:00:00+00:00",
+      "events": [
+        {
+          "message_id": "challenge-r12-e1",
+          "session_id": "challenge-r12-session-1",
+          "at": "2026-10-01T09:00:00+00:00",
+          "role": "user",
+          "channel": "chat",
+          "source": "USER_STATEMENT",
+          "text": "No disfruto el pollo en ningún día ni en ninguna comida."
+        },
+        {
+          "message_id": "challenge-r12-e2",
+          "session_id": "challenge-r12-session-2",
+          "at": "2026-10-02T09:00:00+00:00",
+          "role": "user",
+          "channel": "chat",
+          "source": "ORDER_HISTORY",
+          "text": "Comprobante de un pedido de pollo para la cena del 2026-10-20."
+        }
+      ],
+      "query": "¿Puedo dar por hecho que ahora me gusta pollo?"
+    },
+    "expected": {
+      "scenario_id": "challenge-r12",
+      "category": "R12",
+      "expected_context": {
+        "day_scope": null,
+        "meal_scope": null
+      },
+      "expected_food_items": [],
+      "acceptable_actions": [
+        "VERIFY",
+        "PRESERVE_CONFLICT",
+        "CLARIFY"
+      ],
+      "expected_evidence_ids": [
+        "challenge-r12-e1",
+        "challenge-r12-e2"
+      ],
+      "relevant_evidence_ids": [
+        "challenge-r12-e1",
+        "challenge-r12-e2"
+      ],
+      "expected_conflict_type": "SCC",
+      "requires_clarification": false,
+      "rationale": "El registro de compra no explica destinatario ni invalida el rechazo declarado.",
+      "forbidden_food_items": []
+    },
+    "private": {
+      "scenario_id": "challenge-r12",
+      "clarification_responses": {}
+    }
+  },
+  {
+    "case": {
+      "scenario_id": "challenge-r13",
+      "user_id": "challenge-user-13",
+      "category": "R13",
+      "split": "challenge",
+      "family": "independent_rephrasing",
+      "reference_time": "2026-10-25T12:00:00+00:00",
+      "events": [
+        {
+          "message_id": "challenge-r13-e1",
+          "session_id": "challenge-r13-session-1",
+          "at": "2026-10-01T09:00:00+00:00",
+          "role": "user",
+          "channel": "chat",
+          "source": "USER_STATEMENT",
+          "text": "Todavía no sé si me gusta tofu; ni siquiera para la comida de hoy lo tengo decidido."
+        }
+      ],
+      "query": "¿Qué puedo afirmar sobre mi gusto por tofu?"
+    },
+    "expected": {
+      "scenario_id": "challenge-r13",
+      "category": "R13",
+      "expected_context": {
+        "day_scope": null,
+        "meal_scope": null
+      },
+      "expected_food_items": [],
+      "acceptable_actions": [
+        "CLARIFY",
+        "ABSTAIN",
+        "CONDITIONAL_ANSWER"
+      ],
+      "expected_evidence_ids": [
+        "challenge-r13-e1"
+      ],
+      "relevant_evidence_ids": [
+        "challenge-r13-e1"
+      ],
+      "expected_conflict_type": null,
+      "requires_clarification": false,
+      "rationale": "La incertidumbre explícita no autoriza extraer un gusto positivo o negativo definitivo.",
+      "forbidden_food_items": []
+    },
+    "private": {
+      "scenario_id": "challenge-r13",
+      "clarification_responses": {}
+    }
+  },
+  {
+    "case": {
+      "scenario_id": "challenge-r14",
+      "user_id": "challenge-user-14",
+      "category": "R14",
+      "split": "challenge",
+      "family": "independent_rephrasing",
+      "reference_time": "2026-10-25T12:00:00+00:00",
+      "events": [
+        {
+          "message_id": "challenge-r14-e1",
+          "session_id": "challenge-r14-session-1",
+          "at": "2026-10-01T09:00:00+00:00",
+          "role": "user",
+          "channel": "chat",
+          "source": "USER_STATEMENT",
+          "text": "Es posible que tenga alergia a las nueces; todavía no lo he confirmado."
+        },
+        {
+          "message_id": "challenge-r14-e2",
+          "session_id": "challenge-r14-session-2",
+          "at": "2026-10-02T09:00:00+00:00",
+          "role": "user",
+          "channel": "chat",
+          "source": "USER_STATEMENT",
+          "text": "A mí me gustan las nueces en cualquier día y comida."
+        }
+      ],
+      "query": "¿Puedes recomendarme nueces con seguridad?"
+    },
+    "expected": {
+      "scenario_id": "challenge-r14",
+      "category": "R14",
+      "expected_context": {
+        "day_scope": null,
+        "meal_scope": null
+      },
+      "expected_food_items": [],
+      "acceptable_actions": [
+        "VERIFY",
+        "ABSTAIN"
+      ],
+      "expected_evidence_ids": [
+        "challenge-r14-e1",
+        "challenge-r14-e2"
+      ],
+      "relevant_evidence_ids": [
+        "challenge-r14-e1",
+        "challenge-r14-e2"
+      ],
+      "expected_conflict_type": null,
+      "requires_clarification": false,
+      "rationale": "Una restricción relevante incierta impide asumir seguridad; no se infiere una alergia confirmada.",
+      "forbidden_food_items": [
+        "nueces"
+      ]
+    },
+    "private": {
+      "scenario_id": "challenge-r14",
+      "clarification_responses": {}
+    }
+  },
+  {
+    "case": {
+      "scenario_id": "challenge-r15",
+      "user_id": "challenge-user-15",
+      "category": "R15",
+      "split": "challenge",
+      "family": "independent_rephrasing",
+      "reference_time": "2026-10-25T12:00:00+00:00",
+      "events": [
+        {
+          "message_id": "challenge-r15-e1",
+          "session_id": "challenge-r15-session-1",
+          "at": "2026-10-01T09:00:00+00:00",
+          "role": "user",
+          "channel": "chat",
+          "source": "USER_STATEMENT",
+          "text": "Para cualquier comida, en cualquier día, me gusta tofu."
+        },
+        {
+          "message_id": "challenge-r15-e2",
+          "session_id": "challenge-r15-session-2",
+          "at": "2026-10-02T09:00:00+00:00",
+          "role": "user",
+          "channel": "chat",
+          "source": "ORDER_HISTORY",
+          "text": "Pedí pollo para mi hermana; esa compra no describe lo que me gusta comer a mí."
+        }
+      ],
+      "query": "¿Cuál es mi preferencia alimentaria comunicada?"
+    },
+    "expected": {
+      "scenario_id": "challenge-r15",
+      "category": "R15",
+      "expected_context": {
+        "day_scope": null,
+        "meal_scope": null
+      },
+      "expected_food_items": [
+        "tofu"
+      ],
+      "acceptable_actions": [
+        "ANSWER"
+      ],
+      "expected_evidence_ids": [
+        "challenge-r15-e1"
+      ],
+      "relevant_evidence_ids": [
+        "challenge-r15-e1"
+      ],
+      "expected_conflict_type": null,
+      "requires_clarification": false,
+      "rationale": "El destinatario explícito excluye ese pedido como evidencia del gusto propio.",
+      "forbidden_food_items": []
+    },
+    "private": {
+      "scenario_id": "challenge-r15",
+      "clarification_responses": {}
+    }
+  },
+  {
+    "case": {
+      "scenario_id": "challenge-r16",
+      "user_id": "challenge-user-16",
+      "category": "R16",
+      "split": "challenge",
+      "family": "independent_rephrasing",
+      "reference_time": "2026-10-25T12:00:00+00:00",
+      "events": [
+        {
+          "message_id": "challenge-r16-e1",
+          "session_id": "challenge-r16-session-1",
+          "at": "2026-10-01T09:00:00+00:00",
+          "role": "user",
+          "channel": "chat",
+          "source": "USER_STATEMENT",
+          "text": "Si como en la oficina, prefiero ensalada. Cuando como en casa, prefiero pizza."
+        }
+      ],
+      "query": "Voy a comer en la oficina: ¿qué prefiero allí?"
+    },
+    "expected": {
+      "scenario_id": "challenge-r16",
+      "category": "R16",
+      "expected_context": {
+        "day_scope": null,
+        "meal_scope": null,
+        "context": {
+          "place": "work"
+        }
+      },
+      "expected_food_items": [
+        "ensalada"
+      ],
+      "acceptable_actions": [
+        "ANSWER"
+      ],
+      "expected_evidence_ids": [
+        "challenge-r16-e1"
+      ],
+      "relevant_evidence_ids": [
+        "challenge-r16-e1"
+      ],
+      "expected_conflict_type": null,
+      "requires_clarification": false,
+      "rationale": "El lugar es una condición explícita; casa y oficina conservan preferencias coexistentes.",
+      "forbidden_food_items": []
+    },
+    "private": {
+      "scenario_id": "challenge-r16",
+      "clarification_responses": {}
+    }
+  },
+  {
+    "case": {
+      "scenario_id": "challenge-r17",
+      "user_id": "challenge-user-17",
+      "category": "R17",
+      "split": "challenge",
+      "family": "independent_rephrasing",
+      "reference_time": "2026-10-25T12:00:00+00:00",
+      "events": [
+        {
+          "message_id": "challenge-r17-e1",
+          "session_id": "challenge-r17-session-1",
+          "at": "2026-10-01T09:00:00+00:00",
+          "role": "user",
+          "channel": "chat",
+          "source": "USER_STATEMENT",
+          "text": "Al comer sin compañía prefiero sopa; cuando estoy con amigos prefiero pizza."
+        }
+      ],
+      "query": "¿Qué prefiero comer?"
+    },
+    "expected": {
+      "scenario_id": "challenge-r17",
+      "category": "R17",
+      "expected_context": {
+        "day_scope": null,
+        "meal_scope": null
+      },
+      "expected_food_items": [],
+      "acceptable_actions": [
+        "CLARIFY"
+      ],
+      "expected_evidence_ids": [
+        "challenge-r17-e1"
+      ],
+      "relevant_evidence_ids": [
+        "challenge-r17-e1"
+      ],
+      "expected_conflict_type": "CPC",
+      "requires_clarification": true,
+      "rationale": "Falta compañía y la respuesta cambia entre las dos particiones.",
+      "forbidden_food_items": []
+    },
+    "private": {
+      "scenario_id": "challenge-r17",
+      "clarification_responses": {
+        "company": {
+          "value": "friends",
+          "text": "Voy a comer con amigos."
+        }
+      }
+    }
+  },
+  {
+    "case": {
+      "scenario_id": "challenge-r18",
+      "user_id": "challenge-user-18",
+      "category": "R18",
+      "split": "challenge",
+      "family": "independent_rephrasing",
+      "reference_time": "2026-10-25T12:00:00+00:00",
+      "events": [
+        {
+          "message_id": "challenge-r18-e1",
+          "session_id": "challenge-r18-session-1",
+          "at": "2026-10-01T09:00:00+00:00",
+          "role": "user",
+          "channel": "chat",
+          "source": "USER_STATEMENT",
+          "text": "En casa me gusta arroz y en la oficina me gusta ensalada."
+        }
+      ],
+      "query": "¿Qué comida encaja con mis gustos?"
+    },
+    "expected": {
+      "scenario_id": "challenge-r18",
+      "category": "R18",
+      "expected_context": {
+        "day_scope": null,
+        "meal_scope": null
+      },
+      "expected_food_items": [],
+      "acceptable_actions": [
+        "CLARIFY"
+      ],
+      "expected_evidence_ids": [
+        "challenge-r18-e1"
+      ],
+      "relevant_evidence_ids": [
+        "challenge-r18-e1"
+      ],
+      "expected_conflict_type": "CPC",
+      "requires_clarification": true,
+      "rationale": "Falta lugar; no hay una preferencia incondicional comunicada.",
+      "forbidden_food_items": []
+    },
+    "private": {
+      "scenario_id": "challenge-r18",
+      "clarification_responses": {
+        "place": {
+          "value": "home",
+          "text": "Estaré en casa."
+        }
+      }
+    }
+  },
+  {
+    "case": {
+      "scenario_id": "challenge-r19",
+      "user_id": "challenge-user-19",
+      "category": "R19",
+      "split": "challenge",
+      "family": "independent_rephrasing",
+      "reference_time": "2026-10-25T12:00:00+00:00",
+      "events": [
+        {
+          "message_id": "challenge-r19-e1",
+          "session_id": "challenge-r19-session-1",
+          "at": "2026-10-01T09:00:00+00:00",
+          "role": "user",
+          "channel": "chat",
+          "source": "USER_STATEMENT",
+          "text": "Los lunes a viernes desayuno avena y almuerzo arroz."
+        }
+      ],
+      "query": "Es martes: ¿qué prefiero comer?"
+    },
+    "expected": {
+      "scenario_id": "challenge-r19",
+      "category": "R19",
+      "expected_context": {
+        "day_scope": "WEEKDAY",
+        "meal_scope": null
+      },
+      "expected_food_items": [],
+      "acceptable_actions": [
+        "CLARIFY"
+      ],
+      "expected_evidence_ids": [
+        "challenge-r19-e1"
+      ],
+      "relevant_evidence_ids": [
+        "challenge-r19-e1"
+      ],
+      "expected_conflict_type": "CPC",
+      "requires_clarification": true,
+      "rationale": "Se conoce el día pero no la comida, y ambas preferencias son válidas.",
+      "forbidden_food_items": []
+    },
+    "private": {
+      "scenario_id": "challenge-r19",
+      "clarification_responses": {
+        "meal_scope": {
+          "value": "LUNCH",
+          "text": "Me refiero al almuerzo."
+        }
+      }
+    }
+  },
+  {
+    "case": {
+      "scenario_id": "challenge-r20",
+      "user_id": "challenge-user-20",
+      "category": "R20",
+      "split": "challenge",
+      "family": "independent_rephrasing",
+      "reference_time": "2026-10-25T12:00:00+00:00",
+      "events": [
+        {
+          "message_id": "challenge-r20-e1",
+          "session_id": "challenge-r20-session-1",
+          "at": "2026-10-01T09:00:00+00:00",
+          "role": "user",
+          "channel": "chat",
+          "source": "USER_STATEMENT",
+          "text": "Si el desayuno cae entre lunes y viernes prefiero avena; si cae en sábado o domingo prefiero tostadas."
+        }
+      ],
+      "query": "¿Qué prefiero desayunar?"
+    },
+    "expected": {
+      "scenario_id": "challenge-r20",
+      "category": "R20",
+      "expected_context": {
+        "day_scope": null,
+        "meal_scope": "BREAKFAST"
+      },
+      "expected_food_items": [],
+      "acceptable_actions": [
+        "CLARIFY"
+      ],
+      "expected_evidence_ids": [
+        "challenge-r20-e1"
+      ],
+      "relevant_evidence_ids": [
+        "challenge-r20-e1"
+      ],
+      "expected_conflict_type": "CPC",
+      "requires_clarification": true,
+      "rationale": "Se conoce desayuno, pero falta la partición de día.",
+      "forbidden_food_items": []
+    },
+    "private": {
+      "scenario_id": "challenge-r20",
+      "clarification_responses": {
+        "day_scope": {
+          "value": "WEEKEND",
+          "text": "Es un domingo."
+        }
+      }
+    }
+  },
+  {
+    "case": {
+      "scenario_id": "challenge-r21",
+      "user_id": "challenge-user-21",
+      "category": "R21",
+      "split": "challenge",
+      "family": "independent_rephrasing",
+      "reference_time": "2026-10-25T12:00:00+00:00",
+      "events": [
+        {
+          "message_id": "challenge-r21-e1",
+          "session_id": "challenge-r21-session-1",
+          "at": "2026-10-01T09:00:00+00:00",
+          "role": "user",
+          "channel": "chat",
+          "source": "USER_STATEMENT",
+          "text": "A diario me gusta cenar sopa."
+        },
+        {
+          "message_id": "challenge-r21-e2",
+          "session_id": "challenge-r21-session-2",
+          "at": "2026-10-02T09:00:00+00:00",
+          "role": "user",
+          "channel": "chat",
+          "source": "USER_STATEMENT",
+          "text": "Haré una única excepción: en la cena del 2026-10-19 prefiero pizza en vez de sopa."
+        }
+      ],
+      "query": "¿Qué prefiero cenar el 2026-10-19?"
+    },
+    "expected": {
+      "scenario_id": "challenge-r21",
+      "category": "R21",
+      "expected_context": {
+        "day_scope": "WEEKDAY",
+        "meal_scope": "DINNER",
+        "date": "2026-10-19"
+      },
+      "expected_food_items": [
+        "pizza"
+      ],
+      "acceptable_actions": [
+        "ANSWER"
+      ],
+      "expected_evidence_ids": [
+        "challenge-r21-e2"
+      ],
+      "relevant_evidence_ids": [
+        "challenge-r21-e1",
+        "challenge-r21-e2"
+      ],
+      "expected_conflict_type": null,
+      "requires_clarification": false,
+      "rationale": "La excepción nombra una sola cena y no sustituye el hábito fuera de esa fecha.",
+      "forbidden_food_items": [
+        "sopa"
+      ]
+    },
+    "private": {
+      "scenario_id": "challenge-r21",
+      "clarification_responses": {}
+    }
+  },
+  {
+    "case": {
+      "scenario_id": "challenge-r22",
+      "user_id": "challenge-user-22",
+      "category": "R22",
+      "split": "challenge",
+      "family": "independent_rephrasing",
+      "reference_time": "2026-10-25T12:00:00+00:00",
+      "events": [
+        {
+          "message_id": "challenge-r22-e1",
+          "session_id": "challenge-r22-session-1",
+          "at": "2026-10-01T09:00:00+00:00",
+          "role": "user",
+          "channel": "chat",
+          "source": "USER_STATEMENT",
+          "text": "A diario me gusta cenar sopa."
+        },
+        {
+          "message_id": "challenge-r22-e2",
+          "session_id": "challenge-r22-session-2",
+          "at": "2026-10-02T09:00:00+00:00",
+          "role": "user",
+          "channel": "chat",
+          "source": "USER_STATEMENT",
+          "text": "Haré una única excepción: en la cena del 2026-10-19 prefiero pizza en vez de sopa."
+        }
+      ],
+      "query": "¿Qué prefiero cenar el 2026-10-20?"
+    },
+    "expected": {
+      "scenario_id": "challenge-r22",
+      "category": "R22",
+      "expected_context": {
+        "day_scope": "WEEKDAY",
+        "meal_scope": "DINNER",
+        "date": "2026-10-20"
+      },
+      "expected_food_items": [
+        "sopa"
+      ],
+      "acceptable_actions": [
+        "ANSWER"
+      ],
+      "expected_evidence_ids": [
+        "challenge-r22-e1"
+      ],
+      "relevant_evidence_ids": [
+        "challenge-r22-e1",
+        "challenge-r22-e2"
+      ],
+      "expected_conflict_type": null,
+      "requires_clarification": false,
+      "rationale": "Un día después, la excepción ya no aplica y permanece el gusto habitual.",
+      "forbidden_food_items": []
+    },
+    "private": {
+      "scenario_id": "challenge-r22",
+      "clarification_responses": {}
+    }
+  },
+  {
+    "case": {
+      "scenario_id": "challenge-r23",
+      "user_id": "challenge-user-23",
+      "category": "R23",
+      "split": "challenge",
+      "family": "independent_rephrasing",
+      "reference_time": "2026-10-25T12:00:00+00:00",
+      "events": [
+        {
+          "message_id": "challenge-r23-e1",
+          "session_id": "challenge-r23-session-1",
+          "at": "2026-10-01T09:00:00+00:00",
+          "role": "user",
+          "channel": "chat",
+          "source": "USER_STATEMENT",
+          "text": "En cualquier día y comida mi preferencia es pollo."
+        },
+        {
+          "message_id": "challenge-r23-e2",
+          "session_id": "challenge-r23-session-2",
+          "at": "2026-10-15T09:00:00+00:00",
+          "role": "user",
+          "channel": "chat",
+          "source": "USER_STATEMENT",
+          "text": "He cambiado de idea: desde el 2026-10-15 dejo atrás mi gusto por pollo y prefiero lentejas para toda comida y todo día.",
+          "supersedes": [
+            "challenge-r23-e1"
+          ]
+        }
+      ],
+      "query": "¿Cuál es la preferencia que he actualizado?"
+    },
+    "expected": {
+      "scenario_id": "challenge-r23",
+      "category": "R23",
+      "expected_context": {
+        "day_scope": null,
+        "meal_scope": null
+      },
+      "expected_food_items": [
+        "lentejas"
+      ],
+      "acceptable_actions": [
+        "ANSWER"
+      ],
+      "expected_evidence_ids": [
+        "challenge-r23-e2"
+      ],
+      "relevant_evidence_ids": [
+        "challenge-r23-e1",
+        "challenge-r23-e2"
+      ],
+      "expected_conflict_type": null,
+      "requires_clarification": false,
+      "rationale": "La actualización explícita tiene fecha y relación al original; no se deduce solo por recencia.",
+      "forbidden_food_items": [
+        "pollo"
+      ]
+    },
+    "private": {
+      "scenario_id": "challenge-r23",
+      "clarification_responses": {}
+    }
+  },
+  {
+    "case": {
+      "scenario_id": "challenge-r24",
+      "user_id": "challenge-user-24",
+      "category": "R24",
+      "split": "challenge",
+      "family": "independent_rephrasing",
+      "reference_time": "2026-10-25T12:00:00+00:00",
+      "events": [
+        {
+          "message_id": "challenge-r24-e1",
+          "session_id": "challenge-r24-session-1",
+          "at": "2026-10-01T09:00:00+00:00",
+          "role": "user",
+          "channel": "chat",
+          "source": "USER_STATEMENT",
+          "text": "Antes me gustaba pollo en cualquier comida."
+        },
+        {
+          "message_id": "challenge-r24-e2",
+          "session_id": "challenge-r24-session-2",
+          "at": "2026-10-02T09:00:00+00:00",
+          "role": "user",
+          "channel": "chat",
+          "source": "USER_STATEMENT",
+          "text": "Después dejé de disfrutar pollo."
+        },
+        {
+          "message_id": "challenge-r24-e3",
+          "session_id": "challenge-r24-session-3",
+          "at": "2026-10-03T09:00:00+00:00",
+          "role": "user",
+          "channel": "chat",
+          "source": "USER_STATEMENT",
+          "text": "Vuelvo a comer pollo algunas veces, pero sigo alternando y no tengo un gusto estable."
+        }
+      ],
+      "query": "¿Qué puedo afirmar como preferencia definitiva sobre pollo?"
+    },
+    "expected": {
+      "scenario_id": "challenge-r24",
+      "category": "R24",
+      "expected_context": {
+        "day_scope": null,
+        "meal_scope": null
+      },
+      "expected_food_items": [],
+      "acceptable_actions": [
+        "PRESERVE_CONFLICT",
+        "CLARIFY",
+        "CONDITIONAL_ANSWER"
+      ],
+      "expected_evidence_ids": [
+        "challenge-r24-e1",
+        "challenge-r24-e2",
+        "challenge-r24-e3"
+      ],
+      "relevant_evidence_ids": [
+        "challenge-r24-e1",
+        "challenge-r24-e2",
+        "challenge-r24-e3"
+      ],
+      "expected_conflict_type": "BOC",
+      "requires_clarification": false,
+      "rationale": "El retorno ocasional y la inestabilidad declarada impiden afirmar estabilidad definitiva.",
+      "forbidden_food_items": []
+    },
+    "private": {
+      "scenario_id": "challenge-r24",
+      "clarification_responses": {}
+    }
+  },
+  {
+    "case": {
+      "scenario_id": "challenge-r25",
+      "user_id": "challenge-user-25",
+      "category": "R25",
+      "split": "challenge",
+      "family": "independent_rephrasing",
+      "reference_time": "2026-10-25T12:00:00+00:00",
+      "events": [
+        {
+          "message_id": "challenge-r25-e1",
+          "session_id": "challenge-r25-session-1",
+          "at": "2026-10-01T09:00:00+00:00",
+          "role": "user",
+          "channel": "chat",
+          "source": "USER_STATEMENT",
+          "text": "Todos los días me gusta sopa para cenar."
+        },
+        {
+          "message_id": "challenge-r25-e2",
+          "session_id": "challenge-r25-session-2",
+          "at": "2026-10-23T09:00:00+00:00",
+          "role": "user",
+          "channel": "chat",
+          "source": "USER_STATEMENT",
+          "text": "A partir del 2026-10-23 cambio mi cena habitual: ahora prefiero pizza en lugar de sopa todos los días.",
+          "supersedes": [
+            "challenge-r25-e1"
+          ]
+        }
+      ],
+      "query": "¿Qué prefería para la cena del 2026-10-20?"
+    },
+    "expected": {
+      "scenario_id": "challenge-r25",
+      "category": "R25",
+      "expected_context": {
+        "day_scope": "WEEKDAY",
+        "meal_scope": "DINNER",
+        "date": "2026-10-20"
+      },
+      "expected_food_items": [
+        "sopa"
+      ],
+      "acceptable_actions": [
+        "ANSWER"
+      ],
+      "expected_evidence_ids": [
+        "challenge-r25-e1"
+      ],
+      "relevant_evidence_ids": [
+        "challenge-r25-e1",
+        "challenge-r25-e2"
+      ],
+      "expected_conflict_type": null,
+      "requires_clarification": false,
+      "rationale": "La vigencia de un cambio posterior no debe reescribir la preferencia histórica previa.",
+      "forbidden_food_items": []
+    },
+    "private": {
+      "scenario_id": "challenge-r25",
+      "clarification_responses": {}
+    }
+  },
+  {
+    "case": {
+      "scenario_id": "challenge-r26",
+      "user_id": "challenge-user-26",
+      "category": "R26",
+      "split": "challenge",
+      "family": "independent_rephrasing",
+      "reference_time": "2026-10-25T12:00:00+00:00",
+      "events": [
+        {
+          "message_id": "challenge-r26-e1",
+          "session_id": "challenge-r26-session-1",
+          "at": "2026-10-01T09:00:00+00:00",
+          "role": "user",
+          "channel": "chat",
+          "source": "USER_STATEMENT",
+          "text": "Mi gusto general, sin importar día o comida, es fruta."
+        },
+        {
+          "message_id": "challenge-r26-e2",
+          "session_id": "challenge-r26-session-2",
+          "at": "2026-10-02T09:00:00+00:00",
+          "role": "user",
+          "channel": "chat",
+          "source": "USER_STATEMENT",
+          "text": "No me gusta el ruido del tráfico y prefiero viajar en tren."
+        }
+      ],
+      "query": "¿Qué alimento se ajusta a mi preferencia?"
+    },
+    "expected": {
+      "scenario_id": "challenge-r26",
+      "category": "R26",
+      "expected_context": {
+        "day_scope": null,
+        "meal_scope": null
+      },
+      "expected_food_items": [
+        "fruta"
+      ],
+      "acceptable_actions": [
+        "ANSWER"
+      ],
+      "expected_evidence_ids": [
+        "challenge-r26-e1"
+      ],
+      "relevant_evidence_ids": [
+        "challenge-r26-e1"
+      ],
+      "expected_conflict_type": null,
+      "requires_clarification": false,
+      "rationale": "La negación ajena a alimentación no debe modificar gusto ni polaridad alimentaria.",
+      "forbidden_food_items": []
+    },
+    "private": {
+      "scenario_id": "challenge-r26",
+      "clarification_responses": {}
+    }
+  },
+  {
+    "case": {
+      "scenario_id": "challenge-r27",
+      "user_id": "challenge-user-27",
+      "category": "R27",
+      "split": "challenge",
+      "family": "independent_rephrasing",
+      "reference_time": "2026-10-25T12:00:00+00:00",
+      "events": [
+        {
+          "message_id": "challenge-r27-e1",
+          "session_id": "challenge-r27-session-1",
+          "at": "2026-10-01T09:00:00+00:00",
+          "role": "user",
+          "channel": "chat",
+          "source": "USER_STATEMENT",
+          "text": "En cualquier día y comida, el arroz me resulta indiferente: ni me gusta ni me disgusta."
+        }
+      ],
+      "query": "¿Qué gusto tengo con respecto al arroz?"
+    },
+    "expected": {
+      "scenario_id": "challenge-r27",
+      "category": "R27",
+      "expected_context": {
+        "day_scope": null,
+        "meal_scope": null
+      },
+      "expected_food_items": [],
+      "acceptable_actions": [
+        "ANSWER"
+      ],
+      "expected_evidence_ids": [
+        "challenge-r27-e1"
+      ],
+      "relevant_evidence_ids": [
+        "challenge-r27-e1"
+      ],
+      "expected_conflict_type": null,
+      "requires_clarification": false,
+      "rationale": "NEUTRAL expresa indiferencia, no una preferencia positiva ni una prohibición.",
+      "forbidden_food_items": []
+    },
+    "private": {
+      "scenario_id": "challenge-r27",
+      "clarification_responses": {}
+    }
+  },
+  {
+    "case": {
+      "scenario_id": "challenge-r28",
+      "user_id": "challenge-user-28",
+      "category": "R28",
+      "split": "challenge",
+      "family": "independent_rephrasing",
+      "reference_time": "2026-10-25T12:00:00+00:00",
+      "events": [
+        {
+          "message_id": "challenge-r28-e1",
+          "session_id": "challenge-r28-session-1",
+          "at": "2026-10-01T09:00:00+00:00",
+          "role": "user",
+          "channel": "chat",
+          "source": "USER_STATEMENT",
+          "text": "Para desayunar, lo que más disfruto es avena. Para almorzar, me quedo con arroz."
+        }
+      ],
+      "query": "¿Qué elijo según mis gustos al desayunar?"
+    },
+    "expected": {
+      "scenario_id": "challenge-r28",
+      "category": "R28",
+      "expected_context": {
+        "day_scope": null,
+        "meal_scope": "BREAKFAST"
+      },
+      "expected_food_items": [
+        "avena"
+      ],
+      "acceptable_actions": [
+        "ANSWER"
+      ],
+      "expected_evidence_ids": [
+        "challenge-r28-e1"
+      ],
+      "relevant_evidence_ids": [
+        "challenge-r28-e1"
+      ],
+      "expected_conflict_type": null,
+      "requires_clarification": false,
+      "rationale": "Las formas verbales desayunar y almorzar expresan dos comidas diferentes.",
+      "forbidden_food_items": []
+    },
+    "private": {
+      "scenario_id": "challenge-r28",
+      "clarification_responses": {}
+    }
+  },
+  {
+    "case": {
+      "scenario_id": "challenge-r29",
+      "user_id": "challenge-user-29",
+      "category": "R29",
+      "split": "challenge",
+      "family": "independent_rephrasing",
+      "reference_time": "2026-10-25T12:00:00+00:00",
+      "events": [
+        {
+          "message_id": "challenge-r29-e1",
+          "session_id": "challenge-r29-session-1",
+          "at": "2026-10-01T09:00:00+00:00",
+          "role": "user",
+          "channel": "chat",
+          "source": "USER_STATEMENT",
+          "text": "En las cenas de lunes a viernes me gusta tofu. En las cenas del sábado y domingo no me gusta tofu."
+        }
+      ],
+      "query": "¿Me gusta tofu para la cena del martes?"
+    },
+    "expected": {
+      "scenario_id": "challenge-r29",
+      "category": "R29",
+      "expected_context": {
+        "day_scope": "WEEKDAY",
+        "meal_scope": "DINNER"
+      },
+      "expected_food_items": [
+        "tofu"
+      ],
+      "acceptable_actions": [
+        "ANSWER"
+      ],
+      "expected_evidence_ids": [
+        "challenge-r29-e1"
+      ],
+      "relevant_evidence_ids": [
+        "challenge-r29-e1"
+      ],
+      "expected_conflict_type": null,
+      "requires_clarification": false,
+      "rationale": "Polaridades opuestas particionadas por día no producen un conflicto en la consulta de martes.",
+      "forbidden_food_items": []
+    },
+    "private": {
+      "scenario_id": "challenge-r29",
+      "clarification_responses": {}
+    }
+  },
+  {
+    "case": {
+      "scenario_id": "challenge-r30",
+      "user_id": "challenge-user-30",
+      "category": "R30",
+      "split": "challenge",
+      "family": "independent_rephrasing",
+      "reference_time": "2026-10-25T12:00:00+00:00",
+      "events": [
+        {
+          "message_id": "challenge-r30-e1",
+          "session_id": "challenge-r30-session-1",
+          "at": "2026-10-01T09:00:00+00:00",
+          "role": "user",
+          "channel": "chat",
+          "source": "USER_STATEMENT",
+          "text": "Tengo una restricción explícita por decisión personal: no puedo consumir queso en ningún día ni comida."
+        },
+        {
+          "message_id": "challenge-r30-e2",
+          "session_id": "challenge-r30-session-2",
+          "at": "2026-10-02T09:00:00+00:00",
+          "role": "user",
+          "channel": "chat",
+          "source": "USER_STATEMENT",
+          "text": "Me gustan queso y fruta en cualquier comida y cualquier día."
+        }
+      ],
+      "query": "¿Qué alimento puedo elegir respetando mi restricción?"
+    },
+    "expected": {
+      "scenario_id": "challenge-r30",
+      "category": "R30",
+      "expected_context": {
+        "day_scope": null,
+        "meal_scope": null
+      },
+      "expected_food_items": [
+        "fruta"
+      ],
+      "acceptable_actions": [
+        "ANSWER"
+      ],
+      "expected_evidence_ids": [
+        "challenge-r30-e1",
+        "challenge-r30-e2"
+      ],
+      "relevant_evidence_ids": [
+        "challenge-r30-e1",
+        "challenge-r30-e2"
+      ],
+      "expected_conflict_type": null,
+      "requires_clarification": false,
+      "rationale": "La restricción explícita se representa aparte del gusto; no se inventa una enfermedad.",
+      "forbidden_food_items": [
+        "queso"
+      ]
+    },
+    "private": {
+      "scenario_id": "challenge-r30",
+      "clarification_responses": {}
+    }
+  },
+  {
+    "case": {
+      "scenario_id": "challenge-r31",
+      "user_id": "challenge-user-31",
+      "category": "R31",
+      "split": "challenge",
+      "family": "independent_rephrasing",
+      "reference_time": "2026-10-25T12:00:00+00:00",
+      "events": [
+        {
+          "message_id": "challenge-r31-e1",
+          "session_id": "challenge-r31-session-1",
+          "at": "2026-10-01T09:00:00+00:00",
+          "role": "user",
+          "channel": "chat",
+          "source": "USER_STATEMENT",
+          "text": "Yo detesto pollo, independientemente del día o de la comida."
+        },
+        {
+          "message_id": "challenge-r31-e2",
+          "session_id": "challenge-r31-session-2",
+          "at": "2026-10-02T09:00:00+00:00",
+          "role": "user",
+          "channel": "chat",
+          "source": "ORDER_HISTORY",
+          "text": "El registro muestra que se compró pollo el 2026-10-22. No consta para quién fue."
+        }
+      ],
+      "query": "¿El registro basta para concluir que me encanta pollo?"
+    },
+    "expected": {
+      "scenario_id": "challenge-r31",
+      "category": "R31",
+      "expected_context": {
+        "day_scope": null,
+        "meal_scope": null
+      },
+      "expected_food_items": [],
+      "acceptable_actions": [
+        "VERIFY",
+        "PRESERVE_CONFLICT",
+        "CLARIFY"
+      ],
+      "expected_evidence_ids": [
+        "challenge-r31-e1",
+        "challenge-r31-e2"
+      ],
+      "relevant_evidence_ids": [
+        "challenge-r31-e1",
+        "challenge-r31-e2"
+      ],
+      "expected_conflict_type": "SCC",
+      "requires_clarification": false,
+      "rationale": "El comportamiento no atribuido no puede anular automáticamente la declaración del usuario.",
+      "forbidden_food_items": []
+    },
+    "private": {
+      "scenario_id": "challenge-r31",
+      "clarification_responses": {}
+    }
+  },
+  {
+    "case": {
+      "scenario_id": "challenge-r32",
+      "user_id": "challenge-user-32",
+      "category": "R32",
+      "split": "challenge",
+      "family": "independent_rephrasing",
+      "reference_time": "2026-10-25T12:00:00+00:00",
+      "events": [
+        {
+          "message_id": "challenge-r32-e1",
+          "session_id": "challenge-r32-session-1",
+          "at": "2026-10-01T09:00:00+00:00",
+          "role": "user",
+          "channel": "chat",
+          "source": "USER_STATEMENT",
+          "text": "Tengo veinte minutos para cocinar y hoy hay bastante tráfico."
+        }
+      ],
+      "query": "¿Cuál es mi alimento favorito?"
+    },
+    "expected": {
+      "scenario_id": "challenge-r32",
+      "category": "R32",
+      "expected_context": {
+        "day_scope": null,
+        "meal_scope": null
+      },
+      "expected_food_items": [],
+      "acceptable_actions": [
+        "ABSTAIN",
+        "CLARIFY"
+      ],
+      "expected_evidence_ids": [],
+      "relevant_evidence_ids": [],
+      "expected_conflict_type": null,
+      "requires_clarification": false,
+      "rationale": "Ninguna observación comunica gustos; no se puede inventar un favorito.",
+      "forbidden_food_items": []
+    },
+    "private": {
+      "scenario_id": "challenge-r32",
+      "clarification_responses": {}
+    }
+  }
+]

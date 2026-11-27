@@ -1,0 +1,1707 @@
+{
+  "status": "completed",
+  "source": "QA authored synthetic dialogues",
+  "verify": false,
+  "endpoint": "http://127.0.0.1:8765/api/chat",
+  "models": [
+    "comidas-variado-sft",
+    "comidas-variado-grpo"
+  ],
+  "menus": {
+    "Tortilla de papa y cebolla": [
+      "papa",
+      "huevo",
+      "cebolla",
+      "aceite"
+    ],
+    "Arroz con lentejas y zanahoria": [
+      "arroz",
+      "lenteja",
+      "zanahoria",
+      "aceite"
+    ],
+    "Pescado al horno con papas": [
+      "pescado",
+      "papa",
+      "limon",
+      "aceite"
+    ],
+    "Ensalada de quinua con pepino y tomate": [
+      "quinua",
+      "pepino",
+      "tomate",
+      "aceite"
+    ],
+    "Pollo con papas": [
+      "pollo",
+      "papa"
+    ],
+    "Pedir una aclaración": []
+  },
+  "summary": {
+    "comidas-variado-sft": {
+      "compatible": 12,
+      "conflicto_con_exclusion": 9,
+      "aclaracion_innecesaria": 1
+    },
+    "comidas-variado-grpo": {
+      "compatible": 12,
+      "conflicto_con_exclusion": 9,
+      "aclaracion_innecesaria": 1
+    }
+  },
+  "cases": [
+    {
+      "id": "typos-huev-ains",
+      "category": "errata_y_rectificacion",
+      "turns": [
+        {
+          "text": "ando sin ideas para la cena, nada de huev ni de pollito hoy porfa",
+          "excluded": [
+            "huevo",
+            "pollo"
+          ],
+          "clarify": false
+        },
+        {
+          "text": "y arroz tampocooo, que hay para cenar?",
+          "excluded": [
+            "arroz",
+            "huevo",
+            "pollo"
+          ],
+          "clarify": false
+        },
+        {
+          "text": "cambio de plan: arroz sí, mejor sin pesscado; lo del huev y pollito sigue",
+          "excluded": [
+            "huevo",
+            "pescado",
+            "pollo"
+          ],
+          "clarify": false
+        }
+      ],
+      "results": {
+        "comidas-variado-sft": [
+          {
+            "turn": 1,
+            "allowed": [
+              "Arroz con lentejas y zanahoria",
+              "Pescado al horno con papas",
+              "Ensalada de quinua con pepino y tomate"
+            ],
+            "meal_menu": {
+              "A": "Ensalada de quinua con pepino y tomate",
+              "B": "Tortilla de papa y cebolla",
+              "C": "Pescado al horno con papas",
+              "D": "Pedir una aclaración",
+              "E": "Pollo con papas",
+              "F": "Arroz con lentejas y zanahoria"
+            },
+            "choice": "Arroz con lentejas y zanahoria",
+            "choice_ingredients": [
+              "arroz",
+              "lenteja",
+              "zanahoria",
+              "aceite"
+            ],
+            "letter": "F",
+            "raw_token": "F",
+            "direct": true,
+            "response": "Podrías preparar arroz con lentejas y zanahoria.",
+            "memory_writes": 0,
+            "failure": null,
+            "phase": [
+              "recommendation"
+            ],
+            "success": true
+          },
+          {
+            "turn": 2,
+            "allowed": [
+              "Pescado al horno con papas",
+              "Ensalada de quinua con pepino y tomate"
+            ],
+            "meal_menu": {
+              "A": "Pedir una aclaración",
+              "B": "Arroz con lentejas y zanahoria",
+              "C": "Tortilla de papa y cebolla",
+              "D": "Pollo con papas",
+              "E": "Ensalada de quinua con pepino y tomate",
+              "F": "Pescado al horno con papas"
+            },
+            "choice": "Arroz con lentejas y zanahoria",
+            "choice_ingredients": [
+              "arroz",
+              "lenteja",
+              "zanahoria",
+              "aceite"
+            ],
+            "letter": "B",
+            "raw_token": "B",
+            "direct": true,
+            "response": "Podrías preparar arroz con lentejas y zanahoria.",
+            "memory_writes": 0,
+            "failure": "conflicto_con_exclusion",
+            "phase": [
+              "recommendation"
+            ],
+            "success": false
+          },
+          {
+            "turn": 3,
+            "allowed": [
+              "Arroz con lentejas y zanahoria",
+              "Ensalada de quinua con pepino y tomate"
+            ],
+            "meal_menu": {
+              "A": "Pedir una aclaración",
+              "B": "Ensalada de quinua con pepino y tomate",
+              "C": "Tortilla de papa y cebolla",
+              "D": "Pescado al horno con papas",
+              "E": "Arroz con lentejas y zanahoria",
+              "F": "Pollo con papas"
+            },
+            "choice": "Ensalada de quinua con pepino y tomate",
+            "choice_ingredients": [
+              "quinua",
+              "pepino",
+              "tomate",
+              "aceite"
+            ],
+            "letter": "B",
+            "raw_token": "B",
+            "direct": true,
+            "response": "Podrías preparar ensalada de quinua con pepino y tomate.",
+            "memory_writes": 0,
+            "failure": null,
+            "phase": [
+              "recommendation"
+            ],
+            "success": true
+          }
+        ],
+        "comidas-variado-grpo": [
+          {
+            "turn": 1,
+            "allowed": [
+              "Arroz con lentejas y zanahoria",
+              "Pescado al horno con papas",
+              "Ensalada de quinua con pepino y tomate"
+            ],
+            "meal_menu": {
+              "A": "Ensalada de quinua con pepino y tomate",
+              "B": "Tortilla de papa y cebolla",
+              "C": "Pescado al horno con papas",
+              "D": "Pedir una aclaración",
+              "E": "Pollo con papas",
+              "F": "Arroz con lentejas y zanahoria"
+            },
+            "choice": "Arroz con lentejas y zanahoria",
+            "choice_ingredients": [
+              "arroz",
+              "lenteja",
+              "zanahoria",
+              "aceite"
+            ],
+            "letter": "F",
+            "raw_token": "F",
+            "direct": true,
+            "response": "Podrías preparar arroz con lentejas y zanahoria.",
+            "memory_writes": 0,
+            "failure": null,
+            "phase": [
+              "recommendation"
+            ],
+            "success": true
+          },
+          {
+            "turn": 2,
+            "allowed": [
+              "Pescado al horno con papas",
+              "Ensalada de quinua con pepino y tomate"
+            ],
+            "meal_menu": {
+              "A": "Pedir una aclaración",
+              "B": "Arroz con lentejas y zanahoria",
+              "C": "Tortilla de papa y cebolla",
+              "D": "Pollo con papas",
+              "E": "Ensalada de quinua con pepino y tomate",
+              "F": "Pescado al horno con papas"
+            },
+            "choice": "Arroz con lentejas y zanahoria",
+            "choice_ingredients": [
+              "arroz",
+              "lenteja",
+              "zanahoria",
+              "aceite"
+            ],
+            "letter": "B",
+            "raw_token": "B",
+            "direct": true,
+            "response": "Podrías preparar arroz con lentejas y zanahoria.",
+            "memory_writes": 0,
+            "failure": "conflicto_con_exclusion",
+            "phase": [
+              "recommendation"
+            ],
+            "success": false
+          },
+          {
+            "turn": 3,
+            "allowed": [
+              "Arroz con lentejas y zanahoria",
+              "Ensalada de quinua con pepino y tomate"
+            ],
+            "meal_menu": {
+              "A": "Pedir una aclaración",
+              "B": "Ensalada de quinua con pepino y tomate",
+              "C": "Tortilla de papa y cebolla",
+              "D": "Pescado al horno con papas",
+              "E": "Arroz con lentejas y zanahoria",
+              "F": "Pollo con papas"
+            },
+            "choice": "Ensalada de quinua con pepino y tomate",
+            "choice_ingredients": [
+              "quinua",
+              "pepino",
+              "tomate",
+              "aceite"
+            ],
+            "letter": "B",
+            "raw_token": "B",
+            "direct": true,
+            "response": "Podrías preparar ensalada de quinua con pepino y tomate.",
+            "memory_writes": 0,
+            "failure": null,
+            "phase": [
+              "recommendation"
+            ],
+            "success": true
+          }
+        ]
+      }
+    },
+    {
+      "id": "typos-despensa",
+      "category": "errata_y_rectificacion",
+      "turns": [
+        {
+          "text": "para comer hoy no me pongas cebollaa ni quinuua q tengo antojo de otra cosa",
+          "excluded": [
+            "cebolla",
+            "quinua"
+          ],
+          "clarify": false
+        },
+        {
+          "text": "ah y arroz tampoco, qué plato me queda?",
+          "excluded": [
+            "arroz",
+            "cebolla",
+            "quinua"
+          ],
+          "clarify": false
+        },
+        {
+          "text": "espera que sí puede ir quinua, pero sin arrozz ni cebolla igual",
+          "excluded": [
+            "arroz",
+            "cebolla"
+          ],
+          "clarify": false
+        }
+      ],
+      "results": {
+        "comidas-variado-sft": [
+          {
+            "turn": 1,
+            "allowed": [
+              "Arroz con lentejas y zanahoria",
+              "Pescado al horno con papas",
+              "Pollo con papas"
+            ],
+            "meal_menu": {
+              "A": "Pollo con papas",
+              "B": "Arroz con lentejas y zanahoria",
+              "C": "Pedir una aclaración",
+              "D": "Tortilla de papa y cebolla",
+              "E": "Pescado al horno con papas",
+              "F": "Ensalada de quinua con pepino y tomate"
+            },
+            "choice": "Pollo con papas",
+            "choice_ingredients": [
+              "pollo",
+              "papa"
+            ],
+            "letter": "A",
+            "raw_token": "A",
+            "direct": true,
+            "response": "Podrías preparar pollo con papas.",
+            "memory_writes": 0,
+            "failure": null,
+            "phase": [
+              "recommendation"
+            ],
+            "success": true
+          },
+          {
+            "turn": 2,
+            "allowed": [
+              "Pescado al horno con papas",
+              "Pollo con papas"
+            ],
+            "meal_menu": {
+              "A": "Tortilla de papa y cebolla",
+              "B": "Pollo con papas",
+              "C": "Pescado al horno con papas",
+              "D": "Arroz con lentejas y zanahoria",
+              "E": "Pedir una aclaración",
+              "F": "Ensalada de quinua con pepino y tomate"
+            },
+            "choice": "Pollo con papas",
+            "choice_ingredients": [
+              "pollo",
+              "papa"
+            ],
+            "letter": "B",
+            "raw_token": "B",
+            "direct": true,
+            "response": "Podrías preparar pollo con papas.",
+            "memory_writes": 0,
+            "failure": null,
+            "phase": [
+              "recommendation"
+            ],
+            "success": true
+          },
+          {
+            "turn": 3,
+            "allowed": [
+              "Pescado al horno con papas",
+              "Ensalada de quinua con pepino y tomate",
+              "Pollo con papas"
+            ],
+            "meal_menu": {
+              "A": "Pedir una aclaración",
+              "B": "Pescado al horno con papas",
+              "C": "Tortilla de papa y cebolla",
+              "D": "Pollo con papas",
+              "E": "Ensalada de quinua con pepino y tomate",
+              "F": "Arroz con lentejas y zanahoria"
+            },
+            "choice": "Pescado al horno con papas",
+            "choice_ingredients": [
+              "pescado",
+              "papa",
+              "limon",
+              "aceite"
+            ],
+            "letter": "B",
+            "raw_token": "B",
+            "direct": true,
+            "response": "Podrías preparar pescado al horno con papas.",
+            "memory_writes": 0,
+            "failure": null,
+            "phase": [
+              "recommendation"
+            ],
+            "success": true
+          }
+        ],
+        "comidas-variado-grpo": [
+          {
+            "turn": 1,
+            "allowed": [
+              "Arroz con lentejas y zanahoria",
+              "Pescado al horno con papas",
+              "Pollo con papas"
+            ],
+            "meal_menu": {
+              "A": "Pollo con papas",
+              "B": "Arroz con lentejas y zanahoria",
+              "C": "Pedir una aclaración",
+              "D": "Tortilla de papa y cebolla",
+              "E": "Pescado al horno con papas",
+              "F": "Ensalada de quinua con pepino y tomate"
+            },
+            "choice": "Pollo con papas",
+            "choice_ingredients": [
+              "pollo",
+              "papa"
+            ],
+            "letter": "A",
+            "raw_token": "A",
+            "direct": true,
+            "response": "Podrías preparar pollo con papas.",
+            "memory_writes": 0,
+            "failure": null,
+            "phase": [
+              "recommendation"
+            ],
+            "success": true
+          },
+          {
+            "turn": 2,
+            "allowed": [
+              "Pescado al horno con papas",
+              "Pollo con papas"
+            ],
+            "meal_menu": {
+              "A": "Tortilla de papa y cebolla",
+              "B": "Pollo con papas",
+              "C": "Pescado al horno con papas",
+              "D": "Arroz con lentejas y zanahoria",
+              "E": "Pedir una aclaración",
+              "F": "Ensalada de quinua con pepino y tomate"
+            },
+            "choice": "Pollo con papas",
+            "choice_ingredients": [
+              "pollo",
+              "papa"
+            ],
+            "letter": "B",
+            "raw_token": "B",
+            "direct": true,
+            "response": "Podrías preparar pollo con papas.",
+            "memory_writes": 0,
+            "failure": null,
+            "phase": [
+              "recommendation"
+            ],
+            "success": true
+          },
+          {
+            "turn": 3,
+            "allowed": [
+              "Pescado al horno con papas",
+              "Ensalada de quinua con pepino y tomate",
+              "Pollo con papas"
+            ],
+            "meal_menu": {
+              "A": "Pedir una aclaración",
+              "B": "Pescado al horno con papas",
+              "C": "Tortilla de papa y cebolla",
+              "D": "Pollo con papas",
+              "E": "Ensalada de quinua con pepino y tomate",
+              "F": "Arroz con lentejas y zanahoria"
+            },
+            "choice": "Pescado al horno con papas",
+            "choice_ingredients": [
+              "pescado",
+              "papa",
+              "limon",
+              "aceite"
+            ],
+            "letter": "B",
+            "raw_token": "B",
+            "direct": true,
+            "response": "Podrías preparar pescado al horno con papas.",
+            "memory_writes": 0,
+            "failure": null,
+            "phase": [
+              "recommendation"
+            ],
+            "success": true
+          }
+        ]
+      }
+    },
+    {
+      "id": "typos-cita-negada",
+      "category": "terceros_y_rectificacion",
+      "turns": [
+        {
+          "text": "Mi hermano dijo sin tommate, pero ese pedido es de él. Para mi cena lo único que no quiero es pescdo",
+          "excluded": [
+            "pescado"
+          ],
+          "clarify": false
+        },
+        {
+          "text": "También dejemos fuera el arrozz para mí, ¿cuál puedo pedir?",
+          "excluded": [
+            "arroz",
+            "pescado"
+          ],
+          "clarify": false
+        },
+        {
+          "text": "al final el pescdo sí me va, solo quiero evitar el arroz y la zebolla",
+          "excluded": [
+            "arroz",
+            "cebolla"
+          ],
+          "clarify": false
+        }
+      ],
+      "results": {
+        "comidas-variado-sft": [
+          {
+            "turn": 1,
+            "allowed": [
+              "Tortilla de papa y cebolla",
+              "Arroz con lentejas y zanahoria",
+              "Ensalada de quinua con pepino y tomate",
+              "Pollo con papas"
+            ],
+            "meal_menu": {
+              "A": "Tortilla de papa y cebolla",
+              "B": "Ensalada de quinua con pepino y tomate",
+              "C": "Arroz con lentejas y zanahoria",
+              "D": "Pescado al horno con papas",
+              "E": "Pollo con papas",
+              "F": "Pedir una aclaración"
+            },
+            "choice": "Arroz con lentejas y zanahoria",
+            "choice_ingredients": [
+              "arroz",
+              "lenteja",
+              "zanahoria",
+              "aceite"
+            ],
+            "letter": "C",
+            "raw_token": "C",
+            "direct": true,
+            "response": "Podrías preparar arroz con lentejas y zanahoria.",
+            "memory_writes": 0,
+            "failure": null,
+            "phase": [
+              "recommendation"
+            ],
+            "success": true
+          },
+          {
+            "turn": 2,
+            "allowed": [
+              "Tortilla de papa y cebolla",
+              "Ensalada de quinua con pepino y tomate",
+              "Pollo con papas"
+            ],
+            "meal_menu": {
+              "A": "Pollo con papas",
+              "B": "Arroz con lentejas y zanahoria",
+              "C": "Pedir una aclaración",
+              "D": "Ensalada de quinua con pepino y tomate",
+              "E": "Tortilla de papa y cebolla",
+              "F": "Pescado al horno con papas"
+            },
+            "choice": "Pollo con papas",
+            "choice_ingredients": [
+              "pollo",
+              "papa"
+            ],
+            "letter": "A",
+            "raw_token": "A",
+            "direct": true,
+            "response": "Podrías preparar pollo con papas.",
+            "memory_writes": 0,
+            "failure": null,
+            "phase": [
+              "recommendation"
+            ],
+            "success": true
+          },
+          {
+            "turn": 3,
+            "allowed": [
+              "Pescado al horno con papas",
+              "Ensalada de quinua con pepino y tomate",
+              "Pollo con papas"
+            ],
+            "meal_menu": {
+              "A": "Pescado al horno con papas",
+              "B": "Pollo con papas",
+              "C": "Tortilla de papa y cebolla",
+              "D": "Ensalada de quinua con pepino y tomate",
+              "E": "Pedir una aclaración",
+              "F": "Arroz con lentejas y zanahoria"
+            },
+            "choice": "Pescado al horno con papas",
+            "choice_ingredients": [
+              "pescado",
+              "papa",
+              "limon",
+              "aceite"
+            ],
+            "letter": "A",
+            "raw_token": "A",
+            "direct": true,
+            "response": "Podrías preparar pescado al horno con papas.",
+            "memory_writes": 0,
+            "failure": null,
+            "phase": [
+              "recommendation"
+            ],
+            "success": true
+          }
+        ],
+        "comidas-variado-grpo": [
+          {
+            "turn": 1,
+            "allowed": [
+              "Tortilla de papa y cebolla",
+              "Arroz con lentejas y zanahoria",
+              "Ensalada de quinua con pepino y tomate",
+              "Pollo con papas"
+            ],
+            "meal_menu": {
+              "A": "Tortilla de papa y cebolla",
+              "B": "Ensalada de quinua con pepino y tomate",
+              "C": "Arroz con lentejas y zanahoria",
+              "D": "Pescado al horno con papas",
+              "E": "Pollo con papas",
+              "F": "Pedir una aclaración"
+            },
+            "choice": "Arroz con lentejas y zanahoria",
+            "choice_ingredients": [
+              "arroz",
+              "lenteja",
+              "zanahoria",
+              "aceite"
+            ],
+            "letter": "C",
+            "raw_token": "C",
+            "direct": true,
+            "response": "Podrías preparar arroz con lentejas y zanahoria.",
+            "memory_writes": 0,
+            "failure": null,
+            "phase": [
+              "recommendation"
+            ],
+            "success": true
+          },
+          {
+            "turn": 2,
+            "allowed": [
+              "Tortilla de papa y cebolla",
+              "Ensalada de quinua con pepino y tomate",
+              "Pollo con papas"
+            ],
+            "meal_menu": {
+              "A": "Pollo con papas",
+              "B": "Arroz con lentejas y zanahoria",
+              "C": "Pedir una aclaración",
+              "D": "Ensalada de quinua con pepino y tomate",
+              "E": "Tortilla de papa y cebolla",
+              "F": "Pescado al horno con papas"
+            },
+            "choice": "Pollo con papas",
+            "choice_ingredients": [
+              "pollo",
+              "papa"
+            ],
+            "letter": "A",
+            "raw_token": "A",
+            "direct": true,
+            "response": "Podrías preparar pollo con papas.",
+            "memory_writes": 0,
+            "failure": null,
+            "phase": [
+              "recommendation"
+            ],
+            "success": true
+          },
+          {
+            "turn": 3,
+            "allowed": [
+              "Pescado al horno con papas",
+              "Ensalada de quinua con pepino y tomate",
+              "Pollo con papas"
+            ],
+            "meal_menu": {
+              "A": "Pescado al horno con papas",
+              "B": "Pollo con papas",
+              "C": "Tortilla de papa y cebolla",
+              "D": "Ensalada de quinua con pepino y tomate",
+              "E": "Pedir una aclaración",
+              "F": "Arroz con lentejas y zanahoria"
+            },
+            "choice": "Pescado al horno con papas",
+            "choice_ingredients": [
+              "pescado",
+              "papa",
+              "limon",
+              "aceite"
+            ],
+            "letter": "A",
+            "raw_token": "A",
+            "direct": true,
+            "response": "Podrías preparar pescado al horno con papas.",
+            "memory_writes": 0,
+            "failure": null,
+            "phase": [
+              "recommendation"
+            ],
+            "success": true
+          }
+        ]
+      }
+    },
+    {
+      "id": "typos-ultimo-plato",
+      "category": "errata_y_aclaracion",
+      "turns": [
+        {
+          "text": "que puedo cemar sin polla, arroz, tomate ni huebo? perdon, pollo*",
+          "excluded": [
+            "arroz",
+            "huevo",
+            "pollo",
+            "tomate"
+          ],
+          "clarify": false
+        },
+        {
+          "text": "al pescado no le pongas limon; si todos los platos tienen algo de eso pregunta antes",
+          "excluded": [
+            "arroz",
+            "huevo",
+            "limon",
+            "pollo",
+            "tomate"
+          ],
+          "clarify": true
+        },
+        {
+          "text": "ya no importa el limon, las otras cuatro cosas todavía fuera de mi comida",
+          "excluded": [
+            "arroz",
+            "huevo",
+            "pollo",
+            "tomate"
+          ],
+          "clarify": false
+        }
+      ],
+      "results": {
+        "comidas-variado-sft": [
+          {
+            "turn": 1,
+            "allowed": [
+              "Pescado al horno con papas"
+            ],
+            "meal_menu": {
+              "A": "Pescado al horno con papas",
+              "B": "Pedir una aclaración",
+              "C": "Tortilla de papa y cebolla",
+              "D": "Ensalada de quinua con pepino y tomate",
+              "E": "Pollo con papas",
+              "F": "Arroz con lentejas y zanahoria"
+            },
+            "choice": "Tortilla de papa y cebolla",
+            "choice_ingredients": [
+              "papa",
+              "huevo",
+              "cebolla",
+              "aceite"
+            ],
+            "letter": "C",
+            "raw_token": "C",
+            "direct": true,
+            "response": "Podrías preparar tortilla de papa y cebolla.",
+            "memory_writes": 0,
+            "failure": "conflicto_con_exclusion",
+            "phase": [
+              "recommendation"
+            ],
+            "success": false
+          },
+          {
+            "turn": 2,
+            "allowed": [
+              "Pedir una aclaración"
+            ],
+            "meal_menu": {
+              "A": "Pollo con papas",
+              "B": "Pedir una aclaración",
+              "C": "Ensalada de quinua con pepino y tomate",
+              "D": "Pescado al horno con papas",
+              "E": "Tortilla de papa y cebolla",
+              "F": "Arroz con lentejas y zanahoria"
+            },
+            "choice": "Tortilla de papa y cebolla",
+            "choice_ingredients": [
+              "papa",
+              "huevo",
+              "cebolla",
+              "aceite"
+            ],
+            "letter": "E",
+            "raw_token": "E",
+            "direct": true,
+            "response": "Podrías preparar tortilla de papa y cebolla.",
+            "memory_writes": 0,
+            "failure": "conflicto_con_exclusion",
+            "phase": [
+              "recommendation"
+            ],
+            "success": false
+          },
+          {
+            "turn": 3,
+            "allowed": [
+              "Pescado al horno con papas"
+            ],
+            "meal_menu": {
+              "A": "Arroz con lentejas y zanahoria",
+              "B": "Ensalada de quinua con pepino y tomate",
+              "C": "Tortilla de papa y cebolla",
+              "D": "Pescado al horno con papas",
+              "E": "Pedir una aclaración",
+              "F": "Pollo con papas"
+            },
+            "choice": "Tortilla de papa y cebolla",
+            "choice_ingredients": [
+              "papa",
+              "huevo",
+              "cebolla",
+              "aceite"
+            ],
+            "letter": "C",
+            "raw_token": "C",
+            "direct": true,
+            "response": "Podrías preparar tortilla de papa y cebolla.",
+            "memory_writes": 0,
+            "failure": "conflicto_con_exclusion",
+            "phase": [
+              "recommendation"
+            ],
+            "success": false
+          }
+        ],
+        "comidas-variado-grpo": [
+          {
+            "turn": 1,
+            "allowed": [
+              "Pescado al horno con papas"
+            ],
+            "meal_menu": {
+              "A": "Pescado al horno con papas",
+              "B": "Pedir una aclaración",
+              "C": "Tortilla de papa y cebolla",
+              "D": "Ensalada de quinua con pepino y tomate",
+              "E": "Pollo con papas",
+              "F": "Arroz con lentejas y zanahoria"
+            },
+            "choice": "Tortilla de papa y cebolla",
+            "choice_ingredients": [
+              "papa",
+              "huevo",
+              "cebolla",
+              "aceite"
+            ],
+            "letter": "C",
+            "raw_token": "C",
+            "direct": true,
+            "response": "Podrías preparar tortilla de papa y cebolla.",
+            "memory_writes": 0,
+            "failure": "conflicto_con_exclusion",
+            "phase": [
+              "recommendation"
+            ],
+            "success": false
+          },
+          {
+            "turn": 2,
+            "allowed": [
+              "Pedir una aclaración"
+            ],
+            "meal_menu": {
+              "A": "Pollo con papas",
+              "B": "Pedir una aclaración",
+              "C": "Ensalada de quinua con pepino y tomate",
+              "D": "Pescado al horno con papas",
+              "E": "Tortilla de papa y cebolla",
+              "F": "Arroz con lentejas y zanahoria"
+            },
+            "choice": "Tortilla de papa y cebolla",
+            "choice_ingredients": [
+              "papa",
+              "huevo",
+              "cebolla",
+              "aceite"
+            ],
+            "letter": "E",
+            "raw_token": "E",
+            "direct": true,
+            "response": "Podrías preparar tortilla de papa y cebolla.",
+            "memory_writes": 0,
+            "failure": "conflicto_con_exclusion",
+            "phase": [
+              "recommendation"
+            ],
+            "success": false
+          },
+          {
+            "turn": 3,
+            "allowed": [
+              "Pescado al horno con papas"
+            ],
+            "meal_menu": {
+              "A": "Arroz con lentejas y zanahoria",
+              "B": "Ensalada de quinua con pepino y tomate",
+              "C": "Tortilla de papa y cebolla",
+              "D": "Pescado al horno con papas",
+              "E": "Pedir una aclaración",
+              "F": "Pollo con papas"
+            },
+            "choice": "Tortilla de papa y cebolla",
+            "choice_ingredients": [
+              "papa",
+              "huevo",
+              "cebolla",
+              "aceite"
+            ],
+            "letter": "C",
+            "raw_token": "C",
+            "direct": true,
+            "response": "Podrías preparar tortilla de papa y cebolla.",
+            "memory_writes": 0,
+            "failure": "conflicto_con_exclusion",
+            "phase": [
+              "recommendation"
+            ],
+            "success": false
+          }
+        ]
+      }
+    },
+    {
+      "id": "typos-aciete-oculto",
+      "category": "ingrediente_no_visible_en_nombre",
+      "turns": [
+        {
+          "text": "Qué ceno hoy? tiene que ser sin aceitte, ni siquiera un poquito",
+          "excluded": [
+            "aceite"
+          ],
+          "clarify": false
+        },
+        {
+          "text": "Y sin poyo también, preferiría que me preguntes si no se puede",
+          "excluded": [
+            "aceite",
+            "pollo"
+          ],
+          "clarify": true
+        },
+        {
+          "text": "perdón ya puedo usar aceite; poyo sigue fuera y nada de pappas",
+          "excluded": [
+            "papa",
+            "pollo"
+          ],
+          "clarify": false
+        }
+      ],
+      "results": {
+        "comidas-variado-sft": [
+          {
+            "turn": 1,
+            "allowed": [
+              "Pollo con papas"
+            ],
+            "meal_menu": {
+              "A": "Pescado al horno con papas",
+              "B": "Arroz con lentejas y zanahoria",
+              "C": "Pedir una aclaración",
+              "D": "Ensalada de quinua con pepino y tomate",
+              "E": "Pollo con papas",
+              "F": "Tortilla de papa y cebolla"
+            },
+            "choice": "Pedir una aclaración",
+            "choice_ingredients": [],
+            "letter": "C",
+            "raw_token": "C",
+            "direct": true,
+            "response": "¿Qué ingredientes tienes a mano para esta comida?",
+            "memory_writes": 0,
+            "failure": "aclaracion_innecesaria",
+            "phase": [
+              "recommendation"
+            ],
+            "success": false
+          },
+          {
+            "turn": 2,
+            "allowed": [
+              "Pedir una aclaración"
+            ],
+            "meal_menu": {
+              "A": "Ensalada de quinua con pepino y tomate",
+              "B": "Pedir una aclaración",
+              "C": "Tortilla de papa y cebolla",
+              "D": "Pescado al horno con papas",
+              "E": "Pollo con papas",
+              "F": "Arroz con lentejas y zanahoria"
+            },
+            "choice": "Pedir una aclaración",
+            "choice_ingredients": [],
+            "letter": "B",
+            "raw_token": "B",
+            "direct": true,
+            "response": "¿Qué ingredientes tienes a mano para esta comida?",
+            "memory_writes": 0,
+            "failure": null,
+            "phase": [
+              "recommendation"
+            ],
+            "success": true
+          },
+          {
+            "turn": 3,
+            "allowed": [
+              "Arroz con lentejas y zanahoria",
+              "Ensalada de quinua con pepino y tomate"
+            ],
+            "meal_menu": {
+              "A": "Tortilla de papa y cebolla",
+              "B": "Pollo con papas",
+              "C": "Ensalada de quinua con pepino y tomate",
+              "D": "Pescado al horno con papas",
+              "E": "Arroz con lentejas y zanahoria",
+              "F": "Pedir una aclaración"
+            },
+            "choice": "Pollo con papas",
+            "choice_ingredients": [
+              "pollo",
+              "papa"
+            ],
+            "letter": "B",
+            "raw_token": "B",
+            "direct": true,
+            "response": "Podrías preparar pollo con papas.",
+            "memory_writes": 0,
+            "failure": "conflicto_con_exclusion",
+            "phase": [
+              "recommendation"
+            ],
+            "success": false
+          }
+        ],
+        "comidas-variado-grpo": [
+          {
+            "turn": 1,
+            "allowed": [
+              "Pollo con papas"
+            ],
+            "meal_menu": {
+              "A": "Pescado al horno con papas",
+              "B": "Arroz con lentejas y zanahoria",
+              "C": "Pedir una aclaración",
+              "D": "Ensalada de quinua con pepino y tomate",
+              "E": "Pollo con papas",
+              "F": "Tortilla de papa y cebolla"
+            },
+            "choice": "Pedir una aclaración",
+            "choice_ingredients": [],
+            "letter": "C",
+            "raw_token": "C",
+            "direct": true,
+            "response": "¿Qué ingredientes tienes a mano para esta comida?",
+            "memory_writes": 0,
+            "failure": "aclaracion_innecesaria",
+            "phase": [
+              "recommendation"
+            ],
+            "success": false
+          },
+          {
+            "turn": 2,
+            "allowed": [
+              "Pedir una aclaración"
+            ],
+            "meal_menu": {
+              "A": "Ensalada de quinua con pepino y tomate",
+              "B": "Pedir una aclaración",
+              "C": "Tortilla de papa y cebolla",
+              "D": "Pescado al horno con papas",
+              "E": "Pollo con papas",
+              "F": "Arroz con lentejas y zanahoria"
+            },
+            "choice": "Pedir una aclaración",
+            "choice_ingredients": [],
+            "letter": "B",
+            "raw_token": "B",
+            "direct": true,
+            "response": "¿Qué ingredientes tienes a mano para esta comida?",
+            "memory_writes": 0,
+            "failure": null,
+            "phase": [
+              "recommendation"
+            ],
+            "success": true
+          },
+          {
+            "turn": 3,
+            "allowed": [
+              "Arroz con lentejas y zanahoria",
+              "Ensalada de quinua con pepino y tomate"
+            ],
+            "meal_menu": {
+              "A": "Tortilla de papa y cebolla",
+              "B": "Pollo con papas",
+              "C": "Ensalada de quinua con pepino y tomate",
+              "D": "Pescado al horno con papas",
+              "E": "Arroz con lentejas y zanahoria",
+              "F": "Pedir una aclaración"
+            },
+            "choice": "Pollo con papas",
+            "choice_ingredients": [
+              "pollo",
+              "papa"
+            ],
+            "letter": "B",
+            "raw_token": "B",
+            "direct": true,
+            "response": "Podrías preparar pollo con papas.",
+            "memory_writes": 0,
+            "failure": "conflicto_con_exclusion",
+            "phase": [
+              "recommendation"
+            ],
+            "success": false
+          }
+        ]
+      }
+    },
+    {
+      "id": "typos-hoy-ayer",
+      "category": "historial_y_rectificacion",
+      "turns": [
+        {
+          "text": "ayer comi pollio y papa, gusto de cualquier cosa hoy salvo pescao. deme una idea de cena",
+          "excluded": [
+            "pescado"
+          ],
+          "clarify": false
+        },
+        {
+          "text": "hoy tampoco quiero pappas, lo de no comer pescao lo mantengo",
+          "excluded": [
+            "papa",
+            "pescado"
+          ],
+          "clarify": false
+        },
+        {
+          "text": "bueno, pappas ya está bien, pero sin pescao ni pepinno",
+          "excluded": [
+            "pepino",
+            "pescado"
+          ],
+          "clarify": false
+        }
+      ],
+      "results": {
+        "comidas-variado-sft": [
+          {
+            "turn": 1,
+            "allowed": [
+              "Tortilla de papa y cebolla",
+              "Arroz con lentejas y zanahoria",
+              "Ensalada de quinua con pepino y tomate",
+              "Pollo con papas"
+            ],
+            "meal_menu": {
+              "A": "Arroz con lentejas y zanahoria",
+              "B": "Pedir una aclaración",
+              "C": "Ensalada de quinua con pepino y tomate",
+              "D": "Tortilla de papa y cebolla",
+              "E": "Pollo con papas",
+              "F": "Pescado al horno con papas"
+            },
+            "choice": "Arroz con lentejas y zanahoria",
+            "choice_ingredients": [
+              "arroz",
+              "lenteja",
+              "zanahoria",
+              "aceite"
+            ],
+            "letter": "A",
+            "raw_token": "A",
+            "direct": true,
+            "response": "Podrías preparar arroz con lentejas y zanahoria.",
+            "memory_writes": 0,
+            "failure": null,
+            "phase": [
+              "recommendation"
+            ],
+            "success": true
+          },
+          {
+            "turn": 2,
+            "allowed": [
+              "Arroz con lentejas y zanahoria",
+              "Ensalada de quinua con pepino y tomate"
+            ],
+            "meal_menu": {
+              "A": "Ensalada de quinua con pepino y tomate",
+              "B": "Tortilla de papa y cebolla",
+              "C": "Arroz con lentejas y zanahoria",
+              "D": "Pescado al horno con papas",
+              "E": "Pedir una aclaración",
+              "F": "Pollo con papas"
+            },
+            "choice": "Tortilla de papa y cebolla",
+            "choice_ingredients": [
+              "papa",
+              "huevo",
+              "cebolla",
+              "aceite"
+            ],
+            "letter": "B",
+            "raw_token": "B",
+            "direct": true,
+            "response": "Podrías preparar tortilla de papa y cebolla.",
+            "memory_writes": 0,
+            "failure": "conflicto_con_exclusion",
+            "phase": [
+              "recommendation"
+            ],
+            "success": false
+          },
+          {
+            "turn": 3,
+            "allowed": [
+              "Tortilla de papa y cebolla",
+              "Arroz con lentejas y zanahoria",
+              "Pollo con papas"
+            ],
+            "meal_menu": {
+              "A": "Pollo con papas",
+              "B": "Pedir una aclaración",
+              "C": "Ensalada de quinua con pepino y tomate",
+              "D": "Tortilla de papa y cebolla",
+              "E": "Arroz con lentejas y zanahoria",
+              "F": "Pescado al horno con papas"
+            },
+            "choice": "Arroz con lentejas y zanahoria",
+            "choice_ingredients": [
+              "arroz",
+              "lenteja",
+              "zanahoria",
+              "aceite"
+            ],
+            "letter": "E",
+            "raw_token": "E",
+            "direct": true,
+            "response": "Podrías preparar arroz con lentejas y zanahoria.",
+            "memory_writes": 0,
+            "failure": null,
+            "phase": [
+              "recommendation"
+            ],
+            "success": true
+          }
+        ],
+        "comidas-variado-grpo": [
+          {
+            "turn": 1,
+            "allowed": [
+              "Tortilla de papa y cebolla",
+              "Arroz con lentejas y zanahoria",
+              "Ensalada de quinua con pepino y tomate",
+              "Pollo con papas"
+            ],
+            "meal_menu": {
+              "A": "Arroz con lentejas y zanahoria",
+              "B": "Pedir una aclaración",
+              "C": "Ensalada de quinua con pepino y tomate",
+              "D": "Tortilla de papa y cebolla",
+              "E": "Pollo con papas",
+              "F": "Pescado al horno con papas"
+            },
+            "choice": "Arroz con lentejas y zanahoria",
+            "choice_ingredients": [
+              "arroz",
+              "lenteja",
+              "zanahoria",
+              "aceite"
+            ],
+            "letter": "A",
+            "raw_token": "A",
+            "direct": true,
+            "response": "Podrías preparar arroz con lentejas y zanahoria.",
+            "memory_writes": 0,
+            "failure": null,
+            "phase": [
+              "recommendation"
+            ],
+            "success": true
+          },
+          {
+            "turn": 2,
+            "allowed": [
+              "Arroz con lentejas y zanahoria",
+              "Ensalada de quinua con pepino y tomate"
+            ],
+            "meal_menu": {
+              "A": "Ensalada de quinua con pepino y tomate",
+              "B": "Tortilla de papa y cebolla",
+              "C": "Arroz con lentejas y zanahoria",
+              "D": "Pescado al horno con papas",
+              "E": "Pedir una aclaración",
+              "F": "Pollo con papas"
+            },
+            "choice": "Tortilla de papa y cebolla",
+            "choice_ingredients": [
+              "papa",
+              "huevo",
+              "cebolla",
+              "aceite"
+            ],
+            "letter": "B",
+            "raw_token": "B",
+            "direct": true,
+            "response": "Podrías preparar tortilla de papa y cebolla.",
+            "memory_writes": 0,
+            "failure": "conflicto_con_exclusion",
+            "phase": [
+              "recommendation"
+            ],
+            "success": false
+          },
+          {
+            "turn": 3,
+            "allowed": [
+              "Tortilla de papa y cebolla",
+              "Arroz con lentejas y zanahoria",
+              "Pollo con papas"
+            ],
+            "meal_menu": {
+              "A": "Pollo con papas",
+              "B": "Pedir una aclaración",
+              "C": "Ensalada de quinua con pepino y tomate",
+              "D": "Tortilla de papa y cebolla",
+              "E": "Arroz con lentejas y zanahoria",
+              "F": "Pescado al horno con papas"
+            },
+            "choice": "Arroz con lentejas y zanahoria",
+            "choice_ingredients": [
+              "arroz",
+              "lenteja",
+              "zanahoria",
+              "aceite"
+            ],
+            "letter": "E",
+            "raw_token": "E",
+            "direct": true,
+            "response": "Podrías preparar arroz con lentejas y zanahoria.",
+            "memory_writes": 0,
+            "failure": null,
+            "phase": [
+              "recommendation"
+            ],
+            "success": true
+          }
+        ]
+      }
+    },
+    {
+      "id": "typos-limite-todo",
+      "category": "exclusiones_acumuladas",
+      "turns": [
+        {
+          "text": "Que ceno? no comer huebos, arróz, ni poyo, de esos nada",
+          "excluded": [
+            "arroz",
+            "huevo",
+            "pollo"
+          ],
+          "clarify": false
+        },
+        {
+          "text": "tampoco peskao ni tommate, si no queda nada dime",
+          "excluded": [
+            "arroz",
+            "huevo",
+            "pescado",
+            "pollo",
+            "tomate"
+          ],
+          "clarify": true
+        },
+        {
+          "text": "cambio solo lo del peskao, hoy sí puede ir el pescado, las demás restricciones igual",
+          "excluded": [
+            "arroz",
+            "huevo",
+            "pollo",
+            "tomate"
+          ],
+          "clarify": false
+        },
+        {
+          "text": "espera, también el arroz está bien; lo que no va es huevo, pollo ni tomate",
+          "excluded": [
+            "huevo",
+            "pollo",
+            "tomate"
+          ],
+          "clarify": false
+        }
+      ],
+      "results": {
+        "comidas-variado-sft": [
+          {
+            "turn": 1,
+            "allowed": [
+              "Pescado al horno con papas",
+              "Ensalada de quinua con pepino y tomate"
+            ],
+            "meal_menu": {
+              "A": "Arroz con lentejas y zanahoria",
+              "B": "Pollo con papas",
+              "C": "Pedir una aclaración",
+              "D": "Pescado al horno con papas",
+              "E": "Tortilla de papa y cebolla",
+              "F": "Ensalada de quinua con pepino y tomate"
+            },
+            "choice": "Tortilla de papa y cebolla",
+            "choice_ingredients": [
+              "papa",
+              "huevo",
+              "cebolla",
+              "aceite"
+            ],
+            "letter": "E",
+            "raw_token": "E",
+            "direct": true,
+            "response": "Podrías preparar tortilla de papa y cebolla.",
+            "memory_writes": 0,
+            "failure": "conflicto_con_exclusion",
+            "phase": [
+              "recommendation"
+            ],
+            "success": false
+          },
+          {
+            "turn": 2,
+            "allowed": [
+              "Pedir una aclaración"
+            ],
+            "meal_menu": {
+              "A": "Tortilla de papa y cebolla",
+              "B": "Pedir una aclaración",
+              "C": "Ensalada de quinua con pepino y tomate",
+              "D": "Pollo con papas",
+              "E": "Pescado al horno con papas",
+              "F": "Arroz con lentejas y zanahoria"
+            },
+            "choice": "Tortilla de papa y cebolla",
+            "choice_ingredients": [
+              "papa",
+              "huevo",
+              "cebolla",
+              "aceite"
+            ],
+            "letter": "A",
+            "raw_token": "A",
+            "direct": true,
+            "response": "Podrías preparar tortilla de papa y cebolla.",
+            "memory_writes": 0,
+            "failure": "conflicto_con_exclusion",
+            "phase": [
+              "recommendation"
+            ],
+            "success": false
+          },
+          {
+            "turn": 3,
+            "allowed": [
+              "Pescado al horno con papas"
+            ],
+            "meal_menu": {
+              "A": "Ensalada de quinua con pepino y tomate",
+              "B": "Pollo con papas",
+              "C": "Tortilla de papa y cebolla",
+              "D": "Arroz con lentejas y zanahoria",
+              "E": "Pedir una aclaración",
+              "F": "Pescado al horno con papas"
+            },
+            "choice": "Arroz con lentejas y zanahoria",
+            "choice_ingredients": [
+              "arroz",
+              "lenteja",
+              "zanahoria",
+              "aceite"
+            ],
+            "letter": "D",
+            "raw_token": "D",
+            "direct": true,
+            "response": "Podrías preparar arroz con lentejas y zanahoria.",
+            "memory_writes": 0,
+            "failure": "conflicto_con_exclusion",
+            "phase": [
+              "recommendation"
+            ],
+            "success": false
+          },
+          {
+            "turn": 4,
+            "allowed": [
+              "Arroz con lentejas y zanahoria",
+              "Pescado al horno con papas"
+            ],
+            "meal_menu": {
+              "A": "Pollo con papas",
+              "B": "Pescado al horno con papas",
+              "C": "Pedir una aclaración",
+              "D": "Arroz con lentejas y zanahoria",
+              "E": "Tortilla de papa y cebolla",
+              "F": "Ensalada de quinua con pepino y tomate"
+            },
+            "choice": "Pescado al horno con papas",
+            "choice_ingredients": [
+              "pescado",
+              "papa",
+              "limon",
+              "aceite"
+            ],
+            "letter": "B",
+            "raw_token": "B",
+            "direct": true,
+            "response": "Podrías preparar pescado al horno con papas.",
+            "memory_writes": 0,
+            "failure": null,
+            "phase": [
+              "recommendation"
+            ],
+            "success": true
+          }
+        ],
+        "comidas-variado-grpo": [
+          {
+            "turn": 1,
+            "allowed": [
+              "Pescado al horno con papas",
+              "Ensalada de quinua con pepino y tomate"
+            ],
+            "meal_menu": {
+              "A": "Arroz con lentejas y zanahoria",
+              "B": "Pollo con papas",
+              "C": "Pedir una aclaración",
+              "D": "Pescado al horno con papas",
+              "E": "Tortilla de papa y cebolla",
+              "F": "Ensalada de quinua con pepino y tomate"
+            },
+            "choice": "Tortilla de papa y cebolla",
+            "choice_ingredients": [
+              "papa",
+              "huevo",
+              "cebolla",
+              "aceite"
+            ],
+            "letter": "E",
+            "raw_token": "E",
+            "direct": true,
+            "response": "Podrías preparar tortilla de papa y cebolla.",
+            "memory_writes": 0,
+            "failure": "conflicto_con_exclusion",
+            "phase": [
+              "recommendation"
+            ],
+            "success": false
+          },
+          {
+            "turn": 2,
+            "allowed": [
+              "Pedir una aclaración"
+            ],
+            "meal_menu": {
+              "A": "Tortilla de papa y cebolla",
+              "B": "Pedir una aclaración",
+              "C": "Ensalada de quinua con pepino y tomate",
+              "D": "Pollo con papas",
+              "E": "Pescado al horno con papas",
+              "F": "Arroz con lentejas y zanahoria"
+            },
+            "choice": "Tortilla de papa y cebolla",
+            "choice_ingredients": [
+              "papa",
+              "huevo",
+              "cebolla",
+              "aceite"
+            ],
+            "letter": "A",
+            "raw_token": "A",
+            "direct": true,
+            "response": "Podrías preparar tortilla de papa y cebolla.",
+            "memory_writes": 0,
+            "failure": "conflicto_con_exclusion",
+            "phase": [
+              "recommendation"
+            ],
+            "success": false
+          },
+          {
+            "turn": 3,
+            "allowed": [
+              "Pescado al horno con papas"
+            ],
+            "meal_menu": {
+              "A": "Ensalada de quinua con pepino y tomate",
+              "B": "Pollo con papas",
+              "C": "Tortilla de papa y cebolla",
+              "D": "Arroz con lentejas y zanahoria",
+              "E": "Pedir una aclaración",
+              "F": "Pescado al horno con papas"
+            },
+            "choice": "Arroz con lentejas y zanahoria",
+            "choice_ingredients": [
+              "arroz",
+              "lenteja",
+              "zanahoria",
+              "aceite"
+            ],
+            "letter": "D",
+            "raw_token": "D",
+            "direct": true,
+            "response": "Podrías preparar arroz con lentejas y zanahoria.",
+            "memory_writes": 0,
+            "failure": "conflicto_con_exclusion",
+            "phase": [
+              "recommendation"
+            ],
+            "success": false
+          },
+          {
+            "turn": 4,
+            "allowed": [
+              "Arroz con lentejas y zanahoria",
+              "Pescado al horno con papas"
+            ],
+            "meal_menu": {
+              "A": "Pollo con papas",
+              "B": "Pescado al horno con papas",
+              "C": "Pedir una aclaración",
+              "D": "Arroz con lentejas y zanahoria",
+              "E": "Tortilla de papa y cebolla",
+              "F": "Ensalada de quinua con pepino y tomate"
+            },
+            "choice": "Pescado al horno con papas",
+            "choice_ingredients": [
+              "pescado",
+              "papa",
+              "limon",
+              "aceite"
+            ],
+            "letter": "B",
+            "raw_token": "B",
+            "direct": true,
+            "response": "Podrías preparar pescado al horno con papas.",
+            "memory_writes": 0,
+            "failure": null,
+            "phase": [
+              "recommendation"
+            ],
+            "success": true
+          }
+        ]
+      }
+    }
+  ]
+}

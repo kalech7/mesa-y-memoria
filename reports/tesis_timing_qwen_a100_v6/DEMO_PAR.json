@@ -1,0 +1,1792 @@
+{
+  "split": "train",
+  "purpose": "Ejemplo ilustrativo de entrenamiento, separado del resultado reservado.",
+  "budget_per_story": 1,
+  "policy": "Elección nativa de Qwen con mayor logit entre las acciones legales. Los empates eligen WAIT.",
+  "pair_id": "p08a5538b7b857c98b9",
+  "opening": "Hoy quiero sopa para cenar.",
+  "members": {
+    "r119d774a321212992a": {
+      "agenda": "ask_now",
+      "cue": "Solo tengo una casilla para el desayuno. Para la cena estoy armando el menú de toda la semana.",
+      "second_utterance": "Anota pan con queso para el desayuno de esta vez.",
+      "world_count": 8,
+      "world_weights": {
+        "wc0193c01f2edd5f3e3": 0.2,
+        "w2afaa52855d3f0a081": 0.2,
+        "wd677374fe113439b80": 0.2,
+        "wbcefda0a1dd2007fc1": 0.2,
+        "w65ed8f17847fd730f4": 0.05,
+        "w44f2a6d8193bc4c95a": 0.05,
+        "w55ca2994ef66f4371f": 0.05,
+        "w2455e89f51046c62dd": 0.05
+      },
+      "expected_over_all_worlds": {
+        "ask_today": {
+          "future_supported": 0.8500000000000001,
+          "current_supported": 1.0,
+          "future_unsupported_reuse": 0.0,
+          "questions": 1.0,
+          "future_queries": 6.000000000000001,
+          "future_positive_queries": 3.0000000000000004,
+          "future_positive_supported": 2.1,
+          "future_correct_abstentions": 3.0000000000000004,
+          "longitudinal": 2.195
+        },
+        "save_for_tomorrow": {
+          "future_supported": 0.65,
+          "current_supported": 1.0,
+          "future_unsupported_reuse": 0.0,
+          "questions": 1.0,
+          "future_queries": 6.000000000000001,
+          "future_positive_queries": 3.0000000000000004,
+          "future_positive_supported": 0.9,
+          "future_correct_abstentions": 3.0000000000000004,
+          "longitudinal": 1.895
+        },
+        "never_ask": {
+          "future_supported": 0.5,
+          "current_supported": 1.0,
+          "future_unsupported_reuse": 0.0,
+          "questions": 0.0,
+          "future_queries": 6.000000000000001,
+          "future_positive_queries": 3.0000000000000004,
+          "future_positive_supported": 0.0,
+          "future_correct_abstentions": 3.0000000000000004,
+          "longitudinal": 1.75
+        }
+      },
+      "fulfilled_world_with_two_habits": {
+        "world_id": "wc0193c01f2edd5f3e3",
+        "traces": {
+          "ask_today": {
+            "metrics": {
+              "current_supported": 1,
+              "current_first_supported": 1,
+              "current_second_supported": 1,
+              "future_supported": 0.8333333333333334,
+              "future_unsupported_reuse": 0,
+              "future_queries": 6,
+              "future_positive_queries": 6,
+              "future_positive_supported": 5,
+              "future_correct_abstentions": 0,
+              "questions": 1,
+              "questions_first": 1,
+              "questions_second": 0,
+              "applied_writes": 1,
+              "immediate": 0.92,
+              "longitudinal": 2.17
+            },
+            "visits": [
+              {
+                "visit": 1,
+                "action": "ASK",
+                "current_value": "sopa",
+                "current_evidence_ids": [
+                  "u1"
+                ],
+                "current_supported": 1,
+                "executed_operations": [
+                  {
+                    "op": "ADD",
+                    "record": {
+                      "attribute": "dinner_preference",
+                      "value": "sopa",
+                      "status": "confirmed",
+                      "scope": {
+                        "kind": "ongoing",
+                        "session_id": null,
+                        "context": null,
+                        "valid_from": "2034-08-24",
+                        "valid_until_exclusive": null
+                      },
+                      "source_turn_ids": [
+                        "u1",
+                        "u1-r"
+                      ],
+                      "evidence_quotes": [
+                        {
+                          "turn_id": "u1",
+                          "text": "Hoy quiero sopa para cenar. Solo tengo una casilla para el desayuno. Para la cena estoy armando el menú de toda la semana."
+                        },
+                        {
+                          "turn_id": "u1-r",
+                          "text": "Para la cena, sopa es lo habitual. Guárdalo para otras veces."
+                        }
+                      ],
+                      "memory_id": "m1",
+                      "recorded_at": "2034-08-24",
+                      "supersedes": []
+                    }
+                  }
+                ]
+              },
+              {
+                "visit": 2,
+                "action": "WAIT",
+                "current_value": "pan con queso",
+                "current_evidence_ids": [
+                  "u2"
+                ],
+                "current_supported": 1,
+                "executed_operations": []
+              }
+            ],
+            "future": [
+              {
+                "query": {
+                  "attribute": "dinner_preference",
+                  "date": "2034-08-28",
+                  "session_id": "S3",
+                  "context": null
+                },
+                "expected_value": "sopa",
+                "response": {
+                  "mode": "ANSWER",
+                  "value": "sopa",
+                  "branches": [],
+                  "evidence_ids": [
+                    "m1"
+                  ]
+                },
+                "correct": 1,
+                "positive_supported": 1,
+                "correct_abstention": 0,
+                "unsupported": 0
+              },
+              {
+                "query": {
+                  "attribute": "dinner_preference",
+                  "date": "2034-08-29",
+                  "session_id": "S3",
+                  "context": null
+                },
+                "expected_value": "sopa",
+                "response": {
+                  "mode": "ANSWER",
+                  "value": "sopa",
+                  "branches": [],
+                  "evidence_ids": [
+                    "m1"
+                  ]
+                },
+                "correct": 1,
+                "positive_supported": 1,
+                "correct_abstention": 0,
+                "unsupported": 0
+              },
+              {
+                "query": {
+                  "attribute": "breakfast_preference",
+                  "date": "2034-08-29",
+                  "session_id": "S3",
+                  "context": null
+                },
+                "expected_value": "pan con queso",
+                "response": {
+                  "mode": "DEFER",
+                  "value": null,
+                  "branches": [],
+                  "evidence_ids": []
+                },
+                "correct": 0,
+                "positive_supported": 0,
+                "correct_abstention": 0,
+                "unsupported": 0
+              },
+              {
+                "query": {
+                  "attribute": "dinner_preference",
+                  "date": "2034-08-30",
+                  "session_id": "S3",
+                  "context": null
+                },
+                "expected_value": "sopa",
+                "response": {
+                  "mode": "ANSWER",
+                  "value": "sopa",
+                  "branches": [],
+                  "evidence_ids": [
+                    "m1"
+                  ]
+                },
+                "correct": 1,
+                "positive_supported": 1,
+                "correct_abstention": 0,
+                "unsupported": 0
+              },
+              {
+                "query": {
+                  "attribute": "dinner_preference",
+                  "date": "2034-08-31",
+                  "session_id": "S3",
+                  "context": null
+                },
+                "expected_value": "sopa",
+                "response": {
+                  "mode": "ANSWER",
+                  "value": "sopa",
+                  "branches": [],
+                  "evidence_ids": [
+                    "m1"
+                  ]
+                },
+                "correct": 1,
+                "positive_supported": 1,
+                "correct_abstention": 0,
+                "unsupported": 0
+              },
+              {
+                "query": {
+                  "attribute": "dinner_preference",
+                  "date": "2034-09-01",
+                  "session_id": "S3",
+                  "context": null
+                },
+                "expected_value": "sopa",
+                "response": {
+                  "mode": "ANSWER",
+                  "value": "sopa",
+                  "branches": [],
+                  "evidence_ids": [
+                    "m1"
+                  ]
+                },
+                "correct": 1,
+                "positive_supported": 1,
+                "correct_abstention": 0,
+                "unsupported": 0
+              }
+            ],
+            "memory": [
+              {
+                "attribute": "dinner_preference",
+                "evidence_quotes": [
+                  {
+                    "text": "Hoy quiero sopa para cenar. Solo tengo una casilla para el desayuno. Para la cena estoy armando el menú de toda la semana.",
+                    "turn_id": "u1"
+                  },
+                  {
+                    "text": "Para la cena, sopa es lo habitual. Guárdalo para otras veces.",
+                    "turn_id": "u1-r"
+                  }
+                ],
+                "memory_id": "m1",
+                "recorded_at": "2034-08-24",
+                "scope": {
+                  "context": null,
+                  "kind": "ongoing",
+                  "session_id": null,
+                  "valid_from": "2034-08-24",
+                  "valid_until_exclusive": null
+                },
+                "source_turn_ids": [
+                  "u1",
+                  "u1-r"
+                ],
+                "status": "confirmed",
+                "supersedes": [],
+                "value": "sopa"
+              }
+            ],
+            "messages": [
+              {
+                "role": "user",
+                "turn_id": "u1",
+                "text": "Hoy quiero sopa para cenar. Solo tengo una casilla para el desayuno. Para la cena estoy armando el menú de toda la semana."
+              },
+              {
+                "role": "assistant",
+                "turn_id": "a1-q",
+                "text": "¿Lo dices solo para hoy o puedo recordarlo como tu preferencia habitual?"
+              },
+              {
+                "role": "user",
+                "turn_id": "u1-r",
+                "text": "Para la cena, sopa es lo habitual. Guárdalo para otras veces."
+              },
+              {
+                "role": "assistant",
+                "turn_id": "a1-response",
+                "text": "Para esta visita, sopa."
+              },
+              {
+                "role": "user",
+                "turn_id": "u2",
+                "text": "Anota pan con queso para el desayuno de esta vez."
+              },
+              {
+                "role": "assistant",
+                "turn_id": "a2-response",
+                "text": "Para esta visita, pan con queso."
+              },
+              {
+                "role": "user",
+                "turn_id": "u3",
+                "text": "Ya tengo el calendario definitivo. Quedaron cinco fechas para la cena y una para el desayuno."
+              }
+            ],
+            "question_budget": 1
+          },
+          "save_for_tomorrow": {
+            "metrics": {
+              "current_supported": 1,
+              "current_first_supported": 1,
+              "current_second_supported": 1,
+              "future_supported": 0.16666666666666666,
+              "future_unsupported_reuse": 0,
+              "future_queries": 6,
+              "future_positive_queries": 6,
+              "future_positive_supported": 1,
+              "future_correct_abstentions": 0,
+              "questions": 1,
+              "questions_first": 0,
+              "questions_second": 1,
+              "applied_writes": 1,
+              "immediate": 0.92,
+              "longitudinal": 1.17
+            },
+            "visits": [
+              {
+                "visit": 1,
+                "action": "WAIT",
+                "current_value": "sopa",
+                "current_evidence_ids": [
+                  "u1"
+                ],
+                "current_supported": 1,
+                "executed_operations": []
+              },
+              {
+                "visit": 2,
+                "action": "ASK",
+                "current_value": "pan con queso",
+                "current_evidence_ids": [
+                  "u2"
+                ],
+                "current_supported": 1,
+                "executed_operations": [
+                  {
+                    "op": "ADD",
+                    "record": {
+                      "attribute": "breakfast_preference",
+                      "value": "pan con queso",
+                      "status": "confirmed",
+                      "scope": {
+                        "kind": "ongoing",
+                        "session_id": null,
+                        "context": null,
+                        "valid_from": "2034-08-25",
+                        "valid_until_exclusive": null
+                      },
+                      "source_turn_ids": [
+                        "u2",
+                        "u2-r"
+                      ],
+                      "evidence_quotes": [
+                        {
+                          "turn_id": "u2",
+                          "text": "Anota pan con queso para el desayuno de esta vez."
+                        },
+                        {
+                          "turn_id": "u2-r",
+                          "text": "Sí, pan con queso es mi elección habitual para el desayuno. Puedes recordarlo."
+                        }
+                      ],
+                      "memory_id": "m1",
+                      "recorded_at": "2034-08-25",
+                      "supersedes": []
+                    }
+                  }
+                ]
+              }
+            ],
+            "future": [
+              {
+                "query": {
+                  "attribute": "dinner_preference",
+                  "date": "2034-08-28",
+                  "session_id": "S3",
+                  "context": null
+                },
+                "expected_value": "sopa",
+                "response": {
+                  "mode": "DEFER",
+                  "value": null,
+                  "branches": [],
+                  "evidence_ids": []
+                },
+                "correct": 0,
+                "positive_supported": 0,
+                "correct_abstention": 0,
+                "unsupported": 0
+              },
+              {
+                "query": {
+                  "attribute": "dinner_preference",
+                  "date": "2034-08-29",
+                  "session_id": "S3",
+                  "context": null
+                },
+                "expected_value": "sopa",
+                "response": {
+                  "mode": "DEFER",
+                  "value": null,
+                  "branches": [],
+                  "evidence_ids": []
+                },
+                "correct": 0,
+                "positive_supported": 0,
+                "correct_abstention": 0,
+                "unsupported": 0
+              },
+              {
+                "query": {
+                  "attribute": "breakfast_preference",
+                  "date": "2034-08-29",
+                  "session_id": "S3",
+                  "context": null
+                },
+                "expected_value": "pan con queso",
+                "response": {
+                  "mode": "ANSWER",
+                  "value": "pan con queso",
+                  "branches": [],
+                  "evidence_ids": [
+                    "m1"
+                  ]
+                },
+                "correct": 1,
+                "positive_supported": 1,
+                "correct_abstention": 0,
+                "unsupported": 0
+              },
+              {
+                "query": {
+                  "attribute": "dinner_preference",
+                  "date": "2034-08-30",
+                  "session_id": "S3",
+                  "context": null
+                },
+                "expected_value": "sopa",
+                "response": {
+                  "mode": "DEFER",
+                  "value": null,
+                  "branches": [],
+                  "evidence_ids": []
+                },
+                "correct": 0,
+                "positive_supported": 0,
+                "correct_abstention": 0,
+                "unsupported": 0
+              },
+              {
+                "query": {
+                  "attribute": "dinner_preference",
+                  "date": "2034-08-31",
+                  "session_id": "S3",
+                  "context": null
+                },
+                "expected_value": "sopa",
+                "response": {
+                  "mode": "DEFER",
+                  "value": null,
+                  "branches": [],
+                  "evidence_ids": []
+                },
+                "correct": 0,
+                "positive_supported": 0,
+                "correct_abstention": 0,
+                "unsupported": 0
+              },
+              {
+                "query": {
+                  "attribute": "dinner_preference",
+                  "date": "2034-09-01",
+                  "session_id": "S3",
+                  "context": null
+                },
+                "expected_value": "sopa",
+                "response": {
+                  "mode": "DEFER",
+                  "value": null,
+                  "branches": [],
+                  "evidence_ids": []
+                },
+                "correct": 0,
+                "positive_supported": 0,
+                "correct_abstention": 0,
+                "unsupported": 0
+              }
+            ],
+            "memory": [
+              {
+                "attribute": "breakfast_preference",
+                "evidence_quotes": [
+                  {
+                    "text": "Anota pan con queso para el desayuno de esta vez.",
+                    "turn_id": "u2"
+                  },
+                  {
+                    "text": "Sí, pan con queso es mi elección habitual para el desayuno. Puedes recordarlo.",
+                    "turn_id": "u2-r"
+                  }
+                ],
+                "memory_id": "m1",
+                "recorded_at": "2034-08-25",
+                "scope": {
+                  "context": null,
+                  "kind": "ongoing",
+                  "session_id": null,
+                  "valid_from": "2034-08-25",
+                  "valid_until_exclusive": null
+                },
+                "source_turn_ids": [
+                  "u2",
+                  "u2-r"
+                ],
+                "status": "confirmed",
+                "supersedes": [],
+                "value": "pan con queso"
+              }
+            ],
+            "messages": [
+              {
+                "role": "user",
+                "turn_id": "u1",
+                "text": "Hoy quiero sopa para cenar. Solo tengo una casilla para el desayuno. Para la cena estoy armando el menú de toda la semana."
+              },
+              {
+                "role": "assistant",
+                "turn_id": "a1-response",
+                "text": "Para esta visita, sopa."
+              },
+              {
+                "role": "user",
+                "turn_id": "u2",
+                "text": "Anota pan con queso para el desayuno de esta vez."
+              },
+              {
+                "role": "assistant",
+                "turn_id": "a2-q",
+                "text": "¿Esa elección vale únicamente para hoy o también para otras ocasiones?"
+              },
+              {
+                "role": "user",
+                "turn_id": "u2-r",
+                "text": "Sí, pan con queso es mi elección habitual para el desayuno. Puedes recordarlo."
+              },
+              {
+                "role": "assistant",
+                "turn_id": "a2-response",
+                "text": "Para esta visita, pan con queso."
+              },
+              {
+                "role": "user",
+                "turn_id": "u3",
+                "text": "Ya tengo el calendario definitivo. Quedaron cinco fechas para la cena y una para el desayuno."
+              }
+            ],
+            "question_budget": 1
+          }
+        }
+      }
+    },
+    "rf21f2fb033086f9581": {
+      "agenda": "save",
+      "cue": "Solo tengo una casilla para la cena. Para el desayuno estoy armando el menú de toda la semana.",
+      "second_utterance": "Anota pan con queso para el desayuno de esta vez.",
+      "world_count": 8,
+      "world_weights": {
+        "w246d0402919e072d77": 0.2,
+        "wf3a0d2cb3428b56cf3": 0.2,
+        "w075b1a526808f5b7c6": 0.2,
+        "w5a4224cdfa3ba9bd53": 0.2,
+        "w0a58c4a36497723659": 0.05,
+        "w83c80076175e91bc83": 0.05,
+        "w9d59ecdbecf8b59849": 0.05,
+        "wa552c60f313073900c": 0.05
+      },
+      "expected_over_all_worlds": {
+        "ask_today": {
+          "future_supported": 0.65,
+          "current_supported": 1.0,
+          "future_unsupported_reuse": 0.0,
+          "questions": 1.0,
+          "future_queries": 6.000000000000001,
+          "future_positive_queries": 3.0000000000000004,
+          "future_positive_supported": 0.9,
+          "future_correct_abstentions": 3.0000000000000004,
+          "longitudinal": 1.895
+        },
+        "save_for_tomorrow": {
+          "future_supported": 0.8500000000000001,
+          "current_supported": 1.0,
+          "future_unsupported_reuse": 0.0,
+          "questions": 1.0,
+          "future_queries": 6.000000000000001,
+          "future_positive_queries": 3.0000000000000004,
+          "future_positive_supported": 2.1,
+          "future_correct_abstentions": 3.0000000000000004,
+          "longitudinal": 2.195
+        },
+        "never_ask": {
+          "future_supported": 0.5,
+          "current_supported": 1.0,
+          "future_unsupported_reuse": 0.0,
+          "questions": 0.0,
+          "future_queries": 6.000000000000001,
+          "future_positive_queries": 3.0000000000000004,
+          "future_positive_supported": 0.0,
+          "future_correct_abstentions": 3.0000000000000004,
+          "longitudinal": 1.75
+        }
+      },
+      "fulfilled_world_with_two_habits": {
+        "world_id": "w246d0402919e072d77",
+        "traces": {
+          "ask_today": {
+            "metrics": {
+              "current_supported": 1,
+              "current_first_supported": 1,
+              "current_second_supported": 1,
+              "future_supported": 0.16666666666666666,
+              "future_unsupported_reuse": 0,
+              "future_queries": 6,
+              "future_positive_queries": 6,
+              "future_positive_supported": 1,
+              "future_correct_abstentions": 0,
+              "questions": 1,
+              "questions_first": 1,
+              "questions_second": 0,
+              "applied_writes": 1,
+              "immediate": 0.92,
+              "longitudinal": 1.17
+            },
+            "visits": [
+              {
+                "visit": 1,
+                "action": "ASK",
+                "current_value": "sopa",
+                "current_evidence_ids": [
+                  "u1"
+                ],
+                "current_supported": 1,
+                "executed_operations": [
+                  {
+                    "op": "ADD",
+                    "record": {
+                      "attribute": "dinner_preference",
+                      "value": "sopa",
+                      "status": "confirmed",
+                      "scope": {
+                        "kind": "ongoing",
+                        "session_id": null,
+                        "context": null,
+                        "valid_from": "2034-08-24",
+                        "valid_until_exclusive": null
+                      },
+                      "source_turn_ids": [
+                        "u1",
+                        "u1-r"
+                      ],
+                      "evidence_quotes": [
+                        {
+                          "turn_id": "u1",
+                          "text": "Hoy quiero sopa para cenar. Solo tengo una casilla para la cena. Para el desayuno estoy armando el menú de toda la semana."
+                        },
+                        {
+                          "turn_id": "u1-r",
+                          "text": "Para la cena, sopa es lo habitual. Guárdalo para otras veces."
+                        }
+                      ],
+                      "memory_id": "m1",
+                      "recorded_at": "2034-08-24",
+                      "supersedes": []
+                    }
+                  }
+                ]
+              },
+              {
+                "visit": 2,
+                "action": "WAIT",
+                "current_value": "pan con queso",
+                "current_evidence_ids": [
+                  "u2"
+                ],
+                "current_supported": 1,
+                "executed_operations": []
+              }
+            ],
+            "future": [
+              {
+                "query": {
+                  "attribute": "breakfast_preference",
+                  "date": "2034-08-28",
+                  "session_id": "S3",
+                  "context": null
+                },
+                "expected_value": "pan con queso",
+                "response": {
+                  "mode": "DEFER",
+                  "value": null,
+                  "branches": [],
+                  "evidence_ids": []
+                },
+                "correct": 0,
+                "positive_supported": 0,
+                "correct_abstention": 0,
+                "unsupported": 0
+              },
+              {
+                "query": {
+                  "attribute": "breakfast_preference",
+                  "date": "2034-08-29",
+                  "session_id": "S3",
+                  "context": null
+                },
+                "expected_value": "pan con queso",
+                "response": {
+                  "mode": "DEFER",
+                  "value": null,
+                  "branches": [],
+                  "evidence_ids": []
+                },
+                "correct": 0,
+                "positive_supported": 0,
+                "correct_abstention": 0,
+                "unsupported": 0
+              },
+              {
+                "query": {
+                  "attribute": "dinner_preference",
+                  "date": "2034-08-29",
+                  "session_id": "S3",
+                  "context": null
+                },
+                "expected_value": "sopa",
+                "response": {
+                  "mode": "ANSWER",
+                  "value": "sopa",
+                  "branches": [],
+                  "evidence_ids": [
+                    "m1"
+                  ]
+                },
+                "correct": 1,
+                "positive_supported": 1,
+                "correct_abstention": 0,
+                "unsupported": 0
+              },
+              {
+                "query": {
+                  "attribute": "breakfast_preference",
+                  "date": "2034-08-30",
+                  "session_id": "S3",
+                  "context": null
+                },
+                "expected_value": "pan con queso",
+                "response": {
+                  "mode": "DEFER",
+                  "value": null,
+                  "branches": [],
+                  "evidence_ids": []
+                },
+                "correct": 0,
+                "positive_supported": 0,
+                "correct_abstention": 0,
+                "unsupported": 0
+              },
+              {
+                "query": {
+                  "attribute": "breakfast_preference",
+                  "date": "2034-08-31",
+                  "session_id": "S3",
+                  "context": null
+                },
+                "expected_value": "pan con queso",
+                "response": {
+                  "mode": "DEFER",
+                  "value": null,
+                  "branches": [],
+                  "evidence_ids": []
+                },
+                "correct": 0,
+                "positive_supported": 0,
+                "correct_abstention": 0,
+                "unsupported": 0
+              },
+              {
+                "query": {
+                  "attribute": "breakfast_preference",
+                  "date": "2034-09-01",
+                  "session_id": "S3",
+                  "context": null
+                },
+                "expected_value": "pan con queso",
+                "response": {
+                  "mode": "DEFER",
+                  "value": null,
+                  "branches": [],
+                  "evidence_ids": []
+                },
+                "correct": 0,
+                "positive_supported": 0,
+                "correct_abstention": 0,
+                "unsupported": 0
+              }
+            ],
+            "memory": [
+              {
+                "attribute": "dinner_preference",
+                "evidence_quotes": [
+                  {
+                    "text": "Hoy quiero sopa para cenar. Solo tengo una casilla para la cena. Para el desayuno estoy armando el menú de toda la semana.",
+                    "turn_id": "u1"
+                  },
+                  {
+                    "text": "Para la cena, sopa es lo habitual. Guárdalo para otras veces.",
+                    "turn_id": "u1-r"
+                  }
+                ],
+                "memory_id": "m1",
+                "recorded_at": "2034-08-24",
+                "scope": {
+                  "context": null,
+                  "kind": "ongoing",
+                  "session_id": null,
+                  "valid_from": "2034-08-24",
+                  "valid_until_exclusive": null
+                },
+                "source_turn_ids": [
+                  "u1",
+                  "u1-r"
+                ],
+                "status": "confirmed",
+                "supersedes": [],
+                "value": "sopa"
+              }
+            ],
+            "messages": [
+              {
+                "role": "user",
+                "turn_id": "u1",
+                "text": "Hoy quiero sopa para cenar. Solo tengo una casilla para la cena. Para el desayuno estoy armando el menú de toda la semana."
+              },
+              {
+                "role": "assistant",
+                "turn_id": "a1-q",
+                "text": "¿Lo dices solo para hoy o puedo recordarlo como tu preferencia habitual?"
+              },
+              {
+                "role": "user",
+                "turn_id": "u1-r",
+                "text": "Para la cena, sopa es lo habitual. Guárdalo para otras veces."
+              },
+              {
+                "role": "assistant",
+                "turn_id": "a1-response",
+                "text": "Para esta visita, sopa."
+              },
+              {
+                "role": "user",
+                "turn_id": "u2",
+                "text": "Anota pan con queso para el desayuno de esta vez."
+              },
+              {
+                "role": "assistant",
+                "turn_id": "a2-response",
+                "text": "Para esta visita, pan con queso."
+              },
+              {
+                "role": "user",
+                "turn_id": "u3",
+                "text": "Ya tengo el calendario definitivo. Quedaron cinco fechas para el desayuno y una para la cena."
+              }
+            ],
+            "question_budget": 1
+          },
+          "save_for_tomorrow": {
+            "metrics": {
+              "current_supported": 1,
+              "current_first_supported": 1,
+              "current_second_supported": 1,
+              "future_supported": 0.8333333333333334,
+              "future_unsupported_reuse": 0,
+              "future_queries": 6,
+              "future_positive_queries": 6,
+              "future_positive_supported": 5,
+              "future_correct_abstentions": 0,
+              "questions": 1,
+              "questions_first": 0,
+              "questions_second": 1,
+              "applied_writes": 1,
+              "immediate": 0.92,
+              "longitudinal": 2.17
+            },
+            "visits": [
+              {
+                "visit": 1,
+                "action": "WAIT",
+                "current_value": "sopa",
+                "current_evidence_ids": [
+                  "u1"
+                ],
+                "current_supported": 1,
+                "executed_operations": []
+              },
+              {
+                "visit": 2,
+                "action": "ASK",
+                "current_value": "pan con queso",
+                "current_evidence_ids": [
+                  "u2"
+                ],
+                "current_supported": 1,
+                "executed_operations": [
+                  {
+                    "op": "ADD",
+                    "record": {
+                      "attribute": "breakfast_preference",
+                      "value": "pan con queso",
+                      "status": "confirmed",
+                      "scope": {
+                        "kind": "ongoing",
+                        "session_id": null,
+                        "context": null,
+                        "valid_from": "2034-08-25",
+                        "valid_until_exclusive": null
+                      },
+                      "source_turn_ids": [
+                        "u2",
+                        "u2-r"
+                      ],
+                      "evidence_quotes": [
+                        {
+                          "turn_id": "u2",
+                          "text": "Anota pan con queso para el desayuno de esta vez."
+                        },
+                        {
+                          "turn_id": "u2-r",
+                          "text": "Sí, pan con queso es mi elección habitual para el desayuno. Puedes recordarlo."
+                        }
+                      ],
+                      "memory_id": "m1",
+                      "recorded_at": "2034-08-25",
+                      "supersedes": []
+                    }
+                  }
+                ]
+              }
+            ],
+            "future": [
+              {
+                "query": {
+                  "attribute": "breakfast_preference",
+                  "date": "2034-08-28",
+                  "session_id": "S3",
+                  "context": null
+                },
+                "expected_value": "pan con queso",
+                "response": {
+                  "mode": "ANSWER",
+                  "value": "pan con queso",
+                  "branches": [],
+                  "evidence_ids": [
+                    "m1"
+                  ]
+                },
+                "correct": 1,
+                "positive_supported": 1,
+                "correct_abstention": 0,
+                "unsupported": 0
+              },
+              {
+                "query": {
+                  "attribute": "breakfast_preference",
+                  "date": "2034-08-29",
+                  "session_id": "S3",
+                  "context": null
+                },
+                "expected_value": "pan con queso",
+                "response": {
+                  "mode": "ANSWER",
+                  "value": "pan con queso",
+                  "branches": [],
+                  "evidence_ids": [
+                    "m1"
+                  ]
+                },
+                "correct": 1,
+                "positive_supported": 1,
+                "correct_abstention": 0,
+                "unsupported": 0
+              },
+              {
+                "query": {
+                  "attribute": "dinner_preference",
+                  "date": "2034-08-29",
+                  "session_id": "S3",
+                  "context": null
+                },
+                "expected_value": "sopa",
+                "response": {
+                  "mode": "DEFER",
+                  "value": null,
+                  "branches": [],
+                  "evidence_ids": []
+                },
+                "correct": 0,
+                "positive_supported": 0,
+                "correct_abstention": 0,
+                "unsupported": 0
+              },
+              {
+                "query": {
+                  "attribute": "breakfast_preference",
+                  "date": "2034-08-30",
+                  "session_id": "S3",
+                  "context": null
+                },
+                "expected_value": "pan con queso",
+                "response": {
+                  "mode": "ANSWER",
+                  "value": "pan con queso",
+                  "branches": [],
+                  "evidence_ids": [
+                    "m1"
+                  ]
+                },
+                "correct": 1,
+                "positive_supported": 1,
+                "correct_abstention": 0,
+                "unsupported": 0
+              },
+              {
+                "query": {
+                  "attribute": "breakfast_preference",
+                  "date": "2034-08-31",
+                  "session_id": "S3",
+                  "context": null
+                },
+                "expected_value": "pan con queso",
+                "response": {
+                  "mode": "ANSWER",
+                  "value": "pan con queso",
+                  "branches": [],
+                  "evidence_ids": [
+                    "m1"
+                  ]
+                },
+                "correct": 1,
+                "positive_supported": 1,
+                "correct_abstention": 0,
+                "unsupported": 0
+              },
+              {
+                "query": {
+                  "attribute": "breakfast_preference",
+                  "date": "2034-09-01",
+                  "session_id": "S3",
+                  "context": null
+                },
+                "expected_value": "pan con queso",
+                "response": {
+                  "mode": "ANSWER",
+                  "value": "pan con queso",
+                  "branches": [],
+                  "evidence_ids": [
+                    "m1"
+                  ]
+                },
+                "correct": 1,
+                "positive_supported": 1,
+                "correct_abstention": 0,
+                "unsupported": 0
+              }
+            ],
+            "memory": [
+              {
+                "attribute": "breakfast_preference",
+                "evidence_quotes": [
+                  {
+                    "text": "Anota pan con queso para el desayuno de esta vez.",
+                    "turn_id": "u2"
+                  },
+                  {
+                    "text": "Sí, pan con queso es mi elección habitual para el desayuno. Puedes recordarlo.",
+                    "turn_id": "u2-r"
+                  }
+                ],
+                "memory_id": "m1",
+                "recorded_at": "2034-08-25",
+                "scope": {
+                  "context": null,
+                  "kind": "ongoing",
+                  "session_id": null,
+                  "valid_from": "2034-08-25",
+                  "valid_until_exclusive": null
+                },
+                "source_turn_ids": [
+                  "u2",
+                  "u2-r"
+                ],
+                "status": "confirmed",
+                "supersedes": [],
+                "value": "pan con queso"
+              }
+            ],
+            "messages": [
+              {
+                "role": "user",
+                "turn_id": "u1",
+                "text": "Hoy quiero sopa para cenar. Solo tengo una casilla para la cena. Para el desayuno estoy armando el menú de toda la semana."
+              },
+              {
+                "role": "assistant",
+                "turn_id": "a1-response",
+                "text": "Para esta visita, sopa."
+              },
+              {
+                "role": "user",
+                "turn_id": "u2",
+                "text": "Anota pan con queso para el desayuno de esta vez."
+              },
+              {
+                "role": "assistant",
+                "turn_id": "a2-q",
+                "text": "¿Esa elección vale únicamente para hoy o también para otras ocasiones?"
+              },
+              {
+                "role": "user",
+                "turn_id": "u2-r",
+                "text": "Sí, pan con queso es mi elección habitual para el desayuno. Puedes recordarlo."
+              },
+              {
+                "role": "assistant",
+                "turn_id": "a2-response",
+                "text": "Para esta visita, pan con queso."
+              },
+              {
+                "role": "user",
+                "turn_id": "u3",
+                "text": "Ya tengo el calendario definitivo. Quedaron cinco fechas para el desayuno y una para la cena."
+              }
+            ],
+            "question_budget": 1
+          }
+        }
+      }
+    }
+  },
+  "models": {
+    "101": {
+      "SFT-ramas": {
+        "checkpoint": "seed-101/SFT-ramas/checkpoint-002/adapter",
+        "round": 2,
+        "sha256": {
+          "adapter_model.safetensors": "4654bdb3fe96751447cee399e57f2d9babc08613e802d40c9d9a4eb551585260",
+          "adapter_config.json": "0289ae0324503dc4020cb8017467a5fe81a1ac64a83421f69ad7a667e5a8c3bc"
+        },
+        "roots": {
+          "r119d774a321212992a": {
+            "actions": [
+              "ASK",
+              "WAIT"
+            ],
+            "ask_minus_wait_logit_v1": 3.375,
+            "ask_minus_wait_logit_v2": null,
+            "v2_source": "one_legal_action",
+            "expected_metrics_over_worlds": {
+              "future_supported": 0.8500000000000001,
+              "current_supported": 1.0,
+              "future_unsupported_reuse": 0.0,
+              "questions": 1.0,
+              "future_queries": 6.000000000000001,
+              "future_positive_queries": 3.0000000000000004,
+              "future_positive_supported": 2.1,
+              "future_correct_abstentions": 3.0000000000000004,
+              "longitudinal": 2.195
+            }
+          },
+          "rf21f2fb033086f9581": {
+            "actions": [
+              "ASK",
+              "WAIT"
+            ],
+            "ask_minus_wait_logit_v1": 3.375,
+            "ask_minus_wait_logit_v2": null,
+            "v2_source": "one_legal_action",
+            "expected_metrics_over_worlds": {
+              "future_supported": 0.65,
+              "current_supported": 1.0,
+              "future_unsupported_reuse": 0.0,
+              "questions": 1.0,
+              "future_queries": 6.000000000000001,
+              "future_positive_queries": 3.0000000000000004,
+              "future_positive_supported": 0.9,
+              "future_correct_abstentions": 3.0000000000000004,
+              "longitudinal": 1.895
+            }
+          }
+        }
+      },
+      "GRPO-continuacion": {
+        "checkpoint": "seed-101/GRPO-continuacion/checkpoint-002/adapter",
+        "round": 2,
+        "sha256": {
+          "adapter_model.safetensors": "90f001eee7c2d8b3487ff85b758d28009b5fe5e0b8b1da9ffd25cdbc5573a70a",
+          "adapter_config.json": "0289ae0324503dc4020cb8017467a5fe81a1ac64a83421f69ad7a667e5a8c3bc"
+        },
+        "roots": {
+          "r119d774a321212992a": {
+            "actions": [
+              "ASK",
+              "WAIT"
+            ],
+            "ask_minus_wait_logit_v1": 1.5,
+            "ask_minus_wait_logit_v2": null,
+            "v2_source": "one_legal_action",
+            "expected_metrics_over_worlds": {
+              "future_supported": 0.8500000000000001,
+              "current_supported": 1.0,
+              "future_unsupported_reuse": 0.0,
+              "questions": 1.0,
+              "future_queries": 6.000000000000001,
+              "future_positive_queries": 3.0000000000000004,
+              "future_positive_supported": 2.1,
+              "future_correct_abstentions": 3.0000000000000004,
+              "longitudinal": 2.195
+            }
+          },
+          "rf21f2fb033086f9581": {
+            "actions": [
+              "ASK",
+              "WAIT"
+            ],
+            "ask_minus_wait_logit_v1": 1.375,
+            "ask_minus_wait_logit_v2": null,
+            "v2_source": "one_legal_action",
+            "expected_metrics_over_worlds": {
+              "future_supported": 0.65,
+              "current_supported": 1.0,
+              "future_unsupported_reuse": 0.0,
+              "questions": 1.0,
+              "future_queries": 6.000000000000001,
+              "future_positive_queries": 3.0000000000000004,
+              "future_positive_supported": 0.9,
+              "future_correct_abstentions": 3.0000000000000004,
+              "longitudinal": 1.895
+            }
+          }
+        }
+      },
+      "GRPO-inmediato": {
+        "checkpoint": "seed-101/GRPO-inmediato/checkpoint-002/adapter",
+        "round": 2,
+        "sha256": {
+          "adapter_model.safetensors": "30307c1ed785d31014950e47b3e313af54e79ed0ac1fc7a4d6676e7f37b45601",
+          "adapter_config.json": "0289ae0324503dc4020cb8017467a5fe81a1ac64a83421f69ad7a667e5a8c3bc"
+        },
+        "roots": {
+          "r119d774a321212992a": {
+            "actions": [
+              "WAIT",
+              "WAIT"
+            ],
+            "ask_minus_wait_logit_v1": -6.875,
+            "ask_minus_wait_logit_v2": -7.0,
+            "v2_source": "qwen",
+            "expected_metrics_over_worlds": {
+              "future_supported": 0.5,
+              "current_supported": 1.0,
+              "future_unsupported_reuse": 0.0,
+              "questions": 0.0,
+              "future_queries": 6.000000000000001,
+              "future_positive_queries": 3.0000000000000004,
+              "future_positive_supported": 0.0,
+              "future_correct_abstentions": 3.0000000000000004,
+              "longitudinal": 1.75
+            }
+          },
+          "rf21f2fb033086f9581": {
+            "actions": [
+              "WAIT",
+              "WAIT"
+            ],
+            "ask_minus_wait_logit_v1": -7.0,
+            "ask_minus_wait_logit_v2": -7.0,
+            "v2_source": "qwen",
+            "expected_metrics_over_worlds": {
+              "future_supported": 0.5,
+              "current_supported": 1.0,
+              "future_unsupported_reuse": 0.0,
+              "questions": 0.0,
+              "future_queries": 6.000000000000001,
+              "future_positive_queries": 3.0000000000000004,
+              "future_positive_supported": 0.0,
+              "future_correct_abstentions": 3.0000000000000004,
+              "longitudinal": 1.75
+            }
+          }
+        }
+      },
+      "GRPO-continuacion-fija": {
+        "checkpoint": "seed-101/GRPO-continuacion-fija/checkpoint-001/adapter",
+        "round": 1,
+        "sha256": {
+          "adapter_model.safetensors": "11fecb57ec995cc23aa7e09ac36df06590d6adf23b2972f136d0512246a312a7",
+          "adapter_config.json": "0289ae0324503dc4020cb8017467a5fe81a1ac64a83421f69ad7a667e5a8c3bc"
+        },
+        "roots": {
+          "r119d774a321212992a": {
+            "actions": [
+              "WAIT",
+              "WAIT"
+            ],
+            "ask_minus_wait_logit_v1": -0.25,
+            "ask_minus_wait_logit_v2": -0.25,
+            "v2_source": "qwen",
+            "expected_metrics_over_worlds": {
+              "future_supported": 0.5,
+              "current_supported": 1.0,
+              "future_unsupported_reuse": 0.0,
+              "questions": 0.0,
+              "future_queries": 6.000000000000001,
+              "future_positive_queries": 3.0000000000000004,
+              "future_positive_supported": 0.0,
+              "future_correct_abstentions": 3.0000000000000004,
+              "longitudinal": 1.75
+            }
+          },
+          "rf21f2fb033086f9581": {
+            "actions": [
+              "WAIT",
+              "WAIT"
+            ],
+            "ask_minus_wait_logit_v1": -0.25,
+            "ask_minus_wait_logit_v2": -0.25,
+            "v2_source": "qwen",
+            "expected_metrics_over_worlds": {
+              "future_supported": 0.5,
+              "current_supported": 1.0,
+              "future_unsupported_reuse": 0.0,
+              "questions": 0.0,
+              "future_queries": 6.000000000000001,
+              "future_positive_queries": 3.0000000000000004,
+              "future_positive_supported": 0.0,
+              "future_correct_abstentions": 3.0000000000000004,
+              "longitudinal": 1.75
+            }
+          }
+        }
+      }
+    },
+    "202": {
+      "SFT-ramas": {
+        "checkpoint": "seed-202/SFT-ramas/checkpoint-001/adapter",
+        "round": 1,
+        "sha256": {
+          "adapter_model.safetensors": "2edbdbdd45366d82abc4ca93e2d28870598691d741139154eef9c7ea2daedbff",
+          "adapter_config.json": "0289ae0324503dc4020cb8017467a5fe81a1ac64a83421f69ad7a667e5a8c3bc"
+        },
+        "roots": {
+          "r119d774a321212992a": {
+            "actions": [
+              "ASK",
+              "WAIT"
+            ],
+            "ask_minus_wait_logit_v1": 5.875,
+            "ask_minus_wait_logit_v2": null,
+            "v2_source": "one_legal_action",
+            "expected_metrics_over_worlds": {
+              "future_supported": 0.8500000000000001,
+              "current_supported": 1.0,
+              "future_unsupported_reuse": 0.0,
+              "questions": 1.0,
+              "future_queries": 6.000000000000001,
+              "future_positive_queries": 3.0000000000000004,
+              "future_positive_supported": 2.1,
+              "future_correct_abstentions": 3.0000000000000004,
+              "longitudinal": 2.195
+            }
+          },
+          "rf21f2fb033086f9581": {
+            "actions": [
+              "ASK",
+              "WAIT"
+            ],
+            "ask_minus_wait_logit_v1": 6.125,
+            "ask_minus_wait_logit_v2": null,
+            "v2_source": "one_legal_action",
+            "expected_metrics_over_worlds": {
+              "future_supported": 0.65,
+              "current_supported": 1.0,
+              "future_unsupported_reuse": 0.0,
+              "questions": 1.0,
+              "future_queries": 6.000000000000001,
+              "future_positive_queries": 3.0000000000000004,
+              "future_positive_supported": 0.9,
+              "future_correct_abstentions": 3.0000000000000004,
+              "longitudinal": 1.895
+            }
+          }
+        }
+      },
+      "GRPO-continuacion": {
+        "checkpoint": "seed-202/GRPO-continuacion/checkpoint-001/adapter",
+        "round": 1,
+        "sha256": {
+          "adapter_model.safetensors": "26721b9ab02694ceb3fa4c60f16b632ad20b8f9dd79e67e01a35971d4a86c9ff",
+          "adapter_config.json": "0289ae0324503dc4020cb8017467a5fe81a1ac64a83421f69ad7a667e5a8c3bc"
+        },
+        "roots": {
+          "r119d774a321212992a": {
+            "actions": [
+              "WAIT",
+              "WAIT"
+            ],
+            "ask_minus_wait_logit_v1": -0.75,
+            "ask_minus_wait_logit_v2": -0.5,
+            "v2_source": "qwen",
+            "expected_metrics_over_worlds": {
+              "future_supported": 0.5,
+              "current_supported": 1.0,
+              "future_unsupported_reuse": 0.0,
+              "questions": 0.0,
+              "future_queries": 6.000000000000001,
+              "future_positive_queries": 3.0000000000000004,
+              "future_positive_supported": 0.0,
+              "future_correct_abstentions": 3.0000000000000004,
+              "longitudinal": 1.75
+            }
+          },
+          "rf21f2fb033086f9581": {
+            "actions": [
+              "WAIT",
+              "WAIT"
+            ],
+            "ask_minus_wait_logit_v1": -0.625,
+            "ask_minus_wait_logit_v2": -0.5,
+            "v2_source": "qwen",
+            "expected_metrics_over_worlds": {
+              "future_supported": 0.5,
+              "current_supported": 1.0,
+              "future_unsupported_reuse": 0.0,
+              "questions": 0.0,
+              "future_queries": 6.000000000000001,
+              "future_positive_queries": 3.0000000000000004,
+              "future_positive_supported": 0.0,
+              "future_correct_abstentions": 3.0000000000000004,
+              "longitudinal": 1.75
+            }
+          }
+        }
+      },
+      "GRPO-inmediato": {
+        "checkpoint": "seed-202/GRPO-inmediato/checkpoint-001/adapter",
+        "round": 1,
+        "sha256": {
+          "adapter_model.safetensors": "22915e6f7515d7aa8f542d60bf474c575a255e5a022f69b1240be7988f2a01de",
+          "adapter_config.json": "0289ae0324503dc4020cb8017467a5fe81a1ac64a83421f69ad7a667e5a8c3bc"
+        },
+        "roots": {
+          "r119d774a321212992a": {
+            "actions": [
+              "WAIT",
+              "WAIT"
+            ],
+            "ask_minus_wait_logit_v1": -5.75,
+            "ask_minus_wait_logit_v2": -6.0,
+            "v2_source": "qwen",
+            "expected_metrics_over_worlds": {
+              "future_supported": 0.5,
+              "current_supported": 1.0,
+              "future_unsupported_reuse": 0.0,
+              "questions": 0.0,
+              "future_queries": 6.000000000000001,
+              "future_positive_queries": 3.0000000000000004,
+              "future_positive_supported": 0.0,
+              "future_correct_abstentions": 3.0000000000000004,
+              "longitudinal": 1.75
+            }
+          },
+          "rf21f2fb033086f9581": {
+            "actions": [
+              "WAIT",
+              "WAIT"
+            ],
+            "ask_minus_wait_logit_v1": -6.0,
+            "ask_minus_wait_logit_v2": -6.125,
+            "v2_source": "qwen",
+            "expected_metrics_over_worlds": {
+              "future_supported": 0.5,
+              "current_supported": 1.0,
+              "future_unsupported_reuse": 0.0,
+              "questions": 0.0,
+              "future_queries": 6.000000000000001,
+              "future_positive_queries": 3.0000000000000004,
+              "future_positive_supported": 0.0,
+              "future_correct_abstentions": 3.0000000000000004,
+              "longitudinal": 1.75
+            }
+          }
+        }
+      },
+      "GRPO-continuacion-fija": {
+        "checkpoint": "seed-202/GRPO-continuacion-fija/checkpoint-001/adapter",
+        "round": 1,
+        "sha256": {
+          "adapter_model.safetensors": "26721b9ab02694ceb3fa4c60f16b632ad20b8f9dd79e67e01a35971d4a86c9ff",
+          "adapter_config.json": "0289ae0324503dc4020cb8017467a5fe81a1ac64a83421f69ad7a667e5a8c3bc"
+        },
+        "roots": {
+          "r119d774a321212992a": {
+            "actions": [
+              "WAIT",
+              "WAIT"
+            ],
+            "ask_minus_wait_logit_v1": -0.75,
+            "ask_minus_wait_logit_v2": -0.5,
+            "v2_source": "qwen",
+            "expected_metrics_over_worlds": {
+              "future_supported": 0.5,
+              "current_supported": 1.0,
+              "future_unsupported_reuse": 0.0,
+              "questions": 0.0,
+              "future_queries": 6.000000000000001,
+              "future_positive_queries": 3.0000000000000004,
+              "future_positive_supported": 0.0,
+              "future_correct_abstentions": 3.0000000000000004,
+              "longitudinal": 1.75
+            }
+          },
+          "rf21f2fb033086f9581": {
+            "actions": [
+              "WAIT",
+              "WAIT"
+            ],
+            "ask_minus_wait_logit_v1": -0.625,
+            "ask_minus_wait_logit_v2": -0.5,
+            "v2_source": "qwen",
+            "expected_metrics_over_worlds": {
+              "future_supported": 0.5,
+              "current_supported": 1.0,
+              "future_unsupported_reuse": 0.0,
+              "questions": 0.0,
+              "future_queries": 6.000000000000001,
+              "future_positive_queries": 3.0000000000000004,
+              "future_positive_supported": 0.0,
+              "future_correct_abstentions": 3.0000000000000004,
+              "longitudinal": 1.75
+            }
+          }
+        }
+      }
+    },
+    "303": {
+      "SFT-ramas": {
+        "checkpoint": "seed-303/SFT-ramas/checkpoint-002/adapter",
+        "round": 2,
+        "sha256": {
+          "adapter_model.safetensors": "66c5777fe12f3afd6a68fe36fee29e39131bfa0ebf9f9c58ce6854b249e6e431",
+          "adapter_config.json": "0289ae0324503dc4020cb8017467a5fe81a1ac64a83421f69ad7a667e5a8c3bc"
+        },
+        "roots": {
+          "r119d774a321212992a": {
+            "actions": [
+              "ASK",
+              "WAIT"
+            ],
+            "ask_minus_wait_logit_v1": 0.5,
+            "ask_minus_wait_logit_v2": null,
+            "v2_source": "one_legal_action",
+            "expected_metrics_over_worlds": {
+              "future_supported": 0.8500000000000001,
+              "current_supported": 1.0,
+              "future_unsupported_reuse": 0.0,
+              "questions": 1.0,
+              "future_queries": 6.000000000000001,
+              "future_positive_queries": 3.0000000000000004,
+              "future_positive_supported": 2.1,
+              "future_correct_abstentions": 3.0000000000000004,
+              "longitudinal": 2.195
+            }
+          },
+          "rf21f2fb033086f9581": {
+            "actions": [
+              "ASK",
+              "WAIT"
+            ],
+            "ask_minus_wait_logit_v1": 0.5,
+            "ask_minus_wait_logit_v2": null,
+            "v2_source": "one_legal_action",
+            "expected_metrics_over_worlds": {
+              "future_supported": 0.65,
+              "current_supported": 1.0,
+              "future_unsupported_reuse": 0.0,
+              "questions": 1.0,
+              "future_queries": 6.000000000000001,
+              "future_positive_queries": 3.0000000000000004,
+              "future_positive_supported": 0.9,
+              "future_correct_abstentions": 3.0000000000000004,
+              "longitudinal": 1.895
+            }
+          }
+        }
+      },
+      "GRPO-continuacion": {
+        "checkpoint": "seed-303/GRPO-continuacion/checkpoint-002/adapter",
+        "round": 2,
+        "sha256": {
+          "adapter_model.safetensors": "ea40d9642a845bc82d81bfa2e3462df4b4fd00245f8d9e768bc48441f7b9e1cd",
+          "adapter_config.json": "0289ae0324503dc4020cb8017467a5fe81a1ac64a83421f69ad7a667e5a8c3bc"
+        },
+        "roots": {
+          "r119d774a321212992a": {
+            "actions": [
+              "ASK",
+              "WAIT"
+            ],
+            "ask_minus_wait_logit_v1": 1.5,
+            "ask_minus_wait_logit_v2": null,
+            "v2_source": "one_legal_action",
+            "expected_metrics_over_worlds": {
+              "future_supported": 0.8500000000000001,
+              "current_supported": 1.0,
+              "future_unsupported_reuse": 0.0,
+              "questions": 1.0,
+              "future_queries": 6.000000000000001,
+              "future_positive_queries": 3.0000000000000004,
+              "future_positive_supported": 2.1,
+              "future_correct_abstentions": 3.0000000000000004,
+              "longitudinal": 2.195
+            }
+          },
+          "rf21f2fb033086f9581": {
+            "actions": [
+              "ASK",
+              "WAIT"
+            ],
+            "ask_minus_wait_logit_v1": 1.5,
+            "ask_minus_wait_logit_v2": null,
+            "v2_source": "one_legal_action",
+            "expected_metrics_over_worlds": {
+              "future_supported": 0.65,
+              "current_supported": 1.0,
+              "future_unsupported_reuse": 0.0,
+              "questions": 1.0,
+              "future_queries": 6.000000000000001,
+              "future_positive_queries": 3.0000000000000004,
+              "future_positive_supported": 0.9,
+              "future_correct_abstentions": 3.0000000000000004,
+              "longitudinal": 1.895
+            }
+          }
+        }
+      },
+      "GRPO-inmediato": {
+        "checkpoint": "seed-303/GRPO-inmediato/checkpoint-002/adapter",
+        "round": 2,
+        "sha256": {
+          "adapter_model.safetensors": "45b7cf07122a0dae9afb8440220b9bc625c328d70a9b847043e892dc5941f413",
+          "adapter_config.json": "0289ae0324503dc4020cb8017467a5fe81a1ac64a83421f69ad7a667e5a8c3bc"
+        },
+        "roots": {
+          "r119d774a321212992a": {
+            "actions": [
+              "WAIT",
+              "WAIT"
+            ],
+            "ask_minus_wait_logit_v1": -6.875,
+            "ask_minus_wait_logit_v2": -7.125,
+            "v2_source": "qwen",
+            "expected_metrics_over_worlds": {
+              "future_supported": 0.5,
+              "current_supported": 1.0,
+              "future_unsupported_reuse": 0.0,
+              "questions": 0.0,
+              "future_queries": 6.000000000000001,
+              "future_positive_queries": 3.0000000000000004,
+              "future_positive_supported": 0.0,
+              "future_correct_abstentions": 3.0000000000000004,
+              "longitudinal": 1.75
+            }
+          },
+          "rf21f2fb033086f9581": {
+            "actions": [
+              "WAIT",
+              "WAIT"
+            ],
+            "ask_minus_wait_logit_v1": -7.0,
+            "ask_minus_wait_logit_v2": -7.25,
+            "v2_source": "qwen",
+            "expected_metrics_over_worlds": {
+              "future_supported": 0.5,
+              "current_supported": 1.0,
+              "future_unsupported_reuse": 0.0,
+              "questions": 0.0,
+              "future_queries": 6.000000000000001,
+              "future_positive_queries": 3.0000000000000004,
+              "future_positive_supported": 0.0,
+              "future_correct_abstentions": 3.0000000000000004,
+              "longitudinal": 1.75
+            }
+          }
+        }
+      },
+      "GRPO-continuacion-fija": {
+        "checkpoint": "seed-303/GRPO-continuacion-fija/checkpoint-002/adapter",
+        "round": 2,
+        "sha256": {
+          "adapter_model.safetensors": "28b3c573095fcca36a8fb1c11e5197888386865d118b379e0f379864052975ed",
+          "adapter_config.json": "0289ae0324503dc4020cb8017467a5fe81a1ac64a83421f69ad7a667e5a8c3bc"
+        },
+        "roots": {
+          "r119d774a321212992a": {
+            "actions": [
+              "ASK",
+              "WAIT"
+            ],
+            "ask_minus_wait_logit_v1": 1.375,
+            "ask_minus_wait_logit_v2": null,
+            "v2_source": "one_legal_action",
+            "expected_metrics_over_worlds": {
+              "future_supported": 0.8500000000000001,
+              "current_supported": 1.0,
+              "future_unsupported_reuse": 0.0,
+              "questions": 1.0,
+              "future_queries": 6.000000000000001,
+              "future_positive_queries": 3.0000000000000004,
+              "future_positive_supported": 2.1,
+              "future_correct_abstentions": 3.0000000000000004,
+              "longitudinal": 2.195
+            }
+          },
+          "rf21f2fb033086f9581": {
+            "actions": [
+              "ASK",
+              "WAIT"
+            ],
+            "ask_minus_wait_logit_v1": 1.375,
+            "ask_minus_wait_logit_v2": null,
+            "v2_source": "one_legal_action",
+            "expected_metrics_over_worlds": {
+              "future_supported": 0.65,
+              "current_supported": 1.0,
+              "future_unsupported_reuse": 0.0,
+              "questions": 1.0,
+              "future_queries": 6.000000000000001,
+              "future_positive_queries": 3.0000000000000004,
+              "future_positive_supported": 0.9,
+              "future_correct_abstentions": 3.0000000000000004,
+              "longitudinal": 1.895
+            }
+          }
+        }
+      }
+    }
+  },
+  "lock_sha256": "042671353a89c17ce61ce5b286970b7053359527396177a341e7dc9e71ca85ab",
+  "demo_source_sha256": "42aeb7d75c31aac88821bbf3eba89bffe317805681c4bf7c320e8df0c0cfe216"
+}

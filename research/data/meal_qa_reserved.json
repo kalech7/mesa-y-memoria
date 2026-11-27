@@ -1,0 +1,129 @@
+[
+  {
+    "id": "reserva-cuatro-mensajes",
+    "family": "acumulacion_rectificacion",
+    "turns": [
+      {"text": "oye para cenar hoy quitame el pescao y el huebo, q me queda de la lista", "excluded": ["pescado", "huevo"]},
+      {"text": "súmale que no tengo pepno tampoco. con eso, qué podría cenar", "excluded": ["pescado", "huevo", "pepino"]},
+      {"text": "listo ya puedo usar pescado de nuevo; huevo y pepino siguen fuera. de lo que queda qué cocino para cenar", "excluded": ["huevo", "pepino"]},
+      {"text": "otro ajuste: hoy ya no me sirve la zanahoria. una idea de cena aunque siga sin huevo ni pepino", "excluded": ["huevo", "pepino", "zanahoria"]}
+    ]
+  },
+  {
+    "id": "reserva-una-opcion-por-vez",
+    "family": "cambio_contrafactual",
+    "turns": [
+      {"text": "hay que elegir para cenar, pero hoy sin poyo, ni arros, ni huebo ni peskao. qué pongo?", "excluded": ["pollo", "arroz", "huevo", "pescado"]},
+      {"text": "en esa misma cena liberé el arroz; en cambio ahora nada de pepino. pollo, huevo y pescado siguen descartados. cuál recomiendas", "excluded": ["pollo", "huevo", "pescado", "pepino"]},
+      {"text": "rectifico la lista de esta cena: puedes usar pescado, vuelve a quitar arroz. sin pepino, huevo ni pollo igual. qué podría preparar", "excluded": ["pollo", "arroz", "huevo", "pepino"]}
+    ]
+  },
+  {
+    "id": "reserva-se-quedo-sin-papas",
+    "family": "cambio_contrafactual",
+    "turns": [
+      {"text": "qué preparo para cenar q no use papaz ni tomte? ya no tengo de esos", "excluded": ["papa", "tomate"]},
+      {"text": "ya conseguí tomates pero no papa, y de arroz no me quedó nada. con eso qué cenamos?", "excluded": ["papa", "arroz"]},
+      {"text": "corrijo: hay papas, pero ahora deja fuera el pollo. el arroz sigue agotado. qué me recomiendas para cenar", "excluded": ["pollo", "arroz"]}
+    ]
+  },
+  {
+    "id": "reserva-vuelta-del-mercado",
+    "family": "acumulacion_rectificacion",
+    "turns": [
+      {"text": "q puedo preparar d cena? no pongas kinua ni cevola ni pollo", "excluded": ["quinua", "cebolla", "pollo"]},
+      {"text": "cambio de idea: quinua ya sí para la cena, pero sin limón. mantén sin cebolla y sin pollo. qué opción queda", "excluded": ["cebolla", "pollo", "limon"]},
+      {"text": "la cebolla está bien ahora. quita lentejas en lugar de esa. sin pollo ni limón todavía. que ceno?", "excluded": ["lenteja", "pollo", "limon"]}
+    ]
+  },
+  {
+    "id": "reserva-limite-del-menu",
+    "family": "sin_opciones",
+    "turns": [
+      {"text": "hoy quiero cenar algo de la lista. sin papa, sin arros y sin pepno, dime si hay algo", "excluded": ["papa", "arroz", "pepino"], "clarify": true},
+      {"text": "sí encontré un pepino. arroz y papa los sigo descartando; ahora qué podría cenar", "excluded": ["papa", "arroz"]},
+      {"text": "mejor sí tengo arroz, pero te cambio pepino por tomate como el que queda fuera. papa sigue fuera. ¿qué ceno?", "excluded": ["papa", "tomate"]}
+    ]
+  },
+  {
+    "id": "reserva-el-plato-de-mi-primo",
+    "family": "terceros_y_rectificacion",
+    "turns": [
+      {"text": "mi primo odia el pescado y come aparte. para mi cena no quiero uevo ni tomte. qué puedo cenar", "excluded": ["huevo", "tomate"]},
+      {"text": "a mí ahora sí me sirve tomate. el pescado era cosa de él, lo que yo dejo fuera es huevo y arros. qué me recomiendas de cenar", "excluded": ["huevo", "arroz"]},
+      {"text": "al final ya vuelvo a comer huevo; hoy en el mío no metas arroz ni pollo. qué cenamos?", "excluded": ["arroz", "pollo"]}
+    ]
+  },
+  {
+    "id": "reserva-ingrediente-por-confirmar",
+    "family": "aclaracion_y_revision",
+    "turns": [
+      {"text": "qué podría cenar de eso? tengo dos alimentos que quiero quitar y todavía no te pasé cuáles", "excluded": [], "clarify": true},
+      {"text": "ya quedó, los que hay que quitar de mi cena son zanahora y nuebo no, quise escribir huevo. dime qué opción me sirve", "excluded": ["zanahoria", "huevo"]},
+      {"text": "perdón ahora sí se puede huevo; sigue sin zanahoria y agrega sin pescado. qué preparo para cenar", "excluded": ["zanahoria", "pescado"]}
+    ]
+  },
+  {
+    "id": "reserva-sin-dos-y-luego-sin-aceite",
+    "family": "cambio_contrafactual",
+    "turns": [
+      {"text": "dame una cena q no use hueb ni pepin. entre esas cinco qué eliges?", "excluded": ["huevo", "pepino"]},
+      {"text": "regreso: huevo ya sí, pepino todavía no. también quita el aciete, qué cocino para cenar", "excluded": ["pepino", "aceite"]},
+      {"text": "ya puedo usar aceite, pero nada de pollo ni pescado y mantén sin pepino por ahora. ¿qué preparo para cenar?", "excluded": ["pollo", "pescado", "pepino"]}
+    ]
+  },
+  {
+    "id": "reserva-cambio-de-proteina",
+    "family": "cambio_contrafactual",
+    "turns": [
+      {"text": "quiero un plato para cenar sin pescado, sin poyo, sin papa. q pido?", "excluded": ["pescado", "pollo", "papa"]},
+      {"text": "para la cena sí tengo papas otra vez, sin pescado y pollo igual. lo que falta ahora es arros. que podria cenar", "excluded": ["pescado", "pollo", "arroz"]},
+      {"text": "va lista actualizada para cenar: pescado sí, pero seguimos sin pollo ni arroz; y ahora sin tonate ni huevo. qué queda", "excluded": ["pollo", "arroz", "tomate", "huevo"]}
+    ]
+  },
+  {
+    "id": "reserva-ayer-no-fue-prohibicion",
+    "family": "historial_y_revision",
+    "turns": [
+      {"text": "ayer cené arros y me gustó, se puede repetir. para hoy nada de pezcado y nada de cebolla. qué ceno", "excluded": ["pescado", "cebolla"]},
+      {"text": "al final pescado sí me sirve. en esta cena el arroz ahora sí lo quiero evitar y la cebolla sigue fuera. qué puedo comer", "excluded": ["arroz", "cebolla"]},
+      {"text": "dejemos de quitar cebolla. por hoy de la lista sólo quita el arroz y añade sin pollo. qué cena me va bien", "excluded": ["arroz", "pollo"]}
+    ]
+  },
+  {
+    "id": "reserva-mas-de-una-falta",
+    "family": "sin_opciones",
+    "turns": [
+      {"text": "mirando la cena, sin papa ni tomates ni lentejas hoy. tienes algo que me quede?", "excluded": ["papa", "tomate", "lenteja"], "clarify": true},
+      {"text": "conseguí lentejas pero no tomates ni papa; quiero cenar ¿qué me sugieres?", "excluded": ["papa", "tomate"]},
+      {"text": "uy no, tampoco tengo zanahora y sigue sin papa ni tomate. dime si se puede cenar algo de la lista", "excluded": ["papa", "tomate", "zanahoria"], "clarify": true}
+    ]
+  },
+  {
+    "id": "reserva-sin-copiar-el-anterior",
+    "family": "variedad_y_revision",
+    "turns": [
+      {"text": "ayer comí pescao y no quiero repetir eso. tampoco tengo limon. así qué puedo cenar hoy", "excluded": ["pescado", "limon"]},
+      {"text": "hoy sí quiero volver a considerar pescado y ya tengo limon, saca solo quinua y huevo esta vez. qué cena sugieres", "excluded": ["quinua", "huevo"]},
+      {"text": "ya puede entrar quinua, lo que no entra ahora es pepino. el huevo tampoco se usa. q podría cenar", "excluded": ["pepino", "huevo"]}
+    ]
+  },
+  {
+    "id": "reserva-una-falta-sin-nombre",
+    "family": "aclaracion_y_revision",
+    "turns": [
+      {"text": "por ahora sin arros ni huevo y tengo un tercer ingrediente que falta confirmar. qué podría cenar", "excluded": ["arroz", "huevo"], "clarify": true},
+      {"text": "el que faltaba era papa. sigue fuera arroz, huevo ahora sí. entonces qué puedo cenar de esa lista", "excluded": ["arroz", "papa"]},
+      {"text": "mejor papa ya vale. todavía no arroz y tampoco quiero la kinua para hoy. recomienda una cena de ahí", "excluded": ["arroz", "quinua"]}
+    ]
+  },
+  {
+    "id": "reserva-seguimiento-corto",
+    "family": "acumulacion_rectificacion",
+    "turns": [
+      {"text": "para cenar cualquier plato pero con lentjas y ceboya no. q se puede?", "excluded": ["lenteja", "cebolla"]},
+      {"text": "cebolla ya sí, tomate ahora no. lentejas tampoco. q plato para cenar?", "excluded": ["lenteja", "tomate"]},
+      {"text": "tomate libre, agrega huevo a lo que no va, lentejas igual no. qué cena pido?", "excluded": ["lenteja", "huevo"]}
+    ]
+  }
+]

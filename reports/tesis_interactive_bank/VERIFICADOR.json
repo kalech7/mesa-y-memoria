@@ -1,0 +1,26 @@
+{
+  "scope": "Fixed reserved WRITE prefixes; fabricated values and enlarged scopes are injected controls",
+  "method": "GRPO-longitudinal-terminal",
+  "seeds": [
+    101,
+    202,
+    303
+  ],
+  "results_sha256": "41871ab9ac74e1024dad91e5815d7196a02615307e2c0039df89a7c983c222ab",
+  "trace_sha256": {
+    "101": "e27f0bf1c0e83927356af9bee28ddb7d505f4f28770aeccda91d5e1bb87766f5",
+    "202": "fc5c0d25b36c6fdd14878c367163affb61f7cad7b55d130cce92c8d68df599eb",
+    "303": "fc5c0d25b36c6fdd14878c367163affb61f7cad7b55d130cce92c8d68df599eb"
+  },
+  "counts": {
+    "episodes": 201,
+    "visits": 402,
+    "confirmed_operations": 261,
+    "confirmed_operations_retained": 261,
+    "confirmed_operations_recovered_from_noop": 261,
+    "fabricated_value": 261,
+    "fabricated_value_rejected": 261,
+    "expanded_scope": 192,
+    "expanded_scope_rejected": 192
+  }
+}

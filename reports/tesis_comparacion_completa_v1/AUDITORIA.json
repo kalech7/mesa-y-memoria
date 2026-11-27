@@ -1,0 +1,123 @@
+{
+  "status": "verified",
+  "seeds": [
+    101,
+    202,
+    303
+  ],
+  "selection_sha256": "3c0b8f7087ecccd56b061201986001dc7c3b02c8b41e5586097e1ecd3d392179",
+  "reserved_roots": 50,
+  "training": {
+    "101": {
+      "SFT-adicional-SELECT": {
+        "groups": 93,
+        "optimizer_steps": 186,
+        "task_signal_groups": 0,
+        "selected_step": 0,
+        "allocated_seconds": 300,
+        "training_seconds": 302.2761172640003,
+        "overrun_seconds": 2.276117264000277,
+        "validation_and_save_seconds": 149.2365994480001,
+        "adapter_changed": true
+      },
+      "GRPO-SELECT": {
+        "groups": 18,
+        "optimizer_steps": 36,
+        "task_signal_groups": 7,
+        "selected_step": 0,
+        "allocated_seconds": 300,
+        "training_seconds": 308.32318018800015,
+        "overrun_seconds": 8.323180188000151,
+        "validation_and_save_seconds": 126.27092099600031,
+        "adapter_changed": true
+      }
+    },
+    "202": {
+      "SFT-adicional-SELECT": {
+        "groups": 94,
+        "optimizer_steps": 188,
+        "task_signal_groups": 0,
+        "selected_step": 47,
+        "allocated_seconds": 300,
+        "training_seconds": 301.71217260999947,
+        "overrun_seconds": 1.7121726099994703,
+        "validation_and_save_seconds": 200.73529755100026,
+        "adapter_changed": true
+      },
+      "GRPO-SELECT": {
+        "groups": 23,
+        "optimizer_steps": 46,
+        "task_signal_groups": 1,
+        "selected_step": 0,
+        "allocated_seconds": 300,
+        "training_seconds": 308.44514168800106,
+        "overrun_seconds": 8.445141688001058,
+        "validation_and_save_seconds": 118.09371887299949,
+        "adapter_changed": true
+      }
+    },
+    "303": {
+      "SFT-adicional-SELECT": {
+        "groups": 93,
+        "optimizer_steps": 186,
+        "task_signal_groups": 0,
+        "selected_step": 0,
+        "allocated_seconds": 300,
+        "training_seconds": 300.3211552190005,
+        "overrun_seconds": 0.32115521900050226,
+        "validation_and_save_seconds": 87.32421363999947,
+        "adapter_changed": true
+      },
+      "GRPO-SELECT": {
+        "groups": 19,
+        "optimizer_steps": 38,
+        "task_signal_groups": 8,
+        "selected_step": 0,
+        "allocated_seconds": 300,
+        "training_seconds": 304.74333476799984,
+        "overrun_seconds": 4.7433347679998406,
+        "validation_and_save_seconds": 163.55706312199982,
+        "adapter_changed": true
+      }
+    }
+  },
+  "means": {
+    "SFT": {
+      "C2": 0.6833333333333333,
+      "FJS": 0.4966666666666667,
+      "causal_write_delta": -0.11,
+      "informative_questions": 0.15333333333333335,
+      "invalid_output": 0.26666666666666666,
+      "questions": 0.31333333333333335,
+      "raw_return": -0.05966666666666667,
+      "strict_joint": 0.030000000000000002,
+      "uninformative_questions": 0.16,
+      "unsupported_write": 0.6633333333333333
+    },
+    "SFT-adicional-SELECT": {
+      "C2": 0.6833333333333333,
+      "FJS": 0.4966666666666667,
+      "causal_write_delta": -0.11333333333333333,
+      "informative_questions": 0.16,
+      "invalid_output": 0.26666666666666666,
+      "questions": 0.32,
+      "raw_return": -0.06033333333333333,
+      "strict_joint": 0.030000000000000002,
+      "uninformative_questions": 0.16,
+      "unsupported_write": 0.6633333333333333
+    },
+    "GRPO-SELECT": {
+      "C2": 0.6833333333333333,
+      "FJS": 0.4966666666666667,
+      "causal_write_delta": -0.11,
+      "informative_questions": 0.15333333333333335,
+      "invalid_output": 0.26666666666666666,
+      "questions": 0.31333333333333335,
+      "raw_return": -0.05966666666666667,
+      "strict_joint": 0.030000000000000002,
+      "uninformative_questions": 0.16,
+      "unsupported_write": 0.6633333333333333
+    }
+  },
+  "comparison_status": "exploratory"
+}

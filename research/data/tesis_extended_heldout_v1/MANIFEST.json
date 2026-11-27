@@ -1,0 +1,18 @@
+{
+  "version": "tesis_extended_heldout_v1",
+  "status": "frozen_for_blind_review",
+  "split": "reserved",
+  "authorship": "separate AI subagent, manual writing without development generator or its wording",
+  "real_user_data": false,
+  "human_reviews": 0,
+  "roots": 12,
+  "worlds": 16,
+  "visits_per_root": 3,
+  "public_digest": "304a18a894a8f4a18d6c0bd73d1b336ee8482739c3ce7c15038a2bee28fff34c",
+  "artifacts": {
+    "PUBLIC.json": "47f190f8c5d31faf807720f3ca6abb1826d3495f22fab683aecb9e07861a51eb",
+    "REVIEW_TEMPLATE.json": "add44588535cc4925c575b9951594452a0fc212dc82605074a40290d387323db",
+    "PRIVATE_GOLD.json": "da3eedbcdd901bf661eab94d41a908b6d63f885ea3714f7e2427ce75b2d3f329",
+    "PRIVATE_WORLDS.jsonl": "406ff6e1e84e7f145620724d4464fa9dfd8049ecfda09dd9fe770f2f4b90feee"
+  }
+}

@@ -1,0 +1,565 @@
+{
+  "reviewer_id": "",
+  "cases": [
+    {
+      "id": "perfil-01",
+      "visits": [
+        {
+          "visit": 1,
+          "response": {
+            "mode": null,
+            "value": null
+          },
+          "new_write": [],
+          "retrieves": [],
+          "rationale": ""
+        },
+        {
+          "visit": 2,
+          "response": {
+            "mode": null,
+            "value": null
+          },
+          "new_write": [],
+          "retrieves": [],
+          "rationale": ""
+        },
+        {
+          "visit": 3,
+          "response": {
+            "mode": null,
+            "value": null
+          },
+          "new_write": [],
+          "retrieves": [],
+          "rationale": ""
+        }
+      ]
+    },
+    {
+      "id": "perfil-02",
+      "visits": [
+        {
+          "visit": 1,
+          "response": {
+            "mode": null,
+            "value": null
+          },
+          "new_write": [],
+          "retrieves": [],
+          "rationale": ""
+        },
+        {
+          "visit": 2,
+          "response": {
+            "mode": null,
+            "value": null
+          },
+          "new_write": [],
+          "retrieves": [],
+          "rationale": ""
+        },
+        {
+          "visit": 3,
+          "response": {
+            "mode": null,
+            "value": null
+          },
+          "new_write": [],
+          "retrieves": [],
+          "rationale": ""
+        }
+      ]
+    },
+    {
+      "id": "perfil-03",
+      "visits": [
+        {
+          "visit": 1,
+          "response": {
+            "mode": null,
+            "value": null
+          },
+          "new_write": [],
+          "retrieves": [],
+          "rationale": ""
+        },
+        {
+          "visit": 2,
+          "response": {
+            "mode": null,
+            "value": null
+          },
+          "new_write": [],
+          "retrieves": [],
+          "rationale": ""
+        },
+        {
+          "visit": 3,
+          "response": {
+            "mode": null,
+            "value": null
+          },
+          "new_write": [],
+          "retrieves": [],
+          "rationale": ""
+        }
+      ]
+    },
+    {
+      "id": "perfil-04",
+      "visits": [
+        {
+          "visit": 1,
+          "response": {
+            "mode": null,
+            "value": null
+          },
+          "new_write": [],
+          "retrieves": [],
+          "rationale": ""
+        },
+        {
+          "visit": 2,
+          "response": {
+            "mode": null,
+            "value": null
+          },
+          "new_write": [],
+          "retrieves": [],
+          "rationale": ""
+        },
+        {
+          "visit": 3,
+          "response": {
+            "mode": null,
+            "value": null
+          },
+          "new_write": [],
+          "retrieves": [],
+          "rationale": ""
+        }
+      ]
+    },
+    {
+      "id": "perfil-05",
+      "visits": [
+        {
+          "visit": 1,
+          "response": {
+            "mode": null,
+            "value": null
+          },
+          "new_write": [],
+          "retrieves": [],
+          "rationale": ""
+        },
+        {
+          "visit": 2,
+          "response": {
+            "mode": null,
+            "value": null
+          },
+          "new_write": [],
+          "retrieves": [],
+          "rationale": ""
+        },
+        {
+          "visit": 3,
+          "response": {
+            "mode": null,
+            "value": null
+          },
+          "new_write": [],
+          "retrieves": [],
+          "rationale": ""
+        }
+      ]
+    },
+    {
+      "id": "perfil-06",
+      "visits": [
+        {
+          "visit": 1,
+          "response": {
+            "mode": null,
+            "value": null
+          },
+          "new_write": [],
+          "retrieves": [],
+          "rationale": ""
+        },
+        {
+          "visit": 2,
+          "response": {
+            "mode": null,
+            "value": null
+          },
+          "new_write": [],
+          "retrieves": [],
+          "rationale": ""
+        },
+        {
+          "visit": 3,
+          "response": {
+            "mode": null,
+            "value": null
+          },
+          "new_write": [],
+          "retrieves": [],
+          "rationale": ""
+        }
+      ]
+    },
+    {
+      "id": "perfil-07",
+      "visits": [
+        {
+          "visit": 1,
+          "response": {
+            "mode": null,
+            "value": null
+          },
+          "new_write": [],
+          "retrieves": [],
+          "rationale": ""
+        },
+        {
+          "visit": 2,
+          "response": {
+            "mode": null,
+            "value": null
+          },
+          "new_write": [],
+          "retrieves": [],
+          "rationale": ""
+        },
+        {
+          "visit": 3,
+          "response": {
+            "mode": null,
+            "value": null
+          },
+          "new_write": [],
+          "retrieves": [],
+          "rationale": ""
+        }
+      ]
+    },
+    {
+      "id": "perfil-08",
+      "visits": [
+        {
+          "visit": 1,
+          "response": {
+            "mode": null,
+            "value": null
+          },
+          "new_write": [],
+          "retrieves": [],
+          "rationale": ""
+        },
+        {
+          "visit": 2,
+          "response": {
+            "mode": null,
+            "value": null
+          },
+          "new_write": [],
+          "retrieves": [],
+          "rationale": ""
+        },
+        {
+          "visit": 3,
+          "response": {
+            "mode": null,
+            "value": null
+          },
+          "new_write": [],
+          "retrieves": [],
+          "rationale": ""
+        }
+      ]
+    },
+    {
+      "id": "perfil-09",
+      "visits": [
+        {
+          "visit": 1,
+          "response": {
+            "mode": null,
+            "value": null
+          },
+          "new_write": [],
+          "retrieves": [],
+          "rationale": ""
+        },
+        {
+          "visit": 2,
+          "response": {
+            "mode": null,
+            "value": null
+          },
+          "new_write": [],
+          "retrieves": [],
+          "rationale": ""
+        },
+        {
+          "visit": 3,
+          "response": {
+            "mode": null,
+            "value": null
+          },
+          "new_write": [],
+          "retrieves": [],
+          "rationale": ""
+        }
+      ]
+    },
+    {
+      "id": "perfil-10",
+      "visits": [
+        {
+          "visit": 1,
+          "response": {
+            "mode": null,
+            "value": null
+          },
+          "new_write": [],
+          "retrieves": [],
+          "rationale": ""
+        },
+        {
+          "visit": 2,
+          "response": {
+            "mode": null,
+            "value": null
+          },
+          "new_write": [],
+          "retrieves": [],
+          "rationale": ""
+        },
+        {
+          "visit": 3,
+          "response": {
+            "mode": null,
+            "value": null
+          },
+          "new_write": [],
+          "retrieves": [],
+          "rationale": ""
+        }
+      ]
+    },
+    {
+      "id": "perfil-11",
+      "visits": [
+        {
+          "visit": 1,
+          "response": {
+            "mode": null,
+            "value": null
+          },
+          "new_write": [],
+          "retrieves": [],
+          "rationale": ""
+        },
+        {
+          "visit": 2,
+          "response": {
+            "mode": null,
+            "value": null
+          },
+          "new_write": [],
+          "retrieves": [],
+          "rationale": ""
+        },
+        {
+          "visit": 3,
+          "response": {
+            "mode": null,
+            "value": null
+          },
+          "new_write": [],
+          "retrieves": [],
+          "rationale": ""
+        }
+      ]
+    },
+    {
+      "id": "perfil-12",
+      "visits": [
+        {
+          "visit": 1,
+          "response": {
+            "mode": null,
+            "value": null
+          },
+          "new_write": [],
+          "retrieves": [],
+          "rationale": ""
+        },
+        {
+          "visit": 2,
+          "response": {
+            "mode": null,
+            "value": null
+          },
+          "new_write": [],
+          "retrieves": [],
+          "rationale": ""
+        },
+        {
+          "visit": 3,
+          "response": {
+            "mode": null,
+            "value": null
+          },
+          "new_write": [],
+          "retrieves": [],
+          "rationale": ""
+        }
+      ]
+    },
+    {
+      "id": "perfil-13",
+      "visits": [
+        {
+          "visit": 1,
+          "response": {
+            "mode": null,
+            "value": null
+          },
+          "new_write": [],
+          "retrieves": [],
+          "rationale": ""
+        },
+        {
+          "visit": 2,
+          "response": {
+            "mode": null,
+            "value": null
+          },
+          "new_write": [],
+          "retrieves": [],
+          "rationale": ""
+        },
+        {
+          "visit": 3,
+          "response": {
+            "mode": null,
+            "value": null
+          },
+          "new_write": [],
+          "retrieves": [],
+          "rationale": ""
+        }
+      ]
+    },
+    {
+      "id": "perfil-14",
+      "visits": [
+        {
+          "visit": 1,
+          "response": {
+            "mode": null,
+            "value": null
+          },
+          "new_write": [],
+          "retrieves": [],
+          "rationale": ""
+        },
+        {
+          "visit": 2,
+          "response": {
+            "mode": null,
+            "value": null
+          },
+          "new_write": [],
+          "retrieves": [],
+          "rationale": ""
+        },
+        {
+          "visit": 3,
+          "response": {
+            "mode": null,
+            "value": null
+          },
+          "new_write": [],
+          "retrieves": [],
+          "rationale": ""
+        }
+      ]
+    },
+    {
+      "id": "perfil-15",
+      "visits": [
+        {
+          "visit": 1,
+          "response": {
+            "mode": null,
+            "value": null
+          },
+          "new_write": [],
+          "retrieves": [],
+          "rationale": ""
+        },
+        {
+          "visit": 2,
+          "response": {
+            "mode": null,
+            "value": null
+          },
+          "new_write": [],
+          "retrieves": [],
+          "rationale": ""
+        },
+        {
+          "visit": 3,
+          "response": {
+            "mode": null,
+            "value": null
+          },
+          "new_write": [],
+          "retrieves": [],
+          "rationale": ""
+        }
+      ]
+    },
+    {
+      "id": "perfil-16",
+      "visits": [
+        {
+          "visit": 1,
+          "response": {
+            "mode": null,
+            "value": null
+          },
+          "new_write": [],
+          "retrieves": [],
+          "rationale": ""
+        },
+        {
+          "visit": 2,
+          "response": {
+            "mode": null,
+            "value": null
+          },
+          "new_write": [],
+          "retrieves": [],
+          "rationale": ""
+        },
+        {
+          "visit": 3,
+          "response": {
+            "mode": null,
+            "value": null
+          },
+          "new_write": [],
+          "retrieves": [],
+          "rationale": ""
+        }
+      ]
+    }
+  ]
+}

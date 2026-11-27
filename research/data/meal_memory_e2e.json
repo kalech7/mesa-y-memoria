@@ -1,0 +1,164 @@
+[
+  {
+    "id": "memoria-otro-chat-misma-tarde",
+    "family": "excepcion_de_sesion",
+    "initial_memory": [
+      {"memory_id": "prev_cena", "attribute": "dinner_preference", "value": "arroz con lentejas", "scope": {"kind": "ongoing", "session_id": null, "context": null, "valid_from": "2026-11-20", "valid_until_exclusive": null}, "status": "confirmed", "source_turn_ids": ["prev_prev_cena"], "evidence_quotes": [{"turn_id": "prev_prev_cena", "text": "Para cenar prefiero arroz con lentejas de forma habitual."}], "recorded_at": "2026-11-20", "supersedes": []}
+    ],
+    "steps": [
+      {"action": "send", "date": "2026-12-03", "text": "Para cenar prefiero tortilla de papa. Es solo esta ocasión, en este chat.", "expect": {"writes": [{"attribute": "dinner_preference", "value": "tortilla de papa", "scope": {"kind": "session", "session_id": "S1", "context": null, "valid_from": "2026-12-03", "valid_until_exclusive": null}, "status": "confirmed", "supersedes": []}], "probes": [{"query": {"attribute": "dinner_preference", "date": "2026-12-03", "session_id": "S1", "context": null}, "expected": {"mode": "ANSWER", "value": "tortilla de papa", "branches": []}}, {"query": {"attribute": "dinner_preference", "date": "2026-12-03", "session_id": "S2", "context": null}, "expected": {"mode": "ANSWER", "value": "arroz con lentejas", "branches": []}}]}},
+      {"action": "send", "date": "2026-12-03", "text": "¿Qué prefiero para cenar en este chat?", "expect": {"writes": [], "reply": {"kind": "recall", "values": ["tortilla de papa"]}, "probes": [{"query": {"attribute": "dinner_preference", "date": "2026-12-03", "session_id": "S1", "context": null}, "expected": {"mode": "ANSWER", "value": "tortilla de papa", "branches": []}}]}},
+      {"action": "new_session", "date": "2026-12-03", "expect": {"writes": [], "probes": [{"query": {"attribute": "dinner_preference", "date": "2026-12-03", "session_id": "S2", "context": null}, "expected": {"mode": "ANSWER", "value": "arroz con lentejas", "branches": []}}]}},
+      {"action": "send", "date": "2026-12-03", "text": "Abrí otro chat pero sigue siendo la misma tarde. ¿Qué recuerdas que prefiero para cenar?", "expect": {"writes": [], "reply": {"kind": "recall", "values": ["arroz con lentejas"]}, "probes": [{"query": {"attribute": "dinner_preference", "date": "2026-12-03", "session_id": "S2", "context": null}, "expected": {"mode": "ANSWER", "value": "arroz con lentejas", "branches": []}}]}}
+    ]
+  },
+  {
+    "id": "memoria-una-fecha-dos-chats",
+    "family": "intervalo_de_un_dia",
+    "initial_memory": [
+      {"memory_id": "prev_cena", "attribute": "dinner_preference", "value": "pescado al horno", "scope": {"kind": "ongoing", "session_id": null, "context": null, "valid_from": "2026-11-20", "valid_until_exclusive": null}, "status": "confirmed", "source_turn_ids": ["prev_prev_cena"], "evidence_quotes": [{"turn_id": "prev_prev_cena", "text": "Para cenar prefiero pescado al horno de forma habitual."}], "recorded_at": "2026-11-20", "supersedes": []}
+    ],
+    "steps": [
+      {"action": "send", "date": "2026-12-03", "text": "Para cenar prefiero ensalada de quinua. Solo para el 2026-12-03, aunque abra otro chat.", "expect": {"writes": [{"attribute": "dinner_preference", "value": "ensalada de quinua", "scope": {"kind": "interval", "session_id": null, "context": null, "valid_from": "2026-12-03", "valid_until_exclusive": "2026-12-04"}, "status": "confirmed", "supersedes": []}], "probes": [{"query": {"attribute": "dinner_preference", "date": "2026-12-03", "session_id": "S2", "context": null}, "expected": {"mode": "ANSWER", "value": "ensalada de quinua", "branches": []}}, {"query": {"attribute": "dinner_preference", "date": "2026-12-04", "session_id": "S2", "context": null}, "expected": {"mode": "ANSWER", "value": "pescado al horno", "branches": []}}]}},
+      {"action": "new_session", "date": "2026-12-03", "expect": {"writes": [], "probes": [{"query": {"attribute": "dinner_preference", "date": "2026-12-03", "session_id": "S2", "context": null}, "expected": {"mode": "ANSWER", "value": "ensalada de quinua", "branches": []}}]}},
+      {"action": "send", "date": "2026-12-03", "text": "Es otro chat del mismo día. ¿Qué prefiero para cenar hoy?", "expect": {"writes": [], "reply": {"kind": "recall", "values": ["ensalada de quinua"]}, "probes": [{"query": {"attribute": "dinner_preference", "date": "2026-12-03", "session_id": "S2", "context": null}, "expected": {"mode": "ANSWER", "value": "ensalada de quinua", "branches": []}}]}},
+      {"action": "send", "date": "2026-12-04", "text": "¿Qué prefiero para cenar hoy, según lo que recuerdas?", "expect": {"writes": [], "reply": {"kind": "recall", "values": ["pescado al horno"]}, "probes": [{"query": {"attribute": "dinner_preference", "date": "2026-12-04", "session_id": "S2", "context": null}, "expected": {"mode": "ANSWER", "value": "pescado al horno", "branches": []}}]}}
+    ]
+  },
+  {
+    "id": "memoria-habitual-desde-hoy",
+    "family": "cambio_estable_con_preservacion",
+    "initial_memory": [
+      {"memory_id": "prev_cena", "attribute": "dinner_preference", "value": "pollo con papas", "scope": {"kind": "ongoing", "session_id": null, "context": null, "valid_from": "2026-11-20", "valid_until_exclusive": null}, "status": "confirmed", "source_turn_ids": ["prev_prev_cena"], "evidence_quotes": [{"turn_id": "prev_prev_cena", "text": "Para cenar prefiero pollo con papas de forma habitual."}], "recorded_at": "2026-11-20", "supersedes": []},
+      {"memory_id": "prev_bebida", "attribute": "drink_preference", "value": "infusión de menta", "scope": {"kind": "ongoing", "session_id": null, "context": null, "valid_from": "2026-11-20", "valid_until_exclusive": null}, "status": "confirmed", "source_turn_ids": ["prev_prev_bebida"], "evidence_quotes": [{"turn_id": "prev_prev_bebida", "text": "Para beber prefiero infusión de menta de forma habitual."}], "recorded_at": "2026-11-20", "supersedes": []}
+    ],
+    "steps": [
+      {"action": "send", "date": "2026-12-03", "text": "Para cenar he cambiado de costumbre. Mi preferencia habitual desde hoy es pescado al horno.", "expect": {"writes": [{"attribute": "dinner_preference", "value": "pescado al horno", "scope": {"kind": "ongoing", "session_id": null, "context": null, "valid_from": "2026-12-03", "valid_until_exclusive": null}, "status": "confirmed", "supersedes": ["prev_cena"]}], "probes": [{"query": {"attribute": "dinner_preference", "date": "2026-12-03", "session_id": "S1", "context": null}, "expected": {"mode": "ANSWER", "value": "pescado al horno", "branches": []}}, {"query": {"attribute": "dinner_preference", "date": "2026-12-02", "session_id": "S1", "context": null}, "expected": {"mode": "ANSWER", "value": "pollo con papas", "branches": []}}, {"query": {"attribute": "drink_preference", "date": "2026-12-04", "session_id": "S2", "context": null}, "expected": {"mode": "ANSWER", "value": "infusión de menta", "branches": []}}]}},
+      {"action": "new_session", "date": "2026-12-04", "expect": {"writes": [], "probes": [{"query": {"attribute": "dinner_preference", "date": "2026-12-04", "session_id": "S2", "context": null}, "expected": {"mode": "ANSWER", "value": "pescado al horno", "branches": []}}]}},
+      {"action": "send", "date": "2026-12-04", "text": "¿Qué prefiero para cenar ahora de forma habitual?", "expect": {"writes": [], "reply": {"kind": "recall", "values": ["pescado al horno"]}, "probes": [{"query": {"attribute": "dinner_preference", "date": "2026-12-04", "session_id": "S2", "context": null}, "expected": {"mode": "ANSWER", "value": "pescado al horno", "branches": []}}]}},
+      {"action": "send", "date": "2026-12-04", "text": "¿Y qué prefiero beber normalmente?", "expect": {"writes": [], "reply": {"kind": "recall", "values": ["infusión de menta"]}, "probes": [{"query": {"attribute": "drink_preference", "date": "2026-12-04", "session_id": "S2", "context": null}, "expected": {"mode": "ANSWER", "value": "infusión de menta", "branches": []}}]}}
+    ]
+  },
+  {
+    "id": "memoria-limite-incluido",
+    "family": "intervalo_con_fin",
+    "initial_memory": [
+      {"memory_id": "prev_cena", "attribute": "dinner_preference", "value": "tortilla de papa", "scope": {"kind": "ongoing", "session_id": null, "context": null, "valid_from": "2026-11-20", "valid_until_exclusive": null}, "status": "confirmed", "source_turn_ids": ["prev_prev_cena"], "evidence_quotes": [{"turn_id": "prev_prev_cena", "text": "Para cenar prefiero tortilla de papa de forma habitual."}], "recorded_at": "2026-11-20", "supersedes": []},
+      {"memory_id": "prev_desayuno", "attribute": "breakfast_preference", "value": "avena con banano", "scope": {"kind": "ongoing", "session_id": null, "context": null, "valid_from": "2026-11-20", "valid_until_exclusive": null}, "status": "confirmed", "source_turn_ids": ["prev_prev_desayuno"], "evidence_quotes": [{"turn_id": "prev_prev_desayuno", "text": "Para desayunar prefiero avena con banano de forma habitual."}], "recorded_at": "2026-11-20", "supersedes": []}
+    ],
+    "steps": [
+      {"action": "send", "date": "2026-12-03", "text": "Para cenar prefiero arroz con lentejas. Es una excepción hasta el 2026-12-04 inclusive.", "expect": {"writes": [{"attribute": "dinner_preference", "value": "arroz con lentejas", "scope": {"kind": "interval", "session_id": null, "context": null, "valid_from": "2026-12-03", "valid_until_exclusive": "2026-12-05"}, "status": "confirmed", "supersedes": []}], "probes": [{"query": {"attribute": "dinner_preference", "date": "2026-12-04", "session_id": "S1", "context": null}, "expected": {"mode": "ANSWER", "value": "arroz con lentejas", "branches": []}}, {"query": {"attribute": "dinner_preference", "date": "2026-12-05", "session_id": "S1", "context": null}, "expected": {"mode": "ANSWER", "value": "tortilla de papa", "branches": []}}, {"query": {"attribute": "breakfast_preference", "date": "2026-12-05", "session_id": "S1", "context": null}, "expected": {"mode": "ANSWER", "value": "avena con banano", "branches": []}}]}},
+      {"action": "send", "date": "2026-12-04", "text": "Hoy es el último día de la excepción. ¿Qué prefiero para cenar?", "expect": {"writes": [], "reply": {"kind": "recall", "values": ["arroz con lentejas"]}, "probes": [{"query": {"attribute": "dinner_preference", "date": "2026-12-04", "session_id": "S1", "context": null}, "expected": {"mode": "ANSWER", "value": "arroz con lentejas", "branches": []}}]}},
+      {"action": "new_session", "date": "2026-12-05", "expect": {"writes": [], "probes": [{"query": {"attribute": "dinner_preference", "date": "2026-12-05", "session_id": "S2", "context": null}, "expected": {"mode": "ANSWER", "value": "tortilla de papa", "branches": []}}]}},
+      {"action": "send", "date": "2026-12-05", "text": "Ya pasó esa fecha. ¿Qué prefiero para cenar hoy?", "expect": {"writes": [], "reply": {"kind": "recall", "values": ["tortilla de papa"]}, "probes": [{"query": {"attribute": "dinner_preference", "date": "2026-12-05", "session_id": "S2", "context": null}, "expected": {"mode": "ANSWER", "value": "tortilla de papa", "branches": []}}]}}
+    ]
+  },
+  {
+    "id": "memoria-confirmacion-por-turnos",
+    "family": "aclaracion_y_confirmacion",
+    "initial_memory": [
+      {"memory_id": "prev_cena", "attribute": "dinner_preference", "value": "pollo con papas", "scope": {"kind": "ongoing", "session_id": null, "context": null, "valid_from": "2026-11-20", "valid_until_exclusive": null}, "status": "confirmed", "source_turn_ids": ["prev_prev_cena"], "evidence_quotes": [{"turn_id": "prev_prev_cena", "text": "Para cenar prefiero pollo con papas de forma habitual."}], "recorded_at": "2026-11-20", "supersedes": []}
+    ],
+    "steps": [
+      {"action": "send", "date": "2026-12-03", "text": "Últimamente para cenar prefiero arroz con lentejas.", "expect": {"writes": [], "reply": {"kind": "ask", "slots": ["TEMPORAL_SCOPE"]}, "allow_unresolved": {"attribute": "dinner_preference", "value": "arroz con lentejas"}}},
+      {"action": "send", "date": "2026-12-03", "text": "Es un cambio habitual, incluso en futuros chats. Mi preferencia habitual desde hoy es arroz con lentejas.", "expect": {"writes": [{"attribute": "dinner_preference", "value": "arroz con lentejas", "scope": {"kind": "ongoing", "session_id": null, "context": null, "valid_from": "2026-12-03", "valid_until_exclusive": null}, "status": "confirmed", "supersedes": ["prev_cena"]}], "probes": [{"query": {"attribute": "dinner_preference", "date": "2026-12-04", "session_id": "S2", "context": null}, "expected": {"mode": "ANSWER", "value": "arroz con lentejas", "branches": []}}]}},
+      {"action": "new_session", "date": "2026-12-04", "expect": {"writes": [], "probes": [{"query": {"attribute": "dinner_preference", "date": "2026-12-04", "session_id": "S2", "context": null}, "expected": {"mode": "ANSWER", "value": "arroz con lentejas", "branches": []}}]}},
+      {"action": "send", "date": "2026-12-04", "text": "¿Qué recuerdas de mi preferencia habitual para cenar?", "expect": {"writes": [], "reply": {"kind": "recall", "values": ["arroz con lentejas"]}, "probes": [{"query": {"attribute": "dinner_preference", "date": "2026-12-04", "session_id": "S2", "context": null}, "expected": {"mode": "ANSWER", "value": "arroz con lentejas", "branches": []}}]}}
+    ]
+  },
+  {
+    "id": "memoria-no-se-lo-puedo-decir",
+    "family": "ambiguedad_y_no_respuesta",
+    "initial_memory": [
+      {"memory_id": "prev_cena", "attribute": "dinner_preference", "value": "ensalada de quinua", "scope": {"kind": "ongoing", "session_id": null, "context": null, "valid_from": "2026-11-20", "valid_until_exclusive": null}, "status": "confirmed", "source_turn_ids": ["prev_prev_cena"], "evidence_quotes": [{"turn_id": "prev_prev_cena", "text": "Para cenar prefiero ensalada de quinua de forma habitual."}], "recorded_at": "2026-11-20", "supersedes": []}
+    ],
+    "steps": [
+      {"action": "send", "date": "2026-12-03", "text": "Para cenar ahora mismo prefiero tortilla de papa. Todavía estoy viendo qué me gusta.", "expect": {"writes": [], "reply": {"kind": "ask", "slots": ["TEMPORAL_SCOPE"]}, "allow_unresolved": {"attribute": "dinner_preference", "value": "tortilla de papa"}}},
+      {"action": "send", "date": "2026-12-03", "text": "No puedo precisar si ese cambio seguirá; todavía no lo he decidido.", "expect": {"writes": [], "reply": {"kind": "uncertain", "values": ["ensalada de quinua", "tortilla de papa"]}, "allow_unresolved": {"attribute": "dinner_preference", "value": "tortilla de papa"}}},
+      {"action": "new_session", "date": "2026-12-04", "expect": {"writes": [], "probes": [{"query": {"attribute": "dinner_preference", "date": "2026-12-04", "session_id": "S2", "context": null}, "expected": {"mode": "ANSWER", "value": "ensalada de quinua", "branches": []}}]}},
+      {"action": "send", "date": "2026-12-04", "text": "En este chat nuevo, ¿qué preferencia habitual para cenar recuerdas que sí había confirmado?", "expect": {"writes": [], "reply": {"kind": "recall", "values": ["ensalada de quinua"]}, "probes": [{"query": {"attribute": "dinner_preference", "date": "2026-12-04", "session_id": "S2", "context": null}, "expected": {"mode": "ANSWER", "value": "ensalada de quinua", "branches": []}}]}}
+    ]
+  },
+  {
+    "id": "memoria-lleva-ella-a-la-casa",
+    "family": "atribucion_de_persona",
+    "initial_memory": [
+      {"memory_id": "prev_cena", "attribute": "dinner_preference", "value": "arroz con lentejas", "scope": {"kind": "ongoing", "session_id": null, "context": null, "valid_from": "2026-11-20", "valid_until_exclusive": null}, "status": "confirmed", "source_turn_ids": ["prev_prev_cena"], "evidence_quotes": [{"turn_id": "prev_prev_cena", "text": "Para cenar prefiero arroz con lentejas de forma habitual."}], "recorded_at": "2026-11-20", "supersedes": []},
+      {"memory_id": "prev_bebida", "attribute": "drink_preference", "value": "agua con limón", "scope": {"kind": "ongoing", "session_id": null, "context": null, "valid_from": "2026-11-20", "valid_until_exclusive": null}, "status": "confirmed", "source_turn_ids": ["prev_prev_bebida"], "evidence_quotes": [{"turn_id": "prev_prev_bebida", "text": "Para beber prefiero agua con limón de forma habitual."}], "recorded_at": "2026-11-20", "supersedes": []}
+    ],
+    "steps": [
+      {"action": "send", "date": "2026-12-03", "text": "Mi compañera dijo «para cenar prefiero pollo con papas de forma habitual». Ella se lo lleva para su casa.", "expect": {"writes": [], "probes": [{"query": {"attribute": "dinner_preference", "date": "2026-12-03", "session_id": "S1", "context": null}, "expected": {"mode": "ANSWER", "value": "arroz con lentejas", "branches": []}}, {"query": {"attribute": "drink_preference", "date": "2026-12-03", "session_id": "S1", "context": null}, "expected": {"mode": "ANSWER", "value": "agua con limón", "branches": []}}]}},
+      {"action": "send", "date": "2026-12-03", "text": "Hablaba de ella. ¿Qué recuerdas que prefiero yo para cenar?", "expect": {"writes": [], "reply": {"kind": "recall", "values": ["arroz con lentejas"]}, "probes": [{"query": {"attribute": "dinner_preference", "date": "2026-12-03", "session_id": "S1", "context": null}, "expected": {"mode": "ANSWER", "value": "arroz con lentejas", "branches": []}}]}},
+      {"action": "send", "date": "2026-12-03", "text": "Yo hoy no quiero que el plato lleve poyo, papa, ni tomate. ¿Qué puedo cenar?", "expect": {"writes": [], "reply": {"kind": "meal", "excluded": ["pollo", "papa", "tomate"], "clarify": false}, "probes": [{"query": {"attribute": "dinner_preference", "date": "2026-12-03", "session_id": "S1", "context": null}, "expected": {"mode": "ANSWER", "value": "arroz con lentejas", "branches": []}}]}},
+      {"action": "send", "date": "2026-12-03", "text": "¿Qué recuerdas que prefiero para beber?", "expect": {"writes": [], "reply": {"kind": "recall", "values": ["agua con limón"]}, "probes": [{"query": {"attribute": "drink_preference", "date": "2026-12-03", "session_id": "S1", "context": null}, "expected": {"mode": "ANSWER", "value": "agua con limón", "branches": []}}]}}
+    ]
+  },
+  {
+    "id": "memoria-ayer-y-manana-son-otros",
+    "family": "fechas_de_terceros",
+    "initial_memory": [
+      {"memory_id": "prev_cena", "attribute": "dinner_preference", "value": "tortilla de papa", "scope": {"kind": "ongoing", "session_id": null, "context": null, "valid_from": "2026-11-20", "valid_until_exclusive": null}, "status": "confirmed", "source_turn_ids": ["prev_prev_cena"], "evidence_quotes": [{"turn_id": "prev_prev_cena", "text": "Para cenar prefiero tortilla de papa de forma habitual."}], "recorded_at": "2026-11-20", "supersedes": []}
+    ],
+    "steps": [
+      {"action": "send", "date": "2026-12-03", "text": "Ayer cené pescado con mi vecina, y mañana ella dijo que prefiere pollo. Yo estoy hablando de cenas de otros días.", "expect": {"writes": [], "probes": [{"query": {"attribute": "dinner_preference", "date": "2026-12-03", "session_id": "S1", "context": null}, "expected": {"mode": "ANSWER", "value": "tortilla de papa", "branches": []}}, {"query": {"attribute": "dinner_preference", "date": "2026-12-04", "session_id": "S1", "context": null}, "expected": {"mode": "ANSWER", "value": "tortilla de papa", "branches": []}}]}},
+      {"action": "send", "date": "2026-12-03", "text": "Hoy, para mi plato, sin papas, aciete, ni poyo. ¿Qué cena me propones?", "expect": {"writes": [], "reply": {"kind": "meal", "excluded": ["papa", "aceite", "pollo"], "clarify": true}, "probes": [{"query": {"attribute": "dinner_preference", "date": "2026-12-03", "session_id": "S1", "context": null}, "expected": {"mode": "ANSWER", "value": "tortilla de papa", "branches": []}}]}},
+      {"action": "send", "date": "2026-12-03", "text": "Ya encontré aceite. Para mi cena deja fuera todavía papa y pollo, y tampoco metas pepino. ¿Qué ceno?", "expect": {"writes": [], "reply": {"kind": "meal", "excluded": ["papa", "pollo", "pepino"], "clarify": false}, "probes": [{"query": {"attribute": "dinner_preference", "date": "2026-12-03", "session_id": "S1", "context": null}, "expected": {"mode": "ANSWER", "value": "tortilla de papa", "branches": []}}]}},
+      {"action": "send", "date": "2026-12-04", "text": "¿Y qué prefiero para cenar de forma habitual?", "expect": {"writes": [], "reply": {"kind": "recall", "values": ["tortilla de papa"]}, "probes": [{"query": {"attribute": "dinner_preference", "date": "2026-12-04", "session_id": "S1", "context": null}, "expected": {"mode": "ANSWER", "value": "tortilla de papa", "branches": []}}]}}
+    ]
+  },
+  {
+    "id": "memoria-dos-lugares",
+    "family": "alcance_contextual",
+    "initial_memory": [
+      {"memory_id": "prev_cena", "attribute": "dinner_preference", "value": "arroz con lentejas", "scope": {"kind": "ongoing", "session_id": null, "context": null, "valid_from": "2026-11-20", "valid_until_exclusive": null}, "status": "confirmed", "source_turn_ids": ["prev_prev_cena"], "evidence_quotes": [{"turn_id": "prev_prev_cena", "text": "Para cenar prefiero arroz con lentejas de forma habitual."}], "recorded_at": "2026-11-20", "supersedes": []}
+    ],
+    "steps": [
+      {"action": "send", "date": "2026-12-03", "text": "Para cenar prefiero ensalada de quinua en la oficina de forma habitual. Solo se aplica en la oficina.", "expect": {"writes": [{"attribute": "dinner_preference", "value": "ensalada de quinua", "scope": {"kind": "contextual", "session_id": null, "context": "oficina", "valid_from": "2026-12-03", "valid_until_exclusive": null}, "status": "confirmed", "supersedes": []}], "probes": [{"query": {"attribute": "dinner_preference", "date": "2026-12-03", "session_id": "S1", "context": "oficina"}, "expected": {"mode": "ANSWER", "value": "ensalada de quinua", "branches": []}}, {"query": {"attribute": "dinner_preference", "date": "2026-12-03", "session_id": "S1", "context": "casa"}, "expected": {"mode": "ANSWER", "value": "arroz con lentejas", "branches": []}}, {"query": {"attribute": "dinner_preference", "date": "2026-12-03", "session_id": "S1", "context": null}, "expected": {"mode": "CONDITIONALIZE", "value": null, "branches": ["arroz con lentejas", "ensalada de quinua"]}}]}},
+      {"action": "send", "date": "2026-12-03", "text": "¿Qué prefiero para cenar en general? Todavía no he dicho dónde voy a estar.", "expect": {"writes": [], "reply": {"kind": "uncertain", "values": ["arroz con lentejas", "ensalada de quinua"]}, "probes": [{"query": {"attribute": "dinner_preference", "date": "2026-12-03", "session_id": "S1", "context": null}, "expected": {"mode": "CONDITIONALIZE", "value": null, "branches": ["arroz con lentejas", "ensalada de quinua"]}}]}},
+      {"action": "new_session", "date": "2026-12-04", "expect": {"writes": [], "probes": [{"query": {"attribute": "dinner_preference", "date": "2026-12-04", "session_id": "S2", "context": "casa"}, "expected": {"mode": "ANSWER", "value": "arroz con lentejas", "branches": []}}]}},
+      {"action": "send", "date": "2026-12-04", "text": "Hoy estoy en la oficina. ¿Qué prefiero para cenar?", "expect": {"writes": [], "reply": {"kind": "recall", "values": ["ensalada de quinua"]}, "probes": [{"query": {"attribute": "dinner_preference", "date": "2026-12-04", "session_id": "S2", "context": "oficina"}, "expected": {"mode": "ANSWER", "value": "ensalada de quinua", "branches": []}}]}},
+      {"action": "send", "date": "2026-12-04", "text": "Ahora estoy en casa. ¿Qué prefiero para cenar aquí?", "expect": {"writes": [], "reply": {"kind": "recall", "values": ["arroz con lentejas"]}, "probes": [{"query": {"attribute": "dinner_preference", "date": "2026-12-04", "session_id": "S2", "context": "casa"}, "expected": {"mode": "ANSWER", "value": "arroz con lentejas", "branches": []}}]}}
+    ]
+  },
+  {
+    "id": "memoria-no-hay-un-gusto-confirmado",
+    "family": "rechazo_y_sugerencia",
+    "initial_memory": [],
+    "steps": [
+      {"action": "send", "date": "2026-12-03", "text": "¿Qué prefiero para cenar? Todavía no te he contado mis gustos.", "expect": {"writes": [], "reply": {"kind": "abstain"}, "probes": [{"query": {"attribute": "dinner_preference", "date": "2026-12-03", "session_id": "S1", "context": null}, "expected": {"mode": "DEFER", "value": null, "branches": []}}]}},
+      {"action": "send", "date": "2026-12-03", "text": "No quiero que guardes un gusto ahora. Hoy para cenar nada de arrós, pepino, huevo, ni pollo. ¿Qué me recomiendas?", "expect": {"writes": [], "reply": {"kind": "meal", "excluded": ["arroz", "pepino", "huevo", "pollo"], "clarify": false}, "probes": [{"query": {"attribute": "dinner_preference", "date": "2026-12-03", "session_id": "S1", "context": null}, "expected": {"mode": "DEFER", "value": null, "branches": []}}]}},
+      {"action": "new_session", "date": "2026-12-04", "expect": {"writes": [], "probes": [{"query": {"attribute": "dinner_preference", "date": "2026-12-04", "session_id": "S2", "context": null}, "expected": {"mode": "DEFER", "value": null, "branches": []}}]}},
+      {"action": "send", "date": "2026-12-04", "text": "Ayer me diste una idea de cena. ¿Qué recuerdas de mis gustos habituales para cenar?", "expect": {"writes": [], "reply": {"kind": "abstain"}, "probes": [{"query": {"attribute": "dinner_preference", "date": "2026-12-04", "session_id": "S2", "context": null}, "expected": {"mode": "DEFER", "value": null, "branches": []}}]}}
+    ]
+  },
+  {
+    "id": "memoria-dos-preferencias-solo-una-edicion",
+    "family": "preservar_otro_atributo",
+    "initial_memory": [
+      {"memory_id": "prev_cena", "attribute": "dinner_preference", "value": "ensalada de quinua", "scope": {"kind": "ongoing", "session_id": null, "context": null, "valid_from": "2026-11-20", "valid_until_exclusive": null}, "status": "confirmed", "source_turn_ids": ["prev_prev_cena"], "evidence_quotes": [{"turn_id": "prev_prev_cena", "text": "Para cenar prefiero ensalada de quinua de forma habitual."}], "recorded_at": "2026-11-20", "supersedes": []},
+      {"memory_id": "prev_desayuno", "attribute": "breakfast_preference", "value": "avena con banano", "scope": {"kind": "ongoing", "session_id": null, "context": null, "valid_from": "2026-11-20", "valid_until_exclusive": null}, "status": "confirmed", "source_turn_ids": ["prev_prev_desayuno"], "evidence_quotes": [{"turn_id": "prev_prev_desayuno", "text": "Para desayunar prefiero avena con banano de forma habitual."}], "recorded_at": "2026-11-20", "supersedes": []},
+      {"memory_id": "prev_bebida", "attribute": "drink_preference", "value": "infusión de menta", "scope": {"kind": "ongoing", "session_id": null, "context": null, "valid_from": "2026-11-20", "valid_until_exclusive": null}, "status": "confirmed", "source_turn_ids": ["prev_prev_bebida"], "evidence_quotes": [{"turn_id": "prev_prev_bebida", "text": "Para beber prefiero infusión de menta de forma habitual."}], "recorded_at": "2026-11-20", "supersedes": []}
+    ],
+    "steps": [
+      {"action": "send", "date": "2026-12-03", "text": "Para el desayuno prefiero papaya con banano de forma habitual. Mis gustos de cena y bebida se mantienen.", "expect": {"writes": [{"attribute": "breakfast_preference", "value": "papaya con banano", "scope": {"kind": "ongoing", "session_id": null, "context": null, "valid_from": "2026-12-03", "valid_until_exclusive": null}, "status": "confirmed", "supersedes": ["prev_desayuno"]}], "probes": [{"query": {"attribute": "breakfast_preference", "date": "2026-12-03", "session_id": "S1", "context": null}, "expected": {"mode": "ANSWER", "value": "papaya con banano", "branches": []}}, {"query": {"attribute": "dinner_preference", "date": "2026-12-03", "session_id": "S1", "context": null}, "expected": {"mode": "ANSWER", "value": "ensalada de quinua", "branches": []}}, {"query": {"attribute": "drink_preference", "date": "2026-12-03", "session_id": "S1", "context": null}, "expected": {"mode": "ANSWER", "value": "infusión de menta", "branches": []}}]}},
+      {"action": "send", "date": "2026-12-03", "text": "¿Qué recuerdas que prefiero para cenar?", "expect": {"writes": [], "reply": {"kind": "recall", "values": ["ensalada de quinua"]}, "probes": [{"query": {"attribute": "dinner_preference", "date": "2026-12-03", "session_id": "S1", "context": null}, "expected": {"mode": "ANSWER", "value": "ensalada de quinua", "branches": []}}]}},
+      {"action": "new_session", "date": "2026-12-04", "expect": {"writes": [], "probes": [{"query": {"attribute": "breakfast_preference", "date": "2026-12-04", "session_id": "S2", "context": null}, "expected": {"mode": "ANSWER", "value": "papaya con banano", "branches": []}}]}},
+      {"action": "send", "date": "2026-12-04", "text": "Cambio de tema, ¿qué prefiero para desayunar?", "expect": {"writes": [], "reply": {"kind": "recall", "values": ["papaya con banano"]}, "probes": [{"query": {"attribute": "breakfast_preference", "date": "2026-12-04", "session_id": "S2", "context": null}, "expected": {"mode": "ANSWER", "value": "papaya con banano", "branches": []}}]}},
+      {"action": "send", "date": "2026-12-04", "text": "¿Y qué prefiero para beber?", "expect": {"writes": [], "reply": {"kind": "recall", "values": ["infusión de menta"]}, "probes": [{"query": {"attribute": "drink_preference", "date": "2026-12-04", "session_id": "S2", "context": null}, "expected": {"mode": "ANSWER", "value": "infusión de menta", "branches": []}}]}}
+    ]
+  },
+  {
+    "id": "memoria-lo-guardado-vs-el-plato-de-hoy",
+    "family": "memoria_en_recomendacion",
+    "initial_memory": [
+      {"memory_id": "prev_cena", "attribute": "dinner_preference", "value": "pescado al horno con papas", "scope": {"kind": "ongoing", "session_id": null, "context": null, "valid_from": "2026-11-20", "valid_until_exclusive": null}, "status": "confirmed", "source_turn_ids": ["prev_prev_cena"], "evidence_quotes": [{"turn_id": "prev_prev_cena", "text": "Para cenar prefiero pescado al horno con papas de forma habitual."}], "recorded_at": "2026-11-20", "supersedes": []}
+    ],
+    "steps": [
+      {"action": "send", "date": "2026-12-03", "text": "Sin restricciones nuevas para esta cena; si recuerdas mi plato habitual, puedes usarlo. ¿Qué cena me propones?", "expect": {"writes": [], "reply": {"kind": "meal", "excluded": [], "clarify": false, "preferred": "pescado al horno con papas"}, "probes": [{"query": {"attribute": "dinner_preference", "date": "2026-12-03", "session_id": "S1", "context": null}, "expected": {"mode": "ANSWER", "value": "pescado al horno con papas", "branches": []}}]}},
+      {"action": "send", "date": "2026-12-03", "text": "Para hoy deja fuera pescao, uevos y pepino. Si queda algo, ¿qué puedo cenar?", "expect": {"writes": [], "reply": {"kind": "meal", "excluded": ["pescado", "huevo", "pepino"], "clarify": false}, "probes": [{"query": {"attribute": "dinner_preference", "date": "2026-12-03", "session_id": "S1", "context": null}, "expected": {"mode": "ANSWER", "value": "pescado al horno con papas", "branches": []}}]}},
+      {"action": "new_session", "date": "2026-12-04", "expect": {"writes": [], "probes": [{"query": {"attribute": "dinner_preference", "date": "2026-12-04", "session_id": "S2", "context": null}, "expected": {"mode": "ANSWER", "value": "pescado al horno con papas", "branches": []}}]}},
+      {"action": "send", "date": "2026-12-04", "text": "Eso era solo para ayer. ¿Qué prefiero para cenar de forma habitual?", "expect": {"writes": [], "reply": {"kind": "recall", "values": ["pescado al horno con papas"]}, "probes": [{"query": {"attribute": "dinner_preference", "date": "2026-12-04", "session_id": "S2", "context": null}, "expected": {"mode": "ANSWER", "value": "pescado al horno con papas", "branches": []}}]}},
+      {"action": "send", "date": "2026-12-04", "text": "¿Qué cena me propones hoy? Ya no tengo las restricciones de ayer.", "expect": {"writes": [], "reply": {"kind": "meal", "excluded": [], "clarify": false, "preferred": "pescado al horno con papas"}, "probes": [{"query": {"attribute": "dinner_preference", "date": "2026-12-04", "session_id": "S2", "context": null}, "expected": {"mode": "ANSWER", "value": "pescado al horno con papas", "branches": []}}]}}
+    ]
+  }
+]

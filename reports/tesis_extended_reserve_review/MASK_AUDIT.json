@@ -1,0 +1,96 @@
+{
+  "protocol": "fixed_proceed_prefix_full_budget",
+  "total_annotated_opportunities": 9,
+  "enabled_by_public_parser": 7,
+  "rows": [
+    {
+      "root_id": "res-01",
+      "visit": 1,
+      "author_slot": "TEMPORAL_SCOPE",
+      "policy_allowed": false,
+      "actions": [
+        "PROCEED"
+      ]
+    },
+    {
+      "root_id": "res-01",
+      "visit": 2,
+      "author_slot": "TEMPORAL_SCOPE",
+      "policy_allowed": true,
+      "actions": [
+        "PROCEED",
+        "TEMPORAL_SCOPE"
+      ]
+    },
+    {
+      "root_id": "res-02",
+      "visit": 1,
+      "author_slot": "TEMPORAL_SCOPE",
+      "policy_allowed": true,
+      "actions": [
+        "PROCEED",
+        "TEMPORAL_SCOPE"
+      ]
+    },
+    {
+      "root_id": "res-02",
+      "visit": 2,
+      "author_slot": "TEMPORAL_SCOPE",
+      "policy_allowed": true,
+      "actions": [
+        "PROCEED",
+        "TEMPORAL_SCOPE"
+      ]
+    },
+    {
+      "root_id": "res-08",
+      "visit": 1,
+      "author_slot": "TEMPORAL_SCOPE",
+      "policy_allowed": true,
+      "actions": [
+        "PROCEED",
+        "TEMPORAL_SCOPE"
+      ]
+    },
+    {
+      "root_id": "res-08",
+      "visit": 3,
+      "author_slot": "TEMPORAL_SCOPE",
+      "policy_allowed": true,
+      "actions": [
+        "PROCEED",
+        "TEMPORAL_SCOPE"
+      ]
+    },
+    {
+      "root_id": "res-10",
+      "visit": 1,
+      "author_slot": "TEMPORAL_SCOPE",
+      "policy_allowed": false,
+      "actions": [
+        "PROCEED",
+        "DEFER"
+      ]
+    },
+    {
+      "root_id": "res-10",
+      "visit": 2,
+      "author_slot": "TEMPORAL_SCOPE",
+      "policy_allowed": true,
+      "actions": [
+        "PROCEED",
+        "TEMPORAL_SCOPE"
+      ]
+    },
+    {
+      "root_id": "res-10",
+      "visit": 3,
+      "author_slot": "TEMPORAL_SCOPE",
+      "policy_allowed": true,
+      "actions": [
+        "PROCEED",
+        "TEMPORAL_SCOPE"
+      ]
+    }
+  ]
+}

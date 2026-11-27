@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light dark">
+  <script src="/static/theme.js"></script>
+  <link rel="icon" href="data:,">
+  <title>Laboratorio de memoria alimentaria</title>
+  <link rel="stylesheet" href="/static/styles.css?v=4">
+  <link rel="stylesheet" href="/static/profiles.css?v=1">
+  <script type="module" src="/static/app.js?v=10"></script>
+</head>
+<body data-workspace="chat">
+  <a class="skip-link" href="#main">Saltar al contenido</a>
+  <div class="masthead">
+    <div class="masthead-inner">
+    <header class="topline">
+      <h1 class="masthead-title"><span class="brand-mark" data-icon="memory"></span>Laboratorio de memoria</h1>
+      <button type="button" id="theme-toggle" class="secondary theme-toggle" aria-pressed="false">
+          <span aria-hidden="true" data-icon="moon"></span><span aria-hidden="true" data-icon="sun"></span>
+          <span id="theme-label">Modo oscuro</span>
+      </button>
+    </header>
+    <nav class="workspace-tabs" aria-label="Vistas del laboratorio">
+      <button type="button" data-workspace="chat" aria-pressed="true"><span data-icon="chat"></span> Conversar</button>
+      <button type="button" data-workspace="models" aria-pressed="false"><span data-icon="layers"></span> Comparar modelos</button>
+      <button type="button" data-workspace="budget" aria-pressed="false"><span data-icon="filter"></span> Presupuesto</button>
+      <button type="button" data-workspace="profiles" aria-pressed="false" hidden><span data-icon="chat"></span> Perfiles y memoria</button>
+      <button type="button" data-workspace="guard" aria-pressed="false" hidden><span data-icon="database"></span> Verificar memoria</button>
+      <button type="button" data-workspace="study" aria-pressed="false" hidden><span data-icon="chart"></span> Resultados de tesis</button>
+    </nav>
+    </div>
+  </div>
+  <div class="layout">
+    <aside class="sidebar" aria-labelledby="configure-title">
+      <div class="sidebar-inner">
+        <h2 id="configure-title"><span data-icon="filter"></span> Configurar prueba</h2>
+        <form id="run-form" aria-describedby="live-note">
+          <label for="scenario">Caso</label>
+          <select id="scenario" name="scenario" required disabled></select>
+          <fieldset>
+            <legend>Ejecución</legend>
+            <label class="mode"><input type="radio" name="mode" value="replay" checked><span data-icon="play"></span> Traza guardada</label>
+            <label class="mode"><input id="live" type="radio" name="mode" value="live" disabled><span data-icon="bolt"></span> Inferencia local</label>
+          </fieldset>
+          <p id="live-note" class="help"></p>
+          <div id="custom" hidden>
+            <label for="question">Editar pregunta</label>
+            <textarea id="question" rows="3" maxlength="240" placeholder="¿Qué podría pedir para cenar?"></textarea>
+            <label class="mode verify-live"><input id="verify-writes" type="checkbox"> Verificar escrituras</label>
+          </div>
+          <button id="run" class="primary" type="submit" disabled><span id="run-label">Comparar checkpoints</span><span data-icon="arrow"></span></button>
+        </form>
+        <form id="guard-form" hidden>
+          <label for="guard-case">Caso de memoria</label>
+          <select id="guard-case" name="guard-case" required></select>
+          <p class="help">Tres escrituras sobre la misma conversación.</p>
+          <button id="guard-run" class="primary" type="submit"><span>Ver comparación</span><span data-icon="arrow"></span></button>
+        </form>
+      </div>
+      <details id="pilot-reference" class="evidence">
+        <summary><span data-icon="chart"></span> Referencia del piloto</summary>
+        <dl id="evidence-scores">
+          <div><dt>SFT de partida</dt><dd>52 %</dd></div>
+          <div><dt>GRPO terminal</dt><dd>60 %</dd></div>
+          <div><dt>SFT adicional</dt><dd>68 %</dd></div>
+        </dl>
+        <p id="evidence-note" class="help">Éxito conjunto en 25 historias. El GRPO revisado seleccionó el paso inicial en validación.</p>
+      </details>
+    </aside>
+    <main id="main" class="workspace" tabindex="-1">
+      <section class="experiment" aria-labelledby="experiment-title">
+        <header class="experiment-header">
+          <div>
+            <p class="scope" id="scope" data-mode="live">Qwen2.5 · Inferencia local</p>
+            <h2 id="experiment-title">Conversa con el modelo</h2>
+            <p class="case-description" id="case-description" hidden></p>
+          </div>
+          <button id="export" class="secondary" type="button" hidden><span data-icon="download"></span> Descargar JSON</button>
+        </header>
+        <p id="status" class="status" role="status" aria-live="polite">Cargando casos…</p>
+        <div id="error" class="error" role="alert" hidden></div>
+        <section id="chat" class="chat" aria-label="Conversación con el modelo" hidden>
+          <div class="chat-main">
+            <div class="chat-toolbar">
+              <div class="chat-field">
+                <label for="chat-model">Modelo local</label>
+                <select id="chat-model" aria-describedby="chat-checkpoint"></select>
+                <small id="chat-checkpoint" class="help"></small>
+              </div>
+              <button type="button" id="chat-next" class="secondary"><span data-icon="plus"></span>Nueva sesión</button>
+            </div>
+            <div id="chat-empty" class="chat-empty">
+              <span class="chat-empty-icon" data-icon="chat"></span>
+              <h3 id="chat-empty-title">Empieza con una preferencia</h3>
+              <p id="chat-empty-note">Escribe como lo harías en un chat. Si el modelo pregunta, respóndele con tus palabras.</p>
+              <button type="button" id="chat-example" class="secondary">Probar con un ejemplo</button>
+            </div>
+            <ol id="chat-messages" class="chat-messages" aria-label="Mensajes" aria-live="polite"></ol>
+            <form id="chat-form" class="chat-form">
+              <label for="chat-message">Tu mensaje</label>
+              <textarea id="chat-message" rows="2" maxlength="800" required placeholder="¿Qué prefiero para cenar?"></textarea>
+              <div class="chat-actions">
+                <label class="chat-check"><input type="checkbox" id="chat-verify" checked> <span id="chat-verify-label">Verificar recuerdos y sugerencias</span></label>
+                <button type="submit" id="chat-send" class="primary">Enviar <span data-icon="arrow"></span></button>
+              </div>
+            </form>
+            <p id="chat-status" class="status" role="status"></p>
+            <p id="chat-error" class="error" role="alert" hidden></p>
+          </div>
+          <aside class="chat-memory" aria-labelledby="chat-memory-title">
+            <header class="memory-heading">
+              <h3 id="chat-memory-title"><span data-icon="database"></span> Memoria en SQLite</h3>
+              <p id="chat-session" class="chat-session">Sesión 1</p>
+            </header>
+            <div class="memory-content">
+              <p id="chat-memory-note" class="help">Los recuerdos se conservan al abrir una nueva sesión.</p>
+              <button type="button" id="chat-sample" class="secondary"><span data-icon="database"></span><span id="chat-sample-label">Abrir historial simulado</span></button>
+              <details id="chat-archive" class="chat-archive" hidden>
+                <summary>Sesiones anteriores</summary>
+                <div id="chat-archive-sessions"></div>
+              </details>
+              <div id="chat-records"></div>
+            </div>
+          </aside>
+        </section>
+        <section id="shared-budget" class="budget-panel" aria-label="Presupuesto compartido" hidden></section>
+        <section id="profiles" class="profiles-panel" aria-label="Conversación con memoria entre visitas" hidden></section>
+        <div id="thesis-study" hidden></div>
+        <div id="results" hidden>
+          <section class="study-summary" id="study-summary" aria-label="Resultados del estudio" hidden></section>
+          <nav class="timeline" id="timeline" aria-label="Fases del episodio"></nav>
+          <section class="context" id="context" aria-label="Conversación e historia"></section>
+          <div class="comparison" id="comparison"></div>
+        </div>
+      </section>
+    </main>
+  </div>
+</body>
+</html>

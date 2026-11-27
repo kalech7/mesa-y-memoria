@@ -1,0 +1,12 @@
+{
+  "review_type": "posthoc_instrument_review_not_human_validation",
+  "original_fixture_sha256": "ca294806d337ab494e80fbe0d3ad1e80721b4af16a4acaf13a6d7d95a5ed1470",
+  "restriction_scenarios": ["challenge-r14", "challenge-r30"],
+  "calendar_inconsistent_scenarios": ["challenge-r06"],
+  "notes": [
+    "R06 afirma hoy sábado con fecha de referencia domingo 2026-10-25. CLARIFY es defendible; la etiqueta original se conserva en el resultado primario.",
+    "R14 y R30 contienen restricciones explícitas; se anotan para el denominador de seguridad, sin cambiar acciones, alimentos o evidencias esperados.",
+    "R12 y R31 confrontan declaraciones con pedidos históricos; su aplicabilidad temporal y etiqueta SCC requieren adjudicación externa.",
+    "El desafío se conserva intacto. El análisis de sensibilidad no sustituye sus resultados primarios."
+  ]
+}

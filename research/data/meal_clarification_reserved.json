@@ -1,0 +1,150 @@
+[
+  {
+    "id": "claridad-cajon-del-abuelo",
+    "family": "agotar_reabrir_agotar",
+    "turns": [
+      {"text": "me ayudas con la cena? las papaz se acabaron, y hoy paso de lentejas y de tomte", "excluded": ["papa", "lenteja", "tomate"]},
+      {"text": "ya me dio ganas de lenteja otra vez. las otras dos siguen fuera, qué se puede cenar ahora?", "excluded": ["papa", "tomate"]},
+      {"text": "uy revisé el cajón, tmpoco queda zanahoria. qué hago para la cena con eso?", "excluded": ["papa", "tomate", "zanahoria"]}
+    ]
+  },
+  {
+    "id": "claridad-sarten-del-prestamo",
+    "family": "ingredientes_compartidos",
+    "turns": [
+      {"text": "es para cenar yo, ando sin aseite y sin poyo. de tu menú qué me puedo hacer?", "excluded": ["aceite", "pollo"]},
+      {"text": "sí llegó el pedido de pollo! todavia no tenemos aceite. se puede rescatar alguna cena?", "excluded": ["aceite"]},
+      {"text": "ya era muy bonito jaja las papas están pasadas. sin eso qué me queda para cenar?", "excluded": ["aceite", "papa"]}
+    ]
+  },
+  {
+    "id": "claridad-bolsas-del-super",
+    "family": "agotar_reabrir_agotar",
+    "turns": [
+      {"text": "para la cena tengo el resto del súper pero sin pescado, poyo, pepino, lentegas ni ceboya. qué quedaría?", "excluded": ["pescado", "pollo", "pepino", "lenteja", "cebolla"]},
+      {"text": "mentira, la cebolla estaba en la otra bolsa. con todo lo demás igual, algo que pueda hacer para cenar?", "excluded": ["pescado", "pollo", "pepino", "lenteja"]},
+      {"text": "me faltó mirar los uevos, no queda ninguno. se puede salvar la cena de alguna forma?", "excluded": ["pescado", "pollo", "pepino", "lenteja", "huevo"]}
+    ]
+  },
+  {
+    "id": "claridad-cena-en-casa-ajena",
+    "family": "ingrediente_indeterminado",
+    "turns": [
+      {"text": "ando en casa ajena y una cosa del menú prefiero no comer, me da cosa decirla todavía. qué cena me propones?", "excluded": [], "clarify": true},
+      {"text": "ya bueno, no quiero pollo ni uevo. tampoco usar arroz, limón ni tomate que son para mañana. de lo demás qué ceno?", "excluded": ["pollo", "huevo", "arroz", "limon", "tomate"]},
+      {"text": "del limón sí puedo gastar un poco, lo otro igual. qué se te ocurre para esta cena?", "excluded": ["pollo", "huevo", "arroz", "tomate"]},
+      {"text": "acaban de llevarse el pescao al otro piso. qué ceno con lo que quedó?", "excluded": ["pollo", "huevo", "arroz", "tomate", "pescado"]}
+    ]
+  },
+  {
+    "id": "claridad-recados-cruzados",
+    "family": "terceros_y_tiempo",
+    "turns": [
+      {"text": "mi compa pidió nada de pepino para él. yo ceno después: sin papa, kinua ni arros para mí. algo que entre en el menú?", "excluded": ["papa", "quinua", "arroz"]},
+      {"text": "para mi cena dale con la quinua, ahora sí se me antoja. sigue sin arroz ni papa, qué pido?", "excluded": ["papa", "arroz"]},
+      {"text": "el pepino lo guardo para otra receta, entonces quitalo de mi plato también. con lo anterior qué cena queda?", "excluded": ["papa", "arroz", "pepino"]}
+    ]
+  },
+  {
+    "id": "claridad-tienda-que-cierra",
+    "family": "agotar_reabrir_agotar",
+    "turns": [
+      {"text": "busco una idea pa cenar, la tienda cerró y no tengo papitas, sanahoria ni quínoa. cuál de las opciones va?", "excluded": ["papa", "zanahoria", "quinua"]},
+      {"text": "vecina me regaló zanahoria al fin, lo demás igual. con eso cómo resuelvo la cena?", "excluded": ["papa", "quinua"]},
+      {"text": "despues me acordé q usé todas las lentejs al mediodía. no hay más. qué podría cenar ahora?", "excluded": ["papa", "quinua", "lenteja"]}
+    ]
+  },
+  {
+    "id": "claridad-anotacion-ilegible",
+    "family": "ingrediente_indeterminado",
+    "turns": [
+      {"text": "tengo apuntado quitar algo de la cena pero no se entiende la letra del papel. qué podemos preparar con esa condición?", "excluded": [], "clarify": true},
+      {"text": "ah ya entendí, hoy sin papa ni arros y el pepino tampoco q está feo. qué opción de cena sirve?", "excluded": ["papa", "arroz", "pepino"]},
+      {"text": "conseguí arroz en el kiosco y las otras dos siguen sin estar. hay cena ahora con eso?", "excluded": ["papa", "pepino"]},
+      {"text": "mi hermano se llevó ese arroz también! para cenar sigo con lo poco de antes, alguna idea?", "excluded": ["papa", "pepino", "arroz"]}
+    ]
+  },
+  {
+    "id": "claridad-lo-que-se-acabo",
+    "family": "ingredientes_compartidos",
+    "turns": [
+      {"text": "la duda es sobre la cena de hoy, no me queda nada de aseite ni pollo. qué podría poner en la mesa?", "excluded": ["aceite", "pollo"]},
+      {"text": "vuelve a entrar el poyo, uno me lo trae. aceite no, q hago de cenar?", "excluded": ["aceite"]},
+      {"text": "edito otra cosa, gastamos todas las papas en el almuerzo. entonces para la cena hay algo?", "excluded": ["aceite", "papa"]}
+    ]
+  },
+  {
+    "id": "claridad-dos-tuppers",
+    "family": "terceros_y_tiempo",
+    "turns": [
+      {"text": "en mi tupper de cena no va papa ni arróz. el de mi hija aparte, ella sin cebolla. con qué lleno el mío?", "excluded": ["papa", "arroz"]},
+      {"text": "ya no voy a usar quinua en el mío, la necesita ella. cuento con lo que te dije, qué ceno?", "excluded": ["papa", "arroz", "quinua"]},
+      {"text": "mejor sí me como el arroz que sobró, mantén lo demás para mi cena. qué puedo preparar?", "excluded": ["papa", "quinua"]}
+    ]
+  },
+  {
+    "id": "claridad-prestamo-de-aceite",
+    "family": "viable_limite_viable",
+    "turns": [
+      {"text": "qué ceno si no tengo acite a esta hora? llegué tarde", "excluded": ["aceite"]},
+      {"text": "uy tampoco hay papa, la usaron hoy. qué queda para la cena considerando eso?", "excluded": ["aceite", "papa"]},
+      {"text": "ya me alcanzaron aceite, puedo usarlo. no papa todavía y paso del pepno. qué idea de cena hay?", "excluded": ["papa", "pepino"]}
+    ]
+  },
+  {
+    "id": "claridad-mesa-separada",
+    "family": "viable_limite_viable",
+    "turns": [
+      {"text": "no mezclemos mi cena con la de mi mami. para mí nada de pollito, huevos, lentja, ni tomte. cuál me cocino?", "excluded": ["pollo", "huevo", "lenteja", "tomate"]},
+      {"text": "limon tampoco, porfa. mantén lo demás de mi plato, me queda alguna cena de tu lista?", "excluded": ["pollo", "huevo", "lenteja", "tomate", "limon"]},
+      {"text": "me arrepentí de sacar tomate, ese sí en mi cena. con las otras restricciones qué puedo hacer?", "excluded": ["pollo", "huevo", "lenteja", "limon"]}
+    ]
+  },
+  {
+    "id": "claridad-esto-no-lo-sabe",
+    "family": "ingrediente_indeterminado",
+    "turns": [
+      {"text": "hay una cosa que no quiero morder en la cena, luego te digo qué. mientras tanto qué se puede preparar?", "excluded": [], "clarify": true},
+      {"text": "ya, me refería a las papas y de paso hoy tampoco quiero zanahoria. qué comerías de cena entonces?", "excluded": ["papa", "zanahoria"]},
+      {"text": "oh y no hay qinua en casa, me acabo de enterar. alguna idea que encaje para cenar?", "excluded": ["papa", "zanahoria", "quinua"]},
+      {"text": "cambié de idea con la papa, ya sí. igual sin zanahoria y sin quinua, qué preparo de noche?", "excluded": ["zanahoria", "quinua"]}
+    ]
+  },
+  {
+    "id": "claridad-fin-de-semana",
+    "family": "viable_limite_viable",
+    "turns": [
+      {"text": "esta noche cenamos sin quinua, pescao, poyo ni arrs por lo que queda para el finde. qué plato va?", "excluded": ["quinua", "pescado", "pollo", "arroz"]},
+      {"text": "los huevitos que había también son para mañana, no los gastes. queda alguna salida para cenar hoy?", "excluded": ["quinua", "pescado", "pollo", "arroz", "huevo"]},
+      {"text": "ya no hay q guardar el pescado, sí lo podemos usar. el resto sigue para el finde, qué cenamos?", "excluded": ["quinua", "pollo", "arroz", "huevo"]}
+    ]
+  },
+  {
+    "id": "claridad-llegue-del-turno",
+    "family": "terceros_y_tiempo",
+    "turns": [
+      {"text": "recién llegué y para cenar quiero algo sin papa ni tomat. al mediodía comí pescado y estaba bien. cuál podría hacer?", "excluded": ["papa", "tomate"]},
+      {"text": "miré la olla y aros tampoco quedó. sigue sin papa ni tomate, hay alguna cena igual?", "excluded": ["papa", "tomate", "arroz"]},
+      {"text": "encontré tomate bueno en el refri, ese ya sí. sin papa ni arroz qué cena queda?", "excluded": ["papa", "arroz"]}
+    ]
+  },
+  {
+    "id": "claridad-esto-era-para-jueves",
+    "family": "ingrediente_indeterminado",
+    "turns": [
+      {"text": "toca elegir una cena y hay un ingrediente del que no me acuerdo el nombre que te quiero pedir q quites. qué me recomiendas?", "excluded": [], "clarify": true},
+      {"text": "ya pregunté, era aceite, hoy prefiero sin ningún aceyte. qué cena de las opciones queda?", "excluded": ["aceite"]},
+      {"text": "el pollo era para jueves, no lo puedo usar hoy. qué ceno hoy sin eso ni aceite?", "excluded": ["aceite", "pollo"]},
+      {"text": "cambié de idea, sí uso aceite. sigue sin pollo y porfa sin papa ni pepino esta vez. qué cena me armas?", "excluded": ["pollo", "papa", "pepino"]}
+    ]
+  },
+  {
+    "id": "claridad-ultimos-del-refri",
+    "family": "viable_limite_viable",
+    "turns": [
+      {"text": "queda casi todo para hacer cena, solo no hay paapa y de pepino paso. q puedo cocinar?", "excluded": ["papa", "pepino"]},
+      {"text": "rectifico lo de casi todo, las lentejas las gastó mi roomie. con eso todavía podría hacer algo para cenar?", "excluded": ["papa", "pepino", "lenteja"]},
+      {"text": "tenía papa en el otro refri, pepino y lentejas todavía fuera. así qué puedo cenar?", "excluded": ["pepino", "lenteja"]}
+    ]
+  }
+]

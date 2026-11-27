@@ -1,0 +1,69 @@
+body[data-workspace="profiles"] .layout { display: block; }
+body[data-workspace="profiles"] .sidebar { display: none; }
+body[data-workspace="profiles"] .workspace { max-width: 86rem; }
+.profiles-panel { min-width: 0; margin-top: 1.5rem; }
+.profiles-shortcuts { display: flex; flex-wrap: wrap; gap: .5rem 1.5rem; margin-bottom: 1rem; font-size: .875rem; }
+.profiles-shortcuts a { color: var(--accent); text-underline-offset: .2rem; }
+.profiles-panel :is(.help, label) { color: var(--muted); }
+.profiles-panel :is(input, select, textarea) {
+  width: 100%; min-width: 0; padding: .625rem .75rem;
+  color: var(--ink); background: var(--inset); border: 1px solid var(--line); border-radius: .375rem;
+}
+.profiles-panel :is(input, select) { min-height: 2.75rem; }
+.profiles-panel textarea::placeholder { color: var(--muted); }
+.profiles-config { display: grid; gap: 1rem; align-items: start; margin-bottom: 1rem; }
+.profiles-config > button { align-self: start; }
+.profiles-saved-field { grid-column: 1 / -1; max-width: 42rem; }
+.profiles-field { min-width: 0; }
+.profiles-field label { display: block; margin-bottom: .375rem; font-size: .8125rem; font-weight: 700; }
+.profiles-field .help { display: block; margin: .375rem 0 0; }
+.profiles-layout { display: grid; gap: 1.25rem; align-items: start; }
+.profiles-conversation, .profiles-memory, .profiles-study {
+  min-width: 0; border: 1px solid var(--line); border-radius: .75rem; background: var(--paper);
+}
+.profiles-visit { display: flex; align-items: center; flex-wrap: wrap; gap: .75rem; justify-content: space-between; padding: 1rem 1.25rem; border-bottom: 1px solid var(--line); }
+.profiles-visit h3, .profiles-memory h3 { margin: 0; font-size: 1rem; }
+.profiles-horizon { margin: .75rem 1.25rem; }
+.profiles-empty { padding: 2rem 1.25rem; background: var(--inset); }
+.profiles-empty h4 { margin: 0; font-size: 1.125rem; }
+.profiles-empty p { max-width: 48ch; margin: .5rem 0 1rem; color: var(--muted); }
+.profiles-form { display: grid; gap: .75rem; padding: 1rem 1.25rem; border-top: 1px solid var(--line); }
+.profiles-form .primary { justify-self: end; width: auto; color: var(--on-accent); background: var(--accent); border-color: var(--accent); }
+.profiles-next { padding: 1rem 1.25rem; border-top: 1px solid var(--line); }
+.profiles-next summary { color: var(--accent); font-size: .875rem; font-weight: 650; }
+.profiles-next-fields { display: grid; gap: .75rem; margin-top: .75rem; }
+.profiles-memory { padding: 1.25rem; }
+.profiles-memory > .help { margin-bottom: 1rem; }
+.profiles-record { padding: 1rem 0; border-top: 1px solid var(--line); overflow-wrap: anywhere; }
+.profiles-record h4 { margin: 0; font-size: .9375rem; }
+.profiles-record .help { margin: .375rem 0; }
+.profiles-record .memory-tag { margin-left: 0; display: inline-block; }
+.profiles-record details { margin-top: .625rem; }
+.profiles-record summary { font-size: .8125rem; color: var(--accent); }
+.profiles-record blockquote { margin: .75rem 0; padding-left: .75rem; border-left: 2px solid var(--line); color: var(--muted); font-size: .8125rem; }
+.profiles-record cite { display: block; margin-top: .25rem; font-style: normal; font-size: .75rem; overflow-wrap: anywhere; }
+.profiles-provenance { margin-top: .625rem; font-size: .8125rem; }
+.profiles-provenance summary { color: var(--accent); }
+.profiles-provenance pre { max-width: 100%; max-height: 20rem; padding: .75rem; overflow: auto; background: var(--inset); border: 1px solid var(--line); border-radius: .25rem; white-space: pre-wrap; overflow-wrap: anywhere; }
+.profiles-provenance h5 { margin: .75rem 0 .25rem; font-size: .8125rem; }
+.profiles-archive { margin: 0 1.25rem 1.25rem; padding: .75rem; border: 1px solid var(--line); border-radius: .375rem; background: var(--inset); }
+.profiles-archive summary { font-size: .875rem; font-weight: 650; color: var(--accent); }
+.profiles-archive section { margin-top: .75rem; padding-top: .75rem; border-top: 1px solid var(--line); }
+.profiles-archive h4 { margin: 0; font-size: .8125rem; }
+.profiles-archive p { margin: .5rem 0 0; font-size: .8125rem; overflow-wrap: anywhere; }
+.profiles-panel > .status:empty { display: none; }
+.profiles-panel > .error { margin-bottom: 1rem; }
+.profiles-panel > .error p { margin-top: 0; }
+.profiles-study { padding: 1.25rem; margin-top: 1.5rem; }
+.profiles-study, .profiles-memory { scroll-margin-top: 1rem; }
+.profiles-study h3 { margin: 0 0 .75rem; font-size: 1rem; }
+.profiles-primary-result { padding: .75rem 1rem; border-left: .25rem solid var(--accent); background: var(--inset); font-size: .875rem; }
+@media (min-width: 42rem) {
+  .profiles-config { grid-template-columns: minmax(12rem, 1fr) minmax(16rem, 2fr) auto; }
+  .profiles-config > button { margin-top: 1.625rem; }
+  .profiles-next-fields { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .profiles-next-fields > button { grid-column: 1/-1; justify-self: start; }
+}
+@media (min-width: 64rem) {
+  .profiles-layout { grid-template-columns: minmax(0, 1fr) minmax(18rem, 23rem); }
+}

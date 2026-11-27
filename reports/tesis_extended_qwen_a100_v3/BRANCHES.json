@@ -1,0 +1,19 @@
+{
+  "groups": 240,
+  "sha256": "7e972606c49cc103b3fb09f4be6473665aaceb36b252fba4ecc437290fd9002d",
+  "phase_counts": {
+    "1:ask_or_wait": 12,
+    "1:close": 24,
+    "2:ask_or_wait": 48,
+    "2:close": 48,
+    "3:ask_or_wait": 48,
+    "3:close": 48,
+    "1:partial_follow_up": 12
+  },
+  "role_weights": {
+    "ask_or_wait": 0.6,
+    "partial_follow_up": 0.25,
+    "close": 0.14999999999999997
+  },
+  "logged_transition_references": 9922
+}

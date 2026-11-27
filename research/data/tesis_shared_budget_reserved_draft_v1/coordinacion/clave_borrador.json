@@ -1,0 +1,182 @@
+{
+  "caso-e1e43f735a3620": {
+    "family": "implicit_correction",
+    "draft_validity": [
+      {
+        "writable_scope": "contextual",
+        "valid_from": "2041-08-10",
+        "valid_through": null,
+        "context": "domingo"
+      },
+      {
+        "writable_scope": "none",
+        "valid_from": null,
+        "valid_through": null,
+        "context": null
+      }
+    ],
+    "has_reply_pair": false
+  },
+  "caso-379742cb0d75b0": {
+    "family": "implicit_correction",
+    "draft_validity": [
+      {
+        "writable_scope": "contextual",
+        "valid_from": "2041-08-14",
+        "valid_through": null,
+        "context": "regreso del trabajo"
+      },
+      {
+        "writable_scope": "none",
+        "valid_from": null,
+        "valid_through": null,
+        "context": null
+      }
+    ],
+    "has_reply_pair": false
+  },
+  "caso-05b8dbd1549402": {
+    "family": "implicit_correction",
+    "draft_validity": [
+      {
+        "writable_scope": "ongoing",
+        "valid_from": "2041-08-05",
+        "valid_through": null,
+        "context": null
+      },
+      {
+        "writable_scope": "none",
+        "valid_from": null,
+        "valid_through": null,
+        "context": null
+      }
+    ],
+    "has_reply_pair": false
+  },
+  "caso-c582f1af64496d": {
+    "family": "temporal_wording",
+    "draft_validity": [
+      {
+        "writable_scope": "interval",
+        "valid_from": "2041-08-08",
+        "valid_through": "2041-08-12",
+        "context": null
+      },
+      {
+        "writable_scope": "none",
+        "valid_from": null,
+        "valid_through": null,
+        "context": null
+      }
+    ],
+    "has_reply_pair": false
+  },
+  "caso-6a2e610bdfd6dd": {
+    "family": "temporal_wording",
+    "draft_validity": [
+      {
+        "writable_scope": "interval",
+        "valid_from": "2041-08-17",
+        "valid_through": "2041-08-18",
+        "context": null
+      },
+      {
+        "writable_scope": "none",
+        "valid_from": null,
+        "valid_through": null,
+        "context": null
+      }
+    ],
+    "has_reply_pair": false
+  },
+  "caso-88b1ec37e40399": {
+    "family": "temporal_wording",
+    "draft_validity": [
+      {
+        "writable_scope": "session",
+        "valid_from": "2041-08-27",
+        "valid_through": null,
+        "context": null
+      },
+      {
+        "writable_scope": "none",
+        "valid_from": null,
+        "valid_through": null,
+        "context": null
+      }
+    ],
+    "has_reply_pair": false
+  },
+  "caso-27c1a07c73f40b": {
+    "family": "other_person",
+    "draft_validity": [
+      {
+        "writable_scope": "none",
+        "valid_from": null,
+        "valid_through": null,
+        "context": null
+      },
+      {
+        "writable_scope": "none",
+        "valid_from": null,
+        "valid_through": null,
+        "context": null
+      }
+    ],
+    "has_reply_pair": false
+  },
+  "caso-2d5939fbfc22d2": {
+    "family": "other_person",
+    "draft_validity": [
+      {
+        "writable_scope": "none",
+        "valid_from": null,
+        "valid_through": null,
+        "context": null
+      },
+      {
+        "writable_scope": "none",
+        "valid_from": null,
+        "valid_through": null,
+        "context": null
+      }
+    ],
+    "has_reply_pair": false
+  },
+  "caso-40f513bace9db6": {
+    "family": "competing_questions",
+    "draft_validity": [
+      {
+        "writable_scope": "session",
+        "valid_from": "2041-08-11",
+        "valid_through": null,
+        "context": null
+      },
+      {
+        "writable_scope": "none",
+        "valid_from": null,
+        "valid_through": null,
+        "context": null
+      }
+    ],
+    "has_reply_pair": true
+  },
+  "caso-8f68f143447871": {
+    "family": "competing_questions",
+    "draft_validity": [
+      {
+        "writable_scope": "session",
+        "valid_from": "2041-08-15",
+        "valid_through": null,
+        "context": null
+      },
+      {
+        "writable_scope": "none",
+        "valid_from": null,
+        "valid_through": null,
+        "context": null
+      }
+    ],
+    "has_reply_pair": true
+  }
+}

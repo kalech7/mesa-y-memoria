@@ -1,0 +1,896 @@
+{
+  "instructions": [
+    "Completa tus valoraciones individualmente con los casos de tu carpeta.",
+    "Valora primero el diálogo inicial sin consultar el archivo de réplicas.",
+    "Para information_sufficient responde si el texto permite resolver la consulta actual.",
+    "Indica con need_future si hace falta aclarar algo para actualizar con alcance fiable para otra sesión.",
+    "Usa decisive_slot para la variable decisiva, sea para hoy o para otra sesión. Usa null si corresponde continuar.",
+    "Indica las respuestas actuales admisibles en admissible_answers. Si falta un dato, enumera las opciones plausibles.",
+    "writable_scope es el alcance máximo sustentado del cambio antes de preguntar. Usa none si no se justifica una escritura confirmada.",
+    "Luego abre las réplicas. Indica con both_plausible si las dos caben en el mismo diálogo inicial.",
+    "Justifica cada decisión en rationale. Mantén los audit_id y usa un reviewer_id propio y constante."
+  ],
+  "allowed_slots": [
+    "TEMPORAL_SCOPE",
+    "CURRENT_CONTEXT",
+    "VALID_UNTIL",
+    "GENERIC"
+  ],
+  "allowed_scopes": [
+    "contextual",
+    "interval",
+    "none",
+    "ongoing",
+    "session"
+  ],
+  "cases": [
+    {
+      "audit_id": "caso-7443f022b6dc2f",
+      "memory": [
+        {
+          "memory_id": "m1",
+          "attribute": "dinner_preference",
+          "value": "tortilla de yuca",
+          "recorded_at": "2034-04-04",
+          "scope": {
+            "kind": "ongoing",
+            "valid_from": "2034-04-04",
+            "valid_until_exclusive": null,
+            "context": null,
+            "session_id": null
+          },
+          "status": "confirmed",
+          "supersedes": [],
+          "source_turn_ids": [
+            "prior_m1"
+          ],
+          "evidence_quotes": [
+            {
+              "turn_id": "prior_m1",
+              "text": "Para organizar las compras de cada semana, mi opción de la cena era tortilla de yuca."
+            }
+          ]
+        },
+        {
+          "memory_id": "m2",
+          "attribute": "drink_preference",
+          "value": "agua de coco",
+          "recorded_at": "2034-04-04",
+          "scope": {
+            "kind": "ongoing",
+            "valid_from": "2034-04-04",
+            "valid_until_exclusive": null,
+            "context": null,
+            "session_id": null
+          },
+          "status": "confirmed",
+          "supersedes": [],
+          "source_turn_ids": [
+            "prior_m2"
+          ],
+          "evidence_quotes": [
+            {
+              "turn_id": "prior_m2",
+              "text": "Para organizar las compras de cada semana, mi opción de la bebida era agua de coco."
+            }
+          ]
+        }
+      ],
+      "conversation": [
+        {
+          "turn_id": "open_u",
+          "role": "user",
+          "text": "Estoy armando la lista para comprar en el mercado."
+        },
+        {
+          "turn_id": "open_a",
+          "role": "assistant",
+          "text": "Dime qué dato quieres que use para la lista."
+        },
+        {
+          "turn_id": "u1",
+          "role": "user",
+          "text": "Pensándolo bien, tengo otra idea. Para la cena, prefiero ensalada de quinua."
+        },
+        {
+          "turn_id": "u2",
+          "role": "user",
+          "text": "Con lo que te conté, ¿qué anoto hoy para la cena?"
+        }
+      ],
+      "query": {
+        "attribute": "dinner_preference",
+        "date": "2034-04-24",
+        "session_id": "S2",
+        "context": null
+      },
+      "reuse_regime": "Habrá otra consulta del mismo atributo sin posibilidad de preguntar."
+    },
+    {
+      "audit_id": "caso-19f9250badfab8",
+      "memory": [
+        {
+          "memory_id": "m1",
+          "attribute": "breakfast_preference",
+          "value": "huevos con espinaca",
+          "recorded_at": "2034-06-13",
+          "scope": {
+            "kind": "ongoing",
+            "valid_from": "2034-06-13",
+            "valid_until_exclusive": null,
+            "context": null,
+            "session_id": null
+          },
+          "status": "confirmed",
+          "supersedes": [],
+          "source_turn_ids": [
+            "prior_m1"
+          ],
+          "evidence_quotes": [
+            {
+              "turn_id": "prior_m1",
+              "text": "En el cuaderno de menús dejé huevos con espinaca como mi opción general de el desayuno."
+            }
+          ]
+        },
+        {
+          "memory_id": "m2",
+          "attribute": "dinner_preference",
+          "value": "tortilla de yuca",
+          "recorded_at": "2034-06-13",
+          "scope": {
+            "kind": "ongoing",
+            "valid_from": "2034-06-13",
+            "valid_until_exclusive": null,
+            "context": null,
+            "session_id": null
+          },
+          "status": "confirmed",
+          "supersedes": [],
+          "source_turn_ids": [
+            "prior_m2"
+          ],
+          "evidence_quotes": [
+            {
+              "turn_id": "prior_m2",
+              "text": "En el cuaderno de menús dejé tortilla de yuca como mi opción general de la cena."
+            }
+          ]
+        },
+        {
+          "memory_id": "m3",
+          "attribute": "breakfast_preference",
+          "value": "maduros asados",
+          "recorded_at": "2034-07-04",
+          "scope": {
+            "kind": "interval",
+            "valid_from": "2034-07-04",
+            "valid_until_exclusive": "2034-07-05",
+            "context": null,
+            "session_id": null
+          },
+          "status": "confirmed",
+          "supersedes": [],
+          "source_turn_ids": [
+            "prior_m3"
+          ],
+          "evidence_quotes": [
+            {
+              "turn_id": "prior_m3",
+              "text": "La última vez elegí maduros asados para el desayuno; solo aplicaba el 2034-07-04."
+            }
+          ]
+        }
+      ],
+      "conversation": [
+        {
+          "turn_id": "open_u",
+          "role": "user",
+          "text": "Estoy organizando la comida antes de la reunión del edificio."
+        },
+        {
+          "turn_id": "open_a",
+          "role": "assistant",
+          "text": "Cuéntame qué parte del menú falta por decidir."
+        },
+        {
+          "turn_id": "u1",
+          "role": "user",
+          "text": "Para esta consulta puedes conservar la elección general que ya tienes."
+        },
+        {
+          "turn_id": "u2",
+          "role": "user",
+          "text": "¿Qué opción pongo en el cuaderno para el desayuno de hoy?"
+        }
+      ],
+      "query": {
+        "attribute": "breakfast_preference",
+        "date": "2034-07-05",
+        "session_id": "S2",
+        "context": null
+      },
+      "reuse_regime": "Habrá otra consulta del mismo atributo sin posibilidad de preguntar."
+    },
+    {
+      "audit_id": "caso-3e132410ac7187",
+      "memory": [
+        {
+          "memory_id": "m1",
+          "attribute": "dinner_preference",
+          "value": "locro de papa",
+          "recorded_at": "2034-04-03",
+          "scope": {
+            "kind": "ongoing",
+            "valid_from": "2034-04-03",
+            "valid_until_exclusive": null,
+            "context": null,
+            "session_id": null
+          },
+          "status": "confirmed",
+          "supersedes": [],
+          "source_turn_ids": [
+            "prior_m1"
+          ],
+          "evidence_quotes": [
+            {
+              "turn_id": "prior_m1",
+              "text": "Para organizar las compras de cada semana, mi opción de la cena era locro de papa."
+            }
+          ]
+        }
+      ],
+      "conversation": [
+        {
+          "turn_id": "open_u",
+          "role": "user",
+          "text": "Estoy armando la lista para comprar en el mercado."
+        },
+        {
+          "turn_id": "open_a",
+          "role": "assistant",
+          "text": "Dime qué dato quieres que use para la lista."
+        },
+        {
+          "turn_id": "u1",
+          "role": "user",
+          "text": "Para esta consulta puedes conservar la elección general que ya tienes."
+        },
+        {
+          "turn_id": "u2",
+          "role": "user",
+          "text": "Con lo que te conté, ¿qué anoto hoy para la cena?"
+        }
+      ],
+      "query": {
+        "attribute": "dinner_preference",
+        "date": "2034-05-03",
+        "session_id": "S2",
+        "context": null
+      },
+      "reuse_regime": "Habrá otra consulta del mismo atributo sin posibilidad de preguntar."
+    },
+    {
+      "audit_id": "caso-f9a82838d2aa31",
+      "memory": [
+        {
+          "memory_id": "m1",
+          "attribute": "breakfast_preference",
+          "value": "pan de yuca",
+          "recorded_at": "2034-04-17",
+          "scope": {
+            "kind": "ongoing",
+            "valid_from": "2034-04-17",
+            "valid_until_exclusive": null,
+            "context": null,
+            "session_id": null
+          },
+          "status": "confirmed",
+          "supersedes": [],
+          "source_turn_ids": [
+            "prior_m1"
+          ],
+          "evidence_quotes": [
+            {
+              "turn_id": "prior_m1",
+              "text": "En el cuaderno de menús dejé pan de yuca como mi opción general de el desayuno."
+            }
+          ]
+        },
+        {
+          "memory_id": "m2",
+          "attribute": "drink_preference",
+          "value": "agua de coco",
+          "recorded_at": "2034-04-17",
+          "scope": {
+            "kind": "ongoing",
+            "valid_from": "2034-04-17",
+            "valid_until_exclusive": null,
+            "context": null,
+            "session_id": null
+          },
+          "status": "confirmed",
+          "supersedes": [],
+          "source_turn_ids": [
+            "prior_m2"
+          ],
+          "evidence_quotes": [
+            {
+              "turn_id": "prior_m2",
+              "text": "En el cuaderno de menús dejé agua de coco como mi opción general de la bebida."
+            }
+          ]
+        },
+        {
+          "memory_id": "m3",
+          "attribute": "breakfast_preference",
+          "value": "tamal de maíz",
+          "recorded_at": "2034-04-17",
+          "scope": {
+            "kind": "contextual",
+            "valid_from": "2034-04-17",
+            "valid_until_exclusive": null,
+            "context": "oficina",
+            "session_id": null
+          },
+          "status": "confirmed",
+          "supersedes": [],
+          "source_turn_ids": [
+            "prior_m3"
+          ],
+          "evidence_quotes": [
+            {
+              "turn_id": "prior_m3",
+              "text": "En la oficina, mi opción de el desayuno es tamal de maíz."
+            }
+          ]
+        }
+      ],
+      "conversation": [
+        {
+          "turn_id": "open_u",
+          "role": "user",
+          "text": "Me falta cerrar un detalle del menú en mi cuaderno."
+        },
+        {
+          "turn_id": "open_a",
+          "role": "assistant",
+          "text": "Cuéntame qué parte del menú falta por decidir."
+        },
+        {
+          "turn_id": "u1",
+          "role": "user",
+          "text": "La elección cambia según el lugar. Lo del sitio todavía no te lo he dicho."
+        },
+        {
+          "turn_id": "u2",
+          "role": "user",
+          "text": "¿Qué opción pongo en el cuaderno para el desayuno de hoy?"
+        }
+      ],
+      "query": {
+        "attribute": "breakfast_preference",
+        "date": "2034-04-30",
+        "session_id": "S2",
+        "context": null
+      },
+      "reuse_regime": "Habrá otra consulta del mismo atributo sin posibilidad de preguntar."
+    },
+    {
+      "audit_id": "caso-de558a7f29fd29",
+      "memory": [
+        {
+          "memory_id": "m1",
+          "attribute": "dinner_preference",
+          "value": "menestra de fréjol",
+          "recorded_at": "2034-04-22",
+          "scope": {
+            "kind": "ongoing",
+            "valid_from": "2034-04-22",
+            "valid_until_exclusive": null,
+            "context": null,
+            "session_id": null
+          },
+          "status": "confirmed",
+          "supersedes": [],
+          "source_turn_ids": [
+            "prior_m1"
+          ],
+          "evidence_quotes": [
+            {
+              "turn_id": "prior_m1",
+              "text": "Para organizar las compras de cada semana, mi opción de la cena era menestra de fréjol."
+            }
+          ]
+        },
+        {
+          "memory_id": "m2",
+          "attribute": "breakfast_preference",
+          "value": "humita de choclo",
+          "recorded_at": "2034-04-22",
+          "scope": {
+            "kind": "ongoing",
+            "valid_from": "2034-04-22",
+            "valid_until_exclusive": null,
+            "context": null,
+            "session_id": null
+          },
+          "status": "confirmed",
+          "supersedes": [],
+          "source_turn_ids": [
+            "prior_m2"
+          ],
+          "evidence_quotes": [
+            {
+              "turn_id": "prior_m2",
+              "text": "Para organizar las compras de cada semana, mi opción de el desayuno era humita de choclo."
+            }
+          ]
+        },
+        {
+          "memory_id": "m3",
+          "attribute": "dinner_preference",
+          "value": "ensalada de quinua",
+          "recorded_at": "2034-04-22",
+          "scope": {
+            "kind": "contextual",
+            "valid_from": "2034-04-22",
+            "valid_until_exclusive": null,
+            "context": "oficina",
+            "session_id": null
+          },
+          "status": "confirmed",
+          "supersedes": [],
+          "source_turn_ids": [
+            "prior_m3"
+          ],
+          "evidence_quotes": [
+            {
+              "turn_id": "prior_m3",
+              "text": "En la oficina, mi opción de la cena es ensalada de quinua."
+            }
+          ]
+        }
+      ],
+      "conversation": [
+        {
+          "turn_id": "open_u",
+          "role": "user",
+          "text": "Tengo un rato antes de salir a hacer las compras."
+        },
+        {
+          "turn_id": "open_a",
+          "role": "assistant",
+          "text": "Dime qué dato quieres que use para la lista."
+        },
+        {
+          "turn_id": "u1",
+          "role": "user",
+          "text": "Al final estoy en casa."
+        },
+        {
+          "turn_id": "u2",
+          "role": "user",
+          "text": "Con lo que te conté, ¿qué anoto hoy para la cena?"
+        }
+      ],
+      "query": {
+        "attribute": "dinner_preference",
+        "date": "2034-05-14",
+        "session_id": "S2",
+        "context": "casa"
+      },
+      "reuse_regime": "Habrá otra consulta del mismo atributo sin posibilidad de preguntar."
+    },
+    {
+      "audit_id": "caso-c49a4c4412c131",
+      "memory": [
+        {
+          "memory_id": "m1",
+          "attribute": "breakfast_preference",
+          "value": "tostadas con tomate",
+          "recorded_at": "2034-06-01",
+          "scope": {
+            "kind": "ongoing",
+            "valid_from": "2034-06-01",
+            "valid_until_exclusive": null,
+            "context": null,
+            "session_id": null
+          },
+          "status": "confirmed",
+          "supersedes": [],
+          "source_turn_ids": [
+            "prior_m1"
+          ],
+          "evidence_quotes": [
+            {
+              "turn_id": "prior_m1",
+              "text": "En el cuaderno de menús dejé tostadas con tomate como mi opción general de el desayuno."
+            }
+          ]
+        },
+        {
+          "memory_id": "m2",
+          "attribute": "dinner_preference",
+          "value": "choclo con queso",
+          "recorded_at": "2034-06-01",
+          "scope": {
+            "kind": "ongoing",
+            "valid_from": "2034-06-01",
+            "valid_until_exclusive": null,
+            "context": null,
+            "session_id": null
+          },
+          "status": "confirmed",
+          "supersedes": [],
+          "source_turn_ids": [
+            "prior_m2"
+          ],
+          "evidence_quotes": [
+            {
+              "turn_id": "prior_m2",
+              "text": "En el cuaderno de menús dejé choclo con queso como mi opción general de la cena."
+            }
+          ]
+        }
+      ],
+      "conversation": [
+        {
+          "turn_id": "open_u",
+          "role": "user",
+          "text": "Estoy organizando la comida antes de la reunión del edificio."
+        },
+        {
+          "turn_id": "open_a",
+          "role": "assistant",
+          "text": "Cuéntame qué parte del menú falta por decidir."
+        },
+        {
+          "turn_id": "u1",
+          "role": "user",
+          "text": "Hasta el 2034-07-07 inclusive, En cuanto a el desayuno, prefiero avena con canela. Luego retomo la elección de siempre."
+        },
+        {
+          "turn_id": "u2",
+          "role": "user",
+          "text": "¿Qué opción pongo en el cuaderno para el desayuno de hoy?"
+        }
+      ],
+      "query": {
+        "attribute": "breakfast_preference",
+        "date": "2034-07-04",
+        "session_id": "S2",
+        "context": null
+      },
+      "reuse_regime": "Habrá otra consulta del mismo atributo sin posibilidad de preguntar."
+    },
+    {
+      "audit_id": "caso-4fef49fe362d6b",
+      "memory": [
+        {
+          "memory_id": "m1",
+          "attribute": "breakfast_preference",
+          "value": "pan de centeno",
+          "recorded_at": "2034-04-10",
+          "scope": {
+            "kind": "ongoing",
+            "valid_from": "2034-04-10",
+            "valid_until_exclusive": null,
+            "context": null,
+            "session_id": null
+          },
+          "status": "confirmed",
+          "supersedes": [],
+          "source_turn_ids": [
+            "prior_m1"
+          ],
+          "evidence_quotes": [
+            {
+              "turn_id": "prior_m1",
+              "text": "En el cuaderno de menús dejé pan de centeno como mi opción general de el desayuno."
+            }
+          ]
+        },
+        {
+          "memory_id": "m2",
+          "attribute": "dinner_preference",
+          "value": "tacos de hongos",
+          "recorded_at": "2034-04-10",
+          "scope": {
+            "kind": "ongoing",
+            "valid_from": "2034-04-10",
+            "valid_until_exclusive": null,
+            "context": null,
+            "session_id": null
+          },
+          "status": "confirmed",
+          "supersedes": [],
+          "source_turn_ids": [
+            "prior_m2"
+          ],
+          "evidence_quotes": [
+            {
+              "turn_id": "prior_m2",
+              "text": "En el cuaderno de menús dejé tacos de hongos como mi opción general de la cena."
+            }
+          ]
+        }
+      ],
+      "conversation": [
+        {
+          "turn_id": "open_u",
+          "role": "user",
+          "text": "Me falta cerrar un detalle del menú en mi cuaderno."
+        },
+        {
+          "turn_id": "open_a",
+          "role": "assistant",
+          "text": "Cuéntame qué parte del menú falta por decidir."
+        },
+        {
+          "turn_id": "u1",
+          "role": "user",
+          "text": "Pensándolo bien, tengo otra idea. En cuanto a el desayuno, prefiero tortilla de verde."
+        },
+        {
+          "turn_id": "u2",
+          "role": "user",
+          "text": "¿Qué opción pongo en el cuaderno para el desayuno de hoy?"
+        }
+      ],
+      "query": {
+        "attribute": "breakfast_preference",
+        "date": "2034-05-05",
+        "session_id": "S2",
+        "context": null
+      },
+      "reuse_regime": "Habrá otra consulta del mismo atributo sin posibilidad de preguntar."
+    },
+    {
+      "audit_id": "caso-5dcd9e8ecc2f70",
+      "memory": [
+        {
+          "memory_id": "m1",
+          "attribute": "dinner_preference",
+          "value": "pescado al horno",
+          "recorded_at": "2034-04-24",
+          "scope": {
+            "kind": "ongoing",
+            "valid_from": "2034-04-24",
+            "valid_until_exclusive": null,
+            "context": null,
+            "session_id": null
+          },
+          "status": "confirmed",
+          "supersedes": [],
+          "source_turn_ids": [
+            "prior_m1"
+          ],
+          "evidence_quotes": [
+            {
+              "turn_id": "prior_m1",
+              "text": "Para organizar las compras de cada semana, mi opción de la cena era pescado al horno."
+            }
+          ]
+        },
+        {
+          "memory_id": "m2",
+          "attribute": "breakfast_preference",
+          "value": "pan de centeno",
+          "recorded_at": "2034-04-24",
+          "scope": {
+            "kind": "ongoing",
+            "valid_from": "2034-04-24",
+            "valid_until_exclusive": null,
+            "context": null,
+            "session_id": null
+          },
+          "status": "confirmed",
+          "supersedes": [],
+          "source_turn_ids": [
+            "prior_m2"
+          ],
+          "evidence_quotes": [
+            {
+              "turn_id": "prior_m2",
+              "text": "Para organizar las compras de cada semana, mi opción de el desayuno era pan de centeno."
+            }
+          ]
+        }
+      ],
+      "conversation": [
+        {
+          "turn_id": "open_u",
+          "role": "user",
+          "text": "Tengo un rato antes de salir a hacer las compras."
+        },
+        {
+          "turn_id": "open_a",
+          "role": "assistant",
+          "text": "Dime qué dato quieres que use para la lista."
+        },
+        {
+          "turn_id": "u1",
+          "role": "user",
+          "text": "Hasta el 2034-05-17 inclusive, Para la cena, prefiero mote con queso. Luego retomo la elección de siempre."
+        },
+        {
+          "turn_id": "u2",
+          "role": "user",
+          "text": "Con lo que te conté, ¿qué anoto hoy para la cena?"
+        }
+      ],
+      "query": {
+        "attribute": "dinner_preference",
+        "date": "2034-05-16",
+        "session_id": "S2",
+        "context": null
+      },
+      "reuse_regime": "Habrá otra consulta del mismo atributo sin posibilidad de preguntar."
+    },
+    {
+      "audit_id": "caso-29548ec5e71dad",
+      "memory": [
+        {
+          "memory_id": "m1",
+          "attribute": "breakfast_preference",
+          "value": "humita de choclo",
+          "recorded_at": "2034-03-30",
+          "scope": {
+            "kind": "ongoing",
+            "valid_from": "2034-03-30",
+            "valid_until_exclusive": null,
+            "context": null,
+            "session_id": null
+          },
+          "status": "confirmed",
+          "supersedes": [],
+          "source_turn_ids": [
+            "prior_m1"
+          ],
+          "evidence_quotes": [
+            {
+              "turn_id": "prior_m1",
+              "text": "En el cuaderno de menús dejé humita de choclo como mi opción general de el desayuno."
+            }
+          ]
+        },
+        {
+          "memory_id": "m2",
+          "attribute": "dinner_preference",
+          "value": "choclo con queso",
+          "recorded_at": "2034-03-30",
+          "scope": {
+            "kind": "ongoing",
+            "valid_from": "2034-03-30",
+            "valid_until_exclusive": null,
+            "context": null,
+            "session_id": null
+          },
+          "status": "confirmed",
+          "supersedes": [],
+          "source_turn_ids": [
+            "prior_m2"
+          ],
+          "evidence_quotes": [
+            {
+              "turn_id": "prior_m2",
+              "text": "En el cuaderno de menús dejé choclo con queso como mi opción general de la cena."
+            }
+          ]
+        }
+      ],
+      "conversation": [
+        {
+          "turn_id": "open_u",
+          "role": "user",
+          "text": "Estoy organizando la comida antes de la reunión del edificio."
+        },
+        {
+          "turn_id": "open_a",
+          "role": "assistant",
+          "text": "Cuéntame qué parte del menú falta por decidir."
+        },
+        {
+          "turn_id": "u1",
+          "role": "user",
+          "text": "Cambió mi elección de siempre. En cuanto a el desayuno, prefiero maduros asados de forma habitual."
+        },
+        {
+          "turn_id": "u2",
+          "role": "user",
+          "text": "¿Qué opción pongo en el cuaderno para el desayuno de hoy?"
+        }
+      ],
+      "query": {
+        "attribute": "breakfast_preference",
+        "date": "2034-04-20",
+        "session_id": "S2",
+        "context": null
+      },
+      "reuse_regime": "Habrá otra consulta del mismo atributo sin posibilidad de preguntar."
+    },
+    {
+      "audit_id": "caso-45c08b983d8fb6",
+      "memory": [
+        {
+          "memory_id": "m1",
+          "attribute": "dinner_preference",
+          "value": "locro de papa",
+          "recorded_at": "2034-04-14",
+          "scope": {
+            "kind": "ongoing",
+            "valid_from": "2034-04-14",
+            "valid_until_exclusive": null,
+            "context": null,
+            "session_id": null
+          },
+          "status": "confirmed",
+          "supersedes": [],
+          "source_turn_ids": [
+            "prior_m1"
+          ],
+          "evidence_quotes": [
+            {
+              "turn_id": "prior_m1",
+              "text": "Para organizar las compras de cada semana, mi opción de la cena era locro de papa."
+            }
+          ]
+        },
+        {
+          "memory_id": "m2",
+          "attribute": "drink_preference",
+          "value": "jugo de maracuyá",
+          "recorded_at": "2034-04-14",
+          "scope": {
+            "kind": "ongoing",
+            "valid_from": "2034-04-14",
+            "valid_until_exclusive": null,
+            "context": null,
+            "session_id": null
+          },
+          "status": "confirmed",
+          "supersedes": [],
+          "source_turn_ids": [
+            "prior_m2"
+          ],
+          "evidence_quotes": [
+            {
+              "turn_id": "prior_m2",
+              "text": "Para organizar las compras de cada semana, mi opción de la bebida era jugo de maracuyá."
+            }
+          ]
+        }
+      ],
+      "conversation": [
+        {
+          "turn_id": "open_u",
+          "role": "user",
+          "text": "Estoy armando la lista para comprar en el mercado."
+        },
+        {
+          "turn_id": "open_a",
+          "role": "assistant",
+          "text": "Dime qué dato quieres que use para la lista."
+        },
+        {
+          "turn_id": "u1",
+          "role": "user",
+          "text": "Cambió mi elección de siempre. Para la cena, prefiero ensalada de quinua de forma habitual."
+        },
+        {
+          "turn_id": "u2",
+          "role": "user",
+          "text": "Con lo que te conté, ¿qué anoto hoy para la cena?"
+        }
+      ],
+      "query": {
+        "attribute": "dinner_preference",
+        "date": "2034-05-14",
+        "session_id": "S2",
+        "context": null
+      },
+      "reuse_regime": "Habrá otra consulta del mismo atributo sin posibilidad de preguntar."
+    }
+  ]
+}

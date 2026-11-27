@@ -1,0 +1,522 @@
+[
+  {
+    "id": "confirma-plato-en-la-fiambrera",
+    "family": "vigencia_calendario_nuevo",
+    "initial_memory": [
+      {
+        "memory_id": "base_cena",
+        "attribute": "dinner_preference",
+        "value": "pescado al horno",
+        "scope": {
+          "kind": "ongoing",
+          "session_id": null,
+          "context": null,
+          "valid_from": "2026-11-20",
+          "valid_until_exclusive": null
+        },
+        "status": "confirmed",
+        "source_turn_ids": [
+          "prev_base_cena"
+        ],
+        "evidence_quotes": [
+          {
+            "turn_id": "prev_base_cena",
+            "text": "Para cenar prefiero pescado al horno de forma habitual."
+          }
+        ],
+        "recorded_at": "2026-11-20",
+        "supersedes": []
+      }
+    ],
+    "steps": [
+      {
+        "action": "send",
+        "date": "2026-12-03",
+        "text": "En la fiambrera del viernes prefiero tortilla de papa para cenar. Ese cambio se aplica solo para el 2026-12-04.",
+        "expect": {
+          "writes": [
+            {
+              "attribute": "dinner_preference",
+              "value": "tortilla de papa",
+              "scope": {
+                "kind": "interval",
+                "session_id": null,
+                "context": null,
+                "valid_from": "2026-12-04",
+                "valid_until_exclusive": "2026-12-05"
+              },
+              "status": "confirmed",
+              "supersedes": []
+            }
+          ],
+          "probes": [
+            {
+              "query": {
+                "attribute": "dinner_preference",
+                "date": "2026-12-03",
+                "session_id": "S1",
+                "context": null
+              },
+              "expected": {
+                "mode": "ANSWER",
+                "value": "pescado al horno",
+                "branches": []
+              }
+            },
+            {
+              "query": {
+                "attribute": "dinner_preference",
+                "date": "2026-12-04",
+                "session_id": "S1",
+                "context": null
+              },
+              "expected": {
+                "mode": "ANSWER",
+                "value": "tortilla de papa",
+                "branches": []
+              }
+            },
+            {
+              "query": {
+                "attribute": "dinner_preference",
+                "date": "2026-12-05",
+                "session_id": "S1",
+                "context": null
+              },
+              "expected": {
+                "mode": "ANSWER",
+                "value": "pescado al horno",
+                "branches": []
+              }
+            }
+          ]
+        }
+      },
+      {
+        "action": "new_session",
+        "date": "2026-12-04",
+        "expect": {
+          "writes": [],
+          "probes": [
+            {
+              "query": {
+                "attribute": "dinner_preference",
+                "date": "2026-12-04",
+                "session_id": "S2",
+                "context": null
+              },
+              "expected": {
+                "mode": "ANSWER",
+                "value": "tortilla de papa",
+                "branches": []
+              }
+            }
+          ]
+        }
+      },
+      {
+        "action": "send",
+        "date": "2026-12-04",
+        "text": "Ya es viernes y te escribo por otro chat. ¿Qué recuerdas sobre lo que prefiero para cenar hoy?",
+        "expect": {
+          "writes": [],
+          "reply": {
+            "kind": "recall",
+            "values": [
+              "tortilla de papa"
+            ]
+          },
+          "probes": [
+            {
+              "query": {
+                "attribute": "dinner_preference",
+                "date": "2026-12-04",
+                "session_id": "S2",
+                "context": null
+              },
+              "expected": {
+                "mode": "ANSWER",
+                "value": "tortilla de papa",
+                "branches": []
+              }
+            }
+          ]
+        }
+      },
+      {
+        "action": "send",
+        "date": "2026-12-05",
+        "text": "Ya guardé la fiambrera del viernes. ¿Qué prefiero para cenar hoy?",
+        "expect": {
+          "writes": [],
+          "reply": {
+            "kind": "recall",
+            "values": [
+              "pescado al horno"
+            ]
+          },
+          "probes": [
+            {
+              "query": {
+                "attribute": "dinner_preference",
+                "date": "2026-12-05",
+                "session_id": "S2",
+                "context": null
+              },
+              "expected": {
+                "mode": "ANSWER",
+                "value": "pescado al horno",
+                "branches": []
+              }
+            }
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": "confirma-cambio-para-el-hilo",
+    "family": "sesion_y_retorno",
+    "initial_memory": [
+      {
+        "memory_id": "base_cena",
+        "attribute": "dinner_preference",
+        "value": "ensalada de quinua",
+        "scope": {
+          "kind": "ongoing",
+          "session_id": null,
+          "context": null,
+          "valid_from": "2026-11-20",
+          "valid_until_exclusive": null
+        },
+        "status": "confirmed",
+        "source_turn_ids": [
+          "prev_base_cena"
+        ],
+        "evidence_quotes": [
+          {
+            "turn_id": "prev_base_cena",
+            "text": "Para cenar prefiero ensalada de quinua de forma habitual."
+          }
+        ],
+        "recorded_at": "2026-11-20",
+        "supersedes": []
+      },
+      {
+        "memory_id": "base_bebida",
+        "attribute": "drink_preference",
+        "value": "jugo de maracuyá",
+        "scope": {
+          "kind": "ongoing",
+          "session_id": null,
+          "context": null,
+          "valid_from": "2026-11-20",
+          "valid_until_exclusive": null
+        },
+        "status": "confirmed",
+        "source_turn_ids": [
+          "prev_base_bebida"
+        ],
+        "evidence_quotes": [
+          {
+            "turn_id": "prev_base_bebida",
+            "text": "Para beber prefiero jugo de maracuyá de forma habitual."
+          }
+        ],
+        "recorded_at": "2026-11-20",
+        "supersedes": []
+      }
+    ],
+    "steps": [
+      {
+        "action": "send",
+        "date": "2026-12-03",
+        "text": "En esta conversación para la cena prefiero pollo con papas. Tómalo solo en esta sesión.",
+        "expect": {
+          "writes": [
+            {
+              "attribute": "dinner_preference",
+              "value": "pollo con papas",
+              "scope": {
+                "kind": "session",
+                "session_id": "S1",
+                "context": null,
+                "valid_from": "2026-12-03",
+                "valid_until_exclusive": null
+              },
+              "status": "confirmed",
+              "supersedes": []
+            }
+          ],
+          "probes": [
+            {
+              "query": {
+                "attribute": "dinner_preference",
+                "date": "2026-12-03",
+                "session_id": "S1",
+                "context": null
+              },
+              "expected": {
+                "mode": "ANSWER",
+                "value": "pollo con papas",
+                "branches": []
+              }
+            },
+            {
+              "query": {
+                "attribute": "dinner_preference",
+                "date": "2026-12-03",
+                "session_id": "S2",
+                "context": null
+              },
+              "expected": {
+                "mode": "ANSWER",
+                "value": "ensalada de quinua",
+                "branches": []
+              }
+            }
+          ]
+        }
+      },
+      {
+        "action": "send",
+        "date": "2026-12-03",
+        "text": "Antes de cerrar, ¿qué recuerdas que prefiero para la cena en este chat?",
+        "expect": {
+          "writes": [],
+          "reply": {
+            "kind": "recall",
+            "values": [
+              "pollo con papas"
+            ]
+          },
+          "probes": [
+            {
+              "query": {
+                "attribute": "dinner_preference",
+                "date": "2026-12-03",
+                "session_id": "S1",
+                "context": null
+              },
+              "expected": {
+                "mode": "ANSWER",
+                "value": "pollo con papas",
+                "branches": []
+              }
+            }
+          ]
+        }
+      },
+      {
+        "action": "new_session",
+        "date": "2026-12-03",
+        "expect": {
+          "writes": [],
+          "probes": [
+            {
+              "query": {
+                "attribute": "dinner_preference",
+                "date": "2026-12-03",
+                "session_id": "S2",
+                "context": null
+              },
+              "expected": {
+                "mode": "ANSWER",
+                "value": "ensalada de quinua",
+                "branches": []
+              }
+            },
+            {
+              "query": {
+                "attribute": "drink_preference",
+                "date": "2026-12-03",
+                "session_id": "S2",
+                "context": null
+              },
+              "expected": {
+                "mode": "ANSWER",
+                "value": "jugo de maracuyá",
+                "branches": []
+              }
+            }
+          ]
+        }
+      },
+      {
+        "action": "send",
+        "date": "2026-12-03",
+        "text": "Retomé desde un chat distinto. ¿Qué prefiero cenar según lo que guardaste de antes?",
+        "expect": {
+          "writes": [],
+          "reply": {
+            "kind": "recall",
+            "values": [
+              "ensalada de quinua"
+            ]
+          },
+          "probes": [
+            {
+              "query": {
+                "attribute": "dinner_preference",
+                "date": "2026-12-03",
+                "session_id": "S2",
+                "context": null
+              },
+              "expected": {
+                "mode": "ANSWER",
+                "value": "ensalada de quinua",
+                "branches": []
+              }
+            }
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": "confirma-carton-agotado",
+    "family": "restriccion_agota_reabre",
+    "initial_memory": [
+      {
+        "memory_id": "base_cena",
+        "attribute": "dinner_preference",
+        "value": "ensalada de quinua con pepino y tomate",
+        "scope": {
+          "kind": "ongoing",
+          "session_id": null,
+          "context": null,
+          "valid_from": "2026-11-20",
+          "valid_until_exclusive": null
+        },
+        "status": "confirmed",
+        "source_turn_ids": [
+          "prev_base_cena"
+        ],
+        "evidence_quotes": [
+          {
+            "turn_id": "prev_base_cena",
+            "text": "Para cenar prefiero ensalada de quinua con pepino y tomate de forma habitual."
+          }
+        ],
+        "recorded_at": "2026-11-20",
+        "supersedes": []
+      }
+    ],
+    "steps": [
+      {
+        "action": "send",
+        "date": "2026-12-03",
+        "text": "El aceite se acabó y el pollo, que viene en un cartón aparte, tampoco lo voy a usar. Para cenar sin asiete ni poyo, ¿qué cena me propones?",
+        "expect": {
+          "writes": [],
+          "reply": {
+            "kind": "meal",
+            "excluded": [
+              "aceite",
+              "pollo"
+            ],
+            "clarify": true
+          },
+          "probes": [
+            {
+              "query": {
+                "attribute": "dinner_preference",
+                "date": "2026-12-03",
+                "session_id": "S1",
+                "context": null
+              },
+              "expected": {
+                "mode": "ANSWER",
+                "value": "ensalada de quinua con pepino y tomate",
+                "branches": []
+              }
+            }
+          ]
+        }
+      },
+      {
+        "action": "send",
+        "date": "2026-12-03",
+        "text": "Mi vecino me prestó aceite, ese ya lo puedo usar. Para cenar sigo sin pollo y ahora ni tomate ni papas. ¿Qué puedo cenar con eso?",
+        "expect": {
+          "writes": [],
+          "reply": {
+            "kind": "meal",
+            "excluded": [
+              "pollo",
+              "tomate",
+              "papa"
+            ],
+            "clarify": false
+          },
+          "probes": [
+            {
+              "query": {
+                "attribute": "dinner_preference",
+                "date": "2026-12-03",
+                "session_id": "S1",
+                "context": null
+              },
+              "expected": {
+                "mode": "ANSWER",
+                "value": "ensalada de quinua con pepino y tomate",
+                "branches": []
+              }
+            }
+          ]
+        }
+      },
+      {
+        "action": "new_session",
+        "date": "2026-12-04",
+        "expect": {
+          "writes": [],
+          "probes": [
+            {
+              "query": {
+                "attribute": "dinner_preference",
+                "date": "2026-12-04",
+                "session_id": "S2",
+                "context": null
+              },
+              "expected": {
+                "mode": "ANSWER",
+                "value": "ensalada de quinua con pepino y tomate",
+                "branches": []
+              }
+            }
+          ]
+        }
+      },
+      {
+        "action": "send",
+        "date": "2026-12-04",
+        "text": "Ahora para la cena de hoy mi compra está completa. Si mi plato habitual sirve, ¿qué me recomiendas para cenar?",
+        "expect": {
+          "writes": [],
+          "reply": {
+            "kind": "meal",
+            "excluded": [],
+            "clarify": false,
+            "preferred": "ensalada de quinua con pepino y tomate"
+          },
+          "probes": [
+            {
+              "query": {
+                "attribute": "dinner_preference",
+                "date": "2026-12-04",
+                "session_id": "S2",
+                "context": null
+              },
+              "expected": {
+                "mode": "ANSWER",
+                "value": "ensalada de quinua con pepino y tomate",
+                "branches": []
+              }
+            }
+          ]
+        }
+      }
+    ]
+  }
+]

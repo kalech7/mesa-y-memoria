@@ -1,0 +1,63 @@
+{
+  "status": "verified",
+  "coverage": {
+    "train": {
+      "episodes": 80,
+      "C2": 80,
+      "FJS": 80,
+      "F3": 20,
+      "F4": 24,
+      "F2": 12,
+      "F1": 12,
+      "F0": 12
+    },
+    "validation": {
+      "episodes": 53,
+      "C2": 53,
+      "FJS": 53,
+      "F2": 8,
+      "F3": 13,
+      "F0": 8,
+      "F1": 8,
+      "F4": 16
+    }
+  },
+  "eval_policy": "static_contracts_only",
+  "Qwen_calls": 0,
+  "training_steps": 0,
+  "isolation": {
+    "status": "verified",
+    "identity_version": "behavioral_identity_v3_roles",
+    "partitions": {
+      "train": {
+        "episodes": 80,
+        "roots": 60,
+        "behavioral_identities": 80,
+        "observable_identities": 60
+      },
+      "validation": {
+        "episodes": 53,
+        "roots": 40,
+        "behavioral_identities": 53,
+        "observable_identities": 40
+      },
+      "evaluation": {
+        "episodes": 67,
+        "roots": 50,
+        "behavioral_identities": 67,
+        "observable_identities": 50
+      }
+    },
+    "historical_overlap": 0,
+    "limits": "Exact identity with alpha-renamed references and user-role normalization; not universal paraphrase equivalence.",
+    "templates_and_recipe_ids_disjoint": true,
+    "paired_public_prefixes": {
+      "train:F3": 8,
+      "train:F4": 12,
+      "validation:F3": 5,
+      "validation:F4": 8,
+      "evaluation:F4": 10,
+      "evaluation:F3": 7
+    }
+  }
+}

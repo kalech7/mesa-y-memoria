@@ -1,0 +1,1515 @@
+{
+  "caso-dd14623716599b": {
+    "root_id": "tb012b73acce5d70f8d23a",
+    "family": "F3",
+    "split": "validation",
+    "literal": {
+      "information_sufficient": false,
+      "need_future": false,
+      "decisive_slot": "CURRENT_CONTEXT",
+      "writable_scope": "none",
+      "admissible_answers": [
+        "humita de choclo",
+        "papaya picada"
+      ]
+    },
+    "has_pair": true
+  },
+  "caso-6b986f728b7dd1": {
+    "root_id": "tb0144ab37075d98bc082d",
+    "family": "F2",
+    "split": "train",
+    "literal": {
+      "information_sufficient": true,
+      "need_future": false,
+      "decisive_slot": null,
+      "writable_scope": "interval",
+      "admissible_answers": [
+        "yogur con mango"
+      ]
+    },
+    "has_pair": false
+  },
+  "caso-6a0f2dce810ca0": {
+    "root_id": "tb057040e67ae99a3be6f5",
+    "family": "F4",
+    "split": "validation",
+    "literal": {
+      "information_sufficient": true,
+      "need_future": true,
+      "decisive_slot": "TEMPORAL_SCOPE",
+      "writable_scope": "none",
+      "admissible_answers": [
+        "maduros asados"
+      ]
+    },
+    "has_pair": true
+  },
+  "caso-f2568bbb0cf129": {
+    "root_id": "tb0a0757f9f72e294c2439",
+    "family": "F2",
+    "split": "train",
+    "literal": {
+      "information_sufficient": true,
+      "need_future": false,
+      "decisive_slot": null,
+      "writable_scope": "interval",
+      "admissible_answers": [
+        "tortilla de yuca"
+      ]
+    },
+    "has_pair": false
+  },
+  "caso-a3f7058b73d5f8": {
+    "root_id": "tb0b28cd2a3adce2e7fedc",
+    "family": "F3",
+    "split": "validation",
+    "literal": {
+      "information_sufficient": true,
+      "need_future": false,
+      "decisive_slot": null,
+      "writable_scope": "none",
+      "admissible_answers": [
+        "horchata lojana"
+      ]
+    },
+    "has_pair": false
+  },
+  "caso-c443553dc34f25": {
+    "root_id": "tb0d5dd28f377c8058302b",
+    "family": "F3",
+    "split": "train",
+    "literal": {
+      "information_sufficient": true,
+      "need_future": false,
+      "decisive_slot": null,
+      "writable_scope": "none",
+      "admissible_answers": [
+        "jugo de tomate de árbol"
+      ]
+    },
+    "has_pair": false
+  },
+  "caso-0538e79556d52e": {
+    "root_id": "tb0f0aff6c77b0452b42e6",
+    "family": "F4",
+    "split": "train",
+    "literal": {
+      "information_sufficient": true,
+      "need_future": true,
+      "decisive_slot": "TEMPORAL_SCOPE",
+      "writable_scope": "none",
+      "admissible_answers": [
+        "verduras al wok"
+      ]
+    },
+    "has_pair": true
+  },
+  "caso-ee3056b3ce2f13": {
+    "root_id": "tb10aede63c1ad7100e4bd",
+    "family": "F0",
+    "split": "train",
+    "literal": {
+      "information_sufficient": true,
+      "need_future": false,
+      "decisive_slot": null,
+      "writable_scope": "none",
+      "admissible_answers": [
+        "cachapa con queso"
+      ]
+    },
+    "has_pair": false
+  },
+  "caso-aaf97aa770efdf": {
+    "root_id": "tb111aaa51f219ead48957",
+    "family": "F2",
+    "split": "train",
+    "literal": {
+      "information_sufficient": true,
+      "need_future": false,
+      "decisive_slot": null,
+      "writable_scope": "interval",
+      "admissible_answers": [
+        "ensalada de quinua"
+      ]
+    },
+    "has_pair": false
+  },
+  "caso-e1c6765e008c71": {
+    "root_id": "tb139dccf7d5e79b6e0162",
+    "family": "F2",
+    "split": "train",
+    "literal": {
+      "information_sufficient": true,
+      "need_future": false,
+      "decisive_slot": null,
+      "writable_scope": "interval",
+      "admissible_answers": [
+        "infusión de menta"
+      ]
+    },
+    "has_pair": false
+  },
+  "caso-2ebf0eae3457e8": {
+    "root_id": "tb140a9acdbbc93199b810",
+    "family": "F3",
+    "split": "train",
+    "literal": {
+      "information_sufficient": false,
+      "need_future": false,
+      "decisive_slot": "CURRENT_CONTEXT",
+      "writable_scope": "none",
+      "admissible_answers": [
+        "avena con canela",
+        "tortilla de verde"
+      ]
+    },
+    "has_pair": true
+  },
+  "caso-92c69c0f881014": {
+    "root_id": "tb193a030f8109596ac2d4",
+    "family": "F2",
+    "split": "train",
+    "literal": {
+      "information_sufficient": true,
+      "need_future": false,
+      "decisive_slot": null,
+      "writable_scope": "interval",
+      "admissible_answers": [
+        "agua de coco"
+      ]
+    },
+    "has_pair": false
+  },
+  "caso-24cc4f8cfeed2e": {
+    "root_id": "tb1c5500f0587d45be7c0b",
+    "family": "F1",
+    "split": "train",
+    "literal": {
+      "information_sufficient": true,
+      "need_future": false,
+      "decisive_slot": null,
+      "writable_scope": "ongoing",
+      "admissible_answers": [
+        "jugo de tomate de árbol"
+      ]
+    },
+    "has_pair": false
+  },
+  "caso-1732c4e2c9fc8a": {
+    "root_id": "tb218166b509fdd835d640",
+    "family": "F3",
+    "split": "validation",
+    "literal": {
+      "information_sufficient": true,
+      "need_future": false,
+      "decisive_slot": null,
+      "writable_scope": "none",
+      "admissible_answers": [
+        "batido de naranjilla"
+      ]
+    },
+    "has_pair": false
+  },
+  "caso-f0991ea3955fbd": {
+    "root_id": "tb22812ed8cfa914644c06",
+    "family": "F1",
+    "split": "train",
+    "literal": {
+      "information_sufficient": true,
+      "need_future": false,
+      "decisive_slot": null,
+      "writable_scope": "ongoing",
+      "admissible_answers": [
+        "locro de papa"
+      ]
+    },
+    "has_pair": false
+  },
+  "caso-fb38257f443a12": {
+    "root_id": "tb23363c73f8578dfdecd7",
+    "family": "F2",
+    "split": "validation",
+    "literal": {
+      "information_sufficient": true,
+      "need_future": false,
+      "decisive_slot": null,
+      "writable_scope": "interval",
+      "admissible_answers": [
+        "humita de choclo"
+      ]
+    },
+    "has_pair": false
+  },
+  "caso-3ecd0093378e12": {
+    "root_id": "tb26618ee2e9cfce0e9ded",
+    "family": "F1",
+    "split": "train",
+    "literal": {
+      "information_sufficient": true,
+      "need_future": false,
+      "decisive_slot": null,
+      "writable_scope": "ongoing",
+      "admissible_answers": [
+        "verduras al wok"
+      ]
+    },
+    "has_pair": false
+  },
+  "caso-3b41520dd6319b": {
+    "root_id": "tb27636630a57ad4714692",
+    "family": "F1",
+    "split": "train",
+    "literal": {
+      "information_sufficient": true,
+      "need_future": false,
+      "decisive_slot": null,
+      "writable_scope": "ongoing",
+      "admissible_answers": [
+        "pan de yuca"
+      ]
+    },
+    "has_pair": false
+  },
+  "caso-985f0c30919df4": {
+    "root_id": "tb2c2868728234441752a3",
+    "family": "F3",
+    "split": "train",
+    "literal": {
+      "information_sufficient": true,
+      "need_future": false,
+      "decisive_slot": null,
+      "writable_scope": "none",
+      "admissible_answers": [
+        "agua de cedrón"
+      ]
+    },
+    "has_pair": false
+  },
+  "caso-119a62711ea450": {
+    "root_id": "tb3012aaea7569a134300b",
+    "family": "F0",
+    "split": "validation",
+    "literal": {
+      "information_sufficient": true,
+      "need_future": false,
+      "decisive_slot": null,
+      "writable_scope": "none",
+      "admissible_answers": [
+        "avena con canela"
+      ]
+    },
+    "has_pair": false
+  },
+  "caso-cdf84a88943dfa": {
+    "root_id": "tb31f9db29193883c33f95",
+    "family": "F4",
+    "split": "validation",
+    "literal": {
+      "information_sufficient": true,
+      "need_future": true,
+      "decisive_slot": "TEMPORAL_SCOPE",
+      "writable_scope": "none",
+      "admissible_answers": [
+        "jugo de tomate de árbol"
+      ]
+    },
+    "has_pair": true
+  },
+  "caso-c28aeafe18be9d": {
+    "root_id": "tb3720010e95aea7e28ac0",
+    "family": "F3",
+    "split": "train",
+    "literal": {
+      "information_sufficient": false,
+      "need_future": false,
+      "decisive_slot": "CURRENT_CONTEXT",
+      "writable_scope": "none",
+      "admissible_answers": [
+        "mote con queso",
+        "pescado al horno"
+      ]
+    },
+    "has_pair": true
+  },
+  "caso-d90869c4658e52": {
+    "root_id": "tb38a88bdb600a744a4662",
+    "family": "F4",
+    "split": "train",
+    "literal": {
+      "information_sufficient": true,
+      "need_future": true,
+      "decisive_slot": "TEMPORAL_SCOPE",
+      "writable_scope": "none",
+      "admissible_answers": [
+        "infusión de menta"
+      ]
+    },
+    "has_pair": true
+  },
+  "caso-e251e7274de6a9": {
+    "root_id": "tb3a50ce165d4ef27b7e7f",
+    "family": "F2",
+    "split": "validation",
+    "literal": {
+      "information_sufficient": true,
+      "need_future": false,
+      "decisive_slot": null,
+      "writable_scope": "interval",
+      "admissible_answers": [
+        "batido de naranjilla"
+      ]
+    },
+    "has_pair": false
+  },
+  "caso-33a2e953181f91": {
+    "root_id": "tb40945d9e22c301a502ca",
+    "family": "F4",
+    "split": "train",
+    "literal": {
+      "information_sufficient": true,
+      "need_future": true,
+      "decisive_slot": "TEMPORAL_SCOPE",
+      "writable_scope": "none",
+      "admissible_answers": [
+        "limonada con hierbabuena"
+      ]
+    },
+    "has_pair": true
+  },
+  "caso-a0447cdcfb0649": {
+    "root_id": "tb4206ac4ee70418311d33",
+    "family": "F0",
+    "split": "train",
+    "literal": {
+      "information_sufficient": true,
+      "need_future": false,
+      "decisive_slot": null,
+      "writable_scope": "none",
+      "admissible_answers": [
+        "horchata lojana"
+      ]
+    },
+    "has_pair": false
+  },
+  "caso-71c3cd587951f0": {
+    "root_id": "tb47ba14381790d53e0e60",
+    "family": "F1",
+    "split": "validation",
+    "literal": {
+      "information_sufficient": true,
+      "need_future": false,
+      "decisive_slot": null,
+      "writable_scope": "ongoing",
+      "admissible_answers": [
+        "tortilla de yuca"
+      ]
+    },
+    "has_pair": false
+  },
+  "caso-5877732b679c80": {
+    "root_id": "tb49f46021213a2e3c7f85",
+    "family": "F0",
+    "split": "validation",
+    "literal": {
+      "information_sufficient": true,
+      "need_future": false,
+      "decisive_slot": null,
+      "writable_scope": "none",
+      "admissible_answers": [
+        "pescado al horno"
+      ]
+    },
+    "has_pair": false
+  },
+  "caso-7af021d8ebf169": {
+    "root_id": "tb4a35144a2747a677ef37",
+    "family": "F1",
+    "split": "train",
+    "literal": {
+      "information_sufficient": true,
+      "need_future": false,
+      "decisive_slot": null,
+      "writable_scope": "ongoing",
+      "admissible_answers": [
+        "agua de cedrón"
+      ]
+    },
+    "has_pair": false
+  },
+  "caso-96b4837a19ded9": {
+    "root_id": "tb502cc69bd234e4f81cc4",
+    "family": "F2",
+    "split": "train",
+    "literal": {
+      "information_sufficient": true,
+      "need_future": false,
+      "decisive_slot": null,
+      "writable_scope": "interval",
+      "admissible_answers": [
+        "jugo de tomate de árbol"
+      ]
+    },
+    "has_pair": false
+  },
+  "caso-b0845a410f2e0d": {
+    "root_id": "tb51bb6c9c75081e3f77a7",
+    "family": "F3",
+    "split": "train",
+    "literal": {
+      "information_sufficient": false,
+      "need_future": false,
+      "decisive_slot": "CURRENT_CONTEXT",
+      "writable_scope": "none",
+      "admissible_answers": [
+        "avena con canela",
+        "humita de choclo"
+      ]
+    },
+    "has_pair": true
+  },
+  "caso-3b62333f3175b2": {
+    "root_id": "tb582253edf07cdb0912ec",
+    "family": "F4",
+    "split": "validation",
+    "literal": {
+      "information_sufficient": true,
+      "need_future": true,
+      "decisive_slot": "TEMPORAL_SCOPE",
+      "writable_scope": "none",
+      "admissible_answers": [
+        "pescado al horno"
+      ]
+    },
+    "has_pair": true
+  },
+  "caso-bcf794017c68fe": {
+    "root_id": "tb58d6221e0d51efeea5fe",
+    "family": "F1",
+    "split": "train",
+    "literal": {
+      "information_sufficient": true,
+      "need_future": false,
+      "decisive_slot": null,
+      "writable_scope": "ongoing",
+      "admissible_answers": [
+        "jugo de maracuyá"
+      ]
+    },
+    "has_pair": false
+  },
+  "caso-613d9aee886dde": {
+    "root_id": "tb5f42aca4dbce7609b527",
+    "family": "F4",
+    "split": "train",
+    "literal": {
+      "information_sufficient": true,
+      "need_future": true,
+      "decisive_slot": "TEMPORAL_SCOPE",
+      "writable_scope": "none",
+      "admissible_answers": [
+        "jugo de maracuyá"
+      ]
+    },
+    "has_pair": true
+  },
+  "caso-c363c4c54cf3a7": {
+    "root_id": "tb66802a61f29b15f20c07",
+    "family": "F1",
+    "split": "train",
+    "literal": {
+      "information_sufficient": true,
+      "need_future": false,
+      "decisive_slot": null,
+      "writable_scope": "ongoing",
+      "admissible_answers": [
+        "jugo de maracuyá"
+      ]
+    },
+    "has_pair": false
+  },
+  "caso-6ae2e3dc72dd59": {
+    "root_id": "tb6ba9ee14c6d03abc7993",
+    "family": "F4",
+    "split": "validation",
+    "literal": {
+      "information_sufficient": true,
+      "need_future": true,
+      "decisive_slot": "TEMPORAL_SCOPE",
+      "writable_scope": "none",
+      "admissible_answers": [
+        "pan de yuca"
+      ]
+    },
+    "has_pair": true
+  },
+  "caso-5058083863f6cf": {
+    "root_id": "tb6eea7813bc51dc5d6e38",
+    "family": "F2",
+    "split": "train",
+    "literal": {
+      "information_sufficient": true,
+      "need_future": false,
+      "decisive_slot": null,
+      "writable_scope": "interval",
+      "admissible_answers": [
+        "tacos de hongos"
+      ]
+    },
+    "has_pair": false
+  },
+  "caso-d6fae286a7d913": {
+    "root_id": "tb6ff4b1241ed8b644197d",
+    "family": "F3",
+    "split": "validation",
+    "literal": {
+      "information_sufficient": false,
+      "need_future": false,
+      "decisive_slot": "CURRENT_CONTEXT",
+      "writable_scope": "none",
+      "admissible_answers": [
+        "sopa de zapallo",
+        "tacos de hongos"
+      ]
+    },
+    "has_pair": true
+  },
+  "caso-a9ae2f6eaf17fb": {
+    "root_id": "tb7401045df96f70630214",
+    "family": "F4",
+    "split": "train",
+    "literal": {
+      "information_sufficient": true,
+      "need_future": true,
+      "decisive_slot": "TEMPORAL_SCOPE",
+      "writable_scope": "none",
+      "admissible_answers": [
+        "avena con canela"
+      ]
+    },
+    "has_pair": true
+  },
+  "caso-be4d3c66333170": {
+    "root_id": "tb74e9a2c497fe63beb217",
+    "family": "F0",
+    "split": "validation",
+    "literal": {
+      "information_sufficient": true,
+      "need_future": false,
+      "decisive_slot": null,
+      "writable_scope": "none",
+      "admissible_answers": [
+        "menestra de fréjol"
+      ]
+    },
+    "has_pair": false
+  },
+  "caso-cc982293e1d58a": {
+    "root_id": "tb75daf17593d9f59bdf4d",
+    "family": "F0",
+    "split": "train",
+    "literal": {
+      "information_sufficient": true,
+      "need_future": false,
+      "decisive_slot": null,
+      "writable_scope": "none",
+      "admissible_answers": [
+        "infusión de menta"
+      ]
+    },
+    "has_pair": false
+  },
+  "caso-22da240293269f": {
+    "root_id": "tb75e7eb74edd0b94f4bd8",
+    "family": "F4",
+    "split": "train",
+    "literal": {
+      "information_sufficient": true,
+      "need_future": true,
+      "decisive_slot": "TEMPORAL_SCOPE",
+      "writable_scope": "none",
+      "admissible_answers": [
+        "humita de choclo"
+      ]
+    },
+    "has_pair": true
+  },
+  "caso-a029da8edf1f8d": {
+    "root_id": "tb761782acd8a68b5b8957",
+    "family": "F4",
+    "split": "train",
+    "literal": {
+      "information_sufficient": true,
+      "need_future": true,
+      "decisive_slot": "TEMPORAL_SCOPE",
+      "writable_scope": "none",
+      "admissible_answers": [
+        "menestra de fréjol"
+      ]
+    },
+    "has_pair": true
+  },
+  "caso-79306ec1008bff": {
+    "root_id": "tb767ba9bf9d37a9da8ebb",
+    "family": "F1",
+    "split": "validation",
+    "literal": {
+      "information_sufficient": true,
+      "need_future": false,
+      "decisive_slot": null,
+      "writable_scope": "ongoing",
+      "admissible_answers": [
+        "yogur con mango"
+      ]
+    },
+    "has_pair": false
+  },
+  "caso-24a2491a733036": {
+    "root_id": "tb788bc4210cc74c23105d",
+    "family": "F4",
+    "split": "validation",
+    "literal": {
+      "information_sufficient": true,
+      "need_future": true,
+      "decisive_slot": "TEMPORAL_SCOPE",
+      "writable_scope": "none",
+      "admissible_answers": [
+        "limonada con hierbabuena"
+      ]
+    },
+    "has_pair": true
+  },
+  "caso-0db3b95f9e5a0b": {
+    "root_id": "tb7fe71f3fdd02f94cad8b",
+    "family": "F0",
+    "split": "validation",
+    "literal": {
+      "information_sufficient": true,
+      "need_future": false,
+      "decisive_slot": null,
+      "writable_scope": "none",
+      "admissible_answers": [
+        "batido de naranjilla"
+      ]
+    },
+    "has_pair": false
+  },
+  "caso-5340a3e8d986b6": {
+    "root_id": "tb80771f8eafbd9e9d947d",
+    "family": "F0",
+    "split": "train",
+    "literal": {
+      "information_sufficient": true,
+      "need_future": false,
+      "decisive_slot": null,
+      "writable_scope": "none",
+      "admissible_answers": [
+        "maduros asados"
+      ]
+    },
+    "has_pair": false
+  },
+  "caso-4eb4386c5bcf39": {
+    "root_id": "tb811156020ab7fb560251",
+    "family": "F4",
+    "split": "validation",
+    "literal": {
+      "information_sufficient": true,
+      "need_future": true,
+      "decisive_slot": "TEMPORAL_SCOPE",
+      "writable_scope": "none",
+      "admissible_answers": [
+        "locro de papa"
+      ]
+    },
+    "has_pair": true
+  },
+  "caso-e29bd4ec99e0fb": {
+    "root_id": "tb8342fbe5a41c2073f13e",
+    "family": "F2",
+    "split": "train",
+    "literal": {
+      "information_sufficient": true,
+      "need_future": false,
+      "decisive_slot": null,
+      "writable_scope": "interval",
+      "admissible_answers": [
+        "estofado de garbanzos"
+      ]
+    },
+    "has_pair": false
+  },
+  "caso-3b63c25097484a": {
+    "root_id": "tb88550ccd8411b3a21b0f",
+    "family": "F1",
+    "split": "train",
+    "literal": {
+      "information_sufficient": true,
+      "need_future": false,
+      "decisive_slot": null,
+      "writable_scope": "ongoing",
+      "admissible_answers": [
+        "huevos con espinaca"
+      ]
+    },
+    "has_pair": false
+  },
+  "caso-0374c8ab7467bb": {
+    "root_id": "tb89fe1402afc0d19a9d73",
+    "family": "F2",
+    "split": "train",
+    "literal": {
+      "information_sufficient": true,
+      "need_future": false,
+      "decisive_slot": null,
+      "writable_scope": "interval",
+      "admissible_answers": [
+        "yogur con mango"
+      ]
+    },
+    "has_pair": false
+  },
+  "caso-7b245a1dec135b": {
+    "root_id": "tb8adf2c3ee09c0a4db6a1",
+    "family": "F3",
+    "split": "train",
+    "literal": {
+      "information_sufficient": false,
+      "need_future": false,
+      "decisive_slot": "CURRENT_CONTEXT",
+      "writable_scope": "none",
+      "admissible_answers": [
+        "mote con queso",
+        "tortilla de yuca"
+      ]
+    },
+    "has_pair": true
+  },
+  "caso-921b2f11b12cd5": {
+    "root_id": "tb8d19538c0e9be3f42b1b",
+    "family": "F0",
+    "split": "train",
+    "literal": {
+      "information_sufficient": true,
+      "need_future": false,
+      "decisive_slot": null,
+      "writable_scope": "none",
+      "admissible_answers": [
+        "locro de papa"
+      ]
+    },
+    "has_pair": false
+  },
+  "caso-9ea42f5ff0b41f": {
+    "root_id": "tb8dab8dda178ff4694d54",
+    "family": "F2",
+    "split": "train",
+    "literal": {
+      "information_sufficient": true,
+      "need_future": false,
+      "decisive_slot": null,
+      "writable_scope": "interval",
+      "admissible_answers": [
+        "huevos con espinaca"
+      ]
+    },
+    "has_pair": false
+  },
+  "caso-43dee47c687fff": {
+    "root_id": "tb8f0416024102ac124506",
+    "family": "F1",
+    "split": "train",
+    "literal": {
+      "information_sufficient": true,
+      "need_future": false,
+      "decisive_slot": null,
+      "writable_scope": "ongoing",
+      "admissible_answers": [
+        "cachapa con queso"
+      ]
+    },
+    "has_pair": false
+  },
+  "caso-6c4b62b8880fe5": {
+    "root_id": "tb925f0da0f207f085445f",
+    "family": "F3",
+    "split": "validation",
+    "literal": {
+      "information_sufficient": false,
+      "need_future": false,
+      "decisive_slot": "CURRENT_CONTEXT",
+      "writable_scope": "none",
+      "admissible_answers": [
+        "pescado al horno",
+        "sopa de zapallo"
+      ]
+    },
+    "has_pair": true
+  },
+  "caso-8706cbef8745ea": {
+    "root_id": "tb9287062cca69ee7ef791",
+    "family": "F1",
+    "split": "validation",
+    "literal": {
+      "information_sufficient": true,
+      "need_future": false,
+      "decisive_slot": null,
+      "writable_scope": "ongoing",
+      "admissible_answers": [
+        "locro de papa"
+      ]
+    },
+    "has_pair": false
+  },
+  "caso-7df124dbce5dc4": {
+    "root_id": "tb94774807e4d585806df2",
+    "family": "F2",
+    "split": "validation",
+    "literal": {
+      "information_sufficient": true,
+      "need_future": false,
+      "decisive_slot": null,
+      "writable_scope": "interval",
+      "admissible_answers": [
+        "tacos de hongos"
+      ]
+    },
+    "has_pair": false
+  },
+  "caso-51c35d2033cbf6": {
+    "root_id": "tb9bda4a97be9140fa8ba5",
+    "family": "F1",
+    "split": "validation",
+    "literal": {
+      "information_sufficient": true,
+      "need_future": false,
+      "decisive_slot": null,
+      "writable_scope": "ongoing",
+      "admissible_answers": [
+        "tostadas con tomate"
+      ]
+    },
+    "has_pair": false
+  },
+  "caso-525c7580ed031b": {
+    "root_id": "tba1e35ca3964f5614e0f0",
+    "family": "F0",
+    "split": "validation",
+    "literal": {
+      "information_sufficient": true,
+      "need_future": false,
+      "decisive_slot": null,
+      "writable_scope": "none",
+      "admissible_answers": [
+        "jugo de guayaba"
+      ]
+    },
+    "has_pair": false
+  },
+  "caso-4147f4d8032287": {
+    "root_id": "tba1f0f668d40094062688",
+    "family": "F0",
+    "split": "train",
+    "literal": {
+      "information_sufficient": true,
+      "need_future": false,
+      "decisive_slot": null,
+      "writable_scope": "none",
+      "admissible_answers": [
+        "tostadas con tomate"
+      ]
+    },
+    "has_pair": false
+  },
+  "caso-da69fd5768a8d2": {
+    "root_id": "tba4be4d230b754393c43f",
+    "family": "F1",
+    "split": "train",
+    "literal": {
+      "information_sufficient": true,
+      "need_future": false,
+      "decisive_slot": null,
+      "writable_scope": "ongoing",
+      "admissible_answers": [
+        "tortilla de yuca"
+      ]
+    },
+    "has_pair": false
+  },
+  "caso-17b6d1dd3fcb68": {
+    "root_id": "tba5f18b32b22daeb835ca",
+    "family": "F0",
+    "split": "train",
+    "literal": {
+      "information_sufficient": true,
+      "need_future": false,
+      "decisive_slot": null,
+      "writable_scope": "none",
+      "admissible_answers": [
+        "estofado de garbanzos"
+      ]
+    },
+    "has_pair": false
+  },
+  "caso-82309579f40760": {
+    "root_id": "tba896090faa48d3a6dd73",
+    "family": "F4",
+    "split": "train",
+    "literal": {
+      "information_sufficient": true,
+      "need_future": true,
+      "decisive_slot": "TEMPORAL_SCOPE",
+      "writable_scope": "none",
+      "admissible_answers": [
+        "agua de cedrón"
+      ]
+    },
+    "has_pair": true
+  },
+  "caso-a1aa717f12eb9e": {
+    "root_id": "tbad1e48b5035d699cd658",
+    "family": "F1",
+    "split": "train",
+    "literal": {
+      "information_sufficient": true,
+      "need_future": false,
+      "decisive_slot": null,
+      "writable_scope": "ongoing",
+      "admissible_answers": [
+        "arroz con lentejas"
+      ]
+    },
+    "has_pair": false
+  },
+  "caso-bfd935ea8a8c8b": {
+    "root_id": "tbaea46e0c260647057440",
+    "family": "F4",
+    "split": "train",
+    "literal": {
+      "information_sufficient": true,
+      "need_future": true,
+      "decisive_slot": "TEMPORAL_SCOPE",
+      "writable_scope": "none",
+      "admissible_answers": [
+        "sopa de zapallo"
+      ]
+    },
+    "has_pair": true
+  },
+  "caso-605b507528f4c2": {
+    "root_id": "tbb3472f8267c25018bc44",
+    "family": "F0",
+    "split": "train",
+    "literal": {
+      "information_sufficient": true,
+      "need_future": false,
+      "decisive_slot": null,
+      "writable_scope": "none",
+      "admissible_answers": [
+        "tacos de hongos"
+      ]
+    },
+    "has_pair": false
+  },
+  "caso-7cb9c3db0e1857": {
+    "root_id": "tbbfc907d83ccaceeaa164",
+    "family": "F1",
+    "split": "validation",
+    "literal": {
+      "information_sufficient": true,
+      "need_future": false,
+      "decisive_slot": null,
+      "writable_scope": "ongoing",
+      "admissible_answers": [
+        "tortilla de yuca"
+      ]
+    },
+    "has_pair": false
+  },
+  "caso-f440ae268be447": {
+    "root_id": "tbc09eb340c816f0025eda",
+    "family": "F1",
+    "split": "validation",
+    "literal": {
+      "information_sufficient": true,
+      "need_future": false,
+      "decisive_slot": null,
+      "writable_scope": "ongoing",
+      "admissible_answers": [
+        "agua mineral"
+      ]
+    },
+    "has_pair": false
+  },
+  "caso-0bd32fba153805": {
+    "root_id": "tbc1026a4a2094a6a9d987",
+    "family": "F2",
+    "split": "validation",
+    "literal": {
+      "information_sufficient": true,
+      "need_future": false,
+      "decisive_slot": null,
+      "writable_scope": "interval",
+      "admissible_answers": [
+        "agua mineral"
+      ]
+    },
+    "has_pair": false
+  },
+  "caso-abf563431e75e9": {
+    "root_id": "tbc1e3a078a6cdbb9700f0",
+    "family": "F3",
+    "split": "train",
+    "literal": {
+      "information_sufficient": true,
+      "need_future": false,
+      "decisive_slot": null,
+      "writable_scope": "none",
+      "admissible_answers": [
+        "limonada con hierbabuena"
+      ]
+    },
+    "has_pair": false
+  },
+  "caso-67cd6243541e74": {
+    "root_id": "tbc341661bf9220f6ac1ef",
+    "family": "F2",
+    "split": "train",
+    "literal": {
+      "information_sufficient": true,
+      "need_future": false,
+      "decisive_slot": null,
+      "writable_scope": "interval",
+      "admissible_answers": [
+        "tamal de maíz"
+      ]
+    },
+    "has_pair": false
+  },
+  "caso-da34eade927d6b": {
+    "root_id": "tbc4d99ad133e5dc5baa6e",
+    "family": "F0",
+    "split": "train",
+    "literal": {
+      "information_sufficient": true,
+      "need_future": false,
+      "decisive_slot": null,
+      "writable_scope": "none",
+      "admissible_answers": [
+        "batido de naranjilla"
+      ]
+    },
+    "has_pair": false
+  },
+  "caso-7dbf2d2e228a3e": {
+    "root_id": "tbcc729b497c19af7c3f86",
+    "family": "F4",
+    "split": "train",
+    "literal": {
+      "information_sufficient": true,
+      "need_future": true,
+      "decisive_slot": "TEMPORAL_SCOPE",
+      "writable_scope": "none",
+      "admissible_answers": [
+        "tacos de hongos"
+      ]
+    },
+    "has_pair": true
+  },
+  "caso-a922fd728b18ed": {
+    "root_id": "tbcd73a41d15e7a2e373e6",
+    "family": "F4",
+    "split": "validation",
+    "literal": {
+      "information_sufficient": true,
+      "need_future": true,
+      "decisive_slot": "TEMPORAL_SCOPE",
+      "writable_scope": "none",
+      "admissible_answers": [
+        "agua mineral"
+      ]
+    },
+    "has_pair": true
+  },
+  "caso-e421e349e220ce": {
+    "root_id": "tbcefba26f357822998d2f",
+    "family": "F2",
+    "split": "validation",
+    "literal": {
+      "information_sufficient": true,
+      "need_future": false,
+      "decisive_slot": null,
+      "writable_scope": "interval",
+      "admissible_answers": [
+        "tacos de hongos"
+      ]
+    },
+    "has_pair": false
+  },
+  "caso-10fe297dd29bf4": {
+    "root_id": "tbcf2337639bec427984a9",
+    "family": "F4",
+    "split": "train",
+    "literal": {
+      "information_sufficient": true,
+      "need_future": true,
+      "decisive_slot": "TEMPORAL_SCOPE",
+      "writable_scope": "none",
+      "admissible_answers": [
+        "tortilla de verde"
+      ]
+    },
+    "has_pair": true
+  },
+  "caso-267a593f7894c5": {
+    "root_id": "tbd1a4f3335c76bb09a818",
+    "family": "F0",
+    "split": "train",
+    "literal": {
+      "information_sufficient": true,
+      "need_future": false,
+      "decisive_slot": null,
+      "writable_scope": "none",
+      "admissible_answers": [
+        "cachapa con queso"
+      ]
+    },
+    "has_pair": false
+  },
+  "caso-2a791c2b71da87": {
+    "root_id": "tbd3cf353c878704bb445b",
+    "family": "F1",
+    "split": "validation",
+    "literal": {
+      "information_sufficient": true,
+      "need_future": false,
+      "decisive_slot": null,
+      "writable_scope": "ongoing",
+      "admissible_answers": [
+        "café pasado"
+      ]
+    },
+    "has_pair": false
+  },
+  "caso-a767d3feda4f0b": {
+    "root_id": "tbd3d458dde05d36bcd1b9",
+    "family": "F3",
+    "split": "train",
+    "literal": {
+      "information_sufficient": false,
+      "need_future": false,
+      "decisive_slot": "CURRENT_CONTEXT",
+      "writable_scope": "none",
+      "admissible_answers": [
+        "locro de papa",
+        "sopa de zapallo"
+      ]
+    },
+    "has_pair": true
+  },
+  "caso-fd95397c4c3dd0": {
+    "root_id": "tbd5917b872eee669e71c8",
+    "family": "F4",
+    "split": "validation",
+    "literal": {
+      "information_sufficient": true,
+      "need_future": true,
+      "decisive_slot": "TEMPORAL_SCOPE",
+      "writable_scope": "none",
+      "admissible_answers": [
+        "estofado de garbanzos"
+      ]
+    },
+    "has_pair": true
+  },
+  "caso-c8dac8a2a37db7": {
+    "root_id": "tbd9bc052208e66057cb94",
+    "family": "F0",
+    "split": "train",
+    "literal": {
+      "information_sufficient": true,
+      "need_future": false,
+      "decisive_slot": null,
+      "writable_scope": "none",
+      "admissible_answers": [
+        "pescado al horno"
+      ]
+    },
+    "has_pair": false
+  },
+  "caso-7614cfa68a2d5a": {
+    "root_id": "tbda9749dd14d29ceee251",
+    "family": "F0",
+    "split": "validation",
+    "literal": {
+      "information_sufficient": true,
+      "need_future": false,
+      "decisive_slot": null,
+      "writable_scope": "none",
+      "admissible_answers": [
+        "agua de cedrón"
+      ]
+    },
+    "has_pair": false
+  },
+  "caso-4092b172c6208c": {
+    "root_id": "tbe125e184f61dc245385f",
+    "family": "F2",
+    "split": "validation",
+    "literal": {
+      "information_sufficient": true,
+      "need_future": false,
+      "decisive_slot": null,
+      "writable_scope": "interval",
+      "admissible_answers": [
+        "tostadas con tomate"
+      ]
+    },
+    "has_pair": false
+  },
+  "caso-c2973b4b4ba5dc": {
+    "root_id": "tbe4b49345ebfd652b3c3b",
+    "family": "F0",
+    "split": "validation",
+    "literal": {
+      "information_sufficient": true,
+      "need_future": false,
+      "decisive_slot": null,
+      "writable_scope": "none",
+      "admissible_answers": [
+        "pan de yuca"
+      ]
+    },
+    "has_pair": false
+  },
+  "caso-d963310c2bbc8c": {
+    "root_id": "tbe641fc8d208f0e6c5ca8",
+    "family": "F3",
+    "split": "train",
+    "literal": {
+      "information_sufficient": false,
+      "need_future": false,
+      "decisive_slot": "CURRENT_CONTEXT",
+      "writable_scope": "none",
+      "admissible_answers": [
+        "huevos con espinaca",
+        "tortilla de verde"
+      ]
+    },
+    "has_pair": true
+  },
+  "caso-bead71cc1d1ea1": {
+    "root_id": "tbe711c719544385dfb909",
+    "family": "F4",
+    "split": "train",
+    "literal": {
+      "information_sufficient": true,
+      "need_future": true,
+      "decisive_slot": "TEMPORAL_SCOPE",
+      "writable_scope": "none",
+      "admissible_answers": [
+        "pan de yuca"
+      ]
+    },
+    "has_pair": true
+  },
+  "caso-bb36b8b118f68a": {
+    "root_id": "tbe7c55d23accf42eea562",
+    "family": "F3",
+    "split": "validation",
+    "literal": {
+      "information_sufficient": true,
+      "need_future": false,
+      "decisive_slot": null,
+      "writable_scope": "none",
+      "admissible_answers": [
+        "jugo de guayaba"
+      ]
+    },
+    "has_pair": false
+  },
+  "caso-1ac3c5e27c950a": {
+    "root_id": "tbebaaa5097378554279e7",
+    "family": "F0",
+    "split": "train",
+    "literal": {
+      "information_sufficient": true,
+      "need_future": false,
+      "decisive_slot": null,
+      "writable_scope": "none",
+      "admissible_answers": [
+        "agua de coco"
+      ]
+    },
+    "has_pair": false
+  },
+  "caso-124a3a5efd6f2a": {
+    "root_id": "tbef3fc236d0b83540107f",
+    "family": "F1",
+    "split": "train",
+    "literal": {
+      "information_sufficient": true,
+      "need_future": false,
+      "decisive_slot": null,
+      "writable_scope": "ongoing",
+      "admissible_answers": [
+        "maduros asados"
+      ]
+    },
+    "has_pair": false
+  },
+  "caso-c18a66d04fac3b": {
+    "root_id": "tbf2874574e4d75f6136fc",
+    "family": "F2",
+    "split": "validation",
+    "literal": {
+      "information_sufficient": true,
+      "need_future": false,
+      "decisive_slot": null,
+      "writable_scope": "interval",
+      "admissible_answers": [
+        "agua de coco"
+      ]
+    },
+    "has_pair": false
+  },
+  "caso-ce2ebbf5ce6bc8": {
+    "root_id": "tbf392edf424d7d39b0bfc",
+    "family": "F1",
+    "split": "validation",
+    "literal": {
+      "information_sufficient": true,
+      "need_future": false,
+      "decisive_slot": null,
+      "writable_scope": "ongoing",
+      "admissible_answers": [
+        "té de jazmín"
+      ]
+    },
+    "has_pair": false
+  },
+  "caso-4cf3ad33616fa4": {
+    "root_id": "tbf40b7eadc3bcb3a4923a",
+    "family": "F3",
+    "split": "train",
+    "literal": {
+      "information_sufficient": false,
+      "need_future": false,
+      "decisive_slot": "CURRENT_CONTEXT",
+      "writable_scope": "none",
+      "admissible_answers": [
+        "pescado al horno",
+        "tacos de hongos"
+      ]
+    },
+    "has_pair": true
+  },
+  "caso-af88fdcd3b2fd2": {
+    "root_id": "tbf477c4583fa14e70fdcf",
+    "family": "F0",
+    "split": "validation",
+    "literal": {
+      "information_sufficient": true,
+      "need_future": false,
+      "decisive_slot": null,
+      "writable_scope": "none",
+      "admissible_answers": [
+        "pescado al horno"
+      ]
+    },
+    "has_pair": false
+  },
+  "caso-2b2c4558970fec": {
+    "root_id": "tbf67794f283520f46677e",
+    "family": "F3",
+    "split": "train",
+    "literal": {
+      "information_sufficient": true,
+      "need_future": false,
+      "decisive_slot": null,
+      "writable_scope": "none",
+      "admissible_answers": [
+        "agua mineral"
+      ]
+    },
+    "has_pair": false
+  },
+  "caso-8b7f91d5e1cd64": {
+    "root_id": "tbf76181fec414547ed481",
+    "family": "F3",
+    "split": "validation",
+    "literal": {
+      "information_sufficient": false,
+      "need_future": false,
+      "decisive_slot": "CURRENT_CONTEXT",
+      "writable_scope": "none",
+      "admissible_answers": [
+        "tacos de hongos",
+        "verduras al wok"
+      ]
+    },
+    "has_pair": true
+  },
+  "caso-5eccc61b66ee71": {
+    "root_id": "tbfbbf313e42e7542151fd",
+    "family": "F2",
+    "split": "validation",
+    "literal": {
+      "information_sufficient": true,
+      "need_future": false,
+      "decisive_slot": null,
+      "writable_scope": "interval",
+      "admissible_answers": [
+        "verduras al wok"
+      ]
+    },
+    "has_pair": false
+  },
+  "caso-169a707eb327d5": {
+    "root_id": "tbfbde6d19985a588a9d9c",
+    "family": "F2",
+    "split": "train",
+    "literal": {
+      "information_sufficient": true,
+      "need_future": false,
+      "decisive_slot": null,
+      "writable_scope": "interval",
+      "admissible_answers": [
+        "agua de cedrón"
+      ]
+    },
+    "has_pair": false
+  },
+  "caso-d4213cbc8c8df4": {
+    "root_id": "tbfc5f7ce1a36816ee8778",
+    "family": "F3",
+    "split": "train",
+    "literal": {
+      "information_sufficient": false,
+      "need_future": false,
+      "decisive_slot": "CURRENT_CONTEXT",
+      "writable_scope": "none",
+      "admissible_answers": [
+        "maduros asados",
+        "pan de yuca"
+      ]
+    },
+    "has_pair": true
+  },
+  "caso-c7cdc3519bcdd9": {
+    "root_id": "tbfd21bb58a71ffeb81e37",
+    "family": "F3",
+    "split": "validation",
+    "literal": {
+      "information_sufficient": false,
+      "need_future": false,
+      "decisive_slot": "CURRENT_CONTEXT",
+      "writable_scope": "none",
+      "admissible_answers": [
+        "huevos con espinaca",
+        "pan de yuca"
+      ]
+    },
+    "has_pair": true
+  }
+}

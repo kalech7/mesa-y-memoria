@@ -1,0 +1,1220 @@
+{
+  "version": "tesis_profiles_heldout_v5",
+  "rubric": [
+    "Evalúa las visitas en orden. Las visitas posteriores no son evidencia disponible para una decisión anterior.",
+    "En cada visita asume que se aplicaron antes solo las escrituras justificadas por sus mensajes. No inventes una respuesta opcional de aclaración.",
+    "En response indica ANSWER con un valor, CONDITIONALIZE con una lista ordenada de alternativas o DEFER con null.",
+    "En new_write incluye solo cambios autorizados por la visita actual. Una preferencia de otra persona no modifica la memoria del usuario. Incluye una excepción de sesión si el texto la expresa de forma explícita.",
+    "En retrieves incluye los recuerdos previos aplicables a la consulta, incluso si el mensaje actual justifica responder con otro valor. Si la consulta es condicional por lugar, conserva los dos recuerdos con sus contextos.",
+    "Cada recuerdo o escritura lleva attribute, value, scope, valid_from, valid_through_inclusive, context, session_id. Usa las fechas ISO del caso, null para el último día de un habitual y para contextos y sesiones que no aplican.",
+    "Los alcances son ongoing, contextual, interval y session. Un alcance de intervalo puede tener contexto adicional. En sesión, indica el session_id; la fecha sola no representa la vigencia.",
+    "Usa solo los archivos PUBLIC.json y REVIEW_TEMPLATE.json. Pon reviewer_id único y una justificación breve si dudas de una fecha, contexto, atribución o respuesta."
+  ],
+  "cases": [
+    {
+      "id": "nuevo-01",
+      "question_budget": 2,
+      "prior_user_evidence": [
+        {
+          "date": "2038-06-01",
+          "text": "Mi ficha de desayunos de cada semana usa avena con canela.",
+          "context": null
+        },
+        {
+          "date": "2038-06-01",
+          "text": "La cena que tengo guardada de costumbre es mote con queso.",
+          "context": null
+        },
+        {
+          "date": "2038-06-01",
+          "text": "En mi lista de bebidas, agua mineral es lo de diario.",
+          "context": null
+        }
+      ],
+      "visits": [
+        {
+          "visit": 1,
+          "session_id": "S2",
+          "date": "2038-06-12",
+          "context": null,
+          "attribute": "breakfast_preference",
+          "user_message": "Me acaban de entregar un paquete y debo firmar; apenas alcanzo a escribir esto. Para el desayuno, prefiero humita de choclo. Lo de las próximas comidas sigue por resolver.",
+          "question": "¿Qué puedo servir de desayuno en esta visita?"
+        },
+        {
+          "visit": 2,
+          "session_id": "S3",
+          "date": "2038-06-15",
+          "context": null,
+          "attribute": "dinner_preference",
+          "user_message": "Suspendieron la cena fuera. Para la cena, prefiero tacos de hongos. Ahora sí puedo completar lo que haga falta.",
+          "question": "¿Qué cena elijo para esta noche?"
+        },
+        {
+          "visit": 3,
+          "session_id": "S4",
+          "date": "2038-06-18",
+          "context": null,
+          "attribute": "drink_preference",
+          "user_message": "Cambió el lugar de la reunión. Para la bebida, prefiero agua de coco.",
+          "question": "¿Qué bebida me corresponde ahora?"
+        }
+      ],
+      "future_queries": [
+        {
+          "attribute": "breakfast_preference",
+          "date": "2038-06-22",
+          "session_id": "S5",
+          "context": null
+        },
+        {
+          "attribute": "dinner_preference",
+          "date": "2038-06-24",
+          "session_id": "S5",
+          "context": null
+        },
+        {
+          "attribute": "drink_preference",
+          "date": "2038-06-26",
+          "session_id": "S5",
+          "context": null
+        }
+      ]
+    },
+    {
+      "id": "nuevo-02",
+      "question_budget": 2,
+      "prior_user_evidence": [
+        {
+          "date": "2038-06-01",
+          "text": "El jugo de guayaba es mi bebida habitual.",
+          "context": null
+        },
+        {
+          "date": "2038-06-01",
+          "text": "Para cenar normalmente preparo sopa de zapallo.",
+          "context": null
+        },
+        {
+          "date": "2038-06-01",
+          "text": "Mi desayuno de costumbre es pan de yuca.",
+          "context": null
+        }
+      ],
+      "visits": [
+        {
+          "visit": 1,
+          "session_id": "S2",
+          "date": "2038-06-12",
+          "context": null,
+          "attribute": "drink_preference",
+          "user_message": "Puedo sentarme a revisar el pedido contigo. Para la bebida, prefiero café pasado.",
+          "question": "¿Qué preparo de bebida hoy?"
+        },
+        {
+          "visit": 2,
+          "session_id": "S3",
+          "date": "2038-06-15",
+          "context": null,
+          "attribute": "dinner_preference",
+          "user_message": "Se atrasó la entrega y hoy cocino. Para la cena, prefiero estofado de garbanzos.",
+          "question": "¿Qué ceno esta vez?"
+        },
+        {
+          "visit": 3,
+          "session_id": "S4",
+          "date": "2038-06-18",
+          "context": null,
+          "attribute": "breakfast_preference",
+          "user_message": "He dejado intacto el desayuno. Puedes leer mi ficha de siempre.",
+          "question": "¿Qué desayunaba habitualmente?"
+        }
+      ],
+      "future_queries": [
+        {
+          "attribute": "drink_preference",
+          "date": "2038-06-22",
+          "session_id": "S5",
+          "context": null
+        },
+        {
+          "attribute": "drink_preference",
+          "date": "2038-06-26",
+          "session_id": "S5",
+          "context": null
+        },
+        {
+          "attribute": "dinner_preference",
+          "date": "2038-06-25",
+          "session_id": "S5",
+          "context": null
+        }
+      ]
+    },
+    {
+      "id": "nuevo-03",
+      "question_budget": 2,
+      "prior_user_evidence": [
+        {
+          "date": "2038-06-01",
+          "text": "En la cena mi elección habitual es locro de papa.",
+          "context": null
+        },
+        {
+          "date": "2038-06-01",
+          "text": "Normalmente desayuno papaya picada.",
+          "context": null
+        },
+        {
+          "date": "2038-06-01",
+          "text": "Guarda agua de cedrón como mi bebida habitual.",
+          "context": null
+        }
+      ],
+      "visits": [
+        {
+          "visit": 1,
+          "session_id": "S2",
+          "date": "2038-06-12",
+          "context": null,
+          "attribute": "dinner_preference",
+          "user_message": "Mientras espero a que se enfríe la olla tengo tiempo. Para la cena, prefiero verduras al wok.",
+          "question": "¿Qué cena tengo para esta ocasión?"
+        },
+        {
+          "visit": 2,
+          "session_id": "S3",
+          "date": "2038-06-15",
+          "context": null,
+          "attribute": "breakfast_preference",
+          "user_message": "Ya me llamaron a ventanilla. Para el desayuno, prefiero tamal de maíz.",
+          "question": "¿Qué desayuno sirvo ahora?"
+        },
+        {
+          "visit": 3,
+          "session_id": "S4",
+          "date": "2038-06-18",
+          "context": null,
+          "attribute": "drink_preference",
+          "user_message": "Hemos decidido hacer aquí la merienda. Para la bebida, prefiero infusión de menta.",
+          "question": "¿Qué bebida preparo?"
+        }
+      ],
+      "future_queries": [
+        {
+          "attribute": "dinner_preference",
+          "date": "2038-06-23",
+          "session_id": "S5",
+          "context": null
+        },
+        {
+          "attribute": "dinner_preference",
+          "date": "2038-06-26",
+          "session_id": "S5",
+          "context": null
+        },
+        {
+          "attribute": "drink_preference",
+          "date": "2038-06-23",
+          "session_id": "S5",
+          "context": null
+        }
+      ]
+    },
+    {
+      "id": "nuevo-04",
+      "question_budget": 2,
+      "prior_user_evidence": [
+        {
+          "date": "2038-06-01",
+          "text": "Mi desayuno usual es maduros asados.",
+          "context": null
+        },
+        {
+          "date": "2038-06-01",
+          "text": "Lo habitual de bebida es jugo de maracuyá.",
+          "context": null
+        },
+        {
+          "date": "2038-06-01",
+          "text": "La cena normal de mi lista es pescado al horno.",
+          "context": null
+        }
+      ],
+      "visits": [
+        {
+          "visit": 1,
+          "session_id": "S2",
+          "date": "2038-06-12",
+          "context": null,
+          "attribute": "breakfast_preference",
+          "user_message": "Me toca entrar al taller y cierro el teléfono. Para el desayuno, prefiero tostadas con tomate. Si me dejas la duda escrita, te la aclaro al volver.",
+          "question": "¿Qué desayuno me sirve hoy?"
+        },
+        {
+          "visit": 2,
+          "session_id": "S3",
+          "date": "2038-06-15",
+          "context": null,
+          "attribute": "drink_preference",
+          "user_message": "Ya salí del taller. La bebida queda como estaba.",
+          "question": "¿Qué bebida figura como habitual?"
+        },
+        {
+          "visit": 3,
+          "session_id": "S4",
+          "date": "2038-06-18",
+          "context": null,
+          "attribute": "dinner_preference",
+          "user_message": "Pensé que cenaría donde mi tía y cambiamos el plan. Para la cena, prefiero arroz con lentejas.",
+          "question": "¿Qué puedo ponerme de cena ahora?"
+        }
+      ],
+      "future_queries": [
+        {
+          "attribute": "breakfast_preference",
+          "date": "2038-06-22",
+          "session_id": "S5",
+          "context": null
+        },
+        {
+          "attribute": "breakfast_preference",
+          "date": "2038-06-25",
+          "session_id": "S5",
+          "context": null
+        },
+        {
+          "attribute": "dinner_preference",
+          "date": "2038-06-24",
+          "session_id": "S5",
+          "context": null
+        }
+      ]
+    },
+    {
+      "id": "nuevo-05",
+      "question_budget": 2,
+      "prior_user_evidence": [
+        {
+          "date": "2038-06-01",
+          "text": "Mi cena habitual es ensalada de quinua.",
+          "context": null
+        },
+        {
+          "date": "2038-06-01",
+          "text": "Mi bebida de diario es horchata lojana.",
+          "context": null
+        },
+        {
+          "date": "2038-06-01",
+          "text": "El desayuno habitual que tengo guardado es yogur con mango.",
+          "context": null
+        }
+      ],
+      "visits": [
+        {
+          "visit": 1,
+          "session_id": "S2",
+          "date": "2038-06-12",
+          "context": null,
+          "attribute": "dinner_preference",
+          "user_message": "Estoy por coger carretera. Para la cena, prefiero tortilla de yuca. El papel donde anoté las fechas lo tengo al regreso de este viaje.",
+          "question": "¿Qué cena puedo preparar antes de salir?"
+        },
+        {
+          "visit": 2,
+          "session_id": "S3",
+          "date": "2038-06-15",
+          "context": null,
+          "attribute": "breakfast_preference",
+          "user_message": "Me quedan unos minutos en una parada. Para el desayuno, prefiero pan de centeno.",
+          "question": "¿Qué desayuno pongo hoy?"
+        },
+        {
+          "visit": 3,
+          "session_id": "S4",
+          "date": "2038-06-18",
+          "context": null,
+          "attribute": "drink_preference",
+          "user_message": "Acabo de volver y abrí de nuevo mi lista. De bebida seguimos igual.",
+          "question": "¿Qué bebida habitual tengo anotada?"
+        }
+      ],
+      "future_queries": [
+        {
+          "attribute": "dinner_preference",
+          "date": "2038-06-23",
+          "session_id": "S5",
+          "context": null
+        },
+        {
+          "attribute": "breakfast_preference",
+          "date": "2038-06-23",
+          "session_id": "S5",
+          "context": null
+        },
+        {
+          "attribute": "dinner_preference",
+          "date": "2038-06-26",
+          "session_id": "S5",
+          "context": null
+        }
+      ]
+    },
+    {
+      "id": "nuevo-06",
+      "question_budget": 2,
+      "prior_user_evidence": [
+        {
+          "date": "2038-06-01",
+          "text": "Mi bebida habitual es té de jazmín.",
+          "context": null
+        },
+        {
+          "date": "2038-06-01",
+          "text": "En la cena normalmente repito menestra de fréjol.",
+          "context": null
+        },
+        {
+          "date": "2038-06-01",
+          "text": "Mi desayuno cotidiano es humita de choclo.",
+          "context": null
+        }
+      ],
+      "visits": [
+        {
+          "visit": 1,
+          "session_id": "S2",
+          "date": "2038-06-12",
+          "context": null,
+          "attribute": "drink_preference",
+          "user_message": "Me están haciendo una prueba de sonido y ahora no escucho bien. Para la bebida, prefiero agua de coco. En el siguiente descanso puedo confirmar si lo dejo fijo.",
+          "question": "¿Qué bebida sirvo ya?"
+        },
+        {
+          "visit": 2,
+          "session_id": "S3",
+          "date": "2038-06-15",
+          "context": null,
+          "attribute": "dinner_preference",
+          "user_message": "Se reprogramó el ensayo y me encargo de la cena. Para la cena, prefiero mote con queso.",
+          "question": "¿Qué cena preparo para hoy?"
+        },
+        {
+          "visit": 3,
+          "session_id": "S4",
+          "date": "2038-06-18",
+          "context": null,
+          "attribute": "breakfast_preference",
+          "user_message": "El desayuno ha seguido tal cual, sin cambios.",
+          "question": "¿Qué desayuno tenía como habitual?"
+        }
+      ],
+      "future_queries": [
+        {
+          "attribute": "drink_preference",
+          "date": "2038-06-23",
+          "session_id": "S5",
+          "context": null
+        },
+        {
+          "attribute": "dinner_preference",
+          "date": "2038-06-23",
+          "session_id": "S5",
+          "context": null
+        },
+        {
+          "attribute": "breakfast_preference",
+          "date": "2038-06-24",
+          "session_id": "S5",
+          "context": null
+        }
+      ]
+    },
+    {
+      "id": "nuevo-07",
+      "question_budget": 2,
+      "prior_user_evidence": [
+        {
+          "date": "2038-06-01",
+          "text": "Para cenar habitualmente guardé sopa de zapallo.",
+          "context": null
+        },
+        {
+          "date": "2038-06-01",
+          "text": "La bebida habitual es agua mineral.",
+          "context": null
+        }
+      ],
+      "visits": [
+        {
+          "visit": 1,
+          "session_id": "S2",
+          "date": "2038-06-12",
+          "context": null,
+          "attribute": "dinner_preference",
+          "user_message": "El comedor estará cerrado desde hoy hasta el 16 de junio incluido. En ese lapso me quedo con choclo con queso para la cena; después retoma mi costumbre.",
+          "question": "¿Qué cena uso hoy?"
+        },
+        {
+          "visit": 2,
+          "session_id": "S3",
+          "date": "2038-06-16",
+          "context": null,
+          "attribute": "dinner_preference",
+          "user_message": "Hoy es el último turno con el comedor cerrado.",
+          "question": "¿Qué cena sigue vigente en esta fecha?"
+        },
+        {
+          "visit": 3,
+          "session_id": "S4",
+          "date": "2038-06-18",
+          "context": null,
+          "attribute": "dinner_preference",
+          "user_message": "El comedor reabrió y quiero recuperar mi ficha de diario.",
+          "question": "¿Qué cena habitual me toca ahora?"
+        }
+      ],
+      "future_queries": [
+        {
+          "attribute": "dinner_preference",
+          "date": "2038-06-22",
+          "session_id": "S5",
+          "context": null
+        },
+        {
+          "attribute": "drink_preference",
+          "date": "2038-06-23",
+          "session_id": "S5",
+          "context": null
+        },
+        {
+          "attribute": "dinner_preference",
+          "date": "2038-06-26",
+          "session_id": "S5",
+          "context": null
+        }
+      ]
+    },
+    {
+      "id": "nuevo-08",
+      "question_budget": 2,
+      "prior_user_evidence": [
+        {
+          "date": "2038-06-01",
+          "text": "El desayuno que tengo de siempre es tortilla de verde.",
+          "context": null
+        },
+        {
+          "date": "2038-06-01",
+          "text": "Normalmente bebo jugo de tomate de árbol.",
+          "context": null
+        }
+      ],
+      "visits": [
+        {
+          "visit": 1,
+          "session_id": "S2",
+          "date": "2038-06-12",
+          "context": null,
+          "attribute": "breakfast_preference",
+          "user_message": "El horario de madrugada arranca el 17 de junio. Desde esa fecha mi desayuno habitual pasa a huevos con espinaca. Para hoy conserva la ficha anterior.",
+          "question": "¿Qué desayuno preparo hoy?"
+        },
+        {
+          "visit": 2,
+          "session_id": "S3",
+          "date": "2038-06-15",
+          "context": null,
+          "attribute": "breakfast_preference",
+          "user_message": "Todavía faltan dos días para arrancar. Estoy usando mi desayuno previo.",
+          "question": "¿Qué desayuno es el de esta fecha?"
+        },
+        {
+          "visit": 3,
+          "session_id": "S4",
+          "date": "2038-06-18",
+          "context": null,
+          "attribute": "breakfast_preference",
+          "user_message": "Ya trabajé el primer turno de madrugada.",
+          "question": "¿Qué desayuno habíamos fijado a partir del 17?"
+        }
+      ],
+      "future_queries": [
+        {
+          "attribute": "breakfast_preference",
+          "date": "2038-06-22",
+          "session_id": "S5",
+          "context": null
+        },
+        {
+          "attribute": "drink_preference",
+          "date": "2038-06-22",
+          "session_id": "S5",
+          "context": null
+        },
+        {
+          "attribute": "breakfast_preference",
+          "date": "2038-06-25",
+          "session_id": "S5",
+          "context": null
+        }
+      ]
+    },
+    {
+      "id": "nuevo-09",
+      "question_budget": 2,
+      "prior_user_evidence": [
+        {
+          "date": "2038-06-01",
+          "text": "Café pasado figura como mi bebida habitual.",
+          "context": null
+        },
+        {
+          "date": "2038-06-03",
+          "text": "Mi excepción fue batido de naranjilla entre el 3 y el 7 inclusive.",
+          "context": null
+        },
+        {
+          "date": "2038-06-01",
+          "text": "Mi cena normal es tacos de hongos.",
+          "context": null
+        }
+      ],
+      "visits": [
+        {
+          "visit": 1,
+          "session_id": "S2",
+          "date": "2038-06-12",
+          "context": null,
+          "attribute": "drink_preference",
+          "user_message": "He encontrado el ticket del batido del día 7. Esa excepción quedó atrás.",
+          "question": "¿Qué bebida de diario tengo vigente?"
+        },
+        {
+          "visit": 2,
+          "session_id": "S3",
+          "date": "2038-06-15",
+          "context": null,
+          "attribute": "dinner_preference",
+          "user_message": "Del menú de cena nadie ha cambiado la ficha.",
+          "question": "¿Qué cena era la habitual?"
+        },
+        {
+          "visit": 3,
+          "session_id": "S4",
+          "date": "2038-06-18",
+          "context": null,
+          "attribute": "drink_preference",
+          "user_message": "Voy a repetir el pedido corriente de esta semana.",
+          "question": "¿Qué bebida debo recuperar?"
+        }
+      ],
+      "future_queries": [
+        {
+          "attribute": "drink_preference",
+          "date": "2038-06-22",
+          "session_id": "S5",
+          "context": null
+        },
+        {
+          "attribute": "dinner_preference",
+          "date": "2038-06-23",
+          "session_id": "S5",
+          "context": null
+        },
+        {
+          "attribute": "drink_preference",
+          "date": "2038-06-25",
+          "session_id": "S5",
+          "context": null
+        }
+      ]
+    },
+    {
+      "id": "nuevo-10",
+      "question_budget": 2,
+      "prior_user_evidence": [
+        {
+          "date": "2038-06-01",
+          "text": "Mi bebida habitual en casa es infusión de menta.",
+          "context": "casa"
+        },
+        {
+          "date": "2038-06-01",
+          "text": "En la oficina mi bebida normal es agua de coco.",
+          "context": "oficina"
+        }
+      ],
+      "visits": [
+        {
+          "visit": 1,
+          "session_id": "S2",
+          "date": "2038-06-12",
+          "context": "oficina",
+          "attribute": "drink_preference",
+          "user_message": "La ficha que tengo en la oficina se quedó vieja. Allí cambia mi bebida habitual a horchata lojana.",
+          "question": "¿Qué pongo de bebida en la oficina?"
+        },
+        {
+          "visit": 2,
+          "session_id": "S3",
+          "date": "2038-06-15",
+          "context": "casa",
+          "attribute": "drink_preference",
+          "user_message": "Se cortó la luz del edificio y me mandaron a trabajar a casa.",
+          "question": "¿Qué bebida recupero para casa?"
+        },
+        {
+          "visit": 3,
+          "session_id": "S4",
+          "date": "2038-06-18",
+          "context": "oficina",
+          "attribute": "drink_preference",
+          "user_message": "Arreglaron la luz y volví al puesto de la oficina.",
+          "question": "¿Qué bebida quedó en mi ficha de oficina?"
+        }
+      ],
+      "future_queries": [
+        {
+          "attribute": "drink_preference",
+          "date": "2038-06-22",
+          "session_id": "S5",
+          "context": "casa"
+        },
+        {
+          "attribute": "drink_preference",
+          "date": "2038-06-22",
+          "session_id": "S5",
+          "context": "oficina"
+        },
+        {
+          "attribute": "drink_preference",
+          "date": "2038-06-26",
+          "session_id": "S5",
+          "context": "oficina"
+        }
+      ]
+    },
+    {
+      "id": "nuevo-11",
+      "question_budget": 2,
+      "prior_user_evidence": [
+        {
+          "date": "2038-06-01",
+          "text": "En casa mi cena habitual es pescado al horno.",
+          "context": "casa"
+        },
+        {
+          "date": "2038-06-01",
+          "text": "La cena de costumbre en la oficina es arroz con lentejas.",
+          "context": "oficina"
+        }
+      ],
+      "visits": [
+        {
+          "visit": 1,
+          "session_id": "S2",
+          "date": "2038-06-12",
+          "context": null,
+          "attribute": "dinner_preference",
+          "user_message": "Me falta saber dónde acaba el turno. La sede cambia cuál de mis dos cenas uso.",
+          "question": "¿Qué cena corresponde si aún no sé dónde estaré?"
+        },
+        {
+          "visit": 2,
+          "session_id": "S3",
+          "date": "2038-06-15",
+          "context": "casa",
+          "attribute": "dinner_preference",
+          "user_message": "Me confirmaron que estaré en casa durante esta visita.",
+          "question": "¿Qué cena recupero en casa?"
+        },
+        {
+          "visit": 3,
+          "session_id": "S4",
+          "date": "2038-06-18",
+          "context": "oficina",
+          "attribute": "dinner_preference",
+          "user_message": "Hoy me quedé en la oficina hasta el cierre.",
+          "question": "¿Qué cena me corresponde en la oficina?"
+        }
+      ],
+      "future_queries": [
+        {
+          "attribute": "dinner_preference",
+          "date": "2038-06-22",
+          "session_id": "S5",
+          "context": "casa"
+        },
+        {
+          "attribute": "dinner_preference",
+          "date": "2038-06-23",
+          "session_id": "S5",
+          "context": "oficina"
+        },
+        {
+          "attribute": "dinner_preference",
+          "date": "2038-06-26",
+          "session_id": "S5",
+          "context": "casa"
+        }
+      ]
+    },
+    {
+      "id": "nuevo-12",
+      "question_budget": 2,
+      "prior_user_evidence": [
+        {
+          "date": "2038-06-01",
+          "text": "En casa habitualmente desayuno papaya picada.",
+          "context": "casa"
+        },
+        {
+          "date": "2038-06-01",
+          "text": "En la oficina mi desayuno habitual es tostadas con tomate.",
+          "context": "oficina"
+        }
+      ],
+      "visits": [
+        {
+          "visit": 1,
+          "session_id": "S2",
+          "date": "2038-06-12",
+          "context": "oficina",
+          "attribute": "breakfast_preference",
+          "user_message": "Para la oficina durante el inventario, desde hoy hasta el 16 inclusive, apúntame avena con canela como desayuno. Fuera de eso quedan mis fichas.",
+          "question": "¿Qué desayuno toca hoy en la oficina?"
+        },
+        {
+          "visit": 2,
+          "session_id": "S3",
+          "date": "2038-06-15",
+          "context": "casa",
+          "attribute": "breakfast_preference",
+          "user_message": "El inventario sigue, pero hoy me lo asignaron desde casa.",
+          "question": "¿Qué desayuno uso para casa?"
+        },
+        {
+          "visit": 3,
+          "session_id": "S4",
+          "date": "2038-06-18",
+          "context": "oficina",
+          "attribute": "breakfast_preference",
+          "user_message": "Se cerró el inventario y estoy otra vez en la oficina.",
+          "question": "¿Qué desayuno normal tengo allí?"
+        }
+      ],
+      "future_queries": [
+        {
+          "attribute": "breakfast_preference",
+          "date": "2038-06-22",
+          "session_id": "S5",
+          "context": "oficina"
+        },
+        {
+          "attribute": "breakfast_preference",
+          "date": "2038-06-23",
+          "session_id": "S5",
+          "context": "casa"
+        },
+        {
+          "attribute": "breakfast_preference",
+          "date": "2038-06-26",
+          "session_id": "S5",
+          "context": "oficina"
+        }
+      ]
+    },
+    {
+      "id": "nuevo-13",
+      "question_budget": 2,
+      "prior_user_evidence": [
+        {
+          "date": "2038-06-01",
+          "text": "Agua de cedrón es mi bebida habitual.",
+          "context": null
+        },
+        {
+          "date": "2038-06-01",
+          "text": "Mi desayuno habitual es cachapa con queso.",
+          "context": null
+        }
+      ],
+      "visits": [
+        {
+          "visit": 1,
+          "session_id": "S2",
+          "date": "2038-06-12",
+          "context": null,
+          "attribute": "drink_preference",
+          "user_message": "Me reenviaron una nota de Lidia que dice «mi bebida para diario es jugo de guayaba». Solo la copio para su encargo; lo mío sigue igual.",
+          "question": "¿Qué bebida tengo en mi propia ficha?"
+        },
+        {
+          "visit": 2,
+          "session_id": "S3",
+          "date": "2038-06-15",
+          "context": null,
+          "attribute": "breakfast_preference",
+          "user_message": "Lidia me confirmó que ella desayuna humita de choclo. Mi ficha no cambia por ese pedido.",
+          "question": "¿Qué desayuno había dejado para mí?"
+        },
+        {
+          "visit": 3,
+          "session_id": "S4",
+          "date": "2038-06-18",
+          "context": null,
+          "attribute": "drink_preference",
+          "user_message": "Ya entregué el encargo de Lidia. Ahora reviso mi lista de nuevo.",
+          "question": "¿Qué bebida tengo como hábito?"
+        }
+      ],
+      "future_queries": [
+        {
+          "attribute": "drink_preference",
+          "date": "2038-06-22",
+          "session_id": "S5",
+          "context": null
+        },
+        {
+          "attribute": "breakfast_preference",
+          "date": "2038-06-23",
+          "session_id": "S5",
+          "context": null
+        },
+        {
+          "attribute": "drink_preference",
+          "date": "2038-06-26",
+          "session_id": "S5",
+          "context": null
+        }
+      ]
+    },
+    {
+      "id": "nuevo-14",
+      "question_budget": 2,
+      "prior_user_evidence": [
+        {
+          "date": "2038-06-01",
+          "text": "La cena habitual de mi ficha es mote con queso.",
+          "context": null
+        },
+        {
+          "date": "2038-06-01",
+          "text": "Suelo beber limonada con hierbabuena.",
+          "context": null
+        }
+      ],
+      "visits": [
+        {
+          "visit": 1,
+          "session_id": "S2",
+          "date": "2038-06-12",
+          "context": null,
+          "attribute": "dinner_preference",
+          "user_message": "Anota una rectificación para mí: mi cena habitual ahora es menestra de fréjol. El mote con queso lo preparo para mi sobrino desde hoy.",
+          "question": "¿Qué cena pongo en mi ficha personal?"
+        },
+        {
+          "visit": 2,
+          "session_id": "S3",
+          "date": "2038-06-15",
+          "context": null,
+          "attribute": "drink_preference",
+          "user_message": "Mi sobrino pidió jugo de maracuyá para él. Mi bebida sigue en la ficha de siempre.",
+          "question": "¿Qué bebida tenía yo?"
+        },
+        {
+          "visit": 3,
+          "session_id": "S4",
+          "date": "2038-06-18",
+          "context": null,
+          "attribute": "dinner_preference",
+          "user_message": "El sobrino repite su plato. Yo quiero seguir con la rectificación que te indiqué.",
+          "question": "¿Qué cena habitual quedó para mí?"
+        }
+      ],
+      "future_queries": [
+        {
+          "attribute": "dinner_preference",
+          "date": "2038-06-22",
+          "session_id": "S5",
+          "context": null
+        },
+        {
+          "attribute": "drink_preference",
+          "date": "2038-06-23",
+          "session_id": "S5",
+          "context": null
+        },
+        {
+          "attribute": "dinner_preference",
+          "date": "2038-06-26",
+          "session_id": "S5",
+          "context": null
+        }
+      ]
+    },
+    {
+      "id": "nuevo-15",
+      "question_budget": 2,
+      "prior_user_evidence": [
+        {
+          "date": "2038-06-01",
+          "text": "Habitualmente desayuno pan de centeno.",
+          "context": null
+        },
+        {
+          "date": "2038-06-01",
+          "text": "Para cenar normalmente guardo verduras al wok.",
+          "context": null
+        }
+      ],
+      "visits": [
+        {
+          "visit": 1,
+          "session_id": "S2",
+          "date": "2038-06-12",
+          "context": null,
+          "attribute": "breakfast_preference",
+          "user_message": "Mario quiso apuntar en mi cuaderno «prefiero tamal de maíz». Le dije que lo ponga en su propio cuaderno y que mi desayuno sigue igual.",
+          "question": "¿Qué desayuno tengo registrado para mí?"
+        },
+        {
+          "visit": 2,
+          "session_id": "S3",
+          "date": "2038-06-15",
+          "context": null,
+          "attribute": "dinner_preference",
+          "user_message": "También aparece el plato de Mario, locro de papa, al margen de mi lista. Es para él.",
+          "question": "¿Qué cena recupero de mi ficha?"
+        },
+        {
+          "visit": 3,
+          "session_id": "S4",
+          "date": "2038-06-18",
+          "context": null,
+          "attribute": "breakfast_preference",
+          "user_message": "Borré el apunte ajeno y solo quedó mi menú de costumbre.",
+          "question": "¿Qué desayuno corresponde a mi ficha?"
+        }
+      ],
+      "future_queries": [
+        {
+          "attribute": "breakfast_preference",
+          "date": "2038-06-22",
+          "session_id": "S5",
+          "context": null
+        },
+        {
+          "attribute": "dinner_preference",
+          "date": "2038-06-23",
+          "session_id": "S5",
+          "context": null
+        },
+        {
+          "attribute": "breakfast_preference",
+          "date": "2038-06-26",
+          "session_id": "S5",
+          "context": null
+        }
+      ]
+    },
+    {
+      "id": "nuevo-16",
+      "question_budget": 2,
+      "prior_user_evidence": [
+        {
+          "date": "2038-06-01",
+          "text": "Lo habitual de cena para mí es tortilla de yuca.",
+          "context": null
+        },
+        {
+          "date": "2038-06-01",
+          "text": "Mi desayuno normal es maduros asados.",
+          "context": null
+        }
+      ],
+      "visits": [
+        {
+          "visit": 1,
+          "session_id": "S2",
+          "date": "2038-06-12",
+          "context": null,
+          "attribute": "dinner_preference",
+          "user_message": "Voy a usar la cocina pequeña por unos días. Para la cena, prefiero sopa de zapallo.",
+          "question": "¿Qué cena puedo hacer hoy?"
+        },
+        {
+          "visit": 2,
+          "session_id": "S3",
+          "date": "2038-06-15",
+          "context": null,
+          "attribute": "breakfast_preference",
+          "user_message": "La obra no afectó a mis desayunos. Continúan los que ya tenía.",
+          "question": "¿Qué desayuno tenía anotado?"
+        },
+        {
+          "visit": 3,
+          "session_id": "S4",
+          "date": "2038-06-18",
+          "context": null,
+          "attribute": "breakfast_preference",
+          "user_message": "Solo estoy comprobando el menú del desayuno; no te estoy cambiando la cena otra vez.",
+          "question": "¿Qué desayuno sigo usando?"
+        }
+      ],
+      "future_queries": [
+        {
+          "attribute": "dinner_preference",
+          "date": "2038-06-22",
+          "session_id": "S5",
+          "context": null
+        },
+        {
+          "attribute": "dinner_preference",
+          "date": "2038-06-24",
+          "session_id": "S5",
+          "context": null
+        },
+        {
+          "attribute": "breakfast_preference",
+          "date": "2038-06-26",
+          "session_id": "S5",
+          "context": null
+        }
+      ]
+    },
+    {
+      "id": "nuevo-17",
+      "question_budget": 2,
+      "prior_user_evidence": [
+        {
+          "date": "2038-06-01",
+          "text": "Humita de choclo es mi desayuno habitual.",
+          "context": null
+        },
+        {
+          "date": "2038-06-01",
+          "text": "Mi bebida de siempre es horchata lojana.",
+          "context": null
+        }
+      ],
+      "visits": [
+        {
+          "visit": 1,
+          "session_id": "S2",
+          "date": "2038-06-12",
+          "context": null,
+          "attribute": "breakfast_preference",
+          "user_message": "Compré una porción que debo terminar. Para el desayuno, prefiero yogur con mango solo durante esta sesión. En la ficha deja mi hábito tal cual.",
+          "question": "¿Qué desayuno me sirvo en esta ocasión?"
+        },
+        {
+          "visit": 2,
+          "session_id": "S3",
+          "date": "2038-06-15",
+          "context": null,
+          "attribute": "breakfast_preference",
+          "user_message": "Terminé aquella porción y esta es otra sesión.",
+          "question": "¿Qué desayuno habitual tengo que recuperar?"
+        },
+        {
+          "visit": 3,
+          "session_id": "S4",
+          "date": "2038-06-18",
+          "context": null,
+          "attribute": "drink_preference",
+          "user_message": "Al final me encargo también de la bebida. Para la bebida, prefiero jugo de maracuyá.",
+          "question": "¿Qué bebida preparo ahora?"
+        }
+      ],
+      "future_queries": [
+        {
+          "attribute": "breakfast_preference",
+          "date": "2038-06-22",
+          "session_id": "S5",
+          "context": null
+        },
+        {
+          "attribute": "drink_preference",
+          "date": "2038-06-23",
+          "session_id": "S5",
+          "context": null
+        },
+        {
+          "attribute": "drink_preference",
+          "date": "2038-06-26",
+          "session_id": "S5",
+          "context": null
+        }
+      ]
+    },
+    {
+      "id": "nuevo-18",
+      "question_budget": 2,
+      "prior_user_evidence": [
+        {
+          "date": "2038-06-01",
+          "text": "Lo habitual para beber es agua de coco.",
+          "context": null
+        },
+        {
+          "date": "2038-06-01",
+          "text": "Arroz con lentejas es mi cena habitual.",
+          "context": null
+        }
+      ],
+      "visits": [
+        {
+          "visit": 1,
+          "session_id": "S2",
+          "date": "2038-06-12",
+          "context": null,
+          "attribute": "drink_preference",
+          "user_message": "El grupo de mi hermana compró té de jazmín para ellos durante el curso. Mi bebida queda como en la ficha.",
+          "question": "¿Qué bebida tengo yo para estos días?"
+        },
+        {
+          "visit": 2,
+          "session_id": "S3",
+          "date": "2038-06-15",
+          "context": null,
+          "attribute": "dinner_preference",
+          "user_message": "Hasta que acabe el día 18 de junio inclusive, mi cena será estofado de garbanzos. Después recupera el arroz con lentejas.",
+          "question": "¿Qué cena toca hoy?"
+        },
+        {
+          "visit": 3,
+          "session_id": "S4",
+          "date": "2038-06-18",
+          "context": null,
+          "attribute": "dinner_preference",
+          "user_message": "Hoy se cumple el último día de la excepción. Estoy cerrando el curso.",
+          "question": "¿Qué cena sigue válida hoy?"
+        }
+      ],
+      "future_queries": [
+        {
+          "attribute": "dinner_preference",
+          "date": "2038-06-22",
+          "session_id": "S5",
+          "context": null
+        },
+        {
+          "attribute": "drink_preference",
+          "date": "2038-06-23",
+          "session_id": "S5",
+          "context": null
+        },
+        {
+          "attribute": "dinner_preference",
+          "date": "2038-06-26",
+          "session_id": "S5",
+          "context": null
+        }
+      ]
+    }
+  ]
+}

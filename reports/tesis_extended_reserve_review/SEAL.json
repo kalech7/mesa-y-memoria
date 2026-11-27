@@ -1,0 +1,14 @@
+{
+  "status": "frozen_before_selection",
+  "sealed_at_utc": "2026-11-17T14:26:54.192095+00:00",
+  "manifest_sha256": "9c259716493e46d58486a41aa0a7a6bd0f006fc12e1d01273bb399686154ac0e",
+  "loader_sha256": "e1e274434f050dd96c73d2d3ad8ee69535254847e7b6f10c9591dfedde15149d",
+  "review_comparison_sha256": "3e0ad62d9a151e3c3625d93d02f2b958ded53bad8d4ac900474504d931064769",
+  "adjudication_sha256": "8079a0001fec0dd3f5843c48e98c224fb83ee6702cf0d8ccf053af00e34ed8b4",
+  "ai_blind_reviews": 2,
+  "human_reviews": 0,
+  "adjudication_changes": 0,
+  "roots": 12,
+  "worlds": 16,
+  "visits": 36
+}

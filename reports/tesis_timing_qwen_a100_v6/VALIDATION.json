@@ -1,0 +1,3022 @@
+{
+  "candidates": {
+    "101/SFT-ramas": [
+      {
+        "cutoff": "always",
+        "macro": {
+          "future_supported": 0.6216666666666667,
+          "current_supported": 1.0,
+          "future_unsupported_reuse": 0.0,
+          "questions": 0.5,
+          "future_queries": 6.000000000000001,
+          "future_positive_queries": 3.0000000000000004,
+          "future_positive_supported": 0.73,
+          "future_correct_abstentions": 3.0000000000000004,
+          "asked_first": 0.5,
+          "asked_second": 0.0,
+          "asked_second_nonpositive_margin": 0.0
+        },
+        "round": 1,
+        "adapter": "seed-101/SFT-ramas/checkpoint-001/adapter",
+        "grid": [
+          {
+            "cutoff": "always",
+            "macro": {
+              "future_supported": 0.6216666666666667,
+              "current_supported": 1.0,
+              "future_unsupported_reuse": 0.0,
+              "questions": 0.5,
+              "future_queries": 6.000000000000001,
+              "future_positive_queries": 3.0000000000000004,
+              "future_positive_supported": 0.73,
+              "future_correct_abstentions": 3.0000000000000004,
+              "asked_first": 0.5,
+              "asked_second": 0.0,
+              "asked_second_nonpositive_margin": 0.0
+            }
+          },
+          {
+            "cutoff": 0.0,
+            "macro": {
+              "future_supported": 0.6216666666666667,
+              "current_supported": 1.0,
+              "future_unsupported_reuse": 0.0,
+              "questions": 0.5,
+              "future_queries": 6.000000000000001,
+              "future_positive_queries": 3.0000000000000004,
+              "future_positive_supported": 0.73,
+              "future_correct_abstentions": 3.0000000000000004,
+              "asked_first": 0.5,
+              "asked_second": 0.0,
+              "asked_second_nonpositive_margin": 0.0
+            }
+          },
+          {
+            "cutoff": 5.125,
+            "macro": {
+              "future_supported": 0.6216666666666667,
+              "current_supported": 1.0,
+              "future_unsupported_reuse": 0.0,
+              "questions": 0.5,
+              "future_queries": 6.000000000000001,
+              "future_positive_queries": 3.0000000000000004,
+              "future_positive_supported": 0.73,
+              "future_correct_abstentions": 3.0000000000000004,
+              "asked_first": 0.5,
+              "asked_second": 0.0,
+              "asked_second_nonpositive_margin": 0.0
+            }
+          },
+          {
+            "cutoff": 5.25,
+            "macro": {
+              "future_supported": 0.615,
+              "current_supported": 1.0,
+              "future_unsupported_reuse": 0.0,
+              "questions": 0.5,
+              "future_queries": 6.000000000000001,
+              "future_positive_queries": 3.0000000000000004,
+              "future_positive_supported": 0.6900000000000001,
+              "future_correct_abstentions": 3.0000000000000004,
+              "asked_first": 0.18333333333333335,
+              "asked_second": 0.31666666666666665,
+              "asked_second_nonpositive_margin": 0.0
+            }
+          },
+          {
+            "cutoff": 5.375,
+            "macro": {
+              "future_supported": 0.6183333333333333,
+              "current_supported": 1.0,
+              "future_unsupported_reuse": 0.0,
+              "questions": 0.5,
+              "future_queries": 6.000000000000001,
+              "future_positive_queries": 3.0000000000000004,
+              "future_positive_supported": 0.71,
+              "future_correct_abstentions": 3.0000000000000004,
+              "asked_first": 0.016666666666666666,
+              "asked_second": 0.48333333333333334,
+              "asked_second_nonpositive_margin": 0.0
+            }
+          },
+          {
+            "cutoff": "never",
+            "macro": {
+              "future_supported": 0.6216666666666667,
+              "current_supported": 1.0,
+              "future_unsupported_reuse": 0.0,
+              "questions": 0.5,
+              "future_queries": 6.000000000000001,
+              "future_positive_queries": 3.0000000000000004,
+              "future_positive_supported": 0.73,
+              "future_correct_abstentions": 3.0000000000000004,
+              "asked_first": 0.0,
+              "asked_second": 0.5,
+              "asked_second_nonpositive_margin": 0.0
+            }
+          }
+        ]
+      },
+      {
+        "cutoff": 3.75,
+        "macro": {
+          "future_supported": 0.635,
+          "current_supported": 1.0,
+          "future_unsupported_reuse": 0.0,
+          "questions": 0.5,
+          "future_queries": 6.000000000000001,
+          "future_positive_queries": 3.0000000000000004,
+          "future_positive_supported": 0.81,
+          "future_correct_abstentions": 3.0000000000000004,
+          "asked_first": 0.35,
+          "asked_second": 0.15,
+          "asked_second_nonpositive_margin": 0.0
+        },
+        "round": 2,
+        "adapter": "seed-101/SFT-ramas/checkpoint-002/adapter",
+        "grid": [
+          {
+            "cutoff": "always",
+            "macro": {
+              "future_supported": 0.625,
+              "current_supported": 1.0,
+              "future_unsupported_reuse": 0.0,
+              "questions": 0.5,
+              "future_queries": 6.000000000000001,
+              "future_positive_queries": 3.0000000000000004,
+              "future_positive_supported": 0.75,
+              "future_correct_abstentions": 3.0000000000000004,
+              "asked_first": 0.5,
+              "asked_second": 0.0,
+              "asked_second_nonpositive_margin": 0.0
+            }
+          },
+          {
+            "cutoff": 0.0,
+            "macro": {
+              "future_supported": 0.625,
+              "current_supported": 1.0,
+              "future_unsupported_reuse": 0.0,
+              "questions": 0.5,
+              "future_queries": 6.000000000000001,
+              "future_positive_queries": 3.0000000000000004,
+              "future_positive_supported": 0.75,
+              "future_correct_abstentions": 3.0000000000000004,
+              "asked_first": 0.5,
+              "asked_second": 0.0,
+              "asked_second_nonpositive_margin": 0.0
+            }
+          },
+          {
+            "cutoff": 3.5,
+            "macro": {
+              "future_supported": 0.625,
+              "current_supported": 1.0,
+              "future_unsupported_reuse": 0.0,
+              "questions": 0.5,
+              "future_queries": 6.000000000000001,
+              "future_positive_queries": 3.0000000000000004,
+              "future_positive_supported": 0.75,
+              "future_correct_abstentions": 3.0000000000000004,
+              "asked_first": 0.5,
+              "asked_second": 0.0,
+              "asked_second_nonpositive_margin": 0.0
+            }
+          },
+          {
+            "cutoff": 3.75,
+            "macro": {
+              "future_supported": 0.635,
+              "current_supported": 1.0,
+              "future_unsupported_reuse": 0.0,
+              "questions": 0.5,
+              "future_queries": 6.000000000000001,
+              "future_positive_queries": 3.0000000000000004,
+              "future_positive_supported": 0.81,
+              "future_correct_abstentions": 3.0000000000000004,
+              "asked_first": 0.35,
+              "asked_second": 0.15,
+              "asked_second_nonpositive_margin": 0.0
+            }
+          },
+          {
+            "cutoff": 3.875,
+            "macro": {
+              "future_supported": 0.6283333333333333,
+              "current_supported": 1.0,
+              "future_unsupported_reuse": 0.0,
+              "questions": 0.5,
+              "future_queries": 6.000000000000001,
+              "future_positive_queries": 3.0000000000000004,
+              "future_positive_supported": 0.77,
+              "future_correct_abstentions": 3.0000000000000004,
+              "asked_first": 0.16666666666666666,
+              "asked_second": 0.3333333333333333,
+              "asked_second_nonpositive_margin": 0.0
+            }
+          },
+          {
+            "cutoff": 4.0,
+            "macro": {
+              "future_supported": 0.6283333333333333,
+              "current_supported": 1.0,
+              "future_unsupported_reuse": 0.0,
+              "questions": 0.5,
+              "future_queries": 6.000000000000001,
+              "future_positive_queries": 3.0000000000000004,
+              "future_positive_supported": 0.77,
+              "future_correct_abstentions": 3.0000000000000004,
+              "asked_first": 0.016666666666666666,
+              "asked_second": 0.48333333333333334,
+              "asked_second_nonpositive_margin": 0.0
+            }
+          },
+          {
+            "cutoff": "never",
+            "macro": {
+              "future_supported": 0.625,
+              "current_supported": 1.0,
+              "future_unsupported_reuse": 0.0,
+              "questions": 0.5,
+              "future_queries": 6.000000000000001,
+              "future_positive_queries": 3.0000000000000004,
+              "future_positive_supported": 0.75,
+              "future_correct_abstentions": 3.0000000000000004,
+              "asked_first": 0.0,
+              "asked_second": 0.5,
+              "asked_second_nonpositive_margin": 0.0
+            }
+          }
+        ]
+      }
+    ],
+    "101/GRPO-continuacion": [
+      {
+        "cutoff": -0.375,
+        "macro": {
+          "future_supported": 0.6283333333333333,
+          "current_supported": 1.0,
+          "future_unsupported_reuse": 0.0,
+          "questions": 0.5,
+          "future_queries": 6.000000000000001,
+          "future_positive_queries": 3.0000000000000004,
+          "future_positive_supported": 0.77,
+          "future_correct_abstentions": 3.0000000000000004,
+          "asked_first": 0.3333333333333333,
+          "asked_second": 0.16666666666666666,
+          "asked_second_nonpositive_margin": 0.16666666666666666
+        },
+        "round": 1,
+        "adapter": "seed-101/GRPO-continuacion/checkpoint-001/adapter",
+        "grid": [
+          {
+            "cutoff": "always",
+            "macro": {
+              "future_supported": 0.6216666666666667,
+              "current_supported": 1.0,
+              "future_unsupported_reuse": 0.0,
+              "questions": 0.5,
+              "future_queries": 6.000000000000001,
+              "future_positive_queries": 3.0000000000000004,
+              "future_positive_supported": 0.73,
+              "future_correct_abstentions": 3.0000000000000004,
+              "asked_first": 0.5,
+              "asked_second": 0.0,
+              "asked_second_nonpositive_margin": 0.0
+            }
+          },
+          {
+            "cutoff": -0.625,
+            "macro": {
+              "future_supported": 0.6216666666666667,
+              "current_supported": 1.0,
+              "future_unsupported_reuse": 0.0,
+              "questions": 0.5,
+              "future_queries": 6.000000000000001,
+              "future_positive_queries": 3.0000000000000004,
+              "future_positive_supported": 0.73,
+              "future_correct_abstentions": 3.0000000000000004,
+              "asked_first": 0.5,
+              "asked_second": 0.0,
+              "asked_second_nonpositive_margin": 0.0
+            }
+          },
+          {
+            "cutoff": -0.375,
+            "macro": {
+              "future_supported": 0.6283333333333333,
+              "current_supported": 1.0,
+              "future_unsupported_reuse": 0.0,
+              "questions": 0.5,
+              "future_queries": 6.000000000000001,
+              "future_positive_queries": 3.0000000000000004,
+              "future_positive_supported": 0.77,
+              "future_correct_abstentions": 3.0000000000000004,
+              "asked_first": 0.3333333333333333,
+              "asked_second": 0.16666666666666666,
+              "asked_second_nonpositive_margin": 0.16666666666666666
+            }
+          },
+          {
+            "cutoff": -0.25,
+            "macro": {
+              "future_supported": 0.6283333333333333,
+              "current_supported": 1.0,
+              "future_unsupported_reuse": 0.0,
+              "questions": 0.5,
+              "future_queries": 6.000000000000001,
+              "future_positive_queries": 3.0000000000000004,
+              "future_positive_supported": 0.77,
+              "future_correct_abstentions": 3.0000000000000004,
+              "asked_first": 0.08333333333333333,
+              "asked_second": 0.4166666666666667,
+              "asked_second_nonpositive_margin": 0.4166666666666667
+            }
+          },
+          {
+            "cutoff": 0.0,
+            "macro": {
+              "future_supported": 0.6283333333333333,
+              "current_supported": 1.0,
+              "future_unsupported_reuse": 0.0,
+              "questions": 0.5,
+              "future_queries": 6.000000000000001,
+              "future_positive_queries": 3.0000000000000004,
+              "future_positive_supported": 0.77,
+              "future_correct_abstentions": 3.0000000000000004,
+              "asked_first": 0.0,
+              "asked_second": 0.5,
+              "asked_second_nonpositive_margin": 0.5
+            }
+          },
+          {
+            "cutoff": "never",
+            "macro": {
+              "future_supported": 0.6283333333333333,
+              "current_supported": 1.0,
+              "future_unsupported_reuse": 0.0,
+              "questions": 0.5,
+              "future_queries": 6.000000000000001,
+              "future_positive_queries": 3.0000000000000004,
+              "future_positive_supported": 0.77,
+              "future_correct_abstentions": 3.0000000000000004,
+              "asked_first": 0.0,
+              "asked_second": 0.5,
+              "asked_second_nonpositive_margin": 0.5
+            }
+          }
+        ]
+      },
+      {
+        "cutoff": 1.25,
+        "macro": {
+          "future_supported": 0.6316666666666667,
+          "current_supported": 1.0,
+          "future_unsupported_reuse": 0.0,
+          "questions": 0.5,
+          "future_queries": 6.000000000000001,
+          "future_positive_queries": 3.0000000000000004,
+          "future_positive_supported": 0.79,
+          "future_correct_abstentions": 3.0000000000000004,
+          "asked_first": 0.35,
+          "asked_second": 0.15,
+          "asked_second_nonpositive_margin": 0.0
+        },
+        "round": 2,
+        "adapter": "seed-101/GRPO-continuacion/checkpoint-002/adapter",
+        "grid": [
+          {
+            "cutoff": "always",
+            "macro": {
+              "future_supported": 0.6216666666666667,
+              "current_supported": 1.0,
+              "future_unsupported_reuse": 0.0,
+              "questions": 0.5,
+              "future_queries": 6.000000000000001,
+              "future_positive_queries": 3.0000000000000004,
+              "future_positive_supported": 0.73,
+              "future_correct_abstentions": 3.0000000000000004,
+              "asked_first": 0.5,
+              "asked_second": 0.0,
+              "asked_second_nonpositive_margin": 0.0
+            }
+          },
+          {
+            "cutoff": 0.0,
+            "macro": {
+              "future_supported": 0.6216666666666667,
+              "current_supported": 1.0,
+              "future_unsupported_reuse": 0.0,
+              "questions": 0.5,
+              "future_queries": 6.000000000000001,
+              "future_positive_queries": 3.0000000000000004,
+              "future_positive_supported": 0.73,
+              "future_correct_abstentions": 3.0000000000000004,
+              "asked_first": 0.5,
+              "asked_second": 0.0,
+              "asked_second_nonpositive_margin": 0.0
+            }
+          },
+          {
+            "cutoff": 1.25,
+            "macro": {
+              "future_supported": 0.6316666666666667,
+              "current_supported": 1.0,
+              "future_unsupported_reuse": 0.0,
+              "questions": 0.5,
+              "future_queries": 6.000000000000001,
+              "future_positive_queries": 3.0000000000000004,
+              "future_positive_supported": 0.79,
+              "future_correct_abstentions": 3.0000000000000004,
+              "asked_first": 0.35,
+              "asked_second": 0.15,
+              "asked_second_nonpositive_margin": 0.0
+            }
+          },
+          {
+            "cutoff": 1.375,
+            "macro": {
+              "future_supported": 0.6216666666666667,
+              "current_supported": 1.0,
+              "future_unsupported_reuse": 0.0,
+              "questions": 0.5,
+              "future_queries": 6.000000000000001,
+              "future_positive_queries": 3.0000000000000004,
+              "future_positive_supported": 0.73,
+              "future_correct_abstentions": 3.0000000000000004,
+              "asked_first": 0.1,
+              "asked_second": 0.4,
+              "asked_second_nonpositive_margin": 0.0
+            }
+          },
+          {
+            "cutoff": "never",
+            "macro": {
+              "future_supported": 0.6216666666666667,
+              "current_supported": 1.0,
+              "future_unsupported_reuse": 0.0,
+              "questions": 0.5,
+              "future_queries": 6.000000000000001,
+              "future_positive_queries": 3.0000000000000004,
+              "future_positive_supported": 0.73,
+              "future_correct_abstentions": 3.0000000000000004,
+              "asked_first": 0.0,
+              "asked_second": 0.5,
+              "asked_second_nonpositive_margin": 0.0
+            }
+          }
+        ]
+      }
+    ],
+    "101/GRPO-inmediato": [
+      {
+        "cutoff": -6.0,
+        "macro": {
+          "future_supported": 0.6283333333333333,
+          "current_supported": 1.0,
+          "future_unsupported_reuse": 0.0,
+          "questions": 0.5,
+          "future_queries": 6.000000000000001,
+          "future_positive_queries": 3.0000000000000004,
+          "future_positive_supported": 0.77,
+          "future_correct_abstentions": 3.0000000000000004,
+          "asked_first": 0.38333333333333336,
+          "asked_second": 0.11666666666666667,
+          "asked_second_nonpositive_margin": 0.11666666666666667
+        },
+        "round": 1,
+        "adapter": "seed-101/GRPO-inmediato/checkpoint-001/adapter",
+        "grid": [
+          {
+            "cutoff": "always",
+            "macro": {
+              "future_supported": 0.6216666666666667,
+              "current_supported": 1.0,
+              "future_unsupported_reuse": 0.0,
+              "questions": 0.5,
+              "future_queries": 6.000000000000001,
+              "future_positive_queries": 3.0000000000000004,
+              "future_positive_supported": 0.73,
+              "future_correct_abstentions": 3.0000000000000004,
+              "asked_first": 0.5,
+              "asked_second": 0.0,
+              "asked_second_nonpositive_margin": 0.0
+            }
+          },
+          {
+            "cutoff": -6.375,
+            "macro": {
+              "future_supported": 0.6216666666666667,
+              "current_supported": 1.0,
+              "future_unsupported_reuse": 0.0,
+              "questions": 0.5,
+              "future_queries": 6.000000000000001,
+              "future_positive_queries": 3.0000000000000004,
+              "future_positive_supported": 0.73,
+              "future_correct_abstentions": 3.0000000000000004,
+              "asked_first": 0.5,
+              "asked_second": 0.0,
+              "asked_second_nonpositive_margin": 0.0
+            }
+          },
+          {
+            "cutoff": -6.0,
+            "macro": {
+              "future_supported": 0.6283333333333333,
+              "current_supported": 1.0,
+              "future_unsupported_reuse": 0.0,
+              "questions": 0.5,
+              "future_queries": 6.000000000000001,
+              "future_positive_queries": 3.0000000000000004,
+              "future_positive_supported": 0.77,
+              "future_correct_abstentions": 3.0000000000000004,
+              "asked_first": 0.38333333333333336,
+              "asked_second": 0.11666666666666667,
+              "asked_second_nonpositive_margin": 0.11666666666666667
+            }
+          },
+          {
+            "cutoff": -5.75,
+            "macro": {
+              "future_supported": 0.625,
+              "current_supported": 1.0,
+              "future_unsupported_reuse": 0.0,
+              "questions": 0.5,
+              "future_queries": 6.000000000000001,
+              "future_positive_queries": 3.0000000000000004,
+              "future_positive_supported": 0.75,
+              "future_correct_abstentions": 3.0000000000000004,
+              "asked_first": 0.25,
+              "asked_second": 0.25,
+              "asked_second_nonpositive_margin": 0.25
+            }
+          },
+          {
+            "cutoff": -5.375,
+            "macro": {
+              "future_supported": 0.6283333333333333,
+              "current_supported": 1.0,
+              "future_unsupported_reuse": 0.0,
+              "questions": 0.5,
+              "future_queries": 6.000000000000001,
+              "future_positive_queries": 3.0000000000000004,
+              "future_positive_supported": 0.77,
+              "future_correct_abstentions": 3.0000000000000004,
+              "asked_first": 0.0,
+              "asked_second": 0.5,
+              "asked_second_nonpositive_margin": 0.5
+            }
+          },
+          {
+            "cutoff": 0.0,
+            "macro": {
+              "future_supported": 0.6283333333333333,
+              "current_supported": 1.0,
+              "future_unsupported_reuse": 0.0,
+              "questions": 0.5,
+              "future_queries": 6.000000000000001,
+              "future_positive_queries": 3.0000000000000004,
+              "future_positive_supported": 0.77,
+              "future_correct_abstentions": 3.0000000000000004,
+              "asked_first": 0.0,
+              "asked_second": 0.5,
+              "asked_second_nonpositive_margin": 0.5
+            }
+          },
+          {
+            "cutoff": "never",
+            "macro": {
+              "future_supported": 0.6283333333333333,
+              "current_supported": 1.0,
+              "future_unsupported_reuse": 0.0,
+              "questions": 0.5,
+              "future_queries": 6.000000000000001,
+              "future_positive_queries": 3.0000000000000004,
+              "future_positive_supported": 0.77,
+              "future_correct_abstentions": 3.0000000000000004,
+              "asked_first": 0.0,
+              "asked_second": 0.5,
+              "asked_second_nonpositive_margin": 0.5
+            }
+          }
+        ]
+      },
+      {
+        "cutoff": -7.25,
+        "macro": {
+          "future_supported": 0.6316666666666667,
+          "current_supported": 1.0,
+          "future_unsupported_reuse": 0.0,
+          "questions": 0.5,
+          "future_queries": 6.000000000000001,
+          "future_positive_queries": 3.0000000000000004,
+          "future_positive_supported": 0.79,
+          "future_correct_abstentions": 3.0000000000000004,
+          "asked_first": 0.4,
+          "asked_second": 0.1,
+          "asked_second_nonpositive_margin": 0.1
+        },
+        "round": 2,
+        "adapter": "seed-101/GRPO-inmediato/checkpoint-002/adapter",
+        "grid": [
+          {
+            "cutoff": "always",
+            "macro": {
+              "future_supported": 0.6216666666666667,
+              "current_supported": 1.0,
+              "future_unsupported_reuse": 0.0,
+              "questions": 0.5,
+              "future_queries": 6.000000000000001,
+              "future_positive_queries": 3.0000000000000004,
+              "future_positive_supported": 0.73,
+              "future_correct_abstentions": 3.0000000000000004,
+              "asked_first": 0.5,
+              "asked_second": 0.0,
+              "asked_second_nonpositive_margin": 0.0
+            }
+          },
+          {
+            "cutoff": -7.5,
+            "macro": {
+              "future_supported": 0.6216666666666667,
+              "current_supported": 1.0,
+              "future_unsupported_reuse": 0.0,
+              "questions": 0.5,
+              "future_queries": 6.000000000000001,
+              "future_positive_queries": 3.0000000000000004,
+              "future_positive_supported": 0.73,
+              "future_correct_abstentions": 3.0000000000000004,
+              "asked_first": 0.5,
+              "asked_second": 0.0,
+              "asked_second_nonpositive_margin": 0.0
+            }
+          },
+          {
+            "cutoff": -7.25,
+            "macro": {
+              "future_supported": 0.6316666666666667,
+              "current_supported": 1.0,
+              "future_unsupported_reuse": 0.0,
+              "questions": 0.5,
+              "future_queries": 6.000000000000001,
+              "future_positive_queries": 3.0000000000000004,
+              "future_positive_supported": 0.79,
+              "future_correct_abstentions": 3.0000000000000004,
+              "asked_first": 0.4,
+              "asked_second": 0.1,
+              "asked_second_nonpositive_margin": 0.1
+            }
+          },
+          {
+            "cutoff": -6.875,
+            "macro": {
+              "future_supported": 0.625,
+              "current_supported": 1.0,
+              "future_unsupported_reuse": 0.0,
+              "questions": 0.5,
+              "future_queries": 6.000000000000001,
+              "future_positive_queries": 3.0000000000000004,
+              "future_positive_supported": 0.75,
+              "future_correct_abstentions": 3.0000000000000004,
+              "asked_first": 0.25,
+              "asked_second": 0.25,
+              "asked_second_nonpositive_margin": 0.25
+            }
+          },
+          {
+            "cutoff": -6.625,
+            "macro": {
+              "future_supported": 0.6216666666666667,
+              "current_supported": 1.0,
+              "future_unsupported_reuse": 0.0,
+              "questions": 0.5,
+              "future_queries": 6.000000000000001,
+              "future_positive_queries": 3.0000000000000004,
+              "future_positive_supported": 0.73,
+              "future_correct_abstentions": 3.0000000000000004,
+              "asked_first": 0.016666666666666666,
+              "asked_second": 0.48333333333333334,
+              "asked_second_nonpositive_margin": 0.48333333333333334
+            }
+          },
+          {
+            "cutoff": 0.0,
+            "macro": {
+              "future_supported": 0.625,
+              "current_supported": 1.0,
+              "future_unsupported_reuse": 0.0,
+              "questions": 0.5,
+              "future_queries": 6.000000000000001,
+              "future_positive_queries": 3.0000000000000004,
+              "future_positive_supported": 0.75,
+              "future_correct_abstentions": 3.0000000000000004,
+              "asked_first": 0.0,
+              "asked_second": 0.5,
+              "asked_second_nonpositive_margin": 0.5
+            }
+          },
+          {
+            "cutoff": "never",
+            "macro": {
+              "future_supported": 0.625,
+              "current_supported": 1.0,
+              "future_unsupported_reuse": 0.0,
+              "questions": 0.5,
+              "future_queries": 6.000000000000001,
+              "future_positive_queries": 3.0000000000000004,
+              "future_positive_supported": 0.75,
+              "future_correct_abstentions": 3.0000000000000004,
+              "asked_first": 0.0,
+              "asked_second": 0.5,
+              "asked_second_nonpositive_margin": 0.5
+            }
+          }
+        ]
+      }
+    ],
+    "101/GRPO-continuacion-fija": [
+      {
+        "cutoff": -0.375,
+        "macro": {
+          "future_supported": 0.6283333333333333,
+          "current_supported": 1.0,
+          "future_unsupported_reuse": 0.0,
+          "questions": 0.5,
+          "future_queries": 6.000000000000001,
+          "future_positive_queries": 3.0000000000000004,
+          "future_positive_supported": 0.77,
+          "future_correct_abstentions": 3.0000000000000004,
+          "asked_first": 0.3333333333333333,
+          "asked_second": 0.16666666666666666,
+          "asked_second_nonpositive_margin": 0.16666666666666666
+        },
+        "round": 1,
+        "adapter": "seed-101/GRPO-continuacion-fija/checkpoint-001/adapter",
+        "grid": [
+          {
+            "cutoff": "always",
+            "macro": {
+              "future_supported": 0.6216666666666667,
+              "current_supported": 1.0,
+              "future_unsupported_reuse": 0.0,
+              "questions": 0.5,
+              "future_queries": 6.000000000000001,
+              "future_positive_queries": 3.0000000000000004,
+              "future_positive_supported": 0.73,
+              "future_correct_abstentions": 3.0000000000000004,
+              "asked_first": 0.5,
+              "asked_second": 0.0,
+              "asked_second_nonpositive_margin": 0.0
+            }
+          },
+          {
+            "cutoff": -0.625,
+            "macro": {
+              "future_supported": 0.6216666666666667,
+              "current_supported": 1.0,
+              "future_unsupported_reuse": 0.0,
+              "questions": 0.5,
+              "future_queries": 6.000000000000001,
+              "future_positive_queries": 3.0000000000000004,
+              "future_positive_supported": 0.73,
+              "future_correct_abstentions": 3.0000000000000004,
+              "asked_first": 0.5,
+              "asked_second": 0.0,
+              "asked_second_nonpositive_margin": 0.0
+            }
+          },
+          {
+            "cutoff": -0.375,
+            "macro": {
+              "future_supported": 0.6283333333333333,
+              "current_supported": 1.0,
+              "future_unsupported_reuse": 0.0,
+              "questions": 0.5,
+              "future_queries": 6.000000000000001,
+              "future_positive_queries": 3.0000000000000004,
+              "future_positive_supported": 0.77,
+              "future_correct_abstentions": 3.0000000000000004,
+              "asked_first": 0.3333333333333333,
+              "asked_second": 0.16666666666666666,
+              "asked_second_nonpositive_margin": 0.16666666666666666
+            }
+          },
+          {
+            "cutoff": -0.25,
+            "macro": {
+              "future_supported": 0.6283333333333333,
+              "current_supported": 1.0,
+              "future_unsupported_reuse": 0.0,
+              "questions": 0.5,
+              "future_queries": 6.000000000000001,
+              "future_positive_queries": 3.0000000000000004,
+              "future_positive_supported": 0.77,
+              "future_correct_abstentions": 3.0000000000000004,
+              "asked_first": 0.08333333333333333,
+              "asked_second": 0.4166666666666667,
+              "asked_second_nonpositive_margin": 0.4166666666666667
+            }
+          },
+          {
+            "cutoff": 0.0,
+            "macro": {
+              "future_supported": 0.6283333333333333,
+              "current_supported": 1.0,
+              "future_unsupported_reuse": 0.0,
+              "questions": 0.5,
+              "future_queries": 6.000000000000001,
+              "future_positive_queries": 3.0000000000000004,
+              "future_positive_supported": 0.77,
+              "future_correct_abstentions": 3.0000000000000004,
+              "asked_first": 0.0,
+              "asked_second": 0.5,
+              "asked_second_nonpositive_margin": 0.5
+            }
+          },
+          {
+            "cutoff": "never",
+            "macro": {
+              "future_supported": 0.6283333333333333,
+              "current_supported": 1.0,
+              "future_unsupported_reuse": 0.0,
+              "questions": 0.5,
+              "future_queries": 6.000000000000001,
+              "future_positive_queries": 3.0000000000000004,
+              "future_positive_supported": 0.77,
+              "future_correct_abstentions": 3.0000000000000004,
+              "asked_first": 0.0,
+              "asked_second": 0.5,
+              "asked_second_nonpositive_margin": 0.5
+            }
+          }
+        ]
+      },
+      {
+        "cutoff": 1.375,
+        "macro": {
+          "future_supported": 0.625,
+          "current_supported": 1.0,
+          "future_unsupported_reuse": 0.0,
+          "questions": 0.5,
+          "future_queries": 6.000000000000001,
+          "future_positive_queries": 3.0000000000000004,
+          "future_positive_supported": 0.75,
+          "future_correct_abstentions": 3.0000000000000004,
+          "asked_first": 0.4166666666666667,
+          "asked_second": 0.08333333333333333,
+          "asked_second_nonpositive_margin": 0.0
+        },
+        "round": 2,
+        "adapter": "seed-101/GRPO-continuacion-fija/checkpoint-002/adapter",
+        "grid": [
+          {
+            "cutoff": "always",
+            "macro": {
+              "future_supported": 0.6183333333333333,
+              "current_supported": 1.0,
+              "future_unsupported_reuse": 0.0,
+              "questions": 0.5,
+              "future_queries": 6.000000000000001,
+              "future_positive_queries": 3.0000000000000004,
+              "future_positive_supported": 0.7100000000000001,
+              "future_correct_abstentions": 3.0000000000000004,
+              "asked_first": 0.5,
+              "asked_second": 0.0,
+              "asked_second_nonpositive_margin": 0.0
+            }
+          },
+          {
+            "cutoff": 0.0,
+            "macro": {
+              "future_supported": 0.6183333333333333,
+              "current_supported": 1.0,
+              "future_unsupported_reuse": 0.0,
+              "questions": 0.5,
+              "future_queries": 6.000000000000001,
+              "future_positive_queries": 3.0000000000000004,
+              "future_positive_supported": 0.7100000000000001,
+              "future_correct_abstentions": 3.0000000000000004,
+              "asked_first": 0.5,
+              "asked_second": 0.0,
+              "asked_second_nonpositive_margin": 0.0
+            }
+          },
+          {
+            "cutoff": 1.375,
+            "macro": {
+              "future_supported": 0.625,
+              "current_supported": 1.0,
+              "future_unsupported_reuse": 0.0,
+              "questions": 0.5,
+              "future_queries": 6.000000000000001,
+              "future_positive_queries": 3.0000000000000004,
+              "future_positive_supported": 0.75,
+              "future_correct_abstentions": 3.0000000000000004,
+              "asked_first": 0.4166666666666667,
+              "asked_second": 0.08333333333333333,
+              "asked_second_nonpositive_margin": 0.0
+            }
+          },
+          {
+            "cutoff": 1.5,
+            "macro": {
+              "future_supported": 0.625,
+              "current_supported": 1.0,
+              "future_unsupported_reuse": 0.0,
+              "questions": 0.5,
+              "future_queries": 6.000000000000001,
+              "future_positive_queries": 3.0000000000000004,
+              "future_positive_supported": 0.75,
+              "future_correct_abstentions": 3.0000000000000004,
+              "asked_first": 0.06666666666666667,
+              "asked_second": 0.43333333333333335,
+              "asked_second_nonpositive_margin": 0.0
+            }
+          },
+          {
+            "cutoff": "never",
+            "macro": {
+              "future_supported": 0.625,
+              "current_supported": 1.0,
+              "future_unsupported_reuse": 0.0,
+              "questions": 0.5,
+              "future_queries": 6.000000000000001,
+              "future_positive_queries": 3.0000000000000004,
+              "future_positive_supported": 0.75,
+              "future_correct_abstentions": 3.0000000000000004,
+              "asked_first": 0.0,
+              "asked_second": 0.5,
+              "asked_second_nonpositive_margin": 0.0
+            }
+          }
+        ]
+      }
+    ],
+    "202/SFT-ramas": [
+      {
+        "cutoff": 6.0,
+        "macro": {
+          "future_supported": 0.6316666666666667,
+          "current_supported": 1.0,
+          "future_unsupported_reuse": 0.0,
+          "questions": 0.5,
+          "future_queries": 6.000000000000001,
+          "future_positive_queries": 3.0000000000000004,
+          "future_positive_supported": 0.79,
+          "future_correct_abstentions": 3.0000000000000004,
+          "asked_first": 0.36666666666666664,
+          "asked_second": 0.13333333333333333,
+          "asked_second_nonpositive_margin": 0.0
+        },
+        "round": 1,
+        "adapter": "seed-202/SFT-ramas/checkpoint-001/adapter",
+        "grid": [
+          {
+            "cutoff": "always",
+            "macro": {
+              "future_supported": 0.6216666666666667,
+              "current_supported": 1.0,
+              "future_unsupported_reuse": 0.0,
+              "questions": 0.5,
+              "future_queries": 6.000000000000001,
+              "future_positive_queries": 3.0000000000000004,
+              "future_positive_supported": 0.73,
+              "future_correct_abstentions": 3.0000000000000004,
+              "asked_first": 0.5,
+              "asked_second": 0.0,
+              "asked_second_nonpositive_margin": 0.0
+            }
+          },
+          {
+            "cutoff": 0.0,
+            "macro": {
+              "future_supported": 0.6216666666666667,
+              "current_supported": 1.0,
+              "future_unsupported_reuse": 0.0,
+              "questions": 0.5,
+              "future_queries": 6.000000000000001,
+              "future_positive_queries": 3.0000000000000004,
+              "future_positive_supported": 0.73,
+              "future_correct_abstentions": 3.0000000000000004,
+              "asked_first": 0.5,
+              "asked_second": 0.0,
+              "asked_second_nonpositive_margin": 0.0
+            }
+          },
+          {
+            "cutoff": 5.875,
+            "macro": {
+              "future_supported": 0.6216666666666667,
+              "current_supported": 1.0,
+              "future_unsupported_reuse": 0.0,
+              "questions": 0.5,
+              "future_queries": 6.000000000000001,
+              "future_positive_queries": 3.0000000000000004,
+              "future_positive_supported": 0.73,
+              "future_correct_abstentions": 3.0000000000000004,
+              "asked_first": 0.48333333333333334,
+              "asked_second": 0.016666666666666666,
+              "asked_second_nonpositive_margin": 0.0
+            }
+          },
+          {
+            "cutoff": 6.0,
+            "macro": {
+              "future_supported": 0.6316666666666667,
+              "current_supported": 1.0,
+              "future_unsupported_reuse": 0.0,
+              "questions": 0.5,
+              "future_queries": 6.000000000000001,
+              "future_positive_queries": 3.0000000000000004,
+              "future_positive_supported": 0.79,
+              "future_correct_abstentions": 3.0000000000000004,
+              "asked_first": 0.36666666666666664,
+              "asked_second": 0.13333333333333333,
+              "asked_second_nonpositive_margin": 0.0
+            }
+          },
+          {
+            "cutoff": 6.125,
+            "macro": {
+              "future_supported": 0.6216666666666667,
+              "current_supported": 1.0,
+              "future_unsupported_reuse": 0.0,
+              "questions": 0.5,
+              "future_queries": 6.000000000000001,
+              "future_positive_queries": 3.0000000000000004,
+              "future_positive_supported": 0.73,
+              "future_correct_abstentions": 3.0000000000000004,
+              "asked_first": 0.11666666666666667,
+              "asked_second": 0.38333333333333336,
+              "asked_second_nonpositive_margin": 0.0
+            }
+          },
+          {
+            "cutoff": 6.25,
+            "macro": {
+              "future_supported": 0.6216666666666667,
+              "current_supported": 1.0,
+              "future_unsupported_reuse": 0.0,
+              "questions": 0.5,
+              "future_queries": 6.000000000000001,
+              "future_positive_queries": 3.0000000000000004,
+              "future_positive_supported": 0.73,
+              "future_correct_abstentions": 3.0000000000000004,
+              "asked_first": 0.03333333333333333,
+              "asked_second": 0.4666666666666667,
+              "asked_second_nonpositive_margin": 0.0
+            }
+          },
+          {
+            "cutoff": "never",
+            "macro": {
+              "future_supported": 0.6216666666666667,
+              "current_supported": 1.0,
+              "future_unsupported_reuse": 0.0,
+              "questions": 0.5,
+              "future_queries": 6.000000000000001,
+              "future_positive_queries": 3.0000000000000004,
+              "future_positive_supported": 0.73,
+              "future_correct_abstentions": 3.0000000000000004,
+              "asked_first": 0.0,
+              "asked_second": 0.5,
+              "asked_second_nonpositive_margin": 0.0
+            }
+          }
+        ]
+      },
+      {
+        "cutoff": 3.25,
+        "macro": {
+          "future_supported": 0.6216666666666667,
+          "current_supported": 1.0,
+          "future_unsupported_reuse": 0.0,
+          "questions": 0.5,
+          "future_queries": 6.000000000000001,
+          "future_positive_queries": 3.0000000000000004,
+          "future_positive_supported": 0.73,
+          "future_correct_abstentions": 3.0000000000000004,
+          "asked_first": 0.3833333333333333,
+          "asked_second": 0.11666666666666667,
+          "asked_second_nonpositive_margin": 0.0
+        },
+        "round": 2,
+        "adapter": "seed-202/SFT-ramas/checkpoint-002/adapter",
+        "grid": [
+          {
+            "cutoff": "always",
+            "macro": {
+              "future_supported": 0.6183333333333333,
+              "current_supported": 1.0,
+              "future_unsupported_reuse": 0.0,
+              "questions": 0.5,
+              "future_queries": 6.000000000000001,
+              "future_positive_queries": 3.0000000000000004,
+              "future_positive_supported": 0.71,
+              "future_correct_abstentions": 3.0000000000000004,
+              "asked_first": 0.5,
+              "asked_second": 0.0,
+              "asked_second_nonpositive_margin": 0.0
+            }
+          },
+          {
+            "cutoff": 0.0,
+            "macro": {
+              "future_supported": 0.6183333333333333,
+              "current_supported": 1.0,
+              "future_unsupported_reuse": 0.0,
+              "questions": 0.5,
+              "future_queries": 6.000000000000001,
+              "future_positive_queries": 3.0000000000000004,
+              "future_positive_supported": 0.71,
+              "future_correct_abstentions": 3.0000000000000004,
+              "asked_first": 0.5,
+              "asked_second": 0.0,
+              "asked_second_nonpositive_margin": 0.0
+            }
+          },
+          {
+            "cutoff": 3.125,
+            "macro": {
+              "future_supported": 0.6183333333333333,
+              "current_supported": 1.0,
+              "future_unsupported_reuse": 0.0,
+              "questions": 0.5,
+              "future_queries": 6.000000000000001,
+              "future_positive_queries": 3.0000000000000004,
+              "future_positive_supported": 0.71,
+              "future_correct_abstentions": 3.0000000000000004,
+              "asked_first": 0.5,
+              "asked_second": 0.0,
+              "asked_second_nonpositive_margin": 0.0
+            }
+          },
+          {
+            "cutoff": 3.25,
+            "macro": {
+              "future_supported": 0.6216666666666667,
+              "current_supported": 1.0,
+              "future_unsupported_reuse": 0.0,
+              "questions": 0.5,
+              "future_queries": 6.000000000000001,
+              "future_positive_queries": 3.0000000000000004,
+              "future_positive_supported": 0.73,
+              "future_correct_abstentions": 3.0000000000000004,
+              "asked_first": 0.3833333333333333,
+              "asked_second": 0.11666666666666667,
+              "asked_second_nonpositive_margin": 0.0
+            }
+          },
+          {
+            "cutoff": 3.375,
+            "macro": {
+              "future_supported": 0.6216666666666667,
+              "current_supported": 1.0,
+              "future_unsupported_reuse": 0.0,
+              "questions": 0.5,
+              "future_queries": 6.000000000000001,
+              "future_positive_queries": 3.0000000000000004,
+              "future_positive_supported": 0.73,
+              "future_correct_abstentions": 3.0000000000000004,
+              "asked_first": 0.03333333333333333,
+              "asked_second": 0.4666666666666667,
+              "asked_second_nonpositive_margin": 0.0
+            }
+          },
+          {
+            "cutoff": "never",
+            "macro": {
+              "future_supported": 0.6216666666666667,
+              "current_supported": 1.0,
+              "future_unsupported_reuse": 0.0,
+              "questions": 0.5,
+              "future_queries": 6.000000000000001,
+              "future_positive_queries": 3.0000000000000004,
+              "future_positive_supported": 0.73,
+              "future_correct_abstentions": 3.0000000000000004,
+              "asked_first": 0.0,
+              "asked_second": 0.5,
+              "asked_second_nonpositive_margin": 0.0
+            }
+          }
+        ]
+      }
+    ],
+    "202/GRPO-continuacion": [
+      {
+        "cutoff": -0.875,
+        "macro": {
+          "future_supported": 0.6316666666666667,
+          "current_supported": 1.0,
+          "future_unsupported_reuse": 0.0,
+          "questions": 0.5,
+          "future_queries": 6.000000000000001,
+          "future_positive_queries": 3.0000000000000004,
+          "future_positive_supported": 0.79,
+          "future_correct_abstentions": 3.0000000000000004,
+          "asked_first": 0.3333333333333333,
+          "asked_second": 0.16666666666666666,
+          "asked_second_nonpositive_margin": 0.16666666666666666
+        },
+        "round": 1,
+        "adapter": "seed-202/GRPO-continuacion/checkpoint-001/adapter",
+        "grid": [
+          {
+            "cutoff": "always",
+            "macro": {
+              "future_supported": 0.6216666666666667,
+              "current_supported": 1.0,
+              "future_unsupported_reuse": 0.0,
+              "questions": 0.5,
+              "future_queries": 6.000000000000001,
+              "future_positive_queries": 3.0000000000000004,
+              "future_positive_supported": 0.73,
+              "future_correct_abstentions": 3.0000000000000004,
+              "asked_first": 0.5,
+              "asked_second": 0.0,
+              "asked_second_nonpositive_margin": 0.0
+            }
+          },
+          {
+            "cutoff": -1.125,
+            "macro": {
+              "future_supported": 0.6216666666666667,
+              "current_supported": 1.0,
+              "future_unsupported_reuse": 0.0,
+              "questions": 0.5,
+              "future_queries": 6.000000000000001,
+              "future_positive_queries": 3.0000000000000004,
+              "future_positive_supported": 0.73,
+              "future_correct_abstentions": 3.0000000000000004,
+              "asked_first": 0.5,
+              "asked_second": 0.0,
+              "asked_second_nonpositive_margin": 0.0
+            }
+          },
+          {
+            "cutoff": -0.875,
+            "macro": {
+              "future_supported": 0.6316666666666667,
+              "current_supported": 1.0,
+              "future_unsupported_reuse": 0.0,
+              "questions": 0.5,
+              "future_queries": 6.000000000000001,
+              "future_positive_queries": 3.0000000000000004,
+              "future_positive_supported": 0.79,
+              "future_correct_abstentions": 3.0000000000000004,
+              "asked_first": 0.3333333333333333,
+              "asked_second": 0.16666666666666666,
+              "asked_second_nonpositive_margin": 0.16666666666666666
+            }
+          },
+          {
+            "cutoff": -0.75,
+            "macro": {
+              "future_supported": 0.6283333333333333,
+              "current_supported": 1.0,
+              "future_unsupported_reuse": 0.0,
+              "questions": 0.5,
+              "future_queries": 6.000000000000001,
+              "future_positive_queries": 3.0000000000000004,
+              "future_positive_supported": 0.77,
+              "future_correct_abstentions": 3.0000000000000004,
+              "asked_first": 0.16666666666666669,
+              "asked_second": 0.3333333333333333,
+              "asked_second_nonpositive_margin": 0.3333333333333333
+            }
+          },
+          {
+            "cutoff": -0.625,
+            "macro": {
+              "future_supported": 0.625,
+              "current_supported": 1.0,
+              "future_unsupported_reuse": 0.0,
+              "questions": 0.5,
+              "future_queries": 6.000000000000001,
+              "future_positive_queries": 3.0000000000000004,
+              "future_positive_supported": 0.75,
+              "future_correct_abstentions": 3.0000000000000004,
+              "asked_first": 0.08333333333333334,
+              "asked_second": 0.4166666666666667,
+              "asked_second_nonpositive_margin": 0.4166666666666667
+            }
+          },
+          {
+            "cutoff": 0.0,
+            "macro": {
+              "future_supported": 0.6216666666666667,
+              "current_supported": 1.0,
+              "future_unsupported_reuse": 0.0,
+              "questions": 0.5,
+              "future_queries": 6.000000000000001,
+              "future_positive_queries": 3.0000000000000004,
+              "future_positive_supported": 0.73,
+              "future_correct_abstentions": 3.0000000000000004,
+              "asked_first": 0.0,
+              "asked_second": 0.5,
+              "asked_second_nonpositive_margin": 0.5
+            }
+          },
+          {
+            "cutoff": "never",
+            "macro": {
+              "future_supported": 0.6216666666666667,
+              "current_supported": 1.0,
+              "future_unsupported_reuse": 0.0,
+              "questions": 0.5,
+              "future_queries": 6.000000000000001,
+              "future_positive_queries": 3.0000000000000004,
+              "future_positive_supported": 0.73,
+              "future_correct_abstentions": 3.0000000000000004,
+              "asked_first": 0.0,
+              "asked_second": 0.5,
+              "asked_second_nonpositive_margin": 0.5
+            }
+          }
+        ]
+      },
+      {
+        "cutoff": "never",
+        "macro": {
+          "future_supported": 0.6283333333333333,
+          "current_supported": 1.0,
+          "future_unsupported_reuse": 0.0,
+          "questions": 0.5,
+          "future_queries": 6.000000000000001,
+          "future_positive_queries": 3.0000000000000004,
+          "future_positive_supported": 0.77,
+          "future_correct_abstentions": 3.0000000000000004,
+          "asked_first": 0.0,
+          "asked_second": 0.5,
+          "asked_second_nonpositive_margin": 0.0
+        },
+        "round": 2,
+        "adapter": "seed-202/GRPO-continuacion/checkpoint-002/adapter",
+        "grid": [
+          {
+            "cutoff": "always",
+            "macro": {
+              "future_supported": 0.6216666666666667,
+              "current_supported": 1.0,
+              "future_unsupported_reuse": 0.0,
+              "questions": 0.5,
+              "future_queries": 6.000000000000001,
+              "future_positive_queries": 3.0000000000000004,
+              "future_positive_supported": 0.7300000000000001,
+              "future_correct_abstentions": 3.0000000000000004,
+              "asked_first": 0.5,
+              "asked_second": 0.0,
+              "asked_second_nonpositive_margin": 0.0
+            }
+          },
+          {
+            "cutoff": 0.0,
+            "macro": {
+              "future_supported": 0.6216666666666667,
+              "current_supported": 1.0,
+              "future_unsupported_reuse": 0.0,
+              "questions": 0.5,
+              "future_queries": 6.000000000000001,
+              "future_positive_queries": 3.0000000000000004,
+              "future_positive_supported": 0.7300000000000001,
+              "future_correct_abstentions": 3.0000000000000004,
+              "asked_first": 0.5,
+              "asked_second": 0.0,
+              "asked_second_nonpositive_margin": 0.0
+            }
+          },
+          {
+            "cutoff": 1.25,
+            "macro": {
+              "future_supported": 0.625,
+              "current_supported": 1.0,
+              "future_unsupported_reuse": 0.0,
+              "questions": 0.5,
+              "future_queries": 6.000000000000001,
+              "future_positive_queries": 3.0000000000000004,
+              "future_positive_supported": 0.75,
+              "future_correct_abstentions": 3.0000000000000004,
+              "asked_first": 0.39999999999999997,
+              "asked_second": 0.09999999999999999,
+              "asked_second_nonpositive_margin": 0.0
+            }
+          },
+          {
+            "cutoff": 1.375,
+            "macro": {
+              "future_supported": 0.625,
+              "current_supported": 1.0,
+              "future_unsupported_reuse": 0.0,
+              "questions": 0.5,
+              "future_queries": 6.000000000000001,
+              "future_positive_queries": 3.0000000000000004,
+              "future_positive_supported": 0.75,
+              "future_correct_abstentions": 3.0000000000000004,
+              "asked_first": 0.06666666666666667,
+              "asked_second": 0.43333333333333335,
+              "asked_second_nonpositive_margin": 0.0
+            }
+          },
+          {
+            "cutoff": "never",
+            "macro": {
+              "future_supported": 0.6283333333333333,
+              "current_supported": 1.0,
+              "future_unsupported_reuse": 0.0,
+              "questions": 0.5,
+              "future_queries": 6.000000000000001,
+              "future_positive_queries": 3.0000000000000004,
+              "future_positive_supported": 0.77,
+              "future_correct_abstentions": 3.0000000000000004,
+              "asked_first": 0.0,
+              "asked_second": 0.5,
+              "asked_second_nonpositive_margin": 0.0
+            }
+          }
+        ]
+      }
+    ],
+    "202/GRPO-inmediato": [
+      {
+        "cutoff": 0.0,
+        "macro": {
+          "future_supported": 0.6316666666666667,
+          "current_supported": 1.0,
+          "future_unsupported_reuse": 0.0,
+          "questions": 0.5,
+          "future_queries": 6.000000000000001,
+          "future_positive_queries": 3.0000000000000004,
+          "future_positive_supported": 0.79,
+          "future_correct_abstentions": 3.0000000000000004,
+          "asked_first": 0.0,
+          "asked_second": 0.5,
+          "asked_second_nonpositive_margin": 0.5
+        },
+        "round": 1,
+        "adapter": "seed-202/GRPO-inmediato/checkpoint-001/adapter",
+        "grid": [
+          {
+            "cutoff": "always",
+            "macro": {
+              "future_supported": 0.6183333333333333,
+              "current_supported": 1.0,
+              "future_unsupported_reuse": 0.0,
+              "questions": 0.5,
+              "future_queries": 6.000000000000001,
+              "future_positive_queries": 3.0000000000000004,
+              "future_positive_supported": 0.7100000000000001,
+              "future_correct_abstentions": 3.0000000000000004,
+              "asked_first": 0.5,
+              "asked_second": 0.0,
+              "asked_second_nonpositive_margin": 0.0
+            }
+          },
+          {
+            "cutoff": -6.375,
+            "macro": {
+              "future_supported": 0.6183333333333333,
+              "current_supported": 1.0,
+              "future_unsupported_reuse": 0.0,
+              "questions": 0.5,
+              "future_queries": 6.000000000000001,
+              "future_positive_queries": 3.0000000000000004,
+              "future_positive_supported": 0.7100000000000001,
+              "future_correct_abstentions": 3.0000000000000004,
+              "asked_first": 0.5,
+              "asked_second": 0.0,
+              "asked_second_nonpositive_margin": 0.0
+            }
+          },
+          {
+            "cutoff": -6.125,
+            "macro": {
+              "future_supported": 0.625,
+              "current_supported": 1.0,
+              "future_unsupported_reuse": 0.0,
+              "questions": 0.5,
+              "future_queries": 6.000000000000001,
+              "future_positive_queries": 3.0000000000000004,
+              "future_positive_supported": 0.75,
+              "future_correct_abstentions": 3.0000000000000004,
+              "asked_first": 0.4166666666666667,
+              "asked_second": 0.08333333333333333,
+              "asked_second_nonpositive_margin": 0.08333333333333333
+            }
+          },
+          {
+            "cutoff": -5.625,
+            "macro": {
+              "future_supported": 0.625,
+              "current_supported": 1.0,
+              "future_unsupported_reuse": 0.0,
+              "questions": 0.5,
+              "future_queries": 6.000000000000001,
+              "future_positive_queries": 3.0000000000000004,
+              "future_positive_supported": 0.75,
+              "future_correct_abstentions": 3.0000000000000004,
+              "asked_first": 0.25,
+              "asked_second": 0.25,
+              "asked_second_nonpositive_margin": 0.25
+            }
+          },
+          {
+            "cutoff": -5.375,
+            "macro": {
+              "future_supported": 0.6283333333333333,
+              "current_supported": 1.0,
+              "future_unsupported_reuse": 0.0,
+              "questions": 0.5,
+              "future_queries": 6.000000000000001,
+              "future_positive_queries": 3.0000000000000004,
+              "future_positive_supported": 0.77,
+              "future_correct_abstentions": 3.0000000000000004,
+              "asked_first": 0.016666666666666666,
+              "asked_second": 0.48333333333333334,
+              "asked_second_nonpositive_margin": 0.48333333333333334
+            }
+          },
+          {
+            "cutoff": 0.0,
+            "macro": {
+              "future_supported": 0.6316666666666667,
+              "current_supported": 1.0,
+              "future_unsupported_reuse": 0.0,
+              "questions": 0.5,
+              "future_queries": 6.000000000000001,
+              "future_positive_queries": 3.0000000000000004,
+              "future_positive_supported": 0.79,
+              "future_correct_abstentions": 3.0000000000000004,
+              "asked_first": 0.0,
+              "asked_second": 0.5,
+              "asked_second_nonpositive_margin": 0.5
+            }
+          },
+          {
+            "cutoff": "never",
+            "macro": {
+              "future_supported": 0.6316666666666667,
+              "current_supported": 1.0,
+              "future_unsupported_reuse": 0.0,
+              "questions": 0.5,
+              "future_queries": 6.000000000000001,
+              "future_positive_queries": 3.0000000000000004,
+              "future_positive_supported": 0.79,
+              "future_correct_abstentions": 3.0000000000000004,
+              "asked_first": 0.0,
+              "asked_second": 0.5,
+              "asked_second_nonpositive_margin": 0.5
+            }
+          }
+        ]
+      },
+      {
+        "cutoff": -7.5,
+        "macro": {
+          "future_supported": 0.6283333333333333,
+          "current_supported": 1.0,
+          "future_unsupported_reuse": 0.0,
+          "questions": 0.5,
+          "future_queries": 6.000000000000001,
+          "future_positive_queries": 3.0000000000000004,
+          "future_positive_supported": 0.77,
+          "future_correct_abstentions": 3.0000000000000004,
+          "asked_first": 0.4166666666666667,
+          "asked_second": 0.08333333333333334,
+          "asked_second_nonpositive_margin": 0.08333333333333334
+        },
+        "round": 2,
+        "adapter": "seed-202/GRPO-inmediato/checkpoint-002/adapter",
+        "grid": [
+          {
+            "cutoff": "always",
+            "macro": {
+              "future_supported": 0.625,
+              "current_supported": 1.0,
+              "future_unsupported_reuse": 0.0,
+              "questions": 0.5,
+              "future_queries": 6.000000000000001,
+              "future_positive_queries": 3.0000000000000004,
+              "future_positive_supported": 0.75,
+              "future_correct_abstentions": 3.0000000000000004,
+              "asked_first": 0.5,
+              "asked_second": 0.0,
+              "asked_second_nonpositive_margin": 0.0
+            }
+          },
+          {
+            "cutoff": -7.75,
+            "macro": {
+              "future_supported": 0.625,
+              "current_supported": 1.0,
+              "future_unsupported_reuse": 0.0,
+              "questions": 0.5,
+              "future_queries": 6.000000000000001,
+              "future_positive_queries": 3.0000000000000004,
+              "future_positive_supported": 0.75,
+              "future_correct_abstentions": 3.0000000000000004,
+              "asked_first": 0.5,
+              "asked_second": 0.0,
+              "asked_second_nonpositive_margin": 0.0
+            }
+          },
+          {
+            "cutoff": -7.5,
+            "macro": {
+              "future_supported": 0.6283333333333333,
+              "current_supported": 1.0,
+              "future_unsupported_reuse": 0.0,
+              "questions": 0.5,
+              "future_queries": 6.000000000000001,
+              "future_positive_queries": 3.0000000000000004,
+              "future_positive_supported": 0.77,
+              "future_correct_abstentions": 3.0000000000000004,
+              "asked_first": 0.4166666666666667,
+              "asked_second": 0.08333333333333334,
+              "asked_second_nonpositive_margin": 0.08333333333333334
+            }
+          },
+          {
+            "cutoff": -7.125,
+            "macro": {
+              "future_supported": 0.625,
+              "current_supported": 1.0,
+              "future_unsupported_reuse": 0.0,
+              "questions": 0.5,
+              "future_queries": 6.000000000000001,
+              "future_positive_queries": 3.0000000000000004,
+              "future_positive_supported": 0.75,
+              "future_correct_abstentions": 3.0000000000000004,
+              "asked_first": 0.23333333333333334,
+              "asked_second": 0.26666666666666666,
+              "asked_second_nonpositive_margin": 0.26666666666666666
+            }
+          },
+          {
+            "cutoff": -6.875,
+            "macro": {
+              "future_supported": 0.6216666666666667,
+              "current_supported": 1.0,
+              "future_unsupported_reuse": 0.0,
+              "questions": 0.5,
+              "future_queries": 6.000000000000001,
+              "future_positive_queries": 3.0000000000000004,
+              "future_positive_supported": 0.73,
+              "future_correct_abstentions": 3.0000000000000004,
+              "asked_first": 0.0,
+              "asked_second": 0.5,
+              "asked_second_nonpositive_margin": 0.5
+            }
+          },
+          {
+            "cutoff": 0.0,
+            "macro": {
+              "future_supported": 0.6216666666666667,
+              "current_supported": 1.0,
+              "future_unsupported_reuse": 0.0,
+              "questions": 0.5,
+              "future_queries": 6.000000000000001,
+              "future_positive_queries": 3.0000000000000004,
+              "future_positive_supported": 0.73,
+              "future_correct_abstentions": 3.0000000000000004,
+              "asked_first": 0.0,
+              "asked_second": 0.5,
+              "asked_second_nonpositive_margin": 0.5
+            }
+          },
+          {
+            "cutoff": "never",
+            "macro": {
+              "future_supported": 0.6216666666666667,
+              "current_supported": 1.0,
+              "future_unsupported_reuse": 0.0,
+              "questions": 0.5,
+              "future_queries": 6.000000000000001,
+              "future_positive_queries": 3.0000000000000004,
+              "future_positive_supported": 0.73,
+              "future_correct_abstentions": 3.0000000000000004,
+              "asked_first": 0.0,
+              "asked_second": 0.5,
+              "asked_second_nonpositive_margin": 0.5
+            }
+          }
+        ]
+      }
+    ],
+    "202/GRPO-continuacion-fija": [
+      {
+        "cutoff": -0.875,
+        "macro": {
+          "future_supported": 0.6316666666666667,
+          "current_supported": 1.0,
+          "future_unsupported_reuse": 0.0,
+          "questions": 0.5,
+          "future_queries": 6.000000000000001,
+          "future_positive_queries": 3.0000000000000004,
+          "future_positive_supported": 0.79,
+          "future_correct_abstentions": 3.0000000000000004,
+          "asked_first": 0.3333333333333333,
+          "asked_second": 0.16666666666666666,
+          "asked_second_nonpositive_margin": 0.16666666666666666
+        },
+        "round": 1,
+        "adapter": "seed-202/GRPO-continuacion-fija/checkpoint-001/adapter",
+        "grid": [
+          {
+            "cutoff": "always",
+            "macro": {
+              "future_supported": 0.6216666666666667,
+              "current_supported": 1.0,
+              "future_unsupported_reuse": 0.0,
+              "questions": 0.5,
+              "future_queries": 6.000000000000001,
+              "future_positive_queries": 3.0000000000000004,
+              "future_positive_supported": 0.73,
+              "future_correct_abstentions": 3.0000000000000004,
+              "asked_first": 0.5,
+              "asked_second": 0.0,
+              "asked_second_nonpositive_margin": 0.0
+            }
+          },
+          {
+            "cutoff": -1.125,
+            "macro": {
+              "future_supported": 0.6216666666666667,
+              "current_supported": 1.0,
+              "future_unsupported_reuse": 0.0,
+              "questions": 0.5,
+              "future_queries": 6.000000000000001,
+              "future_positive_queries": 3.0000000000000004,
+              "future_positive_supported": 0.73,
+              "future_correct_abstentions": 3.0000000000000004,
+              "asked_first": 0.5,
+              "asked_second": 0.0,
+              "asked_second_nonpositive_margin": 0.0
+            }
+          },
+          {
+            "cutoff": -0.875,
+            "macro": {
+              "future_supported": 0.6316666666666667,
+              "current_supported": 1.0,
+              "future_unsupported_reuse": 0.0,
+              "questions": 0.5,
+              "future_queries": 6.000000000000001,
+              "future_positive_queries": 3.0000000000000004,
+              "future_positive_supported": 0.79,
+              "future_correct_abstentions": 3.0000000000000004,
+              "asked_first": 0.3333333333333333,
+              "asked_second": 0.16666666666666666,
+              "asked_second_nonpositive_margin": 0.16666666666666666
+            }
+          },
+          {
+            "cutoff": -0.75,
+            "macro": {
+              "future_supported": 0.6283333333333333,
+              "current_supported": 1.0,
+              "future_unsupported_reuse": 0.0,
+              "questions": 0.5,
+              "future_queries": 6.000000000000001,
+              "future_positive_queries": 3.0000000000000004,
+              "future_positive_supported": 0.77,
+              "future_correct_abstentions": 3.0000000000000004,
+              "asked_first": 0.16666666666666669,
+              "asked_second": 0.3333333333333333,
+              "asked_second_nonpositive_margin": 0.3333333333333333
+            }
+          },
+          {
+            "cutoff": -0.625,
+            "macro": {
+              "future_supported": 0.625,
+              "current_supported": 1.0,
+              "future_unsupported_reuse": 0.0,
+              "questions": 0.5,
+              "future_queries": 6.000000000000001,
+              "future_positive_queries": 3.0000000000000004,
+              "future_positive_supported": 0.75,
+              "future_correct_abstentions": 3.0000000000000004,
+              "asked_first": 0.08333333333333334,
+              "asked_second": 0.4166666666666667,
+              "asked_second_nonpositive_margin": 0.4166666666666667
+            }
+          },
+          {
+            "cutoff": 0.0,
+            "macro": {
+              "future_supported": 0.6216666666666667,
+              "current_supported": 1.0,
+              "future_unsupported_reuse": 0.0,
+              "questions": 0.5,
+              "future_queries": 6.000000000000001,
+              "future_positive_queries": 3.0000000000000004,
+              "future_positive_supported": 0.73,
+              "future_correct_abstentions": 3.0000000000000004,
+              "asked_first": 0.0,
+              "asked_second": 0.5,
+              "asked_second_nonpositive_margin": 0.5
+            }
+          },
+          {
+            "cutoff": "never",
+            "macro": {
+              "future_supported": 0.6216666666666667,
+              "current_supported": 1.0,
+              "future_unsupported_reuse": 0.0,
+              "questions": 0.5,
+              "future_queries": 6.000000000000001,
+              "future_positive_queries": 3.0000000000000004,
+              "future_positive_supported": 0.73,
+              "future_correct_abstentions": 3.0000000000000004,
+              "asked_first": 0.0,
+              "asked_second": 0.5,
+              "asked_second_nonpositive_margin": 0.5
+            }
+          }
+        ]
+      },
+      {
+        "cutoff": 1.375,
+        "macro": {
+          "future_supported": 0.6316666666666667,
+          "current_supported": 1.0,
+          "future_unsupported_reuse": 0.0,
+          "questions": 0.5,
+          "future_queries": 6.000000000000001,
+          "future_positive_queries": 3.0000000000000004,
+          "future_positive_supported": 0.79,
+          "future_correct_abstentions": 3.0000000000000004,
+          "asked_first": 0.03333333333333333,
+          "asked_second": 0.4666666666666667,
+          "asked_second_nonpositive_margin": 0.0
+        },
+        "round": 2,
+        "adapter": "seed-202/GRPO-continuacion-fija/checkpoint-002/adapter",
+        "grid": [
+          {
+            "cutoff": "always",
+            "macro": {
+              "future_supported": 0.6183333333333333,
+              "current_supported": 1.0,
+              "future_unsupported_reuse": 0.0,
+              "questions": 0.5,
+              "future_queries": 6.000000000000001,
+              "future_positive_queries": 3.0000000000000004,
+              "future_positive_supported": 0.7100000000000001,
+              "future_correct_abstentions": 3.0000000000000004,
+              "asked_first": 0.5,
+              "asked_second": 0.0,
+              "asked_second_nonpositive_margin": 0.0
+            }
+          },
+          {
+            "cutoff": 0.0,
+            "macro": {
+              "future_supported": 0.6183333333333333,
+              "current_supported": 1.0,
+              "future_unsupported_reuse": 0.0,
+              "questions": 0.5,
+              "future_queries": 6.000000000000001,
+              "future_positive_queries": 3.0000000000000004,
+              "future_positive_supported": 0.7100000000000001,
+              "future_correct_abstentions": 3.0000000000000004,
+              "asked_first": 0.5,
+              "asked_second": 0.0,
+              "asked_second_nonpositive_margin": 0.0
+            }
+          },
+          {
+            "cutoff": 1.125,
+            "macro": {
+              "future_supported": 0.6183333333333333,
+              "current_supported": 1.0,
+              "future_unsupported_reuse": 0.0,
+              "questions": 0.5,
+              "future_queries": 6.000000000000001,
+              "future_positive_queries": 3.0000000000000004,
+              "future_positive_supported": 0.7100000000000001,
+              "future_correct_abstentions": 3.0000000000000004,
+              "asked_first": 0.5,
+              "asked_second": 0.0,
+              "asked_second_nonpositive_margin": 0.0
+            }
+          },
+          {
+            "cutoff": 1.25,
+            "macro": {
+              "future_supported": 0.6283333333333333,
+              "current_supported": 1.0,
+              "future_unsupported_reuse": 0.0,
+              "questions": 0.5,
+              "future_queries": 6.000000000000001,
+              "future_positive_queries": 3.0000000000000004,
+              "future_positive_supported": 0.77,
+              "future_correct_abstentions": 3.0000000000000004,
+              "asked_first": 0.3,
+              "asked_second": 0.19999999999999998,
+              "asked_second_nonpositive_margin": 0.0
+            }
+          },
+          {
+            "cutoff": 1.375,
+            "macro": {
+              "future_supported": 0.6316666666666667,
+              "current_supported": 1.0,
+              "future_unsupported_reuse": 0.0,
+              "questions": 0.5,
+              "future_queries": 6.000000000000001,
+              "future_positive_queries": 3.0000000000000004,
+              "future_positive_supported": 0.79,
+              "future_correct_abstentions": 3.0000000000000004,
+              "asked_first": 0.03333333333333333,
+              "asked_second": 0.4666666666666667,
+              "asked_second_nonpositive_margin": 0.0
+            }
+          },
+          {
+            "cutoff": "never",
+            "macro": {
+              "future_supported": 0.6316666666666667,
+              "current_supported": 1.0,
+              "future_unsupported_reuse": 0.0,
+              "questions": 0.5,
+              "future_queries": 6.000000000000001,
+              "future_positive_queries": 3.0000000000000004,
+              "future_positive_supported": 0.79,
+              "future_correct_abstentions": 3.0000000000000004,
+              "asked_first": 0.0,
+              "asked_second": 0.5,
+              "asked_second_nonpositive_margin": 0.0
+            }
+          }
+        ]
+      }
+    ],
+    "303/SFT-ramas": [
+      {
+        "cutoff": "always",
+        "macro": {
+          "future_supported": 0.6216666666666667,
+          "current_supported": 1.0,
+          "future_unsupported_reuse": 0.0,
+          "questions": 0.5,
+          "future_queries": 6.000000000000001,
+          "future_positive_queries": 3.0000000000000004,
+          "future_positive_supported": 0.73,
+          "future_correct_abstentions": 3.0000000000000004,
+          "asked_first": 0.5,
+          "asked_second": 0.0,
+          "asked_second_nonpositive_margin": 0.0
+        },
+        "round": 1,
+        "adapter": "seed-303/SFT-ramas/checkpoint-001/adapter",
+        "grid": [
+          {
+            "cutoff": "always",
+            "macro": {
+              "future_supported": 0.6216666666666667,
+              "current_supported": 1.0,
+              "future_unsupported_reuse": 0.0,
+              "questions": 0.5,
+              "future_queries": 6.000000000000001,
+              "future_positive_queries": 3.0000000000000004,
+              "future_positive_supported": 0.73,
+              "future_correct_abstentions": 3.0000000000000004,
+              "asked_first": 0.5,
+              "asked_second": 0.0,
+              "asked_second_nonpositive_margin": 0.0
+            }
+          },
+          {
+            "cutoff": 0.0,
+            "macro": {
+              "future_supported": 0.6216666666666667,
+              "current_supported": 1.0,
+              "future_unsupported_reuse": 0.0,
+              "questions": 0.5,
+              "future_queries": 6.000000000000001,
+              "future_positive_queries": 3.0000000000000004,
+              "future_positive_supported": 0.73,
+              "future_correct_abstentions": 3.0000000000000004,
+              "asked_first": 0.5,
+              "asked_second": 0.0,
+              "asked_second_nonpositive_margin": 0.0
+            }
+          },
+          {
+            "cutoff": 2.5,
+            "macro": {
+              "future_supported": 0.6216666666666667,
+              "current_supported": 1.0,
+              "future_unsupported_reuse": 0.0,
+              "questions": 0.5,
+              "future_queries": 6.000000000000001,
+              "future_positive_queries": 3.0000000000000004,
+              "future_positive_supported": 0.73,
+              "future_correct_abstentions": 3.0000000000000004,
+              "asked_first": 0.5,
+              "asked_second": 0.0,
+              "asked_second_nonpositive_margin": 0.0
+            }
+          },
+          {
+            "cutoff": 2.625,
+            "macro": {
+              "future_supported": 0.6216666666666667,
+              "current_supported": 1.0,
+              "future_unsupported_reuse": 0.0,
+              "questions": 0.5,
+              "future_queries": 6.000000000000001,
+              "future_positive_queries": 3.0000000000000004,
+              "future_positive_supported": 0.7300000000000001,
+              "future_correct_abstentions": 3.0000000000000004,
+              "asked_first": 0.2,
+              "asked_second": 0.3,
+              "asked_second_nonpositive_margin": 0.0
+            }
+          },
+          {
+            "cutoff": 2.75,
+            "macro": {
+              "future_supported": 0.6216666666666667,
+              "current_supported": 1.0,
+              "future_unsupported_reuse": 0.0,
+              "questions": 0.5,
+              "future_queries": 6.000000000000001,
+              "future_positive_queries": 3.0000000000000004,
+              "future_positive_supported": 0.73,
+              "future_correct_abstentions": 3.0000000000000004,
+              "asked_first": 0.0,
+              "asked_second": 0.5,
+              "asked_second_nonpositive_margin": 0.0
+            }
+          },
+          {
+            "cutoff": "never",
+            "macro": {
+              "future_supported": 0.6216666666666667,
+              "current_supported": 1.0,
+              "future_unsupported_reuse": 0.0,
+              "questions": 0.5,
+              "future_queries": 6.000000000000001,
+              "future_positive_queries": 3.0000000000000004,
+              "future_positive_supported": 0.73,
+              "future_correct_abstentions": 3.0000000000000004,
+              "asked_first": 0.0,
+              "asked_second": 0.5,
+              "asked_second_nonpositive_margin": 0.0
+            }
+          }
+        ]
+      },
+      {
+        "cutoff": 0.5,
+        "macro": {
+          "future_supported": 0.625,
+          "current_supported": 1.0,
+          "future_unsupported_reuse": 0.0,
+          "questions": 0.5,
+          "future_queries": 6.000000000000001,
+          "future_positive_queries": 3.0000000000000004,
+          "future_positive_supported": 0.75,
+          "future_correct_abstentions": 3.0000000000000004,
+          "asked_first": 0.016666666666666666,
+          "asked_second": 0.48333333333333334,
+          "asked_second_nonpositive_margin": 0.0
+        },
+        "round": 2,
+        "adapter": "seed-303/SFT-ramas/checkpoint-002/adapter",
+        "grid": [
+          {
+            "cutoff": "always",
+            "macro": {
+              "future_supported": 0.6216666666666667,
+              "current_supported": 1.0,
+              "future_unsupported_reuse": 0.0,
+              "questions": 0.5,
+              "future_queries": 6.000000000000001,
+              "future_positive_queries": 3.0000000000000004,
+              "future_positive_supported": 0.73,
+              "future_correct_abstentions": 3.0000000000000004,
+              "asked_first": 0.5,
+              "asked_second": 0.0,
+              "asked_second_nonpositive_margin": 0.0
+            }
+          },
+          {
+            "cutoff": 0.0,
+            "macro": {
+              "future_supported": 0.6216666666666667,
+              "current_supported": 1.0,
+              "future_unsupported_reuse": 0.0,
+              "questions": 0.5,
+              "future_queries": 6.000000000000001,
+              "future_positive_queries": 3.0000000000000004,
+              "future_positive_supported": 0.73,
+              "future_correct_abstentions": 3.0000000000000004,
+              "asked_first": 0.5,
+              "asked_second": 0.0,
+              "asked_second_nonpositive_margin": 0.0
+            }
+          },
+          {
+            "cutoff": 0.25,
+            "macro": {
+              "future_supported": 0.6216666666666667,
+              "current_supported": 1.0,
+              "future_unsupported_reuse": 0.0,
+              "questions": 0.5,
+              "future_queries": 6.000000000000001,
+              "future_positive_queries": 3.0000000000000004,
+              "future_positive_supported": 0.73,
+              "future_correct_abstentions": 3.0000000000000004,
+              "asked_first": 0.5,
+              "asked_second": 0.0,
+              "asked_second_nonpositive_margin": 0.0
+            }
+          },
+          {
+            "cutoff": 0.375,
+            "macro": {
+              "future_supported": 0.6216666666666667,
+              "current_supported": 1.0,
+              "future_unsupported_reuse": 0.0,
+              "questions": 0.5,
+              "future_queries": 6.000000000000001,
+              "future_positive_queries": 3.0000000000000004,
+              "future_positive_supported": 0.73,
+              "future_correct_abstentions": 3.0000000000000004,
+              "asked_first": 0.11666666666666667,
+              "asked_second": 0.38333333333333336,
+              "asked_second_nonpositive_margin": 0.0
+            }
+          },
+          {
+            "cutoff": 0.5,
+            "macro": {
+              "future_supported": 0.625,
+              "current_supported": 1.0,
+              "future_unsupported_reuse": 0.0,
+              "questions": 0.5,
+              "future_queries": 6.000000000000001,
+              "future_positive_queries": 3.0000000000000004,
+              "future_positive_supported": 0.75,
+              "future_correct_abstentions": 3.0000000000000004,
+              "asked_first": 0.016666666666666666,
+              "asked_second": 0.48333333333333334,
+              "asked_second_nonpositive_margin": 0.0
+            }
+          },
+          {
+            "cutoff": "never",
+            "macro": {
+              "future_supported": 0.6216666666666667,
+              "current_supported": 1.0,
+              "future_unsupported_reuse": 0.0,
+              "questions": 0.5,
+              "future_queries": 6.000000000000001,
+              "future_positive_queries": 3.0000000000000004,
+              "future_positive_supported": 0.73,
+              "future_correct_abstentions": 3.0000000000000004,
+              "asked_first": 0.0,
+              "asked_second": 0.5,
+              "asked_second_nonpositive_margin": 0.0
+            }
+          }
+        ]
+      }
+    ],
+    "303/GRPO-continuacion": [
+      {
+        "cutoff": "always",
+        "macro": {
+          "future_supported": 0.6283333333333333,
+          "current_supported": 1.0,
+          "future_unsupported_reuse": 0.0,
+          "questions": 0.5,
+          "future_queries": 6.000000000000001,
+          "future_positive_queries": 3.0000000000000004,
+          "future_positive_supported": 0.77,
+          "future_correct_abstentions": 3.0000000000000004,
+          "asked_first": 0.5,
+          "asked_second": 0.0,
+          "asked_second_nonpositive_margin": 0.0
+        },
+        "round": 1,
+        "adapter": "seed-303/GRPO-continuacion/checkpoint-001/adapter",
+        "grid": [
+          {
+            "cutoff": "always",
+            "macro": {
+              "future_supported": 0.6283333333333333,
+              "current_supported": 1.0,
+              "future_unsupported_reuse": 0.0,
+              "questions": 0.5,
+              "future_queries": 6.000000000000001,
+              "future_positive_queries": 3.0000000000000004,
+              "future_positive_supported": 0.77,
+              "future_correct_abstentions": 3.0000000000000004,
+              "asked_first": 0.5,
+              "asked_second": 0.0,
+              "asked_second_nonpositive_margin": 0.0
+            }
+          },
+          {
+            "cutoff": -0.75,
+            "macro": {
+              "future_supported": 0.6283333333333333,
+              "current_supported": 1.0,
+              "future_unsupported_reuse": 0.0,
+              "questions": 0.5,
+              "future_queries": 6.000000000000001,
+              "future_positive_queries": 3.0000000000000004,
+              "future_positive_supported": 0.77,
+              "future_correct_abstentions": 3.0000000000000004,
+              "asked_first": 0.4666666666666667,
+              "asked_second": 0.03333333333333333,
+              "asked_second_nonpositive_margin": 0.03333333333333333
+            }
+          },
+          {
+            "cutoff": -0.625,
+            "macro": {
+              "future_supported": 0.6216666666666667,
+              "current_supported": 1.0,
+              "future_unsupported_reuse": 0.0,
+              "questions": 0.5,
+              "future_queries": 6.000000000000001,
+              "future_positive_queries": 3.0000000000000004,
+              "future_positive_supported": 0.73,
+              "future_correct_abstentions": 3.0000000000000004,
+              "asked_first": 0.26666666666666666,
+              "asked_second": 0.23333333333333334,
+              "asked_second_nonpositive_margin": 0.23333333333333334
+            }
+          },
+          {
+            "cutoff": -0.5,
+            "macro": {
+              "future_supported": 0.6283333333333333,
+              "current_supported": 1.0,
+              "future_unsupported_reuse": 0.0,
+              "questions": 0.5,
+              "future_queries": 6.000000000000001,
+              "future_positive_queries": 3.0000000000000004,
+              "future_positive_supported": 0.77,
+              "future_correct_abstentions": 3.0000000000000004,
+              "asked_first": 0.13333333333333333,
+              "asked_second": 0.36666666666666664,
+              "asked_second_nonpositive_margin": 0.36666666666666664
+            }
+          },
+          {
+            "cutoff": -0.375,
+            "macro": {
+              "future_supported": 0.625,
+              "current_supported": 1.0,
+              "future_unsupported_reuse": 0.0,
+              "questions": 0.5,
+              "future_queries": 6.000000000000001,
+              "future_positive_queries": 3.0000000000000004,
+              "future_positive_supported": 0.75,
+              "future_correct_abstentions": 3.0000000000000004,
+              "asked_first": 0.0,
+              "asked_second": 0.5,
+              "asked_second_nonpositive_margin": 0.5
+            }
+          },
+          {
+            "cutoff": 0.0,
+            "macro": {
+              "future_supported": 0.625,
+              "current_supported": 1.0,
+              "future_unsupported_reuse": 0.0,
+              "questions": 0.5,
+              "future_queries": 6.000000000000001,
+              "future_positive_queries": 3.0000000000000004,
+              "future_positive_supported": 0.75,
+              "future_correct_abstentions": 3.0000000000000004,
+              "asked_first": 0.0,
+              "asked_second": 0.5,
+              "asked_second_nonpositive_margin": 0.5
+            }
+          },
+          {
+            "cutoff": "never",
+            "macro": {
+              "future_supported": 0.625,
+              "current_supported": 1.0,
+              "future_unsupported_reuse": 0.0,
+              "questions": 0.5,
+              "future_queries": 6.000000000000001,
+              "future_positive_queries": 3.0000000000000004,
+              "future_positive_supported": 0.75,
+              "future_correct_abstentions": 3.0000000000000004,
+              "asked_first": 0.0,
+              "asked_second": 0.5,
+              "asked_second_nonpositive_margin": 0.5
+            }
+          }
+        ]
+      },
+      {
+        "cutoff": 1.25,
+        "macro": {
+          "future_supported": 0.6383333333333333,
+          "current_supported": 1.0,
+          "future_unsupported_reuse": 0.0,
+          "questions": 0.5,
+          "future_queries": 6.000000000000001,
+          "future_positive_queries": 3.0000000000000004,
+          "future_positive_supported": 0.83,
+          "future_correct_abstentions": 3.0000000000000004,
+          "asked_first": 0.18333333333333335,
+          "asked_second": 0.31666666666666665,
+          "asked_second_nonpositive_margin": 0.0
+        },
+        "round": 2,
+        "adapter": "seed-303/GRPO-continuacion/checkpoint-002/adapter",
+        "grid": [
+          {
+            "cutoff": "always",
+            "macro": {
+              "future_supported": 0.6316666666666667,
+              "current_supported": 1.0,
+              "future_unsupported_reuse": 0.0,
+              "questions": 0.5,
+              "future_queries": 6.000000000000001,
+              "future_positive_queries": 3.0000000000000004,
+              "future_positive_supported": 0.79,
+              "future_correct_abstentions": 3.0000000000000004,
+              "asked_first": 0.5,
+              "asked_second": 0.0,
+              "asked_second_nonpositive_margin": 0.0
+            }
+          },
+          {
+            "cutoff": 0.0,
+            "macro": {
+              "future_supported": 0.6316666666666667,
+              "current_supported": 1.0,
+              "future_unsupported_reuse": 0.0,
+              "questions": 0.5,
+              "future_queries": 6.000000000000001,
+              "future_positive_queries": 3.0000000000000004,
+              "future_positive_supported": 0.79,
+              "future_correct_abstentions": 3.0000000000000004,
+              "asked_first": 0.5,
+              "asked_second": 0.0,
+              "asked_second_nonpositive_margin": 0.0
+            }
+          },
+          {
+            "cutoff": 1.125,
+            "macro": {
+              "future_supported": 0.6316666666666667,
+              "current_supported": 1.0,
+              "future_unsupported_reuse": 0.0,
+              "questions": 0.5,
+              "future_queries": 6.000000000000001,
+              "future_positive_queries": 3.0000000000000004,
+              "future_positive_supported": 0.79,
+              "future_correct_abstentions": 3.0000000000000004,
+              "asked_first": 0.5,
+              "asked_second": 0.0,
+              "asked_second_nonpositive_margin": 0.0
+            }
+          },
+          {
+            "cutoff": 1.25,
+            "macro": {
+              "future_supported": 0.6383333333333333,
+              "current_supported": 1.0,
+              "future_unsupported_reuse": 0.0,
+              "questions": 0.5,
+              "future_queries": 6.000000000000001,
+              "future_positive_queries": 3.0000000000000004,
+              "future_positive_supported": 0.83,
+              "future_correct_abstentions": 3.0000000000000004,
+              "asked_first": 0.18333333333333335,
+              "asked_second": 0.31666666666666665,
+              "asked_second_nonpositive_margin": 0.0
+            }
+          },
+          {
+            "cutoff": 1.375,
+            "macro": {
+              "future_supported": 0.6183333333333333,
+              "current_supported": 1.0,
+              "future_unsupported_reuse": 0.0,
+              "questions": 0.5,
+              "future_queries": 6.000000000000001,
+              "future_positive_queries": 3.0000000000000004,
+              "future_positive_supported": 0.7100000000000001,
+              "future_correct_abstentions": 3.0000000000000004,
+              "asked_first": 0.016666666666666666,
+              "asked_second": 0.48333333333333334,
+              "asked_second_nonpositive_margin": 0.0
+            }
+          },
+          {
+            "cutoff": "never",
+            "macro": {
+              "future_supported": 0.6216666666666667,
+              "current_supported": 1.0,
+              "future_unsupported_reuse": 0.0,
+              "questions": 0.5,
+              "future_queries": 6.000000000000001,
+              "future_positive_queries": 3.0000000000000004,
+              "future_positive_supported": 0.73,
+              "future_correct_abstentions": 3.0000000000000004,
+              "asked_first": 0.0,
+              "asked_second": 0.5,
+              "asked_second_nonpositive_margin": 0.0
+            }
+          }
+        ]
+      }
+    ],
+    "303/GRPO-inmediato": [
+      {
+        "cutoff": -6.0,
+        "macro": {
+          "future_supported": 0.6283333333333333,
+          "current_supported": 1.0,
+          "future_unsupported_reuse": 0.0,
+          "questions": 0.5,
+          "future_queries": 6.000000000000001,
+          "future_positive_queries": 3.0000000000000004,
+          "future_positive_supported": 0.77,
+          "future_correct_abstentions": 3.0000000000000004,
+          "asked_first": 0.4166666666666667,
+          "asked_second": 0.08333333333333334,
+          "asked_second_nonpositive_margin": 0.08333333333333334
+        },
+        "round": 1,
+        "adapter": "seed-303/GRPO-inmediato/checkpoint-001/adapter",
+        "grid": [
+          {
+            "cutoff": "always",
+            "macro": {
+              "future_supported": 0.6183333333333333,
+              "current_supported": 1.0,
+              "future_unsupported_reuse": 0.0,
+              "questions": 0.5,
+              "future_queries": 6.000000000000001,
+              "future_positive_queries": 3.0000000000000004,
+              "future_positive_supported": 0.7100000000000001,
+              "future_correct_abstentions": 3.0000000000000004,
+              "asked_first": 0.5,
+              "asked_second": 0.0,
+              "asked_second_nonpositive_margin": 0.0
+            }
+          },
+          {
+            "cutoff": -6.375,
+            "macro": {
+              "future_supported": 0.6183333333333333,
+              "current_supported": 1.0,
+              "future_unsupported_reuse": 0.0,
+              "questions": 0.5,
+              "future_queries": 6.000000000000001,
+              "future_positive_queries": 3.0000000000000004,
+              "future_positive_supported": 0.7100000000000001,
+              "future_correct_abstentions": 3.0000000000000004,
+              "asked_first": 0.5,
+              "asked_second": 0.0,
+              "asked_second_nonpositive_margin": 0.0
+            }
+          },
+          {
+            "cutoff": -6.0,
+            "macro": {
+              "future_supported": 0.6283333333333333,
+              "current_supported": 1.0,
+              "future_unsupported_reuse": 0.0,
+              "questions": 0.5,
+              "future_queries": 6.000000000000001,
+              "future_positive_queries": 3.0000000000000004,
+              "future_positive_supported": 0.77,
+              "future_correct_abstentions": 3.0000000000000004,
+              "asked_first": 0.4166666666666667,
+              "asked_second": 0.08333333333333334,
+              "asked_second_nonpositive_margin": 0.08333333333333334
+            }
+          },
+          {
+            "cutoff": -5.75,
+            "macro": {
+              "future_supported": 0.625,
+              "current_supported": 1.0,
+              "future_unsupported_reuse": 0.0,
+              "questions": 0.5,
+              "future_queries": 6.000000000000001,
+              "future_positive_queries": 3.0000000000000004,
+              "future_positive_supported": 0.75,
+              "future_correct_abstentions": 3.0000000000000004,
+              "asked_first": 0.23333333333333334,
+              "asked_second": 0.26666666666666666,
+              "asked_second_nonpositive_margin": 0.26666666666666666
+            }
+          },
+          {
+            "cutoff": -5.5,
+            "macro": {
+              "future_supported": 0.6283333333333333,
+              "current_supported": 1.0,
+              "future_unsupported_reuse": 0.0,
+              "questions": 0.5,
+              "future_queries": 6.000000000000001,
+              "future_positive_queries": 3.0000000000000004,
+              "future_positive_supported": 0.77,
+              "future_correct_abstentions": 3.0000000000000004,
+              "asked_first": 0.05,
+              "asked_second": 0.45,
+              "asked_second_nonpositive_margin": 0.45
+            }
+          },
+          {
+            "cutoff": 0.0,
+            "macro": {
+              "future_supported": 0.625,
+              "current_supported": 1.0,
+              "future_unsupported_reuse": 0.0,
+              "questions": 0.5,
+              "future_queries": 6.000000000000001,
+              "future_positive_queries": 3.0000000000000004,
+              "future_positive_supported": 0.75,
+              "future_correct_abstentions": 3.0000000000000004,
+              "asked_first": 0.0,
+              "asked_second": 0.5,
+              "asked_second_nonpositive_margin": 0.5
+            }
+          },
+          {
+            "cutoff": "never",
+            "macro": {
+              "future_supported": 0.625,
+              "current_supported": 1.0,
+              "future_unsupported_reuse": 0.0,
+              "questions": 0.5,
+              "future_queries": 6.000000000000001,
+              "future_positive_queries": 3.0000000000000004,
+              "future_positive_supported": 0.75,
+              "future_correct_abstentions": 3.0000000000000004,
+              "asked_first": 0.0,
+              "asked_second": 0.5,
+              "asked_second_nonpositive_margin": 0.5
+            }
+          }
+        ]
+      },
+      {
+        "cutoff": -6.875,
+        "macro": {
+          "future_supported": 0.6316666666666667,
+          "current_supported": 1.0,
+          "future_unsupported_reuse": 0.0,
+          "questions": 0.5,
+          "future_queries": 6.000000000000001,
+          "future_positive_queries": 3.0000000000000004,
+          "future_positive_supported": 0.79,
+          "future_correct_abstentions": 3.0000000000000004,
+          "asked_first": 0.21666666666666667,
+          "asked_second": 0.2833333333333333,
+          "asked_second_nonpositive_margin": 0.2833333333333333
+        },
+        "round": 2,
+        "adapter": "seed-303/GRPO-inmediato/checkpoint-002/adapter",
+        "grid": [
+          {
+            "cutoff": "always",
+            "macro": {
+              "future_supported": 0.6216666666666667,
+              "current_supported": 1.0,
+              "future_unsupported_reuse": 0.0,
+              "questions": 0.5,
+              "future_queries": 6.000000000000001,
+              "future_positive_queries": 3.0000000000000004,
+              "future_positive_supported": 0.73,
+              "future_correct_abstentions": 3.0000000000000004,
+              "asked_first": 0.5,
+              "asked_second": 0.0,
+              "asked_second_nonpositive_margin": 0.0
+            }
+          },
+          {
+            "cutoff": -7.5,
+            "macro": {
+              "future_supported": 0.6216666666666667,
+              "current_supported": 1.0,
+              "future_unsupported_reuse": 0.0,
+              "questions": 0.5,
+              "future_queries": 6.000000000000001,
+              "future_positive_queries": 3.0000000000000004,
+              "future_positive_supported": 0.73,
+              "future_correct_abstentions": 3.0000000000000004,
+              "asked_first": 0.5,
+              "asked_second": 0.0,
+              "asked_second_nonpositive_margin": 0.0
+            }
+          },
+          {
+            "cutoff": -7.25,
+            "macro": {
+              "future_supported": 0.6283333333333333,
+              "current_supported": 1.0,
+              "future_unsupported_reuse": 0.0,
+              "questions": 0.5,
+              "future_queries": 6.000000000000001,
+              "future_positive_queries": 3.0000000000000004,
+              "future_positive_supported": 0.77,
+              "future_correct_abstentions": 3.0000000000000004,
+              "asked_first": 0.4,
+              "asked_second": 0.1,
+              "asked_second_nonpositive_margin": 0.1
+            }
+          },
+          {
+            "cutoff": -6.875,
+            "macro": {
+              "future_supported": 0.6316666666666667,
+              "current_supported": 1.0,
+              "future_unsupported_reuse": 0.0,
+              "questions": 0.5,
+              "future_queries": 6.000000000000001,
+              "future_positive_queries": 3.0000000000000004,
+              "future_positive_supported": 0.79,
+              "future_correct_abstentions": 3.0000000000000004,
+              "asked_first": 0.21666666666666667,
+              "asked_second": 0.2833333333333333,
+              "asked_second_nonpositive_margin": 0.2833333333333333
+            }
+          },
+          {
+            "cutoff": -6.75,
+            "macro": {
+              "future_supported": 0.6216666666666667,
+              "current_supported": 1.0,
+              "future_unsupported_reuse": 0.0,
+              "questions": 0.5,
+              "future_queries": 6.000000000000001,
+              "future_positive_queries": 3.0000000000000004,
+              "future_positive_supported": 0.73,
+              "future_correct_abstentions": 3.0000000000000004,
+              "asked_first": 0.049999999999999996,
+              "asked_second": 0.45,
+              "asked_second_nonpositive_margin": 0.45
+            }
+          },
+          {
+            "cutoff": 0.0,
+            "macro": {
+              "future_supported": 0.625,
+              "current_supported": 1.0,
+              "future_unsupported_reuse": 0.0,
+              "questions": 0.5,
+              "future_queries": 6.000000000000001,
+              "future_positive_queries": 3.0000000000000004,
+              "future_positive_supported": 0.75,
+              "future_correct_abstentions": 3.0000000000000004,
+              "asked_first": 0.0,
+              "asked_second": 0.5,
+              "asked_second_nonpositive_margin": 0.5
+            }
+          },
+          {
+            "cutoff": "never",
+            "macro": {
+              "future_supported": 0.625,
+              "current_supported": 1.0,
+              "future_unsupported_reuse": 0.0,
+              "questions": 0.5,
+              "future_queries": 6.000000000000001,
+              "future_positive_queries": 3.0000000000000004,
+              "future_positive_supported": 0.75,
+              "future_correct_abstentions": 3.0000000000000004,
+              "asked_first": 0.0,
+              "asked_second": 0.5,
+              "asked_second_nonpositive_margin": 0.5
+            }
+          }
+        ]
+      }
+    ],
+    "303/GRPO-continuacion-fija": [
+      {
+        "cutoff": "always",
+        "macro": {
+          "future_supported": 0.6283333333333333,
+          "current_supported": 1.0,
+          "future_unsupported_reuse": 0.0,
+          "questions": 0.5,
+          "future_queries": 6.000000000000001,
+          "future_positive_queries": 3.0000000000000004,
+          "future_positive_supported": 0.77,
+          "future_correct_abstentions": 3.0000000000000004,
+          "asked_first": 0.5,
+          "asked_second": 0.0,
+          "asked_second_nonpositive_margin": 0.0
+        },
+        "round": 1,
+        "adapter": "seed-303/GRPO-continuacion-fija/checkpoint-001/adapter",
+        "grid": [
+          {
+            "cutoff": "always",
+            "macro": {
+              "future_supported": 0.6283333333333333,
+              "current_supported": 1.0,
+              "future_unsupported_reuse": 0.0,
+              "questions": 0.5,
+              "future_queries": 6.000000000000001,
+              "future_positive_queries": 3.0000000000000004,
+              "future_positive_supported": 0.77,
+              "future_correct_abstentions": 3.0000000000000004,
+              "asked_first": 0.5,
+              "asked_second": 0.0,
+              "asked_second_nonpositive_margin": 0.0
+            }
+          },
+          {
+            "cutoff": -0.75,
+            "macro": {
+              "future_supported": 0.6283333333333333,
+              "current_supported": 1.0,
+              "future_unsupported_reuse": 0.0,
+              "questions": 0.5,
+              "future_queries": 6.000000000000001,
+              "future_positive_queries": 3.0000000000000004,
+              "future_positive_supported": 0.77,
+              "future_correct_abstentions": 3.0000000000000004,
+              "asked_first": 0.48333333333333334,
+              "asked_second": 0.016666666666666666,
+              "asked_second_nonpositive_margin": 0.016666666666666666
+            }
+          },
+          {
+            "cutoff": -0.625,
+            "macro": {
+              "future_supported": 0.6116666666666667,
+              "current_supported": 1.0,
+              "future_unsupported_reuse": 0.0,
+              "questions": 0.5,
+              "future_queries": 6.000000000000001,
+              "future_positive_queries": 3.0000000000000004,
+              "future_positive_supported": 0.67,
+              "future_correct_abstentions": 3.0000000000000004,
+              "asked_first": 0.21666666666666667,
+              "asked_second": 0.2833333333333333,
+              "asked_second_nonpositive_margin": 0.2833333333333333
+            }
+          },
+          {
+            "cutoff": -0.5,
+            "macro": {
+              "future_supported": 0.625,
+              "current_supported": 1.0,
+              "future_unsupported_reuse": 0.0,
+              "questions": 0.5,
+              "future_queries": 6.000000000000001,
+              "future_positive_queries": 3.0000000000000004,
+              "future_positive_supported": 0.75,
+              "future_correct_abstentions": 3.0000000000000004,
+              "asked_first": 0.05,
+              "asked_second": 0.45,
+              "asked_second_nonpositive_margin": 0.45
+            }
+          },
+          {
+            "cutoff": 0.0,
+            "macro": {
+              "future_supported": 0.6216666666666667,
+              "current_supported": 1.0,
+              "future_unsupported_reuse": 0.0,
+              "questions": 0.5,
+              "future_queries": 6.000000000000001,
+              "future_positive_queries": 3.0000000000000004,
+              "future_positive_supported": 0.73,
+              "future_correct_abstentions": 3.0000000000000004,
+              "asked_first": 0.0,
+              "asked_second": 0.5,
+              "asked_second_nonpositive_margin": 0.5
+            }
+          },
+          {
+            "cutoff": "never",
+            "macro": {
+              "future_supported": 0.6216666666666667,
+              "current_supported": 1.0,
+              "future_unsupported_reuse": 0.0,
+              "questions": 0.5,
+              "future_queries": 6.000000000000001,
+              "future_positive_queries": 3.0000000000000004,
+              "future_positive_supported": 0.73,
+              "future_correct_abstentions": 3.0000000000000004,
+              "asked_first": 0.0,
+              "asked_second": 0.5,
+              "asked_second_nonpositive_margin": 0.5
+            }
+          }
+        ]
+      },
+      {
+        "cutoff": 1.125,
+        "macro": {
+          "future_supported": 0.635,
+          "current_supported": 1.0,
+          "future_unsupported_reuse": 0.0,
+          "questions": 0.5,
+          "future_queries": 6.000000000000001,
+          "future_positive_queries": 3.0000000000000004,
+          "future_positive_supported": 0.81,
+          "future_correct_abstentions": 3.0000000000000004,
+          "asked_first": 0.16666666666666669,
+          "asked_second": 0.3333333333333333,
+          "asked_second_nonpositive_margin": 0.0
+        },
+        "round": 2,
+        "adapter": "seed-303/GRPO-continuacion-fija/checkpoint-002/adapter",
+        "grid": [
+          {
+            "cutoff": "always",
+            "macro": {
+              "future_supported": 0.625,
+              "current_supported": 1.0,
+              "future_unsupported_reuse": 0.0,
+              "questions": 0.5,
+              "future_queries": 6.000000000000001,
+              "future_positive_queries": 3.0000000000000004,
+              "future_positive_supported": 0.75,
+              "future_correct_abstentions": 3.0000000000000004,
+              "asked_first": 0.5,
+              "asked_second": 0.0,
+              "asked_second_nonpositive_margin": 0.0
+            }
+          },
+          {
+            "cutoff": 0.0,
+            "macro": {
+              "future_supported": 0.625,
+              "current_supported": 1.0,
+              "future_unsupported_reuse": 0.0,
+              "questions": 0.5,
+              "future_queries": 6.000000000000001,
+              "future_positive_queries": 3.0000000000000004,
+              "future_positive_supported": 0.75,
+              "future_correct_abstentions": 3.0000000000000004,
+              "asked_first": 0.5,
+              "asked_second": 0.0,
+              "asked_second_nonpositive_margin": 0.0
+            }
+          },
+          {
+            "cutoff": 1.0,
+            "macro": {
+              "future_supported": 0.625,
+              "current_supported": 1.0,
+              "future_unsupported_reuse": 0.0,
+              "questions": 0.5,
+              "future_queries": 6.000000000000001,
+              "future_positive_queries": 3.0000000000000004,
+              "future_positive_supported": 0.75,
+              "future_correct_abstentions": 3.0000000000000004,
+              "asked_first": 0.5,
+              "asked_second": 0.0,
+              "asked_second_nonpositive_margin": 0.0
+            }
+          },
+          {
+            "cutoff": 1.125,
+            "macro": {
+              "future_supported": 0.635,
+              "current_supported": 1.0,
+              "future_unsupported_reuse": 0.0,
+              "questions": 0.5,
+              "future_queries": 6.000000000000001,
+              "future_positive_queries": 3.0000000000000004,
+              "future_positive_supported": 0.81,
+              "future_correct_abstentions": 3.0000000000000004,
+              "asked_first": 0.16666666666666669,
+              "asked_second": 0.3333333333333333,
+              "asked_second_nonpositive_margin": 0.0
+            }
+          },
+          {
+            "cutoff": 1.25,
+            "macro": {
+              "future_supported": 0.6316666666666667,
+              "current_supported": 1.0,
+              "future_unsupported_reuse": 0.0,
+              "questions": 0.5,
+              "future_queries": 6.000000000000001,
+              "future_positive_queries": 3.0000000000000004,
+              "future_positive_supported": 0.79,
+              "future_correct_abstentions": 3.0000000000000004,
+              "asked_first": 0.016666666666666666,
+              "asked_second": 0.48333333333333334,
+              "asked_second_nonpositive_margin": 0.0
+            }
+          },
+          {
+            "cutoff": "never",
+            "macro": {
+              "future_supported": 0.635,
+              "current_supported": 1.0,
+              "future_unsupported_reuse": 0.0,
+              "questions": 0.5,
+              "future_queries": 6.000000000000001,
+              "future_positive_queries": 3.0000000000000004,
+              "future_positive_supported": 0.81,
+              "future_correct_abstentions": 3.0000000000000004,
+              "asked_first": 0.0,
+              "asked_second": 0.5,
+              "asked_second_nonpositive_margin": 0.0
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "public_candidates": [
+    {
+      "cutoff": "always",
+      "macro": {
+        "future_supported": 0.675,
+        "current_supported": 1.0,
+        "future_unsupported_reuse": 0.0,
+        "questions": 0.5,
+        "future_queries": 6.000000000000001,
+        "future_positive_queries": 3.0000000000000004,
+        "future_positive_supported": 1.05,
+        "future_correct_abstentions": 3.0000000000000004,
+        "asked_first": 0.5,
+        "asked_second": 0.0,
+        "asked_second_nonpositive_margin": 0.0
+      }
+    },
+    {
+      "cutoff": -0.2999999999999998,
+      "macro": {
+        "future_supported": 0.675,
+        "current_supported": 1.0,
+        "future_unsupported_reuse": 0.0,
+        "questions": 0.5,
+        "future_queries": 6.000000000000001,
+        "future_positive_queries": 3.0000000000000004,
+        "future_positive_supported": 1.05,
+        "future_correct_abstentions": 3.0000000000000004,
+        "asked_first": 0.5,
+        "asked_second": 0.0,
+        "asked_second_nonpositive_margin": 0.0
+      }
+    },
+    {
+      "cutoff": 0.0,
+      "macro": {
+        "future_supported": 0.675,
+        "current_supported": 1.0,
+        "future_unsupported_reuse": 0.0,
+        "questions": 0.5,
+        "future_queries": 6.000000000000001,
+        "future_positive_queries": 3.0000000000000004,
+        "future_positive_supported": 1.05,
+        "future_correct_abstentions": 3.0000000000000004,
+        "asked_first": 0.5,
+        "asked_second": 0.0,
+        "asked_second_nonpositive_margin": 0.0
+      }
+    },
+    {
+      "cutoff": 0.2999999999999998,
+      "macro": {
+        "future_supported": 0.675,
+        "current_supported": 1.0,
+        "future_unsupported_reuse": 0.0,
+        "questions": 0.5,
+        "future_queries": 6.000000000000001,
+        "future_positive_queries": 3.0000000000000004,
+        "future_positive_supported": 1.05,
+        "future_correct_abstentions": 3.0000000000000004,
+        "asked_first": 0.0,
+        "asked_second": 0.5,
+        "asked_second_nonpositive_margin": 0.0
+      }
+    },
+    {
+      "cutoff": "never",
+      "macro": {
+        "future_supported": 0.675,
+        "current_supported": 1.0,
+        "future_unsupported_reuse": 0.0,
+        "questions": 0.5,
+        "future_queries": 6.000000000000001,
+        "future_positive_queries": 3.0000000000000004,
+        "future_positive_supported": 1.05,
+        "future_correct_abstentions": 3.0000000000000004,
+        "asked_first": 0.0,
+        "asked_second": 0.5,
+        "asked_second_nonpositive_margin": 0.0
+      }
+    }
+  ]
+}

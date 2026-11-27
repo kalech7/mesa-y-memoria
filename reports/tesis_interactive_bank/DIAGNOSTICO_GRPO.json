@@ -1,0 +1,919 @@
+{
+  "scope": "Retrospective on previously completed runs; the new experiment is excluded.",
+  "runs": {
+    "tesis_interactive_v1": {
+      "source_sha256": {
+        "RESULTS.json": "41871ab9ac74e1024dad91e5815d7196a02615307e2c0039df89a7c983c222ab",
+        "bank/train.jsonl": "395c31cf13bb42cbff80b54ed24f1389a80b25b3bebfed2a914c6963a4638bf7",
+        "101/GRPO-longitudinal-grupos.jsonl": "1c141befe25c3b98b656c9f5723a70c7fad707eb9301173d8ac8b8ec3b85f63b",
+        "101/SFT-adicional-evaluacion.jsonl": "fc5c0d25b36c6fdd14878c367163affb61f7cad7b55d130cce92c8d68df599eb",
+        "101/GRPO-longitudinal-terminal-evaluacion.jsonl": "e27f0bf1c0e83927356af9bee28ddb7d505f4f28770aeccda91d5e1bb87766f5",
+        "202/GRPO-longitudinal-grupos.jsonl": "69b1c1ab5ce2a1c33646b9cd4e43869fb8ddd13125697ebeb089e2057a957537",
+        "202/SFT-adicional-evaluacion.jsonl": "fc5c0d25b36c6fdd14878c367163affb61f7cad7b55d130cce92c8d68df599eb",
+        "202/GRPO-longitudinal-terminal-evaluacion.jsonl": "fc5c0d25b36c6fdd14878c367163affb61f7cad7b55d130cce92c8d68df599eb",
+        "303/GRPO-longitudinal-grupos.jsonl": "e5262ce6ca220b9219b40b2402179bd55fdbdee4764cce0b9edf10b6e32eb609",
+        "303/SFT-adicional-evaluacion.jsonl": "fc5c0d25b36c6fdd14878c367163affb61f7cad7b55d130cce92c8d68df599eb",
+        "303/GRPO-longitudinal-terminal-evaluacion.jsonl": "fc5c0d25b36c6fdd14878c367163affb61f7cad7b55d130cce92c8d68df599eb"
+      },
+      "exploration_by_family": {
+        "F2": {
+          "groups": 60,
+          "only_penalties_vary": 22,
+          "resolvable_first_visit": 21,
+          "sampled_resolving_prefix": 21,
+          "all_draws_sampled_resolving_prefix": 2,
+          "task_varies": 19,
+          "identical": 19
+        },
+        "F3": {
+          "groups": 60,
+          "resolvable_first_visit": 20,
+          "sampled_resolving_prefix": 20,
+          "all_draws_sampled_resolving_prefix": 2,
+          "task_varies": 16,
+          "only_penalties_vary": 16,
+          "identical": 28
+        },
+        "F1": {
+          "groups": 60,
+          "identical": 36,
+          "task_varies": 5,
+          "only_penalties_vary": 19
+        },
+        "F4": {
+          "groups": 60,
+          "resolvable_first_visit": 50,
+          "sampled_resolving_prefix": 50,
+          "all_draws_sampled_resolving_prefix": 27,
+          "task_varies": 19,
+          "identical": 30,
+          "only_penalties_vary": 11
+        },
+        "F0": {
+          "groups": 60,
+          "task_varies": 8,
+          "only_penalties_vary": 7,
+          "identical": 45
+        }
+      },
+      "reserved_outcomes": {
+        "101": {
+          "sft_unsupported_probes": 11,
+          "sft_unsupported_probes_on_episodes_with_refusal": 11,
+          "grpo_terminal_questions": 0.8200000000000001,
+          "episodes_with_lost_future_probe": [
+            {
+              "root_id": "it455740a2c90a76677b380b92",
+              "world_id": "iw030b10d70c5fecca8f2201e5",
+              "family": "F2",
+              "sft_first_visit_questions": [
+                "VALID_UNTIL"
+              ],
+              "grpo_first_visit_questions": []
+            },
+            {
+              "root_id": "itddd6a0565b57e55d05b397b1",
+              "world_id": "iwa2c0d5a807b6b452905433cd",
+              "family": "F2",
+              "sft_first_visit_questions": [
+                "VALID_UNTIL"
+              ],
+              "grpo_first_visit_questions": []
+            },
+            {
+              "root_id": "ite4ccc1309a180e53a727106d",
+              "world_id": "iwdc3fe810403ef47a218f5a62",
+              "family": "F2",
+              "sft_first_visit_questions": [
+                "VALID_UNTIL"
+              ],
+              "grpo_first_visit_questions": []
+            },
+            {
+              "root_id": "it13bf1423c3787b8e53a3007c",
+              "world_id": "iw7f769cd21020f4c7b132fd5f",
+              "family": "F2",
+              "sft_first_visit_questions": [
+                "VALID_UNTIL",
+                "VALID_UNTIL"
+              ],
+              "grpo_first_visit_questions": []
+            },
+            {
+              "root_id": "it5304f4a19ea6cec4a7a9bd62",
+              "world_id": "iwbae2ba06a1e3ceeb462d729a",
+              "family": "F2",
+              "sft_first_visit_questions": [
+                "VALID_UNTIL"
+              ],
+              "grpo_first_visit_questions": []
+            },
+            {
+              "root_id": "it8aa8fa8e332a1912f54bb05a",
+              "world_id": "iwb5af41830bc2e25cc1318046",
+              "family": "F2",
+              "sft_first_visit_questions": [
+                "VALID_UNTIL",
+                "VALID_UNTIL"
+              ],
+              "grpo_first_visit_questions": []
+            }
+          ]
+        },
+        "202": {
+          "sft_unsupported_probes": 11,
+          "sft_unsupported_probes_on_episodes_with_refusal": 11,
+          "grpo_terminal_questions": 1.0,
+          "episodes_with_lost_future_probe": []
+        },
+        "303": {
+          "sft_unsupported_probes": 11,
+          "sft_unsupported_probes_on_episodes_with_refusal": 11,
+          "grpo_terminal_questions": 1.0,
+          "episodes_with_lost_future_probe": []
+        }
+      },
+      "normalization": {
+        "only_penalties_vary": {
+          "groups": 75,
+          "mean_raw_return_span": 0.09386666666666668,
+          "median_raw_return_span": 0.08000000000000007,
+          "median_normalized_advantage_std": 0.9999664601052998,
+          "mean_absolute_normalized_advantage": 0.8006531824032296
+        },
+        "task_varies": {
+          "groups": 67,
+          "mean_raw_return_span": 0.9202985074626864,
+          "median_raw_return_span": 0.7499999999999998,
+          "median_normalized_advantage_std": 0.9999964223040362,
+          "mean_absolute_normalized_advantage": 0.8635898509572445
+        },
+        "identical": {
+          "groups": 158,
+          "mean_raw_return_span": 0.0,
+          "median_raw_return_span": 0.0,
+          "median_normalized_advantage_std": 0.0,
+          "mean_absolute_normalized_advantage": 0.0
+        }
+      }
+    },
+    "tesis_interactive_low_supervision_v2": {
+      "source_sha256": {
+        "RESULTS.json": "2e5c022a97fd0acb8af01d49f3882256e560d50258f312be1c72dafb77d586cb",
+        "bank/train.jsonl": "8546b618d71ba1a0ca16e47880ff041a6f1f8563cf822cdadfb0aca73479e4ed",
+        "101/GRPO-longitudinal-grupos.jsonl": "b19ba94243a79cc679443c9bf441255dbce348195a0dd15473445044affe3d2d",
+        "101/SFT-adicional-evaluacion.jsonl": "32e4a28645d30a5a9b56a6ae0833c988ed816a3396b34a6d58f4f3ee4cb4ab1c",
+        "101/GRPO-longitudinal-terminal-evaluacion.jsonl": "387984eb0dbe54daf9071612981dd7dfddc10efd2b9259fbf3dbd4fa225fcb28",
+        "202/GRPO-longitudinal-grupos.jsonl": "e3fccb5ddbd35c8fba848bf02e55573af18d8bca9b3711ce484f57c0d6a5d497",
+        "202/SFT-adicional-evaluacion.jsonl": "32e4a28645d30a5a9b56a6ae0833c988ed816a3396b34a6d58f4f3ee4cb4ab1c",
+        "202/GRPO-longitudinal-terminal-evaluacion.jsonl": "387984eb0dbe54daf9071612981dd7dfddc10efd2b9259fbf3dbd4fa225fcb28",
+        "303/GRPO-longitudinal-grupos.jsonl": "f22c4e2c6716dffd51aa5599913c3fd79825039e183577aa418478491483d866",
+        "303/SFT-adicional-evaluacion.jsonl": "32e4a28645d30a5a9b56a6ae0833c988ed816a3396b34a6d58f4f3ee4cb4ab1c",
+        "303/GRPO-longitudinal-terminal-evaluacion.jsonl": "387984eb0dbe54daf9071612981dd7dfddc10efd2b9259fbf3dbd4fa225fcb28"
+      },
+      "exploration_by_family": {
+        "F2": {
+          "groups": 60,
+          "only_penalties_vary": 14,
+          "resolvable_first_visit": 36,
+          "sampled_resolving_prefix": 1,
+          "all_draws_sampled_resolving_prefix": 0,
+          "identical": 45,
+          "task_varies": 1
+        },
+        "F1": {
+          "groups": 60,
+          "only_penalties_vary": 14,
+          "identical": 46
+        },
+        "F3": {
+          "groups": 60,
+          "only_penalties_vary": 16,
+          "resolvable_first_visit": 28,
+          "sampled_resolving_prefix": 0,
+          "all_draws_sampled_resolving_prefix": 0,
+          "identical": 44
+        },
+        "F4": {
+          "groups": 60,
+          "only_penalties_vary": 13,
+          "resolvable_first_visit": 32,
+          "sampled_resolving_prefix": 2,
+          "all_draws_sampled_resolving_prefix": 0,
+          "identical": 45,
+          "task_varies": 2
+        },
+        "F0": {
+          "groups": 60,
+          "only_penalties_vary": 15,
+          "identical": 45
+        }
+      },
+      "reserved_outcomes": {
+        "101": {
+          "sft_unsupported_probes": 17,
+          "sft_unsupported_probes_on_episodes_with_refusal": 17,
+          "grpo_terminal_questions": 0,
+          "episodes_with_lost_future_probe": [
+            {
+              "root_id": "it190180d1989d920e966b0af3",
+              "world_id": "iwc5959210c497b6f2d56382db",
+              "family": "F4",
+              "sft_first_visit_questions": [
+                "TEMPORAL_SCOPE",
+                "TEMPORAL_SCOPE"
+              ],
+              "grpo_first_visit_questions": []
+            },
+            {
+              "root_id": "ita8a948ffa3859925bdbeb0a3",
+              "world_id": "iw8fdfef1094f50479dd600c66",
+              "family": "F2",
+              "sft_first_visit_questions": [
+                "VALID_UNTIL",
+                "VALID_UNTIL"
+              ],
+              "grpo_first_visit_questions": []
+            },
+            {
+              "root_id": "it2a3e1f60031c4b463f29fcf7",
+              "world_id": "iwa7ffb8756ee2586e67c4ca70",
+              "family": "F4",
+              "sft_first_visit_questions": [
+                "TEMPORAL_SCOPE",
+                "TEMPORAL_SCOPE"
+              ],
+              "grpo_first_visit_questions": []
+            },
+            {
+              "root_id": "it6666e0b17cbf9a928e910719",
+              "world_id": "iwe4b61e02fc434ed3074730a4",
+              "family": "F4",
+              "sft_first_visit_questions": [
+                "TEMPORAL_SCOPE"
+              ],
+              "grpo_first_visit_questions": []
+            },
+            {
+              "root_id": "it190180d1989d920e966b0af3",
+              "world_id": "iw275d9d15f394792446e39bfb",
+              "family": "F4",
+              "sft_first_visit_questions": [
+                "TEMPORAL_SCOPE",
+                "TEMPORAL_SCOPE"
+              ],
+              "grpo_first_visit_questions": []
+            },
+            {
+              "root_id": "it77a016f4e6114dade2543601",
+              "world_id": "iw67fe612a73e0a75464f3822e",
+              "family": "F4",
+              "sft_first_visit_questions": [
+                "TEMPORAL_SCOPE",
+                "TEMPORAL_SCOPE"
+              ],
+              "grpo_first_visit_questions": []
+            },
+            {
+              "root_id": "it2a3e1f60031c4b463f29fcf7",
+              "world_id": "iwb4088363d5ad2d23d8ee2675",
+              "family": "F4",
+              "sft_first_visit_questions": [
+                "TEMPORAL_SCOPE",
+                "TEMPORAL_SCOPE"
+              ],
+              "grpo_first_visit_questions": []
+            },
+            {
+              "root_id": "it64a3abba2e69ff65f0a03af8",
+              "world_id": "iwfb7daa596980f63a5e1ef44a",
+              "family": "F4",
+              "sft_first_visit_questions": [
+                "TEMPORAL_SCOPE"
+              ],
+              "grpo_first_visit_questions": []
+            },
+            {
+              "root_id": "itc4ff2c6f54a02ee08387b91c",
+              "world_id": "iwe0075b75e4f634da50183d4a",
+              "family": "F4",
+              "sft_first_visit_questions": [
+                "TEMPORAL_SCOPE"
+              ],
+              "grpo_first_visit_questions": []
+            },
+            {
+              "root_id": "itf45e693d3d7bc0835ab8ca60",
+              "world_id": "iw674b8b9a804047b32342848a",
+              "family": "F1",
+              "sft_first_visit_questions": [],
+              "grpo_first_visit_questions": []
+            },
+            {
+              "root_id": "itc4ff2c6f54a02ee08387b91c",
+              "world_id": "iw7bfd9faec8b7bbcba3d0b044",
+              "family": "F4",
+              "sft_first_visit_questions": [
+                "TEMPORAL_SCOPE"
+              ],
+              "grpo_first_visit_questions": []
+            },
+            {
+              "root_id": "it6666e0b17cbf9a928e910719",
+              "world_id": "iw2a8de6ee989e0721e3847ce4",
+              "family": "F4",
+              "sft_first_visit_questions": [
+                "TEMPORAL_SCOPE"
+              ],
+              "grpo_first_visit_questions": []
+            },
+            {
+              "root_id": "it8194c594b59d73fd7e277501",
+              "world_id": "iwf0fe23446b5cc08356e316fb",
+              "family": "F0",
+              "sft_first_visit_questions": [],
+              "grpo_first_visit_questions": []
+            },
+            {
+              "root_id": "itcde83006852e1ae4e0691544",
+              "world_id": "iw09ce802aa739cb9ea1d21cba",
+              "family": "F4",
+              "sft_first_visit_questions": [
+                "TEMPORAL_SCOPE",
+                "TEMPORAL_SCOPE"
+              ],
+              "grpo_first_visit_questions": []
+            },
+            {
+              "root_id": "ita05addff5c451eae2fb5f730",
+              "world_id": "iw3eb21980c0ad92ac86b5c60c",
+              "family": "F4",
+              "sft_first_visit_questions": [
+                "TEMPORAL_SCOPE",
+                "TEMPORAL_SCOPE"
+              ],
+              "grpo_first_visit_questions": []
+            },
+            {
+              "root_id": "itcde83006852e1ae4e0691544",
+              "world_id": "iw70e4330c862fe799d2c6b410",
+              "family": "F4",
+              "sft_first_visit_questions": [
+                "TEMPORAL_SCOPE",
+                "TEMPORAL_SCOPE"
+              ],
+              "grpo_first_visit_questions": []
+            },
+            {
+              "root_id": "it68496f5ffd740b6970e5bd61",
+              "world_id": "iwe8ab260dbe1d9d9ec3cdce60",
+              "family": "F0",
+              "sft_first_visit_questions": [],
+              "grpo_first_visit_questions": []
+            },
+            {
+              "root_id": "itf4a77739a0322af8cbdce803",
+              "world_id": "iw2d47d2300be65c73e5cad108",
+              "family": "F1",
+              "sft_first_visit_questions": [],
+              "grpo_first_visit_questions": []
+            },
+            {
+              "root_id": "it84cdadc281adbe1332f3f2f0",
+              "world_id": "iwc941ff93bd3131f94d8702a9",
+              "family": "F2",
+              "sft_first_visit_questions": [],
+              "grpo_first_visit_questions": []
+            },
+            {
+              "root_id": "it64a3abba2e69ff65f0a03af8",
+              "world_id": "iwc6767bb0b0fc1e3fd8ebd8aa",
+              "family": "F4",
+              "sft_first_visit_questions": [
+                "TEMPORAL_SCOPE"
+              ],
+              "grpo_first_visit_questions": []
+            },
+            {
+              "root_id": "it1976653cb1cda739e711f625",
+              "world_id": "iw6a191abe72c335ec5462069c",
+              "family": "F2",
+              "sft_first_visit_questions": [
+                "VALID_UNTIL",
+                "VALID_UNTIL"
+              ],
+              "grpo_first_visit_questions": []
+            },
+            {
+              "root_id": "it2cd0a10e61249813ee7ab9b9",
+              "world_id": "iw04252c75d0fb86613d270625",
+              "family": "F0",
+              "sft_first_visit_questions": [],
+              "grpo_first_visit_questions": []
+            },
+            {
+              "root_id": "ita05addff5c451eae2fb5f730",
+              "world_id": "iw8b0d06dbbb5e4fa91bb5f2f7",
+              "family": "F4",
+              "sft_first_visit_questions": [
+                "TEMPORAL_SCOPE",
+                "TEMPORAL_SCOPE"
+              ],
+              "grpo_first_visit_questions": []
+            },
+            {
+              "root_id": "it77a016f4e6114dade2543601",
+              "world_id": "iwa3e10087655e5967142a16d4",
+              "family": "F4",
+              "sft_first_visit_questions": [
+                "TEMPORAL_SCOPE",
+                "TEMPORAL_SCOPE"
+              ],
+              "grpo_first_visit_questions": []
+            }
+          ]
+        },
+        "202": {
+          "sft_unsupported_probes": 17,
+          "sft_unsupported_probes_on_episodes_with_refusal": 17,
+          "grpo_terminal_questions": 0,
+          "episodes_with_lost_future_probe": [
+            {
+              "root_id": "it190180d1989d920e966b0af3",
+              "world_id": "iwc5959210c497b6f2d56382db",
+              "family": "F4",
+              "sft_first_visit_questions": [
+                "TEMPORAL_SCOPE",
+                "TEMPORAL_SCOPE"
+              ],
+              "grpo_first_visit_questions": []
+            },
+            {
+              "root_id": "ita8a948ffa3859925bdbeb0a3",
+              "world_id": "iw8fdfef1094f50479dd600c66",
+              "family": "F2",
+              "sft_first_visit_questions": [
+                "VALID_UNTIL",
+                "VALID_UNTIL"
+              ],
+              "grpo_first_visit_questions": []
+            },
+            {
+              "root_id": "it2a3e1f60031c4b463f29fcf7",
+              "world_id": "iwa7ffb8756ee2586e67c4ca70",
+              "family": "F4",
+              "sft_first_visit_questions": [
+                "TEMPORAL_SCOPE",
+                "TEMPORAL_SCOPE"
+              ],
+              "grpo_first_visit_questions": []
+            },
+            {
+              "root_id": "it6666e0b17cbf9a928e910719",
+              "world_id": "iwe4b61e02fc434ed3074730a4",
+              "family": "F4",
+              "sft_first_visit_questions": [
+                "TEMPORAL_SCOPE"
+              ],
+              "grpo_first_visit_questions": []
+            },
+            {
+              "root_id": "it190180d1989d920e966b0af3",
+              "world_id": "iw275d9d15f394792446e39bfb",
+              "family": "F4",
+              "sft_first_visit_questions": [
+                "TEMPORAL_SCOPE",
+                "TEMPORAL_SCOPE"
+              ],
+              "grpo_first_visit_questions": []
+            },
+            {
+              "root_id": "it77a016f4e6114dade2543601",
+              "world_id": "iw67fe612a73e0a75464f3822e",
+              "family": "F4",
+              "sft_first_visit_questions": [
+                "TEMPORAL_SCOPE",
+                "TEMPORAL_SCOPE"
+              ],
+              "grpo_first_visit_questions": []
+            },
+            {
+              "root_id": "it2a3e1f60031c4b463f29fcf7",
+              "world_id": "iwb4088363d5ad2d23d8ee2675",
+              "family": "F4",
+              "sft_first_visit_questions": [
+                "TEMPORAL_SCOPE",
+                "TEMPORAL_SCOPE"
+              ],
+              "grpo_first_visit_questions": []
+            },
+            {
+              "root_id": "it64a3abba2e69ff65f0a03af8",
+              "world_id": "iwfb7daa596980f63a5e1ef44a",
+              "family": "F4",
+              "sft_first_visit_questions": [
+                "TEMPORAL_SCOPE"
+              ],
+              "grpo_first_visit_questions": []
+            },
+            {
+              "root_id": "itc4ff2c6f54a02ee08387b91c",
+              "world_id": "iwe0075b75e4f634da50183d4a",
+              "family": "F4",
+              "sft_first_visit_questions": [
+                "TEMPORAL_SCOPE"
+              ],
+              "grpo_first_visit_questions": []
+            },
+            {
+              "root_id": "itf45e693d3d7bc0835ab8ca60",
+              "world_id": "iw674b8b9a804047b32342848a",
+              "family": "F1",
+              "sft_first_visit_questions": [],
+              "grpo_first_visit_questions": []
+            },
+            {
+              "root_id": "itc4ff2c6f54a02ee08387b91c",
+              "world_id": "iw7bfd9faec8b7bbcba3d0b044",
+              "family": "F4",
+              "sft_first_visit_questions": [
+                "TEMPORAL_SCOPE"
+              ],
+              "grpo_first_visit_questions": []
+            },
+            {
+              "root_id": "it6666e0b17cbf9a928e910719",
+              "world_id": "iw2a8de6ee989e0721e3847ce4",
+              "family": "F4",
+              "sft_first_visit_questions": [
+                "TEMPORAL_SCOPE"
+              ],
+              "grpo_first_visit_questions": []
+            },
+            {
+              "root_id": "it8194c594b59d73fd7e277501",
+              "world_id": "iwf0fe23446b5cc08356e316fb",
+              "family": "F0",
+              "sft_first_visit_questions": [],
+              "grpo_first_visit_questions": []
+            },
+            {
+              "root_id": "itcde83006852e1ae4e0691544",
+              "world_id": "iw09ce802aa739cb9ea1d21cba",
+              "family": "F4",
+              "sft_first_visit_questions": [
+                "TEMPORAL_SCOPE",
+                "TEMPORAL_SCOPE"
+              ],
+              "grpo_first_visit_questions": []
+            },
+            {
+              "root_id": "ita05addff5c451eae2fb5f730",
+              "world_id": "iw3eb21980c0ad92ac86b5c60c",
+              "family": "F4",
+              "sft_first_visit_questions": [
+                "TEMPORAL_SCOPE",
+                "TEMPORAL_SCOPE"
+              ],
+              "grpo_first_visit_questions": []
+            },
+            {
+              "root_id": "itcde83006852e1ae4e0691544",
+              "world_id": "iw70e4330c862fe799d2c6b410",
+              "family": "F4",
+              "sft_first_visit_questions": [
+                "TEMPORAL_SCOPE",
+                "TEMPORAL_SCOPE"
+              ],
+              "grpo_first_visit_questions": []
+            },
+            {
+              "root_id": "it68496f5ffd740b6970e5bd61",
+              "world_id": "iwe8ab260dbe1d9d9ec3cdce60",
+              "family": "F0",
+              "sft_first_visit_questions": [],
+              "grpo_first_visit_questions": []
+            },
+            {
+              "root_id": "itf4a77739a0322af8cbdce803",
+              "world_id": "iw2d47d2300be65c73e5cad108",
+              "family": "F1",
+              "sft_first_visit_questions": [],
+              "grpo_first_visit_questions": []
+            },
+            {
+              "root_id": "it84cdadc281adbe1332f3f2f0",
+              "world_id": "iwc941ff93bd3131f94d8702a9",
+              "family": "F2",
+              "sft_first_visit_questions": [],
+              "grpo_first_visit_questions": []
+            },
+            {
+              "root_id": "it64a3abba2e69ff65f0a03af8",
+              "world_id": "iwc6767bb0b0fc1e3fd8ebd8aa",
+              "family": "F4",
+              "sft_first_visit_questions": [
+                "TEMPORAL_SCOPE"
+              ],
+              "grpo_first_visit_questions": []
+            },
+            {
+              "root_id": "it1976653cb1cda739e711f625",
+              "world_id": "iw6a191abe72c335ec5462069c",
+              "family": "F2",
+              "sft_first_visit_questions": [
+                "VALID_UNTIL",
+                "VALID_UNTIL"
+              ],
+              "grpo_first_visit_questions": []
+            },
+            {
+              "root_id": "it2cd0a10e61249813ee7ab9b9",
+              "world_id": "iw04252c75d0fb86613d270625",
+              "family": "F0",
+              "sft_first_visit_questions": [],
+              "grpo_first_visit_questions": []
+            },
+            {
+              "root_id": "ita05addff5c451eae2fb5f730",
+              "world_id": "iw8b0d06dbbb5e4fa91bb5f2f7",
+              "family": "F4",
+              "sft_first_visit_questions": [
+                "TEMPORAL_SCOPE",
+                "TEMPORAL_SCOPE"
+              ],
+              "grpo_first_visit_questions": []
+            },
+            {
+              "root_id": "it77a016f4e6114dade2543601",
+              "world_id": "iwa3e10087655e5967142a16d4",
+              "family": "F4",
+              "sft_first_visit_questions": [
+                "TEMPORAL_SCOPE",
+                "TEMPORAL_SCOPE"
+              ],
+              "grpo_first_visit_questions": []
+            }
+          ]
+        },
+        "303": {
+          "sft_unsupported_probes": 17,
+          "sft_unsupported_probes_on_episodes_with_refusal": 17,
+          "grpo_terminal_questions": 0,
+          "episodes_with_lost_future_probe": [
+            {
+              "root_id": "it190180d1989d920e966b0af3",
+              "world_id": "iwc5959210c497b6f2d56382db",
+              "family": "F4",
+              "sft_first_visit_questions": [
+                "TEMPORAL_SCOPE",
+                "TEMPORAL_SCOPE"
+              ],
+              "grpo_first_visit_questions": []
+            },
+            {
+              "root_id": "ita8a948ffa3859925bdbeb0a3",
+              "world_id": "iw8fdfef1094f50479dd600c66",
+              "family": "F2",
+              "sft_first_visit_questions": [
+                "VALID_UNTIL",
+                "VALID_UNTIL"
+              ],
+              "grpo_first_visit_questions": []
+            },
+            {
+              "root_id": "it2a3e1f60031c4b463f29fcf7",
+              "world_id": "iwa7ffb8756ee2586e67c4ca70",
+              "family": "F4",
+              "sft_first_visit_questions": [
+                "TEMPORAL_SCOPE",
+                "TEMPORAL_SCOPE"
+              ],
+              "grpo_first_visit_questions": []
+            },
+            {
+              "root_id": "it6666e0b17cbf9a928e910719",
+              "world_id": "iwe4b61e02fc434ed3074730a4",
+              "family": "F4",
+              "sft_first_visit_questions": [
+                "TEMPORAL_SCOPE"
+              ],
+              "grpo_first_visit_questions": []
+            },
+            {
+              "root_id": "it190180d1989d920e966b0af3",
+              "world_id": "iw275d9d15f394792446e39bfb",
+              "family": "F4",
+              "sft_first_visit_questions": [
+                "TEMPORAL_SCOPE",
+                "TEMPORAL_SCOPE"
+              ],
+              "grpo_first_visit_questions": []
+            },
+            {
+              "root_id": "it77a016f4e6114dade2543601",
+              "world_id": "iw67fe612a73e0a75464f3822e",
+              "family": "F4",
+              "sft_first_visit_questions": [
+                "TEMPORAL_SCOPE",
+                "TEMPORAL_SCOPE"
+              ],
+              "grpo_first_visit_questions": []
+            },
+            {
+              "root_id": "it2a3e1f60031c4b463f29fcf7",
+              "world_id": "iwb4088363d5ad2d23d8ee2675",
+              "family": "F4",
+              "sft_first_visit_questions": [
+                "TEMPORAL_SCOPE",
+                "TEMPORAL_SCOPE"
+              ],
+              "grpo_first_visit_questions": []
+            },
+            {
+              "root_id": "it64a3abba2e69ff65f0a03af8",
+              "world_id": "iwfb7daa596980f63a5e1ef44a",
+              "family": "F4",
+              "sft_first_visit_questions": [
+                "TEMPORAL_SCOPE"
+              ],
+              "grpo_first_visit_questions": []
+            },
+            {
+              "root_id": "itc4ff2c6f54a02ee08387b91c",
+              "world_id": "iwe0075b75e4f634da50183d4a",
+              "family": "F4",
+              "sft_first_visit_questions": [
+                "TEMPORAL_SCOPE"
+              ],
+              "grpo_first_visit_questions": []
+            },
+            {
+              "root_id": "itf45e693d3d7bc0835ab8ca60",
+              "world_id": "iw674b8b9a804047b32342848a",
+              "family": "F1",
+              "sft_first_visit_questions": [],
+              "grpo_first_visit_questions": []
+            },
+            {
+              "root_id": "itc4ff2c6f54a02ee08387b91c",
+              "world_id": "iw7bfd9faec8b7bbcba3d0b044",
+              "family": "F4",
+              "sft_first_visit_questions": [
+                "TEMPORAL_SCOPE"
+              ],
+              "grpo_first_visit_questions": []
+            },
+            {
+              "root_id": "it6666e0b17cbf9a928e910719",
+              "world_id": "iw2a8de6ee989e0721e3847ce4",
+              "family": "F4",
+              "sft_first_visit_questions": [
+                "TEMPORAL_SCOPE"
+              ],
+              "grpo_first_visit_questions": []
+            },
+            {
+              "root_id": "it8194c594b59d73fd7e277501",
+              "world_id": "iwf0fe23446b5cc08356e316fb",
+              "family": "F0",
+              "sft_first_visit_questions": [],
+              "grpo_first_visit_questions": []
+            },
+            {
+              "root_id": "itcde83006852e1ae4e0691544",
+              "world_id": "iw09ce802aa739cb9ea1d21cba",
+              "family": "F4",
+              "sft_first_visit_questions": [
+                "TEMPORAL_SCOPE",
+                "TEMPORAL_SCOPE"
+              ],
+              "grpo_first_visit_questions": []
+            },
+            {
+              "root_id": "ita05addff5c451eae2fb5f730",
+              "world_id": "iw3eb21980c0ad92ac86b5c60c",
+              "family": "F4",
+              "sft_first_visit_questions": [
+                "TEMPORAL_SCOPE",
+                "TEMPORAL_SCOPE"
+              ],
+              "grpo_first_visit_questions": []
+            },
+            {
+              "root_id": "itcde83006852e1ae4e0691544",
+              "world_id": "iw70e4330c862fe799d2c6b410",
+              "family": "F4",
+              "sft_first_visit_questions": [
+                "TEMPORAL_SCOPE",
+                "TEMPORAL_SCOPE"
+              ],
+              "grpo_first_visit_questions": []
+            },
+            {
+              "root_id": "it68496f5ffd740b6970e5bd61",
+              "world_id": "iwe8ab260dbe1d9d9ec3cdce60",
+              "family": "F0",
+              "sft_first_visit_questions": [],
+              "grpo_first_visit_questions": []
+            },
+            {
+              "root_id": "itf4a77739a0322af8cbdce803",
+              "world_id": "iw2d47d2300be65c73e5cad108",
+              "family": "F1",
+              "sft_first_visit_questions": [],
+              "grpo_first_visit_questions": []
+            },
+            {
+              "root_id": "it84cdadc281adbe1332f3f2f0",
+              "world_id": "iwc941ff93bd3131f94d8702a9",
+              "family": "F2",
+              "sft_first_visit_questions": [],
+              "grpo_first_visit_questions": []
+            },
+            {
+              "root_id": "it64a3abba2e69ff65f0a03af8",
+              "world_id": "iwc6767bb0b0fc1e3fd8ebd8aa",
+              "family": "F4",
+              "sft_first_visit_questions": [
+                "TEMPORAL_SCOPE"
+              ],
+              "grpo_first_visit_questions": []
+            },
+            {
+              "root_id": "it1976653cb1cda739e711f625",
+              "world_id": "iw6a191abe72c335ec5462069c",
+              "family": "F2",
+              "sft_first_visit_questions": [
+                "VALID_UNTIL",
+                "VALID_UNTIL"
+              ],
+              "grpo_first_visit_questions": []
+            },
+            {
+              "root_id": "it2cd0a10e61249813ee7ab9b9",
+              "world_id": "iw04252c75d0fb86613d270625",
+              "family": "F0",
+              "sft_first_visit_questions": [],
+              "grpo_first_visit_questions": []
+            },
+            {
+              "root_id": "ita05addff5c451eae2fb5f730",
+              "world_id": "iw8b0d06dbbb5e4fa91bb5f2f7",
+              "family": "F4",
+              "sft_first_visit_questions": [
+                "TEMPORAL_SCOPE",
+                "TEMPORAL_SCOPE"
+              ],
+              "grpo_first_visit_questions": []
+            },
+            {
+              "root_id": "it77a016f4e6114dade2543601",
+              "world_id": "iwa3e10087655e5967142a16d4",
+              "family": "F4",
+              "sft_first_visit_questions": [
+                "TEMPORAL_SCOPE",
+                "TEMPORAL_SCOPE"
+              ],
+              "grpo_first_visit_questions": []
+            }
+          ]
+        }
+      },
+      "normalization": {
+        "only_penalties_vary": {
+          "groups": 72,
+          "mean_raw_return_span": 0.16444444444444445,
+          "median_raw_return_span": 0.15999999999999992,
+          "median_normalized_advantage_std": 0.9999832297714141,
+          "mean_absolute_normalized_advantage": 0.819132941765987
+        },
+        "identical": {
+          "groups": 225,
+          "mean_raw_return_span": 0.0,
+          "median_raw_return_span": 0.0,
+          "median_normalized_advantage_std": 0.0,
+          "mean_absolute_normalized_advantage": 0.0
+        },
+        "task_varies": {
+          "groups": 3,
+          "mean_raw_return_span": 1.5216666666666665,
+          "median_raw_return_span": 1.5999999999999999,
+          "median_normalized_advantage_std": 0.9999982463066746,
+          "mean_absolute_normalized_advantage": 0.804608682089781
+        }
+      }
+    }
+  },
+  "target_or_proceed_bound": {
+    "scope": "Historical validation only; restricted to PROCEED and each visit's privately authored slot. The privileged branch choice is a diagnostic, not a deployable policy.",
+    "source_sha256": "323ee0c6b5818a446eedd798e880dbf7022375cc491a7519b38457860229238a",
+    "counts": {
+      "episodes": 53,
+      "higher_future_possible": 0,
+      "higher_current_without_future_loss_possible": 0,
+      "same_accuracy_with_fewer_questions_possible": 15,
+      "higher_return_possible": 15
+    }
+  }
+}

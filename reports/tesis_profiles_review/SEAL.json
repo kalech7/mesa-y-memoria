@@ -1,0 +1,9 @@
+{
+  "status": "frozen_before_selection",
+  "manifest_sha256": "4cb9b9ec8ad41d0b397a1708ddcfe39832a41e478ebc2b33bab66b4056bbb7a6",
+  "loader_sha256": "8f63e78df5e7f0cb3bf4af4d2695f956885480738ec8b6fa41b5ea6ccfc47e63",
+  "roots": 16,
+  "worlds": 22,
+  "human_reviews": 0,
+  "authorship": "handwritten by a separate AI subagent without consulting the development wording"
+}

@@ -1,0 +1,153 @@
+{
+  "caso-de558a7f29fd29": {
+    "root_id": "tb0ca38eb0311a286b7d2b",
+    "family": "F3",
+    "split": "train",
+    "literal": {
+      "information_sufficient": true,
+      "need_future": false,
+      "decisive_slot": null,
+      "writable_scope": "none",
+      "admissible_answers": [
+        "menestra de fréjol"
+      ]
+    },
+    "has_pair": false
+  },
+  "caso-19f9250badfab8": {
+    "root_id": "tb12ca926ac7b29f9fd83a",
+    "family": "F0",
+    "split": "validation",
+    "literal": {
+      "information_sufficient": true,
+      "need_future": false,
+      "decisive_slot": null,
+      "writable_scope": "none",
+      "admissible_answers": [
+        "huevos con espinaca"
+      ]
+    },
+    "has_pair": false
+  },
+  "caso-7443f022b6dc2f": {
+    "root_id": "tb1b920b7bef50a00cfa42",
+    "family": "F4",
+    "split": "train",
+    "literal": {
+      "information_sufficient": true,
+      "need_future": true,
+      "decisive_slot": "TEMPORAL_SCOPE",
+      "writable_scope": "none",
+      "admissible_answers": [
+        "ensalada de quinua"
+      ]
+    },
+    "has_pair": true
+  },
+  "caso-c49a4c4412c131": {
+    "root_id": "tb2f329b9b08ef7d72fbdb",
+    "family": "F2",
+    "split": "validation",
+    "literal": {
+      "information_sufficient": true,
+      "need_future": false,
+      "decisive_slot": null,
+      "writable_scope": "interval",
+      "admissible_answers": [
+        "avena con canela"
+      ]
+    },
+    "has_pair": false
+  },
+  "caso-4fef49fe362d6b": {
+    "root_id": "tb3042580595b86daa9038",
+    "family": "F4",
+    "split": "validation",
+    "literal": {
+      "information_sufficient": true,
+      "need_future": true,
+      "decisive_slot": "TEMPORAL_SCOPE",
+      "writable_scope": "none",
+      "admissible_answers": [
+        "tortilla de verde"
+      ]
+    },
+    "has_pair": true
+  },
+  "caso-3e132410ac7187": {
+    "root_id": "tb4614b7049920b0bb6ab3",
+    "family": "F0",
+    "split": "train",
+    "literal": {
+      "information_sufficient": true,
+      "need_future": false,
+      "decisive_slot": null,
+      "writable_scope": "none",
+      "admissible_answers": [
+        "locro de papa"
+      ]
+    },
+    "has_pair": false
+  },
+  "caso-f9a82838d2aa31": {
+    "root_id": "tb596fb38531986f3d6777",
+    "family": "F3",
+    "split": "validation",
+    "literal": {
+      "information_sufficient": false,
+      "need_future": false,
+      "decisive_slot": "CURRENT_CONTEXT",
+      "writable_scope": "none",
+      "admissible_answers": [
+        "pan de yuca",
+        "tamal de maíz"
+      ]
+    },
+    "has_pair": true
+  },
+  "caso-5dcd9e8ecc2f70": {
+    "root_id": "tb9e5c5e36deacdb27401a",
+    "family": "F2",
+    "split": "train",
+    "literal": {
+      "information_sufficient": true,
+      "need_future": false,
+      "decisive_slot": null,
+      "writable_scope": "interval",
+      "admissible_answers": [
+        "mote con queso"
+      ]
+    },
+    "has_pair": false
+  },
+  "caso-45c08b983d8fb6": {
+    "root_id": "tbcede590010927b9532ef",
+    "family": "F1",
+    "split": "train",
+    "literal": {
+      "information_sufficient": true,
+      "need_future": false,
+      "decisive_slot": null,
+      "writable_scope": "ongoing",
+      "admissible_answers": [
+        "ensalada de quinua"
+      ]
+    },
+    "has_pair": false
+  },
+  "caso-29548ec5e71dad": {
+    "root_id": "tbfd1256bc296980b18b37",
+    "family": "F1",
+    "split": "validation",
+    "literal": {
+      "information_sufficient": true,
+      "need_future": false,
+      "decisive_slot": null,
+      "writable_scope": "ongoing",
+      "admissible_answers": [
+        "maduros asados"
+      ]
+    },
+    "has_pair": false
+  }
+}

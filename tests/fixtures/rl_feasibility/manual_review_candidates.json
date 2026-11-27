@@ -1,0 +1,1607 @@
+{
+  "provenance": {
+    "authored_by": "coding_agent_manual",
+    "human_reviewed": false,
+    "external_adjudication": false,
+    "generation_method": "Hand-authored semantic examples; no solver/generator logic inspected for labels. Schema obtained from API contract and one sample.",
+    "purpose": "Additional synthetic challenge candidate; not a human-independent validation set."
+  },
+  "scenarios": [
+    {
+      "scenario_id": "M01",
+      "user_id": "manual_user_01",
+      "category": "NONE",
+      "split": "manual_agent_authored",
+      "query": "¿Qué me recomiendas para comer?",
+      "events": [
+        {
+          "id": "e0",
+          "text": "En general me gusta el arroz.",
+          "source": "USER_STATEMENT",
+          "timestamp": "2026-10-19T12:00:00Z"
+        }
+      ],
+      "oracle_preferences": [
+        {
+          "preference_id": "p0",
+          "user_id": "user",
+          "food_item": "arroz",
+          "polarity": "LIKE",
+          "day_scope": "ANY",
+          "meal_scope": "ANY",
+          "context": {},
+          "valid_from": null,
+          "valid_to": null,
+          "source": "USER_STATEMENT",
+          "timestamp": "2026-10-19T12:00:00Z",
+          "evidence_id": "e0",
+          "confidence": null,
+          "weekdays": [],
+          "supersedes": [],
+          "temporary": false,
+          "stability": null,
+          "scope_unknown": [],
+          "explicit_update": false
+        }
+      ],
+      "oracle_restrictions": [],
+      "visible_context": {},
+      "latent": {
+        "context": {
+          "day": "WEEKDAY",
+          "meal": "LUNCH",
+          "company": "alone",
+          "place": "home"
+        },
+        "acceptable_foods": [
+          "arroz"
+        ],
+        "unresolvable": false
+      },
+      "response_map": {
+        "day": {
+          "value": "WEEKDAY",
+          "text": "Es para un día laboral."
+        },
+        "meal": {
+          "value": "LUNCH",
+          "text": "Es para el almuerzo."
+        },
+        "company": {
+          "value": "alone",
+          "text": "Voy a comer solo."
+        },
+        "place": {
+          "value": "home",
+          "text": "Voy a comer en casa."
+        },
+        "current_preference": {
+          "value": null,
+          "text": "No puedo aclarar una preferencia actual con certeza."
+        }
+      },
+      "reference_time": "2026-10-19T12:00:00Z"
+    },
+    {
+      "scenario_id": "M02",
+      "user_id": "manual_user_02",
+      "category": "NONE",
+      "split": "manual_agent_authored",
+      "query": "Quiero una recomendación fundamentada.",
+      "events": [
+        {
+          "id": "e0",
+          "text": "En general no me gusta pizza.",
+          "source": "USER_STATEMENT",
+          "timestamp": "2026-10-19T12:00:00Z"
+        },
+        {
+          "id": "e1",
+          "text": "En general me gusta sopa.",
+          "source": "USER_STATEMENT",
+          "timestamp": "2026-10-19T12:00:00Z"
+        }
+      ],
+      "oracle_preferences": [
+        {
+          "preference_id": "p0",
+          "user_id": "user",
+          "food_item": "pizza",
+          "polarity": "DISLIKE",
+          "day_scope": "ANY",
+          "meal_scope": "ANY",
+          "context": {},
+          "valid_from": null,
+          "valid_to": null,
+          "source": "USER_STATEMENT",
+          "timestamp": "2026-10-19T12:00:00Z",
+          "evidence_id": "e0",
+          "confidence": null,
+          "weekdays": [],
+          "supersedes": [],
+          "temporary": false,
+          "stability": null,
+          "scope_unknown": [],
+          "explicit_update": false
+        },
+        {
+          "preference_id": "p1",
+          "user_id": "user",
+          "food_item": "sopa",
+          "polarity": "LIKE",
+          "day_scope": "ANY",
+          "meal_scope": "ANY",
+          "context": {},
+          "valid_from": null,
+          "valid_to": null,
+          "source": "USER_STATEMENT",
+          "timestamp": "2026-10-19T12:00:00Z",
+          "evidence_id": "e1",
+          "confidence": null,
+          "weekdays": [],
+          "supersedes": [],
+          "temporary": false,
+          "stability": null,
+          "scope_unknown": [],
+          "explicit_update": false
+        }
+      ],
+      "oracle_restrictions": [],
+      "visible_context": {},
+      "latent": {
+        "context": {
+          "day": "WEEKDAY",
+          "meal": "LUNCH",
+          "company": "alone",
+          "place": "home"
+        },
+        "acceptable_foods": [
+          "sopa"
+        ],
+        "unresolvable": false
+      },
+      "response_map": {
+        "day": {
+          "value": "WEEKDAY",
+          "text": "Es para un día laboral."
+        },
+        "meal": {
+          "value": "LUNCH",
+          "text": "Es para el almuerzo."
+        },
+        "company": {
+          "value": "alone",
+          "text": "Voy a comer solo."
+        },
+        "place": {
+          "value": "home",
+          "text": "Voy a comer en casa."
+        },
+        "current_preference": {
+          "value": null,
+          "text": "No puedo aclarar una preferencia actual con certeza."
+        }
+      },
+      "reference_time": "2026-10-19T12:00:00Z"
+    },
+    {
+      "scenario_id": "M03",
+      "user_id": "manual_user_03",
+      "category": "CPC",
+      "split": "manual_agent_authored",
+      "query": "¿Qué debería comer hoy?",
+      "events": [
+        {
+          "id": "e0",
+          "text": "Los días laborales prefiero arroz.",
+          "source": "USER_STATEMENT",
+          "timestamp": "2026-10-19T12:00:00Z"
+        },
+        {
+          "id": "e1",
+          "text": "Los fines de semana prefiero pizza.",
+          "source": "USER_STATEMENT",
+          "timestamp": "2026-10-19T12:00:00Z"
+        }
+      ],
+      "oracle_preferences": [
+        {
+          "preference_id": "p0",
+          "user_id": "user",
+          "food_item": "arroz",
+          "polarity": "LIKE",
+          "day_scope": "WEEKDAY",
+          "meal_scope": "ANY",
+          "context": {},
+          "valid_from": null,
+          "valid_to": null,
+          "source": "USER_STATEMENT",
+          "timestamp": "2026-10-19T12:00:00Z",
+          "evidence_id": "e0",
+          "confidence": null,
+          "weekdays": [],
+          "supersedes": [],
+          "temporary": false,
+          "stability": null,
+          "scope_unknown": [],
+          "explicit_update": false
+        },
+        {
+          "preference_id": "p1",
+          "user_id": "user",
+          "food_item": "pizza",
+          "polarity": "LIKE",
+          "day_scope": "WEEKEND",
+          "meal_scope": "ANY",
+          "context": {},
+          "valid_from": null,
+          "valid_to": null,
+          "source": "USER_STATEMENT",
+          "timestamp": "2026-10-19T12:00:00Z",
+          "evidence_id": "e1",
+          "confidence": null,
+          "weekdays": [],
+          "supersedes": [],
+          "temporary": false,
+          "stability": null,
+          "scope_unknown": [],
+          "explicit_update": false
+        }
+      ],
+      "oracle_restrictions": [],
+      "visible_context": {},
+      "latent": {
+        "context": {
+          "day": "WEEKEND",
+          "meal": "LUNCH",
+          "company": "alone",
+          "place": "home"
+        },
+        "acceptable_foods": [
+          "pizza"
+        ],
+        "unresolvable": false
+      },
+      "response_map": {
+        "day": {
+          "value": "WEEKEND",
+          "text": "Es para el fin de semana."
+        },
+        "meal": {
+          "value": "LUNCH",
+          "text": "Es para el almuerzo."
+        },
+        "company": {
+          "value": "alone",
+          "text": "Voy a comer solo."
+        },
+        "place": {
+          "value": "home",
+          "text": "Voy a comer en casa."
+        },
+        "current_preference": {
+          "value": null,
+          "text": "No puedo aclarar una preferencia actual con certeza."
+        }
+      },
+      "reference_time": "2026-10-19T12:00:00Z"
+    },
+    {
+      "scenario_id": "M04",
+      "user_id": "manual_user_04",
+      "category": "CPC",
+      "split": "manual_agent_authored",
+      "query": "¿Qué debería comer?",
+      "events": [
+        {
+          "id": "e0",
+          "text": "Para la cena me gusta sopa.",
+          "source": "USER_STATEMENT",
+          "timestamp": "2026-10-19T12:00:00Z"
+        },
+        {
+          "id": "e1",
+          "text": "Para el almuerzo me gusta arroz.",
+          "source": "USER_STATEMENT",
+          "timestamp": "2026-10-19T12:00:00Z"
+        }
+      ],
+      "oracle_preferences": [
+        {
+          "preference_id": "p0",
+          "user_id": "user",
+          "food_item": "sopa",
+          "polarity": "LIKE",
+          "day_scope": "ANY",
+          "meal_scope": "DINNER",
+          "context": {},
+          "valid_from": null,
+          "valid_to": null,
+          "source": "USER_STATEMENT",
+          "timestamp": "2026-10-19T12:00:00Z",
+          "evidence_id": "e0",
+          "confidence": null,
+          "weekdays": [],
+          "supersedes": [],
+          "temporary": false,
+          "stability": null,
+          "scope_unknown": [],
+          "explicit_update": false
+        },
+        {
+          "preference_id": "p1",
+          "user_id": "user",
+          "food_item": "arroz",
+          "polarity": "LIKE",
+          "day_scope": "ANY",
+          "meal_scope": "LUNCH",
+          "context": {},
+          "valid_from": null,
+          "valid_to": null,
+          "source": "USER_STATEMENT",
+          "timestamp": "2026-10-19T12:00:00Z",
+          "evidence_id": "e1",
+          "confidence": null,
+          "weekdays": [],
+          "supersedes": [],
+          "temporary": false,
+          "stability": null,
+          "scope_unknown": [],
+          "explicit_update": false
+        }
+      ],
+      "oracle_restrictions": [],
+      "visible_context": {},
+      "latent": {
+        "context": {
+          "day": "WEEKDAY",
+          "meal": "DINNER",
+          "company": "alone",
+          "place": "home"
+        },
+        "acceptable_foods": [
+          "sopa"
+        ],
+        "unresolvable": false
+      },
+      "response_map": {
+        "day": {
+          "value": "WEEKDAY",
+          "text": "Es para un día laboral."
+        },
+        "meal": {
+          "value": "DINNER",
+          "text": "Es para la cena."
+        },
+        "company": {
+          "value": "alone",
+          "text": "Voy a comer solo."
+        },
+        "place": {
+          "value": "home",
+          "text": "Voy a comer en casa."
+        },
+        "current_preference": {
+          "value": null,
+          "text": "No puedo aclarar una preferencia actual con certeza."
+        }
+      },
+      "reference_time": "2026-10-19T12:00:00Z"
+    },
+    {
+      "scenario_id": "M05",
+      "user_id": "manual_user_05",
+      "category": "CPC",
+      "split": "manual_agent_authored",
+      "query": "Me ayudas a elegir comida?",
+      "events": [
+        {
+          "id": "e0",
+          "text": "Cuando como solo prefiero ensalada.",
+          "source": "USER_STATEMENT",
+          "timestamp": "2026-10-19T12:00:00Z"
+        },
+        {
+          "id": "e1",
+          "text": "Con amigos prefiero pizza.",
+          "source": "USER_STATEMENT",
+          "timestamp": "2026-10-19T12:00:00Z"
+        }
+      ],
+      "oracle_preferences": [
+        {
+          "preference_id": "p0",
+          "user_id": "user",
+          "food_item": "ensalada",
+          "polarity": "LIKE",
+          "day_scope": "ANY",
+          "meal_scope": "ANY",
+          "context": {
+            "company": "alone"
+          },
+          "valid_from": null,
+          "valid_to": null,
+          "source": "USER_STATEMENT",
+          "timestamp": "2026-10-19T12:00:00Z",
+          "evidence_id": "e0",
+          "confidence": null,
+          "weekdays": [],
+          "supersedes": [],
+          "temporary": false,
+          "stability": null,
+          "scope_unknown": [],
+          "explicit_update": false
+        },
+        {
+          "preference_id": "p1",
+          "user_id": "user",
+          "food_item": "pizza",
+          "polarity": "LIKE",
+          "day_scope": "ANY",
+          "meal_scope": "ANY",
+          "context": {
+            "company": "friends"
+          },
+          "valid_from": null,
+          "valid_to": null,
+          "source": "USER_STATEMENT",
+          "timestamp": "2026-10-19T12:00:00Z",
+          "evidence_id": "e1",
+          "confidence": null,
+          "weekdays": [],
+          "supersedes": [],
+          "temporary": false,
+          "stability": null,
+          "scope_unknown": [],
+          "explicit_update": false
+        }
+      ],
+      "oracle_restrictions": [],
+      "visible_context": {},
+      "latent": {
+        "context": {
+          "day": "WEEKDAY",
+          "meal": "LUNCH",
+          "company": "friends",
+          "place": "home"
+        },
+        "acceptable_foods": [
+          "pizza"
+        ],
+        "unresolvable": false
+      },
+      "response_map": {
+        "day": {
+          "value": "WEEKDAY",
+          "text": "Es para un día laboral."
+        },
+        "meal": {
+          "value": "LUNCH",
+          "text": "Es para el almuerzo."
+        },
+        "company": {
+          "value": "friends",
+          "text": "Voy a comer con amigos."
+        },
+        "place": {
+          "value": "home",
+          "text": "Voy a comer en casa."
+        },
+        "current_preference": {
+          "value": null,
+          "text": "No puedo aclarar una preferencia actual con certeza."
+        }
+      },
+      "reference_time": "2026-10-19T12:00:00Z"
+    },
+    {
+      "scenario_id": "M06",
+      "user_id": "manual_user_06",
+      "category": "CPC",
+      "split": "manual_agent_authored",
+      "query": "¿Qué comida elijo?",
+      "events": [
+        {
+          "id": "e0",
+          "text": "En casa me gusta sopa.",
+          "source": "USER_STATEMENT",
+          "timestamp": "2026-10-19T12:00:00Z"
+        },
+        {
+          "id": "e1",
+          "text": "En la oficina me gusta arroz.",
+          "source": "USER_STATEMENT",
+          "timestamp": "2026-10-19T12:00:00Z"
+        }
+      ],
+      "oracle_preferences": [
+        {
+          "preference_id": "p0",
+          "user_id": "user",
+          "food_item": "sopa",
+          "polarity": "LIKE",
+          "day_scope": "ANY",
+          "meal_scope": "ANY",
+          "context": {
+            "place": "home"
+          },
+          "valid_from": null,
+          "valid_to": null,
+          "source": "USER_STATEMENT",
+          "timestamp": "2026-10-19T12:00:00Z",
+          "evidence_id": "e0",
+          "confidence": null,
+          "weekdays": [],
+          "supersedes": [],
+          "temporary": false,
+          "stability": null,
+          "scope_unknown": [],
+          "explicit_update": false
+        },
+        {
+          "preference_id": "p1",
+          "user_id": "user",
+          "food_item": "arroz",
+          "polarity": "LIKE",
+          "day_scope": "ANY",
+          "meal_scope": "ANY",
+          "context": {
+            "place": "work"
+          },
+          "valid_from": null,
+          "valid_to": null,
+          "source": "USER_STATEMENT",
+          "timestamp": "2026-10-19T12:00:00Z",
+          "evidence_id": "e1",
+          "confidence": null,
+          "weekdays": [],
+          "supersedes": [],
+          "temporary": false,
+          "stability": null,
+          "scope_unknown": [],
+          "explicit_update": false
+        }
+      ],
+      "oracle_restrictions": [],
+      "visible_context": {},
+      "latent": {
+        "context": {
+          "day": "WEEKDAY",
+          "meal": "LUNCH",
+          "company": "alone",
+          "place": "work"
+        },
+        "acceptable_foods": [
+          "arroz"
+        ],
+        "unresolvable": false
+      },
+      "response_map": {
+        "day": {
+          "value": "WEEKDAY",
+          "text": "Es para un día laboral."
+        },
+        "meal": {
+          "value": "LUNCH",
+          "text": "Es para el almuerzo."
+        },
+        "company": {
+          "value": "alone",
+          "text": "Voy a comer solo."
+        },
+        "place": {
+          "value": "work",
+          "text": "Voy a comer en la oficina."
+        },
+        "current_preference": {
+          "value": null,
+          "text": "No puedo aclarar una preferencia actual con certeza."
+        }
+      },
+      "reference_time": "2026-10-19T12:00:00Z"
+    },
+    {
+      "scenario_id": "M07",
+      "user_id": "manual_user_07",
+      "category": "CPC",
+      "split": "manual_agent_authored",
+      "query": "Necesito elegir una comida.",
+      "events": [
+        {
+          "id": "e0",
+          "text": "En días laborales, para el almuerzo prefiero ensalada.",
+          "source": "USER_STATEMENT",
+          "timestamp": "2026-10-19T12:00:00Z"
+        },
+        {
+          "id": "e1",
+          "text": "En días laborales, para la cena prefiero arroz.",
+          "source": "USER_STATEMENT",
+          "timestamp": "2026-10-19T12:00:00Z"
+        },
+        {
+          "id": "e2",
+          "text": "En fin de semana, para el almuerzo prefiero sopa.",
+          "source": "USER_STATEMENT",
+          "timestamp": "2026-10-19T12:00:00Z"
+        },
+        {
+          "id": "e3",
+          "text": "En fin de semana, para la cena prefiero pizza.",
+          "source": "USER_STATEMENT",
+          "timestamp": "2026-10-19T12:00:00Z"
+        }
+      ],
+      "oracle_preferences": [
+        {
+          "preference_id": "p0",
+          "user_id": "user",
+          "food_item": "ensalada",
+          "polarity": "LIKE",
+          "day_scope": "WEEKDAY",
+          "meal_scope": "LUNCH",
+          "context": {},
+          "valid_from": null,
+          "valid_to": null,
+          "source": "USER_STATEMENT",
+          "timestamp": "2026-10-19T12:00:00Z",
+          "evidence_id": "e0",
+          "confidence": null,
+          "weekdays": [],
+          "supersedes": [],
+          "temporary": false,
+          "stability": null,
+          "scope_unknown": [],
+          "explicit_update": false
+        },
+        {
+          "preference_id": "p1",
+          "user_id": "user",
+          "food_item": "arroz",
+          "polarity": "LIKE",
+          "day_scope": "WEEKDAY",
+          "meal_scope": "DINNER",
+          "context": {},
+          "valid_from": null,
+          "valid_to": null,
+          "source": "USER_STATEMENT",
+          "timestamp": "2026-10-19T12:00:00Z",
+          "evidence_id": "e1",
+          "confidence": null,
+          "weekdays": [],
+          "supersedes": [],
+          "temporary": false,
+          "stability": null,
+          "scope_unknown": [],
+          "explicit_update": false
+        },
+        {
+          "preference_id": "p2",
+          "user_id": "user",
+          "food_item": "sopa",
+          "polarity": "LIKE",
+          "day_scope": "WEEKEND",
+          "meal_scope": "LUNCH",
+          "context": {},
+          "valid_from": null,
+          "valid_to": null,
+          "source": "USER_STATEMENT",
+          "timestamp": "2026-10-19T12:00:00Z",
+          "evidence_id": "e2",
+          "confidence": null,
+          "weekdays": [],
+          "supersedes": [],
+          "temporary": false,
+          "stability": null,
+          "scope_unknown": [],
+          "explicit_update": false
+        },
+        {
+          "preference_id": "p3",
+          "user_id": "user",
+          "food_item": "pizza",
+          "polarity": "LIKE",
+          "day_scope": "WEEKEND",
+          "meal_scope": "DINNER",
+          "context": {},
+          "valid_from": null,
+          "valid_to": null,
+          "source": "USER_STATEMENT",
+          "timestamp": "2026-10-19T12:00:00Z",
+          "evidence_id": "e3",
+          "confidence": null,
+          "weekdays": [],
+          "supersedes": [],
+          "temporary": false,
+          "stability": null,
+          "scope_unknown": [],
+          "explicit_update": false
+        }
+      ],
+      "oracle_restrictions": [],
+      "visible_context": {},
+      "latent": {
+        "context": {
+          "day": "WEEKEND",
+          "meal": "LUNCH",
+          "company": "alone",
+          "place": "home"
+        },
+        "acceptable_foods": [
+          "sopa"
+        ],
+        "unresolvable": false
+      },
+      "response_map": {
+        "day": {
+          "value": "WEEKEND",
+          "text": "Es para el fin de semana."
+        },
+        "meal": {
+          "value": "LUNCH",
+          "text": "Es para el almuerzo."
+        },
+        "company": {
+          "value": "alone",
+          "text": "Voy a comer solo."
+        },
+        "place": {
+          "value": "home",
+          "text": "Voy a comer en casa."
+        },
+        "current_preference": {
+          "value": null,
+          "text": "No puedo aclarar una preferencia actual con certeza."
+        }
+      },
+      "reference_time": "2026-10-19T12:00:00Z"
+    },
+    {
+      "scenario_id": "M08",
+      "user_id": "manual_user_08",
+      "category": "BOC",
+      "split": "manual_agent_authored",
+      "query": "Hoy quiero elegir según mi preferencia actual.",
+      "events": [
+        {
+          "id": "e0",
+          "text": "En junio me gustaba pizza.",
+          "source": "USER_STATEMENT",
+          "timestamp": "2026-06-01T12:00:00Z"
+        },
+        {
+          "id": "e1",
+          "text": "En agosto no me gustaba pizza.",
+          "source": "USER_STATEMENT",
+          "timestamp": "2026-08-01T12:00:00Z"
+        },
+        {
+          "id": "e2",
+          "text": "En octubre volví a comer pizza, pero mi preferencia cambia.",
+          "source": "USER_STATEMENT",
+          "timestamp": "2026-10-01T12:00:00Z"
+        }
+      ],
+      "oracle_preferences": [
+        {
+          "preference_id": "p0",
+          "user_id": "user",
+          "food_item": "pizza",
+          "polarity": "LIKE",
+          "day_scope": "ANY",
+          "meal_scope": "ANY",
+          "context": {},
+          "valid_from": null,
+          "valid_to": null,
+          "source": "USER_STATEMENT",
+          "timestamp": "2026-06-01T12:00:00Z",
+          "evidence_id": "e0",
+          "confidence": null,
+          "weekdays": [],
+          "supersedes": [],
+          "temporary": false,
+          "stability": "OSCILLATING",
+          "scope_unknown": [],
+          "explicit_update": false
+        },
+        {
+          "preference_id": "p1",
+          "user_id": "user",
+          "food_item": "pizza",
+          "polarity": "DISLIKE",
+          "day_scope": "ANY",
+          "meal_scope": "ANY",
+          "context": {},
+          "valid_from": null,
+          "valid_to": null,
+          "source": "USER_STATEMENT",
+          "timestamp": "2026-08-01T12:00:00Z",
+          "evidence_id": "e1",
+          "confidence": null,
+          "weekdays": [],
+          "supersedes": [],
+          "temporary": false,
+          "stability": "OSCILLATING",
+          "scope_unknown": [],
+          "explicit_update": false
+        },
+        {
+          "preference_id": "p2",
+          "user_id": "user",
+          "food_item": "pizza",
+          "polarity": "LIKE",
+          "day_scope": "ANY",
+          "meal_scope": "ANY",
+          "context": {},
+          "valid_from": null,
+          "valid_to": null,
+          "source": "USER_STATEMENT",
+          "timestamp": "2026-10-01T12:00:00Z",
+          "evidence_id": "e2",
+          "confidence": null,
+          "weekdays": [],
+          "supersedes": [],
+          "temporary": false,
+          "stability": "OSCILLATING",
+          "scope_unknown": [],
+          "explicit_update": false
+        }
+      ],
+      "oracle_restrictions": [],
+      "visible_context": {},
+      "latent": {
+        "context": {
+          "day": "WEEKDAY",
+          "meal": "LUNCH",
+          "company": "alone",
+          "place": "home"
+        },
+        "acceptable_foods": [
+          "sopa"
+        ],
+        "unresolvable": false
+      },
+      "response_map": {
+        "day": {
+          "value": "WEEKDAY",
+          "text": "Es para un día laboral."
+        },
+        "meal": {
+          "value": "LUNCH",
+          "text": "Es para el almuerzo."
+        },
+        "company": {
+          "value": "alone",
+          "text": "Voy a comer solo."
+        },
+        "place": {
+          "value": "home",
+          "text": "Voy a comer en casa."
+        },
+        "current_preference": {
+          "value": "sopa",
+          "text": "Para esta comida actualmente prefiero sopa."
+        }
+      },
+      "reference_time": "2026-10-19T12:00:00Z"
+    },
+    {
+      "scenario_id": "M09",
+      "user_id": "manual_user_09",
+      "category": "BOC",
+      "split": "manual_agent_authored",
+      "query": "¿Qué prefiero ahora?",
+      "events": [
+        {
+          "id": "e0",
+          "text": "A veces me gusta arroz y otras no.",
+          "source": "USER_STATEMENT",
+          "timestamp": "2026-10-19T12:00:00Z"
+        },
+        {
+          "id": "e1",
+          "text": "No tengo claro si me gusta arroz actualmente.",
+          "source": "USER_STATEMENT",
+          "timestamp": "2026-10-19T12:00:00Z"
+        }
+      ],
+      "oracle_preferences": [
+        {
+          "preference_id": "p0",
+          "user_id": "user",
+          "food_item": "arroz",
+          "polarity": "LIKE",
+          "day_scope": "ANY",
+          "meal_scope": "ANY",
+          "context": {},
+          "valid_from": null,
+          "valid_to": null,
+          "source": "USER_STATEMENT",
+          "timestamp": "2026-10-19T12:00:00Z",
+          "evidence_id": "e0",
+          "confidence": null,
+          "weekdays": [],
+          "supersedes": [],
+          "temporary": false,
+          "stability": "OSCILLATING",
+          "scope_unknown": [],
+          "explicit_update": false
+        },
+        {
+          "preference_id": "p1",
+          "user_id": "user",
+          "food_item": "arroz",
+          "polarity": "DISLIKE",
+          "day_scope": "ANY",
+          "meal_scope": "ANY",
+          "context": {},
+          "valid_from": null,
+          "valid_to": null,
+          "source": "USER_STATEMENT",
+          "timestamp": "2026-10-19T12:00:00Z",
+          "evidence_id": "e1",
+          "confidence": null,
+          "weekdays": [],
+          "supersedes": [],
+          "temporary": false,
+          "stability": "OSCILLATING",
+          "scope_unknown": [],
+          "explicit_update": false
+        }
+      ],
+      "oracle_restrictions": [],
+      "visible_context": {},
+      "latent": {
+        "context": {
+          "day": "WEEKDAY",
+          "meal": "LUNCH",
+          "company": "alone",
+          "place": "home"
+        },
+        "acceptable_foods": [],
+        "unresolvable": true
+      },
+      "response_map": {
+        "day": {
+          "value": "WEEKDAY",
+          "text": "Es para un día laboral."
+        },
+        "meal": {
+          "value": "LUNCH",
+          "text": "Es para el almuerzo."
+        },
+        "company": {
+          "value": "alone",
+          "text": "Voy a comer solo."
+        },
+        "place": {
+          "value": "home",
+          "text": "Voy a comer en casa."
+        },
+        "current_preference": {
+          "value": null,
+          "text": "No puedo aclarar una preferencia actual con certeza."
+        }
+      },
+      "reference_time": "2026-10-19T12:00:00Z"
+    },
+    {
+      "scenario_id": "M10",
+      "user_id": "manual_user_10",
+      "category": "SCC",
+      "split": "manual_agent_authored",
+      "query": "Sugiere comida según lo que sabes de mí.",
+      "events": [
+        {
+          "id": "e0",
+          "text": "En general me gusta ensalada.",
+          "source": "USER_STATEMENT",
+          "timestamp": "2026-10-19T12:00:00Z"
+        },
+        {
+          "id": "e1",
+          "text": "El historial registra un pedido de pizza.",
+          "source": "ORDER_HISTORY",
+          "timestamp": "2026-10-19T12:00:00Z"
+        },
+        {
+          "id": "e2",
+          "text": "En general no me gusta pizza.",
+          "source": "USER_STATEMENT",
+          "timestamp": "2026-10-19T12:00:00Z"
+        }
+      ],
+      "oracle_preferences": [
+        {
+          "preference_id": "p0",
+          "user_id": "user",
+          "food_item": "ensalada",
+          "polarity": "LIKE",
+          "day_scope": "ANY",
+          "meal_scope": "ANY",
+          "context": {},
+          "valid_from": null,
+          "valid_to": null,
+          "source": "USER_STATEMENT",
+          "timestamp": "2026-10-19T12:00:00Z",
+          "evidence_id": "e0",
+          "confidence": null,
+          "weekdays": [],
+          "supersedes": [],
+          "temporary": false,
+          "stability": null,
+          "scope_unknown": [],
+          "explicit_update": false
+        },
+        {
+          "preference_id": "p1",
+          "user_id": "user",
+          "food_item": "pizza",
+          "polarity": "LIKE",
+          "day_scope": "ANY",
+          "meal_scope": "ANY",
+          "context": {},
+          "valid_from": null,
+          "valid_to": null,
+          "source": "ORDER_HISTORY",
+          "timestamp": "2026-10-19T12:00:00Z",
+          "evidence_id": "e1",
+          "confidence": null,
+          "weekdays": [],
+          "supersedes": [],
+          "temporary": false,
+          "stability": null,
+          "scope_unknown": [],
+          "explicit_update": false
+        },
+        {
+          "preference_id": "p2",
+          "user_id": "user",
+          "food_item": "pizza",
+          "polarity": "DISLIKE",
+          "day_scope": "ANY",
+          "meal_scope": "ANY",
+          "context": {},
+          "valid_from": null,
+          "valid_to": null,
+          "source": "USER_STATEMENT",
+          "timestamp": "2026-10-19T12:00:00Z",
+          "evidence_id": "e2",
+          "confidence": null,
+          "weekdays": [],
+          "supersedes": [],
+          "temporary": false,
+          "stability": null,
+          "scope_unknown": [],
+          "explicit_update": false
+        }
+      ],
+      "oracle_restrictions": [],
+      "visible_context": {},
+      "latent": {
+        "context": {
+          "day": "WEEKDAY",
+          "meal": "LUNCH",
+          "company": "alone",
+          "place": "home"
+        },
+        "acceptable_foods": [
+          "ensalada"
+        ],
+        "unresolvable": false
+      },
+      "response_map": {
+        "day": {
+          "value": "WEEKDAY",
+          "text": "Es para un día laboral."
+        },
+        "meal": {
+          "value": "LUNCH",
+          "text": "Es para el almuerzo."
+        },
+        "company": {
+          "value": "alone",
+          "text": "Voy a comer solo."
+        },
+        "place": {
+          "value": "home",
+          "text": "Voy a comer en casa."
+        },
+        "current_preference": {
+          "value": "ensalada",
+          "text": "Para esta comida actualmente prefiero ensalada."
+        }
+      },
+      "reference_time": "2026-10-19T12:00:00Z"
+    },
+    {
+      "scenario_id": "M11",
+      "user_id": "manual_user_11",
+      "category": "SCC",
+      "split": "manual_agent_authored",
+      "query": "¿Cuál de mis preferencias es la correcta?",
+      "events": [
+        {
+          "id": "e0",
+          "text": "Dije que me gusta pizza.",
+          "source": "USER_STATEMENT",
+          "timestamp": "2026-10-19T12:00:00Z"
+        },
+        {
+          "id": "e1",
+          "text": "Un registro externo contiene rechazo de pizza.",
+          "source": "ORDER_HISTORY",
+          "timestamp": "2026-10-19T12:00:00Z"
+        }
+      ],
+      "oracle_preferences": [
+        {
+          "preference_id": "p0",
+          "user_id": "user",
+          "food_item": "pizza",
+          "polarity": "LIKE",
+          "day_scope": "ANY",
+          "meal_scope": "ANY",
+          "context": {},
+          "valid_from": null,
+          "valid_to": null,
+          "source": "USER_STATEMENT",
+          "timestamp": "2026-10-19T12:00:00Z",
+          "evidence_id": "e0",
+          "confidence": null,
+          "weekdays": [],
+          "supersedes": [],
+          "temporary": false,
+          "stability": null,
+          "scope_unknown": [],
+          "explicit_update": false
+        },
+        {
+          "preference_id": "p1",
+          "user_id": "user",
+          "food_item": "pizza",
+          "polarity": "DISLIKE",
+          "day_scope": "ANY",
+          "meal_scope": "ANY",
+          "context": {},
+          "valid_from": null,
+          "valid_to": null,
+          "source": "ORDER_HISTORY",
+          "timestamp": "2026-10-19T12:00:00Z",
+          "evidence_id": "e1",
+          "confidence": null,
+          "weekdays": [],
+          "supersedes": [],
+          "temporary": false,
+          "stability": null,
+          "scope_unknown": [],
+          "explicit_update": false
+        }
+      ],
+      "oracle_restrictions": [],
+      "visible_context": {},
+      "latent": {
+        "context": {
+          "day": "WEEKDAY",
+          "meal": "LUNCH",
+          "company": "alone",
+          "place": "home"
+        },
+        "acceptable_foods": [],
+        "unresolvable": true
+      },
+      "response_map": {
+        "day": {
+          "value": "WEEKDAY",
+          "text": "Es para un día laboral."
+        },
+        "meal": {
+          "value": "LUNCH",
+          "text": "Es para el almuerzo."
+        },
+        "company": {
+          "value": "alone",
+          "text": "Voy a comer solo."
+        },
+        "place": {
+          "value": "home",
+          "text": "Voy a comer en casa."
+        },
+        "current_preference": {
+          "value": null,
+          "text": "No puedo aclarar una preferencia actual con certeza."
+        }
+      },
+      "reference_time": "2026-10-19T12:00:00Z"
+    },
+    {
+      "scenario_id": "M12",
+      "user_id": "manual_user_12",
+      "category": "IRRESOLVABLE",
+      "split": "manual_agent_authored",
+      "query": "Dime qué prefiero comer.",
+      "events": [
+        {
+          "id": "e0",
+          "text": "En general me gusta arroz.",
+          "source": "USER_STATEMENT",
+          "timestamp": "2026-10-19T12:00:00Z"
+        },
+        {
+          "id": "e1",
+          "text": "En general no me gusta arroz.",
+          "source": "USER_STATEMENT",
+          "timestamp": "2026-10-19T12:00:00Z"
+        }
+      ],
+      "oracle_preferences": [
+        {
+          "preference_id": "p0",
+          "user_id": "user",
+          "food_item": "arroz",
+          "polarity": "LIKE",
+          "day_scope": "ANY",
+          "meal_scope": "ANY",
+          "context": {},
+          "valid_from": null,
+          "valid_to": null,
+          "source": "USER_STATEMENT",
+          "timestamp": "2026-10-19T12:00:00Z",
+          "evidence_id": "e0",
+          "confidence": null,
+          "weekdays": [],
+          "supersedes": [],
+          "temporary": false,
+          "stability": null,
+          "scope_unknown": [],
+          "explicit_update": false
+        },
+        {
+          "preference_id": "p1",
+          "user_id": "user",
+          "food_item": "arroz",
+          "polarity": "DISLIKE",
+          "day_scope": "ANY",
+          "meal_scope": "ANY",
+          "context": {},
+          "valid_from": null,
+          "valid_to": null,
+          "source": "USER_STATEMENT",
+          "timestamp": "2026-10-19T12:00:00Z",
+          "evidence_id": "e1",
+          "confidence": null,
+          "weekdays": [],
+          "supersedes": [],
+          "temporary": false,
+          "stability": null,
+          "scope_unknown": [],
+          "explicit_update": false
+        }
+      ],
+      "oracle_restrictions": [],
+      "visible_context": {},
+      "latent": {
+        "context": {
+          "day": "WEEKDAY",
+          "meal": "LUNCH",
+          "company": "alone",
+          "place": "home"
+        },
+        "acceptable_foods": [],
+        "unresolvable": true
+      },
+      "response_map": {
+        "day": {
+          "value": "WEEKDAY",
+          "text": "Es para un día laboral."
+        },
+        "meal": {
+          "value": "LUNCH",
+          "text": "Es para el almuerzo."
+        },
+        "company": {
+          "value": "alone",
+          "text": "Voy a comer solo."
+        },
+        "place": {
+          "value": "home",
+          "text": "Voy a comer en casa."
+        },
+        "current_preference": {
+          "value": null,
+          "text": "No puedo aclarar una preferencia actual con certeza."
+        }
+      },
+      "reference_time": "2026-10-19T12:00:00Z"
+    },
+    {
+      "scenario_id": "M13",
+      "user_id": "manual_user_13",
+      "category": "RESTRICTION",
+      "split": "manual_agent_authored",
+      "query": "¿Qué puedo comer con mis restricciones?",
+      "events": [
+        {
+          "id": "e0",
+          "text": "En general me gusta pizza.",
+          "source": "USER_STATEMENT",
+          "timestamp": "2026-10-19T12:00:00Z"
+        },
+        {
+          "id": "e1",
+          "text": "En general me gusta sopa.",
+          "source": "USER_STATEMENT",
+          "timestamp": "2026-10-19T12:00:00Z"
+        },
+        {
+          "id": "er0",
+          "text": "Tengo una restricción explícita: no puedo comer pizza.",
+          "source": "USER_STATEMENT",
+          "timestamp": "2026-10-19T12:00:00Z"
+        }
+      ],
+      "oracle_preferences": [
+        {
+          "preference_id": "p0",
+          "user_id": "user",
+          "food_item": "pizza",
+          "polarity": "LIKE",
+          "day_scope": "ANY",
+          "meal_scope": "ANY",
+          "context": {},
+          "valid_from": null,
+          "valid_to": null,
+          "source": "USER_STATEMENT",
+          "timestamp": "2026-10-19T12:00:00Z",
+          "evidence_id": "e0",
+          "confidence": null,
+          "weekdays": [],
+          "supersedes": [],
+          "temporary": false,
+          "stability": null,
+          "scope_unknown": [],
+          "explicit_update": false
+        },
+        {
+          "preference_id": "p1",
+          "user_id": "user",
+          "food_item": "sopa",
+          "polarity": "LIKE",
+          "day_scope": "ANY",
+          "meal_scope": "ANY",
+          "context": {},
+          "valid_from": null,
+          "valid_to": null,
+          "source": "USER_STATEMENT",
+          "timestamp": "2026-10-19T12:00:00Z",
+          "evidence_id": "e1",
+          "confidence": null,
+          "weekdays": [],
+          "supersedes": [],
+          "temporary": false,
+          "stability": null,
+          "scope_unknown": [],
+          "explicit_update": false
+        }
+      ],
+      "oracle_restrictions": [
+        {
+          "restriction_id": "r0",
+          "user_id": "user",
+          "food_item": "pizza",
+          "restriction_type": "ALLERGY",
+          "day_scope": "ANY",
+          "meal_scope": "ANY",
+          "context": {},
+          "valid_from": null,
+          "valid_to": null,
+          "source": "USER_STATEMENT",
+          "timestamp": "2026-10-19T12:00:00Z",
+          "evidence_id": "er0",
+          "certainty": "CONFIRMED",
+          "weekdays": [],
+          "scope_unknown": []
+        }
+      ],
+      "visible_context": {},
+      "latent": {
+        "context": {
+          "day": "WEEKDAY",
+          "meal": "LUNCH",
+          "company": "alone",
+          "place": "home"
+        },
+        "acceptable_foods": [
+          "sopa"
+        ],
+        "unresolvable": false
+      },
+      "response_map": {
+        "day": {
+          "value": "WEEKDAY",
+          "text": "Es para un día laboral."
+        },
+        "meal": {
+          "value": "LUNCH",
+          "text": "Es para el almuerzo."
+        },
+        "company": {
+          "value": "alone",
+          "text": "Voy a comer solo."
+        },
+        "place": {
+          "value": "home",
+          "text": "Voy a comer en casa."
+        },
+        "current_preference": {
+          "value": null,
+          "text": "No puedo aclarar una preferencia actual con certeza."
+        }
+      },
+      "reference_time": "2026-10-19T12:00:00Z"
+    },
+    {
+      "scenario_id": "M14",
+      "user_id": "manual_user_14",
+      "category": "INSUFFICIENT",
+      "split": "manual_agent_authored",
+      "query": "Quiero algo rico, ¿qué elijo?",
+      "events": [],
+      "oracle_preferences": [],
+      "oracle_restrictions": [],
+      "visible_context": {},
+      "latent": {
+        "context": {
+          "day": "WEEKDAY",
+          "meal": "LUNCH",
+          "company": "alone",
+          "place": "home"
+        },
+        "acceptable_foods": [],
+        "unresolvable": false
+      },
+      "response_map": {
+        "day": {
+          "value": "WEEKDAY",
+          "text": "Es para un día laboral."
+        },
+        "meal": {
+          "value": "LUNCH",
+          "text": "Es para el almuerzo."
+        },
+        "company": {
+          "value": "alone",
+          "text": "Voy a comer solo."
+        },
+        "place": {
+          "value": "home",
+          "text": "Voy a comer en casa."
+        },
+        "current_preference": {
+          "value": null,
+          "text": "No puedo aclarar una preferencia actual con certeza."
+        }
+      },
+      "reference_time": "2026-10-19T12:00:00Z"
+    }
+  ],
+  "adjudication": [
+    {
+      "scenario_id": "M01",
+      "acceptable_behavior": "Responder arroz con evidencia visible; preguntar no agrega valor a este gusto general.",
+      "potentially_useful_questions": [],
+      "reviewed_by_human": null,
+      "adjudication_status": "UNREVIEWED_SYNTHETIC_AUTHOR_EXPECTATION"
+    },
+    {
+      "scenario_id": "M02",
+      "acceptable_behavior": "Sopa es una opción positiva; pizza no debe inferirse de una preferencia negativa.",
+      "potentially_useful_questions": [],
+      "reviewed_by_human": null,
+      "adjudication_status": "UNREVIEWED_SYNTHETIC_AUTHOR_EXPECTATION"
+    },
+    {
+      "scenario_id": "M03",
+      "acceptable_behavior": "Preguntar día hace aplicable pizza. Preguntar comida no distingue estas dos preferencias.",
+      "potentially_useful_questions": [
+        "day"
+      ],
+      "reviewed_by_human": null,
+      "adjudication_status": "UNREVIEWED_SYNTHETIC_AUTHOR_EXPECTATION"
+    },
+    {
+      "scenario_id": "M04",
+      "acceptable_behavior": "Preguntar tipo de comida permite responder sopa; no inferir cena desde hora del sistema.",
+      "potentially_useful_questions": [
+        "meal"
+      ],
+      "reviewed_by_human": null,
+      "adjudication_status": "UNREVIEWED_SYNTHETIC_AUTHOR_EXPECTATION"
+    },
+    {
+      "scenario_id": "M05",
+      "acceptable_behavior": "La compañía es decisiva, las dos memorias se conservan.",
+      "potentially_useful_questions": [
+        "company"
+      ],
+      "reviewed_by_human": null,
+      "adjudication_status": "UNREVIEWED_SYNTHETIC_AUTHOR_EXPECTATION"
+    },
+    {
+      "scenario_id": "M06",
+      "acceptable_behavior": "Preguntar lugar revela oficina; preguntar día no resuelve la partición.",
+      "potentially_useful_questions": [
+        "place"
+      ],
+      "reviewed_by_human": null,
+      "adjudication_status": "UNREVIEWED_SYNTHETIC_AUTHOR_EXPECTATION"
+    },
+    {
+      "scenario_id": "M07",
+      "acceptable_behavior": "Día y comida son necesarios para fundamentar una opción única. Una pregunta sola deja alternativas.",
+      "potentially_useful_questions": [
+        "day",
+        "meal"
+      ],
+      "reviewed_by_human": null,
+      "adjudication_status": "UNREVIEWED_SYNTHETIC_AUTHOR_EXPECTATION"
+    },
+    {
+      "scenario_id": "M08",
+      "acceptable_behavior": "Una aclaración explícita acotada al episodio permite sopa. La recencia de pizza no demuestra estabilidad.",
+      "potentially_useful_questions": [
+        "current_preference"
+      ],
+      "reviewed_by_human": null,
+      "adjudication_status": "UNREVIEWED_SYNTHETIC_AUTHOR_EXPECTATION"
+    },
+    {
+      "scenario_id": "M09",
+      "acceptable_behavior": "Una respuesta de incertidumbre no resuelve trayectoria oscilante. Preservar conflicto es defendible; no inventar una nueva preferencia.",
+      "potentially_useful_questions": [
+        "current_preference"
+      ],
+      "reviewed_by_human": null,
+      "adjudication_status": "UNREVIEWED_SYNTHETIC_AUTHOR_EXPECTATION"
+    },
+    {
+      "scenario_id": "M10",
+      "acceptable_behavior": "El pedido no invalida el gusto declarado. Una confirmación actual es evidencia nueva, no etiqueta escondida.",
+      "potentially_useful_questions": [
+        "current_preference"
+      ],
+      "reviewed_by_human": null,
+      "adjudication_status": "UNREVIEWED_SYNTHETIC_AUTHOR_EXPECTATION"
+    },
+    {
+      "scenario_id": "M11",
+      "acceptable_behavior": "No hay fuente verificable. Una respuesta incierta no autoriza elegir ni descartar evidencia; preservar conflicto.",
+      "potentially_useful_questions": [
+        "current_preference"
+      ],
+      "reviewed_by_human": null,
+      "adjudication_status": "UNREVIEWED_SYNTHETIC_AUTHOR_EXPECTATION"
+    },
+    {
+      "scenario_id": "M12",
+      "acceptable_behavior": "Evidencias incompatibles mismo alcance sin aclaración concluyente; preservar es mejor que escoger por orden.",
+      "potentially_useful_questions": [],
+      "reviewed_by_human": null,
+      "adjudication_status": "UNREVIEWED_SYNTHETIC_AUTHOR_EXPECTATION"
+    },
+    {
+      "scenario_id": "M13",
+      "acceptable_behavior": "Sopa es alternativa respaldada, pizza está prohibida por restricción independiente. El gusto no rebaja la restricción.",
+      "potentially_useful_questions": [],
+      "reviewed_by_human": null,
+      "adjudication_status": "UNREVIEWED_SYNTHETIC_AUTHOR_EXPECTATION"
+    },
+    {
+      "scenario_id": "M14",
+      "acceptable_behavior": "No hay gusto comunicado ni aclaración actual concluyente; abstenerse es aceptable. No convertir contexto en gusto.",
+      "potentially_useful_questions": [],
+      "reviewed_by_human": null,
+      "adjudication_status": "UNREVIEWED_SYNTHETIC_AUTHOR_EXPECTATION"
+    }
+  ]
+}

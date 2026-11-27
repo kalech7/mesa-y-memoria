@@ -1,0 +1,1181 @@
+{
+  "split": "validation",
+  "budgets": {
+    "1": {
+      "question_budget": 1,
+      "roots": 60,
+      "worlds": 480,
+      "policies": {
+        "planificador-publico": {
+          "current_supported": 1.0,
+          "current_first_supported": 1.0,
+          "current_second_supported": 1.0,
+          "future_supported": 0.8500000000000001,
+          "future_unsupported_reuse": 0.0,
+          "future_queries": 6.000000000000001,
+          "future_positive_queries": 3.0000000000000004,
+          "future_positive_supported": 2.1,
+          "future_correct_abstentions": 3.0000000000000004,
+          "questions": 1.0,
+          "questions_first": 0.5,
+          "questions_second": 0.5,
+          "applied_writes": 1.0,
+          "immediate": 0.9200000000000002,
+          "longitudinal": 2.195
+        },
+        "preguntar-primero": {
+          "current_supported": 1.0,
+          "current_first_supported": 1.0,
+          "current_second_supported": 1.0,
+          "future_supported": 0.75,
+          "future_unsupported_reuse": 0.0,
+          "future_queries": 6.000000000000001,
+          "future_positive_queries": 3.0000000000000004,
+          "future_positive_supported": 1.5,
+          "future_correct_abstentions": 3.0000000000000004,
+          "questions": 1.0,
+          "questions_first": 1.0,
+          "questions_second": 0.0,
+          "applied_writes": 1.0,
+          "immediate": 0.9200000000000002,
+          "longitudinal": 2.045
+        },
+        "preguntar-segundo": {
+          "current_supported": 1.0,
+          "current_first_supported": 1.0,
+          "current_second_supported": 1.0,
+          "future_supported": 0.75,
+          "future_unsupported_reuse": 0.0,
+          "future_queries": 6.000000000000001,
+          "future_positive_queries": 3.0000000000000004,
+          "future_positive_supported": 1.5,
+          "future_correct_abstentions": 3.0000000000000004,
+          "questions": 1.0,
+          "questions_first": 0.0,
+          "questions_second": 1.0,
+          "applied_writes": 1.0,
+          "immediate": 0.9200000000000002,
+          "longitudinal": 2.045
+        },
+        "preguntar-siempre": {
+          "current_supported": 1.0,
+          "current_first_supported": 1.0,
+          "current_second_supported": 1.0,
+          "future_supported": 0.75,
+          "future_unsupported_reuse": 0.0,
+          "future_queries": 6.000000000000001,
+          "future_positive_queries": 3.0000000000000004,
+          "future_positive_supported": 1.5,
+          "future_correct_abstentions": 3.0000000000000004,
+          "questions": 1.0,
+          "questions_first": 1.0,
+          "questions_second": 0.0,
+          "applied_writes": 1.0,
+          "immediate": 0.9200000000000002,
+          "longitudinal": 2.045
+        },
+        "nunca": {
+          "current_supported": 1.0,
+          "current_first_supported": 1.0,
+          "current_second_supported": 1.0,
+          "future_supported": 0.5,
+          "future_unsupported_reuse": 0.0,
+          "future_queries": 6.000000000000001,
+          "future_positive_queries": 3.0000000000000004,
+          "future_positive_supported": 0.0,
+          "future_correct_abstentions": 3.0000000000000004,
+          "questions": 0.0,
+          "questions_first": 0.0,
+          "questions_second": 0.0,
+          "applied_writes": 0.0,
+          "immediate": 1.0,
+          "longitudinal": 1.75
+        }
+      },
+      "public_coverage": {
+        "visited_decisions": 720,
+        "unseen_state_decisions": 0,
+        "unknown_agenda_decisions": 0
+      },
+      "paired_timing": {
+        "pairs": 30,
+        "robust_flip_rate": 1,
+        "mean_gain_over_best_constant": 0.10000000000000009,
+        "by_root": [
+          {
+            "root_id": "r9baa25a323a0df6f6e",
+            "pair_id": "p4803fc28ddf4bddabc",
+            "variant": "save",
+            "ask_first_future": 0.65,
+            "ask_second_future": 0.8500000000000001,
+            "ask_first_minus_second": -0.20000000000000007
+          },
+          {
+            "root_id": "r6288557d6125c8599a",
+            "pair_id": "p9646b8ef2b73c48cee",
+            "variant": "save",
+            "ask_first_future": 0.65,
+            "ask_second_future": 0.8500000000000001,
+            "ask_first_minus_second": -0.20000000000000007
+          },
+          {
+            "root_id": "r0612f9df0fe017e1f7",
+            "pair_id": "pe6bf2cdaf73f6fc43c",
+            "variant": "ask_now",
+            "ask_first_future": 0.8500000000000001,
+            "ask_second_future": 0.65,
+            "ask_first_minus_second": 0.20000000000000007
+          },
+          {
+            "root_id": "r856903a87e3596a482",
+            "pair_id": "pe518abc0d5826a0dc3",
+            "variant": "save",
+            "ask_first_future": 0.65,
+            "ask_second_future": 0.8500000000000001,
+            "ask_first_minus_second": -0.20000000000000007
+          },
+          {
+            "root_id": "r24eef5ac2be5680c59",
+            "pair_id": "pe518abc0d5826a0dc3",
+            "variant": "ask_now",
+            "ask_first_future": 0.8500000000000001,
+            "ask_second_future": 0.65,
+            "ask_first_minus_second": 0.20000000000000007
+          },
+          {
+            "root_id": "r6d915bcece84820144",
+            "pair_id": "p92e3db469ca0cd858f",
+            "variant": "save",
+            "ask_first_future": 0.65,
+            "ask_second_future": 0.8500000000000001,
+            "ask_first_minus_second": -0.20000000000000007
+          },
+          {
+            "root_id": "re283cdf1557cd20ee3",
+            "pair_id": "p038aeac0cc281c0989",
+            "variant": "save",
+            "ask_first_future": 0.65,
+            "ask_second_future": 0.8500000000000001,
+            "ask_first_minus_second": -0.20000000000000007
+          },
+          {
+            "root_id": "r9c17c3c78f1ccb3936",
+            "pair_id": "p2155cf274d75bfdfb9",
+            "variant": "save",
+            "ask_first_future": 0.65,
+            "ask_second_future": 0.8500000000000001,
+            "ask_first_minus_second": -0.20000000000000007
+          },
+          {
+            "root_id": "r18b18a64f737ee0c58",
+            "pair_id": "pbcd8083242a4325202",
+            "variant": "ask_now",
+            "ask_first_future": 0.8500000000000001,
+            "ask_second_future": 0.65,
+            "ask_first_minus_second": 0.20000000000000007
+          },
+          {
+            "root_id": "r8286ba97cf8e645b03",
+            "pair_id": "p094f6c22e113f77fd8",
+            "variant": "ask_now",
+            "ask_first_future": 0.8500000000000001,
+            "ask_second_future": 0.65,
+            "ask_first_minus_second": 0.20000000000000007
+          },
+          {
+            "root_id": "r5ca7f631e79bddff58",
+            "pair_id": "p92e3db469ca0cd858f",
+            "variant": "ask_now",
+            "ask_first_future": 0.8500000000000001,
+            "ask_second_future": 0.65,
+            "ask_first_minus_second": 0.20000000000000007
+          },
+          {
+            "root_id": "r48e24593d359471744",
+            "pair_id": "pddcbbeb5a6a401738a",
+            "variant": "ask_now",
+            "ask_first_future": 0.8500000000000001,
+            "ask_second_future": 0.65,
+            "ask_first_minus_second": 0.20000000000000007
+          },
+          {
+            "root_id": "re39c322fd0755fea23",
+            "pair_id": "pe6bf2cdaf73f6fc43c",
+            "variant": "save",
+            "ask_first_future": 0.65,
+            "ask_second_future": 0.8500000000000001,
+            "ask_first_minus_second": -0.20000000000000007
+          },
+          {
+            "root_id": "rcf2df422bd8b4e1084",
+            "pair_id": "p038aeac0cc281c0989",
+            "variant": "ask_now",
+            "ask_first_future": 0.8500000000000001,
+            "ask_second_future": 0.65,
+            "ask_first_minus_second": 0.20000000000000007
+          },
+          {
+            "root_id": "rf775c320f9a40d9ef4",
+            "pair_id": "p2155cf274d75bfdfb9",
+            "variant": "ask_now",
+            "ask_first_future": 0.8500000000000001,
+            "ask_second_future": 0.65,
+            "ask_first_minus_second": 0.20000000000000007
+          },
+          {
+            "root_id": "r77b566150251ecb29a",
+            "pair_id": "pddcbbeb5a6a401738a",
+            "variant": "save",
+            "ask_first_future": 0.65,
+            "ask_second_future": 0.8500000000000001,
+            "ask_first_minus_second": -0.20000000000000007
+          },
+          {
+            "root_id": "r0d4f3734dd50d82431",
+            "pair_id": "p9646b8ef2b73c48cee",
+            "variant": "ask_now",
+            "ask_first_future": 0.8500000000000001,
+            "ask_second_future": 0.65,
+            "ask_first_minus_second": 0.20000000000000007
+          },
+          {
+            "root_id": "r9480d5553e6afd0110",
+            "pair_id": "p4803fc28ddf4bddabc",
+            "variant": "ask_now",
+            "ask_first_future": 0.8500000000000001,
+            "ask_second_future": 0.65,
+            "ask_first_minus_second": 0.20000000000000007
+          },
+          {
+            "root_id": "rc666847179fa613307",
+            "pair_id": "p094f6c22e113f77fd8",
+            "variant": "save",
+            "ask_first_future": 0.65,
+            "ask_second_future": 0.8500000000000001,
+            "ask_first_minus_second": -0.20000000000000007
+          },
+          {
+            "root_id": "rb4ac02b38b4d4dbbcd",
+            "pair_id": "pbcd8083242a4325202",
+            "variant": "save",
+            "ask_first_future": 0.65,
+            "ask_second_future": 0.8500000000000001,
+            "ask_first_minus_second": -0.20000000000000007
+          },
+          {
+            "root_id": "r006b07677fb26d9e87",
+            "pair_id": "pe63d3a80db4b8f35d3",
+            "variant": "ask_now",
+            "ask_first_future": 0.8500000000000001,
+            "ask_second_future": 0.65,
+            "ask_first_minus_second": 0.20000000000000007
+          },
+          {
+            "root_id": "raac07149692035ad27",
+            "pair_id": "pbbd652ceb1053ccdbf",
+            "variant": "save",
+            "ask_first_future": 0.65,
+            "ask_second_future": 0.8500000000000001,
+            "ask_first_minus_second": -0.20000000000000007
+          },
+          {
+            "root_id": "r178bec72ec4438019b",
+            "pair_id": "p6672879ce9d113ba10",
+            "variant": "ask_now",
+            "ask_first_future": 0.8500000000000001,
+            "ask_second_future": 0.65,
+            "ask_first_minus_second": 0.20000000000000007
+          },
+          {
+            "root_id": "rb62e5b5d9ac88a4732",
+            "pair_id": "pe63d3a80db4b8f35d3",
+            "variant": "save",
+            "ask_first_future": 0.65,
+            "ask_second_future": 0.8500000000000001,
+            "ask_first_minus_second": -0.20000000000000007
+          },
+          {
+            "root_id": "r2b67a671de6851ab4c",
+            "pair_id": "pe21e3bacb5358de108",
+            "variant": "ask_now",
+            "ask_first_future": 0.8500000000000001,
+            "ask_second_future": 0.65,
+            "ask_first_minus_second": 0.20000000000000007
+          },
+          {
+            "root_id": "r03e5a4848ce1407833",
+            "pair_id": "p2652a92582a39a2d2f",
+            "variant": "ask_now",
+            "ask_first_future": 0.8500000000000001,
+            "ask_second_future": 0.65,
+            "ask_first_minus_second": 0.20000000000000007
+          },
+          {
+            "root_id": "re8f5c2ef46dca29c95",
+            "pair_id": "p36bd3627855a462f8e",
+            "variant": "save",
+            "ask_first_future": 0.65,
+            "ask_second_future": 0.8500000000000001,
+            "ask_first_minus_second": -0.20000000000000007
+          },
+          {
+            "root_id": "rda0d6d02ef31760911",
+            "pair_id": "p2652a92582a39a2d2f",
+            "variant": "save",
+            "ask_first_future": 0.65,
+            "ask_second_future": 0.8500000000000001,
+            "ask_first_minus_second": -0.20000000000000007
+          },
+          {
+            "root_id": "rab5214416c9b12c6d3",
+            "pair_id": "pdb093de90b612fd355",
+            "variant": "ask_now",
+            "ask_first_future": 0.8500000000000001,
+            "ask_second_future": 0.65,
+            "ask_first_minus_second": 0.20000000000000007
+          },
+          {
+            "root_id": "r27148478160cccd1a4",
+            "pair_id": "p6672879ce9d113ba10",
+            "variant": "save",
+            "ask_first_future": 0.65,
+            "ask_second_future": 0.8500000000000001,
+            "ask_first_minus_second": -0.20000000000000007
+          },
+          {
+            "root_id": "r97fe6ad910c7fbf590",
+            "pair_id": "p36bd3627855a462f8e",
+            "variant": "ask_now",
+            "ask_first_future": 0.8500000000000001,
+            "ask_second_future": 0.65,
+            "ask_first_minus_second": 0.20000000000000007
+          },
+          {
+            "root_id": "rd1df48d45aaf63ee1f",
+            "pair_id": "p1cfdf881255e968ade",
+            "variant": "ask_now",
+            "ask_first_future": 0.8500000000000001,
+            "ask_second_future": 0.65,
+            "ask_first_minus_second": 0.20000000000000007
+          },
+          {
+            "root_id": "r9cde5d0976cf000f6b",
+            "pair_id": "p6f7cf521555a6b7f93",
+            "variant": "save",
+            "ask_first_future": 0.65,
+            "ask_second_future": 0.8500000000000001,
+            "ask_first_minus_second": -0.20000000000000007
+          },
+          {
+            "root_id": "rbbc8aa612c6165fa6c",
+            "pair_id": "p1cfdf881255e968ade",
+            "variant": "save",
+            "ask_first_future": 0.65,
+            "ask_second_future": 0.8500000000000001,
+            "ask_first_minus_second": -0.20000000000000007
+          },
+          {
+            "root_id": "r0b427620c1e6883274",
+            "pair_id": "pe21e3bacb5358de108",
+            "variant": "save",
+            "ask_first_future": 0.65,
+            "ask_second_future": 0.8500000000000001,
+            "ask_first_minus_second": -0.20000000000000007
+          },
+          {
+            "root_id": "rb63c59b946bc8f686e",
+            "pair_id": "p6eb693810637a2dddb",
+            "variant": "save",
+            "ask_first_future": 0.65,
+            "ask_second_future": 0.8500000000000001,
+            "ask_first_minus_second": -0.20000000000000007
+          },
+          {
+            "root_id": "ra73d0044443c67edd7",
+            "pair_id": "pbbd652ceb1053ccdbf",
+            "variant": "ask_now",
+            "ask_first_future": 0.8500000000000001,
+            "ask_second_future": 0.65,
+            "ask_first_minus_second": 0.20000000000000007
+          },
+          {
+            "root_id": "r31fdeba079664df881",
+            "pair_id": "p6f7cf521555a6b7f93",
+            "variant": "ask_now",
+            "ask_first_future": 0.8500000000000001,
+            "ask_second_future": 0.65,
+            "ask_first_minus_second": 0.20000000000000007
+          },
+          {
+            "root_id": "rae6ed811d36e718b5e",
+            "pair_id": "pdb093de90b612fd355",
+            "variant": "save",
+            "ask_first_future": 0.65,
+            "ask_second_future": 0.8500000000000001,
+            "ask_first_minus_second": -0.20000000000000007
+          },
+          {
+            "root_id": "r12aca0cd8479ad673b",
+            "pair_id": "p6eb693810637a2dddb",
+            "variant": "ask_now",
+            "ask_first_future": 0.8500000000000001,
+            "ask_second_future": 0.65,
+            "ask_first_minus_second": 0.20000000000000007
+          },
+          {
+            "root_id": "r6ecd2b9f4846709344",
+            "pair_id": "p90a19e48ed2620c8b9",
+            "variant": "ask_now",
+            "ask_first_future": 0.8500000000000001,
+            "ask_second_future": 0.65,
+            "ask_first_minus_second": 0.20000000000000007
+          },
+          {
+            "root_id": "rde6328140ee136816f",
+            "pair_id": "p0cccfa93dcb87710e0",
+            "variant": "save",
+            "ask_first_future": 0.65,
+            "ask_second_future": 0.8500000000000001,
+            "ask_first_minus_second": -0.20000000000000007
+          },
+          {
+            "root_id": "r9bc07685b96a6790f2",
+            "pair_id": "p5776ceb7b71e8f02d8",
+            "variant": "ask_now",
+            "ask_first_future": 0.8500000000000001,
+            "ask_second_future": 0.65,
+            "ask_first_minus_second": 0.20000000000000007
+          },
+          {
+            "root_id": "rd6e21e08b0b9d6d35b",
+            "pair_id": "pa4a475233b8ec04ad4",
+            "variant": "save",
+            "ask_first_future": 0.65,
+            "ask_second_future": 0.8500000000000001,
+            "ask_first_minus_second": -0.20000000000000007
+          },
+          {
+            "root_id": "r8a48e4ed9660c43d3b",
+            "pair_id": "p9d3ac2e5f886bc780a",
+            "variant": "ask_now",
+            "ask_first_future": 0.8500000000000001,
+            "ask_second_future": 0.65,
+            "ask_first_minus_second": 0.20000000000000007
+          },
+          {
+            "root_id": "r76996b7178b9cf7149",
+            "pair_id": "p880a506ec7b10cb789",
+            "variant": "save",
+            "ask_first_future": 0.65,
+            "ask_second_future": 0.8500000000000001,
+            "ask_first_minus_second": -0.20000000000000007
+          },
+          {
+            "root_id": "rafc16c7f8e3061104f",
+            "pair_id": "pc69e31f7def5e26c1f",
+            "variant": "ask_now",
+            "ask_first_future": 0.8500000000000001,
+            "ask_second_future": 0.65,
+            "ask_first_minus_second": 0.20000000000000007
+          },
+          {
+            "root_id": "r05786f46145c9ec502",
+            "pair_id": "p9006d5646351f994cf",
+            "variant": "ask_now",
+            "ask_first_future": 0.8500000000000001,
+            "ask_second_future": 0.65,
+            "ask_first_minus_second": 0.20000000000000007
+          },
+          {
+            "root_id": "r29731bcf8db49e5fe0",
+            "pair_id": "p5776ceb7b71e8f02d8",
+            "variant": "save",
+            "ask_first_future": 0.65,
+            "ask_second_future": 0.8500000000000001,
+            "ask_first_minus_second": -0.20000000000000007
+          },
+          {
+            "root_id": "ra8c46b0395c1ee4301",
+            "pair_id": "p90a19e48ed2620c8b9",
+            "variant": "save",
+            "ask_first_future": 0.65,
+            "ask_second_future": 0.8500000000000001,
+            "ask_first_minus_second": -0.20000000000000007
+          },
+          {
+            "root_id": "r07f2b5ec7d883d0ed8",
+            "pair_id": "p9d3ac2e5f886bc780a",
+            "variant": "save",
+            "ask_first_future": 0.65,
+            "ask_second_future": 0.8500000000000001,
+            "ask_first_minus_second": -0.20000000000000007
+          },
+          {
+            "root_id": "r738f4c22ef10705922",
+            "pair_id": "pd1cf590cf345d8a58b",
+            "variant": "ask_now",
+            "ask_first_future": 0.8500000000000001,
+            "ask_second_future": 0.65,
+            "ask_first_minus_second": 0.20000000000000007
+          },
+          {
+            "root_id": "re5f667f734cedb3cc5",
+            "pair_id": "p0cccfa93dcb87710e0",
+            "variant": "ask_now",
+            "ask_first_future": 0.8500000000000001,
+            "ask_second_future": 0.65,
+            "ask_first_minus_second": 0.20000000000000007
+          },
+          {
+            "root_id": "r79bb0ffe13fe9cbe11",
+            "pair_id": "p6a605ed37cb2830a84",
+            "variant": "save",
+            "ask_first_future": 0.65,
+            "ask_second_future": 0.8500000000000001,
+            "ask_first_minus_second": -0.20000000000000007
+          },
+          {
+            "root_id": "r4404ab910673b817b4",
+            "pair_id": "pa4a475233b8ec04ad4",
+            "variant": "ask_now",
+            "ask_first_future": 0.8500000000000001,
+            "ask_second_future": 0.65,
+            "ask_first_minus_second": 0.20000000000000007
+          },
+          {
+            "root_id": "r29139c0cf044099cf1",
+            "pair_id": "pc69e31f7def5e26c1f",
+            "variant": "save",
+            "ask_first_future": 0.65,
+            "ask_second_future": 0.8500000000000001,
+            "ask_first_minus_second": -0.20000000000000007
+          },
+          {
+            "root_id": "r57550be1809a7ee907",
+            "pair_id": "p6a605ed37cb2830a84",
+            "variant": "ask_now",
+            "ask_first_future": 0.8500000000000001,
+            "ask_second_future": 0.65,
+            "ask_first_minus_second": 0.20000000000000007
+          },
+          {
+            "root_id": "r126751109fc1893d81",
+            "pair_id": "pd1cf590cf345d8a58b",
+            "variant": "save",
+            "ask_first_future": 0.65,
+            "ask_second_future": 0.8500000000000001,
+            "ask_first_minus_second": -0.20000000000000007
+          },
+          {
+            "root_id": "ra70885a5868f98c807",
+            "pair_id": "p9006d5646351f994cf",
+            "variant": "save",
+            "ask_first_future": 0.65,
+            "ask_second_future": 0.8500000000000001,
+            "ask_first_minus_second": -0.20000000000000007
+          },
+          {
+            "root_id": "rb1cf55bcf14e86ba19",
+            "pair_id": "p880a506ec7b10cb789",
+            "variant": "ask_now",
+            "ask_first_future": 0.8500000000000001,
+            "ask_second_future": 0.65,
+            "ask_first_minus_second": 0.20000000000000007
+          }
+        ],
+        "always_first": 0.75,
+        "always_second": 0.75,
+        "root_conditional_upper_bound": 0.8500000000000001
+      }
+    },
+    "2": {
+      "question_budget": 2,
+      "roots": 60,
+      "worlds": 480,
+      "policies": {
+        "planificador-publico": {
+          "current_supported": 1.0,
+          "current_first_supported": 1.0,
+          "current_second_supported": 1.0,
+          "future_supported": 1.0,
+          "future_unsupported_reuse": 0.0,
+          "future_queries": 6.000000000000001,
+          "future_positive_queries": 3.0000000000000004,
+          "future_positive_supported": 3.0000000000000004,
+          "future_correct_abstentions": 3.0000000000000004,
+          "questions": 2.0,
+          "questions_first": 1.0,
+          "questions_second": 1.0,
+          "applied_writes": 2.0,
+          "immediate": 0.8400000000000001,
+          "longitudinal": 2.34
+        },
+        "preguntar-primero": {
+          "current_supported": 1.0,
+          "current_first_supported": 1.0,
+          "current_second_supported": 1.0,
+          "future_supported": 0.75,
+          "future_unsupported_reuse": 0.0,
+          "future_queries": 6.000000000000001,
+          "future_positive_queries": 3.0000000000000004,
+          "future_positive_supported": 1.5,
+          "future_correct_abstentions": 3.0000000000000004,
+          "questions": 1.0,
+          "questions_first": 1.0,
+          "questions_second": 0.0,
+          "applied_writes": 1.0,
+          "immediate": 0.9200000000000002,
+          "longitudinal": 2.045
+        },
+        "preguntar-segundo": {
+          "current_supported": 1.0,
+          "current_first_supported": 1.0,
+          "current_second_supported": 1.0,
+          "future_supported": 0.75,
+          "future_unsupported_reuse": 0.0,
+          "future_queries": 6.000000000000001,
+          "future_positive_queries": 3.0000000000000004,
+          "future_positive_supported": 1.5,
+          "future_correct_abstentions": 3.0000000000000004,
+          "questions": 1.0,
+          "questions_first": 0.0,
+          "questions_second": 1.0,
+          "applied_writes": 1.0,
+          "immediate": 0.9200000000000002,
+          "longitudinal": 2.045
+        },
+        "preguntar-siempre": {
+          "current_supported": 1.0,
+          "current_first_supported": 1.0,
+          "current_second_supported": 1.0,
+          "future_supported": 1.0,
+          "future_unsupported_reuse": 0.0,
+          "future_queries": 6.000000000000001,
+          "future_positive_queries": 3.0000000000000004,
+          "future_positive_supported": 3.0000000000000004,
+          "future_correct_abstentions": 3.0000000000000004,
+          "questions": 2.0,
+          "questions_first": 1.0,
+          "questions_second": 1.0,
+          "applied_writes": 2.0,
+          "immediate": 0.8400000000000001,
+          "longitudinal": 2.34
+        },
+        "nunca": {
+          "current_supported": 1.0,
+          "current_first_supported": 1.0,
+          "current_second_supported": 1.0,
+          "future_supported": 0.5,
+          "future_unsupported_reuse": 0.0,
+          "future_queries": 6.000000000000001,
+          "future_positive_queries": 3.0000000000000004,
+          "future_positive_supported": 0.0,
+          "future_correct_abstentions": 3.0000000000000004,
+          "questions": 0.0,
+          "questions_first": 0.0,
+          "questions_second": 0.0,
+          "applied_writes": 0.0,
+          "immediate": 1.0,
+          "longitudinal": 1.75
+        }
+      },
+      "public_coverage": {
+        "visited_decisions": 960,
+        "unseen_state_decisions": 0,
+        "unknown_agenda_decisions": 0
+      },
+      "paired_timing": {
+        "pairs": 30,
+        "robust_flip_rate": 1,
+        "mean_gain_over_best_constant": 0.10000000000000009,
+        "by_root": [
+          {
+            "root_id": "r9baa25a323a0df6f6e",
+            "pair_id": "p4803fc28ddf4bddabc",
+            "variant": "save",
+            "ask_first_future": 0.65,
+            "ask_second_future": 0.8500000000000001,
+            "ask_first_minus_second": -0.20000000000000007
+          },
+          {
+            "root_id": "r6288557d6125c8599a",
+            "pair_id": "p9646b8ef2b73c48cee",
+            "variant": "save",
+            "ask_first_future": 0.65,
+            "ask_second_future": 0.8500000000000001,
+            "ask_first_minus_second": -0.20000000000000007
+          },
+          {
+            "root_id": "r0612f9df0fe017e1f7",
+            "pair_id": "pe6bf2cdaf73f6fc43c",
+            "variant": "ask_now",
+            "ask_first_future": 0.8500000000000001,
+            "ask_second_future": 0.65,
+            "ask_first_minus_second": 0.20000000000000007
+          },
+          {
+            "root_id": "r856903a87e3596a482",
+            "pair_id": "pe518abc0d5826a0dc3",
+            "variant": "save",
+            "ask_first_future": 0.65,
+            "ask_second_future": 0.8500000000000001,
+            "ask_first_minus_second": -0.20000000000000007
+          },
+          {
+            "root_id": "r24eef5ac2be5680c59",
+            "pair_id": "pe518abc0d5826a0dc3",
+            "variant": "ask_now",
+            "ask_first_future": 0.8500000000000001,
+            "ask_second_future": 0.65,
+            "ask_first_minus_second": 0.20000000000000007
+          },
+          {
+            "root_id": "r6d915bcece84820144",
+            "pair_id": "p92e3db469ca0cd858f",
+            "variant": "save",
+            "ask_first_future": 0.65,
+            "ask_second_future": 0.8500000000000001,
+            "ask_first_minus_second": -0.20000000000000007
+          },
+          {
+            "root_id": "re283cdf1557cd20ee3",
+            "pair_id": "p038aeac0cc281c0989",
+            "variant": "save",
+            "ask_first_future": 0.65,
+            "ask_second_future": 0.8500000000000001,
+            "ask_first_minus_second": -0.20000000000000007
+          },
+          {
+            "root_id": "r9c17c3c78f1ccb3936",
+            "pair_id": "p2155cf274d75bfdfb9",
+            "variant": "save",
+            "ask_first_future": 0.65,
+            "ask_second_future": 0.8500000000000001,
+            "ask_first_minus_second": -0.20000000000000007
+          },
+          {
+            "root_id": "r18b18a64f737ee0c58",
+            "pair_id": "pbcd8083242a4325202",
+            "variant": "ask_now",
+            "ask_first_future": 0.8500000000000001,
+            "ask_second_future": 0.65,
+            "ask_first_minus_second": 0.20000000000000007
+          },
+          {
+            "root_id": "r8286ba97cf8e645b03",
+            "pair_id": "p094f6c22e113f77fd8",
+            "variant": "ask_now",
+            "ask_first_future": 0.8500000000000001,
+            "ask_second_future": 0.65,
+            "ask_first_minus_second": 0.20000000000000007
+          },
+          {
+            "root_id": "r5ca7f631e79bddff58",
+            "pair_id": "p92e3db469ca0cd858f",
+            "variant": "ask_now",
+            "ask_first_future": 0.8500000000000001,
+            "ask_second_future": 0.65,
+            "ask_first_minus_second": 0.20000000000000007
+          },
+          {
+            "root_id": "r48e24593d359471744",
+            "pair_id": "pddcbbeb5a6a401738a",
+            "variant": "ask_now",
+            "ask_first_future": 0.8500000000000001,
+            "ask_second_future": 0.65,
+            "ask_first_minus_second": 0.20000000000000007
+          },
+          {
+            "root_id": "re39c322fd0755fea23",
+            "pair_id": "pe6bf2cdaf73f6fc43c",
+            "variant": "save",
+            "ask_first_future": 0.65,
+            "ask_second_future": 0.8500000000000001,
+            "ask_first_minus_second": -0.20000000000000007
+          },
+          {
+            "root_id": "rcf2df422bd8b4e1084",
+            "pair_id": "p038aeac0cc281c0989",
+            "variant": "ask_now",
+            "ask_first_future": 0.8500000000000001,
+            "ask_second_future": 0.65,
+            "ask_first_minus_second": 0.20000000000000007
+          },
+          {
+            "root_id": "rf775c320f9a40d9ef4",
+            "pair_id": "p2155cf274d75bfdfb9",
+            "variant": "ask_now",
+            "ask_first_future": 0.8500000000000001,
+            "ask_second_future": 0.65,
+            "ask_first_minus_second": 0.20000000000000007
+          },
+          {
+            "root_id": "r77b566150251ecb29a",
+            "pair_id": "pddcbbeb5a6a401738a",
+            "variant": "save",
+            "ask_first_future": 0.65,
+            "ask_second_future": 0.8500000000000001,
+            "ask_first_minus_second": -0.20000000000000007
+          },
+          {
+            "root_id": "r0d4f3734dd50d82431",
+            "pair_id": "p9646b8ef2b73c48cee",
+            "variant": "ask_now",
+            "ask_first_future": 0.8500000000000001,
+            "ask_second_future": 0.65,
+            "ask_first_minus_second": 0.20000000000000007
+          },
+          {
+            "root_id": "r9480d5553e6afd0110",
+            "pair_id": "p4803fc28ddf4bddabc",
+            "variant": "ask_now",
+            "ask_first_future": 0.8500000000000001,
+            "ask_second_future": 0.65,
+            "ask_first_minus_second": 0.20000000000000007
+          },
+          {
+            "root_id": "rc666847179fa613307",
+            "pair_id": "p094f6c22e113f77fd8",
+            "variant": "save",
+            "ask_first_future": 0.65,
+            "ask_second_future": 0.8500000000000001,
+            "ask_first_minus_second": -0.20000000000000007
+          },
+          {
+            "root_id": "rb4ac02b38b4d4dbbcd",
+            "pair_id": "pbcd8083242a4325202",
+            "variant": "save",
+            "ask_first_future": 0.65,
+            "ask_second_future": 0.8500000000000001,
+            "ask_first_minus_second": -0.20000000000000007
+          },
+          {
+            "root_id": "r006b07677fb26d9e87",
+            "pair_id": "pe63d3a80db4b8f35d3",
+            "variant": "ask_now",
+            "ask_first_future": 0.8500000000000001,
+            "ask_second_future": 0.65,
+            "ask_first_minus_second": 0.20000000000000007
+          },
+          {
+            "root_id": "raac07149692035ad27",
+            "pair_id": "pbbd652ceb1053ccdbf",
+            "variant": "save",
+            "ask_first_future": 0.65,
+            "ask_second_future": 0.8500000000000001,
+            "ask_first_minus_second": -0.20000000000000007
+          },
+          {
+            "root_id": "r178bec72ec4438019b",
+            "pair_id": "p6672879ce9d113ba10",
+            "variant": "ask_now",
+            "ask_first_future": 0.8500000000000001,
+            "ask_second_future": 0.65,
+            "ask_first_minus_second": 0.20000000000000007
+          },
+          {
+            "root_id": "rb62e5b5d9ac88a4732",
+            "pair_id": "pe63d3a80db4b8f35d3",
+            "variant": "save",
+            "ask_first_future": 0.65,
+            "ask_second_future": 0.8500000000000001,
+            "ask_first_minus_second": -0.20000000000000007
+          },
+          {
+            "root_id": "r2b67a671de6851ab4c",
+            "pair_id": "pe21e3bacb5358de108",
+            "variant": "ask_now",
+            "ask_first_future": 0.8500000000000001,
+            "ask_second_future": 0.65,
+            "ask_first_minus_second": 0.20000000000000007
+          },
+          {
+            "root_id": "r03e5a4848ce1407833",
+            "pair_id": "p2652a92582a39a2d2f",
+            "variant": "ask_now",
+            "ask_first_future": 0.8500000000000001,
+            "ask_second_future": 0.65,
+            "ask_first_minus_second": 0.20000000000000007
+          },
+          {
+            "root_id": "re8f5c2ef46dca29c95",
+            "pair_id": "p36bd3627855a462f8e",
+            "variant": "save",
+            "ask_first_future": 0.65,
+            "ask_second_future": 0.8500000000000001,
+            "ask_first_minus_second": -0.20000000000000007
+          },
+          {
+            "root_id": "rda0d6d02ef31760911",
+            "pair_id": "p2652a92582a39a2d2f",
+            "variant": "save",
+            "ask_first_future": 0.65,
+            "ask_second_future": 0.8500000000000001,
+            "ask_first_minus_second": -0.20000000000000007
+          },
+          {
+            "root_id": "rab5214416c9b12c6d3",
+            "pair_id": "pdb093de90b612fd355",
+            "variant": "ask_now",
+            "ask_first_future": 0.8500000000000001,
+            "ask_second_future": 0.65,
+            "ask_first_minus_second": 0.20000000000000007
+          },
+          {
+            "root_id": "r27148478160cccd1a4",
+            "pair_id": "p6672879ce9d113ba10",
+            "variant": "save",
+            "ask_first_future": 0.65,
+            "ask_second_future": 0.8500000000000001,
+            "ask_first_minus_second": -0.20000000000000007
+          },
+          {
+            "root_id": "r97fe6ad910c7fbf590",
+            "pair_id": "p36bd3627855a462f8e",
+            "variant": "ask_now",
+            "ask_first_future": 0.8500000000000001,
+            "ask_second_future": 0.65,
+            "ask_first_minus_second": 0.20000000000000007
+          },
+          {
+            "root_id": "rd1df48d45aaf63ee1f",
+            "pair_id": "p1cfdf881255e968ade",
+            "variant": "ask_now",
+            "ask_first_future": 0.8500000000000001,
+            "ask_second_future": 0.65,
+            "ask_first_minus_second": 0.20000000000000007
+          },
+          {
+            "root_id": "r9cde5d0976cf000f6b",
+            "pair_id": "p6f7cf521555a6b7f93",
+            "variant": "save",
+            "ask_first_future": 0.65,
+            "ask_second_future": 0.8500000000000001,
+            "ask_first_minus_second": -0.20000000000000007
+          },
+          {
+            "root_id": "rbbc8aa612c6165fa6c",
+            "pair_id": "p1cfdf881255e968ade",
+            "variant": "save",
+            "ask_first_future": 0.65,
+            "ask_second_future": 0.8500000000000001,
+            "ask_first_minus_second": -0.20000000000000007
+          },
+          {
+            "root_id": "r0b427620c1e6883274",
+            "pair_id": "pe21e3bacb5358de108",
+            "variant": "save",
+            "ask_first_future": 0.65,
+            "ask_second_future": 0.8500000000000001,
+            "ask_first_minus_second": -0.20000000000000007
+          },
+          {
+            "root_id": "rb63c59b946bc8f686e",
+            "pair_id": "p6eb693810637a2dddb",
+            "variant": "save",
+            "ask_first_future": 0.65,
+            "ask_second_future": 0.8500000000000001,
+            "ask_first_minus_second": -0.20000000000000007
+          },
+          {
+            "root_id": "ra73d0044443c67edd7",
+            "pair_id": "pbbd652ceb1053ccdbf",
+            "variant": "ask_now",
+            "ask_first_future": 0.8500000000000001,
+            "ask_second_future": 0.65,
+            "ask_first_minus_second": 0.20000000000000007
+          },
+          {
+            "root_id": "r31fdeba079664df881",
+            "pair_id": "p6f7cf521555a6b7f93",
+            "variant": "ask_now",
+            "ask_first_future": 0.8500000000000001,
+            "ask_second_future": 0.65,
+            "ask_first_minus_second": 0.20000000000000007
+          },
+          {
+            "root_id": "rae6ed811d36e718b5e",
+            "pair_id": "pdb093de90b612fd355",
+            "variant": "save",
+            "ask_first_future": 0.65,
+            "ask_second_future": 0.8500000000000001,
+            "ask_first_minus_second": -0.20000000000000007
+          },
+          {
+            "root_id": "r12aca0cd8479ad673b",
+            "pair_id": "p6eb693810637a2dddb",
+            "variant": "ask_now",
+            "ask_first_future": 0.8500000000000001,
+            "ask_second_future": 0.65,
+            "ask_first_minus_second": 0.20000000000000007
+          },
+          {
+            "root_id": "r6ecd2b9f4846709344",
+            "pair_id": "p90a19e48ed2620c8b9",
+            "variant": "ask_now",
+            "ask_first_future": 0.8500000000000001,
+            "ask_second_future": 0.65,
+            "ask_first_minus_second": 0.20000000000000007
+          },
+          {
+            "root_id": "rde6328140ee136816f",
+            "pair_id": "p0cccfa93dcb87710e0",
+            "variant": "save",
+            "ask_first_future": 0.65,
+            "ask_second_future": 0.8500000000000001,
+            "ask_first_minus_second": -0.20000000000000007
+          },
+          {
+            "root_id": "r9bc07685b96a6790f2",
+            "pair_id": "p5776ceb7b71e8f02d8",
+            "variant": "ask_now",
+            "ask_first_future": 0.8500000000000001,
+            "ask_second_future": 0.65,
+            "ask_first_minus_second": 0.20000000000000007
+          },
+          {
+            "root_id": "rd6e21e08b0b9d6d35b",
+            "pair_id": "pa4a475233b8ec04ad4",
+            "variant": "save",
+            "ask_first_future": 0.65,
+            "ask_second_future": 0.8500000000000001,
+            "ask_first_minus_second": -0.20000000000000007
+          },
+          {
+            "root_id": "r8a48e4ed9660c43d3b",
+            "pair_id": "p9d3ac2e5f886bc780a",
+            "variant": "ask_now",
+            "ask_first_future": 0.8500000000000001,
+            "ask_second_future": 0.65,
+            "ask_first_minus_second": 0.20000000000000007
+          },
+          {
+            "root_id": "r76996b7178b9cf7149",
+            "pair_id": "p880a506ec7b10cb789",
+            "variant": "save",
+            "ask_first_future": 0.65,
+            "ask_second_future": 0.8500000000000001,
+            "ask_first_minus_second": -0.20000000000000007
+          },
+          {
+            "root_id": "rafc16c7f8e3061104f",
+            "pair_id": "pc69e31f7def5e26c1f",
+            "variant": "ask_now",
+            "ask_first_future": 0.8500000000000001,
+            "ask_second_future": 0.65,
+            "ask_first_minus_second": 0.20000000000000007
+          },
+          {
+            "root_id": "r05786f46145c9ec502",
+            "pair_id": "p9006d5646351f994cf",
+            "variant": "ask_now",
+            "ask_first_future": 0.8500000000000001,
+            "ask_second_future": 0.65,
+            "ask_first_minus_second": 0.20000000000000007
+          },
+          {
+            "root_id": "r29731bcf8db49e5fe0",
+            "pair_id": "p5776ceb7b71e8f02d8",
+            "variant": "save",
+            "ask_first_future": 0.65,
+            "ask_second_future": 0.8500000000000001,
+            "ask_first_minus_second": -0.20000000000000007
+          },
+          {
+            "root_id": "ra8c46b0395c1ee4301",
+            "pair_id": "p90a19e48ed2620c8b9",
+            "variant": "save",
+            "ask_first_future": 0.65,
+            "ask_second_future": 0.8500000000000001,
+            "ask_first_minus_second": -0.20000000000000007
+          },
+          {
+            "root_id": "r07f2b5ec7d883d0ed8",
+            "pair_id": "p9d3ac2e5f886bc780a",
+            "variant": "save",
+            "ask_first_future": 0.65,
+            "ask_second_future": 0.8500000000000001,
+            "ask_first_minus_second": -0.20000000000000007
+          },
+          {
+            "root_id": "r738f4c22ef10705922",
+            "pair_id": "pd1cf590cf345d8a58b",
+            "variant": "ask_now",
+            "ask_first_future": 0.8500000000000001,
+            "ask_second_future": 0.65,
+            "ask_first_minus_second": 0.20000000000000007
+          },
+          {
+            "root_id": "re5f667f734cedb3cc5",
+            "pair_id": "p0cccfa93dcb87710e0",
+            "variant": "ask_now",
+            "ask_first_future": 0.8500000000000001,
+            "ask_second_future": 0.65,
+            "ask_first_minus_second": 0.20000000000000007
+          },
+          {
+            "root_id": "r79bb0ffe13fe9cbe11",
+            "pair_id": "p6a605ed37cb2830a84",
+            "variant": "save",
+            "ask_first_future": 0.65,
+            "ask_second_future": 0.8500000000000001,
+            "ask_first_minus_second": -0.20000000000000007
+          },
+          {
+            "root_id": "r4404ab910673b817b4",
+            "pair_id": "pa4a475233b8ec04ad4",
+            "variant": "ask_now",
+            "ask_first_future": 0.8500000000000001,
+            "ask_second_future": 0.65,
+            "ask_first_minus_second": 0.20000000000000007
+          },
+          {
+            "root_id": "r29139c0cf044099cf1",
+            "pair_id": "pc69e31f7def5e26c1f",
+            "variant": "save",
+            "ask_first_future": 0.65,
+            "ask_second_future": 0.8500000000000001,
+            "ask_first_minus_second": -0.20000000000000007
+          },
+          {
+            "root_id": "r57550be1809a7ee907",
+            "pair_id": "p6a605ed37cb2830a84",
+            "variant": "ask_now",
+            "ask_first_future": 0.8500000000000001,
+            "ask_second_future": 0.65,
+            "ask_first_minus_second": 0.20000000000000007
+          },
+          {
+            "root_id": "r126751109fc1893d81",
+            "pair_id": "pd1cf590cf345d8a58b",
+            "variant": "save",
+            "ask_first_future": 0.65,
+            "ask_second_future": 0.8500000000000001,
+            "ask_first_minus_second": -0.20000000000000007
+          },
+          {
+            "root_id": "ra70885a5868f98c807",
+            "pair_id": "p9006d5646351f994cf",
+            "variant": "save",
+            "ask_first_future": 0.65,
+            "ask_second_future": 0.8500000000000001,
+            "ask_first_minus_second": -0.20000000000000007
+          },
+          {
+            "root_id": "rb1cf55bcf14e86ba19",
+            "pair_id": "p880a506ec7b10cb789",
+            "variant": "ask_now",
+            "ask_first_future": 0.8500000000000001,
+            "ask_second_future": 0.65,
+            "ask_first_minus_second": 0.20000000000000007
+          }
+        ],
+        "always_first": 0.75,
+        "always_second": 0.75,
+        "root_conditional_upper_bound": 0.8500000000000001
+      }
+    }
+  },
+  "public_gain": 0.10000000000000009,
+  "passed": true
+}

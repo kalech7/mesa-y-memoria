@@ -1,0 +1,60 @@
+[
+  {
+    "id": "clarification-exploratory-nota-en-la-refri",
+    "family": "recuperacion_de_opcion_unica",
+    "turns": [
+      {
+        "text": "Estoy sola y me da pereza salir. En la nota de la refri dice que se acabó la pataat, el pepin y las lentejitas. De los platos de hoy, cuál alcanzo a hacer?",
+        "excluded": ["lenteja", "papa", "pepino"]
+      },
+      {
+        "text": "La nota estaba mal: tengo lentrejas en el congelador. Papas y pepino sí me faltan. ¿Qué hago de cena entonces?",
+        "excluded": ["papa", "pepino"]
+      },
+      {
+        "text": "ya vi que las lentejas eran de otra persona, no las puedo usar. Me dieron pepino, ese sí. Sigue sin papas. ¿Con qué cena me quedo?",
+        "excluded": ["lenteja", "papa"]
+      }
+    ]
+  },
+  {
+    "id": "clarification-exploratory-autocorrector-en-el-bus",
+    "family": "rectificacion_de_ingredientes",
+    "turns": [
+      {
+        "text": "voy en el bus haciendo el pedido para cenar, sin poyo ni arros ni tomate plis. de esa lista cual me recomiendas?",
+        "excluded": ["arroz", "pollo", "tomate"]
+      },
+      {
+        "text": "papaa* le erré a lo del pollo. Pollo sí me sirve, papa no; tampoco arroz ni tomate como dije. ¿Qué pido de cena?",
+        "excluded": ["arroz", "papa", "tomate"]
+      },
+      {
+        "text": "para mí sí tomate al final, me acordé que eso era para el almuerzo de mañana. Mantén arroz y papas fuera. ¿Cuál menú de cena me queda?",
+        "excluded": ["arroz", "papa"]
+      }
+    ]
+  },
+  {
+    "id": "clarification-exploratory-cena-compartida-en-pausa",
+    "family": "cambio_de_destinatario_y_restricciones",
+    "turns": [
+      {
+        "text": "Ya que cenamos juntas, yo prefiero que no tenga huevvo ni cebolla; mi hermana descarta limon, pollo, quinua y zanahoria por hoy. ¿Cuál de esos platos podemos compartir?",
+        "excluded": ["cebolla", "huevo", "limon", "pollo", "quinua", "zanahoria"]
+      },
+      {
+        "text": "Se le hizo tarde y ya no viene. Para mi cena quita tan solo huevo y cebolla, lo de ella no hace falta. ¿Cuál sugieres?",
+        "excluded": ["cebolla", "huevo"]
+      },
+      {
+        "text": "Sí viene al final y dice que pescado con limón sí le entra. Yo sigo sin huevo ni cebolla, ella no quiere pollo, quinua ni zanahoria. ¿Qué preparamos las dos?",
+        "excluded": ["cebolla", "huevo", "pollo", "quinua", "zanahoria"]
+      },
+      {
+        "text": "espera que abrí el limón y está pasado. Sin limón por el resto de la noche y con las otras cosas fuera también. ¿Qué plato queda para compartir?",
+        "excluded": ["cebolla", "huevo", "limon", "pollo", "quinua", "zanahoria"]
+      }
+    ]
+  }
+]

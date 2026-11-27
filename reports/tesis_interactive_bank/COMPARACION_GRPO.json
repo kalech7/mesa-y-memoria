@@ -1,0 +1,475 @@
+{
+  "status": "verified",
+  "original": {
+    "manifest_sha256": "74468df63da63bc2e9b8654e37248387cf9529dbbb2e0b14aee2f1f51a722acf",
+    "counts": {
+      "train": {
+        "episodes": 80,
+        "historical_records": 180,
+        "public_identities_reproduced": 80
+      },
+      "validation": {
+        "episodes": 53,
+        "historical_records": 119,
+        "public_identities_reproduced": 53
+      },
+      "evaluation": {
+        "episodes": 67,
+        "historical_records": 151,
+        "public_identities_reproduced": 67
+      }
+    },
+    "isolation": {
+      "status": "verified",
+      "identity_version": "behavioral_identity_v3_roles",
+      "partitions": {
+        "train": {
+          "episodes": 80,
+          "roots": 60,
+          "behavioral_identities": 80,
+          "observable_identities": 60
+        },
+        "validation": {
+          "episodes": 53,
+          "roots": 40,
+          "behavioral_identities": 53,
+          "observable_identities": 40
+        },
+        "evaluation": {
+          "episodes": 67,
+          "roots": 50,
+          "behavioral_identities": 67,
+          "observable_identities": 50
+        }
+      },
+      "historical_overlap": 0,
+      "limits": "Exact identity with alpha-renamed references and user-role normalization; not universal paraphrase equivalence.",
+      "templates_and_recipe_ids_disjoint": true,
+      "paired_public_prefixes": {
+        "train:F3": 8,
+        "train:F4": 12,
+        "validation:F3": 5,
+        "validation:F4": 8,
+        "evaluation:F4": 10,
+        "evaluation:F3": 7
+      }
+    }
+  },
+  "interactive": {
+    "seed": 684038,
+    "counts": {
+      "train": {
+        "episodes": 80,
+        "historical_records": 426,
+        "opening_turns": 640,
+        "same_day_different_session": 15,
+        "first_visit_refused": 8,
+        "second_visit_revision": 18,
+        "probe_reuse": 80,
+        "probe_unrelated_preference": 80,
+        "first_visit_direct": 18,
+        "second_visit_temporary": 34,
+        "second_visit_reuse": 28,
+        "first_visit_partial": 20,
+        "probe_last_day_of_interval": 8,
+        "probe_first_day_after_interval": 12,
+        "paired_public_prefixes_verified": 20,
+        "roots": 60,
+        "bank_sha256": "47ad03c145a527441a28ee6b62160b40ca181303fc100a580119bc4202dc8b8b"
+      },
+      "validation": {
+        "episodes": 53,
+        "historical_records": 282,
+        "opening_turns": 424,
+        "same_day_different_session": 15,
+        "second_visit_temporary": 33,
+        "probe_reuse": 53,
+        "probe_unrelated_preference": 53,
+        "first_visit_partial": 15,
+        "second_visit_reuse": 9,
+        "first_visit_refused": 9,
+        "second_visit_revision": 11,
+        "first_visit_direct": 8,
+        "probe_last_day_of_interval": 5,
+        "probe_first_day_after_interval": 7,
+        "paired_public_prefixes_verified": 13,
+        "roots": 40,
+        "bank_sha256": "5e266fdb084adcb7334c1936b2219db1af219e2ca347f8635e8ca97d6046e540"
+      },
+      "evaluation": {
+        "episodes": 67,
+        "historical_records": 357,
+        "opening_turns": 536,
+        "same_day_different_session": 17,
+        "first_visit_partial": 17,
+        "second_visit_reuse": 21,
+        "probe_reuse": 67,
+        "probe_unrelated_preference": 67,
+        "first_visit_direct": 17,
+        "second_visit_temporary": 27,
+        "probe_last_day_of_interval": 5,
+        "probe_first_day_after_interval": 8,
+        "second_visit_revision": 19,
+        "first_visit_refused": 6,
+        "paired_public_prefixes_verified": 17,
+        "roots": 50,
+        "bank_sha256": "2b20c53a116816a4934f8d4ae53a305ff85eced17b0b074a78ed17a72b2572bb"
+      }
+    },
+    "interactive_roots_overlapping_original": 0,
+    "recipe_world_and_template_overlap_between_splits": 0,
+    "coarse_preference_overlap_between_splits_by_family": {
+      "F3": 7,
+      "F0": 6
+    },
+    "coarse_preference_overlap_with_original_by_family": {
+      "F3": 10,
+      "F2": 6,
+      "F0": 11,
+      "F1": 2,
+      "F4": 2
+    }
+  },
+  "limits": [
+    "A coarse key shares a food, attribute and family while ignoring wording, dates, context and later events.",
+    "Food and scope concepts are shared across splits. Identity checks do not prove unrestricted paraphrase generalization.",
+    "The audit checks evaluator-only fields and initial state identities. It does not evaluate or rank reserved policies.",
+    "Conversations are deterministic simulations with authored variation and fixed model-independent reply trajectories."
+  ],
+  "comparisons": [
+    {
+      "compared_seeds": [
+        683915,
+        684038
+      ],
+      "cross_experiment_identity_overlap": {
+        "root_id": {
+          "count": 0,
+          "split_pairs": {}
+        },
+        "world_id": {
+          "count": 0,
+          "split_pairs": {}
+        },
+        "origin_root": {
+          "count": 0,
+          "split_pairs": {}
+        },
+        "recipe_id": {
+          "count": 0,
+          "split_pairs": {}
+        },
+        "normalized_public": {
+          "count": 0,
+          "split_pairs": {}
+        }
+      },
+      "scope": "Identity and authored recipe checks; food vocabulary and scenario concepts shared."
+    },
+    {
+      "compared_seeds": [
+        684023,
+        684038
+      ],
+      "cross_experiment_identity_overlap": {
+        "root_id": {
+          "count": 0,
+          "split_pairs": {}
+        },
+        "world_id": {
+          "count": 0,
+          "split_pairs": {}
+        },
+        "origin_root": {
+          "count": 0,
+          "split_pairs": {}
+        },
+        "recipe_id": {
+          "count": 0,
+          "split_pairs": {}
+        },
+        "normalized_public": {
+          "count": 0,
+          "split_pairs": {}
+        }
+      },
+      "scope": "Identity and authored recipe checks; food vocabulary and scenario concepts shared."
+    }
+  ],
+  "selection": {
+    "method": "First integer seed starting at 684024 with verified internal isolation and zero cross-bank overlaps on all audited identities",
+    "preceding_rejections": [
+      {
+        "seed": 684024,
+        "cross_overlap": {
+          "683915": {
+            "root_id": 0,
+            "world_id": 0,
+            "origin_root": 0,
+            "recipe_id": 0,
+            "normalized_public": 0
+          },
+          "684023": {
+            "root_id": 0,
+            "world_id": 0,
+            "origin_root": 0,
+            "recipe_id": 1,
+            "normalized_public": 0
+          }
+        }
+      },
+      {
+        "seed": 684025,
+        "cross_overlap": {
+          "683915": {
+            "root_id": 0,
+            "world_id": 0,
+            "origin_root": 0,
+            "recipe_id": 2,
+            "normalized_public": 0
+          },
+          "684023": {
+            "root_id": 0,
+            "world_id": 0,
+            "origin_root": 0,
+            "recipe_id": 0,
+            "normalized_public": 0
+          }
+        }
+      },
+      {
+        "seed": 684026,
+        "cross_overlap": {
+          "683915": {
+            "root_id": 0,
+            "world_id": 0,
+            "origin_root": 0,
+            "recipe_id": 2,
+            "normalized_public": 0
+          },
+          "684023": {
+            "root_id": 0,
+            "world_id": 0,
+            "origin_root": 0,
+            "recipe_id": 2,
+            "normalized_public": 0
+          }
+        }
+      },
+      {
+        "seed": 684027,
+        "cross_overlap": {
+          "683915": {
+            "root_id": 0,
+            "world_id": 0,
+            "origin_root": 0,
+            "recipe_id": 1,
+            "normalized_public": 0
+          },
+          "684023": {
+            "root_id": 0,
+            "world_id": 0,
+            "origin_root": 0,
+            "recipe_id": 1,
+            "normalized_public": 0
+          }
+        }
+      },
+      {
+        "seed": 684028,
+        "cross_overlap": {
+          "683915": {
+            "root_id": 0,
+            "world_id": 0,
+            "origin_root": 0,
+            "recipe_id": 1,
+            "normalized_public": 0
+          },
+          "684023": {
+            "root_id": 0,
+            "world_id": 0,
+            "origin_root": 0,
+            "recipe_id": 2,
+            "normalized_public": 0
+          }
+        }
+      },
+      {
+        "seed": 684029,
+        "cross_overlap": {
+          "683915": {
+            "root_id": 0,
+            "world_id": 0,
+            "origin_root": 0,
+            "recipe_id": 0,
+            "normalized_public": 0
+          },
+          "684023": {
+            "root_id": 0,
+            "world_id": 0,
+            "origin_root": 0,
+            "recipe_id": 3,
+            "normalized_public": 0
+          }
+        }
+      },
+      {
+        "seed": 684030,
+        "cross_overlap": {
+          "683915": {
+            "root_id": 0,
+            "world_id": 0,
+            "origin_root": 0,
+            "recipe_id": 0,
+            "normalized_public": 0
+          },
+          "684023": {
+            "root_id": 0,
+            "world_id": 0,
+            "origin_root": 0,
+            "recipe_id": 2,
+            "normalized_public": 0
+          }
+        }
+      },
+      {
+        "seed": 684031,
+        "cross_overlap": {
+          "683915": {
+            "root_id": 0,
+            "world_id": 0,
+            "origin_root": 0,
+            "recipe_id": 2,
+            "normalized_public": 0
+          },
+          "684023": {
+            "root_id": 0,
+            "world_id": 0,
+            "origin_root": 0,
+            "recipe_id": 0,
+            "normalized_public": 0
+          }
+        }
+      },
+      {
+        "seed": 684032,
+        "cross_overlap": {
+          "683915": {
+            "root_id": 0,
+            "world_id": 0,
+            "origin_root": 0,
+            "recipe_id": 1,
+            "normalized_public": 0
+          },
+          "684023": {
+            "root_id": 0,
+            "world_id": 0,
+            "origin_root": 0,
+            "recipe_id": 2,
+            "normalized_public": 0
+          }
+        }
+      },
+      {
+        "seed": 684033,
+        "cross_overlap": {
+          "683915": {
+            "root_id": 0,
+            "world_id": 0,
+            "origin_root": 0,
+            "recipe_id": 1,
+            "normalized_public": 0
+          },
+          "684023": {
+            "root_id": 0,
+            "world_id": 0,
+            "origin_root": 0,
+            "recipe_id": 1,
+            "normalized_public": 0
+          }
+        }
+      },
+      {
+        "seed": 684034,
+        "cross_overlap": {
+          "683915": {
+            "root_id": 0,
+            "world_id": 0,
+            "origin_root": 0,
+            "recipe_id": 1,
+            "normalized_public": 0
+          },
+          "684023": {
+            "root_id": 0,
+            "world_id": 0,
+            "origin_root": 0,
+            "recipe_id": 0,
+            "normalized_public": 0
+          }
+        }
+      },
+      {
+        "seed": 684035,
+        "cross_overlap": {
+          "683915": {
+            "root_id": 0,
+            "world_id": 0,
+            "origin_root": 0,
+            "recipe_id": 0,
+            "normalized_public": 0
+          },
+          "684023": {
+            "root_id": 0,
+            "world_id": 0,
+            "origin_root": 0,
+            "recipe_id": 1,
+            "normalized_public": 0
+          }
+        }
+      },
+      {
+        "seed": 684036,
+        "cross_overlap": {
+          "683915": {
+            "root_id": 0,
+            "world_id": 0,
+            "origin_root": 0,
+            "recipe_id": 3,
+            "normalized_public": 0
+          },
+          "684023": {
+            "root_id": 0,
+            "world_id": 0,
+            "origin_root": 0,
+            "recipe_id": 3,
+            "normalized_public": 0
+          }
+        }
+      },
+      {
+        "seed": 684037,
+        "cross_overlap": {
+          "683915": {
+            "root_id": 0,
+            "world_id": 0,
+            "origin_root": 0,
+            "recipe_id": 1,
+            "normalized_public": 0
+          },
+          "684023": {
+            "root_id": 0,
+            "world_id": 0,
+            "origin_root": 0,
+            "recipe_id": 4,
+            "normalized_public": 0
+          }
+        }
+      }
+    ]
+  },
+  "normalized_first_observation": {
+    "keys": 150,
+    "cross_split": 0,
+    "overlap_with_original": 0
+  }
+}

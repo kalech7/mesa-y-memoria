@@ -1,0 +1,108 @@
+{
+  "status": "passed",
+  "partitions": {
+    "train": {
+      "roots": 600,
+      "episodes": 1020,
+      "families": {
+        "F1": 120,
+        "F4": 120,
+        "F3": 120,
+        "F2": 120,
+        "F0": 120
+      },
+      "f4_pairs": 120,
+      "canonical_signatures": {
+        "a61c08b40a448dfc224e4a8bdd312e15089dbf31a4c8e6b26310aa5ce3d2df4a": 120,
+        "421ab7ec2b939f0360d7b2676e69736437f946faa5ddead27ab4dee936e8cb6a": 40,
+        "bf725e2c54d7665fb2457afbd869d61a46ba5cb099e143e79de1be13217903f7": 120,
+        "cd07d884decb01885820947fadf66598df275d9b81d5ed1a9c64a741fe96a5df": 80,
+        "d63b1278664c6823ee63a2b8ab70330e76cf64394105cc769736cfad43412046": 60,
+        "24ab95f1b2d02a58148de5e759ad8b707ad0663717c6177efad5f76295a8103b": 40,
+        "783cf6fc3a49318e4d88c415ad7e6b52eb62b483b02a2f3c1bd0f165f903eca5": 80,
+        "3c482a625acd2cf7bc60bb09d89663dd15ef2ab7f0653e2d23d19f1ef7a6b7d0": 60,
+        "52470fe2253703634bafc8786cfbf4a5aec7147a917b25db301ae7116db514c5": 120,
+        "4437e47799942d6b92f9dbfc93763bd778f962ccce7992f38bbc3778f3967bc7": 60,
+        "87a36ca0b5626dabb41465582d9d9c5e37607fb570508daa6f4ab492a5fb83ae": 120,
+        "d972ad82c08f1139a461d2d567fec291085c96f365cef9bc74452d9b49b02b2c": 120
+      },
+      "sha256": "19e2d6f233c8ac81dfc8e4d83c65a2233193349d425bcd12ef263079b53e0ec1"
+    },
+    "validation": {
+      "roots": 150,
+      "episodes": 255,
+      "families": {
+        "F3": 30,
+        "F0": 30,
+        "F4": 30,
+        "F2": 30,
+        "F1": 30
+      },
+      "f4_pairs": 30,
+      "canonical_signatures": {
+        "3c482a625acd2cf7bc60bb09d89663dd15ef2ab7f0653e2d23d19f1ef7a6b7d0": 15,
+        "87a36ca0b5626dabb41465582d9d9c5e37607fb570508daa6f4ab492a5fb83ae": 30,
+        "421ab7ec2b939f0360d7b2676e69736437f946faa5ddead27ab4dee936e8cb6a": 10,
+        "cd07d884decb01885820947fadf66598df275d9b81d5ed1a9c64a741fe96a5df": 20,
+        "52470fe2253703634bafc8786cfbf4a5aec7147a917b25db301ae7116db514c5": 30,
+        "bf725e2c54d7665fb2457afbd869d61a46ba5cb099e143e79de1be13217903f7": 30,
+        "a61c08b40a448dfc224e4a8bdd312e15089dbf31a4c8e6b26310aa5ce3d2df4a": 30,
+        "783cf6fc3a49318e4d88c415ad7e6b52eb62b483b02a2f3c1bd0f165f903eca5": 20,
+        "d63b1278664c6823ee63a2b8ab70330e76cf64394105cc769736cfad43412046": 15,
+        "d972ad82c08f1139a461d2d567fec291085c96f365cef9bc74452d9b49b02b2c": 30,
+        "4437e47799942d6b92f9dbfc93763bd778f962ccce7992f38bbc3778f3967bc7": 15,
+        "24ab95f1b2d02a58148de5e759ad8b707ad0663717c6177efad5f76295a8103b": 10
+      },
+      "sha256": "3c1d3610ede3304b989687e2f0c5d4ccee3ad5e15ad87eb973a503a48e81b2ee"
+    },
+    "test_id": {
+      "roots": 300,
+      "episodes": 510,
+      "families": {
+        "F4": 60,
+        "F1": 60,
+        "F2": 60,
+        "F3": 60,
+        "F0": 60
+      },
+      "f4_pairs": 60,
+      "canonical_signatures": {
+        "cd07d884decb01885820947fadf66598df275d9b81d5ed1a9c64a741fe96a5df": 40,
+        "a61c08b40a448dfc224e4a8bdd312e15089dbf31a4c8e6b26310aa5ce3d2df4a": 60,
+        "52470fe2253703634bafc8786cfbf4a5aec7147a917b25db301ae7116db514c5": 60,
+        "d972ad82c08f1139a461d2d567fec291085c96f365cef9bc74452d9b49b02b2c": 60,
+        "bf725e2c54d7665fb2457afbd869d61a46ba5cb099e143e79de1be13217903f7": 60,
+        "421ab7ec2b939f0360d7b2676e69736437f946faa5ddead27ab4dee936e8cb6a": 20,
+        "3c482a625acd2cf7bc60bb09d89663dd15ef2ab7f0653e2d23d19f1ef7a6b7d0": 30,
+        "87a36ca0b5626dabb41465582d9d9c5e37607fb570508daa6f4ab492a5fb83ae": 60,
+        "4437e47799942d6b92f9dbfc93763bd778f962ccce7992f38bbc3778f3967bc7": 30,
+        "d63b1278664c6823ee63a2b8ab70330e76cf64394105cc769736cfad43412046": 30,
+        "783cf6fc3a49318e4d88c415ad7e6b52eb62b483b02a2f3c1bd0f165f903eca5": 40,
+        "24ab95f1b2d02a58148de5e759ad8b707ad0663717c6177efad5f76295a8103b": 20
+      },
+      "sha256": "345e5aa12241a2c670b7ad5f9474f4e28c16d88920a836b15b5c0bd31456bf68"
+    }
+  },
+  "overlap": {
+    "test_id:train": {
+      "root_overlap": [],
+      "canonical_overlap_count": 12,
+      "right_episodes_seen_canonical": 1020,
+      "interpretation": "Shared synthetic mechanisms; this is not independent structural OOD."
+    },
+    "test_id:validation": {
+      "root_overlap": [],
+      "canonical_overlap_count": 12,
+      "right_episodes_seen_canonical": 255,
+      "interpretation": "Shared synthetic mechanisms; this is not independent structural OOD."
+    },
+    "train:validation": {
+      "root_overlap": [],
+      "canonical_overlap_count": 12,
+      "right_episodes_seen_canonical": 255,
+      "interpretation": "Shared synthetic mechanisms; this is not independent structural OOD."
+    }
+  },
+  "human_audit_status": "pending_human_audit",
+  "external_authorship": "not_supplied"
+}

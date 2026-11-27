@@ -1,0 +1,30 @@
+{
+  "version": "tesis_profiles_heldout_v5",
+  "split": "reserved",
+  "status": "frozen_before_blind_review",
+  "frozen_utc": "2026-11-17T23:51:23.593091+00:00",
+  "authorship": "fresh manual Spanish narratives from a separate AI author",
+  "training_templates_consulted": false,
+  "real_users": false,
+  "human_reviews": 0,
+  "roots": 18,
+  "worlds": 46,
+  "visits_per_root": 3,
+  "question_budget": 2,
+  "world_assignment": "independent two-way latent alternatives per ambiguous visit",
+  "categories": {
+    "agenda_response": 3,
+    "return_pending": 3,
+    "calendar_scope": 3,
+    "place_switch": 3,
+    "speaker_and_quote": 3,
+    "duration_recovery": 3
+  },
+  "public_digest": "fece9370129998c71c21376c652ff9857a06693cf04087f74efb2eda1e7ee3ff",
+  "artifacts": {
+    "PUBLIC.json": "4d527a975299e2d0c00d897d3201a6cdb589062a8c81dab2f947940bf16f6e89",
+    "REVIEW_TEMPLATE.json": "863c72a3792dc6be570aa084df48c3c6931571315f375db83d5174292a35abce",
+    "PRIVATE_GOLD.json": "32ac03dda28a3eea187285c2c105dd5802faf30ce79a177cbc104f009f153be9",
+    "PRIVATE_WORLDS.jsonl": "00d40b576b80116a1da3ae15de686a904833bac8858688f19ce3e7ee801e3357"
+  }
+}

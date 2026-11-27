@@ -1,0 +1,92 @@
+[
+  {
+    "id": "qa-postlaunch-autocorreccion-en-comida-compartida",
+    "family": "errata_y_rectificacion",
+    "turns": [
+      {
+        "text": "Mi pana pidió sin tomat3, pero eso es por su lado. Yo quiero algo sin huebbo ni peskado; qué ceno?",
+        "excluded": [
+          "huevo",
+          "pescado"
+        ]
+      },
+      {
+        "text": "arros* escribí pescado sin querer. Pescado sí puede ir, huevo déjalo fuera. ¿Qué otro plato podría cenar?",
+        "excluded": [
+          "arroz",
+          "huevo"
+        ]
+      },
+      {
+        "text": "ahora sí quiero arroz, pero mi cena sin papáas ni huevo. ¿Con qué plato quedo?",
+        "excluded": [
+          "huevo",
+          "papa"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "qa-postlaunch-agotar-y-recuperar-opciones",
+    "family": "exclusiones_acumuladas",
+    "turns": [
+      {
+        "text": "q preparo de cena de lo q hay? nada de paapas ni aceyte, los dos fuera esta noche",
+        "excluded": [
+          "aceite",
+          "papa"
+        ]
+      },
+      {
+        "text": "aceite* sí voy a usar, el que quiero quitar es quínoa. Mantén fuera las papas también. ¿Ahora qué preparo?",
+        "excluded": [
+          "papa",
+          "quinua"
+        ]
+      },
+      {
+        "text": "arroz tampoco, pensándolo bien. Nada de las otras dos cosas todavía. ¿Queda algún plato para cenar?",
+        "excluded": [
+          "arroz",
+          "papa",
+          "quinua"
+        ]
+      },
+      {
+        "text": "ya me trajeron ppas y sí sirven, pero qinua y arroz no, y sin pollo por favor. ¿Qué opción de cena hay?",
+        "excluded": [
+          "arroz",
+          "pollo",
+          "quinua"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "qa-postlaunch-cambio-de-destinatario",
+    "family": "terceros_y_rectificacion",
+    "turns": [
+      {
+        "text": "voy a pedir cena para los dos. Él hoy no quiere tomate y yo no quiero pesccado, qué comemos?",
+        "excluded": [
+          "pescado",
+          "tomate"
+        ]
+      },
+      {
+        "text": "se queda comiendo en su casa, entonces solo para mí. Pescado fuera y arrózz tampoco, ¿qué ceno?",
+        "excluded": [
+          "arroz",
+          "pescado"
+        ]
+      },
+      {
+        "text": "cambio para mi plato: nada con cebolal y sí al pescado; el arroz sigue fuera. ¿Alguna otra idea de cena?",
+        "excluded": [
+          "arroz",
+          "cebolla"
+        ]
+      }
+    ]
+  }
+]

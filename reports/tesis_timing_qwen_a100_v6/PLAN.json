@@ -1,0 +1,89 @@
+{
+  "schema": 1,
+  "seeds": [
+    101,
+    202,
+    303
+  ],
+  "rounds": 2,
+  "models": [
+    "SFT-ramas",
+    "GRPO-continuacion",
+    "GRPO-inmediato",
+    "GRPO-continuacion-fija"
+  ],
+  "source_sha256": {
+    "research/tesis_timing_v6_bank.py": "6227d80f39614938aa85dcf0266fd43afb6fb18046fec1784e714a97ca797063",
+    "research/tesis_timing_v6_env.py": "35b56d93d2aa3dd13c2af3955ca59016435e7b85c3e65c9d03bf602db0c5c0c8",
+    "research/tesis_timing_v6_eval.py": "ce910bc83db65261bd06df0834c7921067dc854589af11e5f6963ca85df396c2",
+    "research/tesis_timing_v6_experiment.py": "257e2e5493e5bcdd65b2c1cb05de4dbd777b27f1b21aaa65b52a909f9b8b303f",
+    "research/tesis_timing_v6_train.py": "fb32f58e5fe49c2ae749fd86f7417e1a09efa762cd8bc45a68526b29851eb4c5",
+    "research/tesis_shared_budget_planner.py": "18af697e9c882c99768c6c78d46f4b069a8e8a22ca0c5a09920b3e0d974e51f8",
+    "research/tesis_shared_budget_qwen.py": "90e125871e8bd36c6554cf519877342cc94759cec0e14b65293b402412a73695",
+    "research/tesis_shared_budget_qwen_matched.py": "99fa496d29bd9af38257cd2905e64cba6cab840109169acdc597d34175a4ec92",
+    "research/tesis_extended_experiment.py": "0b26dc01c21a14e7f33b216ab592f6632ca8a8db444643eb8ddc22495fd5ee2c",
+    "research/tesis_profiles_optimizer_v5.py": "5fb6fe5c2aedd7a33aa8b33454cbdc805fdf5b9d4d10ece6d2683dfd579da130",
+    "research/src/artifacts.py": "ac4ee204311e355d2ff5e055ca5271fc821042b4c276a13acc4a1c59637f185e",
+    "research/src/data/build_bank.py": "74107aa2e449cfcd421ab384c6ea3573c2a90e935e7230f99c4c3185aa9fa6d1",
+    "research/src/memory/store.py": "a1c4edf7cd76bd8848178a16f51ca24af9c7fb165d209a2e7d344dfd827c622f",
+    "research/src/memory/executor.py": "0c72f482ce0dc8fbdf5483ff3f226a34fe3248226bacf903dfcd2379af911195",
+    "research/src/readers/symbolic.py": "e30d1322bd2be205d9a75d9058f6f3ff2de2215a3ff1237b44a7b456123f631d"
+  },
+  "base": "models/Qwen2.5-1.5B-Instruct",
+  "base_sha256": {
+    "model.safetensors": "dd924a11b4c220f385b51ffa522daea7c9f3d850e31b162bb5661df483c6d3ee",
+    "config.json": "98d2ff8cc47488d08a2b0b3acf4eb99ef210779b42bd48605f6b8e36acdbf670",
+    "tokenizer.json": "c0382117ea329cdf097041132f6d735924b697924d6f6fc3945713e96ce87539",
+    "tokenizer_config.json": "5b5d4f65d0acd3b2d56a35b56d374a36cbc1c8fa5cf3b3febbbfabf22f359583",
+    "vocab.json": "ca10d7e9fb3ed18575dd1e277a2579c16d108e32f27439684afa0e10b1440910",
+    "merges.txt": "599bab54075088774b1733fde865d5bd747cbcc7a547c5bc12610e874e26f5e3"
+  },
+  "parent": "reports/tesis_profiles_qwen_a100_v5/seed-101/common-parent/checkpoint-000/adapter",
+  "parent_sha256": {
+    "adapter_model.safetensors": "70ea39c231390f4f67c78352161ce4fae6f742de6bbc47a3ef9f01c5506f5aa4",
+    "adapter_config.json": "030ade3557597f9c24b79ef189ae3331490d130ade346b0342e21b6fd0110142"
+  },
+  "sealed_generator_world_hashes": {
+    "train": "2b8226745c3d6b27ab9cd89533d7d6b1495da21679b955038db0528a34f8b2d3",
+    "validation": "71225541a847a049608450efd0ddb9828c5399743f40c22f8c033930189dd110",
+    "reserved": "1bf52cafbe6e4c43d9080074ce0ab58c842a0aacf49f4536d72b48fca545ed78"
+  },
+  "development_worlds_sha256": {
+    "train": "2b8226745c3d6b27ab9cd89533d7d6b1495da21679b955038db0528a34f8b2d3",
+    "validation": "71225541a847a049608450efd0ddb9828c5399743f40c22f8c033930189dd110"
+  },
+  "reserved_opening": "only after all validation checkpoints and calibration cutoffs locked",
+  "primary": {
+    "contrast": [
+      "GRPO-continuacion",
+      "SFT-ramas"
+    ],
+    "metric": "future_supported",
+    "questions": 10,
+    "packet_size": 20,
+    "per_root_maximum": 1,
+    "guards": {
+      "current_loss": 0.02,
+      "extra_unsupported_reuse": 0.0
+    },
+    "success": "lower paired 95% packet bootstrap limit > 0, current and reuse guards satisfied",
+    "repeats": "fixed three seeds, packets resampled in common, conditional on synthetic wording"
+  },
+  "selection": "validation future supported, current supported, lower unsupported reuse, earliest round",
+  "threshold_grid": "always, zero, validation first-margin quartiles and p90, never; first in grid on tie",
+  "allocation": "synchronous first arrivals, threshold + descending margins; unused quota to top waiting visit-2 margins",
+  "diagnostics": [
+    "budget 1/2 same roots on CPU",
+    "forced 1 per story and unconstrained greedy",
+    "immediate-reward GRPO",
+    "longitudinal GRPO with fixed parent continuation",
+    "planificador-publico",
+    "preguntar-en-cuanto-se-pueda"
+  ],
+  "cpu_gate": {
+    "paired_flips_min": 0.75,
+    "expected_root_gain_min": 0.04,
+    "public_planner_gain_min": 0.03,
+    "public_questions": 1
+  }
+}

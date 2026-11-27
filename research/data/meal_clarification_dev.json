@@ -1,0 +1,130 @@
+[
+  {
+    "id": "clar-dev-regreso-con-bolsas",
+    "family": "inventario_alternante",
+    "turns": [
+      {"text": "llegué con las bolsas y vi que ya no hay papas, lentjeas ni quínua. de ahí qué cocinamos de noche?", "excluded": ["papa", "lenteja", "quinua"]},
+      {"text": "me prestaron quinua. las papas y las lentejas sí siguen faltando. ¿y con eso qué ceno?", "excluded": ["papa", "lenteja"]},
+      {"text": "ya vi el pepno y se puso feo, sácalo además de papa y lenteja. con lo que queda, ¿sale algo para cenar?", "excluded": ["papa", "lenteja", "pepino"]},
+      {"text": "mi vecina me acaba de dar lentejas, así que puedes contarlas. sigo sin papa y sin pepino. ¿qué ponemos para cenar?", "excluded": ["papa", "pepino"]}
+    ]
+  },
+  {
+    "id": "clar-dev-hornilla",
+    "family": "ingrediente_compartido",
+    "turns": [
+      {"text": "tengo una sola hornilla hoy. de la lista qué hago de cenar si en casa no quedan patatas ni aseitte?", "excluded": ["papa", "aceite"]},
+      {"text": "las patatas sí llegaron; lo que aún no tengo es aceite, y el huevo lo guardé para el desayuno. ¿qué puedo cenar de eso?", "excluded": ["aceite", "huevo"]},
+      {"text": "ya se llevaron el pollo también. con lo anterior de aceite y huevo fuera, ¿me queda algún plato de cenar?", "excluded": ["aceite", "huevo", "pollo"]}
+    ]
+  },
+  {
+    "id": "clar-dev-turno-del-domicilio",
+    "family": "comensales_en_comun",
+    "turns": [
+      {"text": "voy a comer con mi hermano, a él no le van la zanoria ni el pepino. yo hoy paso de seboya, limón y pollo. ¿cuál pedimos para compartir?", "excluded": ["zanahoria", "pepino", "cebolla", "limon", "pollo"]},
+      {"text": "va una corrección de mi parte: cebolla y limón sí. ahora yo dejo fuera el huebo, pollo sigue fuera, y lo de mi hermano igual. ¿qué pedimos de cena?", "excluded": ["zanahoria", "pepino", "huevo", "pollo"]},
+      {"text": "me dice que hoy tampoco quiere pescao. yo ya acepto el pollo pero no huevo; pepino y zanahoria siguen fuera para él. ¿cuál cena le digo?", "excluded": ["zanahoria", "pepino", "huevo", "pescado"]}
+    ]
+  },
+  {
+    "id": "clar-dev-otro-recipiente",
+    "family": "restauracion_insuficiente",
+    "turns": [
+      {"text": "cena para uno, tengo todo menos aceite, polllo y huevo. ¿qué se puede cocinar del menú con eso?", "excluded": ["aceite", "pollo", "huevo"]},
+      {"text": "encontré aceite en otro frasco, pero ya no tengo limón, arros ni tomte. lo del pollo y el huevo se mantiene. ¿qué ceno ahora?", "excluded": ["pollo", "huevo", "limon", "arroz", "tomate"]},
+      {"text": "me pasaron dos huevos, corrección importante. el resto de los cuatro ingredientes sigue fuera. ¿qué ceno al final?", "excluded": ["pollo", "limon", "arroz", "tomate"]},
+      {"text": "se me olvidó un detalle, tampoco me queda cebolla. mantenemos los otros cuatro descartes. ¿hay algo para cenar de las cinco opciones?", "excluded": ["pollo", "limon", "arroz", "tomate", "cebolla"]}
+    ]
+  },
+  {
+    "id": "clar-dev-pedido-antes-de-salir",
+    "family": "cambio_de_plan",
+    "turns": [
+      {"text": "antes de salir quiero decidir la cena. descarta patata y pepino, y tampoco uses arrooz. ¿me propones algo de la lista?", "excluded": ["papa", "pepino", "arroz"]},
+      {"text": "el arroz sí lo compré, mira tú. sigue sin patata y sin pepino. con esos dos fuera cuál me llevo de cena", "excluded": ["papa", "pepino"]},
+      {"text": "puedo comprar pepino y papa, así que ya entran. ahora lo único que dejemos es el arroz fuera, que almorcé eso. ¿qué hago de cena?", "excluded": ["arroz"]}
+    ]
+  },
+  {
+    "id": "clar-dev-aderezo-del-pescado",
+    "family": "ingrediente_secundario",
+    "turns": [
+      {"text": "lo de cenar hoy: sin huevos, tommate, poyo ni lenteja. ¿qué plato de ahí pedirías?", "excluded": ["huevo", "tomate", "pollo", "lenteja"]},
+      {"text": "ah, antes de pedir, se acabó el limon. lo demás de la lista de exclusión no cambia. ¿qué podemos cenar así?", "excluded": ["huevo", "tomate", "pollo", "lenteja", "limon"]},
+      {"text": "me arreglaron lo de las lentejas, ya están disponibles. lo demás sigue como quedamos: sin huevo, tomate, pollo ni limón. ¿qué pongo para cenar?", "excluded": ["huevo", "tomate", "pollo", "limon"]}
+    ]
+  },
+  {
+    "id": "clar-dev-dos-cenas-consecutivas",
+    "family": "alcance_temporal",
+    "turns": [
+      {"text": "para cenar esta noche no tengo nada de aceite ni de pescaddo. ¿qué se puede de esos platos?", "excluded": ["aceite", "pescado"]},
+      {"text": "mejor excluye también el poyo de esta noche, seguimos sin aceite y pescado. puedes mirar si hay algo para hoy?", "excluded": ["aceite", "pescado", "pollo"]},
+      {"text": "salto a mañana, va lista distinta para la cena de mañana: sí pescado y aceite, no pollo, ni quinua, ni lentjas, ni huevo. ¿qué pido para mañana?", "excluded": ["pollo", "quinua", "lenteja", "huevo"]}
+    ]
+  },
+  {
+    "id": "clar-dev-seguir-sin-tomates",
+    "family": "restauracion_insuficiente",
+    "turns": [
+      {"text": "ando regresando al depa y no voy a pasar al súper. no hay paapa, arros, aceite ni tomates. ¿sí hay cena de lo que ofreces?", "excluded": ["papa", "arroz", "aceite", "tomate"]},
+      {"text": "ojo que ya vi aceite en casa, perdón. sigo sin papa, sin arroz y sin tomates. ¿qué se puede hacer para cenar?", "excluded": ["papa", "arroz", "tomate"]},
+      {"text": "la señora del local me pasó unos tomates. papa y arroz todavía no. ¿qué puedo preparar para la cena de ahí?", "excluded": ["papa", "arroz"]}
+    ]
+  },
+  {
+    "id": "clar-dev-decision-antes-del-viaje",
+    "family": "inventario_alternante",
+    "turns": [
+      {"text": "salgo de viaje y quiero gastar lo que queda. no queda uebo, ni lentejas, ni qunua, ni pollo, ni pescado. ¿puedo hacer alguna cena de ahí?", "excluded": ["huevo", "lenteja", "quinua", "pollo", "pescado"]},
+      {"text": "al fondo del refri encontré huevitos. los otros cuatro faltan todavía. ¿alguna receta de la lista me sirve de cena?", "excluded": ["lenteja", "quinua", "pollo", "pescado"]},
+      {"text": "sí puedo conseguir tanto pollo como pescado, pero no tengo más papas. lentejas y quinua tampoco. ¿qué sale para cenar con ese cambio?", "excluded": ["lenteja", "quinua", "papa"]}
+    ]
+  },
+  {
+    "id": "clar-dev-faltaba-verdura",
+    "family": "ingrediente_secundario",
+    "turns": [
+      {"text": "hoy viene mi sobrino y quiero pedir algo sin uevos, pllo, pezkao ni pepino para que comamos los dos. ¿qué cena elegimos?", "excluded": ["huevo", "pollo", "pescado", "pepino"]},
+      {"text": "acaba de decirme que zanahoria hoy tampoco. es además de los cuatro que te dije de entrada. ¿cuál cena sigue disponible?", "excluded": ["huevo", "pollo", "pescado", "pepino", "zanahoria"]},
+      {"text": "hice lío con eso, la zanahoria sí queda fuera pero el pepino ya se puede. seguimos sin huevo, pollo y pescado. ¿qué pido para los dos?", "excluded": ["huevo", "pollo", "pescado", "zanahoria"]}
+    ]
+  },
+  {
+    "id": "clar-dev-papa-comun",
+    "family": "restauracion_insuficiente",
+    "turns": [
+      {"text": "sin paaps, sin pollo, sin pescado, y tampoco arroz o quínoa. de lo que aparece ahí, ¿qué cena alcanzo a hacer?", "excluded": ["papa", "pollo", "pescado", "arroz", "quinua"]},
+      {"text": "el pollo sí está libre ahora, pero todavía no hay nada de papa y el resto de descartes sigue. ¿puedo cenar algún plato de los que tienes?", "excluded": ["papa", "pescado", "arroz", "quinua"]},
+      {"text": "acabo de traer papas. me falta cebolla ahora y sigue descartado pescado, arroz y quinua. ¿qué cena me queda?", "excluded": ["cebolla", "pescado", "arroz", "quinua"]}
+    ]
+  },
+  {
+    "id": "clar-dev-compra-en-la-esquina",
+    "family": "cambio_de_plan",
+    "turns": [
+      {"text": "quiero una cena del menú, no consigo aciete, tampoco polyo ni pepino. ¿cuál se puede con lo demás?", "excluded": ["aceite", "pollo", "pepino"]},
+      {"text": "en la esquina sí conseguí pollo, apunta eso. de aceite y pepino nada todavía. ¿qué ceno entonces?", "excluded": ["aceite", "pepino"]},
+      {"text": "me trajeron aceite, ya vale. lo único que falta para la cena es el pepino. ¿qué recomiendas preparar?", "excluded": ["pepino"]}
+    ]
+  },
+  {
+    "id": "clar-dev-cosa-en-la-lista",
+    "family": "ambiguedad_real",
+    "turns": [
+      {"text": "para la cena deja fuera pepino y otra cosa de mi lista, todavía no la tengo a mano para decirte cuál. ¿qué hago?", "excluded": ["pepino"], "clarify": true},
+      {"text": "ya leí la lista completa: además del pepino no quiero pollo, huevos ni limn. con eso, ¿qué queda para cenar?", "excluded": ["pepino", "pollo", "huevo", "limon"]},
+      {"text": "encontré pepino que sí podemos usar. ahora no quedan lentjas; conserva lo de huevo, pollo y limón. ¿qué harías de cena?", "excluded": ["lenteja", "pollo", "huevo", "limon"]}
+    ]
+  },
+  {
+    "id": "clar-dev-nota-de-invitada",
+    "family": "ambiguedad_real",
+    "turns": [
+      {"text": "quiero cenar de ese menú con Gabi. me avisó que evitemos algo para poder compartir, quedó sin ponerme el nombre. ¿qué pido?", "excluded": [], "clarify": true},
+      {"text": "Gabi ya dijo que era tomate, y para los dos yo tampoco tengo ni zanahoria ni papa. ¿qué queda para cenar juntos?", "excluded": ["tomate", "zanahoria", "papa"]},
+      {"text": "Gabi cambió de opinión, tomate ya sí. de papa y zanahoria todavía nada. ¿tienes una cena para los dos?", "excluded": ["zanahoria", "papa"]}
+    ]
+  }
+]

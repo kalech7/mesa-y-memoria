@@ -1,0 +1,548 @@
+{
+  "device": "NVIDIA A100 80GB PCIe",
+  "seeds": [
+    101,
+    202,
+    303
+  ],
+  "rounds": 2,
+  "training_plan_sha256": "35c019949a1a255f1e3c40f018cad73f0e26fae54fbed2f5f2e0ae2120d53968",
+  "common_parent_reference_inference": {
+    "forward_batches": 45,
+    "decisions": 356,
+    "input_tokens": 85020,
+    "padded_input_tokens": 94296
+  },
+  "groups": 360,
+  "unique_public_prompts": 356,
+  "rounds_completed": [
+    {
+      "seed": 101,
+      "round": 1,
+      "collector": "70ea39c231390f4f67c78352161ce4fae6f742de6bbc47a3ef9f01c5506f5aa4",
+      "shared_rows_sha256": "2c8f9ef064977e425558754050370b62fed9049fe98d32b1439818cc3eddbd16",
+      "trajectory_counts": {
+        "qwen_continuation_decisions": 11520,
+        "terminal_rollouts": 38400,
+        "replayed_decision_transitions": 53760,
+        "forced_continuation_decisions": 3840,
+        "sampled_continuation_actions": {
+          "ASK": 3695,
+          "WAIT": 7825
+        }
+      },
+      "arms": {
+        "SFT-ramas": {
+          "forward_batches": 90,
+          "decisions": 720,
+          "input_tokens": 171432,
+          "padded_input_tokens": 235072,
+          "optimizer_updates": 90,
+          "mean_loss": 0.32020401113744207,
+          "shared_rows_sha256": "2c8f9ef064977e425558754050370b62fed9049fe98d32b1439818cc3eddbd16",
+          "collector_sha256": "70ea39c231390f4f67c78352161ce4fae6f742de6bbc47a3ef9f01c5506f5aa4",
+          "schedule_sha256": "1b6746861f24b0bc57bf0b9a5ee6848f8edd6aec3793c83330943dcb77f70ae0",
+          "behavior_inference": {},
+          "adapter": "seed-101/SFT-ramas/checkpoint-001/adapter",
+          "weights": "82378d0de3902f6a27ee2c4cc8026e3542238d9cc1eacf3dbd1ec8ccc5c6ce81",
+          "config": "e3e88d492aa86e4199ce411cd5d52a63361c7867cd7e9f0814be1799f2f5acb0"
+        },
+        "GRPO-continuacion": {
+          "forward_batches": 90,
+          "decisions": 720,
+          "input_tokens": 171432,
+          "padded_input_tokens": 235072,
+          "optimizer_updates": 90,
+          "mean_loss": -0.021668872219096455,
+          "shared_rows_sha256": "2c8f9ef064977e425558754050370b62fed9049fe98d32b1439818cc3eddbd16",
+          "collector_sha256": "70ea39c231390f4f67c78352161ce4fae6f742de6bbc47a3ef9f01c5506f5aa4",
+          "schedule_sha256": "1b6746861f24b0bc57bf0b9a5ee6848f8edd6aec3793c83330943dcb77f70ae0",
+          "behavior_inference": {},
+          "adapter": "seed-101/GRPO-continuacion/checkpoint-001/adapter",
+          "weights": "11fecb57ec995cc23aa7e09ac36df06590d6adf23b2972f136d0512246a312a7",
+          "config": "e3e88d492aa86e4199ce411cd5d52a63361c7867cd7e9f0814be1799f2f5acb0"
+        },
+        "GRPO-inmediato": {
+          "forward_batches": 90,
+          "decisions": 720,
+          "input_tokens": 171432,
+          "padded_input_tokens": 235072,
+          "optimizer_updates": 90,
+          "mean_loss": -0.0056835057230071265,
+          "shared_rows_sha256": "2c8f9ef064977e425558754050370b62fed9049fe98d32b1439818cc3eddbd16",
+          "collector_sha256": "70ea39c231390f4f67c78352161ce4fae6f742de6bbc47a3ef9f01c5506f5aa4",
+          "schedule_sha256": "1b6746861f24b0bc57bf0b9a5ee6848f8edd6aec3793c83330943dcb77f70ae0",
+          "behavior_inference": {
+            "forward_batches": 45,
+            "decisions": 356,
+            "input_tokens": 85020,
+            "padded_input_tokens": 94296
+          },
+          "adapter": "seed-101/GRPO-inmediato/checkpoint-001/adapter",
+          "weights": "3d8b08a06edcf84fc1c17c2521db8d60b29e5efc6a0d5ae6f656d2d995b19dbe",
+          "config": "e3e88d492aa86e4199ce411cd5d52a63361c7867cd7e9f0814be1799f2f5acb0"
+        },
+        "GRPO-continuacion-fija": {
+          "forward_batches": 90,
+          "decisions": 720,
+          "input_tokens": 171432,
+          "padded_input_tokens": 235072,
+          "optimizer_updates": 90,
+          "mean_loss": -0.021668872219096455,
+          "shared_rows_sha256": "2c8f9ef064977e425558754050370b62fed9049fe98d32b1439818cc3eddbd16",
+          "collector_sha256": "70ea39c231390f4f67c78352161ce4fae6f742de6bbc47a3ef9f01c5506f5aa4",
+          "schedule_sha256": "1b6746861f24b0bc57bf0b9a5ee6848f8edd6aec3793c83330943dcb77f70ae0",
+          "behavior_inference": {
+            "forward_batches": 45,
+            "decisions": 356,
+            "input_tokens": 85020,
+            "padded_input_tokens": 94296
+          },
+          "adapter": "seed-101/GRPO-continuacion-fija/checkpoint-001/adapter",
+          "weights": "11fecb57ec995cc23aa7e09ac36df06590d6adf23b2972f136d0512246a312a7",
+          "config": "e3e88d492aa86e4199ce411cd5d52a63361c7867cd7e9f0814be1799f2f5acb0"
+        }
+      }
+    },
+    {
+      "seed": 101,
+      "round": 2,
+      "collector": "11fecb57ec995cc23aa7e09ac36df06590d6adf23b2972f136d0512246a312a7",
+      "shared_rows_sha256": "c492e510f00140f99fea6b4d19b918b881b66832dd85e50f12daf9c7996bf723",
+      "trajectory_counts": {
+        "qwen_continuation_decisions": 11520,
+        "terminal_rollouts": 38400,
+        "replayed_decision_transitions": 53760,
+        "forced_continuation_decisions": 3840,
+        "sampled_continuation_actions": {
+          "ASK": 5609,
+          "WAIT": 5911
+        }
+      },
+      "arms": {
+        "SFT-ramas": {
+          "forward_batches": 90,
+          "decisions": 720,
+          "input_tokens": 171432,
+          "padded_input_tokens": 233872,
+          "optimizer_updates": 90,
+          "mean_loss": 0.4088256236579683,
+          "shared_rows_sha256": "c492e510f00140f99fea6b4d19b918b881b66832dd85e50f12daf9c7996bf723",
+          "collector_sha256": "11fecb57ec995cc23aa7e09ac36df06590d6adf23b2972f136d0512246a312a7",
+          "schedule_sha256": "85fbe73aa03fc9dc431e67a36f2ed6298e157c14c794cff577e3090dc6cdafd2",
+          "behavior_inference": {},
+          "adapter": "seed-101/SFT-ramas/checkpoint-002/adapter",
+          "weights": "4654bdb3fe96751447cee399e57f2d9babc08613e802d40c9d9a4eb551585260",
+          "config": "e3e88d492aa86e4199ce411cd5d52a63361c7867cd7e9f0814be1799f2f5acb0"
+        },
+        "GRPO-continuacion": {
+          "forward_batches": 90,
+          "decisions": 720,
+          "input_tokens": 171432,
+          "padded_input_tokens": 233872,
+          "optimizer_updates": 90,
+          "mean_loss": -0.02045241825075613,
+          "shared_rows_sha256": "c492e510f00140f99fea6b4d19b918b881b66832dd85e50f12daf9c7996bf723",
+          "collector_sha256": "11fecb57ec995cc23aa7e09ac36df06590d6adf23b2972f136d0512246a312a7",
+          "schedule_sha256": "85fbe73aa03fc9dc431e67a36f2ed6298e157c14c794cff577e3090dc6cdafd2",
+          "behavior_inference": {},
+          "adapter": "seed-101/GRPO-continuacion/checkpoint-002/adapter",
+          "weights": "90f001eee7c2d8b3487ff85b758d28009b5fe5e0b8b1da9ffd25cdbc5573a70a",
+          "config": "e3e88d492aa86e4199ce411cd5d52a63361c7867cd7e9f0814be1799f2f5acb0"
+        },
+        "GRPO-inmediato": {
+          "forward_batches": 90,
+          "decisions": 720,
+          "input_tokens": 171432,
+          "padded_input_tokens": 233872,
+          "optimizer_updates": 90,
+          "mean_loss": -0.001290135622710093,
+          "shared_rows_sha256": "c492e510f00140f99fea6b4d19b918b881b66832dd85e50f12daf9c7996bf723",
+          "collector_sha256": "11fecb57ec995cc23aa7e09ac36df06590d6adf23b2972f136d0512246a312a7",
+          "schedule_sha256": "85fbe73aa03fc9dc431e67a36f2ed6298e157c14c794cff577e3090dc6cdafd2",
+          "behavior_inference": {
+            "forward_batches": 45,
+            "decisions": 356,
+            "input_tokens": 85020,
+            "padded_input_tokens": 94296
+          },
+          "adapter": "seed-101/GRPO-inmediato/checkpoint-002/adapter",
+          "weights": "30307c1ed785d31014950e47b3e313af54e79ed0ac1fc7a4d6676e7f37b45601",
+          "config": "e3e88d492aa86e4199ce411cd5d52a63361c7867cd7e9f0814be1799f2f5acb0"
+        },
+        "GRPO-continuacion-fija": {
+          "forward_batches": 90,
+          "decisions": 720,
+          "input_tokens": 171432,
+          "padded_input_tokens": 233872,
+          "optimizer_updates": 90,
+          "mean_loss": -0.02194305818217496,
+          "shared_rows_sha256": "2c8f9ef064977e425558754050370b62fed9049fe98d32b1439818cc3eddbd16",
+          "collector_sha256": "70ea39c231390f4f67c78352161ce4fae6f742de6bbc47a3ef9f01c5506f5aa4",
+          "schedule_sha256": "85fbe73aa03fc9dc431e67a36f2ed6298e157c14c794cff577e3090dc6cdafd2",
+          "behavior_inference": {
+            "forward_batches": 45,
+            "decisions": 356,
+            "input_tokens": 85020,
+            "padded_input_tokens": 94296
+          },
+          "adapter": "seed-101/GRPO-continuacion-fija/checkpoint-002/adapter",
+          "weights": "9f34f8704ee9d0b3f7b297cacbb8dbed870826081f6e8c4c9adcb3a29ab0d51a",
+          "config": "e3e88d492aa86e4199ce411cd5d52a63361c7867cd7e9f0814be1799f2f5acb0"
+        }
+      }
+    },
+    {
+      "seed": 202,
+      "round": 1,
+      "collector": "70ea39c231390f4f67c78352161ce4fae6f742de6bbc47a3ef9f01c5506f5aa4",
+      "shared_rows_sha256": "faaf54ec49b2e0b7a017f25430bcf32254007fe824c52b9d17122c3d674861f1",
+      "trajectory_counts": {
+        "qwen_continuation_decisions": 11520,
+        "terminal_rollouts": 38400,
+        "replayed_decision_transitions": 53760,
+        "forced_continuation_decisions": 3840,
+        "sampled_continuation_actions": {
+          "ASK": 3753,
+          "WAIT": 7767
+        }
+      },
+      "arms": {
+        "SFT-ramas": {
+          "forward_batches": 90,
+          "decisions": 720,
+          "input_tokens": 171432,
+          "padded_input_tokens": 234208,
+          "optimizer_updates": 90,
+          "mean_loss": 0.31472103806704077,
+          "shared_rows_sha256": "faaf54ec49b2e0b7a017f25430bcf32254007fe824c52b9d17122c3d674861f1",
+          "collector_sha256": "70ea39c231390f4f67c78352161ce4fae6f742de6bbc47a3ef9f01c5506f5aa4",
+          "schedule_sha256": "574fd06edddcdab25048da71f9fe4abcecbe97a4730283bc5daaa8ff6392d2ab",
+          "behavior_inference": {},
+          "adapter": "seed-202/SFT-ramas/checkpoint-001/adapter",
+          "weights": "2edbdbdd45366d82abc4ca93e2d28870598691d741139154eef9c7ea2daedbff",
+          "config": "e3e88d492aa86e4199ce411cd5d52a63361c7867cd7e9f0814be1799f2f5acb0"
+        },
+        "GRPO-continuacion": {
+          "forward_batches": 90,
+          "decisions": 720,
+          "input_tokens": 171432,
+          "padded_input_tokens": 234208,
+          "optimizer_updates": 90,
+          "mean_loss": -0.021625552996879883,
+          "shared_rows_sha256": "faaf54ec49b2e0b7a017f25430bcf32254007fe824c52b9d17122c3d674861f1",
+          "collector_sha256": "70ea39c231390f4f67c78352161ce4fae6f742de6bbc47a3ef9f01c5506f5aa4",
+          "schedule_sha256": "574fd06edddcdab25048da71f9fe4abcecbe97a4730283bc5daaa8ff6392d2ab",
+          "behavior_inference": {},
+          "adapter": "seed-202/GRPO-continuacion/checkpoint-001/adapter",
+          "weights": "26721b9ab02694ceb3fa4c60f16b632ad20b8f9dd79e67e01a35971d4a86c9ff",
+          "config": "e3e88d492aa86e4199ce411cd5d52a63361c7867cd7e9f0814be1799f2f5acb0"
+        },
+        "GRPO-inmediato": {
+          "forward_batches": 90,
+          "decisions": 720,
+          "input_tokens": 171432,
+          "padded_input_tokens": 234208,
+          "optimizer_updates": 90,
+          "mean_loss": -0.005723049268272007,
+          "shared_rows_sha256": "faaf54ec49b2e0b7a017f25430bcf32254007fe824c52b9d17122c3d674861f1",
+          "collector_sha256": "70ea39c231390f4f67c78352161ce4fae6f742de6bbc47a3ef9f01c5506f5aa4",
+          "schedule_sha256": "574fd06edddcdab25048da71f9fe4abcecbe97a4730283bc5daaa8ff6392d2ab",
+          "behavior_inference": {
+            "forward_batches": 45,
+            "decisions": 356,
+            "input_tokens": 85020,
+            "padded_input_tokens": 94296
+          },
+          "adapter": "seed-202/GRPO-inmediato/checkpoint-001/adapter",
+          "weights": "22915e6f7515d7aa8f542d60bf474c575a255e5a022f69b1240be7988f2a01de",
+          "config": "e3e88d492aa86e4199ce411cd5d52a63361c7867cd7e9f0814be1799f2f5acb0"
+        },
+        "GRPO-continuacion-fija": {
+          "forward_batches": 90,
+          "decisions": 720,
+          "input_tokens": 171432,
+          "padded_input_tokens": 234208,
+          "optimizer_updates": 90,
+          "mean_loss": -0.021625552996879883,
+          "shared_rows_sha256": "faaf54ec49b2e0b7a017f25430bcf32254007fe824c52b9d17122c3d674861f1",
+          "collector_sha256": "70ea39c231390f4f67c78352161ce4fae6f742de6bbc47a3ef9f01c5506f5aa4",
+          "schedule_sha256": "574fd06edddcdab25048da71f9fe4abcecbe97a4730283bc5daaa8ff6392d2ab",
+          "behavior_inference": {
+            "forward_batches": 45,
+            "decisions": 356,
+            "input_tokens": 85020,
+            "padded_input_tokens": 94296
+          },
+          "adapter": "seed-202/GRPO-continuacion-fija/checkpoint-001/adapter",
+          "weights": "26721b9ab02694ceb3fa4c60f16b632ad20b8f9dd79e67e01a35971d4a86c9ff",
+          "config": "e3e88d492aa86e4199ce411cd5d52a63361c7867cd7e9f0814be1799f2f5acb0"
+        }
+      }
+    },
+    {
+      "seed": 202,
+      "round": 2,
+      "collector": "26721b9ab02694ceb3fa4c60f16b632ad20b8f9dd79e67e01a35971d4a86c9ff",
+      "shared_rows_sha256": "02096a06237211ce7ea7fdf23d42fe2ac8960a5b0b5cdef35f79c861d8a27d69",
+      "trajectory_counts": {
+        "qwen_continuation_decisions": 11520,
+        "terminal_rollouts": 38400,
+        "replayed_decision_transitions": 53760,
+        "forced_continuation_decisions": 3840,
+        "sampled_continuation_actions": {
+          "ASK": 5473,
+          "WAIT": 6047
+        }
+      },
+      "arms": {
+        "SFT-ramas": {
+          "forward_batches": 90,
+          "decisions": 720,
+          "input_tokens": 171432,
+          "padded_input_tokens": 233392,
+          "optimizer_updates": 90,
+          "mean_loss": 0.4661353401399942,
+          "shared_rows_sha256": "02096a06237211ce7ea7fdf23d42fe2ac8960a5b0b5cdef35f79c861d8a27d69",
+          "collector_sha256": "26721b9ab02694ceb3fa4c60f16b632ad20b8f9dd79e67e01a35971d4a86c9ff",
+          "schedule_sha256": "b842e12ea9d14ecdd6816bfaf2b988209fe5722289256ebf399b8782a532200d",
+          "behavior_inference": {},
+          "adapter": "seed-202/SFT-ramas/checkpoint-002/adapter",
+          "weights": "af35ddf67d4960c247778d0a0d7c4f8f80a140a4e80f2f5299793eafc6060931",
+          "config": "e3e88d492aa86e4199ce411cd5d52a63361c7867cd7e9f0814be1799f2f5acb0"
+        },
+        "GRPO-continuacion": {
+          "forward_batches": 90,
+          "decisions": 720,
+          "input_tokens": 171432,
+          "padded_input_tokens": 233392,
+          "optimizer_updates": 90,
+          "mean_loss": -0.020681544326038824,
+          "shared_rows_sha256": "02096a06237211ce7ea7fdf23d42fe2ac8960a5b0b5cdef35f79c861d8a27d69",
+          "collector_sha256": "26721b9ab02694ceb3fa4c60f16b632ad20b8f9dd79e67e01a35971d4a86c9ff",
+          "schedule_sha256": "b842e12ea9d14ecdd6816bfaf2b988209fe5722289256ebf399b8782a532200d",
+          "behavior_inference": {},
+          "adapter": "seed-202/GRPO-continuacion/checkpoint-002/adapter",
+          "weights": "146e0de248f716e9ebd01944f7a12a9cbb52f66507f3e3cda310b285dfb60e4a",
+          "config": "e3e88d492aa86e4199ce411cd5d52a63361c7867cd7e9f0814be1799f2f5acb0"
+        },
+        "GRPO-inmediato": {
+          "forward_batches": 90,
+          "decisions": 720,
+          "input_tokens": 171432,
+          "padded_input_tokens": 233392,
+          "optimizer_updates": 90,
+          "mean_loss": -0.0012556238332763314,
+          "shared_rows_sha256": "02096a06237211ce7ea7fdf23d42fe2ac8960a5b0b5cdef35f79c861d8a27d69",
+          "collector_sha256": "26721b9ab02694ceb3fa4c60f16b632ad20b8f9dd79e67e01a35971d4a86c9ff",
+          "schedule_sha256": "b842e12ea9d14ecdd6816bfaf2b988209fe5722289256ebf399b8782a532200d",
+          "behavior_inference": {
+            "forward_batches": 45,
+            "decisions": 356,
+            "input_tokens": 85020,
+            "padded_input_tokens": 94296
+          },
+          "adapter": "seed-202/GRPO-inmediato/checkpoint-002/adapter",
+          "weights": "47031b932c9d56ac9c24d711b0dc243dcdb4e3f5c8af1bf492d09a6ce04f4d72",
+          "config": "e3e88d492aa86e4199ce411cd5d52a63361c7867cd7e9f0814be1799f2f5acb0"
+        },
+        "GRPO-continuacion-fija": {
+          "forward_batches": 90,
+          "decisions": 720,
+          "input_tokens": 171432,
+          "padded_input_tokens": 233392,
+          "optimizer_updates": 90,
+          "mean_loss": -0.021885770096236632,
+          "shared_rows_sha256": "faaf54ec49b2e0b7a017f25430bcf32254007fe824c52b9d17122c3d674861f1",
+          "collector_sha256": "70ea39c231390f4f67c78352161ce4fae6f742de6bbc47a3ef9f01c5506f5aa4",
+          "schedule_sha256": "b842e12ea9d14ecdd6816bfaf2b988209fe5722289256ebf399b8782a532200d",
+          "behavior_inference": {
+            "forward_batches": 45,
+            "decisions": 356,
+            "input_tokens": 85020,
+            "padded_input_tokens": 94296
+          },
+          "adapter": "seed-202/GRPO-continuacion-fija/checkpoint-002/adapter",
+          "weights": "9be907562473bfb6dfcb09339ecc576213afb4aee4a95efacc5f759919bee6ee",
+          "config": "e3e88d492aa86e4199ce411cd5d52a63361c7867cd7e9f0814be1799f2f5acb0"
+        }
+      }
+    },
+    {
+      "seed": 303,
+      "round": 1,
+      "collector": "70ea39c231390f4f67c78352161ce4fae6f742de6bbc47a3ef9f01c5506f5aa4",
+      "shared_rows_sha256": "86e78fce8c88483cddcd34176cd85e9d239db4157097fda938b4d107b2bdc211",
+      "trajectory_counts": {
+        "qwen_continuation_decisions": 11520,
+        "terminal_rollouts": 38400,
+        "replayed_decision_transitions": 53760,
+        "forced_continuation_decisions": 3840,
+        "sampled_continuation_actions": {
+          "ASK": 3705,
+          "WAIT": 7815
+        }
+      },
+      "arms": {
+        "SFT-ramas": {
+          "forward_batches": 90,
+          "decisions": 720,
+          "input_tokens": 171432,
+          "padded_input_tokens": 237040,
+          "optimizer_updates": 90,
+          "mean_loss": 0.37507287562928265,
+          "shared_rows_sha256": "86e78fce8c88483cddcd34176cd85e9d239db4157097fda938b4d107b2bdc211",
+          "collector_sha256": "70ea39c231390f4f67c78352161ce4fae6f742de6bbc47a3ef9f01c5506f5aa4",
+          "schedule_sha256": "528e7d88b8e40349d45a6acf277ce83cc9a4dedc603cde6712d508b6f5882877",
+          "behavior_inference": {},
+          "adapter": "seed-303/SFT-ramas/checkpoint-001/adapter",
+          "weights": "11fe6a88427abbd89f3f7a8c9f79fb7d03402883f14c511f1f3cbcc6a2c69223",
+          "config": "e3e88d492aa86e4199ce411cd5d52a63361c7867cd7e9f0814be1799f2f5acb0"
+        },
+        "GRPO-continuacion": {
+          "forward_batches": 90,
+          "decisions": 720,
+          "input_tokens": 171432,
+          "padded_input_tokens": 237040,
+          "optimizer_updates": 90,
+          "mean_loss": -0.021694860955338097,
+          "shared_rows_sha256": "86e78fce8c88483cddcd34176cd85e9d239db4157097fda938b4d107b2bdc211",
+          "collector_sha256": "70ea39c231390f4f67c78352161ce4fae6f742de6bbc47a3ef9f01c5506f5aa4",
+          "schedule_sha256": "528e7d88b8e40349d45a6acf277ce83cc9a4dedc603cde6712d508b6f5882877",
+          "behavior_inference": {},
+          "adapter": "seed-303/GRPO-continuacion/checkpoint-001/adapter",
+          "weights": "217d74606266540da96f591c5f6c6c238f82385e53f6fe720cac51a0cea54758",
+          "config": "e3e88d492aa86e4199ce411cd5d52a63361c7867cd7e9f0814be1799f2f5acb0"
+        },
+        "GRPO-inmediato": {
+          "forward_batches": 90,
+          "decisions": 720,
+          "input_tokens": 171432,
+          "padded_input_tokens": 237040,
+          "optimizer_updates": 90,
+          "mean_loss": -0.005780725057249785,
+          "shared_rows_sha256": "86e78fce8c88483cddcd34176cd85e9d239db4157097fda938b4d107b2bdc211",
+          "collector_sha256": "70ea39c231390f4f67c78352161ce4fae6f742de6bbc47a3ef9f01c5506f5aa4",
+          "schedule_sha256": "528e7d88b8e40349d45a6acf277ce83cc9a4dedc603cde6712d508b6f5882877",
+          "behavior_inference": {
+            "forward_batches": 45,
+            "decisions": 356,
+            "input_tokens": 85020,
+            "padded_input_tokens": 94296
+          },
+          "adapter": "seed-303/GRPO-inmediato/checkpoint-001/adapter",
+          "weights": "d60c90d43c15ff9a802168dc323b4e8198d3a17776f1b927d4a00d4597e990eb",
+          "config": "e3e88d492aa86e4199ce411cd5d52a63361c7867cd7e9f0814be1799f2f5acb0"
+        },
+        "GRPO-continuacion-fija": {
+          "forward_batches": 90,
+          "decisions": 720,
+          "input_tokens": 171432,
+          "padded_input_tokens": 237040,
+          "optimizer_updates": 90,
+          "mean_loss": -0.021692075452301653,
+          "shared_rows_sha256": "86e78fce8c88483cddcd34176cd85e9d239db4157097fda938b4d107b2bdc211",
+          "collector_sha256": "70ea39c231390f4f67c78352161ce4fae6f742de6bbc47a3ef9f01c5506f5aa4",
+          "schedule_sha256": "528e7d88b8e40349d45a6acf277ce83cc9a4dedc603cde6712d508b6f5882877",
+          "behavior_inference": {
+            "forward_batches": 45,
+            "decisions": 356,
+            "input_tokens": 85020,
+            "padded_input_tokens": 94296
+          },
+          "adapter": "seed-303/GRPO-continuacion-fija/checkpoint-001/adapter",
+          "weights": "2002cf5ef642c100a374023b03f28a2d64bd1eb4ef03dcdc1e148dec1d3b04b0",
+          "config": "e3e88d492aa86e4199ce411cd5d52a63361c7867cd7e9f0814be1799f2f5acb0"
+        }
+      }
+    },
+    {
+      "seed": 303,
+      "round": 2,
+      "collector": "217d74606266540da96f591c5f6c6c238f82385e53f6fe720cac51a0cea54758",
+      "shared_rows_sha256": "676fa60ebe790f163a504dbc2e01a4bb62f7e3f9e2833b14799f53453bafa8b2",
+      "trajectory_counts": {
+        "qwen_continuation_decisions": 11520,
+        "terminal_rollouts": 38400,
+        "replayed_decision_transitions": 53760,
+        "forced_continuation_decisions": 3840,
+        "sampled_continuation_actions": {
+          "ASK": 5445,
+          "WAIT": 6075
+        }
+      },
+      "arms": {
+        "SFT-ramas": {
+          "forward_batches": 90,
+          "decisions": 720,
+          "input_tokens": 171432,
+          "padded_input_tokens": 232608,
+          "optimizer_updates": 90,
+          "mean_loss": 0.35358071347000075,
+          "shared_rows_sha256": "676fa60ebe790f163a504dbc2e01a4bb62f7e3f9e2833b14799f53453bafa8b2",
+          "collector_sha256": "217d74606266540da96f591c5f6c6c238f82385e53f6fe720cac51a0cea54758",
+          "schedule_sha256": "4542adcd7e66c233c0be62922198f91d44301d01cdcf619b1d7efe8debb57cfb",
+          "behavior_inference": {},
+          "adapter": "seed-303/SFT-ramas/checkpoint-002/adapter",
+          "weights": "66c5777fe12f3afd6a68fe36fee29e39131bfa0ebf9f9c58ce6854b249e6e431",
+          "config": "e3e88d492aa86e4199ce411cd5d52a63361c7867cd7e9f0814be1799f2f5acb0"
+        },
+        "GRPO-continuacion": {
+          "forward_batches": 90,
+          "decisions": 720,
+          "input_tokens": 171432,
+          "padded_input_tokens": 232608,
+          "optimizer_updates": 90,
+          "mean_loss": -0.021305462826664248,
+          "shared_rows_sha256": "676fa60ebe790f163a504dbc2e01a4bb62f7e3f9e2833b14799f53453bafa8b2",
+          "collector_sha256": "217d74606266540da96f591c5f6c6c238f82385e53f6fe720cac51a0cea54758",
+          "schedule_sha256": "4542adcd7e66c233c0be62922198f91d44301d01cdcf619b1d7efe8debb57cfb",
+          "behavior_inference": {},
+          "adapter": "seed-303/GRPO-continuacion/checkpoint-002/adapter",
+          "weights": "ea40d9642a845bc82d81bfa2e3462df4b4fd00245f8d9e768bc48441f7b9e1cd",
+          "config": "e3e88d492aa86e4199ce411cd5d52a63361c7867cd7e9f0814be1799f2f5acb0"
+        },
+        "GRPO-inmediato": {
+          "forward_batches": 90,
+          "decisions": 720,
+          "input_tokens": 171432,
+          "padded_input_tokens": 232608,
+          "optimizer_updates": 90,
+          "mean_loss": -0.0012360202038608906,
+          "shared_rows_sha256": "676fa60ebe790f163a504dbc2e01a4bb62f7e3f9e2833b14799f53453bafa8b2",
+          "collector_sha256": "217d74606266540da96f591c5f6c6c238f82385e53f6fe720cac51a0cea54758",
+          "schedule_sha256": "4542adcd7e66c233c0be62922198f91d44301d01cdcf619b1d7efe8debb57cfb",
+          "behavior_inference": {
+            "forward_batches": 45,
+            "decisions": 356,
+            "input_tokens": 85020,
+            "padded_input_tokens": 94296
+          },
+          "adapter": "seed-303/GRPO-inmediato/checkpoint-002/adapter",
+          "weights": "45b7cf07122a0dae9afb8440220b9bc625c328d70a9b847043e892dc5941f413",
+          "config": "e3e88d492aa86e4199ce411cd5d52a63361c7867cd7e9f0814be1799f2f5acb0"
+        },
+        "GRPO-continuacion-fija": {
+          "forward_batches": 90,
+          "decisions": 720,
+          "input_tokens": 171432,
+          "padded_input_tokens": 232608,
+          "optimizer_updates": 90,
+          "mean_loss": -0.022065486559747823,
+          "shared_rows_sha256": "86e78fce8c88483cddcd34176cd85e9d239db4157097fda938b4d107b2bdc211",
+          "collector_sha256": "70ea39c231390f4f67c78352161ce4fae6f742de6bbc47a3ef9f01c5506f5aa4",
+          "schedule_sha256": "4542adcd7e66c233c0be62922198f91d44301d01cdcf619b1d7efe8debb57cfb",
+          "behavior_inference": {
+            "forward_batches": 45,
+            "decisions": 356,
+            "input_tokens": 85020,
+            "padded_input_tokens": 94296
+          },
+          "adapter": "seed-303/GRPO-continuacion-fija/checkpoint-002/adapter",
+          "weights": "28b3c573095fcca36a8fb1c11e5197888386865d118b379e0f379864052975ed",
+          "config": "e3e88d492aa86e4199ce411cd5d52a63361c7867cd7e9f0814be1799f2f5acb0"
+        }
+      }
+    }
+  ]
+}

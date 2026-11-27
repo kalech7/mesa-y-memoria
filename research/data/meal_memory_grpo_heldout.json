@@ -1,0 +1,4638 @@
+[
+  {
+    "id": "qa-bebida-visitantes",
+    "family": "intervalo_un_dia",
+    "initial_memory": [
+      {
+        "attribute": "drink_preference",
+        "value": "limonada con hierbaluisa",
+        "scope": {
+          "kind": "ongoing",
+          "session_id": null,
+          "context": null,
+          "valid_from": "2026-12-17",
+          "valid_until_exclusive": null
+        },
+        "status": "confirmed",
+        "supersedes": [],
+        "memory_id": "base",
+        "source_turn_ids": [
+          "archivo_base"
+        ],
+        "evidence_quotes": [
+          {
+            "turn_id": "archivo_base",
+            "text": "Cuando me preguntan por mi bebida habitual, prefiero limonada con hierbaluisa."
+          }
+        ],
+        "recorded_at": "2026-12-17"
+      }
+    ],
+    "steps": [
+      {
+        "action": "send",
+        "date": "2026-12-26",
+        "text": "Para beber hoy prefiero agua de coco. Es únicamente por este día; si vuelvo más tarde sigue aplicando.",
+        "expect": {
+          "writes": [
+            {
+              "attribute": "drink_preference",
+              "value": "agua de coco",
+              "scope": {
+                "kind": "interval",
+                "session_id": null,
+                "context": null,
+                "valid_from": "2026-12-26",
+                "valid_until_exclusive": "2026-12-27"
+              },
+              "status": "confirmed",
+              "supersedes": [],
+              "source_turn_ids": [
+                "u1_1"
+              ]
+            }
+          ],
+          "probes": [
+            {
+              "query": {
+                "attribute": "drink_preference",
+                "date": "2026-12-26",
+                "session_id": "S1",
+                "context": null
+              },
+              "expected": {
+                "mode": "ANSWER",
+                "value": "agua de coco",
+                "branches": []
+              }
+            },
+            {
+              "query": {
+                "attribute": "drink_preference",
+                "date": "2026-12-26",
+                "session_id": "S2",
+                "context": null
+              },
+              "expected": {
+                "mode": "ANSWER",
+                "value": "agua de coco",
+                "branches": []
+              }
+            },
+            {
+              "query": {
+                "attribute": "drink_preference",
+                "date": "2026-12-27",
+                "session_id": "S3",
+                "context": null
+              },
+              "expected": {
+                "mode": "ANSWER",
+                "value": "limonada con hierbaluisa",
+                "branches": []
+              }
+            },
+            {
+              "query": {
+                "attribute": "drink_preference",
+                "date": "2026-12-25",
+                "session_id": "S1",
+                "context": null
+              },
+              "expected": {
+                "mode": "ANSWER",
+                "value": "limonada con hierbaluisa",
+                "branches": []
+              }
+            }
+          ]
+        }
+      },
+      {
+        "action": "send",
+        "date": "2026-12-26",
+        "text": "Antes de salir, ¿qué bebida prefiero hoy?",
+        "expect": {
+          "writes": [],
+          "probes": [
+            {
+              "query": {
+                "attribute": "drink_preference",
+                "date": "2026-12-26",
+                "session_id": "S1",
+                "context": null
+              },
+              "expected": {
+                "mode": "ANSWER",
+                "value": "agua de coco",
+                "branches": []
+              }
+            }
+          ],
+          "reply": {
+            "kind": "recall",
+            "values": [
+              "agua de coco"
+            ],
+            "evidence_ids": [
+              "m2"
+            ]
+          }
+        }
+      },
+      {
+        "action": "new_session",
+        "date": "2026-12-26",
+        "expect": {
+          "writes": [],
+          "probes": [
+            {
+              "query": {
+                "attribute": "drink_preference",
+                "date": "2026-12-26",
+                "session_id": "S2",
+                "context": null
+              },
+              "expected": {
+                "mode": "ANSWER",
+                "value": "agua de coco",
+                "branches": []
+              }
+            }
+          ]
+        }
+      },
+      {
+        "action": "send",
+        "date": "2026-12-26",
+        "text": "Volví un rato después. ¿Qué me habías anotado, qué bebida prefiero hoy?",
+        "expect": {
+          "writes": [],
+          "probes": [
+            {
+              "query": {
+                "attribute": "drink_preference",
+                "date": "2026-12-26",
+                "session_id": "S2",
+                "context": null
+              },
+              "expected": {
+                "mode": "ANSWER",
+                "value": "agua de coco",
+                "branches": []
+              }
+            }
+          ],
+          "reply": {
+            "kind": "recall",
+            "values": [
+              "agua de coco"
+            ],
+            "evidence_ids": [
+              "m2"
+            ]
+          }
+        }
+      },
+      {
+        "action": "new_session",
+        "date": "2026-12-27",
+        "expect": {
+          "writes": [],
+          "probes": [
+            {
+              "query": {
+                "attribute": "drink_preference",
+                "date": "2026-12-27",
+                "session_id": "S3",
+                "context": null
+              },
+              "expected": {
+                "mode": "ANSWER",
+                "value": "limonada con hierbaluisa",
+                "branches": []
+              }
+            }
+          ]
+        }
+      },
+      {
+        "action": "send",
+        "date": "2026-12-27",
+        "text": "Ya amaneció. ¿Qué prefiero para beber hoy?",
+        "expect": {
+          "writes": [],
+          "probes": [
+            {
+              "query": {
+                "attribute": "drink_preference",
+                "date": "2026-12-27",
+                "session_id": "S3",
+                "context": null
+              },
+              "expected": {
+                "mode": "ANSWER",
+                "value": "limonada con hierbaluisa",
+                "branches": []
+              }
+            }
+          ],
+          "reply": {
+            "kind": "recall",
+            "values": [
+              "limonada con hierbaluisa"
+            ],
+            "evidence_ids": [
+              "base"
+            ]
+          }
+        }
+      }
+    ]
+  },
+  {
+    "id": "qa-desayuno-turno-largo",
+    "family": "intervalo_un_dia",
+    "initial_memory": [
+      {
+        "attribute": "breakfast_preference",
+        "value": "pan de yuca con fruta",
+        "scope": {
+          "kind": "ongoing",
+          "session_id": null,
+          "context": null,
+          "valid_from": "2026-12-17",
+          "valid_until_exclusive": null
+        },
+        "status": "confirmed",
+        "supersedes": [],
+        "memory_id": "base",
+        "source_turn_ids": [
+          "archivo_base"
+        ],
+        "evidence_quotes": [
+          {
+            "turn_id": "archivo_base",
+            "text": "Desde chica prefiero pan de yuca con fruta para el desayuno de forma habitual."
+          }
+        ],
+        "recorded_at": "2026-12-17"
+      }
+    ],
+    "steps": [
+      {
+        "action": "send",
+        "date": "2026-12-29",
+        "text": "Hoy prefiero mote con queso para desayunar. Mañana retomo lo de siempre.",
+        "expect": {
+          "writes": [
+            {
+              "attribute": "breakfast_preference",
+              "value": "mote con queso",
+              "scope": {
+                "kind": "interval",
+                "session_id": null,
+                "context": null,
+                "valid_from": "2026-12-29",
+                "valid_until_exclusive": "2026-12-30"
+              },
+              "status": "confirmed",
+              "supersedes": [],
+              "source_turn_ids": [
+                "u1_1"
+              ]
+            }
+          ],
+          "probes": [
+            {
+              "query": {
+                "attribute": "breakfast_preference",
+                "date": "2026-12-29",
+                "session_id": "S1",
+                "context": null
+              },
+              "expected": {
+                "mode": "ANSWER",
+                "value": "mote con queso",
+                "branches": []
+              }
+            },
+            {
+              "query": {
+                "attribute": "breakfast_preference",
+                "date": "2026-12-29",
+                "session_id": "S2",
+                "context": null
+              },
+              "expected": {
+                "mode": "ANSWER",
+                "value": "mote con queso",
+                "branches": []
+              }
+            },
+            {
+              "query": {
+                "attribute": "breakfast_preference",
+                "date": "2026-12-30",
+                "session_id": "S3",
+                "context": null
+              },
+              "expected": {
+                "mode": "ANSWER",
+                "value": "pan de yuca con fruta",
+                "branches": []
+              }
+            },
+            {
+              "query": {
+                "attribute": "breakfast_preference",
+                "date": "2026-12-28",
+                "session_id": "S1",
+                "context": null
+              },
+              "expected": {
+                "mode": "ANSWER",
+                "value": "pan de yuca con fruta",
+                "branches": []
+              }
+            }
+          ]
+        }
+      },
+      {
+        "action": "send",
+        "date": "2026-12-29",
+        "text": "Voy saliendo al turno. ¿Qué prefiero desayunar hoy?",
+        "expect": {
+          "writes": [],
+          "probes": [
+            {
+              "query": {
+                "attribute": "breakfast_preference",
+                "date": "2026-12-29",
+                "session_id": "S1",
+                "context": null
+              },
+              "expected": {
+                "mode": "ANSWER",
+                "value": "mote con queso",
+                "branches": []
+              }
+            }
+          ],
+          "reply": {
+            "kind": "recall",
+            "values": [
+              "mote con queso"
+            ],
+            "evidence_ids": [
+              "m2"
+            ]
+          }
+        }
+      },
+      {
+        "action": "new_session",
+        "date": "2026-12-29",
+        "expect": {
+          "writes": [],
+          "probes": [
+            {
+              "query": {
+                "attribute": "breakfast_preference",
+                "date": "2026-12-29",
+                "session_id": "S2",
+                "context": null
+              },
+              "expected": {
+                "mode": "ANSWER",
+                "value": "mote con queso",
+                "branches": []
+              }
+            }
+          ]
+        }
+      },
+      {
+        "action": "send",
+        "date": "2026-12-29",
+        "text": "Mismo día y otro dispositivo, ¿qué prefiero para el desayuno hoy?",
+        "expect": {
+          "writes": [],
+          "probes": [
+            {
+              "query": {
+                "attribute": "breakfast_preference",
+                "date": "2026-12-29",
+                "session_id": "S2",
+                "context": null
+              },
+              "expected": {
+                "mode": "ANSWER",
+                "value": "mote con queso",
+                "branches": []
+              }
+            }
+          ],
+          "reply": {
+            "kind": "recall",
+            "values": [
+              "mote con queso"
+            ],
+            "evidence_ids": [
+              "m2"
+            ]
+          }
+        }
+      },
+      {
+        "action": "new_session",
+        "date": "2026-12-30",
+        "expect": {
+          "writes": [],
+          "probes": [
+            {
+              "query": {
+                "attribute": "breakfast_preference",
+                "date": "2026-12-30",
+                "session_id": "S3",
+                "context": null
+              },
+              "expected": {
+                "mode": "ANSWER",
+                "value": "pan de yuca con fruta",
+                "branches": []
+              }
+            }
+          ]
+        }
+      },
+      {
+        "action": "send",
+        "date": "2026-12-30",
+        "text": "Ya pasó el turno de ayer. ¿Qué prefiero desayunar ahora?",
+        "expect": {
+          "writes": [],
+          "probes": [
+            {
+              "query": {
+                "attribute": "breakfast_preference",
+                "date": "2026-12-30",
+                "session_id": "S3",
+                "context": null
+              },
+              "expected": {
+                "mode": "ANSWER",
+                "value": "pan de yuca con fruta",
+                "branches": []
+              }
+            }
+          ],
+          "reply": {
+            "kind": "recall",
+            "values": [
+              "pan de yuca con fruta"
+            ],
+            "evidence_ids": [
+              "base"
+            ]
+          }
+        }
+      }
+    ]
+  },
+  {
+    "id": "qa-reserva-entrega-manana",
+    "family": "intervalo_futuro",
+    "initial_memory": [
+      {
+        "attribute": "dinner_preference",
+        "value": "puré de yuca",
+        "scope": {
+          "kind": "ongoing",
+          "session_id": null,
+          "context": null,
+          "valid_from": "2026-12-17",
+          "valid_until_exclusive": null
+        },
+        "status": "confirmed",
+        "supersedes": [],
+        "memory_id": "base",
+        "source_turn_ids": [
+          "archivo_base"
+        ],
+        "evidence_quotes": [
+          {
+            "turn_id": "archivo_base",
+            "text": "De forma habitual, para la cena prefiero puré de yuca."
+          }
+        ],
+        "recorded_at": "2026-12-17"
+      }
+    ],
+    "steps": [
+      {
+        "action": "send",
+        "date": "2027-01-04",
+        "text": "Para la cena prefiero locro de zapallo únicamente mañana, para aprovechar lo que dejé listo.",
+        "expect": {
+          "writes": [
+            {
+              "attribute": "dinner_preference",
+              "value": "locro de zapallo",
+              "scope": {
+                "kind": "interval",
+                "session_id": null,
+                "context": null,
+                "valid_from": "2027-01-05",
+                "valid_until_exclusive": "2027-01-06"
+              },
+              "status": "confirmed",
+              "supersedes": [],
+              "source_turn_ids": [
+                "u1_1"
+              ]
+            }
+          ],
+          "probes": [
+            {
+              "query": {
+                "attribute": "dinner_preference",
+                "date": "2027-01-05",
+                "session_id": "S1",
+                "context": null
+              },
+              "expected": {
+                "mode": "ANSWER",
+                "value": "locro de zapallo",
+                "branches": []
+              }
+            },
+            {
+              "query": {
+                "attribute": "dinner_preference",
+                "date": "2027-01-05",
+                "session_id": "S2",
+                "context": null
+              },
+              "expected": {
+                "mode": "ANSWER",
+                "value": "locro de zapallo",
+                "branches": []
+              }
+            },
+            {
+              "query": {
+                "attribute": "dinner_preference",
+                "date": "2027-01-06",
+                "session_id": "S3",
+                "context": null
+              },
+              "expected": {
+                "mode": "ANSWER",
+                "value": "puré de yuca",
+                "branches": []
+              }
+            },
+            {
+              "query": {
+                "attribute": "dinner_preference",
+                "date": "2027-01-04",
+                "session_id": "S1",
+                "context": null
+              },
+              "expected": {
+                "mode": "ANSWER",
+                "value": "puré de yuca",
+                "branches": []
+              }
+            }
+          ]
+        }
+      },
+      {
+        "action": "send",
+        "date": "2027-01-04",
+        "text": "Y mientras espero, ¿qué prefiero para cenar hoy?",
+        "expect": {
+          "writes": [],
+          "probes": [
+            {
+              "query": {
+                "attribute": "dinner_preference",
+                "date": "2027-01-04",
+                "session_id": "S1",
+                "context": null
+              },
+              "expected": {
+                "mode": "ANSWER",
+                "value": "puré de yuca",
+                "branches": []
+              }
+            }
+          ],
+          "reply": {
+            "kind": "recall",
+            "values": [
+              "puré de yuca"
+            ],
+            "evidence_ids": [
+              "base"
+            ]
+          }
+        }
+      },
+      {
+        "action": "new_session",
+        "date": "2027-01-05",
+        "expect": {
+          "writes": [],
+          "probes": [
+            {
+              "query": {
+                "attribute": "dinner_preference",
+                "date": "2027-01-05",
+                "session_id": "S2",
+                "context": null
+              },
+              "expected": {
+                "mode": "ANSWER",
+                "value": "locro de zapallo",
+                "branches": []
+              }
+            }
+          ]
+        }
+      },
+      {
+        "action": "send",
+        "date": "2027-01-05",
+        "text": "Ya descongelé lo de anoche. ¿Qué prefiero cenar hoy?",
+        "expect": {
+          "writes": [],
+          "probes": [
+            {
+              "query": {
+                "attribute": "dinner_preference",
+                "date": "2027-01-05",
+                "session_id": "S2",
+                "context": null
+              },
+              "expected": {
+                "mode": "ANSWER",
+                "value": "locro de zapallo",
+                "branches": []
+              }
+            }
+          ],
+          "reply": {
+            "kind": "recall",
+            "values": [
+              "locro de zapallo"
+            ],
+            "evidence_ids": [
+              "m2"
+            ]
+          }
+        }
+      },
+      {
+        "action": "new_session",
+        "date": "2027-01-06",
+        "expect": {
+          "writes": [],
+          "probes": [
+            {
+              "query": {
+                "attribute": "dinner_preference",
+                "date": "2027-01-06",
+                "session_id": "S3",
+                "context": null
+              },
+              "expected": {
+                "mode": "ANSWER",
+                "value": "puré de yuca",
+                "branches": []
+              }
+            }
+          ]
+        }
+      },
+      {
+        "action": "send",
+        "date": "2027-01-06",
+        "text": "Ya terminó el plan. ¿Qué recuerdas que prefiero para cenar hoy?",
+        "expect": {
+          "writes": [],
+          "probes": [
+            {
+              "query": {
+                "attribute": "dinner_preference",
+                "date": "2027-01-06",
+                "session_id": "S3",
+                "context": null
+              },
+              "expected": {
+                "mode": "ANSWER",
+                "value": "puré de yuca",
+                "branches": []
+              }
+            }
+          ],
+          "reply": {
+            "kind": "recall",
+            "values": [
+              "puré de yuca"
+            ],
+            "evidence_ids": [
+              "base"
+            ]
+          }
+        }
+      }
+    ]
+  },
+  {
+    "id": "qa-cena-fin-de-mes",
+    "family": "intervalo_varios_dias",
+    "initial_memory": [
+      {
+        "attribute": "dinner_preference",
+        "value": "sopa de choclo",
+        "scope": {
+          "kind": "ongoing",
+          "session_id": null,
+          "context": null,
+          "valid_from": "2026-12-17",
+          "valid_until_exclusive": null
+        },
+        "status": "confirmed",
+        "supersedes": [],
+        "memory_id": "base",
+        "source_turn_ids": [
+          "archivo_base"
+        ],
+        "evidence_quotes": [
+          {
+            "turn_id": "archivo_base",
+            "text": "Ya anotamos que mi preferencia habitual para cenar es sopa de choclo."
+          }
+        ],
+        "recorded_at": "2026-12-17"
+      }
+    ],
+    "steps": [
+      {
+        "action": "send",
+        "date": "2027-01-31",
+        "text": "Para la cena prefiero guiso de coliflor durante dos días. Empiezo hoy, fin de mes.",
+        "expect": {
+          "writes": [
+            {
+              "attribute": "dinner_preference",
+              "value": "guiso de coliflor",
+              "scope": {
+                "kind": "interval",
+                "session_id": null,
+                "context": null,
+                "valid_from": "2027-01-31",
+                "valid_until_exclusive": "2027-02-02"
+              },
+              "status": "confirmed",
+              "supersedes": [],
+              "source_turn_ids": [
+                "u1_1"
+              ]
+            }
+          ],
+          "probes": [
+            {
+              "query": {
+                "attribute": "dinner_preference",
+                "date": "2027-01-31",
+                "session_id": "S1",
+                "context": null
+              },
+              "expected": {
+                "mode": "ANSWER",
+                "value": "guiso de coliflor",
+                "branches": []
+              }
+            },
+            {
+              "query": {
+                "attribute": "dinner_preference",
+                "date": "2027-01-31",
+                "session_id": "S2",
+                "context": null
+              },
+              "expected": {
+                "mode": "ANSWER",
+                "value": "guiso de coliflor",
+                "branches": []
+              }
+            },
+            {
+              "query": {
+                "attribute": "dinner_preference",
+                "date": "2027-02-02",
+                "session_id": "S3",
+                "context": null
+              },
+              "expected": {
+                "mode": "ANSWER",
+                "value": "sopa de choclo",
+                "branches": []
+              }
+            },
+            {
+              "query": {
+                "attribute": "dinner_preference",
+                "date": "2027-01-30",
+                "session_id": "S1",
+                "context": null
+              },
+              "expected": {
+                "mode": "ANSWER",
+                "value": "sopa de choclo",
+                "branches": []
+              }
+            }
+          ]
+        }
+      },
+      {
+        "action": "send",
+        "date": "2027-01-31",
+        "text": "Con la olla ya puesta, ¿qué prefiero cenar hoy?",
+        "expect": {
+          "writes": [],
+          "probes": [
+            {
+              "query": {
+                "attribute": "dinner_preference",
+                "date": "2027-01-31",
+                "session_id": "S1",
+                "context": null
+              },
+              "expected": {
+                "mode": "ANSWER",
+                "value": "guiso de coliflor",
+                "branches": []
+              }
+            }
+          ],
+          "reply": {
+            "kind": "recall",
+            "values": [
+              "guiso de coliflor"
+            ],
+            "evidence_ids": [
+              "m2"
+            ]
+          }
+        }
+      },
+      {
+        "action": "new_session",
+        "date": "2027-01-31",
+        "expect": {
+          "writes": [],
+          "probes": [
+            {
+              "query": {
+                "attribute": "dinner_preference",
+                "date": "2027-01-31",
+                "session_id": "S2",
+                "context": null
+              },
+              "expected": {
+                "mode": "ANSWER",
+                "value": "guiso de coliflor",
+                "branches": []
+              }
+            }
+          ]
+        }
+      },
+      {
+        "action": "send",
+        "date": "2027-01-31",
+        "text": "Desde otro chat, ¿qué prefiero para la cena de hoy?",
+        "expect": {
+          "writes": [],
+          "probes": [
+            {
+              "query": {
+                "attribute": "dinner_preference",
+                "date": "2027-01-31",
+                "session_id": "S2",
+                "context": null
+              },
+              "expected": {
+                "mode": "ANSWER",
+                "value": "guiso de coliflor",
+                "branches": []
+              }
+            }
+          ],
+          "reply": {
+            "kind": "recall",
+            "values": [
+              "guiso de coliflor"
+            ],
+            "evidence_ids": [
+              "m2"
+            ]
+          }
+        }
+      },
+      {
+        "action": "new_session",
+        "date": "2027-02-02",
+        "expect": {
+          "writes": [],
+          "probes": [
+            {
+              "query": {
+                "attribute": "dinner_preference",
+                "date": "2027-02-02",
+                "session_id": "S3",
+                "context": null
+              },
+              "expected": {
+                "mode": "ANSWER",
+                "value": "sopa de choclo",
+                "branches": []
+              }
+            }
+          ]
+        }
+      },
+      {
+        "action": "send",
+        "date": "2027-02-02",
+        "text": "Ya pasó el plazo del guiso. ¿Qué prefiero para la cena hoy?",
+        "expect": {
+          "writes": [],
+          "probes": [
+            {
+              "query": {
+                "attribute": "dinner_preference",
+                "date": "2027-02-02",
+                "session_id": "S3",
+                "context": null
+              },
+              "expected": {
+                "mode": "ANSWER",
+                "value": "sopa de choclo",
+                "branches": []
+              }
+            }
+          ],
+          "reply": {
+            "kind": "recall",
+            "values": [
+              "sopa de choclo"
+            ],
+            "evidence_ids": [
+              "base"
+            ]
+          }
+        }
+      }
+    ]
+  },
+  {
+    "id": "qa-frascos-fecha-incluida",
+    "family": "limite_inclusivo",
+    "initial_memory": [
+      {
+        "attribute": "drink_preference",
+        "value": "té de canela",
+        "scope": {
+          "kind": "ongoing",
+          "session_id": null,
+          "context": null,
+          "valid_from": "2026-12-17",
+          "valid_until_exclusive": null
+        },
+        "status": "confirmed",
+        "supersedes": [],
+        "memory_id": "base",
+        "source_turn_ids": [
+          "archivo_base"
+        ],
+        "evidence_quotes": [
+          {
+            "turn_id": "archivo_base",
+            "text": "Anota que prefiero té de canela para beber de forma habitual."
+          }
+        ],
+        "recorded_at": "2026-12-17"
+      }
+    ],
+    "steps": [
+      {
+        "action": "send",
+        "date": "2027-02-03",
+        "text": "Como preparé varios frascos, para beber prefiero colada de avena hasta el 2027-02-05 inclusive.",
+        "expect": {
+          "writes": [
+            {
+              "attribute": "drink_preference",
+              "value": "colada de avena",
+              "scope": {
+                "kind": "interval",
+                "session_id": null,
+                "context": null,
+                "valid_from": "2027-02-03",
+                "valid_until_exclusive": "2027-02-06"
+              },
+              "status": "confirmed",
+              "supersedes": [],
+              "source_turn_ids": [
+                "u1_1"
+              ]
+            }
+          ],
+          "probes": [
+            {
+              "query": {
+                "attribute": "drink_preference",
+                "date": "2027-02-03",
+                "session_id": "S1",
+                "context": null
+              },
+              "expected": {
+                "mode": "ANSWER",
+                "value": "colada de avena",
+                "branches": []
+              }
+            },
+            {
+              "query": {
+                "attribute": "drink_preference",
+                "date": "2027-02-03",
+                "session_id": "S2",
+                "context": null
+              },
+              "expected": {
+                "mode": "ANSWER",
+                "value": "colada de avena",
+                "branches": []
+              }
+            },
+            {
+              "query": {
+                "attribute": "drink_preference",
+                "date": "2027-02-06",
+                "session_id": "S3",
+                "context": null
+              },
+              "expected": {
+                "mode": "ANSWER",
+                "value": "té de canela",
+                "branches": []
+              }
+            },
+            {
+              "query": {
+                "attribute": "drink_preference",
+                "date": "2027-02-02",
+                "session_id": "S1",
+                "context": null
+              },
+              "expected": {
+                "mode": "ANSWER",
+                "value": "té de canela",
+                "branches": []
+              }
+            }
+          ]
+        }
+      },
+      {
+        "action": "send",
+        "date": "2027-02-03",
+        "text": "En el primero de esos días, ¿qué bebida prefiero?",
+        "expect": {
+          "writes": [],
+          "probes": [
+            {
+              "query": {
+                "attribute": "drink_preference",
+                "date": "2027-02-03",
+                "session_id": "S1",
+                "context": null
+              },
+              "expected": {
+                "mode": "ANSWER",
+                "value": "colada de avena",
+                "branches": []
+              }
+            }
+          ],
+          "reply": {
+            "kind": "recall",
+            "values": [
+              "colada de avena"
+            ],
+            "evidence_ids": [
+              "m2"
+            ]
+          }
+        }
+      },
+      {
+        "action": "new_session",
+        "date": "2027-02-03",
+        "expect": {
+          "writes": [],
+          "probes": [
+            {
+              "query": {
+                "attribute": "drink_preference",
+                "date": "2027-02-03",
+                "session_id": "S2",
+                "context": null
+              },
+              "expected": {
+                "mode": "ANSWER",
+                "value": "colada de avena",
+                "branches": []
+              }
+            }
+          ]
+        }
+      },
+      {
+        "action": "send",
+        "date": "2027-02-03",
+        "text": "Cerré y volví. ¿Qué bebida prefiero para seguir con los frascos?",
+        "expect": {
+          "writes": [],
+          "probes": [
+            {
+              "query": {
+                "attribute": "drink_preference",
+                "date": "2027-02-03",
+                "session_id": "S2",
+                "context": null
+              },
+              "expected": {
+                "mode": "ANSWER",
+                "value": "colada de avena",
+                "branches": []
+              }
+            }
+          ],
+          "reply": {
+            "kind": "recall",
+            "values": [
+              "colada de avena"
+            ],
+            "evidence_ids": [
+              "m2"
+            ]
+          }
+        }
+      },
+      {
+        "action": "new_session",
+        "date": "2027-02-06",
+        "expect": {
+          "writes": [],
+          "probes": [
+            {
+              "query": {
+                "attribute": "drink_preference",
+                "date": "2027-02-06",
+                "session_id": "S3",
+                "context": null
+              },
+              "expected": {
+                "mode": "ANSWER",
+                "value": "té de canela",
+                "branches": []
+              }
+            }
+          ]
+        }
+      },
+      {
+        "action": "send",
+        "date": "2027-02-06",
+        "text": "Se acabaron los frascos. ¿Qué bebida prefiero ahora?",
+        "expect": {
+          "writes": [],
+          "probes": [
+            {
+              "query": {
+                "attribute": "drink_preference",
+                "date": "2027-02-06",
+                "session_id": "S3",
+                "context": null
+              },
+              "expected": {
+                "mode": "ANSWER",
+                "value": "té de canela",
+                "branches": []
+              }
+            }
+          ],
+          "reply": {
+            "kind": "recall",
+            "values": [
+              "té de canela"
+            ],
+            "evidence_ids": [
+              "base"
+            ]
+          }
+        }
+      }
+    ]
+  },
+  {
+    "id": "qa-reserva-dia-fijo",
+    "family": "intervalo_futuro",
+    "initial_memory": [
+      {
+        "attribute": "breakfast_preference",
+        "value": "tostada de centeno",
+        "scope": {
+          "kind": "ongoing",
+          "session_id": null,
+          "context": null,
+          "valid_from": "2026-12-17",
+          "valid_until_exclusive": null
+        },
+        "status": "confirmed",
+        "supersedes": [],
+        "memory_id": "base",
+        "source_turn_ids": [
+          "archivo_base"
+        ],
+        "evidence_quotes": [
+          {
+            "turn_id": "archivo_base",
+            "text": "En el desayuno prefiero tostada de centeno de forma habitual."
+          }
+        ],
+        "recorded_at": "2026-12-17"
+      }
+    ],
+    "steps": [
+      {
+        "action": "send",
+        "date": "2027-02-07",
+        "text": "Para desayunar prefiero bolón de verde, pero solo para el 2027-02-09 por la visita de mis tíos.",
+        "expect": {
+          "writes": [
+            {
+              "attribute": "breakfast_preference",
+              "value": "bolón de verde",
+              "scope": {
+                "kind": "interval",
+                "session_id": null,
+                "context": null,
+                "valid_from": "2027-02-09",
+                "valid_until_exclusive": "2027-02-10"
+              },
+              "status": "confirmed",
+              "supersedes": [],
+              "source_turn_ids": [
+                "u1_1"
+              ]
+            }
+          ],
+          "probes": [
+            {
+              "query": {
+                "attribute": "breakfast_preference",
+                "date": "2027-02-09",
+                "session_id": "S1",
+                "context": null
+              },
+              "expected": {
+                "mode": "ANSWER",
+                "value": "bolón de verde",
+                "branches": []
+              }
+            },
+            {
+              "query": {
+                "attribute": "breakfast_preference",
+                "date": "2027-02-09",
+                "session_id": "S2",
+                "context": null
+              },
+              "expected": {
+                "mode": "ANSWER",
+                "value": "bolón de verde",
+                "branches": []
+              }
+            },
+            {
+              "query": {
+                "attribute": "breakfast_preference",
+                "date": "2027-02-10",
+                "session_id": "S3",
+                "context": null
+              },
+              "expected": {
+                "mode": "ANSWER",
+                "value": "tostada de centeno",
+                "branches": []
+              }
+            },
+            {
+              "query": {
+                "attribute": "breakfast_preference",
+                "date": "2027-02-08",
+                "session_id": "S1",
+                "context": null
+              },
+              "expected": {
+                "mode": "ANSWER",
+                "value": "tostada de centeno",
+                "branches": []
+              }
+            }
+          ]
+        }
+      },
+      {
+        "action": "send",
+        "date": "2027-02-07",
+        "text": "Antes de la visita, ¿qué prefiero para el desayuno de hoy?",
+        "expect": {
+          "writes": [],
+          "probes": [
+            {
+              "query": {
+                "attribute": "breakfast_preference",
+                "date": "2027-02-07",
+                "session_id": "S1",
+                "context": null
+              },
+              "expected": {
+                "mode": "ANSWER",
+                "value": "tostada de centeno",
+                "branches": []
+              }
+            }
+          ],
+          "reply": {
+            "kind": "recall",
+            "values": [
+              "tostada de centeno"
+            ],
+            "evidence_ids": [
+              "base"
+            ]
+          }
+        }
+      },
+      {
+        "action": "new_session",
+        "date": "2027-02-09",
+        "expect": {
+          "writes": [],
+          "probes": [
+            {
+              "query": {
+                "attribute": "breakfast_preference",
+                "date": "2027-02-09",
+                "session_id": "S2",
+                "context": null
+              },
+              "expected": {
+                "mode": "ANSWER",
+                "value": "bolón de verde",
+                "branches": []
+              }
+            }
+          ]
+        }
+      },
+      {
+        "action": "send",
+        "date": "2027-02-09",
+        "text": "Vinieron mis tíos. ¿Qué prefiero hoy para desayunar?",
+        "expect": {
+          "writes": [],
+          "probes": [
+            {
+              "query": {
+                "attribute": "breakfast_preference",
+                "date": "2027-02-09",
+                "session_id": "S2",
+                "context": null
+              },
+              "expected": {
+                "mode": "ANSWER",
+                "value": "bolón de verde",
+                "branches": []
+              }
+            }
+          ],
+          "reply": {
+            "kind": "recall",
+            "values": [
+              "bolón de verde"
+            ],
+            "evidence_ids": [
+              "m2"
+            ]
+          }
+        }
+      },
+      {
+        "action": "new_session",
+        "date": "2027-02-10",
+        "expect": {
+          "writes": [],
+          "probes": [
+            {
+              "query": {
+                "attribute": "breakfast_preference",
+                "date": "2027-02-10",
+                "session_id": "S3",
+                "context": null
+              },
+              "expected": {
+                "mode": "ANSWER",
+                "value": "tostada de centeno",
+                "branches": []
+              }
+            }
+          ]
+        }
+      },
+      {
+        "action": "send",
+        "date": "2027-02-10",
+        "text": "Ya retomé la rutina. ¿Qué prefiero para el desayuno de hoy?",
+        "expect": {
+          "writes": [],
+          "probes": [
+            {
+              "query": {
+                "attribute": "breakfast_preference",
+                "date": "2027-02-10",
+                "session_id": "S3",
+                "context": null
+              },
+              "expected": {
+                "mode": "ANSWER",
+                "value": "tostada de centeno",
+                "branches": []
+              }
+            }
+          ],
+          "reply": {
+            "kind": "recall",
+            "values": [
+              "tostada de centeno"
+            ],
+            "evidence_ids": [
+              "base"
+            ]
+          }
+        }
+      }
+    ]
+  },
+  {
+    "id": "qa-cena-entre-reuniones",
+    "family": "excepcion_conversacion",
+    "initial_memory": [
+      {
+        "attribute": "dinner_preference",
+        "value": "seco de chivo",
+        "scope": {
+          "kind": "ongoing",
+          "session_id": null,
+          "context": null,
+          "valid_from": "2026-12-17",
+          "valid_until_exclusive": null
+        },
+        "status": "confirmed",
+        "supersedes": [],
+        "memory_id": "base",
+        "source_turn_ids": [
+          "archivo_base"
+        ],
+        "evidence_quotes": [
+          {
+            "turn_id": "archivo_base",
+            "text": "Mi opción fija para cenar suele ser seco de chivo, es lo que prefiero habitualmente."
+          }
+        ],
+        "recorded_at": "2026-12-17"
+      }
+    ],
+    "steps": [
+      {
+        "action": "send",
+        "date": "2027-02-14",
+        "text": "Para cenar prefiero crema de zapallo. Déjalo solo en esta conversación, que la estoy usando para organizarme entre reuniones.",
+        "expect": {
+          "writes": [
+            {
+              "attribute": "dinner_preference",
+              "value": "crema de zapallo",
+              "scope": {
+                "kind": "session",
+                "session_id": "S1",
+                "context": null,
+                "valid_from": "2027-02-14",
+                "valid_until_exclusive": null
+              },
+              "status": "confirmed",
+              "supersedes": [],
+              "source_turn_ids": [
+                "u1_1"
+              ]
+            }
+          ],
+          "probes": [
+            {
+              "query": {
+                "attribute": "dinner_preference",
+                "date": "2027-02-14",
+                "session_id": "S1",
+                "context": null
+              },
+              "expected": {
+                "mode": "ANSWER",
+                "value": "crema de zapallo",
+                "branches": []
+              }
+            },
+            {
+              "query": {
+                "attribute": "dinner_preference",
+                "date": "2027-02-14",
+                "session_id": "S2",
+                "context": null
+              },
+              "expected": {
+                "mode": "ANSWER",
+                "value": "seco de chivo",
+                "branches": []
+              }
+            },
+            {
+              "query": {
+                "attribute": "dinner_preference",
+                "date": "2027-02-15",
+                "session_id": "S1",
+                "context": null
+              },
+              "expected": {
+                "mode": "ANSWER",
+                "value": "crema de zapallo",
+                "branches": []
+              }
+            }
+          ]
+        }
+      },
+      {
+        "action": "send",
+        "date": "2027-02-14",
+        "text": "Todavía en el mismo hilo, ¿qué prefiero para la cena?",
+        "expect": {
+          "writes": [],
+          "probes": [
+            {
+              "query": {
+                "attribute": "dinner_preference",
+                "date": "2027-02-14",
+                "session_id": "S1",
+                "context": null
+              },
+              "expected": {
+                "mode": "ANSWER",
+                "value": "crema de zapallo",
+                "branches": []
+              }
+            }
+          ],
+          "reply": {
+            "kind": "recall",
+            "values": [
+              "crema de zapallo"
+            ],
+            "evidence_ids": [
+              "m2"
+            ]
+          }
+        }
+      },
+      {
+        "action": "new_session",
+        "date": "2027-02-14",
+        "expect": {
+          "writes": [],
+          "probes": [
+            {
+              "query": {
+                "attribute": "dinner_preference",
+                "date": "2027-02-14",
+                "session_id": "S2",
+                "context": null
+              },
+              "expected": {
+                "mode": "ANSWER",
+                "value": "seco de chivo",
+                "branches": []
+              }
+            }
+          ]
+        }
+      },
+      {
+        "action": "send",
+        "date": "2027-02-14",
+        "text": "Sigue siendo el mismo día, pero abrí un chat aparte. ¿Qué prefiero para cenar?",
+        "expect": {
+          "writes": [],
+          "probes": [
+            {
+              "query": {
+                "attribute": "dinner_preference",
+                "date": "2027-02-14",
+                "session_id": "S2",
+                "context": null
+              },
+              "expected": {
+                "mode": "ANSWER",
+                "value": "seco de chivo",
+                "branches": []
+              }
+            }
+          ],
+          "reply": {
+            "kind": "recall",
+            "values": [
+              "seco de chivo"
+            ],
+            "evidence_ids": [
+              "base"
+            ]
+          }
+        }
+      },
+      {
+        "action": "new_session",
+        "date": "2027-02-15",
+        "expect": {
+          "writes": [],
+          "probes": [
+            {
+              "query": {
+                "attribute": "dinner_preference",
+                "date": "2027-02-15",
+                "session_id": "S3",
+                "context": null
+              },
+              "expected": {
+                "mode": "ANSWER",
+                "value": "seco de chivo",
+                "branches": []
+              }
+            }
+          ]
+        }
+      },
+      {
+        "action": "send",
+        "date": "2027-02-15",
+        "text": "Ya es otra noche. ¿Qué prefiero cenar según lo que dejé guardado?",
+        "expect": {
+          "writes": [],
+          "probes": [
+            {
+              "query": {
+                "attribute": "dinner_preference",
+                "date": "2027-02-15",
+                "session_id": "S3",
+                "context": null
+              },
+              "expected": {
+                "mode": "ANSWER",
+                "value": "seco de chivo",
+                "branches": []
+              }
+            }
+          ],
+          "reply": {
+            "kind": "recall",
+            "values": [
+              "seco de chivo"
+            ],
+            "evidence_ids": [
+              "base"
+            ]
+          }
+        }
+      }
+    ]
+  },
+  {
+    "id": "qa-menu-encuesta-manana",
+    "family": "excepcion_conversacion",
+    "initial_memory": [
+      {
+        "attribute": "breakfast_preference",
+        "value": "avena con manzana",
+        "scope": {
+          "kind": "ongoing",
+          "session_id": null,
+          "context": null,
+          "valid_from": "2026-12-17",
+          "valid_until_exclusive": null
+        },
+        "status": "confirmed",
+        "supersedes": [],
+        "memory_id": "base",
+        "source_turn_ids": [
+          "archivo_base"
+        ],
+        "evidence_quotes": [
+          {
+            "turn_id": "archivo_base",
+            "text": "Si hay que guardar un gusto de desayuno, el mío es avena con manzana de forma habitual."
+          }
+        ],
+        "recorded_at": "2026-12-17"
+      }
+    ],
+    "steps": [
+      {
+        "action": "send",
+        "date": "2027-02-16",
+        "text": "Para el desayuno prefiero tamales de maíz solo en esta sesión. Es para responder una encuesta que tengo abierta.",
+        "expect": {
+          "writes": [
+            {
+              "attribute": "breakfast_preference",
+              "value": "tamales de maíz",
+              "scope": {
+                "kind": "session",
+                "session_id": "S1",
+                "context": null,
+                "valid_from": "2027-02-16",
+                "valid_until_exclusive": null
+              },
+              "status": "confirmed",
+              "supersedes": [],
+              "source_turn_ids": [
+                "u1_1"
+              ]
+            }
+          ],
+          "probes": [
+            {
+              "query": {
+                "attribute": "breakfast_preference",
+                "date": "2027-02-16",
+                "session_id": "S1",
+                "context": null
+              },
+              "expected": {
+                "mode": "ANSWER",
+                "value": "tamales de maíz",
+                "branches": []
+              }
+            },
+            {
+              "query": {
+                "attribute": "breakfast_preference",
+                "date": "2027-02-16",
+                "session_id": "S2",
+                "context": null
+              },
+              "expected": {
+                "mode": "ANSWER",
+                "value": "avena con manzana",
+                "branches": []
+              }
+            },
+            {
+              "query": {
+                "attribute": "breakfast_preference",
+                "date": "2027-02-18",
+                "session_id": "S1",
+                "context": null
+              },
+              "expected": {
+                "mode": "ANSWER",
+                "value": "tamales de maíz",
+                "branches": []
+              }
+            }
+          ]
+        }
+      },
+      {
+        "action": "send",
+        "date": "2027-02-16",
+        "text": "Para terminar la encuesta, ¿qué prefiero desayunar en este chat?",
+        "expect": {
+          "writes": [],
+          "probes": [
+            {
+              "query": {
+                "attribute": "breakfast_preference",
+                "date": "2027-02-16",
+                "session_id": "S1",
+                "context": null
+              },
+              "expected": {
+                "mode": "ANSWER",
+                "value": "tamales de maíz",
+                "branches": []
+              }
+            }
+          ],
+          "reply": {
+            "kind": "recall",
+            "values": [
+              "tamales de maíz"
+            ],
+            "evidence_ids": [
+              "m2"
+            ]
+          }
+        }
+      },
+      {
+        "action": "new_session",
+        "date": "2027-02-16",
+        "expect": {
+          "writes": [],
+          "probes": [
+            {
+              "query": {
+                "attribute": "breakfast_preference",
+                "date": "2027-02-16",
+                "session_id": "S2",
+                "context": null
+              },
+              "expected": {
+                "mode": "ANSWER",
+                "value": "avena con manzana",
+                "branches": []
+              }
+            }
+          ]
+        }
+      },
+      {
+        "action": "send",
+        "date": "2027-02-16",
+        "text": "Salí de la encuesta. ¿Qué prefiero para el desayuno normalmente?",
+        "expect": {
+          "writes": [],
+          "probes": [
+            {
+              "query": {
+                "attribute": "breakfast_preference",
+                "date": "2027-02-16",
+                "session_id": "S2",
+                "context": null
+              },
+              "expected": {
+                "mode": "ANSWER",
+                "value": "avena con manzana",
+                "branches": []
+              }
+            }
+          ],
+          "reply": {
+            "kind": "recall",
+            "values": [
+              "avena con manzana"
+            ],
+            "evidence_ids": [
+              "base"
+            ]
+          }
+        }
+      },
+      {
+        "action": "new_session",
+        "date": "2027-02-18",
+        "expect": {
+          "writes": [],
+          "probes": [
+            {
+              "query": {
+                "attribute": "breakfast_preference",
+                "date": "2027-02-18",
+                "session_id": "S3",
+                "context": null
+              },
+              "expected": {
+                "mode": "ANSWER",
+                "value": "avena con manzana",
+                "branches": []
+              }
+            }
+          ]
+        }
+      },
+      {
+        "action": "send",
+        "date": "2027-02-18",
+        "text": "Un par de días después, ¿qué recuerdas de lo que prefiero desayunar?",
+        "expect": {
+          "writes": [],
+          "probes": [
+            {
+              "query": {
+                "attribute": "breakfast_preference",
+                "date": "2027-02-18",
+                "session_id": "S3",
+                "context": null
+              },
+              "expected": {
+                "mode": "ANSWER",
+                "value": "avena con manzana",
+                "branches": []
+              }
+            }
+          ],
+          "reply": {
+            "kind": "recall",
+            "values": [
+              "avena con manzana"
+            ],
+            "evidence_ids": [
+              "base"
+            ]
+          }
+        }
+      }
+    ]
+  },
+  {
+    "id": "qa-hilo-cruza-medianoche",
+    "family": "excepcion_conversacion",
+    "initial_memory": [
+      {
+        "attribute": "drink_preference",
+        "value": "agua de jamaica",
+        "scope": {
+          "kind": "ongoing",
+          "session_id": null,
+          "context": null,
+          "valid_from": "2026-12-17",
+          "valid_until_exclusive": null
+        },
+        "status": "confirmed",
+        "supersedes": [],
+        "memory_id": "base",
+        "source_turn_ids": [
+          "archivo_base"
+        ],
+        "evidence_quotes": [
+          {
+            "turn_id": "archivo_base",
+            "text": "Mi bebida de siempre es agua de jamaica, de forma habitual."
+          }
+        ],
+        "recorded_at": "2026-12-17"
+      }
+    ],
+    "steps": [
+      {
+        "action": "send",
+        "date": "2027-02-26",
+        "text": "Para beber prefiero jugo de naranjilla; es solo para esta conversación aunque quede abierta hasta mañana.",
+        "expect": {
+          "writes": [
+            {
+              "attribute": "drink_preference",
+              "value": "jugo de naranjilla",
+              "scope": {
+                "kind": "session",
+                "session_id": "S1",
+                "context": null,
+                "valid_from": "2027-02-26",
+                "valid_until_exclusive": null
+              },
+              "status": "confirmed",
+              "supersedes": [],
+              "source_turn_ids": [
+                "u1_1"
+              ]
+            }
+          ],
+          "probes": [
+            {
+              "query": {
+                "attribute": "drink_preference",
+                "date": "2027-02-26",
+                "session_id": "S1",
+                "context": null
+              },
+              "expected": {
+                "mode": "ANSWER",
+                "value": "jugo de naranjilla",
+                "branches": []
+              }
+            },
+            {
+              "query": {
+                "attribute": "drink_preference",
+                "date": "2027-02-27",
+                "session_id": "S1",
+                "context": null
+              },
+              "expected": {
+                "mode": "ANSWER",
+                "value": "jugo de naranjilla",
+                "branches": []
+              }
+            },
+            {
+              "query": {
+                "attribute": "drink_preference",
+                "date": "2027-02-27",
+                "session_id": "S2",
+                "context": null
+              },
+              "expected": {
+                "mode": "ANSWER",
+                "value": "agua de jamaica",
+                "branches": []
+              }
+            }
+          ]
+        }
+      },
+      {
+        "action": "send",
+        "date": "2027-02-27",
+        "text": "Pasó medianoche y seguí aquí. ¿Qué bebida prefiero en este mismo hilo?",
+        "expect": {
+          "writes": [],
+          "probes": [
+            {
+              "query": {
+                "attribute": "drink_preference",
+                "date": "2027-02-27",
+                "session_id": "S1",
+                "context": null
+              },
+              "expected": {
+                "mode": "ANSWER",
+                "value": "jugo de naranjilla",
+                "branches": []
+              }
+            }
+          ],
+          "reply": {
+            "kind": "recall",
+            "values": [
+              "jugo de naranjilla"
+            ],
+            "evidence_ids": [
+              "m2"
+            ]
+          }
+        }
+      },
+      {
+        "action": "new_session",
+        "date": "2027-02-27",
+        "expect": {
+          "writes": [],
+          "probes": [
+            {
+              "query": {
+                "attribute": "drink_preference",
+                "date": "2027-02-27",
+                "session_id": "S2",
+                "context": null
+              },
+              "expected": {
+                "mode": "ANSWER",
+                "value": "agua de jamaica",
+                "branches": []
+              }
+            }
+          ]
+        }
+      },
+      {
+        "action": "send",
+        "date": "2027-02-27",
+        "text": "Ahora sí cambié de chat. ¿Qué prefiero para beber en este otro?",
+        "expect": {
+          "writes": [],
+          "probes": [
+            {
+              "query": {
+                "attribute": "drink_preference",
+                "date": "2027-02-27",
+                "session_id": "S2",
+                "context": null
+              },
+              "expected": {
+                "mode": "ANSWER",
+                "value": "agua de jamaica",
+                "branches": []
+              }
+            }
+          ],
+          "reply": {
+            "kind": "recall",
+            "values": [
+              "agua de jamaica"
+            ],
+            "evidence_ids": [
+              "base"
+            ]
+          }
+        }
+      }
+    ]
+  },
+  {
+    "id": "qa-se-acabo-la-limonada",
+    "family": "cambio_estable",
+    "initial_memory": [
+      {
+        "attribute": "drink_preference",
+        "value": "limonada con menta",
+        "scope": {
+          "kind": "ongoing",
+          "session_id": null,
+          "context": null,
+          "valid_from": "2026-12-17",
+          "valid_until_exclusive": null
+        },
+        "status": "confirmed",
+        "supersedes": [],
+        "memory_id": "base",
+        "source_turn_ids": [
+          "archivo_base"
+        ],
+        "evidence_quotes": [
+          {
+            "turn_id": "archivo_base",
+            "text": "Para beber prefiero limonada con menta de forma habitual, guárdalo."
+          }
+        ],
+        "recorded_at": "2026-12-17"
+      }
+    ],
+    "steps": [
+      {
+        "action": "send",
+        "date": "2027-03-01",
+        "text": "Cambié la costumbre: desde ahora prefiero infusión de cedrón como bebida.",
+        "expect": {
+          "writes": [
+            {
+              "attribute": "drink_preference",
+              "value": "infusión de cedrón",
+              "scope": {
+                "kind": "ongoing",
+                "session_id": null,
+                "context": null,
+                "valid_from": "2027-03-01",
+                "valid_until_exclusive": null
+              },
+              "status": "confirmed",
+              "supersedes": [
+                "base"
+              ],
+              "source_turn_ids": [
+                "u1_1"
+              ]
+            }
+          ],
+          "probes": [
+            {
+              "query": {
+                "attribute": "drink_preference",
+                "date": "2027-02-28",
+                "session_id": "S1",
+                "context": null
+              },
+              "expected": {
+                "mode": "ANSWER",
+                "value": "limonada con menta",
+                "branches": []
+              }
+            },
+            {
+              "query": {
+                "attribute": "drink_preference",
+                "date": "2027-03-01",
+                "session_id": "S2",
+                "context": null
+              },
+              "expected": {
+                "mode": "ANSWER",
+                "value": "infusión de cedrón",
+                "branches": []
+              }
+            },
+            {
+              "query": {
+                "attribute": "drink_preference",
+                "date": "2027-03-11",
+                "session_id": "S3",
+                "context": null
+              },
+              "expected": {
+                "mode": "ANSWER",
+                "value": "infusión de cedrón",
+                "branches": []
+              }
+            }
+          ]
+        }
+      },
+      {
+        "action": "send",
+        "date": "2027-03-01",
+        "text": "Antes de pedir, ¿qué recuerdas que prefiero beber hoy?",
+        "expect": {
+          "writes": [],
+          "probes": [
+            {
+              "query": {
+                "attribute": "drink_preference",
+                "date": "2027-03-01",
+                "session_id": "S1",
+                "context": null
+              },
+              "expected": {
+                "mode": "ANSWER",
+                "value": "infusión de cedrón",
+                "branches": []
+              }
+            }
+          ],
+          "reply": {
+            "kind": "recall",
+            "values": [
+              "infusión de cedrón"
+            ],
+            "evidence_ids": [
+              "m2"
+            ]
+          }
+        }
+      },
+      {
+        "action": "new_session",
+        "date": "2027-03-01",
+        "expect": {
+          "writes": [],
+          "probes": [
+            {
+              "query": {
+                "attribute": "drink_preference",
+                "date": "2027-03-01",
+                "session_id": "S2",
+                "context": null
+              },
+              "expected": {
+                "mode": "ANSWER",
+                "value": "infusión de cedrón",
+                "branches": []
+              }
+            }
+          ]
+        }
+      },
+      {
+        "action": "send",
+        "date": "2027-03-01",
+        "text": "En el otro chat, ¿qué bebida prefiero?",
+        "expect": {
+          "writes": [],
+          "probes": [
+            {
+              "query": {
+                "attribute": "drink_preference",
+                "date": "2027-03-01",
+                "session_id": "S2",
+                "context": null
+              },
+              "expected": {
+                "mode": "ANSWER",
+                "value": "infusión de cedrón",
+                "branches": []
+              }
+            }
+          ],
+          "reply": {
+            "kind": "recall",
+            "values": [
+              "infusión de cedrón"
+            ],
+            "evidence_ids": [
+              "m2"
+            ]
+          }
+        }
+      },
+      {
+        "action": "new_session",
+        "date": "2027-03-11",
+        "expect": {
+          "writes": [],
+          "probes": [
+            {
+              "query": {
+                "attribute": "drink_preference",
+                "date": "2027-03-11",
+                "session_id": "S3",
+                "context": null
+              },
+              "expected": {
+                "mode": "ANSWER",
+                "value": "infusión de cedrón",
+                "branches": []
+              }
+            }
+          ]
+        }
+      },
+      {
+        "action": "send",
+        "date": "2027-03-11",
+        "text": "Llevo una semana con el cambio. ¿Qué prefiero para beber últimamente?",
+        "expect": {
+          "writes": [],
+          "probes": [
+            {
+              "query": {
+                "attribute": "drink_preference",
+                "date": "2027-03-11",
+                "session_id": "S3",
+                "context": null
+              },
+              "expected": {
+                "mode": "ANSWER",
+                "value": "infusión de cedrón",
+                "branches": []
+              }
+            }
+          ],
+          "reply": {
+            "kind": "recall",
+            "values": [
+              "infusión de cedrón"
+            ],
+            "evidence_ids": [
+              "m2"
+            ]
+          }
+        }
+      }
+    ]
+  },
+  {
+    "id": "qa-desayuno-arranca-manana",
+    "family": "cambio_estable",
+    "initial_memory": [
+      {
+        "attribute": "breakfast_preference",
+        "value": "papaya con avena",
+        "scope": {
+          "kind": "ongoing",
+          "session_id": null,
+          "context": null,
+          "valid_from": "2026-12-17",
+          "valid_until_exclusive": null
+        },
+        "status": "confirmed",
+        "supersedes": [],
+        "memory_id": "base",
+        "source_turn_ids": [
+          "archivo_base"
+        ],
+        "evidence_quotes": [
+          {
+            "turn_id": "archivo_base",
+            "text": "Para el desayuno de todos los días prefiero papaya con avena."
+          }
+        ],
+        "recorded_at": "2026-12-17"
+      }
+    ],
+    "steps": [
+      {
+        "action": "send",
+        "date": "2027-03-03",
+        "text": "Apunta un cambio a partir de mañana: desde mañana para desayunar prefiero humita con queso de forma habitual.",
+        "expect": {
+          "writes": [
+            {
+              "attribute": "breakfast_preference",
+              "value": "humita con queso",
+              "scope": {
+                "kind": "ongoing",
+                "session_id": null,
+                "context": null,
+                "valid_from": "2027-03-04",
+                "valid_until_exclusive": null
+              },
+              "status": "confirmed",
+              "supersedes": [
+                "base"
+              ],
+              "source_turn_ids": [
+                "u1_1"
+              ]
+            }
+          ],
+          "probes": [
+            {
+              "query": {
+                "attribute": "breakfast_preference",
+                "date": "2027-03-03",
+                "session_id": "S1",
+                "context": null
+              },
+              "expected": {
+                "mode": "ANSWER",
+                "value": "papaya con avena",
+                "branches": []
+              }
+            },
+            {
+              "query": {
+                "attribute": "breakfast_preference",
+                "date": "2027-03-04",
+                "session_id": "S2",
+                "context": null
+              },
+              "expected": {
+                "mode": "ANSWER",
+                "value": "humita con queso",
+                "branches": []
+              }
+            },
+            {
+              "query": {
+                "attribute": "breakfast_preference",
+                "date": "2027-03-14",
+                "session_id": "S3",
+                "context": null
+              },
+              "expected": {
+                "mode": "ANSWER",
+                "value": "humita con queso",
+                "branches": []
+              }
+            }
+          ]
+        }
+      },
+      {
+        "action": "send",
+        "date": "2027-03-03",
+        "text": "Antes de que arranque, ¿qué prefiero desayunar hoy?",
+        "expect": {
+          "writes": [],
+          "probes": [
+            {
+              "query": {
+                "attribute": "breakfast_preference",
+                "date": "2027-03-03",
+                "session_id": "S1",
+                "context": null
+              },
+              "expected": {
+                "mode": "ANSWER",
+                "value": "papaya con avena",
+                "branches": []
+              }
+            }
+          ],
+          "reply": {
+            "kind": "recall",
+            "values": [
+              "papaya con avena"
+            ],
+            "evidence_ids": [
+              "base"
+            ]
+          }
+        }
+      },
+      {
+        "action": "new_session",
+        "date": "2027-03-04",
+        "expect": {
+          "writes": [],
+          "probes": [
+            {
+              "query": {
+                "attribute": "breakfast_preference",
+                "date": "2027-03-04",
+                "session_id": "S2",
+                "context": null
+              },
+              "expected": {
+                "mode": "ANSWER",
+                "value": "humita con queso",
+                "branches": []
+              }
+            }
+          ]
+        }
+      },
+      {
+        "action": "send",
+        "date": "2027-03-04",
+        "text": "Ya empezó la nueva rutina. ¿Qué prefiero para desayunar hoy?",
+        "expect": {
+          "writes": [],
+          "probes": [
+            {
+              "query": {
+                "attribute": "breakfast_preference",
+                "date": "2027-03-04",
+                "session_id": "S2",
+                "context": null
+              },
+              "expected": {
+                "mode": "ANSWER",
+                "value": "humita con queso",
+                "branches": []
+              }
+            }
+          ],
+          "reply": {
+            "kind": "recall",
+            "values": [
+              "humita con queso"
+            ],
+            "evidence_ids": [
+              "m2"
+            ]
+          }
+        }
+      },
+      {
+        "action": "new_session",
+        "date": "2027-03-14",
+        "expect": {
+          "writes": [],
+          "probes": [
+            {
+              "query": {
+                "attribute": "breakfast_preference",
+                "date": "2027-03-14",
+                "session_id": "S3",
+                "context": null
+              },
+              "expected": {
+                "mode": "ANSWER",
+                "value": "humita con queso",
+                "branches": []
+              }
+            }
+          ]
+        }
+      },
+      {
+        "action": "send",
+        "date": "2027-03-14",
+        "text": "Vuelvo después de varios días. ¿Qué prefiero para el desayuno?",
+        "expect": {
+          "writes": [],
+          "probes": [
+            {
+              "query": {
+                "attribute": "breakfast_preference",
+                "date": "2027-03-14",
+                "session_id": "S3",
+                "context": null
+              },
+              "expected": {
+                "mode": "ANSWER",
+                "value": "humita con queso",
+                "branches": []
+              }
+            }
+          ],
+          "reply": {
+            "kind": "recall",
+            "values": [
+              "humita con queso"
+            ],
+            "evidence_ids": [
+              "m2"
+            ]
+          }
+        }
+      }
+    ]
+  },
+  {
+    "id": "qa-dia-de-mudanza",
+    "family": "cambio_estable",
+    "initial_memory": [
+      {
+        "attribute": "dinner_preference",
+        "value": "sopa de fideos",
+        "scope": {
+          "kind": "ongoing",
+          "session_id": null,
+          "context": null,
+          "valid_from": "2026-12-17",
+          "valid_until_exclusive": null
+        },
+        "status": "confirmed",
+        "supersedes": [],
+        "memory_id": "base",
+        "source_turn_ids": [
+          "archivo_base"
+        ],
+        "evidence_quotes": [
+          {
+            "turn_id": "archivo_base",
+            "text": "De forma habitual, en la cena elijo sopa de fideos; es lo que prefiero."
+          }
+        ],
+        "recorded_at": "2026-12-17"
+      }
+    ],
+    "steps": [
+      {
+        "action": "send",
+        "date": "2027-03-06",
+        "text": "Después de la mudanza, desde el 2027-03-09 quiero cambiar la costumbre: para la cena prefiero cazuela de camarón de forma habitual.",
+        "expect": {
+          "writes": [
+            {
+              "attribute": "dinner_preference",
+              "value": "cazuela de camarón",
+              "scope": {
+                "kind": "ongoing",
+                "session_id": null,
+                "context": null,
+                "valid_from": "2027-03-09",
+                "valid_until_exclusive": null
+              },
+              "status": "confirmed",
+              "supersedes": [
+                "base"
+              ],
+              "source_turn_ids": [
+                "u1_1"
+              ]
+            }
+          ],
+          "probes": [
+            {
+              "query": {
+                "attribute": "dinner_preference",
+                "date": "2027-03-08",
+                "session_id": "S1",
+                "context": null
+              },
+              "expected": {
+                "mode": "ANSWER",
+                "value": "sopa de fideos",
+                "branches": []
+              }
+            },
+            {
+              "query": {
+                "attribute": "dinner_preference",
+                "date": "2027-03-09",
+                "session_id": "S2",
+                "context": null
+              },
+              "expected": {
+                "mode": "ANSWER",
+                "value": "cazuela de camarón",
+                "branches": []
+              }
+            },
+            {
+              "query": {
+                "attribute": "dinner_preference",
+                "date": "2027-03-19",
+                "session_id": "S3",
+                "context": null
+              },
+              "expected": {
+                "mode": "ANSWER",
+                "value": "cazuela de camarón",
+                "branches": []
+              }
+            }
+          ]
+        }
+      },
+      {
+        "action": "send",
+        "date": "2027-03-06",
+        "text": "Sigo en la casa anterior. ¿Qué prefiero para la cena de hoy?",
+        "expect": {
+          "writes": [],
+          "probes": [
+            {
+              "query": {
+                "attribute": "dinner_preference",
+                "date": "2027-03-06",
+                "session_id": "S1",
+                "context": null
+              },
+              "expected": {
+                "mode": "ANSWER",
+                "value": "sopa de fideos",
+                "branches": []
+              }
+            }
+          ],
+          "reply": {
+            "kind": "recall",
+            "values": [
+              "sopa de fideos"
+            ],
+            "evidence_ids": [
+              "base"
+            ]
+          }
+        }
+      },
+      {
+        "action": "new_session",
+        "date": "2027-03-09",
+        "expect": {
+          "writes": [],
+          "probes": [
+            {
+              "query": {
+                "attribute": "dinner_preference",
+                "date": "2027-03-09",
+                "session_id": "S2",
+                "context": null
+              },
+              "expected": {
+                "mode": "ANSWER",
+                "value": "cazuela de camarón",
+                "branches": []
+              }
+            }
+          ]
+        }
+      },
+      {
+        "action": "send",
+        "date": "2027-03-09",
+        "text": "Ya me mudé. ¿Qué prefiero para cenar hoy?",
+        "expect": {
+          "writes": [],
+          "probes": [
+            {
+              "query": {
+                "attribute": "dinner_preference",
+                "date": "2027-03-09",
+                "session_id": "S2",
+                "context": null
+              },
+              "expected": {
+                "mode": "ANSWER",
+                "value": "cazuela de camarón",
+                "branches": []
+              }
+            }
+          ],
+          "reply": {
+            "kind": "recall",
+            "values": [
+              "cazuela de camarón"
+            ],
+            "evidence_ids": [
+              "m2"
+            ]
+          }
+        }
+      },
+      {
+        "action": "new_session",
+        "date": "2027-03-19",
+        "expect": {
+          "writes": [],
+          "probes": [
+            {
+              "query": {
+                "attribute": "dinner_preference",
+                "date": "2027-03-19",
+                "session_id": "S3",
+                "context": null
+              },
+              "expected": {
+                "mode": "ANSWER",
+                "value": "cazuela de camarón",
+                "branches": []
+              }
+            }
+          ]
+        }
+      },
+      {
+        "action": "send",
+        "date": "2027-03-19",
+        "text": "Estoy organizando la compra de esta semana. ¿Qué recuerdas que prefiero cenar?",
+        "expect": {
+          "writes": [],
+          "probes": [
+            {
+              "query": {
+                "attribute": "dinner_preference",
+                "date": "2027-03-19",
+                "session_id": "S3",
+                "context": null
+              },
+              "expected": {
+                "mode": "ANSWER",
+                "value": "cazuela de camarón",
+                "branches": []
+              }
+            }
+          ],
+          "reply": {
+            "kind": "recall",
+            "values": [
+              "cazuela de camarón"
+            ],
+            "evidence_ids": [
+              "m2"
+            ]
+          }
+        }
+      }
+    ]
+  },
+  {
+    "id": "qa-habitual-con-excepcion-activa",
+    "family": "permanente_mas_excepcion",
+    "initial_memory": [
+      {
+        "attribute": "dinner_preference",
+        "value": "menestra con arroz",
+        "scope": {
+          "kind": "ongoing",
+          "session_id": null,
+          "context": null,
+          "valid_from": "2026-12-17",
+          "valid_until_exclusive": null
+        },
+        "status": "confirmed",
+        "supersedes": [],
+        "memory_id": "base",
+        "source_turn_ids": [
+          "archivo_base"
+        ],
+        "evidence_quotes": [
+          {
+            "turn_id": "archivo_base",
+            "text": "Me quedo con menestra con arroz de forma habitual."
+          }
+        ],
+        "recorded_at": "2026-12-17"
+      },
+      {
+        "attribute": "dinner_preference",
+        "value": "puré de verde",
+        "scope": {
+          "kind": "interval",
+          "session_id": null,
+          "context": null,
+          "valid_from": "2027-03-15",
+          "valid_until_exclusive": "2027-03-17"
+        },
+        "status": "confirmed",
+        "supersedes": [],
+        "memory_id": "excepcion",
+        "source_turn_ids": [
+          "archivo_excepcion"
+        ],
+        "evidence_quotes": [
+          {
+            "turn_id": "archivo_excepcion",
+            "text": "Para cenar el 15 y 16 de marzo prefiero puré de verde."
+          }
+        ],
+        "recorded_at": "2026-12-17"
+      }
+    ],
+    "steps": [
+      {
+        "action": "send",
+        "date": "2027-03-15",
+        "text": "De ahora en adelante, para cenar prefiero fideos al ajillo de forma habitual. La excepción que anoté por dos días se mantiene.",
+        "expect": {
+          "writes": [
+            {
+              "attribute": "dinner_preference",
+              "value": "fideos al ajillo",
+              "scope": {
+                "kind": "ongoing",
+                "session_id": null,
+                "context": null,
+                "valid_from": "2027-03-15",
+                "valid_until_exclusive": null
+              },
+              "status": "confirmed",
+              "supersedes": [
+                "base"
+              ],
+              "source_turn_ids": [
+                "u1_1"
+              ]
+            }
+          ],
+          "probes": [
+            {
+              "query": {
+                "attribute": "dinner_preference",
+                "date": "2027-03-15",
+                "session_id": "S1",
+                "context": null
+              },
+              "expected": {
+                "mode": "ANSWER",
+                "value": "puré de verde",
+                "branches": []
+              }
+            },
+            {
+              "query": {
+                "attribute": "dinner_preference",
+                "date": "2027-03-17",
+                "session_id": "S3",
+                "context": null
+              },
+              "expected": {
+                "mode": "ANSWER",
+                "value": "fideos al ajillo",
+                "branches": []
+              }
+            }
+          ]
+        }
+      },
+      {
+        "action": "new_session",
+        "date": "2027-03-15",
+        "expect": {
+          "writes": [],
+          "probes": [
+            {
+              "query": {
+                "attribute": "dinner_preference",
+                "date": "2027-03-15",
+                "session_id": "S2",
+                "context": null
+              },
+              "expected": {
+                "mode": "ANSWER",
+                "value": "puré de verde",
+                "branches": []
+              }
+            }
+          ]
+        }
+      },
+      {
+        "action": "send",
+        "date": "2027-03-15",
+        "text": "Mientras aplica la excepción, ¿qué prefiero para cenar hoy?",
+        "expect": {
+          "writes": [],
+          "probes": [
+            {
+              "query": {
+                "attribute": "dinner_preference",
+                "date": "2027-03-15",
+                "session_id": "S2",
+                "context": null
+              },
+              "expected": {
+                "mode": "ANSWER",
+                "value": "puré de verde",
+                "branches": []
+              }
+            }
+          ],
+          "reply": {
+            "kind": "recall",
+            "values": [
+              "puré de verde"
+            ],
+            "evidence_ids": [
+              "excepcion"
+            ]
+          }
+        }
+      },
+      {
+        "action": "new_session",
+        "date": "2027-03-17",
+        "expect": {
+          "writes": [],
+          "probes": [
+            {
+              "query": {
+                "attribute": "dinner_preference",
+                "date": "2027-03-17",
+                "session_id": "S3",
+                "context": null
+              },
+              "expected": {
+                "mode": "ANSWER",
+                "value": "fideos al ajillo",
+                "branches": []
+              }
+            }
+          ]
+        }
+      },
+      {
+        "action": "send",
+        "date": "2027-03-17",
+        "text": "Ya terminó la excepción anotada. ¿Qué prefiero para cenar ahora?",
+        "expect": {
+          "writes": [],
+          "probes": [
+            {
+              "query": {
+                "attribute": "dinner_preference",
+                "date": "2027-03-17",
+                "session_id": "S3",
+                "context": null
+              },
+              "expected": {
+                "mode": "ANSWER",
+                "value": "fideos al ajillo",
+                "branches": []
+              }
+            }
+          ],
+          "reply": {
+            "kind": "recall",
+            "values": [
+              "fideos al ajillo"
+            ],
+            "evidence_ids": [
+              "m3"
+            ]
+          }
+        }
+      }
+    ]
+  },
+  {
+    "id": "qa-respuesta-solo-hilo",
+    "family": "aclaracion_resuelta",
+    "initial_memory": [
+      {
+        "attribute": "dinner_preference",
+        "value": "sopa de cebolla",
+        "scope": {
+          "kind": "ongoing",
+          "session_id": null,
+          "context": null,
+          "valid_from": "2026-12-17",
+          "valid_until_exclusive": null
+        },
+        "status": "confirmed",
+        "supersedes": [],
+        "memory_id": "base",
+        "source_turn_ids": [
+          "archivo_base"
+        ],
+        "evidence_quotes": [
+          {
+            "turn_id": "archivo_base",
+            "text": "Para cenar normalmente prefiero sopa de cebolla."
+          }
+        ],
+        "recorded_at": "2026-12-17"
+      }
+    ],
+    "steps": [
+      {
+        "action": "send",
+        "date": "2027-03-20",
+        "text": "Ultimamente para cenar prefiero pastel de yuca.",
+        "expect": {
+          "writes": [],
+          "probes": [
+            {
+              "query": {
+                "attribute": "dinner_preference",
+                "date": "2027-03-20",
+                "session_id": "S1",
+                "context": null
+              },
+              "expected": {
+                "mode": "ANSWER",
+                "value": "sopa de cebolla",
+                "branches": []
+              }
+            }
+          ],
+          "reply": {
+            "kind": "ask",
+            "slots": [
+              "TEMPORAL_SCOPE"
+            ]
+          }
+        }
+      },
+      {
+        "action": "send",
+        "date": "2027-03-20",
+        "text": "Solo en esta conversación. La próxima vez vuelvo a mi cena de siempre.",
+        "expect": {
+          "writes": [
+            {
+              "attribute": "dinner_preference",
+              "value": "pastel de yuca",
+              "scope": {
+                "kind": "session",
+                "session_id": "S1",
+                "context": null,
+                "valid_from": "2027-03-20",
+                "valid_until_exclusive": null
+              },
+              "status": "confirmed",
+              "supersedes": [],
+              "source_turn_ids": [
+                "u1_1",
+                "u1_3"
+              ]
+            }
+          ],
+          "probes": [
+            {
+              "query": {
+                "attribute": "dinner_preference",
+                "date": "2027-03-20",
+                "session_id": "S1",
+                "context": null
+              },
+              "expected": {
+                "mode": "ANSWER",
+                "value": "pastel de yuca",
+                "branches": []
+              }
+            },
+            {
+              "query": {
+                "attribute": "dinner_preference",
+                "date": "2027-03-20",
+                "session_id": "S2",
+                "context": null
+              },
+              "expected": {
+                "mode": "ANSWER",
+                "value": "sopa de cebolla",
+                "branches": []
+              }
+            }
+          ]
+        }
+      },
+      {
+        "action": "send",
+        "date": "2027-03-20",
+        "text": "Antes de salir, ¿qué prefiero cenar en esta conversación?",
+        "expect": {
+          "writes": [],
+          "probes": [
+            {
+              "query": {
+                "attribute": "dinner_preference",
+                "date": "2027-03-20",
+                "session_id": "S1",
+                "context": null
+              },
+              "expected": {
+                "mode": "ANSWER",
+                "value": "pastel de yuca",
+                "branches": []
+              }
+            }
+          ],
+          "reply": {
+            "kind": "recall",
+            "values": [
+              "pastel de yuca"
+            ],
+            "evidence_ids": [
+              "m2"
+            ]
+          }
+        }
+      },
+      {
+        "action": "new_session",
+        "date": "2027-03-20",
+        "expect": {
+          "writes": [],
+          "probes": [
+            {
+              "query": {
+                "attribute": "dinner_preference",
+                "date": "2027-03-20",
+                "session_id": "S2",
+                "context": null
+              },
+              "expected": {
+                "mode": "ANSWER",
+                "value": "sopa de cebolla",
+                "branches": []
+              }
+            }
+          ]
+        }
+      },
+      {
+        "action": "send",
+        "date": "2027-03-20",
+        "text": "Me pasé de conversación. ¿Qué prefiero para cenar en este hilo?",
+        "expect": {
+          "writes": [],
+          "probes": [
+            {
+              "query": {
+                "attribute": "dinner_preference",
+                "date": "2027-03-20",
+                "session_id": "S2",
+                "context": null
+              },
+              "expected": {
+                "mode": "ANSWER",
+                "value": "sopa de cebolla",
+                "branches": []
+              }
+            }
+          ],
+          "reply": {
+            "kind": "recall",
+            "values": [
+              "sopa de cebolla"
+            ],
+            "evidence_ids": [
+              "base"
+            ]
+          }
+        }
+      }
+    ]
+  },
+  {
+    "id": "qa-limite-preguntado",
+    "family": "aclaracion_resuelta",
+    "initial_memory": [
+      {
+        "attribute": "drink_preference",
+        "value": "agua de cedrón",
+        "scope": {
+          "kind": "ongoing",
+          "session_id": null,
+          "context": null,
+          "valid_from": "2026-12-17",
+          "valid_until_exclusive": null
+        },
+        "status": "confirmed",
+        "supersedes": [],
+        "memory_id": "base",
+        "source_turn_ids": [
+          "archivo_base"
+        ],
+        "evidence_quotes": [
+          {
+            "turn_id": "archivo_base",
+            "text": "Lo mío para beber de forma habitual es agua de cedrón, siempre que haya."
+          }
+        ],
+        "recorded_at": "2026-12-17"
+      }
+    ],
+    "steps": [
+      {
+        "action": "send",
+        "date": "2027-03-23",
+        "text": "Para beber prefiero horchata hasta mañana.",
+        "expect": {
+          "writes": [],
+          "probes": [
+            {
+              "query": {
+                "attribute": "drink_preference",
+                "date": "2027-03-23",
+                "session_id": "S1",
+                "context": null
+              },
+              "expected": {
+                "mode": "ANSWER",
+                "value": "agua de cedrón",
+                "branches": []
+              }
+            }
+          ],
+          "reply": {
+            "kind": "ask",
+            "slots": [
+              "VALID_UNTIL"
+            ]
+          }
+        }
+      },
+      {
+        "action": "send",
+        "date": "2027-03-23",
+        "text": "Sí, hasta mañana inclusive. Todo el día de mañana.",
+        "expect": {
+          "writes": [
+            {
+              "attribute": "drink_preference",
+              "value": "horchata",
+              "scope": {
+                "kind": "interval",
+                "session_id": null,
+                "context": null,
+                "valid_from": "2027-03-23",
+                "valid_until_exclusive": "2027-03-25"
+              },
+              "status": "confirmed",
+              "supersedes": [],
+              "source_turn_ids": [
+                "u1_1",
+                "u1_3"
+              ]
+            }
+          ],
+          "probes": [
+            {
+              "query": {
+                "attribute": "drink_preference",
+                "date": "2027-03-23",
+                "session_id": "S1",
+                "context": null
+              },
+              "expected": {
+                "mode": "ANSWER",
+                "value": "horchata",
+                "branches": []
+              }
+            },
+            {
+              "query": {
+                "attribute": "drink_preference",
+                "date": "2027-03-24",
+                "session_id": "S2",
+                "context": null
+              },
+              "expected": {
+                "mode": "ANSWER",
+                "value": "horchata",
+                "branches": []
+              }
+            },
+            {
+              "query": {
+                "attribute": "drink_preference",
+                "date": "2027-03-25",
+                "session_id": "S3",
+                "context": null
+              },
+              "expected": {
+                "mode": "ANSWER",
+                "value": "agua de cedrón",
+                "branches": []
+              }
+            }
+          ]
+        }
+      },
+      {
+        "action": "new_session",
+        "date": "2027-03-24",
+        "expect": {
+          "writes": [],
+          "probes": [
+            {
+              "query": {
+                "attribute": "drink_preference",
+                "date": "2027-03-24",
+                "session_id": "S2",
+                "context": null
+              },
+              "expected": {
+                "mode": "ANSWER",
+                "value": "horchata",
+                "branches": []
+              }
+            }
+          ]
+        }
+      },
+      {
+        "action": "send",
+        "date": "2027-03-24",
+        "text": "En el último día cubierto, ¿qué bebida prefiero hoy?",
+        "expect": {
+          "writes": [],
+          "probes": [
+            {
+              "query": {
+                "attribute": "drink_preference",
+                "date": "2027-03-24",
+                "session_id": "S2",
+                "context": null
+              },
+              "expected": {
+                "mode": "ANSWER",
+                "value": "horchata",
+                "branches": []
+              }
+            }
+          ],
+          "reply": {
+            "kind": "recall",
+            "values": [
+              "horchata"
+            ],
+            "evidence_ids": [
+              "m2"
+            ]
+          }
+        }
+      },
+      {
+        "action": "new_session",
+        "date": "2027-03-25",
+        "expect": {
+          "writes": [],
+          "probes": [
+            {
+              "query": {
+                "attribute": "drink_preference",
+                "date": "2027-03-25",
+                "session_id": "S3",
+                "context": null
+              },
+              "expected": {
+                "mode": "ANSWER",
+                "value": "agua de cedrón",
+                "branches": []
+              }
+            }
+          ]
+        }
+      },
+      {
+        "action": "send",
+        "date": "2027-03-25",
+        "text": "El plazo ya pasó. ¿Qué prefiero para beber hoy?",
+        "expect": {
+          "writes": [],
+          "probes": [
+            {
+              "query": {
+                "attribute": "drink_preference",
+                "date": "2027-03-25",
+                "session_id": "S3",
+                "context": null
+              },
+              "expected": {
+                "mode": "ANSWER",
+                "value": "agua de cedrón",
+                "branches": []
+              }
+            }
+          ],
+          "reply": {
+            "kind": "recall",
+            "values": [
+              "agua de cedrón"
+            ],
+            "evidence_ids": [
+              "base"
+            ]
+          }
+        }
+      }
+    ]
+  },
+  {
+    "id": "qa-horario-no-decidido",
+    "family": "aclaracion_no_resuelta",
+    "initial_memory": [
+      {
+        "attribute": "breakfast_preference",
+        "value": "tortilla de maíz",
+        "scope": {
+          "kind": "ongoing",
+          "session_id": null,
+          "context": null,
+          "valid_from": "2026-12-17",
+          "valid_until_exclusive": null
+        },
+        "status": "confirmed",
+        "supersedes": [],
+        "memory_id": "base",
+        "source_turn_ids": [
+          "archivo_base"
+        ],
+        "evidence_quotes": [
+          {
+            "turn_id": "archivo_base",
+            "text": "En general, mi preferencia habitual para desayunar es tortilla de maíz."
+          }
+        ],
+        "recorded_at": "2026-12-17"
+      }
+    ],
+    "steps": [
+      {
+        "action": "send",
+        "date": "2027-03-29",
+        "text": "En el desayuno ahora mismo prefiero arepa de yuca. Ando cambiando de rutina.",
+        "expect": {
+          "writes": [],
+          "probes": [
+            {
+              "query": {
+                "attribute": "breakfast_preference",
+                "date": "2027-03-29",
+                "session_id": "S1",
+                "context": null
+              },
+              "expected": {
+                "mode": "ANSWER",
+                "value": "tortilla de maíz",
+                "branches": []
+              }
+            }
+          ],
+          "reply": {
+            "kind": "ask",
+            "slots": [
+              "TEMPORAL_SCOPE"
+            ]
+          }
+        }
+      },
+      {
+        "action": "send",
+        "date": "2027-03-29",
+        "text": "No puedo precisar la duración. Estoy esperando el horario del trabajo.",
+        "expect": {
+          "writes": [],
+          "probes": [
+            {
+              "query": {
+                "attribute": "breakfast_preference",
+                "date": "2027-03-29",
+                "session_id": "S1",
+                "context": null
+              },
+              "expected": {
+                "mode": "ANSWER",
+                "value": "tortilla de maíz",
+                "branches": []
+              }
+            }
+          ],
+          "reply": {
+            "kind": "uncertain",
+            "values": [
+              "tortilla de maíz",
+              "arepa de yuca"
+            ]
+          }
+        }
+      },
+      {
+        "action": "new_session",
+        "date": "2027-03-30",
+        "expect": {
+          "writes": [],
+          "probes": [
+            {
+              "query": {
+                "attribute": "breakfast_preference",
+                "date": "2027-03-30",
+                "session_id": "S2",
+                "context": null
+              },
+              "expected": {
+                "mode": "ANSWER",
+                "value": "tortilla de maíz",
+                "branches": []
+              }
+            }
+          ]
+        }
+      },
+      {
+        "action": "send",
+        "date": "2027-03-30",
+        "text": "¿Cuál era mi preferencia confirmada para desayunar?",
+        "expect": {
+          "writes": [],
+          "probes": [
+            {
+              "query": {
+                "attribute": "breakfast_preference",
+                "date": "2027-03-30",
+                "session_id": "S2",
+                "context": null
+              },
+              "expected": {
+                "mode": "ANSWER",
+                "value": "tortilla de maíz",
+                "branches": []
+              }
+            }
+          ],
+          "reply": {
+            "kind": "recall",
+            "values": [
+              "tortilla de maíz"
+            ],
+            "evidence_ids": [
+              "base"
+            ]
+          }
+        }
+      }
+    ]
+  },
+  {
+    "id": "qa-oficina-una-noche",
+    "family": "alcance_combinado",
+    "initial_memory": [
+      {
+        "attribute": "dinner_preference",
+        "value": "arroz con choclo",
+        "scope": {
+          "kind": "ongoing",
+          "session_id": null,
+          "context": null,
+          "valid_from": "2026-12-17",
+          "valid_until_exclusive": null
+        },
+        "status": "confirmed",
+        "supersedes": [],
+        "memory_id": "base",
+        "source_turn_ids": [
+          "archivo_base"
+        ],
+        "evidence_quotes": [
+          {
+            "turn_id": "archivo_base",
+            "text": "En general prefiero arroz con choclo para la cena."
+          }
+        ],
+        "recorded_at": "2026-12-17"
+      }
+    ],
+    "steps": [
+      {
+        "action": "send",
+        "date": "2027-04-01",
+        "text": "Para la cena en la oficina prefiero sopa de arveja, solo por hoy. Es una cena de cierre.",
+        "expect": {
+          "writes": [
+            {
+              "attribute": "dinner_preference",
+              "value": "sopa de arveja",
+              "scope": {
+                "kind": "contextual",
+                "session_id": null,
+                "context": "oficina",
+                "valid_from": "2027-04-01",
+                "valid_until_exclusive": "2027-04-02"
+              },
+              "status": "confirmed",
+              "supersedes": [],
+              "source_turn_ids": [
+                "u1_1"
+              ]
+            }
+          ],
+          "probes": [
+            {
+              "query": {
+                "attribute": "dinner_preference",
+                "date": "2027-04-01",
+                "session_id": "S1",
+                "context": "oficina"
+              },
+              "expected": {
+                "mode": "ANSWER",
+                "value": "sopa de arveja",
+                "branches": []
+              }
+            },
+            {
+              "query": {
+                "attribute": "dinner_preference",
+                "date": "2027-04-01",
+                "session_id": "S1",
+                "context": "casa"
+              },
+              "expected": {
+                "mode": "ANSWER",
+                "value": "arroz con choclo",
+                "branches": []
+              }
+            },
+            {
+              "query": {
+                "attribute": "dinner_preference",
+                "date": "2027-04-02",
+                "session_id": "S3",
+                "context": "oficina"
+              },
+              "expected": {
+                "mode": "ANSWER",
+                "value": "arroz con choclo",
+                "branches": []
+              }
+            }
+          ]
+        }
+      },
+      {
+        "action": "new_session",
+        "date": "2027-04-01",
+        "expect": {
+          "writes": [],
+          "probes": [
+            {
+              "query": {
+                "attribute": "dinner_preference",
+                "date": "2027-04-01",
+                "session_id": "S2",
+                "context": "oficina"
+              },
+              "expected": {
+                "mode": "ANSWER",
+                "value": "sopa de arveja",
+                "branches": []
+              }
+            }
+          ]
+        }
+      },
+      {
+        "action": "send",
+        "date": "2027-04-01",
+        "text": "Estoy en la oficina. ¿Qué prefiero cenar aquí hoy?",
+        "expect": {
+          "writes": [],
+          "probes": [
+            {
+              "query": {
+                "attribute": "dinner_preference",
+                "date": "2027-04-01",
+                "session_id": "S2",
+                "context": "oficina"
+              },
+              "expected": {
+                "mode": "ANSWER",
+                "value": "sopa de arveja",
+                "branches": []
+              }
+            }
+          ],
+          "reply": {
+            "kind": "recall",
+            "values": [
+              "sopa de arveja"
+            ],
+            "evidence_ids": [
+              "m2"
+            ]
+          }
+        }
+      },
+      {
+        "action": "send",
+        "date": "2027-04-01",
+        "text": "Ahora estoy en casa. ¿Qué prefiero para la cena aquí hoy?",
+        "expect": {
+          "writes": [],
+          "probes": [
+            {
+              "query": {
+                "attribute": "dinner_preference",
+                "date": "2027-04-01",
+                "session_id": "S2",
+                "context": "casa"
+              },
+              "expected": {
+                "mode": "ANSWER",
+                "value": "arroz con choclo",
+                "branches": []
+              }
+            }
+          ],
+          "reply": {
+            "kind": "recall",
+            "values": [
+              "arroz con choclo"
+            ],
+            "evidence_ids": [
+              "base"
+            ]
+          }
+        }
+      },
+      {
+        "action": "new_session",
+        "date": "2027-04-02",
+        "expect": {
+          "writes": [],
+          "probes": [
+            {
+              "query": {
+                "attribute": "dinner_preference",
+                "date": "2027-04-02",
+                "session_id": "S3",
+                "context": "oficina"
+              },
+              "expected": {
+                "mode": "ANSWER",
+                "value": "arroz con choclo",
+                "branches": []
+              }
+            }
+          ]
+        }
+      },
+      {
+        "action": "send",
+        "date": "2027-04-02",
+        "text": "Volví a la oficina. Hoy estoy en la oficina. ¿Qué prefiero para cenar?",
+        "expect": {
+          "writes": [],
+          "probes": [
+            {
+              "query": {
+                "attribute": "dinner_preference",
+                "date": "2027-04-02",
+                "session_id": "S3",
+                "context": "oficina"
+              },
+              "expected": {
+                "mode": "ANSWER",
+                "value": "arroz con choclo",
+                "branches": []
+              }
+            }
+          ],
+          "reply": {
+            "kind": "recall",
+            "values": [
+              "arroz con choclo"
+            ],
+            "evidence_ids": [
+              "base"
+            ]
+          }
+        }
+      }
+    ]
+  },
+  {
+    "id": "qa-reunion-remota-o-presencial",
+    "family": "contexto_pendiente",
+    "initial_memory": [
+      {
+        "attribute": "dinner_preference",
+        "value": "sopa de quinua",
+        "scope": {
+          "kind": "ongoing",
+          "session_id": null,
+          "context": null,
+          "valid_from": "2026-12-17",
+          "valid_until_exclusive": null
+        },
+        "status": "confirmed",
+        "supersedes": [],
+        "memory_id": "base",
+        "source_turn_ids": [
+          "archivo_base"
+        ],
+        "evidence_quotes": [
+          {
+            "turn_id": "archivo_base",
+            "text": "De forma habitual para cenar prefiero sopa de quinua."
+          }
+        ],
+        "recorded_at": "2026-12-17"
+      },
+      {
+        "attribute": "dinner_preference",
+        "value": "empanada de verde",
+        "scope": {
+          "kind": "contextual",
+          "session_id": null,
+          "context": "oficina",
+          "valid_from": "2026-12-17",
+          "valid_until_exclusive": null
+        },
+        "status": "confirmed",
+        "supersedes": [],
+        "memory_id": "oficina",
+        "source_turn_ids": [
+          "archivo_oficina"
+        ],
+        "evidence_quotes": [
+          {
+            "turn_id": "archivo_oficina",
+            "text": "Cuando estoy en la oficina, para cenar prefiero empanada de verde de forma habitual."
+          }
+        ],
+        "recorded_at": "2026-12-17"
+      }
+    ],
+    "steps": [
+      {
+        "action": "send",
+        "date": "2027-04-04",
+        "text": "¿Qué recuerdas sobre qué prefiero para cenar? Aún no sé dónde estaré.",
+        "expect": {
+          "writes": [],
+          "probes": [
+            {
+              "query": {
+                "attribute": "dinner_preference",
+                "date": "2027-04-04",
+                "session_id": "S1",
+                "context": null
+              },
+              "expected": {
+                "mode": "CONDITIONALIZE",
+                "value": null,
+                "branches": [
+                  "empanada de verde",
+                  "sopa de quinua"
+                ]
+              }
+            }
+          ],
+          "reply": {
+            "kind": "uncertain",
+            "values": [
+              "empanada de verde",
+              "sopa de quinua"
+            ]
+          }
+        }
+      },
+      {
+        "action": "new_session",
+        "date": "2027-04-04",
+        "expect": {
+          "writes": [],
+          "probes": [
+            {
+              "query": {
+                "attribute": "dinner_preference",
+                "date": "2027-04-04",
+                "session_id": "S2",
+                "context": "oficina"
+              },
+              "expected": {
+                "mode": "ANSWER",
+                "value": "empanada de verde",
+                "branches": []
+              }
+            }
+          ]
+        }
+      },
+      {
+        "action": "send",
+        "date": "2027-04-04",
+        "text": "Al final estoy en la oficina. ¿Qué prefiero cenar en este lugar?",
+        "expect": {
+          "writes": [],
+          "probes": [
+            {
+              "query": {
+                "attribute": "dinner_preference",
+                "date": "2027-04-04",
+                "session_id": "S2",
+                "context": "oficina"
+              },
+              "expected": {
+                "mode": "ANSWER",
+                "value": "empanada de verde",
+                "branches": []
+              }
+            }
+          ],
+          "reply": {
+            "kind": "recall",
+            "values": [
+              "empanada de verde"
+            ],
+            "evidence_ids": [
+              "oficina"
+            ]
+          }
+        }
+      },
+      {
+        "action": "send",
+        "date": "2027-04-04",
+        "text": "Ya estoy en casa. ¿Qué recuerdas de lo que prefiero cenar aquí?",
+        "expect": {
+          "writes": [],
+          "probes": [
+            {
+              "query": {
+                "attribute": "dinner_preference",
+                "date": "2027-04-04",
+                "session_id": "S2",
+                "context": "casa"
+              },
+              "expected": {
+                "mode": "ANSWER",
+                "value": "sopa de quinua",
+                "branches": []
+              }
+            }
+          ],
+          "reply": {
+            "kind": "recall",
+            "values": [
+              "sopa de quinua"
+            ],
+            "evidence_ids": [
+              "base"
+            ]
+          }
+        }
+      }
+    ]
+  },
+  {
+    "id": "qa-mensaje-del-companero",
+    "family": "no_atribuir_a_terceros",
+    "initial_memory": [
+      {
+        "attribute": "dinner_preference",
+        "value": "papa con queso",
+        "scope": {
+          "kind": "ongoing",
+          "session_id": null,
+          "context": null,
+          "valid_from": "2026-12-17",
+          "valid_until_exclusive": null
+        },
+        "status": "confirmed",
+        "supersedes": [],
+        "memory_id": "cena",
+        "source_turn_ids": [
+          "archivo_cena"
+        ],
+        "evidence_quotes": [
+          {
+            "turn_id": "archivo_cena",
+            "text": "Para la cena prefiero papa con queso de forma habitual."
+          }
+        ],
+        "recorded_at": "2026-12-17"
+      },
+      {
+        "attribute": "drink_preference",
+        "value": "agua de tamarindo",
+        "scope": {
+          "kind": "ongoing",
+          "session_id": null,
+          "context": null,
+          "valid_from": "2026-12-17",
+          "valid_until_exclusive": null
+        },
+        "status": "confirmed",
+        "supersedes": [],
+        "memory_id": "bebida",
+        "source_turn_ids": [
+          "archivo_bebida"
+        ],
+        "evidence_quotes": [
+          {
+            "turn_id": "archivo_bebida",
+            "text": "Prefiero agua de tamarindo como bebida de todos los días."
+          }
+        ],
+        "recorded_at": "2026-12-17"
+      }
+    ],
+    "steps": [
+      {
+        "action": "send",
+        "date": "2027-04-09",
+        "text": "Mi compañero escribió «para cenar prefiero carne estofada desde hoy». Es su mensaje. ¿Qué recuerdas que prefiero yo para la cena?",
+        "expect": {
+          "writes": [],
+          "probes": [
+            {
+              "query": {
+                "attribute": "dinner_preference",
+                "date": "2027-04-09",
+                "session_id": "S1",
+                "context": null
+              },
+              "expected": {
+                "mode": "ANSWER",
+                "value": "papa con queso",
+                "branches": []
+              }
+            },
+            {
+              "query": {
+                "attribute": "drink_preference",
+                "date": "2027-04-09",
+                "session_id": "S1",
+                "context": null
+              },
+              "expected": {
+                "mode": "ANSWER",
+                "value": "agua de tamarindo",
+                "branches": []
+              }
+            }
+          ],
+          "reply": {
+            "kind": "recall",
+            "values": [
+              "papa con queso"
+            ],
+            "evidence_ids": [
+              "cena"
+            ]
+          }
+        }
+      },
+      {
+        "action": "new_session",
+        "date": "2027-04-10",
+        "expect": {
+          "writes": [],
+          "probes": [
+            {
+              "query": {
+                "attribute": "dinner_preference",
+                "date": "2027-04-10",
+                "session_id": "S2",
+                "context": null
+              },
+              "expected": {
+                "mode": "ANSWER",
+                "value": "papa con queso",
+                "branches": []
+              }
+            }
+          ]
+        }
+      },
+      {
+        "action": "send",
+        "date": "2027-04-10",
+        "text": "Retomemos mi propia cena. ¿Qué prefiero cenar de forma habitual?",
+        "expect": {
+          "writes": [],
+          "probes": [
+            {
+              "query": {
+                "attribute": "dinner_preference",
+                "date": "2027-04-10",
+                "session_id": "S2",
+                "context": null
+              },
+              "expected": {
+                "mode": "ANSWER",
+                "value": "papa con queso",
+                "branches": []
+              }
+            }
+          ],
+          "reply": {
+            "kind": "recall",
+            "values": [
+              "papa con queso"
+            ],
+            "evidence_ids": [
+              "cena"
+            ]
+          }
+        }
+      },
+      {
+        "action": "send",
+        "date": "2027-04-10",
+        "text": "Y de la otra cosa que anoté, ¿qué prefiero para beber?",
+        "expect": {
+          "writes": [],
+          "probes": [
+            {
+              "query": {
+                "attribute": "drink_preference",
+                "date": "2027-04-10",
+                "session_id": "S2",
+                "context": null
+              },
+              "expected": {
+                "mode": "ANSWER",
+                "value": "agua de tamarindo",
+                "branches": []
+              }
+            }
+          ],
+          "reply": {
+            "kind": "recall",
+            "values": [
+              "agua de tamarindo"
+            ],
+            "evidence_ids": [
+              "bebida"
+            ]
+          }
+        }
+      }
+    ]
+  },
+  {
+    "id": "qa-solo-hay-cena",
+    "family": "abstencion_sin_evidencia",
+    "initial_memory": [
+      {
+        "attribute": "dinner_preference",
+        "value": "mellocos con queso",
+        "scope": {
+          "kind": "ongoing",
+          "session_id": null,
+          "context": null,
+          "valid_from": "2026-12-17",
+          "valid_until_exclusive": null
+        },
+        "status": "confirmed",
+        "supersedes": [],
+        "memory_id": "cena",
+        "source_turn_ids": [
+          "archivo_cena"
+        ],
+        "evidence_quotes": [
+          {
+            "turn_id": "archivo_cena",
+            "text": "En la cena prefiero mellocos con queso, es mi gusto de siempre."
+          }
+        ],
+        "recorded_at": "2026-12-17"
+      },
+      {
+        "attribute": "breakfast_preference",
+        "value": "pan con dulce",
+        "scope": {
+          "kind": "interval",
+          "session_id": null,
+          "context": null,
+          "valid_from": "2026-12-18",
+          "valid_until_exclusive": "2026-12-19"
+        },
+        "status": "confirmed",
+        "supersedes": [],
+        "memory_id": "desayuno_antiguo",
+        "source_turn_ids": [
+          "archivo_desayuno_antiguo"
+        ],
+        "evidence_quotes": [
+          {
+            "turn_id": "archivo_desayuno_antiguo",
+            "text": "En diciembre, solo preferí pan con dulce para el desayuno el día 18."
+          }
+        ],
+        "recorded_at": "2026-12-17"
+      }
+    ],
+    "steps": [
+      {
+        "action": "send",
+        "date": "2027-04-13",
+        "text": "¿Qué recuerdas que prefiero para desayunar hoy?",
+        "expect": {
+          "writes": [],
+          "probes": [
+            {
+              "query": {
+                "attribute": "breakfast_preference",
+                "date": "2027-04-13",
+                "session_id": "S1",
+                "context": null
+              },
+              "expected": {
+                "mode": "DEFER",
+                "value": null,
+                "branches": []
+              }
+            },
+            {
+              "query": {
+                "attribute": "dinner_preference",
+                "date": "2027-04-13",
+                "session_id": "S1",
+                "context": null
+              },
+              "expected": {
+                "mode": "ANSWER",
+                "value": "mellocos con queso",
+                "branches": []
+              }
+            }
+          ],
+          "reply": {
+            "kind": "abstain"
+          }
+        }
+      },
+      {
+        "action": "new_session",
+        "date": "2027-04-13",
+        "expect": {
+          "writes": [],
+          "probes": [
+            {
+              "query": {
+                "attribute": "breakfast_preference",
+                "date": "2027-04-13",
+                "session_id": "S2",
+                "context": null
+              },
+              "expected": {
+                "mode": "DEFER",
+                "value": null,
+                "branches": []
+              }
+            }
+          ]
+        }
+      },
+      {
+        "action": "send",
+        "date": "2027-04-13",
+        "text": "Pruebo desde otro chat. ¿Cuál es mi preferencia de bebida?",
+        "expect": {
+          "writes": [],
+          "probes": [
+            {
+              "query": {
+                "attribute": "drink_preference",
+                "date": "2027-04-13",
+                "session_id": "S2",
+                "context": null
+              },
+              "expected": {
+                "mode": "DEFER",
+                "value": null,
+                "branches": []
+              }
+            }
+          ],
+          "reply": {
+            "kind": "abstain"
+          }
+        }
+      },
+      {
+        "action": "send",
+        "date": "2027-04-13",
+        "text": "Para comprobar el otro recuerdo, ¿qué prefiero para la cena?",
+        "expect": {
+          "writes": [],
+          "probes": [
+            {
+              "query": {
+                "attribute": "dinner_preference",
+                "date": "2027-04-13",
+                "session_id": "S2",
+                "context": null
+              },
+              "expected": {
+                "mode": "ANSWER",
+                "value": "mellocos con queso",
+                "branches": []
+              }
+            }
+          ],
+          "reply": {
+            "kind": "recall",
+            "values": [
+              "mellocos con queso"
+            ],
+            "evidence_ids": [
+              "cena"
+            ]
+          }
+        }
+      }
+    ]
+  },
+  {
+    "id": "qa-fecha-de-consulta-distinta",
+    "family": "consulta_fecha_relative",
+    "initial_memory": [
+      {
+        "attribute": "dinner_preference",
+        "value": "encocado de pescado",
+        "scope": {
+          "kind": "ongoing",
+          "session_id": null,
+          "context": null,
+          "valid_from": "2026-12-17",
+          "valid_until_exclusive": null
+        },
+        "status": "confirmed",
+        "supersedes": [],
+        "memory_id": "base",
+        "source_turn_ids": [
+          "archivo_base"
+        ],
+        "evidence_quotes": [
+          {
+            "turn_id": "archivo_base",
+            "text": "Lo que prefiero para la cena habitualmente es encocado de pescado."
+          }
+        ],
+        "recorded_at": "2026-12-17"
+      },
+      {
+        "attribute": "dinner_preference",
+        "value": "arroz con coco",
+        "scope": {
+          "kind": "interval",
+          "session_id": null,
+          "context": null,
+          "valid_from": "2027-04-18",
+          "valid_until_exclusive": "2027-04-19"
+        },
+        "status": "confirmed",
+        "supersedes": [],
+        "memory_id": "temporal",
+        "source_turn_ids": [
+          "archivo_temporal"
+        ],
+        "evidence_quotes": [
+          {
+            "turn_id": "archivo_temporal",
+            "text": "El 18 de abril de 2027 prefiero arroz con coco para cenar, solo ese día."
+          }
+        ],
+        "recorded_at": "2026-12-17"
+      }
+    ],
+    "steps": [
+      {
+        "action": "send",
+        "date": "2027-04-17",
+        "text": "Mirando mi agenda, ¿qué prefiero para cenar mañana?",
+        "expect": {
+          "writes": [],
+          "probes": [
+            {
+              "query": {
+                "attribute": "dinner_preference",
+                "date": "2027-04-18",
+                "session_id": "S1",
+                "context": null
+              },
+              "expected": {
+                "mode": "ANSWER",
+                "value": "arroz con coco",
+                "branches": []
+              }
+            }
+          ],
+          "reply": {
+            "kind": "recall",
+            "values": [
+              "arroz con coco"
+            ],
+            "evidence_ids": [
+              "temporal"
+            ]
+          }
+        }
+      },
+      {
+        "action": "send",
+        "date": "2027-04-17",
+        "text": "Y mientras tanto, ¿qué prefiero cenar hoy?",
+        "expect": {
+          "writes": [],
+          "probes": [
+            {
+              "query": {
+                "attribute": "dinner_preference",
+                "date": "2027-04-17",
+                "session_id": "S1",
+                "context": null
+              },
+              "expected": {
+                "mode": "ANSWER",
+                "value": "encocado de pescado",
+                "branches": []
+              }
+            }
+          ],
+          "reply": {
+            "kind": "recall",
+            "values": [
+              "encocado de pescado"
+            ],
+            "evidence_ids": [
+              "base"
+            ]
+          }
+        }
+      },
+      {
+        "action": "new_session",
+        "date": "2027-04-18",
+        "expect": {
+          "writes": [],
+          "probes": [
+            {
+              "query": {
+                "attribute": "dinner_preference",
+                "date": "2027-04-18",
+                "session_id": "S2",
+                "context": null
+              },
+              "expected": {
+                "mode": "ANSWER",
+                "value": "arroz con coco",
+                "branches": []
+              }
+            }
+          ]
+        }
+      },
+      {
+        "action": "send",
+        "date": "2027-04-18",
+        "text": "Hola de nuevo. ¿Qué prefiero para cenar el 2027-04-19?",
+        "expect": {
+          "writes": [],
+          "probes": [
+            {
+              "query": {
+                "attribute": "dinner_preference",
+                "date": "2027-04-19",
+                "session_id": "S2",
+                "context": null
+              },
+              "expected": {
+                "mode": "ANSWER",
+                "value": "encocado de pescado",
+                "branches": []
+              }
+            }
+          ],
+          "reply": {
+            "kind": "recall",
+            "values": [
+              "encocado de pescado"
+            ],
+            "evidence_ids": [
+              "base"
+            ]
+          }
+        }
+      }
+    ]
+  }
+]

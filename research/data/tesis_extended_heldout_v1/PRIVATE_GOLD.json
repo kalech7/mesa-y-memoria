@@ -1,0 +1,951 @@
+{
+  "version": "tesis_extended_heldout_v1",
+  "cases": [
+    {
+      "id": "res-01",
+      "family": "partial_and_competing",
+      "visits": [
+        {
+          "visit": 1,
+          "response": {
+            "mode": "ANSWER",
+            "value": "sopa de zapallo"
+          },
+          "new_write": [],
+          "retrieves": [
+            {
+              "attribute": "dinner_preference",
+              "value": "locro de papa",
+              "scope": "ongoing",
+              "valid_from": "2038-06-01",
+              "valid_through_inclusive": null,
+              "context": null,
+              "session_id": null
+            }
+          ]
+        },
+        {
+          "visit": 2,
+          "response": {
+            "mode": "ANSWER",
+            "value": "humita de choclo"
+          },
+          "new_write": [],
+          "retrieves": [
+            {
+              "attribute": "breakfast_preference",
+              "value": "pan de yuca",
+              "scope": "ongoing",
+              "valid_from": "2038-06-01",
+              "valid_through_inclusive": null,
+              "context": null,
+              "session_id": null
+            }
+          ]
+        },
+        {
+          "visit": 3,
+          "response": {
+            "mode": "ANSWER",
+            "value": "agua mineral"
+          },
+          "new_write": [],
+          "retrieves": [
+            {
+              "attribute": "drink_preference",
+              "value": "agua mineral",
+              "scope": "ongoing",
+              "valid_from": "2038-06-01",
+              "valid_through_inclusive": null,
+              "context": null,
+              "session_id": null
+            }
+          ]
+        }
+      ],
+      "author_adjudication": "Los dos cambios pueden usarse hoy. El primero tropieza con poca disponibilidad. El segundo puede requerir las dos aclaraciones y afecta dos consultas posteriores.",
+      "question_opportunities": [
+        {
+          "visit": 1,
+          "slot": "TEMPORAL_SCOPE",
+          "style": "refused",
+          "partial_reply": null,
+          "world_replies": [
+            "Es solo para esta sesión. Luego vuelvo a lo anterior.",
+            "Sí, cámbialo a mi preferencia habitual para las próximas veces."
+          ]
+        },
+        {
+          "visit": 2,
+          "slot": "TEMPORAL_SCOPE",
+          "style": "partial",
+          "partial_reply": "Sé qué me apetece ahora. Me falta confirmar qué haré los demás días.",
+          "world_replies": [
+            "Es solo para esta sesión. Luego vuelvo a lo anterior.",
+            "Pon humita de choclo como mi desayuno habitual."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "res-02",
+      "family": "ready_then_delayed",
+      "visits": [
+        {
+          "visit": 1,
+          "response": {
+            "mode": "ANSWER",
+            "value": "avena con canela"
+          },
+          "new_write": [],
+          "retrieves": [
+            {
+              "attribute": "breakfast_preference",
+              "value": "papaya picada",
+              "scope": "ongoing",
+              "valid_from": "2038-06-01",
+              "valid_through_inclusive": null,
+              "context": null,
+              "session_id": null
+            }
+          ]
+        },
+        {
+          "visit": 2,
+          "response": {
+            "mode": "ANSWER",
+            "value": "verduras al wok"
+          },
+          "new_write": [],
+          "retrieves": [
+            {
+              "attribute": "dinner_preference",
+              "value": "menestra de fréjol",
+              "scope": "ongoing",
+              "valid_from": "2038-06-01",
+              "valid_through_inclusive": null,
+              "context": null,
+              "session_id": null
+            }
+          ]
+        },
+        {
+          "visit": 3,
+          "response": {
+            "mode": "ANSWER",
+            "value": "jugo de guayaba"
+          },
+          "new_write": [],
+          "retrieves": [
+            {
+              "attribute": "drink_preference",
+              "value": "jugo de guayaba",
+              "scope": "ongoing",
+              "valid_from": "2038-06-01",
+              "valid_through_inclusive": null,
+              "context": null,
+              "session_id": null
+            }
+          ]
+        }
+      ],
+      "author_adjudication": "Una pregunta temprana puede rendir más. La respuesta de la segunda visita requiere un seguimiento y la batería de consultas reutiliza más veces el primer atributo.",
+      "question_opportunities": [
+        {
+          "visit": 1,
+          "slot": "TEMPORAL_SCOPE",
+          "style": "direct",
+          "partial_reply": null,
+          "world_replies": [
+            "Es solo para esta sesión. Luego vuelvo a lo anterior.",
+            "Sí, cámbialo a mi preferencia habitual para las próximas veces."
+          ]
+        },
+        {
+          "visit": 2,
+          "slot": "TEMPORAL_SCOPE",
+          "style": "partial",
+          "partial_reply": "Para esta noche está decidido. Para más adelante todavía no puedo fijarlo.",
+          "world_replies": [
+            "Es solo para esta sesión. Luego vuelvo a lo anterior.",
+            "Sí, cámbialo a mi preferencia habitual para las próximas veces."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "res-03",
+      "family": "context_switch",
+      "visits": [
+        {
+          "visit": 1,
+          "response": {
+            "mode": "ANSWER",
+            "value": "agua de cedrón"
+          },
+          "new_write": [
+            {
+              "attribute": "drink_preference",
+              "value": "agua de cedrón",
+              "scope": "contextual",
+              "valid_from": "2038-06-07",
+              "valid_through_inclusive": null,
+              "context": "oficina",
+              "session_id": null
+            }
+          ],
+          "retrieves": [
+            {
+              "attribute": "drink_preference",
+              "value": "agua mineral",
+              "scope": "contextual",
+              "valid_from": "2038-06-01",
+              "valid_through_inclusive": null,
+              "context": "oficina",
+              "session_id": null
+            }
+          ]
+        },
+        {
+          "visit": 2,
+          "response": {
+            "mode": "ANSWER",
+            "value": "infusión de menta"
+          },
+          "new_write": [],
+          "retrieves": [
+            {
+              "attribute": "drink_preference",
+              "value": "infusión de menta",
+              "scope": "contextual",
+              "valid_from": "2038-06-01",
+              "valid_through_inclusive": null,
+              "context": "casa",
+              "session_id": null
+            }
+          ]
+        },
+        {
+          "visit": 3,
+          "response": {
+            "mode": "ANSWER",
+            "value": "agua de cedrón"
+          },
+          "new_write": [],
+          "retrieves": [
+            {
+              "attribute": "drink_preference",
+              "value": "agua de cedrón",
+              "scope": "contextual",
+              "valid_from": "2038-06-07",
+              "valid_through_inclusive": null,
+              "context": "oficina",
+              "session_id": null
+            }
+          ]
+        }
+      ],
+      "author_adjudication": "La escritura de la primera visita solo sustituye el valor en la oficina. Volver a casa o a la oficina cambia qué memoria se recupera sin autorizar otra escritura.",
+      "question_opportunities": []
+    },
+    {
+      "id": "res-04",
+      "family": "inclusive_interval",
+      "visits": [
+        {
+          "visit": 1,
+          "response": {
+            "mode": "ANSWER",
+            "value": "locro de papa"
+          },
+          "new_write": [
+            {
+              "attribute": "dinner_preference",
+              "value": "locro de papa",
+              "scope": "interval",
+              "valid_from": "2038-06-07",
+              "valid_through_inclusive": "2038-06-09",
+              "context": null,
+              "session_id": null
+            }
+          ],
+          "retrieves": [
+            {
+              "attribute": "dinner_preference",
+              "value": "pescado al horno",
+              "scope": "ongoing",
+              "valid_from": "2038-06-01",
+              "valid_through_inclusive": null,
+              "context": null,
+              "session_id": null
+            }
+          ]
+        },
+        {
+          "visit": 2,
+          "response": {
+            "mode": "ANSWER",
+            "value": "locro de papa"
+          },
+          "new_write": [],
+          "retrieves": [
+            {
+              "attribute": "dinner_preference",
+              "value": "locro de papa",
+              "scope": "interval",
+              "valid_from": "2038-06-07",
+              "valid_through_inclusive": "2038-06-09",
+              "context": null,
+              "session_id": null
+            }
+          ]
+        },
+        {
+          "visit": 3,
+          "response": {
+            "mode": "ANSWER",
+            "value": "pescado al horno"
+          },
+          "new_write": [],
+          "retrieves": [
+            {
+              "attribute": "dinner_preference",
+              "value": "pescado al horno",
+              "scope": "ongoing",
+              "valid_from": "2038-06-01",
+              "valid_through_inclusive": null,
+              "context": null,
+              "session_id": null
+            }
+          ]
+        }
+      ],
+      "author_adjudication": "El día 9 se incluye y el día 10 queda fuera. La excepción caduca y queda vigente el valor habitual.",
+      "question_opportunities": []
+    },
+    {
+      "id": "res-05",
+      "family": "third_person",
+      "visits": [
+        {
+          "visit": 1,
+          "response": {
+            "mode": "ANSWER",
+            "value": "tortilla de verde"
+          },
+          "new_write": [],
+          "retrieves": [
+            {
+              "attribute": "breakfast_preference",
+              "value": "tortilla de verde",
+              "scope": "ongoing",
+              "valid_from": "2038-06-01",
+              "valid_through_inclusive": null,
+              "context": null,
+              "session_id": null
+            }
+          ]
+        },
+        {
+          "visit": 2,
+          "response": {
+            "mode": "ANSWER",
+            "value": "café pasado"
+          },
+          "new_write": [],
+          "retrieves": [
+            {
+              "attribute": "drink_preference",
+              "value": "café pasado",
+              "scope": "ongoing",
+              "valid_from": "2038-06-01",
+              "valid_through_inclusive": null,
+              "context": null,
+              "session_id": null
+            }
+          ]
+        },
+        {
+          "visit": 3,
+          "response": {
+            "mode": "ANSWER",
+            "value": "tortilla de verde"
+          },
+          "new_write": [],
+          "retrieves": [
+            {
+              "attribute": "breakfast_preference",
+              "value": "tortilla de verde",
+              "scope": "ongoing",
+              "valid_from": "2038-06-01",
+              "valid_through_inclusive": null,
+              "context": null,
+              "session_id": null
+            }
+          ]
+        }
+      ],
+      "author_adjudication": "Las dos preferencias nuevas corresponden a terceros. El almacén personal del usuario conserva las suyas.",
+      "question_opportunities": []
+    },
+    {
+      "id": "res-06",
+      "family": "explicit_correction",
+      "visits": [
+        {
+          "visit": 1,
+          "response": {
+            "mode": "ANSWER",
+            "value": "estofado de garbanzos"
+          },
+          "new_write": [
+            {
+              "attribute": "dinner_preference",
+              "value": "estofado de garbanzos",
+              "scope": "ongoing",
+              "valid_from": "2038-06-07",
+              "valid_through_inclusive": null,
+              "context": null,
+              "session_id": null
+            }
+          ],
+          "retrieves": [
+            {
+              "attribute": "dinner_preference",
+              "value": "mote con queso",
+              "scope": "ongoing",
+              "valid_from": "2038-06-01",
+              "valid_through_inclusive": null,
+              "context": null,
+              "session_id": null
+            }
+          ]
+        },
+        {
+          "visit": 2,
+          "response": {
+            "mode": "ANSWER",
+            "value": "limonada con hierbabuena"
+          },
+          "new_write": [],
+          "retrieves": [
+            {
+              "attribute": "drink_preference",
+              "value": "limonada con hierbabuena",
+              "scope": "ongoing",
+              "valid_from": "2038-06-01",
+              "valid_through_inclusive": null,
+              "context": null,
+              "session_id": null
+            }
+          ]
+        },
+        {
+          "visit": 3,
+          "response": {
+            "mode": "ANSWER",
+            "value": "estofado de garbanzos"
+          },
+          "new_write": [],
+          "retrieves": [
+            {
+              "attribute": "dinner_preference",
+              "value": "estofado de garbanzos",
+              "scope": "ongoing",
+              "valid_from": "2038-06-07",
+              "valid_through_inclusive": null,
+              "context": null,
+              "session_id": null
+            }
+          ]
+        }
+      ],
+      "author_adjudication": "La rectificación sustituye el habitual desde su fecha. Una excepción expirada y una mención a la prima no autorizan cambios nuevos.",
+      "question_opportunities": []
+    },
+    {
+      "id": "res-07",
+      "family": "future_start",
+      "visits": [
+        {
+          "visit": 1,
+          "response": {
+            "mode": "ANSWER",
+            "value": "tostadas con tomate"
+          },
+          "new_write": [
+            {
+              "attribute": "breakfast_preference",
+              "value": "tamal de maíz",
+              "scope": "ongoing",
+              "valid_from": "2038-06-09",
+              "valid_through_inclusive": null,
+              "context": null,
+              "session_id": null
+            }
+          ],
+          "retrieves": [
+            {
+              "attribute": "breakfast_preference",
+              "value": "tostadas con tomate",
+              "scope": "ongoing",
+              "valid_from": "2038-06-01",
+              "valid_through_inclusive": null,
+              "context": null,
+              "session_id": null
+            }
+          ]
+        },
+        {
+          "visit": 2,
+          "response": {
+            "mode": "ANSWER",
+            "value": "tostadas con tomate"
+          },
+          "new_write": [],
+          "retrieves": [
+            {
+              "attribute": "breakfast_preference",
+              "value": "tostadas con tomate",
+              "scope": "ongoing",
+              "valid_from": "2038-06-01",
+              "valid_through_inclusive": null,
+              "context": null,
+              "session_id": null
+            }
+          ]
+        },
+        {
+          "visit": 3,
+          "response": {
+            "mode": "ANSWER",
+            "value": "tamal de maíz"
+          },
+          "new_write": [],
+          "retrieves": [
+            {
+              "attribute": "breakfast_preference",
+              "value": "tamal de maíz",
+              "scope": "ongoing",
+              "valid_from": "2038-06-09",
+              "valid_through_inclusive": null,
+              "context": null,
+              "session_id": null
+            }
+          ]
+        }
+      ],
+      "author_adjudication": "La autorización de escritura llega el día 7. El valor nuevo entra en vigor el 9 y no debe sustituir el recuerdo aplicable los días 7 y 8.",
+      "question_opportunities": []
+    },
+    {
+      "id": "res-08",
+      "family": "partial_followup",
+      "visits": [
+        {
+          "visit": 1,
+          "response": {
+            "mode": "ANSWER",
+            "value": "jugo de tomate de árbol"
+          },
+          "new_write": [],
+          "retrieves": [
+            {
+              "attribute": "drink_preference",
+              "value": "jugo de maracuyá",
+              "scope": "ongoing",
+              "valid_from": "2038-06-01",
+              "valid_through_inclusive": null,
+              "context": null,
+              "session_id": null
+            }
+          ]
+        },
+        {
+          "visit": 2,
+          "response": {
+            "mode": "ANSWER",
+            "value": "maduros asados"
+          },
+          "new_write": [],
+          "retrieves": [
+            {
+              "attribute": "breakfast_preference",
+              "value": "maduros asados",
+              "scope": "ongoing",
+              "valid_from": "2038-06-01",
+              "valid_through_inclusive": null,
+              "context": null,
+              "session_id": null
+            }
+          ]
+        },
+        {
+          "visit": 3,
+          "response": {
+            "mode": "ANSWER",
+            "value": "tacos de hongos"
+          },
+          "new_write": [],
+          "retrieves": [
+            {
+              "attribute": "dinner_preference",
+              "value": "sopa de zapallo",
+              "scope": "ongoing",
+              "valid_from": "2038-06-01",
+              "valid_through_inclusive": null,
+              "context": null,
+              "session_id": null
+            }
+          ]
+        }
+      ],
+      "author_adjudication": "La respuesta parcial permite servir la bebida actual. El presupuesto compite entre resolver la vigencia de esa bebida y aclarar la cena sobrevenida.",
+      "question_opportunities": [
+        {
+          "visit": 1,
+          "slot": "TEMPORAL_SCOPE",
+          "style": "partial",
+          "partial_reply": "Seguro lo quiero para hoy. El alcance más allá de hoy sigue por confirmar.",
+          "world_replies": [
+            "Es solo para esta sesión. Luego vuelvo a lo anterior.",
+            "Sí, cámbialo a mi preferencia habitual para las próximas veces."
+          ]
+        },
+        {
+          "visit": 3,
+          "slot": "TEMPORAL_SCOPE",
+          "style": "direct",
+          "partial_reply": null,
+          "world_replies": [
+            "Es solo para esta sesión. Luego vuelvo a lo anterior.",
+            "Sí, cámbialo a mi preferencia habitual para las próximas veces."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "res-09",
+      "family": "conditional_context",
+      "visits": [
+        {
+          "visit": 1,
+          "response": {
+            "mode": "CONDITIONALIZE",
+            "value": [
+              "horchata lojana",
+              "té de jazmín"
+            ]
+          },
+          "new_write": [],
+          "retrieves": [
+            {
+              "attribute": "drink_preference",
+              "value": "horchata lojana",
+              "scope": "contextual",
+              "valid_from": "2038-06-01",
+              "valid_through_inclusive": null,
+              "context": "casa",
+              "session_id": null
+            },
+            {
+              "attribute": "drink_preference",
+              "value": "té de jazmín",
+              "scope": "contextual",
+              "valid_from": "2038-06-01",
+              "valid_through_inclusive": null,
+              "context": "oficina",
+              "session_id": null
+            }
+          ]
+        },
+        {
+          "visit": 2,
+          "response": {
+            "mode": "ANSWER",
+            "value": "horchata lojana"
+          },
+          "new_write": [],
+          "retrieves": [
+            {
+              "attribute": "drink_preference",
+              "value": "horchata lojana",
+              "scope": "contextual",
+              "valid_from": "2038-06-01",
+              "valid_through_inclusive": null,
+              "context": "casa",
+              "session_id": null
+            }
+          ]
+        },
+        {
+          "visit": 3,
+          "response": {
+            "mode": "ANSWER",
+            "value": "té de jazmín"
+          },
+          "new_write": [],
+          "retrieves": [
+            {
+              "attribute": "drink_preference",
+              "value": "té de jazmín",
+              "scope": "contextual",
+              "valid_from": "2038-06-01",
+              "valid_through_inclusive": null,
+              "context": "oficina",
+              "session_id": null
+            }
+          ]
+        }
+      ],
+      "author_adjudication": "Con el lugar abierto, una respuesta condicionada conserva las dos preferencias, y aplazar es prudente. El lugar explícito en visitas siguientes selecciona un recuerdo aplicable.",
+      "question_opportunities": []
+    },
+    {
+      "id": "res-10",
+      "family": "late_plan_change",
+      "visits": [
+        {
+          "visit": 1,
+          "response": {
+            "mode": "ANSWER",
+            "value": "maduros asados"
+          },
+          "new_write": [],
+          "retrieves": [
+            {
+              "attribute": "breakfast_preference",
+              "value": "huevos con espinaca",
+              "scope": "ongoing",
+              "valid_from": "2038-06-01",
+              "valid_through_inclusive": null,
+              "context": null,
+              "session_id": null
+            }
+          ]
+        },
+        {
+          "visit": 2,
+          "response": {
+            "mode": "ANSWER",
+            "value": "agua de coco"
+          },
+          "new_write": [],
+          "retrieves": [
+            {
+              "attribute": "drink_preference",
+              "value": "agua mineral",
+              "scope": "ongoing",
+              "valid_from": "2038-06-01",
+              "valid_through_inclusive": null,
+              "context": null,
+              "session_id": null
+            }
+          ]
+        },
+        {
+          "visit": 3,
+          "response": {
+            "mode": "ANSWER",
+            "value": "tortilla de yuca"
+          },
+          "new_write": [],
+          "retrieves": [
+            {
+              "attribute": "dinner_preference",
+              "value": "arroz con lentejas",
+              "scope": "ongoing",
+              "valid_from": "2038-06-01",
+              "valid_through_inclusive": null,
+              "context": null,
+              "session_id": null
+            }
+          ]
+        }
+      ],
+      "author_adjudication": "Una aclaración fallida al comienzo consume presupuesto útil para dos cambios posteriores.",
+      "question_opportunities": [
+        {
+          "visit": 1,
+          "slot": "TEMPORAL_SCOPE",
+          "style": "refused",
+          "partial_reply": null,
+          "world_replies": [
+            "Es solo para esta sesión. Luego vuelvo a lo anterior.",
+            "Sí, cámbialo a mi preferencia habitual para las próximas veces."
+          ]
+        },
+        {
+          "visit": 2,
+          "slot": "TEMPORAL_SCOPE",
+          "style": "direct",
+          "partial_reply": null,
+          "world_replies": [
+            "Es solo para esta sesión. Luego vuelvo a lo anterior.",
+            "Sí, cámbialo a mi preferencia habitual para las próximas veces."
+          ]
+        },
+        {
+          "visit": 3,
+          "slot": "TEMPORAL_SCOPE",
+          "style": "direct",
+          "partial_reply": null,
+          "world_replies": [
+            "Es solo para esta sesión. Luego vuelvo a lo anterior.",
+            "Sí, cámbialo a mi preferencia habitual para las próximas veces."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "res-11",
+      "family": "scoped_exception",
+      "visits": [
+        {
+          "visit": 1,
+          "response": {
+            "mode": "ANSWER",
+            "value": "verduras al wok"
+          },
+          "new_write": [
+            {
+              "attribute": "dinner_preference",
+              "value": "verduras al wok",
+              "scope": "interval",
+              "valid_from": "2038-06-07",
+              "valid_through_inclusive": "2038-06-09",
+              "context": "oficina",
+              "session_id": null
+            }
+          ],
+          "retrieves": [
+            {
+              "attribute": "dinner_preference",
+              "value": "choclo con queso",
+              "scope": "contextual",
+              "valid_from": "2038-06-01",
+              "valid_through_inclusive": null,
+              "context": "oficina",
+              "session_id": null
+            }
+          ]
+        },
+        {
+          "visit": 2,
+          "response": {
+            "mode": "ANSWER",
+            "value": "ensalada de quinua"
+          },
+          "new_write": [],
+          "retrieves": [
+            {
+              "attribute": "dinner_preference",
+              "value": "ensalada de quinua",
+              "scope": "ongoing",
+              "valid_from": "2038-06-01",
+              "valid_through_inclusive": null,
+              "context": null,
+              "session_id": null
+            }
+          ]
+        },
+        {
+          "visit": 3,
+          "response": {
+            "mode": "ANSWER",
+            "value": "choclo con queso"
+          },
+          "new_write": [],
+          "retrieves": [
+            {
+              "attribute": "dinner_preference",
+              "value": "choclo con queso",
+              "scope": "contextual",
+              "valid_from": "2038-06-01",
+              "valid_through_inclusive": null,
+              "context": "oficina",
+              "session_id": null
+            }
+          ]
+        }
+      ],
+      "author_adjudication": "La excepción solo rige en la oficina y hasta el día 9. Cambiar de lugar a mitad del intervalo y volver después del cierre no prolonga ni globaliza el alcance.",
+      "question_opportunities": []
+    },
+    {
+      "id": "res-12",
+      "family": "session_only",
+      "visits": [
+        {
+          "visit": 1,
+          "response": {
+            "mode": "ANSWER",
+            "value": "pan de centeno"
+          },
+          "new_write": [
+            {
+              "attribute": "breakfast_preference",
+              "value": "pan de centeno",
+              "scope": "session",
+              "valid_from": "2038-06-07",
+              "valid_through_inclusive": null,
+              "context": null,
+              "session_id": "S2"
+            }
+          ],
+          "retrieves": [
+            {
+              "attribute": "breakfast_preference",
+              "value": "yogur con mango",
+              "scope": "ongoing",
+              "valid_from": "2038-06-01",
+              "valid_through_inclusive": null,
+              "context": null,
+              "session_id": null
+            }
+          ]
+        },
+        {
+          "visit": 2,
+          "response": {
+            "mode": "ANSWER",
+            "value": "yogur con mango"
+          },
+          "new_write": [],
+          "retrieves": [
+            {
+              "attribute": "breakfast_preference",
+              "value": "yogur con mango",
+              "scope": "ongoing",
+              "valid_from": "2038-06-01",
+              "valid_through_inclusive": null,
+              "context": null,
+              "session_id": null
+            }
+          ]
+        },
+        {
+          "visit": 3,
+          "response": {
+            "mode": "ANSWER",
+            "value": "pescado al horno"
+          },
+          "new_write": [],
+          "retrieves": [
+            {
+              "attribute": "dinner_preference",
+              "value": "pescado al horno",
+              "scope": "ongoing",
+              "valid_from": "2038-06-01",
+              "valid_through_inclusive": null,
+              "context": null,
+              "session_id": null
+            }
+          ]
+        }
+      ],
+      "author_adjudication": "Una elección explícitamente de sesión se puede registrar con ese alcance. Las visitas siguientes solo usan la preferencia persistente.",
+      "question_opportunities": []
+    }
+  ]
+}

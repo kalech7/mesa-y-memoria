@@ -1,0 +1,56 @@
+{
+  "seeds": [
+    101,
+    202,
+    303
+  ],
+  "rounds": 2,
+  "batch_size": 8,
+  "passes": 2,
+  "learning_rate": 0.0001,
+  "temperature": 4.0,
+  "samples_per_forced_action_world": 8,
+  "arms": [
+    "SFT-ramas",
+    "GRPO-continuacion",
+    "GRPO-inmediato",
+    "GRPO-continuacion-fija"
+  ],
+  "budgets": [
+    1,
+    2
+  ],
+  "train_sha256": "2b8226745c3d6b27ab9cd89533d7d6b1495da21679b955038db0528a34f8b2d3",
+  "parent": "reports/tesis_profiles_qwen_a100_v5/seed-101/common-parent/checkpoint-000/adapter",
+  "parent_sha256": "70ea39c231390f4f67c78352161ce4fae6f742de6bbc47a3ef9f01c5506f5aa4",
+  "parent_config_sha256": "030ade3557597f9c24b79ef189ae3331490d130ade346b0342e21b6fd0110142",
+  "model": "models/Qwen2.5-1.5B-Instruct",
+  "model_files": {
+    "config.json": "98d2ff8cc47488d08a2b0b3acf4eb99ef210779b42bd48605f6b8e36acdbf670",
+    "download_manifest.json": "cc19a540679b1f3acaf8dcabfa51594b4e01a735a2bec30629bad19a4357744e",
+    "generation_config.json": "e558847a8b4402616f1273797b015104dc266fe4b520056fca88823ba8f8ebe6",
+    "merges.txt": "599bab54075088774b1733fde865d5bd747cbcc7a547c5bc12610e874e26f5e3",
+    "model.safetensors": "dd924a11b4c220f385b51ffa522daea7c9f3d850e31b162bb5661df483c6d3ee",
+    "tokenizer.json": "c0382117ea329cdf097041132f6d735924b697924d6f6fc3945713e96ce87539",
+    "tokenizer_config.json": "5b5d4f65d0acd3b2d56a35b56d374a36cbc1c8fa5cf3b3febbbfabf22f359583",
+    "vocab.json": "ca10d7e9fb3ed18575dd1e277a2579c16d108e32f27439684afa0e10b1440910"
+  },
+  "continuation": "both actions forced at TRAIN nodes, subsequent visits sampled from prior-round GRPO",
+  "shared_data": "identical refreshed trajectories for SFT, longitudinal GRPO and immediate GRPO; fixed control replays round 1",
+  "fixed_continuation_control": "static common-parent future decisions; identical prompts, optimization tokens and update counts",
+  "immediate_ablation": "current visit supported response minus 0.08 for this action only",
+  "source_sha256": {
+    "tesis_timing_v6_train.py": "fb32f58e5fe49c2ae749fd86f7417e1a09efa762cd8bc45a68526b29851eb4c5",
+    "tesis_timing_v6_env.py": "35b56d93d2aa3dd13c2af3955ca59016435e7b85c3e65c9d03bf602db0c5c0c8",
+    "tesis_timing_v6_bank.py": "6227d80f39614938aa85dcf0266fd43afb6fb18046fec1784e714a97ca797063",
+    "tesis_shared_budget_qwen.py": "90e125871e8bd36c6554cf519877342cc94759cec0e14b65293b402412a73695",
+    "tesis_shared_budget_qwen_matched.py": "99fa496d29bd9af38257cd2905e64cba6cab840109169acdc597d34175a4ec92",
+    "tesis_extended_experiment.py": "0b26dc01c21a14e7f33b216ab592f6632ca8a8db444643eb8ddc22495fd5ee2c",
+    "tesis_profiles_optimizer_v5.py": "5fb6fe5c2aedd7a33aa8b33454cbdc805fdf5b9d4d10ece6d2683dfd579da130"
+  },
+  "versions": {
+    "torch": "2.7.1+cu128",
+    "transformers": "4.49.0",
+    "peft": "0.14.0"
+  }
+}

@@ -1,0 +1,26 @@
+[
+  {
+    "audit_id": "caso-f9a82838d2aa31",
+    "pregunta": "¿En qué contexto quieres que aplique la recomendación?",
+    "réplicas": [
+      "Hoy en casa; cancelaron la reunión.",
+      "Para este menú, hoy estoy en la oficina."
+    ]
+  },
+  {
+    "audit_id": "caso-4fef49fe362d6b",
+    "pregunta": "¿Lo dices solo para esta ocasión o como preferencia habitual?",
+    "réplicas": [
+      "Tómalo solo por hoy. La pauta del cuaderno sigue para los demás días.",
+      "Ponlo como preferencia habitual en el cuaderno a partir de hoy."
+    ]
+  },
+  {
+    "audit_id": "caso-7443f022b6dc2f",
+    "pregunta": "¿Lo dices solo para esta ocasión o como preferencia habitual?",
+    "réplicas": [
+      "Déjalo como preferencia habitual también para las siguientes compras.",
+      "Esta vez va solo para hoy; mañana vuelvo a la pauta de antes."
+    ]
+  }
+]

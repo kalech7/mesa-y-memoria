@@ -1,0 +1,74 @@
+[
+  {
+    "id": "desarrollo-charla-del-transporte",
+    "family": "historial_y_revision",
+    "turns": [
+      {"text": "recién saliendo del bus. ayer cené pollo, te lo cuento nomás. para mi cena de hoy nada con zanahora ni huevo, de la lista cuál harías", "excluded": ["huevo", "zanahoria"]},
+      {"text": "ahora sí quiero considerar huevo otra vez. hoy tampoco quiero pollo, y sigo sin zanahoria. qué podría cenar", "excluded": ["pollo", "zanahoria"]},
+      {"text": "finalmente encontré zanahoria pero resulta que no me queda kinua, pollo tampoco. qué opción me queda para la cena", "excluded": ["pollo", "quinua"]}
+    ]
+  },
+  {
+    "id": "desarrollo-dos-pedidos",
+    "family": "terceros_y_rectificacion",
+    "turns": [
+      {"text": "para el vecino pedí que eviten el arroz, su comida es separada. para mi cena prefiero que no venga con cebolla ni poyo. cuál harías", "excluded": ["cebolla", "pollo"]},
+      {"text": "mira, al final sí puedo con cebolla. no me queda limón y sigo sin pollo para mi cena. cuál de los cinco escogerías", "excluded": ["limon", "pollo"]},
+      {"text": "corrijo lo anterior: conseguí limón. por mí deja sólo fuera el pepino y el pollo por hoy. qué ceno entonces", "excluded": ["pepino", "pollo"]}
+    ]
+  },
+  {
+    "id": "desarrollo-tres-opciones-unicas",
+    "family": "cambio_contrafactual",
+    "turns": [
+      {"text": "hoy de cena sin pescaddo ni polllo ni tomate ni zanahoria. cuál plato de los que me das todavía va", "excluded": ["pescado", "pollo", "tomate", "zanahoria"]},
+      {"text": "cambio: por fin conseguí pollo. sigo sin pescado tomate y zanahoria, y ahora nada de huevo. qué podría cenar", "excluded": ["pescado", "tomate", "zanahoria", "huevo"]},
+      {"text": "va la última lista para cenar: repón pescado, quita pollo otra vez. se mantienen fuera el tomate, la zanahoria y el huevo. cuál queda", "excluded": ["pollo", "tomate", "zanahoria", "huevo"]}
+    ]
+  },
+  {
+    "id": "desarrollo-ingrediente-sin-confirmar",
+    "family": "aclaracion_y_revision",
+    "turns": [
+      {"text": "cuál de esas hago para cenar? tengo un ingrediente tachado, pero perdí la nota y todavía no sé cuál es", "excluded": [], "clarify": true},
+      {"text": "encontré la nota, los dos que no quiero son tomate y papa. qué me queda para la cena sin ellos", "excluded": ["papa", "tomate"]},
+      {"text": "por cambio de plan puedo usar papa. tomate queda afuera y ahora tampoco arroz. para cenar qué opción tomo", "excluded": ["arroz", "tomate"]}
+    ]
+  },
+  {
+    "id": "desarrollo-sin-nada-de-eso",
+    "family": "sin_opciones",
+    "turns": [
+      {"text": "no voy a usar papas, ni pepino, ni lentjas en la cena. de ese menú hay alguna que sí pueda preparar", "excluded": ["papa", "pepino", "lenteja"], "clarify": true},
+      {"text": "ya ubiqué las lentejas, con eso se puede. las papas y el pepino siguen sin servir. qué cena me recomiendas", "excluded": ["papa", "pepino"]},
+      {"text": "ahora sí pepino. mantiene fuera papa, y vuelve a quitar lenteja. me ayudas con otra opción de cena", "excluded": ["papa", "lenteja"]}
+    ]
+  },
+  {
+    "id": "desarrollo-errata-con-rectificacion",
+    "family": "acumulacion_rectificacion",
+    "turns": [
+      {"text": "para la cena sin cebollla, ni arroz, ni pescado. dime qué me puedo hacer", "excluded": ["cebolla", "arroz", "pescado"]},
+      {"text": "me expresé mal, pescado sí; lo que no es pepino. sigue sin cebolla ni arroz. q cenamos de ahí", "excluded": ["pepino", "cebolla", "arroz"]},
+      {"text": "añade que no quiero pollo. al final sí arroz, y continúa sin pepino ni cebolla. para cenar qué tengo", "excluded": ["pollo", "pepino", "cebolla"]}
+    ]
+  },
+  {
+    "id": "desarrollo-recuerdo-de-la-foto",
+    "family": "historial_y_revision",
+    "turns": [
+      {"text": "te mandé una foto de la ensalada de ayer, llevaba pepino. no es algo que quiera evitar. para hoy sí descarta limon y huevo. q puedo cenar", "excluded": ["limon", "huevo"]},
+      {"text": "limón sí está permitido; ahora me gustaría dejar fuera el pepino, que el huevo siga fuera. qué plato pido de cena", "excluded": ["pepino", "huevo"]},
+      {"text": "déjalo como estaba ayer con el pepino, o sea sí puedo comerlo. lo que va fuera esta vez es el huevo y peskao. me recomiendas una cena", "excluded": ["huevo", "pescado"]}
+    ]
+  },
+  {
+    "id": "desarrollo-para-otra-mesa",
+    "family": "terceros_y_rectificacion",
+    "turns": [
+      {"text": "mi hermana no quiere huevo, pero yo ceno aparte de ella. para el mío quita arroz y kinua. qué queda para la cena", "excluded": ["arroz", "quinua"]},
+      {"text": "pensándolo mejor quinua sí está bien, de verdad necesito sin arroz ni poyo. cuál me puedes sugerir para cenar", "excluded": ["arroz", "pollo"]},
+      {"text": "ahora sí añade pollo a lo que puedo comer. nada de arroz ni zanahoria en esta cena. qué plato del menú preparo", "excluded": ["arroz", "zanahoria"]}
+    ]
+  }
+]

@@ -1,0 +1,181 @@
+{
+  "instructions": [
+    "Evalúa tus casos individualmente. Usa únicamente esta carpeta en la primera lectura.",
+    "Decide qué respuesta sería admisible hoy y qué preferencia personal queda sustentada para otra sesión.",
+    "En valid_from y valid_through usa YYYY-MM-DD. valid_through es el último día incluido. Usa null si no aplica o no se puede determinar.",
+    "Usa none si la actualización duradera no se puede justificar. Para una elección local que sí puedes confirmar, usa session.",
+    "El presupuesto incluye como máximo una pregunta dirigida al usuario entre ambas visitas. Indica cuándo la gastarías, si lo harías.",
+    "Primero completa visitas y justificación con 01_casos.json. Después abre 02_replicas.json para valorar si las réplicas de un mismo caso son plausibles.",
+    "Mantén los audit_id y un identificador de revisor distinto al de la otra persona. Devuelve 03_respuestas_en_blanco.json completado."
+  ],
+  "question_budget": 1,
+  "allowed_scopes": [
+    "contextual",
+    "interval",
+    "none",
+    "ongoing",
+    "session"
+  ],
+  "cases": [
+    {
+      "audit_id": "caso-88b1ec37e40399",
+      "memory": "El usuario suele cenar mote con queso en casa.",
+      "visits": [
+        {
+          "date": "2041-08-27",
+          "user": "Me quedan tamales del cumpleaños; por esta vuelta sirvo eso para la cena, luego seguimos igual.",
+          "request": "¿Qué ceno esta vez?"
+        },
+        {
+          "date": "2041-08-28",
+          "user": "Hoy el resto de los tamales se lo llevó mi vecino.",
+          "request": "¿Qué era lo que solía cenar en casa?"
+        }
+      ]
+    },
+    {
+      "audit_id": "caso-8f68f143447871",
+      "memory": "El usuario solía tener tostadas con queso como desayuno habitual. Suele beber una infusión de menta.",
+      "visits": [
+        {
+          "date": "2041-08-15",
+          "user": "Estoy armando los desayunos de la semana. Hoy me quedo con humita. Tengo un rato por si hace falta precisar algo.",
+          "request": "¿Qué pongo para mi desayuno de hoy?"
+        },
+        {
+          "date": "2041-08-16",
+          "user": "Volví a armar la lista de mercado; la bebida queda igual.",
+          "request": "¿Qué desayuno tengo como opción cuando vuelva a hacer compras?"
+        }
+      ]
+    },
+    {
+      "audit_id": "caso-40f513bace9db6",
+      "memory": "El usuario recuerda como habituales la sopa de fideo para cenar y el jugo de mora para beber. Acostumbra agua en la oficina.",
+      "visits": [
+        {
+          "date": "2041-08-11",
+          "user": "Para la cena me voy por el sancocho. Estoy cerrando el teléfono; mañana quizá coma fuera del sitio habitual.",
+          "request": "¿Qué sirvo para esta cena?"
+        },
+        {
+          "date": "2041-08-12",
+          "user": "Para la bebida, ya sabes que cambia si estoy en el trabajo o en casa.",
+          "request": "¿Qué bebida me corresponde aquí?"
+        }
+      ]
+    },
+    {
+      "audit_id": "caso-27c1a07c73f40b",
+      "memory": "El usuario dejó guardada una preferencia habitual por café pasado.",
+      "visits": [
+        {
+          "date": "2041-08-23",
+          "user": "Mi tía tomó el teléfono y escribió ‘prefiero té de cedrón’. Era ella la que estaba eligiendo.",
+          "request": "¿Qué anoto en su taza y qué me dejas a mí?"
+        },
+        {
+          "date": "2041-08-24",
+          "user": "Estoy solo en casa. Lo de la taza de ayer era de mi tía.",
+          "request": "¿Qué bebida era mi opción de siempre?"
+        }
+      ]
+    },
+    {
+      "audit_id": "caso-2d5939fbfc22d2",
+      "memory": "El desayuno habitual del usuario es pan integral con aguacate.",
+      "visits": [
+        {
+          "date": "2041-08-25",
+          "user": "Estoy copiando el menú de mi sobrina: ‘prefiero cereales de chocolate’. Para cuando venga, recuérdame que eso es de ella.",
+          "request": "¿Qué puedo comer yo mañana?"
+        },
+        {
+          "date": "2041-08-26",
+          "user": "Mi sobrina ya se fue y voy a preparar lo mío.",
+          "request": "¿Qué desayuno tengo guardado?"
+        }
+      ]
+    },
+    {
+      "audit_id": "caso-e1e43f735a3620",
+      "memory": "Antes el usuario pedía patacones como desayuno de todos los domingos.",
+      "visits": [
+        {
+          "date": "2041-08-10",
+          "user": "Ya le cogí gusto al bolón. Borra los patacones de mi desayuno de los domingos; deja el bolón en ese lugar.",
+          "request": "¿Qué dejo listo para los domingos?"
+        },
+        {
+          "date": "2041-08-17",
+          "user": "Mañana ordeno los ingredientes otra vez.",
+          "request": "¿Qué pongo para mi desayuno habitual del domingo?"
+        }
+      ]
+    },
+    {
+      "audit_id": "caso-6a2e610bdfd6dd",
+      "memory": "El usuario acostumbra beber guayusa.",
+      "visits": [
+        {
+          "date": "2041-08-17",
+          "user": "Ponme agua de jamaica desde hoy hasta que acabe el domingo 18. El lunes sigo con la guayusa.",
+          "request": "¿Qué bebida me sirvo para hoy?"
+        },
+        {
+          "date": "2041-08-18",
+          "user": "El almuerzo de hoy todavía cuenta como parte del fin de semana.",
+          "request": "¿Qué bebida aplicaba este domingo?"
+        }
+      ]
+    },
+    {
+      "audit_id": "caso-c582f1af64496d",
+      "memory": "El usuario elige normalmente tortilla de maíz como desayuno.",
+      "visits": [
+        {
+          "date": "2041-08-08",
+          "user": "La avena sírvemela del ocho al doce de agosto, ambos días cuentan. El trece vuelvo a la tortilla.",
+          "request": "¿Qué desayuno pido hoy?"
+        },
+        {
+          "date": "2041-08-13",
+          "user": "Ya estamos a trece de agosto.",
+          "request": "¿Qué desayuno debía retomar?"
+        }
+      ]
+    },
+    {
+      "audit_id": "caso-379742cb0d75b0",
+      "memory": "El usuario solía guardar caldo de pollo como cena al llegar del trabajo.",
+      "visits": [
+        {
+          "date": "2041-08-14",
+          "user": "Cuando vuelva del trabajo, cámbiame ese caldo por locro en el menú que dejamos guardado.",
+          "request": "¿Con qué plato queda mi menú de regreso del trabajo?"
+        },
+        {
+          "date": "2041-08-21",
+          "user": "Hoy salgo tarde del trabajo. Abrí el chat de nuevo para revisar el menú.",
+          "request": "¿Qué cena tenía para cuando regreso?"
+        }
+      ]
+    },
+    {
+      "audit_id": "caso-05b8dbd1549402",
+      "memory": "La opción de bebida habitual del usuario es agua de coco.",
+      "visits": [
+        {
+          "date": "2041-08-05",
+          "user": "Saca el agua de coco de mi lista de siempre. La nueva del día a día es agua con limón.",
+          "request": "¿Qué pongo en mi lista habitual de bebida?"
+        },
+        {
+          "date": "2041-08-06",
+          "user": "Para la visita me encargaron horchata, pero yo no cambié mi bebida.",
+          "request": "¿Cuál habíamos dejado para mí?"
+        }
+      ]
+    }
+  ]
+}

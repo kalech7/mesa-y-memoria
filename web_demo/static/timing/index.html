@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Simulación guiada · Laboratorio de memoria</title>
+  <link rel="icon" href="data:,">
+  <link rel="stylesheet" href="./timing.css">
+  <script defer src="./timing.js"></script>
+</head>
+<body>
+  <a class="skip" href="#prueba">Ir a la prueba</a>
+  <header class="bar">
+    <div class="wrap bar-inner">
+      <div class="brand">Laboratorio de memoria <span>v6</span></div>
+      <nav aria-label="Vistas del laboratorio">
+        <a href="/" aria-current="page">Simulación guiada</a>
+        <a href="/chat">Chat libre de alimentación</a>
+      </nav>
+    </div>
+  </header>
+  <main id="prueba" class="wrap">
+    <h1>Cuándo preguntar</h1>
+    <p class="intro">«Hoy quiero sopa». ¿Conviene preguntar si es una costumbre o guardar la pregunta para mañana? En este diálogo guiado, cambia la agenda y sigue la memoria a lo largo de tres visitas. Cada prueba empieza con la memoria vacía.</p>
+    <section class="settings" aria-labelledby="settings-title">
+      <h2 id="settings-title">Configurar la prueba</h2>
+      <form id="run-form">
+        <fieldset disabled id="controls">
+          <legend class="visually-hidden">Opciones de la simulación</legend>
+          <label>Agenda de la persona<select id="agenda" name="agenda" required></select></label>
+          <label>Decisión de aclarar<select id="route" name="route" required></select></label>
+          <label>Modelo<select id="arm" name="arm" required></select></label>
+          <label>Respuesta si se pregunta<select id="scope" name="scope" required></select></label>
+        </fieldset>
+        <div class="actions">
+          <button id="run" type="submit" disabled>Ejecutar prueba</button>
+          <p id="request-status" role="status">Conectando con el laboratorio…</p>
+        </div>
+      </form>
+      <p id="problem" role="alert" hidden></p>
+    </section>
+    <noscript>Activa JavaScript para ejecutar el modelo y consultar los recuerdos de cada visita.</noscript>
+    <section id="episode" aria-labelledby="episode-title" hidden>
+      <div class="section-head">
+        <h2 id="episode-title">Recorrido de la historia</h2>
+        <p id="run-info"></p>
+        <a class="memory-link" href="#recuerdos">Ver memoria de esta visita</a>
+      </div>
+      <div id="tabs" role="tablist" aria-label="Visitas de la historia"></div>
+      <div id="visit-panel" tabindex="0" role="tabpanel">
+        <div class="visit-head">
+          <p id="visit-date"></p>
+          <p id="budget"></p>
+        </div>
+        <div class="columns">
+          <section class="card dialogue" aria-labelledby="dialogue-title">
+            <header><h3 id="dialogue-title">Conversación</h3></header>
+            <div id="messages"></div>
+            <div id="decision"></div>
+          </section>
+          <section id="recuerdos" class="card memory" aria-labelledby="memory-title" tabindex="-1">
+            <header><h3 id="memory-title">Memoria al cerrar la visita</h3><span id="record-count"></span></header>
+            <div id="records"></div>
+          </section>
+        </div>
+        <section id="future-section" class="card future" aria-labelledby="future-title" hidden>
+          <header><h3 id="future-title">Consultas posteriores</h3><span id="future-summary"></span></header>
+          <div id="future"></div>
+        </section>
+      </div>
+    </section>
+    <details id="results-section" class="study" hidden>
+      <summary>Resultados del experimento a igual gasto de preguntas</summary>
+      <div id="study-data"></div>
+    </details>
+  </main>
+</body>
+</html>

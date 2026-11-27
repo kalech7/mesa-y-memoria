@@ -1,0 +1,256 @@
+{
+  "status": "pending_adjudication_and_independent_authorship",
+  "evaluation_ready": false,
+  "review_input_hashes": [
+    "781dcbda092ef20fed02947cd658e8fbacbdb5792be687523886deb9c071bd5f",
+    "e49e8aacf397e57859f56a77c7dd804c9b105edc7acfa25420378f1abc55d9f4"
+  ],
+  "scope_agreement_counts": {
+    "writable_scope": 15,
+    "valid_from": 15,
+    "valid_through": 19,
+    "context": 9
+  },
+  "visits_reviewed": 20,
+  "cases": [
+    {
+      "audit_id": "caso-e1e43f735a3620",
+      "family": "implicit_correction",
+      "structured_differences": [
+        {
+          "visit": 1,
+          "field": "writable_scope",
+          "a": "contextual",
+          "b": "ongoing",
+          "draft": "contextual"
+        },
+        {
+          "visit": 1,
+          "field": "context",
+          "a": "Desayuno de los domingos",
+          "b": "desayuno de los domingos",
+          "draft": "domingo"
+        },
+        {
+          "visit": 2,
+          "field": "writable_scope",
+          "a": "contextual",
+          "b": "none",
+          "draft": "none"
+        },
+        {
+          "visit": 2,
+          "field": "valid_from",
+          "a": "2041-08-10",
+          "b": null,
+          "draft": null
+        },
+        {
+          "visit": 2,
+          "field": "context",
+          "a": "Desayuno de los domingos",
+          "b": null,
+          "draft": null
+        }
+      ]
+    },
+    {
+      "audit_id": "caso-379742cb0d75b0",
+      "family": "implicit_correction",
+      "structured_differences": [
+        {
+          "visit": 1,
+          "field": "valid_from",
+          "a": "2041-08-14",
+          "b": null,
+          "draft": "2041-08-14"
+        },
+        {
+          "visit": 1,
+          "field": "context",
+          "a": "Cena al regresar del trabajo",
+          "b": "cena al regresar del trabajo",
+          "draft": "regreso del trabajo"
+        },
+        {
+          "visit": 2,
+          "field": "writable_scope",
+          "a": "contextual",
+          "b": "none",
+          "draft": "none"
+        },
+        {
+          "visit": 2,
+          "field": "valid_from",
+          "a": "2041-08-14",
+          "b": null,
+          "draft": null
+        },
+        {
+          "visit": 2,
+          "field": "context",
+          "a": "Cena al regresar del trabajo",
+          "b": null,
+          "draft": null
+        }
+      ]
+    },
+    {
+      "audit_id": "caso-05b8dbd1549402",
+      "family": "implicit_correction",
+      "structured_differences": [
+        {
+          "visit": 1,
+          "field": "context",
+          "a": null,
+          "b": "bebida habitual",
+          "draft": null
+        },
+        {
+          "visit": 2,
+          "field": "writable_scope",
+          "a": "ongoing",
+          "b": "none",
+          "draft": "none"
+        },
+        {
+          "visit": 2,
+          "field": "valid_from",
+          "a": "2041-08-05",
+          "b": null,
+          "draft": null
+        }
+      ]
+    },
+    {
+      "audit_id": "caso-c582f1af64496d",
+      "family": "temporal_wording",
+      "structured_differences": [
+        {
+          "visit": 1,
+          "field": "context",
+          "a": "Desayuno durante el intervalo indicado",
+          "b": "desayuno",
+          "draft": null
+        }
+      ]
+    },
+    {
+      "audit_id": "caso-6a2e610bdfd6dd",
+      "family": "temporal_wording",
+      "structured_differences": [
+        {
+          "visit": 1,
+          "field": "context",
+          "a": "Bebida durante el intervalo indicado",
+          "b": "bebida del fin de semana",
+          "draft": null
+        },
+        {
+          "visit": 2,
+          "field": "writable_scope",
+          "a": "interval",
+          "b": "none",
+          "draft": "none"
+        },
+        {
+          "visit": 2,
+          "field": "valid_from",
+          "a": "2041-08-17",
+          "b": null,
+          "draft": null
+        },
+        {
+          "visit": 2,
+          "field": "valid_through",
+          "a": "2041-08-18",
+          "b": null,
+          "draft": null
+        },
+        {
+          "visit": 2,
+          "field": "context",
+          "a": "Bebida durante el intervalo indicado",
+          "b": null,
+          "draft": null
+        }
+      ]
+    },
+    {
+      "audit_id": "caso-88b1ec37e40399",
+      "family": "temporal_wording",
+      "structured_differences": [
+        {
+          "visit": 1,
+          "field": "valid_through",
+          "a": "2041-08-27",
+          "b": "2041-08-27",
+          "draft": null
+        },
+        {
+          "visit": 1,
+          "field": "context",
+          "a": "Cena de esta vez",
+          "b": "cena de esta visita",
+          "draft": null
+        }
+      ]
+    },
+    {
+      "audit_id": "caso-27c1a07c73f40b",
+      "family": "other_person",
+      "structured_differences": []
+    },
+    {
+      "audit_id": "caso-2d5939fbfc22d2",
+      "family": "other_person",
+      "structured_differences": []
+    },
+    {
+      "audit_id": "caso-40f513bace9db6",
+      "family": "competing_questions",
+      "structured_differences": [
+        {
+          "visit": 1,
+          "field": "valid_through",
+          "a": "2041-08-11",
+          "b": "2041-08-11",
+          "draft": null
+        },
+        {
+          "visit": 1,
+          "field": "context",
+          "a": "Cena de esta vez",
+          "b": "cena de esta visita",
+          "draft": null
+        }
+      ]
+    },
+    {
+      "audit_id": "caso-8f68f143447871",
+      "family": "competing_questions",
+      "structured_differences": [
+        {
+          "visit": 1,
+          "field": "valid_through",
+          "a": "2041-08-15",
+          "b": "2041-08-15",
+          "draft": null
+        },
+        {
+          "visit": 1,
+          "field": "context",
+          "a": "Desayuno de hoy",
+          "b": "desayuno de hoy",
+          "draft": null
+        }
+      ]
+    }
+  ],
+  "review_method": "two_separate_blind_ai_reviews",
+  "human_reviews": 0,
+  "matching_question_visit": 10,
+  "cases_reviewed": 10,
+  "pairs_both_plausible": 2,
+  "reply_pairs": 2
+}

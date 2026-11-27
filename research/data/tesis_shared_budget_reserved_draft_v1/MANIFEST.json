@@ -1,0 +1,19 @@
+{
+  "version": "tesis_shared_budget_reserved_draft_v1",
+  "status": "pending_independent_authorship_and_human_review",
+  "evaluation_ready": false,
+  "human_authored": false,
+  "human_reviews_received": 0,
+  "root_count": 10,
+  "paired_reply_roots": 2,
+  "artifacts": {
+    "coordinacion/clave_borrador.json": "43af5afbeca439da8aab5e459ffda62ecc3a5c3863ee52d6db2c2c7923f3f8ab",
+    "coordinacion/adjudicaciones_en_blanco.json": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+    "revisor_a/01_casos.json": "d1bda1607df0500a0e582aaf4c2b2b939156a8cbc45e2d662a0fae1556318726",
+    "revisor_a/02_replicas.json": "303f9d693a800f256d1ecb50089626b3d8f170d7c21db217116076bc014b15f1",
+    "revisor_a/03_respuestas_en_blanco.json": "8c557d8591fa5d3c65d7250bc8d605928c296a5ca38cfde087c9042584e7b1c2",
+    "revisor_b/01_casos.json": "4bcc69690fe3622b37f02dd85e61f7aa9026540656f080f389e7ccfb7ea02d9e",
+    "revisor_b/02_replicas.json": "303f9d693a800f256d1ecb50089626b3d8f170d7c21db217116076bc014b15f1",
+    "revisor_b/03_respuestas_en_blanco.json": "506d95a28d11fa22bd66231f3da88c8d45848a5d36d838e766fb4ce694599a27"
+  }
+}

@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Chat de alimentación · Laboratorio de memoria</title>
+  <link rel="icon" href="data:,">
+  <link rel="stylesheet" href="/timing.css">
+  <link rel="stylesheet" href="/food.css">
+  <script defer src="/food.js"></script>
+</head>
+<body>
+  <a class="skip" href="#mensaje">Escribir un mensaje</a>
+  <header class="bar"><div class="wrap bar-inner">
+    <div class="brand">Laboratorio de memoria <span>v6</span></div>
+    <nav aria-label="Laboratorio"><a href="/chat" aria-current="page">Chat de alimentación</a><a href="/">Simulación guiada</a><a href="#memoria">Ver memoria</a></nav>
+  </div></header>
+  <main class="wrap">
+    <h1>Chat de alimentación</h1>
+    <p class="intro">Pide una idea para comer o cuéntale qué sueles elegir. Qwen decide cuándo gastar su pregunta de aclaración. Puedes volver en otra visita y ver qué recuerda.</p>
+    <div class="food-settings settings">
+      <label>Modelo final<select id="model" disabled></select></label>
+      <label>Conversación<select id="chats" disabled></select></label>
+      <button id="new" type="button" disabled>Nueva conversación</button>
+    </div>
+    <p id="error" class="food-error" role="alert" hidden></p>
+    <div class="columns food-columns">
+      <section class="card conversation" aria-labelledby="visit"><header><h2 id="visit">Visita 1</h2><span id="budget"></span></header>
+        <div id="starters"><h3>¿Qué puedo preguntar?</h3>
+          <p class="small">Elige un ejemplo para editarlo y enviarlo.</p>
+          <div id="examples"></div>
+        </div>
+        <ol id="dialog" aria-label="Mensajes de esta visita" role="log" aria-live="polite"></ol>
+        <form id="compose">
+          <label for="mensaje">Tu mensaje</label>
+          <textarea id="mensaje" rows="3" maxlength="1200" required placeholder="¿Qué puedo cenar hoy sin pescado?"></textarea>
+          <div class="actions"><button id="send" type="submit" disabled>Enviar</button><p id="status" role="status"></p></div>
+        </form>
+        <details id="next-panel"><summary>Abrir la siguiente visita</summary>
+          <p class="small">Los recuerdos conservan sus fechas y sigue disponible la pregunta que hayas reservado.</p>
+          <div class="next-fields"><label>Fecha<input id="date" type="date"></label>
+          <label>Lugar<select id="place"><option value="">Sin indicar</option><option value="casa">Casa</option><option value="oficina">Oficina</option></select></label>
+          <button id="next" type="button" disabled>Iniciar visita</button></div>
+        </details>
+        <details id="previous" hidden><summary>Visitas anteriores</summary><div id="archive"></div></details>
+      </section>
+      <section class="card memory" id="memoria" tabindex="-1" aria-labelledby="memory-title">
+        <header><h2 id="memory-title">Memoria de esta conversación</h2><span id="count"></span></header>
+        <div id="records"><p class="empty">Aquí aparecerán tus preferencias confirmadas y las frases que las respaldan.</p></div>
+      </section>
+    </div>
+  </main>
+</body>
+</html>

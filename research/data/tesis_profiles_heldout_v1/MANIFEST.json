@@ -1,0 +1,19 @@
+{
+  "version": "tesis_profiles_heldout_v1",
+  "split": "reserved",
+  "status": "frozen_for_blind_review",
+  "authorship": "handwritten by a separate AI subagent without consulting the development wording",
+  "human_reviews": 0,
+  "real_user_data": false,
+  "roots": 16,
+  "worlds": 22,
+  "visits_per_root": 3,
+  "recontact_roots": 2,
+  "public_digest": "fdea2d4060a618bdeddcc8608bc9fb825abe0ac07748288cee8118c64fb85edf",
+  "artifacts": {
+    "PUBLIC.json": "d5d07e74e9bffd5af28ee60eacfaf3d4f5e9459eab1226f93621541d0e75e236",
+    "REVIEW_TEMPLATE.json": "659cf93441db0321923631ba31bf52242105b3fadf8bdc964b80696597f690ac",
+    "PRIVATE_GOLD.json": "25bc83675c0a87d336d8ec5ebc8de8706949154664e9d38b0c6a0afbc0fb43c1",
+    "PRIVATE_WORLDS.jsonl": "cc4db393e3a6e9adf7ec4de47b59dfacb8c58a1084ba89ef8c97b3da63530332"
+  }
+}

@@ -1,0 +1,130 @@
+{
+  "spec_id": "SPEC-TESIS-CLARIFICACION-MEMORIA-001",
+  "protocol_version": "1.2",
+  "execution_mode": "exploratory",
+  "language": "es",
+  "domain": "non_clinical_food_preferences",
+  "execution": "local_only",
+  "runtime": {
+    "model_path": "models/Qwen2.5-0.5B-Instruct",
+    "device": "cuda",
+    "reference_device": "cpu",
+    "cpu_threads": 2,
+    "gradient_checkpointing": true,
+    "microbatch": 1,
+    "evaluation_batch_size": 8,
+    "reference_execution": "cpu_storage_gpu_compute",
+    "training_progress_every_updates": 10
+  },
+  "model": {
+    "preferred": "Qwen/Qwen2.5-0.5B-Instruct",
+    "technical_fallback": null,
+    "selected_id": "Qwen/Qwen2.5-0.5B-Instruct",
+    "revision": "7ae557604adf67be50417f59c2c2f167def9a775",
+    "tokenizer_revision": "7ae557604adf67be50417f59c2c2f167def9a775",
+    "precision": "bfloat16",
+    "quantization": "none"
+  },
+  "adaptation": {
+    "method": "lora",
+    "rank": 16,
+    "alpha": 32,
+    "dropout": 0.0,
+    "target_modules": [
+      "q_proj",
+      "k_proj",
+      "v_proj",
+      "o_proj"
+    ]
+  },
+  "seeds": {
+    "training": [
+      101,
+      202,
+      303
+    ],
+    "data_partition": 4107,
+    "analysis": 7331
+  },
+  "environment": {
+    "sessions": 3,
+    "learned_session": 2,
+    "initialize_session_1_identically": true,
+    "max_questions_session_2": 1,
+    "max_questions_session_3_primary": 0,
+    "max_write_operations": 2,
+    "reset_transient_context_between_sessions": true,
+    "observation_primary": "O2",
+    "extraction_primary": "REF",
+    "reader_primary": "fixed_symbolic",
+    "reader_secondary": "frozen_base_llm",
+    "show_future_query_to_actor": false,
+    "show_future_reuse_regime_to_actor": true
+  },
+  "reward": {
+    "current_weight": 1.0,
+    "future_weight_long": 1.0,
+    "future_weight_short": 0.0,
+    "question_cost": 0.1,
+    "unsupported_operation_cost": 0.5,
+    "invalid_output_cost": 0.2
+  },
+  "sft": {
+    "learning_rate": 0.0002,
+    "epochs": 2,
+    "assistant_tokens_only": true,
+    "checkpoint_every_epochs": 1
+  },
+  "rl": {
+    "algorithm": "episodic_grpo",
+    "learning_rate": 5e-06,
+    "roots_per_effective_batch": 8,
+    "rollouts_per_root": 4,
+    "max_updates": 120,
+    "checkpoint_every_updates": 10,
+    "kl_coefficient": 0.02,
+    "kl_reference": "frozen_selected_sft_same_seed",
+    "clip_epsilon": 0.2,
+    "advantage_epsilon": 1e-06,
+    "temperature": 1.0,
+    "top_p": 1.0,
+    "stop_after_zero_signal_updates": 10
+  },
+  "limits": {
+    "max_input_tokens_per_phase": 2048,
+    "max_select_tokens": 64,
+    "max_respond_tokens": 256,
+    "max_write_tokens": 512,
+    "allow_silent_truncation": false
+  },
+  "budget": {
+    "post_sft_accelerator_seconds_cap": 3600,
+    "selected_by_technical_smoke_before_final_training": true
+  },
+  "sample": {
+    "smoke_roots": 40,
+    "train_roots": 600,
+    "validation_roots": 150,
+    "test_id_min_roots": 300,
+    "test_id_max_roots": 1200,
+    "test_id_locked_roots": 300,
+    "test_ood_roots": 150,
+    "external_roots": 50,
+    "robustness_roots": 100,
+    "grouped_by": "root_id"
+  },
+  "evaluation": {
+    "decoding": "greedy",
+    "primary_metric": "future_justified_success_macro",
+    "bootstrap_resamples": 20000,
+    "descriptive_ci": 0.95,
+    "primary_contrast_ci": 0.99,
+    "primary_contrasts": 5,
+    "practical_future_gain": 0.05,
+    "max_current_error_increase": 0.02,
+    "max_unsupported_write_increase": 0.02,
+    "include_step_zero_checkpoint": true,
+    "include_technical_failures_in_primary_denominator": true,
+    "test_time_weight_updates": false
+  }
+}

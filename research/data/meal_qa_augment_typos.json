@@ -1,0 +1,191 @@
+[
+  {
+    "id": "qa-augment-typos-veto-doble",
+    "family": "rectificacion",
+    "turns": [
+      {
+        "text": "q hay del menú para cenar sin poillo ni paaps?",
+        "excluded": ["papa", "pollo"]
+      },
+      {
+        "text": "espera, las papas sí. Es el pollo lo único que quiero saltarme. ¿Qué elijo?",
+        "excluded": ["pollo"]
+      },
+      {
+        "text": "ah ni arrozx tampoco, acabo de comer en el trabajo. ¿Qué plato podría pedir sin eso ni pollo?",
+        "excluded": ["arroz", "pollo"]
+      }
+    ]
+  },
+  {
+    "id": "qa-augment-typos-corrector-asterisco",
+    "family": "rectificacion",
+    "turns": [
+      {
+        "text": "para la cena: cero choclo y cero huveo, ¿cuál preparo?",
+        "excluded": ["choclo", "huevo"]
+      },
+      {
+        "text": "pollo* el teclado me puso choclo. Choclo sí puedo comer. Lo del huevo no cambia, ¿qué me queda?",
+        "excluded": ["huevo", "pollo"]
+      },
+      {
+        "text": "ahora sí encontré huevitos en el refri y se pueden usar. Dime qué hacer evitando solo el pollo.",
+        "excluded": ["pollo"]
+      }
+    ]
+  },
+  {
+    "id": "qa-augment-typos-puntuacion-lista",
+    "family": "multiple",
+    "turns": [
+      {
+        "text": "cena para mí: sin.. qeso / tomte!! ¿ves algo que me sirva del menú?",
+        "excluded": ["queso", "tomate"]
+      },
+      {
+        "text": "saca también las que tengan cebola, porfa, ¿tienes otra idea?",
+        "excluded": ["cebolla", "queso", "tomate"]
+      },
+      {
+        "text": "tomate sí, cebolla y queso NO. Ya con eso, ¿me dices qué plato pido?",
+        "excluded": ["cebolla", "queso"]
+      }
+    ]
+  },
+  {
+    "id": "qa-augment-typos-falta-ingrediente",
+    "family": "ambiguo",
+    "turns": [
+      {
+        "text": "busco cena sin lo que me dijo la persona que viene, pero no me acuerdo qué era. ¿Qué opción recomiendas?",
+        "excluded": [],
+        "clarify": true
+      },
+      {
+        "text": "ya me escribió: no puede con pescsdo o garbansos. ¿Qué nos pido?",
+        "excluded": ["garbanzo", "pescado"]
+      },
+      {
+        "text": "confirma que los garbanzos sí están bien, sigue pidiendo que no lleve pescado. ¿Con qué plato quedamos?",
+        "excluded": ["pescado"]
+      }
+    ]
+  },
+  {
+    "id": "qa-augment-typos-autocorreccion-inmediata",
+    "family": "rectificacion",
+    "turns": [
+      {
+        "text": "para esta noche nada de ceboila ni de pepno, ¿qué hago de comer?",
+        "excluded": ["cebolla", "pepino"]
+      },
+      {
+        "text": "no, corrijo lo de cebolla: sí me alcanza. Quiero quitar el pescdao y mantener fuera el pepino. ¿Qué preparo?",
+        "excluded": ["pepino", "pescado"]
+      },
+      {
+        "text": "bueno, puede tener pepino porque sí conseguí. ¿Me dices algún plato sin pescado?",
+        "excluded": ["pescado"]
+      }
+    ]
+  },
+  {
+    "id": "qa-augment-typos-corrector-de-voz",
+    "family": "rectificacion",
+    "turns": [
+      {
+        "text": "tengo visita y quiero pedir sin lentejas ni limn, ¿qué plato debería pedir?",
+        "excluded": ["lenteja", "limon"]
+      },
+      {
+        "text": "lentejas pueden ir, lo que dicté era 'quinua*'. Mantén sin limón también. ¿Qué cocino de la lista?",
+        "excluded": ["limon", "quinua"]
+      },
+      {
+        "text": "cambio: encontré quinua y sí la puedo usar. Sin linón y sin arros porfa, ¿qué recomiendas?",
+        "excluded": ["arroz", "limon"]
+      }
+    ]
+  },
+  {
+    "id": "qa-augment-typos-ingrediente-escondido",
+    "family": "multiple",
+    "turns": [
+      {
+        "text": "hoy cena sin toamte ni limmón. Aunque no salga en el título del plato, esos dos no van. ¿Qué sugieres?",
+        "excluded": ["limon", "tomate"]
+      },
+      {
+        "text": "tomate sí me vale si sale en la receta. El limón no. ¿Qué cenarías?",
+        "excluded": ["limon"]
+      },
+      {
+        "text": "y tampoco hueovo, se lo llevaron para el desayuno. Con eso, ¿cuál puedo hacer?",
+        "excluded": ["huevo", "limon"]
+      }
+    ]
+  },
+  {
+    "id": "qa-augment-typos-agotar-menu",
+    "family": "todas",
+    "turns": [
+      {
+        "text": "ando viendo qué cenar y no quiero aziete hoy, ¿queda algún plato en el menú?",
+        "excluded": ["aceite"]
+      },
+      {
+        "text": "tampoko polllo / ni qinua; si esas condiciones eliminan todos, dime. ¿Hay alguna opción?",
+        "excluded": ["aceite", "pollo", "quinua"]
+      },
+      {
+        "text": "encontré aceite así que lo puedes incluir. Poyyo y quinua siguen fuera. ¿Cuál pido entonces?",
+        "excluded": ["pollo", "quinua"]
+      },
+      {
+        "text": "va, de lo de antes ya no hay restricción. Para cenar ahora solo quiero que no tenga pescado, ¿qué plato elegirías?",
+        "excluded": ["pescado"]
+      }
+    ]
+  },
+  {
+    "id": "qa-augment-typos-relevo-de-vetos",
+    "family": "rectificacion",
+    "turns": [
+      {
+        "text": "me sobró zanahoria de ayer; lo q no quiero repetir es aroroz ni pescaddo. Cual pido de cena",
+        "excluded": ["arroz", "pescado"]
+      },
+      {
+        "text": "pescado sí me sirve al final, pero ya no tengo ppas; lo del arroz sigue afuera. ¿Qué hago de comer?",
+        "excluded": ["arroz", "papa"]
+      },
+      {
+        "text": "las papas ya no importan. No puedo con ceblola y sigue la condición de evitar arroz. ¿Alguna idea?",
+        "excluded": ["arroz", "cebolla"]
+      },
+      {
+        "text": "mejor que sí pueda llevar arroz y papas; la cebolla es lo único que descarto. ¿Con cuál me quedo?",
+        "excluded": ["cebolla"]
+      }
+    ]
+  },
+  {
+    "id": "qa-augment-typos-comas-sin-tilde",
+    "family": "multiple",
+    "turns": [
+      {
+        "text": "para hoy quitamos... polio, hvevo, y qinua. q puedo cenar d esa lista?",
+        "excluded": ["huevo", "pollo", "quinua"]
+      },
+      {
+        "text": "ya compré quinua, queda permitida! uevo y pollo no. ¿Cuál recomiendas ahora?",
+        "excluded": ["huevo", "pollo"]
+      },
+      {
+        "text": "también acepto huevo, solo que sin pollo ni limóonn. dime un plato para la cena",
+        "excluded": ["limon", "pollo"]
+      }
+    ]
+  }
+]

@@ -1,0 +1,832 @@
+[
+  {
+    "id": "clarification-train-despensa-prestada",
+    "family": "menu_y_aclaracion",
+    "turns": [
+      {
+        "text": "Me dejaron usar la cocina de un amigo. Hoy no tengo aceitte ni papas, ¿qué alcanzo a hacer de este menú?",
+        "excluded": [
+          "aceite",
+          "papa"
+        ]
+      },
+      {
+        "text": "vi dos papas en el cajón, sí puedo usar esas. Sigue sin aceite, cuál hago?",
+        "excluded": [
+          "aceite"
+        ]
+      },
+      {
+        "text": "Le pregunté y el poyo era para mañana, así que tampoco lo puedo tocar. ¿Me queda algún plato?",
+        "excluded": [
+          "aceite",
+          "pollo"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "clarification-train-almacen-cerrado",
+    "family": "menu_y_aclaracion",
+    "turns": [
+      {
+        "text": "salí tardísimo. no puedo comprar pollo ni aceite y quiero ver q ceno del menú q hay",
+        "excluded": [
+          "aceite",
+          "pollo"
+        ]
+      },
+      {
+        "text": "ya tengo aceite, hoy igual no va el pollo. También se me acabaron las papas y el tmte. ¿Qué puedo preparar?",
+        "excluded": [
+          "papa",
+          "pollo",
+          "tomate"
+        ]
+      },
+      {
+        "text": "ups me fijé y la bolsa de arroz está vacía. Con lo demás igual, ¿qué hago de comer?",
+        "excluded": [
+          "arroz",
+          "papa",
+          "pollo",
+          "tomate"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "clarification-train-mensaje-con-prisa",
+    "family": "menu_y_aclaracion",
+    "turns": [
+      {
+        "text": "q cocino? sino ppa ni arroz ni peppino, q quedda?",
+        "excluded": [
+          "arroz",
+          "papa",
+          "pepino"
+        ]
+      },
+      {
+        "text": "sin* papas ni pepino quise decir, arroz sí tengo. Dame una idea de cena.",
+        "excluded": [
+          "papa",
+          "pepino"
+        ]
+      },
+      {
+        "text": "elegí demasiado rápido: tampoco tengo zanahoria. Sin ppa / pepino / zanahoria, ¿alguno de los platos sirve?",
+        "excluded": [
+          "papa",
+          "pepino",
+          "zanahoria"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "clarification-train-visita-por-la-noche",
+    "family": "menu_y_aclaracion",
+    "turns": [
+      {
+        "text": "Viene mi tío. Para esta cena no usemos papas, zanahoria o tomates. ¿Qué hago del menú?",
+        "excluded": [
+          "papa",
+          "tomate",
+          "zanahoria"
+        ]
+      },
+      {
+        "text": "Me acaba de decir que el tomate sí le sirve; me quedan las otras dos cosas fuera. ¿Hay algún plato?",
+        "excluded": [
+          "papa",
+          "zanahoria"
+        ]
+      },
+      {
+        "text": "Y me olvidaba, no encontré quínoa. Dime si el menú tiene alguna opción con todo eso.",
+        "excluded": [
+          "papa",
+          "quinua",
+          "zanahoria"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "clarification-train-piden-entre-tres",
+    "family": "menu_y_aclaracion",
+    "turns": [
+      {
+        "text": "Estamos viendo qué pedir. Nadie quiere pollo, pescado ni huevo y yo paso de arroz y quinua. ¿Qué opción hay para todos?",
+        "excluded": [
+          "arroz",
+          "huevo",
+          "pescado",
+          "pollo",
+          "quinua"
+        ]
+      },
+      {
+        "text": "Al final con huevito va bien; deja el resto como estaba. ¿Cuál pedimos?",
+        "excluded": [
+          "arroz",
+          "pescado",
+          "pollo",
+          "quinua"
+        ]
+      },
+      {
+        "text": "Me olvidé que a Juli no le apetece la cebolla hoy. También hay que quitarla. ¿Qué queda para compartir?",
+        "excluded": [
+          "arroz",
+          "cebolla",
+          "pescado",
+          "pollo",
+          "quinua"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "clarification-train-registro-de-voz",
+    "family": "menu_y_aclaracion",
+    "turns": [
+      {
+        "text": "¿Qué puedo preparar de cena? Hoy quiero evitar aceite y poyo, los dos.",
+        "excluded": [
+          "aceite",
+          "pollo"
+        ]
+      },
+      {
+        "text": "papa* era papa lo segundo, no pollo. Me autocorrigió. ¿Algún plato del menú sin aceite ni papa?",
+        "excluded": [
+          "aceite",
+          "papa"
+        ]
+      },
+      {
+        "text": "Ya pues papas sí, es solo el aceite lo que sigo descartando para hoy. ¿Con qué ceno?",
+        "excluded": [
+          "aceite"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "clarification-train-turno-en-el-trabajo",
+    "family": "menu_y_aclaracion",
+    "turns": [
+      {
+        "text": "Voy a comer en mi descanso. En los platos de hoy no quiero papas, lentejas ni quinuua. ¿Con cuál me quedo?",
+        "excluded": [
+          "lenteja",
+          "papa",
+          "quinua"
+        ]
+      },
+      {
+        "text": "Las de quinua pueden ir, mantén el resto fuera porfa. ¿Qué puedo pedir así?",
+        "excluded": [
+          "lenteja",
+          "papa"
+        ]
+      },
+      {
+        "text": "Bueno, pensándolo mejor el pepino fuera también, igual que lentejas y papas. ¿Alguna cena del menú?",
+        "excluded": [
+          "lenteja",
+          "papa",
+          "pepino"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "clarification-train-sin-hacer-compras",
+    "family": "menu_y_aclaracion",
+    "turns": [
+      {
+        "text": "Para la cena me queda casi de todo menos arrós, limon, polyo, quinua y ceboya. ¿Puedo hacer uno de esos platos?",
+        "excluded": [
+          "arroz",
+          "cebolla",
+          "limon",
+          "pollo",
+          "quinua"
+        ]
+      },
+      {
+        "text": "Encontré un limón. El resto todavía me falta. ¿Qué plato preparo?",
+        "excluded": [
+          "arroz",
+          "cebolla",
+          "pollo",
+          "quinua"
+        ]
+      },
+      {
+        "text": "Lo abro y está seco, olvida el limón. Con los mismos ingredientes fuera, ¿qué queda de cena?",
+        "excluded": [
+          "arroz",
+          "cebolla",
+          "limon",
+          "pollo",
+          "quinua"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "clarification-train-cena-en-un-rato",
+    "family": "menu_y_aclaracion",
+    "turns": [
+      {
+        "text": "Hoy me toca cocinar sin pescado, pollo, aceyte ni ppas, ¿cuál de las opciones hay para cenar?",
+        "excluded": [
+          "aceite",
+          "papa",
+          "pescado",
+          "pollo"
+        ]
+      },
+      {
+        "text": "Me dejan usar aceite pero las papas y el pescado no; tampoco pollo. ¿Con qué puedo cenar?",
+        "excluded": [
+          "papa",
+          "pescado",
+          "pollo"
+        ]
+      },
+      {
+        "text": "Además fuera lentejas y pepino. Si agrego eso a lo anterior, ¿puedo preparar algo del menú?",
+        "excluded": [
+          "lenteja",
+          "papa",
+          "pepino",
+          "pescado",
+          "pollo"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "clarification-train-una-llamada",
+    "family": "menu_y_aclaracion",
+    "turns": [
+      {
+        "text": "No quiero tomate, papa ni zanahoria en mi cena. ¿De esos platos hay alguno?",
+        "excluded": [
+          "papa",
+          "tomate",
+          "zanahoria"
+        ]
+      },
+      {
+        "text": "Me llaman para avisar que la zanahoria sí se puede usar. Sigue sin tomate y papa, ¿entonces qué preparo?",
+        "excluded": [
+          "papa",
+          "tomate"
+        ]
+      },
+      {
+        "text": "La zanahoria bien, pero ya no puedo usar las lentejasss. También sin tomate ni papa. ¿Cuál de los platos se puede?",
+        "excluded": [
+          "lenteja",
+          "papa",
+          "tomate"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "clarification-train-promocion-cafeteria",
+    "family": "menu_y_aclaracion",
+    "turns": [
+      {
+        "text": "En la cafetería todo tiene un nombre bonito pero hoy no me caen peskado, huebo, pollito ni arrozz. ¿Me dices un plato del menú?",
+        "excluded": [
+          "arroz",
+          "huevo",
+          "pescado",
+          "pollo"
+        ]
+      },
+      {
+        "text": "También sin tomate porfa, esos otros cuatro igual. ¿Me sigue sirviendo una cena de ahí?",
+        "excluded": [
+          "arroz",
+          "huevo",
+          "pescado",
+          "pollo",
+          "tomate"
+        ]
+      },
+      {
+        "text": "Me comí una galleta y ya no me molesta que tenga huevo. Todavía sin pollo, pescado, tomate ni arroz, ¿qué pido?",
+        "excluded": [
+          "arroz",
+          "pescado",
+          "pollo",
+          "tomate"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "clarification-train-de-gira",
+    "family": "menu_y_aclaracion",
+    "turns": [
+      {
+        "text": "Aquí solo puedo escoger del menú del grupo y hoy no como pescado, pollo ni huevo. ¿Qué me recomiendas para cenar?",
+        "excluded": [
+          "huevo",
+          "pescado",
+          "pollo"
+        ]
+      },
+      {
+        "text": "Para esta noche tampoco con zanahoria ni qinua, súmalos a lo anterior. ¿Qué queda?",
+        "excluded": [
+          "huevo",
+          "pescado",
+          "pollo",
+          "quinua",
+          "zanahoria"
+        ]
+      },
+      {
+        "text": "Mejor sí quinua, rectifico solo eso. ¿Alguna opción de cena?",
+        "excluded": [
+          "huevo",
+          "pescado",
+          "pollo",
+          "zanahoria"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "clarification-train-tarea-del-super",
+    "family": "menu_y_aclaracion",
+    "turns": [
+      {
+        "text": "en la casa no quedó aceite y hoy no quiero pollo. No me mandes a comprar, ¿qué sale de cena del menú?",
+        "excluded": [
+          "aceite",
+          "pollo"
+        ]
+      },
+      {
+        "text": "mi vecina me dio unas gotas de aceite. Le entro por hoy si no tiene pollo, sin tómate tampoco. ¿Cuál hago?",
+        "excluded": [
+          "pollo",
+          "tomate"
+        ]
+      },
+      {
+        "text": "de lo anterior: tomate también puedo usar; pollo todavía fuera. Ahora lo que no tengo son papas y arroz. ¿Qué tengo para la cena?",
+        "excluded": [
+          "arroz",
+          "papa",
+          "pollo"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "clarification-train-cocina-sin-extractor",
+    "family": "menu_y_aclaracion",
+    "turns": [
+      {
+        "text": "El extractor sigue dañado, de estos platos dime cuál puedo hacer sin pollo ni pescado. También descarta cebolla y lentejas.",
+        "excluded": [
+          "cebolla",
+          "lenteja",
+          "pescado",
+          "pollo"
+        ]
+      },
+      {
+        "text": "Mi compa no quiere pepino; es para los dos, entonces sácalo además de lo anterior. ¿Con cuál cenamos?",
+        "excluded": [
+          "cebolla",
+          "lenteja",
+          "pepino",
+          "pescado",
+          "pollo"
+        ]
+      },
+      {
+        "text": "Ya conseguí que arreglen el extractor y puedo hacer pescado. No cambies lo de cebolla, lentejas, pepino y pollo. ¿Qué preparo?",
+        "excluded": [
+          "cebolla",
+          "lenteja",
+          "pepino",
+          "pollo"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "clarification-train-pedido-en-transito",
+    "family": "menu_y_aclaracion",
+    "turns": [
+      {
+        "text": "Estoy por hacer el pedido de la cena. Estoy evitando cebolla, arroz y limón. ¿Qué me conviene?",
+        "excluded": [
+          "arroz",
+          "cebolla",
+          "limon"
+        ]
+      },
+      {
+        "text": "Todos esos siguen fuera. Aparte ni poio ni tomatte por esta vez, ¿de esos platos aún se puede pedir alguno?",
+        "excluded": [
+          "arroz",
+          "cebolla",
+          "limon",
+          "pollo",
+          "tomate"
+        ]
+      },
+      {
+        "text": "Una última: deja que pueda llevar tomate. Mantén descartados los otros. ¿Cuál pido?",
+        "excluded": [
+          "arroz",
+          "cebolla",
+          "limon",
+          "pollo"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "clarification-train-compra-a-medias",
+    "family": "menu_y_aclaracion",
+    "turns": [
+      {
+        "text": "Me queda poca cosa en casa. De ese menú hoy no puedo usar zanahoria, pepino, papas ni aceite. ¿Qué hago de comer?",
+        "excluded": [
+          "aceite",
+          "papa",
+          "pepino",
+          "zanahoria"
+        ]
+      },
+      {
+        "text": "Aceite conseguí; quita las otras tres de la lista de ingredientes. ¿Qué plato sale ahora?",
+        "excluded": [
+          "papa",
+          "pepino",
+          "zanahoria"
+        ]
+      },
+      {
+        "text": "Me acabo de acordar del pepino en el refri, solo ese sí puedo usar. ¿Qué me queda para cocinar?",
+        "excluded": [
+          "papa",
+          "zanahoria"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "clarification-train-ok-con-el-telefono",
+    "family": "menu_y_aclaracion",
+    "turns": [
+      {
+        "text": "Hoy sin azeyte, algún plato de cena de la lista?",
+        "excluded": [
+          "aceite"
+        ]
+      },
+      {
+        "text": "sin aceite + sin poyyo, pongo + para que se lean los dos. ¿Qué plato queda así?",
+        "excluded": [
+          "aceite",
+          "pollo"
+        ]
+      },
+      {
+        "text": "pollo sí* me equivoqué con lo del pollo. Lo del aceite se queda tal cual. ¿Cuál de esos platos me sugieres?",
+        "excluded": [
+          "aceite"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "clarification-train-mitad-de-la-receta",
+    "family": "menu_y_aclaracion",
+    "turns": [
+      {
+        "text": "Mis restricciones para la cena de hoy: papa, lenteja y quinua fuera. ¿Qué opción hago?",
+        "excluded": [
+          "lenteja",
+          "papa",
+          "quinua"
+        ]
+      },
+      {
+        "text": "Revisé y tengo las lentejas, ya no las saques. Lo demás igual, ¿con cuál me quedo?",
+        "excluded": [
+          "papa",
+          "quinua"
+        ]
+      },
+      {
+        "text": "Mezclé las bolsas. Lo que me queda no es lenteja sino otra cosa. Papa y quinua siguen fuera. ¿Todavía puedo hacer algo?",
+        "excluded": [
+          "lenteja",
+          "papa",
+          "quinua"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "clarification-train-cambiaron-de-mesa",
+    "family": "menu_y_aclaracion",
+    "turns": [
+      {
+        "text": "De la carta elegir algo para mí y Sara: yo sin huevo ni zanahoria, ella sin papa ni pepino. ¿Qué podemos cenar?",
+        "excluded": [
+          "huevo",
+          "papa",
+          "pepino",
+          "zanahoria"
+        ]
+      },
+      {
+        "text": "Sara ahora sí puede comer pepino, lo demás sigue. ¿Qué nos pido de la carta?",
+        "excluded": [
+          "huevo",
+          "papa",
+          "zanahoria"
+        ]
+      },
+      {
+        "text": "Ese cambio quedó, pero yo ahora tampoco puedo con tomate. ¿Qué cabe en la cena de los dos?",
+        "excluded": [
+          "huevo",
+          "papa",
+          "tomate",
+          "zanahoria"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "clarification-train-notas-de-la-app",
+    "family": "menu_y_aclaracion",
+    "turns": [
+      {
+        "text": "¿Qué cena queda si en la app marco fuera esto? arróz / limon / huev / tomat / pollo",
+        "excluded": [
+          "arroz",
+          "huevo",
+          "limon",
+          "pollo",
+          "tomate"
+        ]
+      },
+      {
+        "text": "el limón ya no lo quiero marcar, sí puedo usarlo; el resto se queda vetado. ¿Qué sale?",
+        "excluded": [
+          "arroz",
+          "huevo",
+          "pollo",
+          "tomate"
+        ]
+      },
+      {
+        "text": "ah sí marca el limón otra vez, lo decidí para esta cena. ¿Con esas restricciones qué puedo hacer?",
+        "excluded": [
+          "arroz",
+          "huevo",
+          "limon",
+          "pollo",
+          "tomate"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "clarification-train-sin-repetir-no-era-eso",
+    "family": "menu_y_aclaracion",
+    "turns": [
+      {
+        "text": "Ya cené papas ayer, pero puedo repetirlas. Para hoy sin pescado y sin huevo, ¿qué hago?",
+        "excluded": [
+          "huevo",
+          "pescado"
+        ]
+      },
+      {
+        "text": "Cambio, no quiero papas tampoco. Se agregan al pescado y huevo. Ah y sin arroz ni tomate. ¿Qué me queda?",
+        "excluded": [
+          "arroz",
+          "huevo",
+          "papa",
+          "pescado",
+          "tomate"
+        ]
+      },
+      {
+        "text": "El tomate sí va esta vez, lo repuse. ¿Cuál plato se puede sin todos los otros ingredientes?",
+        "excluded": [
+          "arroz",
+          "huevo",
+          "papa",
+          "pescado"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "clarification-train-quedaron-huevos",
+    "family": "menu_y_aclaracion",
+    "turns": [
+      {
+        "text": "Tengo que evitar POLLO, limón y cebolla, y de paso ni quínoa ni arroz. ¿Qué hago para la cena hoy?",
+        "excluded": [
+          "arroz",
+          "cebolla",
+          "limon",
+          "pollo",
+          "quinua"
+        ]
+      },
+      {
+        "text": "Cebolla sí, pensé que me había acabado toda. Mantén el resto. ¿Alguna cena de ese menú?",
+        "excluded": [
+          "arroz",
+          "limon",
+          "pollo",
+          "quinua"
+        ]
+      },
+      {
+        "text": "A huevo le pongo que no también: los que quedaban tienen mala pinta. ¿Puedo preparar algún plato sumando ese veto?",
+        "excluded": [
+          "arroz",
+          "huevo",
+          "limon",
+          "pollo",
+          "quinua"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "clarification-train-amiga-cocina-otro-dia",
+    "family": "menu_y_aclaracion",
+    "turns": [
+      {
+        "text": "Voy por algo de cenar para mí y mi amiga. Yo no quiero pollo ni ceboia y ella no quiere pescado, arroz ni quínoa. ¿Cuál de esos platos sirve?",
+        "excluded": [
+          "arroz",
+          "cebolla",
+          "pescado",
+          "pollo",
+          "quinua"
+        ]
+      },
+      {
+        "text": "Ella sí acepta quinua al final. Todo lo demás descartado por los dos queda igual. ¿Qué opción pedimos?",
+        "excluded": [
+          "arroz",
+          "cebolla",
+          "pescado",
+          "pollo"
+        ]
+      },
+      {
+        "text": "Pero la quinua solo sin pepino. Ese no lo come hoy y lo demás sigue igual. ¿Qué podemos escoger?",
+        "excluded": [
+          "arroz",
+          "cebolla",
+          "pepino",
+          "pescado",
+          "pollo"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "clarification-train-sobras-en-cajas",
+    "family": "menu_y_aclaracion",
+    "turns": [
+      {
+        "text": "Comida de noche con lo que hay: sin papas, sin lentejaas. ¿Alguno de ese menú?",
+        "excluded": [
+          "lenteja",
+          "papa"
+        ]
+      },
+      {
+        "text": "La caja que marqué de quinua está vacía. Agrégala a las otras dos cosas que no tengo. ¿Qué plato sale de ese menú?",
+        "excluded": [
+          "lenteja",
+          "papa",
+          "quinua"
+        ]
+      },
+      {
+        "text": "Leí mal la etiqueta: quinua hay, lo que pasa es que no tengo pepino. Los primeros dos siguen fuera. ¿Me ayudas a ver qué queda?",
+        "excluded": [
+          "lenteja",
+          "papa",
+          "pepino"
+        ]
+      },
+      {
+        "text": "Me trajeron pepino picado, ya lo puedo usar. Solo sin lentejas y papas. ¿Cuál hago para cenar?",
+        "excluded": [
+          "lenteja",
+          "papa"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "clarification-train-a-espera-de-un-mensaje",
+    "family": "menu_y_aclaracion",
+    "turns": [
+      {
+        "text": "¿Qué plato del menú puedo pedir? Mi hermano me dijo que hay algo que no puede comer hoy pero dejé el mensaje en visto y no lo encuentro.",
+        "excluded": [],
+        "clarify": true
+      },
+      {
+        "text": "Ya lo encontré: no come patata, arroz ni tomate. Los dos vamos a compartir. ¿Qué pedimos?",
+        "excluded": [
+          "arroz",
+          "papa",
+          "tomate"
+        ]
+      },
+      {
+        "text": "Dice que sí puede tomate. Las otras dos condiciones siguen. ¿Qué queda para pedir?",
+        "excluded": [
+          "arroz",
+          "papa"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "clarification-train-lista-a-medias",
+    "family": "menu_y_aclaracion",
+    "turns": [
+      {
+        "text": "Era sin un ingrediente que me acaban de dejar escrito en una nota, pero no te pasé cuál. ¿Qué podría cenar que no lo lleve?",
+        "excluded": [],
+        "clarify": true
+      },
+      {
+        "text": "Ya la leí. Hoy no puedo con huevo, cebolla, aceite y pollo. ¿Alguno de los platos aguanta eso?",
+        "excluded": [
+          "aceite",
+          "cebolla",
+          "huevo",
+          "pollo"
+        ]
+      },
+      {
+        "text": "Busqué otra marca y sí podemos usar su aceite, mantén fuera el resto. ¿Qué podemos cenar?",
+        "excluded": [
+          "cebolla",
+          "huevo",
+          "pollo"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "clarification-train-regresion-captura-solo-por-hoy",
+    "family": "menu_y_aclaracion",
+    "turns": [
+      {
+        "text": "ayer comi pollo no quiero pollo comer hoy recomiendame cosas para comer",
+        "excluded": [
+          "pollo"
+        ]
+      },
+      {
+        "text": "solo por hoy",
+        "excluded": [
+          "pollo"
+        ]
+      },
+      {
+        "text": "Espera, pollo sí está bien. Ahora solo quiero que no lleve arroz. ¿Qué otro plato puedo preparar?",
+        "excluded": [
+          "arroz"
+        ]
+      }
+    ]
+  }
+]
