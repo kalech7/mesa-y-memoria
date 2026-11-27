@@ -1,0 +1,76 @@
+{
+  "lock_sha256": "0f7fae33b2c6b2b02b5caad6f15a4174faaa8ec6e7337c8125dc579e4b9d9f8a",
+  "reserve_sha256": {
+    "PARES.json": "9a42a8b1ff41a885127aa799dc73d6a8aa28ff7673b91b79ac2b539aff250177",
+    "CLAVE.json": "f38a18648988a2cae24d02152be5ba22df2a00757179d028fa157a8ca2f6bfcb",
+    "REVISION_CIEGA.json": "c656168d87082efd967c091ed4df600fe8c9760b530e591ef13546e3bddf8053",
+    "JUICIOS.json": "68d0dd014001fb58ab16235c368316e565875b442e7909e1fcb3dfd3097c9c06"
+  },
+  "audit": {
+    "pairs": 30,
+    "roots": 60,
+    "worlds": 480,
+    "packets": {
+      "EC-packet-1": [
+        "EC01",
+        "EC16",
+        "EC02",
+        "EC17",
+        "EC03",
+        "EC18",
+        "EC04",
+        "EC19",
+        "EC05",
+        "EC20"
+      ],
+      "EC-packet-2": [
+        "EC06",
+        "EC21",
+        "EC07",
+        "EC22",
+        "EC08",
+        "EC23",
+        "EC09",
+        "EC24",
+        "EC10",
+        "EC25"
+      ],
+      "EC-packet-3": [
+        "EC11",
+        "EC26",
+        "EC12",
+        "EC27",
+        "EC13",
+        "EC28",
+        "EC14",
+        "EC29",
+        "EC15",
+        "EC30"
+      ]
+    },
+    "worlds_sha256": "df945d3353d0bb4a7d88c27c8afc8a94ba3c7185f2a821c39c084b38c24d54bf",
+    "distinct_external_agendas": 60,
+    "historical_agenda_overlap": {
+      "v6_train": [],
+      "v6_validation": [],
+      "v6_reserved": [],
+      "v7_train": [],
+      "v7_validation": [],
+      "v7_reserved": []
+    },
+    "distinct_public_prompts_checked": 240,
+    "private_metadata_in_prompts": false,
+    "future_accuracy": {
+      "ask_now": {
+        "ASK-WAIT": 0.8500000000000001,
+        "WAIT-ASK": 0.65,
+        "WAIT-WAIT": 0.5
+      },
+      "save": {
+        "ASK-WAIT": 0.65,
+        "WAIT-ASK": 0.8500000000000001,
+        "WAIT-WAIT": 0.5
+      }
+    }
+  }
+}

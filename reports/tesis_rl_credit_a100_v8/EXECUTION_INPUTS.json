@@ -1,0 +1,38 @@
+{
+  "base": {
+    "model.safetensors": "dd924a11b4c220f385b51ffa522daea7c9f3d850e31b162bb5661df483c6d3ee",
+    "config.json": "98d2ff8cc47488d08a2b0b3acf4eb99ef210779b42bd48605f6b8e36acdbf670",
+    "tokenizer.json": "c0382117ea329cdf097041132f6d735924b697924d6f6fc3945713e96ce87539",
+    "tokenizer_config.json": "5b5d4f65d0acd3b2d56a35b56d374a36cbc1c8fa5cf3b3febbbfabf22f359583",
+    "vocab.json": "ca10d7e9fb3ed18575dd1e277a2579c16d108e32f27439684afa0e10b1440910",
+    "merges.txt": "599bab54075088774b1733fde865d5bd747cbcc7a547c5bc12610e874e26f5e3"
+  },
+  "parent": {
+    "adapter_model.safetensors": "70ea39c231390f4f67c78352161ce4fae6f742de6bbc47a3ef9f01c5506f5aa4",
+    "adapter_config.json": "963ef0f18ec73601bf6a5c234990f060e5a3106e5d3abaf142d5644b8258b07e"
+  },
+  "sources": {
+    "research/tesis_timing_v6_bank.py": "6227d80f39614938aa85dcf0266fd43afb6fb18046fec1784e714a97ca797063",
+    "research/tesis_timing_v6_env.py": "35b56d93d2aa3dd13c2af3955ca59016435e7b85c3e65c9d03bf602db0c5c0c8",
+    "research/tesis_timing_v6_eval.py": "ce910bc83db65261bd06df0834c7921067dc854589af11e5f6963ca85df396c2",
+    "research/tesis_timing_v6_experiment.py": "257e2e5493e5bcdd65b2c1cb05de4dbd777b27f1b21aaa65b52a909f9b8b303f",
+    "research/tesis_timing_v6_train.py": "fb32f58e5fe49c2ae749fd86f7417e1a09efa762cd8bc45a68526b29851eb4c5",
+    "research/tesis_shared_budget_planner.py": "18af697e9c882c99768c6c78d46f4b069a8e8a22ca0c5a09920b3e0d974e51f8",
+    "research/tesis_shared_budget_qwen.py": "90e125871e8bd36c6554cf519877342cc94759cec0e14b65293b402412a73695",
+    "research/tesis_shared_budget_qwen_matched.py": "99fa496d29bd9af38257cd2905e64cba6cab840109169acdc597d34175a4ec92",
+    "research/tesis_extended_experiment.py": "0b26dc01c21a14e7f33b216ab592f6632ca8a8db444643eb8ddc22495fd5ee2c",
+    "research/tesis_profiles_optimizer_v5.py": "5fb6fe5c2aedd7a33aa8b33454cbdc805fdf5b9d4d10ece6d2683dfd579da130",
+    "research/src/artifacts.py": "ac4ee204311e355d2ff5e055ca5271fc821042b4c276a13acc4a1c59637f185e",
+    "research/src/data/build_bank.py": "74107aa2e449cfcd421ab384c6ea3573c2a90e935e7230f99c4c3185aa9fa6d1",
+    "research/src/memory/store.py": "a1c4edf7cd76bd8848178a16f51ca24af9c7fb165d209a2e7d344dfd827c622f",
+    "research/src/memory/executor.py": "0c72f482ce0dc8fbdf5483ff3f226a34fe3248226bacf903dfcd2379af911195",
+    "research/src/readers/symbolic.py": "e30d1322bd2be205d9a75d9058f6f3ff2de2215a3ff1237b44a7b456123f631d",
+    "research/tesis_timing_v7.py": "69eacf94471db8ab61a5ba7ff7dc761d94ef09eeff7445a05c348db03be20c59",
+    "research/tesis_timing_v7_bank.py": "ee45c56f94842f1ef614584aa1c60fdebca6a6da65378adc587b98ff6d454b5d",
+    "research/tesis_ecuador_worlds.py": "84dfdb04254c08072ec9c7a69f51eff99219aed036bdb8db7e5666ab491ac752",
+    "research/tesis_ecuador_eval.py": "35a283290f9ea99ee273d38e83f3024e83ea32d158ea010f6f1c5767acb071aa",
+    "research/tesis_rl_v8.py": "fe7c7e6e5f35ee62b40fbe6bd16c23b0cd8e8950b908b98ccbdd0dfcbbd1980d",
+    "research/tesis_rl_v8_rewards.py": "47443f1b8144108d415a9ba0afc9b257d1a702b80f63145920d1fd9273a21f2d",
+    "research/tesis_rl_v8b.py": "d988ed56ba85ae5c54554dc487c5bb92c94c03b519944c51059779a978f32835"
+  }
+}

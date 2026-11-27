@@ -1,0 +1,959 @@
+{
+  "epoch": 8,
+  "adapter": "epoch-8/adapter",
+  "cutoff": 26.375,
+  "metrics": {
+    "macro": {
+      "future_supported": 0.645,
+      "current_supported": 1.0,
+      "future_unsupported_reuse": 0.0,
+      "questions": 0.5,
+      "future_queries": 6.000000000000001,
+      "future_positive_queries": 3.0000000000000004,
+      "future_positive_supported": 0.87,
+      "future_correct_abstentions": 3.0000000000000004,
+      "asked_first": 0.25,
+      "asked_second": 0.25,
+      "asked_second_nonpositive_margin": 0.0
+    },
+    "packets": {
+      "b2155cf274d75bfdfb9": {
+        "metrics": {
+          "future_supported": 0.645,
+          "current_supported": 1.0,
+          "future_unsupported_reuse": 0.0,
+          "questions": 0.5,
+          "future_queries": 6.000000000000001,
+          "future_positive_queries": 3.0000000000000004,
+          "future_positive_supported": 0.87,
+          "future_correct_abstentions": 3.0000000000000004,
+          "asked_first": 0.25,
+          "asked_second": 0.25,
+          "asked_second_nonpositive_margin": 0.0
+        }
+      },
+      "b92e3db469ca0cd858f": {
+        "metrics": {
+          "future_supported": 0.655,
+          "current_supported": 1.0,
+          "future_unsupported_reuse": 0.0,
+          "questions": 0.5,
+          "future_queries": 6.000000000000001,
+          "future_positive_queries": 3.0000000000000004,
+          "future_positive_supported": 0.93,
+          "future_correct_abstentions": 3.0000000000000004,
+          "asked_first": 0.3,
+          "asked_second": 0.2,
+          "asked_second_nonpositive_margin": 0.0
+        }
+      },
+      "bbcd8083242a4325202": {
+        "metrics": {
+          "future_supported": 0.635,
+          "current_supported": 1.0,
+          "future_unsupported_reuse": 0.0,
+          "questions": 0.5,
+          "future_queries": 6.000000000000001,
+          "future_positive_queries": 3.0000000000000004,
+          "future_positive_supported": 0.81,
+          "future_correct_abstentions": 3.0000000000000004,
+          "asked_first": 0.2,
+          "asked_second": 0.3,
+          "asked_second_nonpositive_margin": 0.0
+        }
+      }
+    },
+    "individual": {
+      "greedy_free_budget": {
+        "future_supported": 0.7775000000000001,
+        "current_supported": 1.0,
+        "future_unsupported_reuse": 0.0,
+        "questions": 0.9833333333333333,
+        "future_queries": 6.000000000000001,
+        "future_positive_queries": 3.0000000000000004,
+        "future_positive_supported": 1.665,
+        "future_correct_abstentions": 3.0000000000000004
+      },
+      "one_question_per_root": {
+        "future_supported": 0.7833333333333334,
+        "current_supported": 1.0,
+        "future_unsupported_reuse": 0.0,
+        "questions": 1.0,
+        "future_queries": 6.000000000000001,
+        "future_positive_queries": 3.0000000000000004,
+        "future_positive_supported": 1.7000000000000002,
+        "future_correct_abstentions": 3.0000000000000004
+      },
+      "both_timings_correct_native": 0.3333333333333333,
+      "evaluable_flipped_pairs": 30,
+      "both_timings_correct_at_one_question": 0.3333333333333333,
+      "first_question_rate_by_agenda": {
+        "ask_now": 0.6,
+        "save": 0.26666666666666666
+      }
+    }
+  },
+  "weights": {
+    "adapter_model.safetensors": "ecbac51d91dfc52c12007cf82acc273a6ec978361f47edac44a61b84f3f5aa86",
+    "adapter_config.json": "963ef0f18ec73601bf6a5c234990f060e5a3106e5d3abaf142d5644b8258b07e"
+  },
+  "candidates": [
+    {
+      "epoch": 2,
+      "adapter": "epoch-2/adapter",
+      "cutoff": 10.0,
+      "metrics": {
+        "macro": {
+          "future_supported": 0.6416666666666667,
+          "current_supported": 1.0,
+          "future_unsupported_reuse": 0.0,
+          "questions": 0.5,
+          "future_queries": 6.000000000000001,
+          "future_positive_queries": 3.0000000000000004,
+          "future_positive_supported": 0.85,
+          "future_correct_abstentions": 3.0000000000000004,
+          "asked_first": 0.23333333333333334,
+          "asked_second": 0.26666666666666666,
+          "asked_second_nonpositive_margin": 0.0
+        },
+        "packets": {
+          "b2155cf274d75bfdfb9": {
+            "metrics": {
+              "future_supported": 0.645,
+              "current_supported": 1.0,
+              "future_unsupported_reuse": 0.0,
+              "questions": 0.5,
+              "future_queries": 6.000000000000001,
+              "future_positive_queries": 3.0000000000000004,
+              "future_positive_supported": 0.87,
+              "future_correct_abstentions": 3.0000000000000004,
+              "asked_first": 0.3,
+              "asked_second": 0.2,
+              "asked_second_nonpositive_margin": 0.0
+            }
+          },
+          "b92e3db469ca0cd858f": {
+            "metrics": {
+              "future_supported": 0.635,
+              "current_supported": 1.0,
+              "future_unsupported_reuse": 0.0,
+              "questions": 0.5,
+              "future_queries": 6.000000000000001,
+              "future_positive_queries": 3.0000000000000004,
+              "future_positive_supported": 0.81,
+              "future_correct_abstentions": 3.0000000000000004,
+              "asked_first": 0.2,
+              "asked_second": 0.3,
+              "asked_second_nonpositive_margin": 0.0
+            }
+          },
+          "bbcd8083242a4325202": {
+            "metrics": {
+              "future_supported": 0.645,
+              "current_supported": 1.0,
+              "future_unsupported_reuse": 0.0,
+              "questions": 0.5,
+              "future_queries": 6.000000000000001,
+              "future_positive_queries": 3.0000000000000004,
+              "future_positive_supported": 0.87,
+              "future_correct_abstentions": 3.0000000000000004,
+              "asked_first": 0.2,
+              "asked_second": 0.3,
+              "asked_second_nonpositive_margin": 0.0
+            }
+          }
+        },
+        "individual": {
+          "greedy_free_budget": {
+            "future_supported": 0.7733333333333334,
+            "current_supported": 1.0,
+            "future_unsupported_reuse": 0.0,
+            "questions": 1.0,
+            "future_queries": 6.000000000000001,
+            "future_positive_queries": 3.0000000000000004,
+            "future_positive_supported": 1.6400000000000001,
+            "future_correct_abstentions": 3.0000000000000004
+          },
+          "one_question_per_root": {
+            "future_supported": 0.7733333333333334,
+            "current_supported": 1.0,
+            "future_unsupported_reuse": 0.0,
+            "questions": 1.0,
+            "future_queries": 6.000000000000001,
+            "future_positive_queries": 3.0000000000000004,
+            "future_positive_supported": 1.6400000000000001,
+            "future_correct_abstentions": 3.0000000000000004
+          },
+          "both_timings_correct_native": 0.23333333333333334,
+          "evaluable_flipped_pairs": 30,
+          "both_timings_correct_at_one_question": 0.23333333333333334,
+          "first_question_rate_by_agenda": {
+            "ask_now": 0.6333333333333333,
+            "save": 0.4
+          }
+        }
+      }
+    },
+    {
+      "epoch": 4,
+      "adapter": "epoch-4/adapter",
+      "cutoff": 17.375,
+      "metrics": {
+        "macro": {
+          "future_supported": 0.6483333333333333,
+          "current_supported": 1.0,
+          "future_unsupported_reuse": 0.0,
+          "questions": 0.5,
+          "future_queries": 6.000000000000001,
+          "future_positive_queries": 3.0000000000000004,
+          "future_positive_supported": 0.89,
+          "future_correct_abstentions": 3.0000000000000004,
+          "asked_first": 0.23333333333333334,
+          "asked_second": 0.26666666666666666,
+          "asked_second_nonpositive_margin": 0.0
+        },
+        "packets": {
+          "b2155cf274d75bfdfb9": {
+            "metrics": {
+              "future_supported": 0.655,
+              "current_supported": 1.0,
+              "future_unsupported_reuse": 0.0,
+              "questions": 0.5,
+              "future_queries": 6.000000000000001,
+              "future_positive_queries": 3.0000000000000004,
+              "future_positive_supported": 0.93,
+              "future_correct_abstentions": 3.0000000000000004,
+              "asked_first": 0.2,
+              "asked_second": 0.3,
+              "asked_second_nonpositive_margin": 0.0
+            }
+          },
+          "b92e3db469ca0cd858f": {
+            "metrics": {
+              "future_supported": 0.645,
+              "current_supported": 1.0,
+              "future_unsupported_reuse": 0.0,
+              "questions": 0.5,
+              "future_queries": 6.000000000000001,
+              "future_positive_queries": 3.0000000000000004,
+              "future_positive_supported": 0.87,
+              "future_correct_abstentions": 3.0000000000000004,
+              "asked_first": 0.3,
+              "asked_second": 0.2,
+              "asked_second_nonpositive_margin": 0.0
+            }
+          },
+          "bbcd8083242a4325202": {
+            "metrics": {
+              "future_supported": 0.645,
+              "current_supported": 1.0,
+              "future_unsupported_reuse": 0.0,
+              "questions": 0.5,
+              "future_queries": 6.000000000000001,
+              "future_positive_queries": 3.0000000000000004,
+              "future_positive_supported": 0.87,
+              "future_correct_abstentions": 3.0000000000000004,
+              "asked_first": 0.2,
+              "asked_second": 0.3,
+              "asked_second_nonpositive_margin": 0.0
+            }
+          }
+        },
+        "individual": {
+          "greedy_free_budget": {
+            "future_supported": 0.77,
+            "current_supported": 1.0,
+            "future_unsupported_reuse": 0.0,
+            "questions": 1.0,
+            "future_queries": 6.000000000000001,
+            "future_positive_queries": 3.0000000000000004,
+            "future_positive_supported": 1.62,
+            "future_correct_abstentions": 3.0000000000000004
+          },
+          "one_question_per_root": {
+            "future_supported": 0.77,
+            "current_supported": 1.0,
+            "future_unsupported_reuse": 0.0,
+            "questions": 1.0,
+            "future_queries": 6.000000000000001,
+            "future_positive_queries": 3.0000000000000004,
+            "future_positive_supported": 1.62,
+            "future_correct_abstentions": 3.0000000000000004
+          },
+          "both_timings_correct_native": 0.26666666666666666,
+          "evaluable_flipped_pairs": 30,
+          "both_timings_correct_at_one_question": 0.26666666666666666,
+          "first_question_rate_by_agenda": {
+            "ask_now": 0.7333333333333333,
+            "save": 0.5333333333333333
+          }
+        }
+      }
+    },
+    {
+      "epoch": 6,
+      "adapter": "epoch-6/adapter",
+      "cutoff": 22.375,
+      "metrics": {
+        "macro": {
+          "future_supported": 0.6383333333333333,
+          "current_supported": 1.0,
+          "future_unsupported_reuse": 0.0,
+          "questions": 0.5,
+          "future_queries": 6.000000000000001,
+          "future_positive_queries": 3.0000000000000004,
+          "future_positive_supported": 0.8300000000000001,
+          "future_correct_abstentions": 3.0000000000000004,
+          "asked_first": 0.25,
+          "asked_second": 0.25,
+          "asked_second_nonpositive_margin": 0.0
+        },
+        "packets": {
+          "b2155cf274d75bfdfb9": {
+            "metrics": {
+              "future_supported": 0.645,
+              "current_supported": 1.0,
+              "future_unsupported_reuse": 0.0,
+              "questions": 0.5,
+              "future_queries": 6.000000000000001,
+              "future_positive_queries": 3.0000000000000004,
+              "future_positive_supported": 0.87,
+              "future_correct_abstentions": 3.0000000000000004,
+              "asked_first": 0.3,
+              "asked_second": 0.2,
+              "asked_second_nonpositive_margin": 0.0
+            }
+          },
+          "b92e3db469ca0cd858f": {
+            "metrics": {
+              "future_supported": 0.635,
+              "current_supported": 1.0,
+              "future_unsupported_reuse": 0.0,
+              "questions": 0.5,
+              "future_queries": 6.000000000000001,
+              "future_positive_queries": 3.0000000000000004,
+              "future_positive_supported": 0.81,
+              "future_correct_abstentions": 3.0000000000000004,
+              "asked_first": 0.25,
+              "asked_second": 0.25,
+              "asked_second_nonpositive_margin": 0.0
+            }
+          },
+          "bbcd8083242a4325202": {
+            "metrics": {
+              "future_supported": 0.635,
+              "current_supported": 1.0,
+              "future_unsupported_reuse": 0.0,
+              "questions": 0.5,
+              "future_queries": 6.000000000000001,
+              "future_positive_queries": 3.0000000000000004,
+              "future_positive_supported": 0.81,
+              "future_correct_abstentions": 3.0000000000000004,
+              "asked_first": 0.2,
+              "asked_second": 0.3,
+              "asked_second_nonpositive_margin": 0.0
+            }
+          }
+        },
+        "individual": {
+          "greedy_free_budget": {
+            "future_supported": 0.78,
+            "current_supported": 1.0,
+            "future_unsupported_reuse": 0.0,
+            "questions": 1.0,
+            "future_queries": 6.000000000000001,
+            "future_positive_queries": 3.0000000000000004,
+            "future_positive_supported": 1.6800000000000002,
+            "future_correct_abstentions": 3.0000000000000004
+          },
+          "one_question_per_root": {
+            "future_supported": 0.78,
+            "current_supported": 1.0,
+            "future_unsupported_reuse": 0.0,
+            "questions": 1.0,
+            "future_queries": 6.000000000000001,
+            "future_positive_queries": 3.0000000000000004,
+            "future_positive_supported": 1.6800000000000002,
+            "future_correct_abstentions": 3.0000000000000004
+          },
+          "both_timings_correct_native": 0.3,
+          "evaluable_flipped_pairs": 30,
+          "both_timings_correct_at_one_question": 0.3,
+          "first_question_rate_by_agenda": {
+            "ask_now": 0.6,
+            "save": 0.3
+          }
+        }
+      }
+    },
+    {
+      "epoch": 8,
+      "adapter": "epoch-8/adapter",
+      "cutoff": 26.375,
+      "metrics": {
+        "macro": {
+          "future_supported": 0.645,
+          "current_supported": 1.0,
+          "future_unsupported_reuse": 0.0,
+          "questions": 0.5,
+          "future_queries": 6.000000000000001,
+          "future_positive_queries": 3.0000000000000004,
+          "future_positive_supported": 0.87,
+          "future_correct_abstentions": 3.0000000000000004,
+          "asked_first": 0.25,
+          "asked_second": 0.25,
+          "asked_second_nonpositive_margin": 0.0
+        },
+        "packets": {
+          "b2155cf274d75bfdfb9": {
+            "metrics": {
+              "future_supported": 0.645,
+              "current_supported": 1.0,
+              "future_unsupported_reuse": 0.0,
+              "questions": 0.5,
+              "future_queries": 6.000000000000001,
+              "future_positive_queries": 3.0000000000000004,
+              "future_positive_supported": 0.87,
+              "future_correct_abstentions": 3.0000000000000004,
+              "asked_first": 0.25,
+              "asked_second": 0.25,
+              "asked_second_nonpositive_margin": 0.0
+            }
+          },
+          "b92e3db469ca0cd858f": {
+            "metrics": {
+              "future_supported": 0.655,
+              "current_supported": 1.0,
+              "future_unsupported_reuse": 0.0,
+              "questions": 0.5,
+              "future_queries": 6.000000000000001,
+              "future_positive_queries": 3.0000000000000004,
+              "future_positive_supported": 0.93,
+              "future_correct_abstentions": 3.0000000000000004,
+              "asked_first": 0.3,
+              "asked_second": 0.2,
+              "asked_second_nonpositive_margin": 0.0
+            }
+          },
+          "bbcd8083242a4325202": {
+            "metrics": {
+              "future_supported": 0.635,
+              "current_supported": 1.0,
+              "future_unsupported_reuse": 0.0,
+              "questions": 0.5,
+              "future_queries": 6.000000000000001,
+              "future_positive_queries": 3.0000000000000004,
+              "future_positive_supported": 0.81,
+              "future_correct_abstentions": 3.0000000000000004,
+              "asked_first": 0.2,
+              "asked_second": 0.3,
+              "asked_second_nonpositive_margin": 0.0
+            }
+          }
+        },
+        "individual": {
+          "greedy_free_budget": {
+            "future_supported": 0.7775000000000001,
+            "current_supported": 1.0,
+            "future_unsupported_reuse": 0.0,
+            "questions": 0.9833333333333333,
+            "future_queries": 6.000000000000001,
+            "future_positive_queries": 3.0000000000000004,
+            "future_positive_supported": 1.665,
+            "future_correct_abstentions": 3.0000000000000004
+          },
+          "one_question_per_root": {
+            "future_supported": 0.7833333333333334,
+            "current_supported": 1.0,
+            "future_unsupported_reuse": 0.0,
+            "questions": 1.0,
+            "future_queries": 6.000000000000001,
+            "future_positive_queries": 3.0000000000000004,
+            "future_positive_supported": 1.7000000000000002,
+            "future_correct_abstentions": 3.0000000000000004
+          },
+          "both_timings_correct_native": 0.3333333333333333,
+          "evaluable_flipped_pairs": 30,
+          "both_timings_correct_at_one_question": 0.3333333333333333,
+          "first_question_rate_by_agenda": {
+            "ask_now": 0.6,
+            "save": 0.26666666666666666
+          }
+        }
+      }
+    }
+  ],
+  "training": [
+    {
+      "epoch": 1,
+      "loss": -0.07272441225747267,
+      "gradient_norm_before_clip": 2.9625777065753938,
+      "reward_audit": {
+        "pairs": 30,
+        "roots": 60,
+        "records": 120,
+        "pairs_aligned_v1": 30,
+        "pairs_reversed_v1": 0,
+        "pairs_with_a_tie_v1": 0,
+        "gap_ask_minus_wait": {
+          "v1/ask_now": {
+            "min": 0.31199111468788043,
+            "mean": 0.3158717657656567,
+            "median": 0.3154754440539652,
+            "max": 0.32146684371459466,
+            "positive": 30,
+            "negative": 0,
+            "ties": 0
+          },
+          "v2/ask_now": {
+            "min": 0.14500000000000002,
+            "mean": 0.14500000000000002,
+            "median": 0.14500000000000002,
+            "max": 0.14500000000000002,
+            "positive": 30,
+            "negative": 0,
+            "ties": 0
+          },
+          "v1/save": {
+            "min": -0.25875393850547734,
+            "mean": -0.2458396574880248,
+            "median": -0.24839748037698461,
+            "max": -0.2267901740110294,
+            "positive": 0,
+            "negative": 30,
+            "ties": 0
+          },
+          "v2/save": {
+            "min": 0.44499999999999984,
+            "mean": 0.44499999999999984,
+            "median": 0.44499999999999984,
+            "max": 0.44499999999999984,
+            "positive": 30,
+            "negative": 0,
+            "ties": 0
+          }
+        }
+      },
+      "old_abs_margin_mean": 5.889830508474576,
+      "old_ask_fraction": 0.7966101694915254,
+      "policy": {
+        "entropy": 0.3870382964611053,
+        "kl": 0.017596432494853313,
+        "clipped_fraction": 0.375
+      }
+    },
+    {
+      "epoch": 2,
+      "loss": -0.034587918252994614,
+      "gradient_norm_before_clip": 3.5487652597328028,
+      "reward_audit": {
+        "pairs": 30,
+        "roots": 60,
+        "records": 120,
+        "pairs_aligned_v1": 30,
+        "pairs_reversed_v1": 0,
+        "pairs_with_a_tie_v1": 0,
+        "gap_ask_minus_wait": {
+          "v1/ask_now": {
+            "min": 0.3055775978426569,
+            "mean": 0.3068445639780485,
+            "median": 0.30698056475548097,
+            "max": 0.30821460166965586,
+            "positive": 30,
+            "negative": 0,
+            "ties": 0
+          },
+          "v2/ask_now": {
+            "min": 0.14500000000000002,
+            "mean": 0.14500000000000002,
+            "median": 0.14500000000000002,
+            "max": 0.14500000000000002,
+            "positive": 30,
+            "negative": 0,
+            "ties": 0
+          },
+          "v1/save": {
+            "min": -0.2852767396170264,
+            "mean": -0.27698960605862727,
+            "median": -0.27793057850362746,
+            "max": -0.2662431098905462,
+            "positive": 0,
+            "negative": 30,
+            "ties": 0
+          },
+          "v2/save": {
+            "min": 0.44499999999999984,
+            "mean": 0.44499999999999984,
+            "median": 0.44499999999999984,
+            "max": 0.44499999999999984,
+            "positive": 30,
+            "negative": 0,
+            "ties": 0
+          }
+        }
+      },
+      "old_abs_margin_mean": 9.278601694915254,
+      "old_ask_fraction": 0.7711864406779662,
+      "policy": {
+        "entropy": 0.2587408423423767,
+        "kl": 0.07481219197312991,
+        "clipped_fraction": 0.325
+      }
+    },
+    {
+      "epoch": 3,
+      "loss": -0.00509475275563697,
+      "gradient_norm_before_clip": 5.948646753033002,
+      "reward_audit": {
+        "pairs": 30,
+        "roots": 60,
+        "records": 120,
+        "pairs_aligned_v1": 30,
+        "pairs_reversed_v1": 0,
+        "pairs_with_a_tie_v1": 0,
+        "gap_ask_minus_wait": {
+          "v1/ask_now": {
+            "min": 0.3025291602867495,
+            "mean": 0.30344412011919086,
+            "median": 0.30348816069812723,
+            "max": 0.3045158554275429,
+            "positive": 30,
+            "negative": 0,
+            "ties": 0
+          },
+          "v2/ask_now": {
+            "min": 0.14500000000000002,
+            "mean": 0.14500000000000002,
+            "median": 0.14500000000000002,
+            "max": 0.14500000000000002,
+            "positive": 30,
+            "negative": 0,
+            "ties": 0
+          },
+          "v1/save": {
+            "min": -0.29270065053030736,
+            "mean": -0.28854385411866207,
+            "median": -0.28961662783090825,
+            "max": -0.28011701272867073,
+            "positive": 0,
+            "negative": 30,
+            "ties": 0
+          },
+          "v2/save": {
+            "min": 0.44499999999999984,
+            "mean": 0.44499999999999984,
+            "median": 0.44499999999999984,
+            "max": 0.44499999999999984,
+            "positive": 30,
+            "negative": 0,
+            "ties": 0
+          }
+        }
+      },
+      "old_abs_margin_mean": 12.534957627118644,
+      "old_ask_fraction": 0.7627118644067796,
+      "policy": {
+        "entropy": 0.16530537456274033,
+        "kl": 0.1323607638478279,
+        "clipped_fraction": 0.3125
+      }
+    },
+    {
+      "epoch": 4,
+      "loss": -0.007896550022996962,
+      "gradient_norm_before_clip": 4.772155379379789,
+      "reward_audit": {
+        "pairs": 30,
+        "roots": 60,
+        "records": 120,
+        "pairs_aligned_v1": 30,
+        "pairs_reversed_v1": 0,
+        "pairs_with_a_tie_v1": 0,
+        "gap_ask_minus_wait": {
+          "v1/ask_now": {
+            "min": 0.30124373538498794,
+            "mean": 0.30157158734059336,
+            "median": 0.3015931066814359,
+            "max": 0.3021030190552503,
+            "positive": 30,
+            "negative": 0,
+            "ties": 0
+          },
+          "v2/ask_now": {
+            "min": 0.14500000000000002,
+            "mean": 0.14500000000000002,
+            "median": 0.14500000000000002,
+            "max": 0.14500000000000002,
+            "positive": 30,
+            "negative": 0,
+            "ties": 0
+          },
+          "v1/save": {
+            "min": -0.2969277920583062,
+            "mean": -0.29512384801005537,
+            "median": -0.29518522160285365,
+            "max": -0.29247286359630653,
+            "positive": 0,
+            "negative": 30,
+            "ties": 0
+          },
+          "v2/save": {
+            "min": 0.44499999999999984,
+            "mean": 0.44499999999999984,
+            "median": 0.44499999999999984,
+            "max": 0.44499999999999984,
+            "positive": 30,
+            "negative": 0,
+            "ties": 0
+          }
+        }
+      },
+      "old_abs_margin_mean": 15.848516949152541,
+      "old_ask_fraction": 0.7711864406779662,
+      "policy": {
+        "entropy": 0.0975522093474865,
+        "kl": 0.17801863551139832,
+        "clipped_fraction": 0.3458333333333333
+      }
+    },
+    {
+      "epoch": 5,
+      "loss": -0.004914994145898769,
+      "gradient_norm_before_clip": 2.0127712443315735,
+      "reward_audit": {
+        "pairs": 30,
+        "roots": 60,
+        "records": 120,
+        "pairs_aligned_v1": 30,
+        "pairs_reversed_v1": 0,
+        "pairs_with_a_tie_v1": 0,
+        "gap_ask_minus_wait": {
+          "v1/ask_now": {
+            "min": 0.300572083986957,
+            "mean": 0.30072865267762633,
+            "median": 0.3007280886277729,
+            "max": 0.30091203580984915,
+            "positive": 30,
+            "negative": 0,
+            "ties": 0
+          },
+          "v2/ask_now": {
+            "min": 0.14500000000000002,
+            "mean": 0.14500000000000002,
+            "median": 0.14500000000000002,
+            "max": 0.14500000000000002,
+            "positive": 30,
+            "negative": 0,
+            "ties": 0
+          },
+          "v1/save": {
+            "min": -0.2984255517045953,
+            "mean": -0.2977162108191272,
+            "median": -0.2978668417188124,
+            "max": -0.2965219294887662,
+            "positive": 0,
+            "negative": 30,
+            "ties": 0
+          },
+          "v2/save": {
+            "min": 0.44499999999999984,
+            "mean": 0.44499999999999984,
+            "median": 0.44499999999999984,
+            "max": 0.44499999999999984,
+            "positive": 30,
+            "negative": 0,
+            "ties": 0
+          }
+        }
+      },
+      "old_abs_margin_mean": 18.958686440677965,
+      "old_ask_fraction": 0.7711864406779662,
+      "policy": {
+        "entropy": 0.059023279572526614,
+        "kl": 0.20963240365187327,
+        "clipped_fraction": 0.29583333333333334
+      }
+    },
+    {
+      "epoch": 6,
+      "loss": -7.057157587648059e-05,
+      "gradient_norm_before_clip": 2.380610233110686,
+      "reward_audit": {
+        "pairs": 30,
+        "roots": 60,
+        "records": 120,
+        "pairs_aligned_v1": 30,
+        "pairs_reversed_v1": 0,
+        "pairs_with_a_tie_v1": 0,
+        "gap_ask_minus_wait": {
+          "v1/ask_now": {
+            "min": 0.30030203076354134,
+            "mean": 0.300415426094175,
+            "median": 0.30040613441023245,
+            "max": 0.3005292481195252,
+            "positive": 30,
+            "negative": 0,
+            "ties": 0
+          },
+          "v2/ask_now": {
+            "min": 0.14500000000000002,
+            "mean": 0.14500000000000002,
+            "median": 0.14500000000000002,
+            "max": 0.14500000000000002,
+            "positive": 30,
+            "negative": 0,
+            "ties": 0
+          },
+          "v1/save": {
+            "min": -0.2991817939469783,
+            "mean": -0.2986481305393841,
+            "median": -0.29877270948296175,
+            "max": -0.2975661728035788,
+            "positive": 0,
+            "negative": 30,
+            "ties": 0
+          },
+          "v2/save": {
+            "min": 0.44499999999999984,
+            "mean": 0.44499999999999984,
+            "median": 0.44499999999999984,
+            "max": 0.44499999999999984,
+            "positive": 30,
+            "negative": 0,
+            "ties": 0
+          }
+        }
+      },
+      "old_abs_margin_mean": 21.403601694915253,
+      "old_ask_fraction": 0.7711864406779662,
+      "policy": {
+        "entropy": 0.0387231171131134,
+        "kl": 0.22632580896218618,
+        "clipped_fraction": 0.31666666666666665
+      }
+    },
+    {
+      "epoch": 7,
+      "loss": -0.0005045658641999277,
+      "gradient_norm_before_clip": 2.155498805269599,
+      "reward_audit": {
+        "pairs": 30,
+        "roots": 60,
+        "records": 120,
+        "pairs_aligned_v1": 30,
+        "pairs_reversed_v1": 0,
+        "pairs_with_a_tie_v1": 0,
+        "gap_ask_minus_wait": {
+          "v1/ask_now": {
+            "min": 0.30018050227880266,
+            "mean": 0.30024659448034247,
+            "median": 0.3002409089628031,
+            "max": 0.30032651785552766,
+            "positive": 30,
+            "negative": 0,
+            "ties": 0
+          },
+          "v2/ask_now": {
+            "min": 0.14500000000000002,
+            "mean": 0.14500000000000002,
+            "median": 0.14500000000000002,
+            "max": 0.14500000000000002,
+            "positive": 30,
+            "negative": 0,
+            "ties": 0
+          },
+          "v1/save": {
+            "min": -0.29951863671253687,
+            "mean": -0.2990930776408801,
+            "median": -0.29927210237426105,
+            "max": -0.29687975105523323,
+            "positive": 0,
+            "negative": 30,
+            "ties": 0
+          },
+          "v2/save": {
+            "min": 0.44499999999999984,
+            "mean": 0.44499999999999984,
+            "median": 0.44499999999999984,
+            "max": 0.44499999999999984,
+            "positive": 30,
+            "negative": 0,
+            "ties": 0
+          }
+        }
+      },
+      "old_abs_margin_mean": 23.560911016949152,
+      "old_ask_fraction": 0.7542372881355932,
+      "policy": {
+        "entropy": 0.023069117652873197,
+        "kl": 0.24183225532372793,
+        "clipped_fraction": 0.2916666666666667
+      }
+    },
+    {
+      "epoch": 8,
+      "loss": 0.0004296830200473778,
+      "gradient_norm_before_clip": 0.23240748319464424,
+      "reward_audit": {
+        "pairs": 30,
+        "roots": 60,
+        "records": 120,
+        "pairs_aligned_v1": 30,
+        "pairs_reversed_v1": 0,
+        "pairs_with_a_tie_v1": 0,
+        "gap_ask_minus_wait": {
+          "v1/ask_now": {
+            "min": 0.30010953381674543,
+            "mean": 0.300149007667978,
+            "median": 0.30014851444314206,
+            "max": 0.30018050227880266,
+            "positive": 30,
+            "negative": 0,
+            "ties": 0
+          },
+          "v2/ask_now": {
+            "min": 0.14500000000000002,
+            "mean": 0.14500000000000002,
+            "median": 0.14500000000000002,
+            "max": 0.14500000000000002,
+            "positive": 30,
+            "negative": 0,
+            "ties": 0
+          },
+          "v1/save": {
+            "min": -0.2996986485662978,
+            "mean": -0.2995087622204952,
+            "median": -0.29955477554159504,
+            "max": -0.2991426030748192,
+            "positive": 0,
+            "negative": 30,
+            "ties": 0
+          },
+          "v2/save": {
+            "min": 0.44499999999999984,
+            "mean": 0.44499999999999984,
+            "median": 0.44499999999999984,
+            "max": 0.44499999999999984,
+            "positive": 30,
+            "negative": 0,
+            "ties": 0
+          }
+        }
+      },
+      "old_abs_margin_mean": 25.766419491525422,
+      "old_ask_fraction": 0.7542372881355932,
+      "policy": {
+        "entropy": 0.013081588720281919,
+        "kl": 0.25276276270548503,
+        "clipped_fraction": 0.25416666666666665
+      }
+    }
+  ],
+  "budget": {
+    "forward_batches": 120,
+    "decisions": 960,
+    "input_tokens": 188016,
+    "padded_input_tokens": 205328,
+    "optimizer_updates": 120
+  }
+}

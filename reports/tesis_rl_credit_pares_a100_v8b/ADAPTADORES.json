@@ -1,0 +1,26 @@
+{
+  "adaptadores/seed-101/sft-pares-control": {
+    "adapter_model.safetensors": "e2e91feab94ad16c6289e91531e51f24240d7476ed123c923ca99e075630e2e7",
+    "adapter_config.json": "0289ae0324503dc4020cb8017467a5fe81a1ac64a83421f69ad7a667e5a8c3bc"
+  },
+  "adaptadores/seed-101/grpo-exacto-pares": {
+    "adapter_model.safetensors": "f369a3f13ee438d315c94171d82ccd2dec0fc579c01be2d43db787c2b5d0f4b3",
+    "adapter_config.json": "0289ae0324503dc4020cb8017467a5fe81a1ac64a83421f69ad7a667e5a8c3bc"
+  },
+  "adaptadores/seed-202/sft-pares-control": {
+    "adapter_model.safetensors": "d895de7760016ab91281bf1e2e811bfa98c62cbe28a08da467954b11c3189d49",
+    "adapter_config.json": "0289ae0324503dc4020cb8017467a5fe81a1ac64a83421f69ad7a667e5a8c3bc"
+  },
+  "adaptadores/seed-202/grpo-exacto-pares": {
+    "adapter_model.safetensors": "8d637ab20960f1cb88dfb321c5263d0b953f513f474085340d5e1df8b908de4b",
+    "adapter_config.json": "0289ae0324503dc4020cb8017467a5fe81a1ac64a83421f69ad7a667e5a8c3bc"
+  },
+  "adaptadores/seed-303/sft-pares-control": {
+    "adapter_model.safetensors": "3f60328f5e4bb2360cde8129414b90fef6cab5903015374d9ca379995066a8b0",
+    "adapter_config.json": "0289ae0324503dc4020cb8017467a5fe81a1ac64a83421f69ad7a667e5a8c3bc"
+  },
+  "adaptadores/seed-303/grpo-exacto-pares": {
+    "adapter_model.safetensors": "da927b9e6e1c7c7f40e0198120ef883d8a888dcdbaeb472525c0c4054e2badd8",
+    "adapter_config.json": "0289ae0324503dc4020cb8017467a5fe81a1ac64a83421f69ad7a667e5a8c3bc"
+  }
+}

@@ -27,6 +27,8 @@ jobs:
           .venv/bin/python -m scripts.check_environment
           .venv/bin/python -m research.tesis_timing_v7_pairs
           .venv/bin/python -m research.tesis_ecuador_eval verify
+          .venv/bin/python -m research.verify_rl_v8 --run reports/tesis_rl_credit_a100_v8 --reserve reports/tesis_rl_ecuador_reserva_v8
+          .venv/bin/python -m research.verify_rl_v8 --run reports/tesis_rl_credit_pares_a100_v8b --reserve reports/tesis_rl_ecuador_reserva_v8
           .venv/bin/python -m research.score_ai_reviews reports/tesis_revision_ia_100_v1 > "$RUNNER_TEMP/acuerdo.json"
           diff -u reports/tesis_revision_ia_100_v1/ACUERDO.json "$RUNNER_TEMP/acuerdo.json"
       - name: Ejecutar las dos suites

@@ -32,6 +32,8 @@ En v7 comparamos dos entrenamientos supervisados con los mismos ejemplos, tokens
 
 En el nuevo reservado sintético con referencias ecuatorianas, los mismos seis adaptadores pasaron del 10,00 % al 27,78 % de pares completos. El intervalo descriptivo del contraste fue de +8,89 a +28,89 puntos. A gasto fijo la ventaja fue de +0,56 puntos. En ambos reservados, mejorar la elección del momento tuvo una traducción pequeña al acierto futuro agregado. En Ecuador el planificador resolvió 28/30. [Materiales, ejecución y resultados](reports/tesis_ecuador_30_v1/INFORME.md)
 
+La auditoría posterior detectó que mezclar presupuestos y visitas concentraba la señal de retorno en preguntar. En v8, desde el mismo inicio supervisado y con presupuesto uno, GRPO con respaldo Bellman superó al control de continuación SFT en un reservado sintético nuevo. Los pares completos pasaron de 15,56 % a 21,11 % y el acierto futuro de 63,28 % a 63,72 %. Se informan los tres contrastes exploratorios y el retroceso del híbrido en acierto futuro. El respaldo exacto usa el modelo conocido del entorno. [Auditoría, controles y resultados](reports/tesis_rl_credit_a100_v8/INFORME.md)
+
 ### Qué cambia si la agenda suele fallar
 
 Reejecutamos en CPU las ramas de SQLite de las 60 historias de validación v6, fijando una pregunta por historia. La regla se aprendió en entrenamiento. Después de fijar las decisiones variamos el peso de los mundos donde el plan anunciado se cumple. Las preferencias mantienen probabilidad 0,5 de ser habituales. Son expectativas del simulador: la columna de probabilidad es un supuesto que podemos cambiar, no una frecuencia observada en personas. [Reproducción en CPU](research/timing_agenda_sensitivity.py)

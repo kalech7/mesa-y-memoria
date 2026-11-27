@@ -11,6 +11,8 @@ En un segundo reservado de 80 pares, con platos y frases nuevos, comparamos dos 
 
 Los seis adaptadores se sometieron después a 30 pares nuevos de pedidos y agendas con referencias de Ecuador. SFT por pares acertó ambas visitas en el **27,78 %**, frente al **10,00 %** con SFT convencional. A igualdad de diez preguntas por veinte historias, la diferencia fue de **+0,56 puntos** de acierto futuro. El banco tiene revisión ciega por IA y una réplica exacta en A100. [Prueba de transferencia y datos](reports/tesis_ecuador_30_v1/INFORME.md)
 
+En una comparación posterior de RL, desde el mismo inicio supervisado, la variante con respaldo Bellman pasó del **15,56 % al 21,11 %** de pares completos frente al control y del **63,28 % al 63,72 %** de acierto futuro. Se usaron otros 30 pares sintéticos, tres semillas y el mismo gasto de preguntas. Se publican también las variantes que rindieron peor, los quince adaptadores seleccionados y la reproducción exacta en A100. [Auditoría y resultados de RL](reports/tesis_rl_credit_a100_v8/INFORME.md)
+
 ## Probar en CPU
 
 Desde la raíz del repositorio, con Python 3.13 y `uv`, este comando comprueba el banco de historias, el simulador, las métricas y el comportamiento del chat. Las pruebas usan conversaciones sintéticas y decisiones controladas.

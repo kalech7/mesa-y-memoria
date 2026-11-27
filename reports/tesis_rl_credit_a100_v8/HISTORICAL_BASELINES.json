@@ -1,0 +1,2205 @@
+{
+  "scope": "Posthoc comparison of fixed historical checkpoints on the new reserve; no retuning",
+  "margins": {
+    "SFT-ramas": {
+      "101": {
+        "ec-06050041e2ed9d922b": [
+          3.875,
+          7.3125
+        ],
+        "ec-0a88e719b246c1a36d": [
+          4.0,
+          6.5
+        ],
+        "ec-0b709b90a32c69a0f1": [
+          3.5,
+          6.375
+        ],
+        "ec-0ec55648e2b744ef63": [
+          3.875,
+          7.125
+        ],
+        "ec-18c45bfac617e6201a": [
+          3.5,
+          6.625
+        ],
+        "ec-1c893e6d2d0a8021a8": [
+          4.25,
+          7.375
+        ],
+        "ec-1e3ba3885cd26f6da5": [
+          3.75,
+          6.75
+        ],
+        "ec-249ce418d3267dd8b1": [
+          4.0,
+          6.5
+        ],
+        "ec-268a914e3a5dd9d1d9": [
+          4.5,
+          6.625
+        ],
+        "ec-2a257bdb5a60861e3a": [
+          3.5,
+          7.125
+        ],
+        "ec-2c56eeda0a50329096": [
+          3.625,
+          7.125
+        ],
+        "ec-3264efd88ee4bb250f": [
+          3.875,
+          7.0
+        ],
+        "ec-3ac769f7eafa87e026": [
+          4.25,
+          6.875
+        ],
+        "ec-3f9868662a8df998a9": [
+          3.875,
+          6.625
+        ],
+        "ec-3fde42c51e517e14dd": [
+          3.875,
+          6.875
+        ],
+        "ec-4535b5c93918f5e4b0": [
+          4.0,
+          7.0
+        ],
+        "ec-4ceabb7d74674ec7dc": [
+          4.25,
+          6.875
+        ],
+        "ec-56b88c9a5364d427ea": [
+          3.875,
+          6.875
+        ],
+        "ec-5a866606a2420c99eb": [
+          3.75,
+          6.75
+        ],
+        "ec-6086ba5d05a6443b42": [
+          3.75,
+          6.875
+        ],
+        "ec-60aca73c2b3e3bb4c1": [
+          3.625,
+          7.0
+        ],
+        "ec-6876e766280da2bb88": [
+          4.25,
+          7.0
+        ],
+        "ec-689d16ef8f2fa5c723": [
+          4.375,
+          7.25
+        ],
+        "ec-68b0dda5844cdcea1e": [
+          3.875,
+          6.875
+        ],
+        "ec-6eb2e1b28ae5dc1169": [
+          4.125,
+          7.375
+        ],
+        "ec-738483ac6678aea9c2": [
+          3.875,
+          6.75
+        ],
+        "ec-7499aa5e49a8662186": [
+          3.75,
+          6.375
+        ],
+        "ec-776f26ad91e171979b": [
+          3.875,
+          6.875
+        ],
+        "ec-7dab6d63d7c2e85bd8": [
+          3.5,
+          6.375
+        ],
+        "ec-819192d518e6f9582b": [
+          4.25,
+          7.0
+        ],
+        "ec-87158a510df14af2e0": [
+          4.0,
+          7.0
+        ],
+        "ec-9551ea9249cfd9c836": [
+          4.0,
+          7.375
+        ],
+        "ec-976b0d9ffc0fb51ace": [
+          4.125,
+          6.875
+        ],
+        "ec-983170e8109095cca7": [
+          4.125,
+          7.5
+        ],
+        "ec-99a59e64c1c6033443": [
+          4.25,
+          6.875
+        ],
+        "ec-a26c77813493bd00e5": [
+          3.75,
+          6.375
+        ],
+        "ec-a2f64552ed11ff8fca": [
+          3.625,
+          6.875
+        ],
+        "ec-a82c86eeb8f97cdf0e": [
+          3.625,
+          6.875
+        ],
+        "ec-a9aad1624d4efa5ef9": [
+          3.875,
+          7.25
+        ],
+        "ec-aa0b3a622ecefb31f9": [
+          4.0,
+          7.0
+        ],
+        "ec-aa368c612f2a8d3030": [
+          4.125,
+          7.375
+        ],
+        "ec-ace145804730b795f4": [
+          3.75,
+          6.75
+        ],
+        "ec-ad6d42cb9c0c2f0c45": [
+          4.25,
+          6.875
+        ],
+        "ec-ade890b852c6e5676e": [
+          4.5,
+          6.625
+        ],
+        "ec-ae71fb513b3da48fad": [
+          4.125,
+          6.75
+        ],
+        "ec-b0fe4b513884bfe8d3": [
+          4.0,
+          7.0
+        ],
+        "ec-b2041f5adea4976acd": [
+          3.625,
+          6.5
+        ],
+        "ec-b214b3d86d9bd3c97f": [
+          3.625,
+          6.75
+        ],
+        "ec-b5c2f8ae033451198a": [
+          4.5,
+          6.75
+        ],
+        "ec-b94ef3bc575a3a6417": [
+          3.875,
+          7.3125
+        ],
+        "ec-c67137f3d72b29a434": [
+          3.625,
+          6.625
+        ],
+        "ec-c979f991d80774a496": [
+          3.75,
+          7.0
+        ],
+        "ec-ccdffa20ebbe9e045f": [
+          3.625,
+          6.25
+        ],
+        "ec-d11f3f857a3f649ca3": [
+          4.0,
+          6.75
+        ],
+        "ec-d4c43dc4faf62b9a39": [
+          3.875,
+          7.375
+        ],
+        "ec-dc0309c34c5124eb8b": [
+          4.625,
+          6.75
+        ],
+        "ec-e09eaad94637c6cb58": [
+          3.625,
+          7.125
+        ],
+        "ec-e9c1762507585038bf": [
+          3.875,
+          6.875
+        ],
+        "ec-ee094722a4d34c6f39": [
+          4.25,
+          7.125
+        ],
+        "ec-f89936d9a3fe052872": [
+          4.25,
+          7.125
+        ]
+      },
+      "202": {
+        "ec-06050041e2ed9d922b": [
+          5.875,
+          7.125
+        ],
+        "ec-0a88e719b246c1a36d": [
+          6.0,
+          7.125
+        ],
+        "ec-0b709b90a32c69a0f1": [
+          6.0,
+          7.375
+        ],
+        "ec-0ec55648e2b744ef63": [
+          5.875,
+          7.625
+        ],
+        "ec-18c45bfac617e6201a": [
+          5.875,
+          7.25
+        ],
+        "ec-1c893e6d2d0a8021a8": [
+          6.25,
+          7.25
+        ],
+        "ec-1e3ba3885cd26f6da5": [
+          5.625,
+          7.375
+        ],
+        "ec-249ce418d3267dd8b1": [
+          5.875,
+          7.125
+        ],
+        "ec-268a914e3a5dd9d1d9": [
+          6.25,
+          7.125
+        ],
+        "ec-2a257bdb5a60861e3a": [
+          5.75,
+          7.375
+        ],
+        "ec-2c56eeda0a50329096": [
+          6.375,
+          7.0
+        ],
+        "ec-3264efd88ee4bb250f": [
+          5.875,
+          7.25
+        ],
+        "ec-3ac769f7eafa87e026": [
+          5.875,
+          7.25
+        ],
+        "ec-3f9868662a8df998a9": [
+          5.75,
+          7.375
+        ],
+        "ec-3fde42c51e517e14dd": [
+          6.125,
+          7.25
+        ],
+        "ec-4535b5c93918f5e4b0": [
+          6.125,
+          7.25
+        ],
+        "ec-4ceabb7d74674ec7dc": [
+          6.375,
+          7.375
+        ],
+        "ec-56b88c9a5364d427ea": [
+          6.25,
+          7.625
+        ],
+        "ec-5a866606a2420c99eb": [
+          5.625,
+          7.25
+        ],
+        "ec-6086ba5d05a6443b42": [
+          6.0,
+          6.875
+        ],
+        "ec-60aca73c2b3e3bb4c1": [
+          5.75,
+          7.125
+        ],
+        "ec-6876e766280da2bb88": [
+          6.125,
+          7.5
+        ],
+        "ec-689d16ef8f2fa5c723": [
+          6.375,
+          7.375
+        ],
+        "ec-68b0dda5844cdcea1e": [
+          6.0,
+          7.125
+        ],
+        "ec-6eb2e1b28ae5dc1169": [
+          6.125,
+          7.625
+        ],
+        "ec-738483ac6678aea9c2": [
+          6.375,
+          7.625
+        ],
+        "ec-7499aa5e49a8662186": [
+          5.75,
+          7.25
+        ],
+        "ec-776f26ad91e171979b": [
+          6.0,
+          7.25
+        ],
+        "ec-7dab6d63d7c2e85bd8": [
+          5.75,
+          7.25
+        ],
+        "ec-819192d518e6f9582b": [
+          6.5,
+          7.0
+        ],
+        "ec-87158a510df14af2e0": [
+          6.125,
+          7.375
+        ],
+        "ec-9551ea9249cfd9c836": [
+          6.125,
+          7.5
+        ],
+        "ec-976b0d9ffc0fb51ace": [
+          5.875,
+          7.125
+        ],
+        "ec-983170e8109095cca7": [
+          6.0,
+          7.125
+        ],
+        "ec-99a59e64c1c6033443": [
+          6.375,
+          7.5
+        ],
+        "ec-a26c77813493bd00e5": [
+          5.875,
+          7.125
+        ],
+        "ec-a2f64552ed11ff8fca": [
+          5.75,
+          7.0
+        ],
+        "ec-a82c86eeb8f97cdf0e": [
+          5.75,
+          7.25
+        ],
+        "ec-a9aad1624d4efa5ef9": [
+          5.875,
+          7.125
+        ],
+        "ec-aa0b3a622ecefb31f9": [
+          5.75,
+          7.125
+        ],
+        "ec-aa368c612f2a8d3030": [
+          6.0,
+          7.25
+        ],
+        "ec-ace145804730b795f4": [
+          6.125,
+          7.25
+        ],
+        "ec-ad6d42cb9c0c2f0c45": [
+          6.5,
+          7.125
+        ],
+        "ec-ade890b852c6e5676e": [
+          6.25,
+          7.25
+        ],
+        "ec-ae71fb513b3da48fad": [
+          6.0,
+          7.0
+        ],
+        "ec-b0fe4b513884bfe8d3": [
+          6.375,
+          7.5
+        ],
+        "ec-b2041f5adea4976acd": [
+          5.75,
+          7.375
+        ],
+        "ec-b214b3d86d9bd3c97f": [
+          5.625,
+          7.25
+        ],
+        "ec-b5c2f8ae033451198a": [
+          6.25,
+          7.125
+        ],
+        "ec-b94ef3bc575a3a6417": [
+          6.0,
+          7.25
+        ],
+        "ec-c67137f3d72b29a434": [
+          5.75,
+          7.125
+        ],
+        "ec-c979f991d80774a496": [
+          5.875,
+          7.0
+        ],
+        "ec-ccdffa20ebbe9e045f": [
+          6.0,
+          7.375
+        ],
+        "ec-d11f3f857a3f649ca3": [
+          5.875,
+          7.0
+        ],
+        "ec-d4c43dc4faf62b9a39": [
+          6.0,
+          7.375
+        ],
+        "ec-dc0309c34c5124eb8b": [
+          6.25,
+          7.125
+        ],
+        "ec-e09eaad94637c6cb58": [
+          6.375,
+          7.0
+        ],
+        "ec-e9c1762507585038bf": [
+          5.875,
+          7.625
+        ],
+        "ec-ee094722a4d34c6f39": [
+          6.0,
+          7.375
+        ],
+        "ec-f89936d9a3fe052872": [
+          6.5,
+          7.5
+        ]
+      },
+      "303": {
+        "ec-06050041e2ed9d922b": [
+          0.375,
+          2.375
+        ],
+        "ec-0a88e719b246c1a36d": [
+          0.875,
+          3.25
+        ],
+        "ec-0b709b90a32c69a0f1": [
+          0.625,
+          3.25
+        ],
+        "ec-0ec55648e2b744ef63": [
+          1.0,
+          3.375
+        ],
+        "ec-18c45bfac617e6201a": [
+          1.25,
+          3.125
+        ],
+        "ec-1c893e6d2d0a8021a8": [
+          1.125,
+          3.0
+        ],
+        "ec-1e3ba3885cd26f6da5": [
+          1.125,
+          3.375
+        ],
+        "ec-249ce418d3267dd8b1": [
+          0.75,
+          3.0
+        ],
+        "ec-268a914e3a5dd9d1d9": [
+          1.125,
+          3.25
+        ],
+        "ec-2a257bdb5a60861e3a": [
+          0.875,
+          3.0
+        ],
+        "ec-2c56eeda0a50329096": [
+          1.125,
+          2.75
+        ],
+        "ec-3264efd88ee4bb250f": [
+          0.875,
+          2.875
+        ],
+        "ec-3ac769f7eafa87e026": [
+          0.875,
+          3.0
+        ],
+        "ec-3f9868662a8df998a9": [
+          1.125,
+          3.25
+        ],
+        "ec-3fde42c51e517e14dd": [
+          0.875,
+          2.875
+        ],
+        "ec-4535b5c93918f5e4b0": [
+          0.75,
+          2.875
+        ],
+        "ec-4ceabb7d74674ec7dc": [
+          0.875,
+          3.5
+        ],
+        "ec-56b88c9a5364d427ea": [
+          1.125,
+          3.5
+        ],
+        "ec-5a866606a2420c99eb": [
+          0.5,
+          2.875
+        ],
+        "ec-6086ba5d05a6443b42": [
+          0.75,
+          2.375
+        ],
+        "ec-60aca73c2b3e3bb4c1": [
+          0.5,
+          2.5
+        ],
+        "ec-6876e766280da2bb88": [
+          0.875,
+          3.25
+        ],
+        "ec-689d16ef8f2fa5c723": [
+          1.125,
+          3.0
+        ],
+        "ec-68b0dda5844cdcea1e": [
+          1.125,
+          2.875
+        ],
+        "ec-6eb2e1b28ae5dc1169": [
+          1.0,
+          3.375
+        ],
+        "ec-738483ac6678aea9c2": [
+          1.25,
+          3.375
+        ],
+        "ec-7499aa5e49a8662186": [
+          0.75,
+          3.125
+        ],
+        "ec-776f26ad91e171979b": [
+          1.0,
+          2.75
+        ],
+        "ec-7dab6d63d7c2e85bd8": [
+          1.125,
+          3.25
+        ],
+        "ec-819192d518e6f9582b": [
+          1.375,
+          2.75
+        ],
+        "ec-87158a510df14af2e0": [
+          0.875,
+          2.625
+        ],
+        "ec-9551ea9249cfd9c836": [
+          1.0,
+          3.375
+        ],
+        "ec-976b0d9ffc0fb51ace": [
+          0.875,
+          3.0
+        ],
+        "ec-983170e8109095cca7": [
+          0.75,
+          2.75
+        ],
+        "ec-99a59e64c1c6033443": [
+          1.0,
+          3.375
+        ],
+        "ec-a26c77813493bd00e5": [
+          0.75,
+          3.0
+        ],
+        "ec-a2f64552ed11ff8fca": [
+          0.5,
+          2.5
+        ],
+        "ec-a82c86eeb8f97cdf0e": [
+          1.0,
+          3.0
+        ],
+        "ec-a9aad1624d4efa5ef9": [
+          0.375,
+          2.25
+        ],
+        "ec-aa0b3a622ecefb31f9": [
+          0.875,
+          2.625
+        ],
+        "ec-aa368c612f2a8d3030": [
+          0.875,
+          2.625
+        ],
+        "ec-ace145804730b795f4": [
+          1.125,
+          2.875
+        ],
+        "ec-ad6d42cb9c0c2f0c45": [
+          1.375,
+          2.5
+        ],
+        "ec-ade890b852c6e5676e": [
+          1.25,
+          3.25
+        ],
+        "ec-ae71fb513b3da48fad": [
+          1.125,
+          2.625
+        ],
+        "ec-b0fe4b513884bfe8d3": [
+          1.125,
+          3.5
+        ],
+        "ec-b2041f5adea4976acd": [
+          0.5,
+          3.375
+        ],
+        "ec-b214b3d86d9bd3c97f": [
+          0.375,
+          2.75
+        ],
+        "ec-b5c2f8ae033451198a": [
+          1.375,
+          3.125
+        ],
+        "ec-b94ef3bc575a3a6417": [
+          0.75,
+          2.75
+        ],
+        "ec-c67137f3d72b29a434": [
+          0.5,
+          3.375
+        ],
+        "ec-c979f991d80774a496": [
+          0.625,
+          2.25
+        ],
+        "ec-ccdffa20ebbe9e045f": [
+          0.5,
+          3.25
+        ],
+        "ec-d11f3f857a3f649ca3": [
+          1.125,
+          2.625
+        ],
+        "ec-d4c43dc4faf62b9a39": [
+          0.75,
+          2.75
+        ],
+        "ec-dc0309c34c5124eb8b": [
+          1.25,
+          3.25
+        ],
+        "ec-e09eaad94637c6cb58": [
+          1.125,
+          2.75
+        ],
+        "ec-e9c1762507585038bf": [
+          1.125,
+          3.375
+        ],
+        "ec-ee094722a4d34c6f39": [
+          0.875,
+          3.125
+        ],
+        "ec-f89936d9a3fe052872": [
+          1.25,
+          3.625
+        ]
+      }
+    },
+    "GRPO-continuacion": {
+      "101": {
+        "ec-06050041e2ed9d922b": [
+          1.375,
+          1.5
+        ],
+        "ec-0a88e719b246c1a36d": [
+          1.625,
+          1.375
+        ],
+        "ec-0b709b90a32c69a0f1": [
+          1.375,
+          1.5
+        ],
+        "ec-0ec55648e2b744ef63": [
+          1.625,
+          1.625
+        ],
+        "ec-18c45bfac617e6201a": [
+          1.5,
+          1.625
+        ],
+        "ec-1c893e6d2d0a8021a8": [
+          1.5,
+          1.75
+        ],
+        "ec-1e3ba3885cd26f6da5": [
+          1.5,
+          1.625
+        ],
+        "ec-249ce418d3267dd8b1": [
+          1.375,
+          1.5
+        ],
+        "ec-268a914e3a5dd9d1d9": [
+          1.5,
+          1.5
+        ],
+        "ec-2a257bdb5a60861e3a": [
+          1.375,
+          1.625
+        ],
+        "ec-2c56eeda0a50329096": [
+          1.625,
+          1.5
+        ],
+        "ec-3264efd88ee4bb250f": [
+          1.625,
+          1.625
+        ],
+        "ec-3ac769f7eafa87e026": [
+          1.375,
+          1.625
+        ],
+        "ec-3f9868662a8df998a9": [
+          1.5,
+          1.625
+        ],
+        "ec-3fde42c51e517e14dd": [
+          1.5,
+          1.625
+        ],
+        "ec-4535b5c93918f5e4b0": [
+          1.375,
+          1.625
+        ],
+        "ec-4ceabb7d74674ec7dc": [
+          1.75,
+          1.625
+        ],
+        "ec-56b88c9a5364d427ea": [
+          1.625,
+          1.75
+        ],
+        "ec-5a866606a2420c99eb": [
+          1.25,
+          1.625
+        ],
+        "ec-6086ba5d05a6443b42": [
+          1.25,
+          1.5
+        ],
+        "ec-60aca73c2b3e3bb4c1": [
+          1.25,
+          1.5
+        ],
+        "ec-6876e766280da2bb88": [
+          1.625,
+          1.5
+        ],
+        "ec-689d16ef8f2fa5c723": [
+          1.5,
+          1.625
+        ],
+        "ec-68b0dda5844cdcea1e": [
+          1.375,
+          1.625
+        ],
+        "ec-6eb2e1b28ae5dc1169": [
+          1.625,
+          1.625
+        ],
+        "ec-738483ac6678aea9c2": [
+          1.75,
+          1.75
+        ],
+        "ec-7499aa5e49a8662186": [
+          1.375,
+          1.5
+        ],
+        "ec-776f26ad91e171979b": [
+          1.5,
+          1.625
+        ],
+        "ec-7dab6d63d7c2e85bd8": [
+          1.5,
+          1.5
+        ],
+        "ec-819192d518e6f9582b": [
+          1.75,
+          1.625
+        ],
+        "ec-87158a510df14af2e0": [
+          1.625,
+          1.75
+        ],
+        "ec-9551ea9249cfd9c836": [
+          1.625,
+          1.875
+        ],
+        "ec-976b0d9ffc0fb51ace": [
+          1.375,
+          1.625
+        ],
+        "ec-983170e8109095cca7": [
+          1.5,
+          1.625
+        ],
+        "ec-99a59e64c1c6033443": [
+          1.625,
+          1.625
+        ],
+        "ec-a26c77813493bd00e5": [
+          1.375,
+          1.5
+        ],
+        "ec-a2f64552ed11ff8fca": [
+          1.25,
+          1.625
+        ],
+        "ec-a82c86eeb8f97cdf0e": [
+          1.375,
+          1.5
+        ],
+        "ec-a9aad1624d4efa5ef9": [
+          1.375,
+          1.375
+        ],
+        "ec-aa0b3a622ecefb31f9": [
+          1.5,
+          1.625
+        ],
+        "ec-aa368c612f2a8d3030": [
+          1.625,
+          1.625
+        ],
+        "ec-ace145804730b795f4": [
+          1.5,
+          1.5
+        ],
+        "ec-ad6d42cb9c0c2f0c45": [
+          1.875,
+          1.625
+        ],
+        "ec-ade890b852c6e5676e": [
+          1.625,
+          1.625
+        ],
+        "ec-ae71fb513b3da48fad": [
+          1.75,
+          1.5
+        ],
+        "ec-b0fe4b513884bfe8d3": [
+          1.625,
+          1.625
+        ],
+        "ec-b2041f5adea4976acd": [
+          1.375,
+          1.5
+        ],
+        "ec-b214b3d86d9bd3c97f": [
+          1.25,
+          1.5
+        ],
+        "ec-b5c2f8ae033451198a": [
+          1.75,
+          1.625
+        ],
+        "ec-b94ef3bc575a3a6417": [
+          1.25,
+          1.625
+        ],
+        "ec-c67137f3d72b29a434": [
+          1.25,
+          1.625
+        ],
+        "ec-c979f991d80774a496": [
+          1.25,
+          1.375
+        ],
+        "ec-ccdffa20ebbe9e045f": [
+          1.375,
+          1.625
+        ],
+        "ec-d11f3f857a3f649ca3": [
+          1.625,
+          1.5
+        ],
+        "ec-d4c43dc4faf62b9a39": [
+          1.375,
+          1.625
+        ],
+        "ec-dc0309c34c5124eb8b": [
+          1.75,
+          1.625
+        ],
+        "ec-e09eaad94637c6cb58": [
+          1.625,
+          1.375
+        ],
+        "ec-e9c1762507585038bf": [
+          1.375,
+          1.875
+        ],
+        "ec-ee094722a4d34c6f39": [
+          1.625,
+          1.625
+        ],
+        "ec-f89936d9a3fe052872": [
+          1.625,
+          1.625
+        ]
+      },
+      "202": {
+        "ec-06050041e2ed9d922b": [
+          -1.0,
+          -0.75
+        ],
+        "ec-0a88e719b246c1a36d": [
+          -1.125,
+          -1.125
+        ],
+        "ec-0b709b90a32c69a0f1": [
+          -1.125,
+          -0.75
+        ],
+        "ec-0ec55648e2b744ef63": [
+          -0.875,
+          -0.375
+        ],
+        "ec-18c45bfac617e6201a": [
+          -0.625,
+          -0.625
+        ],
+        "ec-1c893e6d2d0a8021a8": [
+          -0.75,
+          -0.5
+        ],
+        "ec-1e3ba3885cd26f6da5": [
+          -1.0,
+          -0.5
+        ],
+        "ec-249ce418d3267dd8b1": [
+          -1.375,
+          -1.0
+        ],
+        "ec-268a914e3a5dd9d1d9": [
+          -0.875,
+          -0.875
+        ],
+        "ec-2a257bdb5a60861e3a": [
+          -0.875,
+          -0.25
+        ],
+        "ec-2c56eeda0a50329096": [
+          -0.75,
+          -1.0
+        ],
+        "ec-3264efd88ee4bb250f": [
+          -0.75,
+          -0.5
+        ],
+        "ec-3ac769f7eafa87e026": [
+          -0.875,
+          -0.625
+        ],
+        "ec-3f9868662a8df998a9": [
+          -1.0,
+          -0.625
+        ],
+        "ec-3fde42c51e517e14dd": [
+          -0.875,
+          -0.75
+        ],
+        "ec-4535b5c93918f5e4b0": [
+          -0.75,
+          -0.625
+        ],
+        "ec-4ceabb7d74674ec7dc": [
+          -0.625,
+          -0.625
+        ],
+        "ec-56b88c9a5364d427ea": [
+          -0.625,
+          -0.25
+        ],
+        "ec-5a866606a2420c99eb": [
+          -1.125,
+          -0.75
+        ],
+        "ec-6086ba5d05a6443b42": [
+          -1.0,
+          -1.125
+        ],
+        "ec-60aca73c2b3e3bb4c1": [
+          -1.0,
+          -0.75
+        ],
+        "ec-6876e766280da2bb88": [
+          -0.875,
+          -0.75
+        ],
+        "ec-689d16ef8f2fa5c723": [
+          -0.75,
+          -0.625
+        ],
+        "ec-68b0dda5844cdcea1e": [
+          -0.875,
+          -0.5
+        ],
+        "ec-6eb2e1b28ae5dc1169": [
+          -0.625,
+          -0.375
+        ],
+        "ec-738483ac6678aea9c2": [
+          -0.625,
+          -0.5
+        ],
+        "ec-7499aa5e49a8662186": [
+          -1.0,
+          -1.125
+        ],
+        "ec-776f26ad91e171979b": [
+          -1.0,
+          -0.75
+        ],
+        "ec-7dab6d63d7c2e85bd8": [
+          -0.75,
+          -0.875
+        ],
+        "ec-819192d518e6f9582b": [
+          -0.25,
+          -1.0
+        ],
+        "ec-87158a510df14af2e0": [
+          -0.75,
+          -0.75
+        ],
+        "ec-9551ea9249cfd9c836": [
+          -0.625,
+          -0.5
+        ],
+        "ec-976b0d9ffc0fb51ace": [
+          -0.75,
+          -0.625
+        ],
+        "ec-983170e8109095cca7": [
+          -0.75,
+          -0.625
+        ],
+        "ec-99a59e64c1c6033443": [
+          -0.75,
+          -0.75
+        ],
+        "ec-a26c77813493bd00e5": [
+          -1.0,
+          -1.25
+        ],
+        "ec-a2f64552ed11ff8fca": [
+          -1.0,
+          -0.625
+        ],
+        "ec-a82c86eeb8f97cdf0e": [
+          -0.875,
+          -0.25
+        ],
+        "ec-a9aad1624d4efa5ef9": [
+          -0.875,
+          -0.75
+        ],
+        "ec-aa0b3a622ecefb31f9": [
+          -0.75,
+          -0.625
+        ],
+        "ec-aa368c612f2a8d3030": [
+          -0.75,
+          -0.75
+        ],
+        "ec-ace145804730b795f4": [
+          -1.0,
+          -0.625
+        ],
+        "ec-ad6d42cb9c0c2f0c45": [
+          -0.25,
+          -0.75
+        ],
+        "ec-ade890b852c6e5676e": [
+          -0.875,
+          -0.75
+        ],
+        "ec-ae71fb513b3da48fad": [
+          -0.5,
+          -0.625
+        ],
+        "ec-b0fe4b513884bfe8d3": [
+          -0.5,
+          -0.5
+        ],
+        "ec-b2041f5adea4976acd": [
+          -1.125,
+          -0.875
+        ],
+        "ec-b214b3d86d9bd3c97f": [
+          -1.125,
+          -0.625
+        ],
+        "ec-b5c2f8ae033451198a": [
+          -0.625,
+          -0.625
+        ],
+        "ec-b94ef3bc575a3a6417": [
+          -0.875,
+          -0.25
+        ],
+        "ec-c67137f3d72b29a434": [
+          -1.0,
+          -0.75
+        ],
+        "ec-c979f991d80774a496": [
+          -0.75,
+          -1.125
+        ],
+        "ec-ccdffa20ebbe9e045f": [
+          -1.0,
+          -0.75
+        ],
+        "ec-d11f3f857a3f649ca3": [
+          -0.5,
+          -0.5
+        ],
+        "ec-d4c43dc4faf62b9a39": [
+          -0.875,
+          -0.375
+        ],
+        "ec-dc0309c34c5124eb8b": [
+          -0.625,
+          -0.5
+        ],
+        "ec-e09eaad94637c6cb58": [
+          -0.625,
+          -0.875
+        ],
+        "ec-e9c1762507585038bf": [
+          -0.875,
+          -0.375
+        ],
+        "ec-ee094722a4d34c6f39": [
+          -0.875,
+          -0.625
+        ],
+        "ec-f89936d9a3fe052872": [
+          -0.625,
+          -0.625
+        ]
+      },
+      "303": {
+        "ec-06050041e2ed9d922b": [
+          1.25,
+          1.375
+        ],
+        "ec-0a88e719b246c1a36d": [
+          1.375,
+          1.5
+        ],
+        "ec-0b709b90a32c69a0f1": [
+          1.375,
+          1.75
+        ],
+        "ec-0ec55648e2b744ef63": [
+          1.5,
+          1.75
+        ],
+        "ec-18c45bfac617e6201a": [
+          1.75,
+          1.75
+        ],
+        "ec-1c893e6d2d0a8021a8": [
+          1.625,
+          1.75
+        ],
+        "ec-1e3ba3885cd26f6da5": [
+          1.625,
+          1.625
+        ],
+        "ec-249ce418d3267dd8b1": [
+          1.375,
+          1.625
+        ],
+        "ec-268a914e3a5dd9d1d9": [
+          1.625,
+          1.625
+        ],
+        "ec-2a257bdb5a60861e3a": [
+          1.375,
+          1.875
+        ],
+        "ec-2c56eeda0a50329096": [
+          1.5,
+          1.375
+        ],
+        "ec-3264efd88ee4bb250f": [
+          1.5,
+          1.5
+        ],
+        "ec-3ac769f7eafa87e026": [
+          1.5,
+          1.75
+        ],
+        "ec-3f9868662a8df998a9": [
+          1.5,
+          1.75
+        ],
+        "ec-3fde42c51e517e14dd": [
+          1.5,
+          1.625
+        ],
+        "ec-4535b5c93918f5e4b0": [
+          1.375,
+          1.625
+        ],
+        "ec-4ceabb7d74674ec7dc": [
+          1.625,
+          1.75
+        ],
+        "ec-56b88c9a5364d427ea": [
+          1.5,
+          1.875
+        ],
+        "ec-5a866606a2420c99eb": [
+          1.25,
+          1.75
+        ],
+        "ec-6086ba5d05a6443b42": [
+          1.375,
+          1.25
+        ],
+        "ec-60aca73c2b3e3bb4c1": [
+          1.375,
+          1.625
+        ],
+        "ec-6876e766280da2bb88": [
+          1.625,
+          1.75
+        ],
+        "ec-689d16ef8f2fa5c723": [
+          1.75,
+          1.75
+        ],
+        "ec-68b0dda5844cdcea1e": [
+          1.5,
+          1.75
+        ],
+        "ec-6eb2e1b28ae5dc1169": [
+          1.625,
+          1.875
+        ],
+        "ec-738483ac6678aea9c2": [
+          1.625,
+          1.75
+        ],
+        "ec-7499aa5e49a8662186": [
+          1.5,
+          1.375
+        ],
+        "ec-776f26ad91e171979b": [
+          1.375,
+          1.625
+        ],
+        "ec-7dab6d63d7c2e85bd8": [
+          1.625,
+          1.875
+        ],
+        "ec-819192d518e6f9582b": [
+          1.75,
+          1.375
+        ],
+        "ec-87158a510df14af2e0": [
+          1.375,
+          1.75
+        ],
+        "ec-9551ea9249cfd9c836": [
+          1.625,
+          1.75
+        ],
+        "ec-976b0d9ffc0fb51ace": [
+          1.375,
+          1.75
+        ],
+        "ec-983170e8109095cca7": [
+          1.5,
+          1.5
+        ],
+        "ec-99a59e64c1c6033443": [
+          1.625,
+          1.75
+        ],
+        "ec-a26c77813493bd00e5": [
+          1.375,
+          1.375
+        ],
+        "ec-a2f64552ed11ff8fca": [
+          1.25,
+          1.5
+        ],
+        "ec-a82c86eeb8f97cdf0e": [
+          1.375,
+          1.75
+        ],
+        "ec-a9aad1624d4efa5ef9": [
+          1.25,
+          1.5
+        ],
+        "ec-aa0b3a622ecefb31f9": [
+          1.5,
+          1.5
+        ],
+        "ec-aa368c612f2a8d3030": [
+          1.625,
+          1.625
+        ],
+        "ec-ace145804730b795f4": [
+          1.625,
+          1.75
+        ],
+        "ec-ad6d42cb9c0c2f0c45": [
+          1.75,
+          1.625
+        ],
+        "ec-ade890b852c6e5676e": [
+          1.625,
+          1.625
+        ],
+        "ec-ae71fb513b3da48fad": [
+          1.625,
+          1.5
+        ],
+        "ec-b0fe4b513884bfe8d3": [
+          1.625,
+          1.75
+        ],
+        "ec-b2041f5adea4976acd": [
+          1.25,
+          1.625
+        ],
+        "ec-b214b3d86d9bd3c97f": [
+          1.375,
+          1.75
+        ],
+        "ec-b5c2f8ae033451198a": [
+          1.75,
+          1.75
+        ],
+        "ec-b94ef3bc575a3a6417": [
+          1.375,
+          1.625
+        ],
+        "ec-c67137f3d72b29a434": [
+          1.375,
+          1.75
+        ],
+        "ec-c979f991d80774a496": [
+          1.375,
+          1.375
+        ],
+        "ec-ccdffa20ebbe9e045f": [
+          1.25,
+          1.75
+        ],
+        "ec-d11f3f857a3f649ca3": [
+          1.625,
+          1.5
+        ],
+        "ec-d4c43dc4faf62b9a39": [
+          1.375,
+          1.625
+        ],
+        "ec-dc0309c34c5124eb8b": [
+          1.75,
+          1.75
+        ],
+        "ec-e09eaad94637c6cb58": [
+          1.625,
+          1.375
+        ],
+        "ec-e9c1762507585038bf": [
+          1.5,
+          1.75
+        ],
+        "ec-ee094722a4d34c6f39": [
+          1.625,
+          1.875
+        ],
+        "ec-f89936d9a3fe052872": [
+          1.625,
+          1.875
+        ]
+      }
+    }
+  },
+  "methods": {
+    "SFT-ramas": {
+      "101": {
+        "macro": {
+          "future_supported": 0.6216666666666667,
+          "current_supported": 1.0,
+          "future_unsupported_reuse": 0.0,
+          "questions": 0.5,
+          "future_queries": 6.000000000000001,
+          "future_positive_queries": 3.0000000000000004,
+          "future_positive_supported": 0.73,
+          "future_correct_abstentions": 3.0000000000000004,
+          "asked_first": 0.5,
+          "asked_second": 0.0,
+          "asked_second_nonpositive_margin": 0.0
+        },
+        "packets": {
+          "EC-packet-1": {
+            "metrics": {
+              "future_supported": 0.625,
+              "current_supported": 1.0,
+              "future_unsupported_reuse": 0.0,
+              "questions": 0.5,
+              "future_queries": 6.000000000000001,
+              "future_positive_queries": 3.0000000000000004,
+              "future_positive_supported": 0.75,
+              "future_correct_abstentions": 3.0000000000000004,
+              "asked_first": 0.5,
+              "asked_second": 0.0,
+              "asked_second_nonpositive_margin": 0.0
+            }
+          },
+          "EC-packet-2": {
+            "metrics": {
+              "future_supported": 0.615,
+              "current_supported": 1.0,
+              "future_unsupported_reuse": 0.0,
+              "questions": 0.5,
+              "future_queries": 6.000000000000001,
+              "future_positive_queries": 3.0000000000000004,
+              "future_positive_supported": 0.6900000000000001,
+              "future_correct_abstentions": 3.0000000000000004,
+              "asked_first": 0.5,
+              "asked_second": 0.0,
+              "asked_second_nonpositive_margin": 0.0
+            }
+          },
+          "EC-packet-3": {
+            "metrics": {
+              "future_supported": 0.625,
+              "current_supported": 1.0,
+              "future_unsupported_reuse": 0.0,
+              "questions": 0.5,
+              "future_queries": 6.000000000000001,
+              "future_positive_queries": 3.0000000000000004,
+              "future_positive_supported": 0.75,
+              "future_correct_abstentions": 3.0000000000000004,
+              "asked_first": 0.5,
+              "asked_second": 0.0,
+              "asked_second_nonpositive_margin": 0.0
+            }
+          }
+        },
+        "individual": {
+          "greedy_free_budget": {
+            "future_supported": 0.75,
+            "current_supported": 1.0,
+            "future_unsupported_reuse": 0.0,
+            "questions": 1.0,
+            "future_queries": 6.000000000000001,
+            "future_positive_queries": 3.0000000000000004,
+            "future_positive_supported": 1.5,
+            "future_correct_abstentions": 3.0000000000000004
+          },
+          "one_question_per_root": {
+            "future_supported": 0.75,
+            "current_supported": 1.0,
+            "future_unsupported_reuse": 0.0,
+            "questions": 1.0,
+            "future_queries": 6.000000000000001,
+            "future_positive_queries": 3.0000000000000004,
+            "future_positive_supported": 1.5,
+            "future_correct_abstentions": 3.0000000000000004
+          },
+          "both_timings_correct_native": 0,
+          "evaluable_flipped_pairs": 30,
+          "both_timings_correct_at_one_question": 0,
+          "first_question_rate_by_agenda": {
+            "ask_now": 1,
+            "save": 1
+          }
+        },
+        "hits": {
+          "EC01": 0,
+          "EC02": 0,
+          "EC03": 0,
+          "EC04": 0,
+          "EC05": 0,
+          "EC06": 0,
+          "EC07": 0,
+          "EC08": 0,
+          "EC09": 0,
+          "EC10": 0,
+          "EC11": 0,
+          "EC12": 0,
+          "EC13": 0,
+          "EC14": 0,
+          "EC15": 0,
+          "EC16": 0,
+          "EC17": 0,
+          "EC18": 0,
+          "EC19": 0,
+          "EC20": 0,
+          "EC21": 0,
+          "EC22": 0,
+          "EC23": 0,
+          "EC24": 0,
+          "EC25": 0,
+          "EC26": 0,
+          "EC27": 0,
+          "EC28": 0,
+          "EC29": 0,
+          "EC30": 0
+        }
+      },
+      "202": {
+        "macro": {
+          "future_supported": 0.6216666666666667,
+          "current_supported": 1.0,
+          "future_unsupported_reuse": 0.0,
+          "questions": 0.5,
+          "future_queries": 6.000000000000001,
+          "future_positive_queries": 3.0000000000000004,
+          "future_positive_supported": 0.73,
+          "future_correct_abstentions": 3.0000000000000004,
+          "asked_first": 0.3833333333333333,
+          "asked_second": 0.11666666666666667,
+          "asked_second_nonpositive_margin": 0.0
+        },
+        "packets": {
+          "EC-packet-1": {
+            "metrics": {
+              "future_supported": 0.605,
+              "current_supported": 1.0,
+              "future_unsupported_reuse": 0.0,
+              "questions": 0.5,
+              "future_queries": 6.000000000000001,
+              "future_positive_queries": 3.0000000000000004,
+              "future_positive_supported": 0.63,
+              "future_correct_abstentions": 3.0000000000000004,
+              "asked_first": 0.3,
+              "asked_second": 0.2,
+              "asked_second_nonpositive_margin": 0.0
+            }
+          },
+          "EC-packet-2": {
+            "metrics": {
+              "future_supported": 0.635,
+              "current_supported": 1.0,
+              "future_unsupported_reuse": 0.0,
+              "questions": 0.5,
+              "future_queries": 6.000000000000001,
+              "future_positive_queries": 3.0000000000000004,
+              "future_positive_supported": 0.81,
+              "future_correct_abstentions": 3.0000000000000004,
+              "asked_first": 0.35,
+              "asked_second": 0.15,
+              "asked_second_nonpositive_margin": 0.0
+            }
+          },
+          "EC-packet-3": {
+            "metrics": {
+              "future_supported": 0.625,
+              "current_supported": 1.0,
+              "future_unsupported_reuse": 0.0,
+              "questions": 0.5,
+              "future_queries": 6.000000000000001,
+              "future_positive_queries": 3.0000000000000004,
+              "future_positive_supported": 0.75,
+              "future_correct_abstentions": 3.0000000000000004,
+              "asked_first": 0.5,
+              "asked_second": 0.0,
+              "asked_second_nonpositive_margin": 0.0
+            }
+          }
+        },
+        "individual": {
+          "greedy_free_budget": {
+            "future_supported": 0.75,
+            "current_supported": 1.0,
+            "future_unsupported_reuse": 0.0,
+            "questions": 1.0,
+            "future_queries": 6.000000000000001,
+            "future_positive_queries": 3.0000000000000004,
+            "future_positive_supported": 1.5,
+            "future_correct_abstentions": 3.0000000000000004
+          },
+          "one_question_per_root": {
+            "future_supported": 0.75,
+            "current_supported": 1.0,
+            "future_unsupported_reuse": 0.0,
+            "questions": 1.0,
+            "future_queries": 6.000000000000001,
+            "future_positive_queries": 3.0000000000000004,
+            "future_positive_supported": 1.5,
+            "future_correct_abstentions": 3.0000000000000004
+          },
+          "both_timings_correct_native": 0,
+          "evaluable_flipped_pairs": 30,
+          "both_timings_correct_at_one_question": 0,
+          "first_question_rate_by_agenda": {
+            "ask_now": 1,
+            "save": 1
+          }
+        },
+        "hits": {
+          "EC01": 0,
+          "EC02": 0,
+          "EC03": 0,
+          "EC04": 0,
+          "EC05": 0,
+          "EC06": 0,
+          "EC07": 0,
+          "EC08": 0,
+          "EC09": 0,
+          "EC10": 0,
+          "EC11": 0,
+          "EC12": 0,
+          "EC13": 0,
+          "EC14": 0,
+          "EC15": 0,
+          "EC16": 0,
+          "EC17": 0,
+          "EC18": 0,
+          "EC19": 0,
+          "EC20": 0,
+          "EC21": 0,
+          "EC22": 0,
+          "EC23": 0,
+          "EC24": 0,
+          "EC25": 0,
+          "EC26": 0,
+          "EC27": 0,
+          "EC28": 0,
+          "EC29": 0,
+          "EC30": 0
+        }
+      },
+      "303": {
+        "macro": {
+          "future_supported": 0.635,
+          "current_supported": 1.0,
+          "future_unsupported_reuse": 0.0,
+          "questions": 0.5,
+          "future_queries": 6.000000000000001,
+          "future_positive_queries": 3.0000000000000004,
+          "future_positive_supported": 0.81,
+          "future_correct_abstentions": 3.0000000000000004,
+          "asked_first": 0.5,
+          "asked_second": 0.0,
+          "asked_second_nonpositive_margin": 0.0
+        },
+        "packets": {
+          "EC-packet-1": {
+            "metrics": {
+              "future_supported": 0.635,
+              "current_supported": 1.0,
+              "future_unsupported_reuse": 0.0,
+              "questions": 0.5,
+              "future_queries": 6.000000000000001,
+              "future_positive_queries": 3.0000000000000004,
+              "future_positive_supported": 0.81,
+              "future_correct_abstentions": 3.0000000000000004,
+              "asked_first": 0.5,
+              "asked_second": 0.0,
+              "asked_second_nonpositive_margin": 0.0
+            }
+          },
+          "EC-packet-2": {
+            "metrics": {
+              "future_supported": 0.635,
+              "current_supported": 1.0,
+              "future_unsupported_reuse": 0.0,
+              "questions": 0.5,
+              "future_queries": 6.000000000000001,
+              "future_positive_queries": 3.0000000000000004,
+              "future_positive_supported": 0.81,
+              "future_correct_abstentions": 3.0000000000000004,
+              "asked_first": 0.5,
+              "asked_second": 0.0,
+              "asked_second_nonpositive_margin": 0.0
+            }
+          },
+          "EC-packet-3": {
+            "metrics": {
+              "future_supported": 0.635,
+              "current_supported": 1.0,
+              "future_unsupported_reuse": 0.0,
+              "questions": 0.5,
+              "future_queries": 6.000000000000001,
+              "future_positive_queries": 3.0000000000000004,
+              "future_positive_supported": 0.81,
+              "future_correct_abstentions": 3.0000000000000004,
+              "asked_first": 0.5,
+              "asked_second": 0.0,
+              "asked_second_nonpositive_margin": 0.0
+            }
+          }
+        },
+        "individual": {
+          "greedy_free_budget": {
+            "future_supported": 0.75,
+            "current_supported": 1.0,
+            "future_unsupported_reuse": 0.0,
+            "questions": 1.0,
+            "future_queries": 6.000000000000001,
+            "future_positive_queries": 3.0000000000000004,
+            "future_positive_supported": 1.5,
+            "future_correct_abstentions": 3.0000000000000004
+          },
+          "one_question_per_root": {
+            "future_supported": 0.75,
+            "current_supported": 1.0,
+            "future_unsupported_reuse": 0.0,
+            "questions": 1.0,
+            "future_queries": 6.000000000000001,
+            "future_positive_queries": 3.0000000000000004,
+            "future_positive_supported": 1.5,
+            "future_correct_abstentions": 3.0000000000000004
+          },
+          "both_timings_correct_native": 0,
+          "evaluable_flipped_pairs": 30,
+          "both_timings_correct_at_one_question": 0,
+          "first_question_rate_by_agenda": {
+            "ask_now": 1,
+            "save": 1
+          }
+        },
+        "hits": {
+          "EC01": 0,
+          "EC02": 0,
+          "EC03": 0,
+          "EC04": 0,
+          "EC05": 0,
+          "EC06": 0,
+          "EC07": 0,
+          "EC08": 0,
+          "EC09": 0,
+          "EC10": 0,
+          "EC11": 0,
+          "EC12": 0,
+          "EC13": 0,
+          "EC14": 0,
+          "EC15": 0,
+          "EC16": 0,
+          "EC17": 0,
+          "EC18": 0,
+          "EC19": 0,
+          "EC20": 0,
+          "EC21": 0,
+          "EC22": 0,
+          "EC23": 0,
+          "EC24": 0,
+          "EC25": 0,
+          "EC26": 0,
+          "EC27": 0,
+          "EC28": 0,
+          "EC29": 0,
+          "EC30": 0
+        }
+      }
+    },
+    "GRPO-continuacion": {
+      "101": {
+        "macro": {
+          "future_supported": 0.625,
+          "current_supported": 1.0,
+          "future_unsupported_reuse": 0.0,
+          "questions": 0.5,
+          "future_queries": 6.000000000000001,
+          "future_positive_queries": 3.0000000000000004,
+          "future_positive_supported": 0.75,
+          "future_correct_abstentions": 3.0000000000000004,
+          "asked_first": 0.5,
+          "asked_second": 0.0,
+          "asked_second_nonpositive_margin": 0.0
+        },
+        "packets": {
+          "EC-packet-1": {
+            "metrics": {
+              "future_supported": 0.625,
+              "current_supported": 1.0,
+              "future_unsupported_reuse": 0.0,
+              "questions": 0.5,
+              "future_queries": 6.000000000000001,
+              "future_positive_queries": 3.0000000000000004,
+              "future_positive_supported": 0.75,
+              "future_correct_abstentions": 3.0000000000000004,
+              "asked_first": 0.5,
+              "asked_second": 0.0,
+              "asked_second_nonpositive_margin": 0.0
+            }
+          },
+          "EC-packet-2": {
+            "metrics": {
+              "future_supported": 0.635,
+              "current_supported": 1.0,
+              "future_unsupported_reuse": 0.0,
+              "questions": 0.5,
+              "future_queries": 6.000000000000001,
+              "future_positive_queries": 3.0000000000000004,
+              "future_positive_supported": 0.81,
+              "future_correct_abstentions": 3.0000000000000004,
+              "asked_first": 0.5,
+              "asked_second": 0.0,
+              "asked_second_nonpositive_margin": 0.0
+            }
+          },
+          "EC-packet-3": {
+            "metrics": {
+              "future_supported": 0.615,
+              "current_supported": 1.0,
+              "future_unsupported_reuse": 0.0,
+              "questions": 0.5,
+              "future_queries": 6.000000000000001,
+              "future_positive_queries": 3.0000000000000004,
+              "future_positive_supported": 0.6900000000000001,
+              "future_correct_abstentions": 3.0000000000000004,
+              "asked_first": 0.5,
+              "asked_second": 0.0,
+              "asked_second_nonpositive_margin": 0.0
+            }
+          }
+        },
+        "individual": {
+          "greedy_free_budget": {
+            "future_supported": 0.75,
+            "current_supported": 1.0,
+            "future_unsupported_reuse": 0.0,
+            "questions": 1.0,
+            "future_queries": 6.000000000000001,
+            "future_positive_queries": 3.0000000000000004,
+            "future_positive_supported": 1.5,
+            "future_correct_abstentions": 3.0000000000000004
+          },
+          "one_question_per_root": {
+            "future_supported": 0.75,
+            "current_supported": 1.0,
+            "future_unsupported_reuse": 0.0,
+            "questions": 1.0,
+            "future_queries": 6.000000000000001,
+            "future_positive_queries": 3.0000000000000004,
+            "future_positive_supported": 1.5,
+            "future_correct_abstentions": 3.0000000000000004
+          },
+          "both_timings_correct_native": 0,
+          "evaluable_flipped_pairs": 30,
+          "both_timings_correct_at_one_question": 0,
+          "first_question_rate_by_agenda": {
+            "ask_now": 1,
+            "save": 1
+          }
+        },
+        "hits": {
+          "EC01": 0,
+          "EC02": 0,
+          "EC03": 0,
+          "EC04": 0,
+          "EC05": 0,
+          "EC06": 0,
+          "EC07": 0,
+          "EC08": 0,
+          "EC09": 0,
+          "EC10": 0,
+          "EC11": 0,
+          "EC12": 0,
+          "EC13": 0,
+          "EC14": 0,
+          "EC15": 0,
+          "EC16": 0,
+          "EC17": 0,
+          "EC18": 0,
+          "EC19": 0,
+          "EC20": 0,
+          "EC21": 0,
+          "EC22": 0,
+          "EC23": 0,
+          "EC24": 0,
+          "EC25": 0,
+          "EC26": 0,
+          "EC27": 0,
+          "EC28": 0,
+          "EC29": 0,
+          "EC30": 0
+        }
+      },
+      "202": {
+        "macro": {
+          "future_supported": 0.6216666666666667,
+          "current_supported": 1.0,
+          "future_unsupported_reuse": 0.0,
+          "questions": 0.5,
+          "future_queries": 6.000000000000001,
+          "future_positive_queries": 3.0000000000000004,
+          "future_positive_supported": 0.73,
+          "future_correct_abstentions": 3.0000000000000004,
+          "asked_first": 0.45,
+          "asked_second": 0.05,
+          "asked_second_nonpositive_margin": 0.05
+        },
+        "packets": {
+          "EC-packet-1": {
+            "metrics": {
+              "future_supported": 0.625,
+              "current_supported": 1.0,
+              "future_unsupported_reuse": 0.0,
+              "questions": 0.5,
+              "future_queries": 6.000000000000001,
+              "future_positive_queries": 3.0000000000000004,
+              "future_positive_supported": 0.75,
+              "future_correct_abstentions": 3.0000000000000004,
+              "asked_first": 0.45,
+              "asked_second": 0.05,
+              "asked_second_nonpositive_margin": 0.05
+            }
+          },
+          "EC-packet-2": {
+            "metrics": {
+              "future_supported": 0.615,
+              "current_supported": 1.0,
+              "future_unsupported_reuse": 0.0,
+              "questions": 0.5,
+              "future_queries": 6.000000000000001,
+              "future_positive_queries": 3.0000000000000004,
+              "future_positive_supported": 0.6900000000000001,
+              "future_correct_abstentions": 3.0000000000000004,
+              "asked_first": 0.4,
+              "asked_second": 0.1,
+              "asked_second_nonpositive_margin": 0.1
+            }
+          },
+          "EC-packet-3": {
+            "metrics": {
+              "future_supported": 0.625,
+              "current_supported": 1.0,
+              "future_unsupported_reuse": 0.0,
+              "questions": 0.5,
+              "future_queries": 6.000000000000001,
+              "future_positive_queries": 3.0000000000000004,
+              "future_positive_supported": 0.75,
+              "future_correct_abstentions": 3.0000000000000004,
+              "asked_first": 0.5,
+              "asked_second": 0.0,
+              "asked_second_nonpositive_margin": 0.0
+            }
+          }
+        },
+        "individual": {
+          "greedy_free_budget": {
+            "future_supported": 0.5,
+            "current_supported": 1.0,
+            "future_unsupported_reuse": 0.0,
+            "questions": 0.0,
+            "future_queries": 6.000000000000001,
+            "future_positive_queries": 3.0000000000000004,
+            "future_positive_supported": 0.0,
+            "future_correct_abstentions": 3.0000000000000004
+          },
+          "one_question_per_root": {
+            "future_supported": 0.75,
+            "current_supported": 1.0,
+            "future_unsupported_reuse": 0.0,
+            "questions": 1.0,
+            "future_queries": 6.000000000000001,
+            "future_positive_queries": 3.0000000000000004,
+            "future_positive_supported": 1.5,
+            "future_correct_abstentions": 3.0000000000000004
+          },
+          "both_timings_correct_native": 0,
+          "evaluable_flipped_pairs": 30,
+          "both_timings_correct_at_one_question": 0,
+          "first_question_rate_by_agenda": {
+            "ask_now": 0,
+            "save": 0
+          }
+        },
+        "hits": {
+          "EC01": 0,
+          "EC02": 0,
+          "EC03": 0,
+          "EC04": 0,
+          "EC05": 0,
+          "EC06": 0,
+          "EC07": 0,
+          "EC08": 0,
+          "EC09": 0,
+          "EC10": 0,
+          "EC11": 0,
+          "EC12": 0,
+          "EC13": 0,
+          "EC14": 0,
+          "EC15": 0,
+          "EC16": 0,
+          "EC17": 0,
+          "EC18": 0,
+          "EC19": 0,
+          "EC20": 0,
+          "EC21": 0,
+          "EC22": 0,
+          "EC23": 0,
+          "EC24": 0,
+          "EC25": 0,
+          "EC26": 0,
+          "EC27": 0,
+          "EC28": 0,
+          "EC29": 0,
+          "EC30": 0
+        }
+      },
+      "303": {
+        "macro": {
+          "future_supported": 0.625,
+          "current_supported": 1.0,
+          "future_unsupported_reuse": 0.0,
+          "questions": 0.5,
+          "future_queries": 6.000000000000001,
+          "future_positive_queries": 3.0000000000000004,
+          "future_positive_supported": 0.75,
+          "future_correct_abstentions": 3.0000000000000004,
+          "asked_first": 0.5,
+          "asked_second": 0.0,
+          "asked_second_nonpositive_margin": 0.0
+        },
+        "packets": {
+          "EC-packet-1": {
+            "metrics": {
+              "future_supported": 0.625,
+              "current_supported": 1.0,
+              "future_unsupported_reuse": 0.0,
+              "questions": 0.5,
+              "future_queries": 6.000000000000001,
+              "future_positive_queries": 3.0000000000000004,
+              "future_positive_supported": 0.75,
+              "future_correct_abstentions": 3.0000000000000004,
+              "asked_first": 0.5,
+              "asked_second": 0.0,
+              "asked_second_nonpositive_margin": 0.0
+            }
+          },
+          "EC-packet-2": {
+            "metrics": {
+              "future_supported": 0.625,
+              "current_supported": 1.0,
+              "future_unsupported_reuse": 0.0,
+              "questions": 0.5,
+              "future_queries": 6.000000000000001,
+              "future_positive_queries": 3.0000000000000004,
+              "future_positive_supported": 0.75,
+              "future_correct_abstentions": 3.0000000000000004,
+              "asked_first": 0.5,
+              "asked_second": 0.0,
+              "asked_second_nonpositive_margin": 0.0
+            }
+          },
+          "EC-packet-3": {
+            "metrics": {
+              "future_supported": 0.625,
+              "current_supported": 1.0,
+              "future_unsupported_reuse": 0.0,
+              "questions": 0.5,
+              "future_queries": 6.000000000000001,
+              "future_positive_queries": 3.0000000000000004,
+              "future_positive_supported": 0.75,
+              "future_correct_abstentions": 3.0000000000000004,
+              "asked_first": 0.5,
+              "asked_second": 0.0,
+              "asked_second_nonpositive_margin": 0.0
+            }
+          }
+        },
+        "individual": {
+          "greedy_free_budget": {
+            "future_supported": 0.75,
+            "current_supported": 1.0,
+            "future_unsupported_reuse": 0.0,
+            "questions": 1.0,
+            "future_queries": 6.000000000000001,
+            "future_positive_queries": 3.0000000000000004,
+            "future_positive_supported": 1.5,
+            "future_correct_abstentions": 3.0000000000000004
+          },
+          "one_question_per_root": {
+            "future_supported": 0.75,
+            "current_supported": 1.0,
+            "future_unsupported_reuse": 0.0,
+            "questions": 1.0,
+            "future_queries": 6.000000000000001,
+            "future_positive_queries": 3.0000000000000004,
+            "future_positive_supported": 1.5,
+            "future_correct_abstentions": 3.0000000000000004
+          },
+          "both_timings_correct_native": 0,
+          "evaluable_flipped_pairs": 30,
+          "both_timings_correct_at_one_question": 0,
+          "first_question_rate_by_agenda": {
+            "ask_now": 1,
+            "save": 1
+          }
+        },
+        "hits": {
+          "EC01": 0,
+          "EC02": 0,
+          "EC03": 0,
+          "EC04": 0,
+          "EC05": 0,
+          "EC06": 0,
+          "EC07": 0,
+          "EC08": 0,
+          "EC09": 0,
+          "EC10": 0,
+          "EC11": 0,
+          "EC12": 0,
+          "EC13": 0,
+          "EC14": 0,
+          "EC15": 0,
+          "EC16": 0,
+          "EC17": 0,
+          "EC18": 0,
+          "EC19": 0,
+          "EC20": 0,
+          "EC21": 0,
+          "EC22": 0,
+          "EC23": 0,
+          "EC24": 0,
+          "EC25": 0,
+          "EC26": 0,
+          "EC27": 0,
+          "EC28": 0,
+          "EC29": 0,
+          "EC30": 0
+        }
+      }
+    }
+  }
+}

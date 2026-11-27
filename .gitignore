@@ -40,3 +40,6 @@ logs/
 !/reports/tesis_timing_qwen_a100_v6/**/adapter_model.safetensors
 !/reports/tesis_timing_pares_a100_v7/adaptadores/**/adapter_model.safetensors
 !/reports/tesis_profiles_qwen_a100_v5/seed-101/common-parent/checkpoint-000/adapter/adapter_model.safetensors
+
+!/reports/tesis_rl_credit_a100_v8/adaptadores/**/adapter_model.safetensors
+!/reports/tesis_rl_credit_pares_a100_v8b/adaptadores/**/adapter_model.safetensors

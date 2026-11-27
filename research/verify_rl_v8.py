@@ -83,6 +83,15 @@ def verify(run, reserve, replay=False):
                                                        control[str(seed)]['macro']['future_supported'] for seed in SEEDS)}
         require(contrast == expected, 'Recomputed contrast differs')
     require(pair_scores(roots, raw['planner']) == result['planner_hits'], 'Planner result differs')
+    historical_path = run / 'HISTORICAL_BASELINES.json'
+    if historical_path.exists():
+        historical = read(historical_path)
+        old_lock = read(PROJECT / 'reports/tesis_timing_qwen_a100_v6/LOCK.json')
+        for arm, seeds in historical['margins'].items():
+            for seed, margins in seeds.items():
+                cutoff = old_lock['selected'][seed][arm]['cutoff']
+                expected = {**measure(roots, margins, cutoff), 'hits': pair_scores(roots, margins)}
+                require(expected == historical['methods'][arm][seed], 'Historical baseline differs')
     print(f'{run.name}: corpus, sources, adapters, six decisions per pair and contrasts verified.')
 
 

@@ -1,0 +1,38 @@
+{
+  "adaptadores/seed-101/sft-pares-control": {
+    "adapter_model.safetensors": "e2e91feab94ad16c6289e91531e51f24240d7476ed123c923ca99e075630e2e7",
+    "adapter_config.json": "030ade3557597f9c24b79ef189ae3331490d130ade346b0342e21b6fd0110142"
+  },
+  "adaptadores/seed-101/grpo-exacto": {
+    "adapter_model.safetensors": "a55584a46459e8e221a79fbe93c0c1d0792b55f4862d83d682f122764699af50",
+    "adapter_config.json": "030ade3557597f9c24b79ef189ae3331490d130ade346b0342e21b6fd0110142"
+  },
+  "adaptadores/seed-101/grpo-bellman": {
+    "adapter_model.safetensors": "a55584a46459e8e221a79fbe93c0c1d0792b55f4862d83d682f122764699af50",
+    "adapter_config.json": "030ade3557597f9c24b79ef189ae3331490d130ade346b0342e21b6fd0110142"
+  },
+  "adaptadores/seed-202/sft-pares-control": {
+    "adapter_model.safetensors": "d895de7760016ab91281bf1e2e811bfa98c62cbe28a08da467954b11c3189d49",
+    "adapter_config.json": "030ade3557597f9c24b79ef189ae3331490d130ade346b0342e21b6fd0110142"
+  },
+  "adaptadores/seed-202/grpo-exacto": {
+    "adapter_model.safetensors": "96426bbe01eb2e955c81f080650dbb0aa52f58cb06a18e3e581088ee6a60eb13",
+    "adapter_config.json": "030ade3557597f9c24b79ef189ae3331490d130ade346b0342e21b6fd0110142"
+  },
+  "adaptadores/seed-202/grpo-bellman": {
+    "adapter_model.safetensors": "75ee4902d5c2e38335373787c0001fc5c0244ca97e6cbb20ad4635847cbf977b",
+    "adapter_config.json": "030ade3557597f9c24b79ef189ae3331490d130ade346b0342e21b6fd0110142"
+  },
+  "adaptadores/seed-303/sft-pares-control": {
+    "adapter_model.safetensors": "3f60328f5e4bb2360cde8129414b90fef6cab5903015374d9ca379995066a8b0",
+    "adapter_config.json": "030ade3557597f9c24b79ef189ae3331490d130ade346b0342e21b6fd0110142"
+  },
+  "adaptadores/seed-303/grpo-exacto": {
+    "adapter_model.safetensors": "ecbac51d91dfc52c12007cf82acc273a6ec978361f47edac44a61b84f3f5aa86",
+    "adapter_config.json": "030ade3557597f9c24b79ef189ae3331490d130ade346b0342e21b6fd0110142"
+  },
+  "adaptadores/seed-303/grpo-bellman": {
+    "adapter_model.safetensors": "4d111d2dae38bb54f1631868c0a7724c15fad7e74dabecbbcdeb7cb2ca75250c",
+    "adapter_config.json": "030ade3557597f9c24b79ef189ae3331490d130ade346b0342e21b6fd0110142"
+  }
+}
