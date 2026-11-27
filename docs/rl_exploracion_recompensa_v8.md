@@ -37,3 +37,13 @@ CUDA_VISIBLE_DEVICES=0 HF_HUB_OFFLINE=1 TOKENIZERS_PARALLELISM=false \
 La implementación guarda su configuración y firmas de entrada en `PLAN.json`, los checkpoints y sus diagnósticos por semilla, `VALIDATION.json` y la selección final en `LOCK.json`. Si el proceso se interrumpe, las variantes ya terminadas se comprueban y las incompletas vuelven a entrenarse desde el inicio común.
 
 GRPO procede de DeepSeekMath y usa un objetivo derivado de PPO. Los cambios de esta fase son adaptaciones explícitas a acciones enumerables y retornos del simulador. [DeepSeekMath](https://arxiv.org/abs/2402.03300) · [PPO](https://arxiv.org/abs/1707.06347)
+
+## Ablación de desarrollo v8b
+
+Tras observar la validación de v8, se añadió una variante híbrida de RL y comparación entre agendas. La pérdida adicional vale `softplus(signo de la diferencia de retornos × (margen de la segunda agenda − margen de la primera))`, con peso uno. El signo procede de las dos ramas de entrenamiento. Se compara con el mismo control supervisado, inicialización, datos y presupuesto. Esta prueba se registra en una corrida distinta y su selección sigue usando únicamente validación. Su nombre es `grpo-exacto-pares` para identificar la pérdida adicional. Las dos configuraciones se fijan antes de evaluar el reservado nuevo.
+
+```bash
+CUDA_VISIBLE_DEVICES=0 HF_HUB_OFFLINE=1 TOKENIZERS_PARALLELISM=false \
+  ~/.local/share/tesis-clarificacion/a100/bin/python -u \
+  -m research.tesis_rl_v8b
+```
