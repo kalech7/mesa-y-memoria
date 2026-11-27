@@ -37,7 +37,7 @@ def verdict(**changes):
                                 "feedback": "Sopa está autorizada en casa.", **changes}}}
 
 
-@pytest.mark.parametrize("accepted,memory,support,scope", product((False, True), repeat=4))
+@pytest.mark.parametrize("accepted,memory,support,scope", tuple(product((False, True), repeat=4)))
 def test_acceptance_memory_guard_and_both_support_flags_are_required(accepted, memory, support, scope):
     row = trace(); row["queries"][0]["accepted_by_user"] = accepted
     row["queries"][0]["memory_supported"] = memory
@@ -45,7 +45,7 @@ def test_acceptance_memory_guard_and_both_support_flags_are_required(accepted, m
     assert score["episodic_reward"] == (1 if accepted and memory and support and scope else -1)
 
 
-@pytest.mark.parametrize("accepted,support,scope", product((False, True), repeat=3))
+@pytest.mark.parametrize("accepted,support,scope", tuple(product((False, True), repeat=3)))
 def test_defer_is_always_zero_before_real_action_costs(accepted, support, scope):
     row = trace(); row["queries"][0].update(accepted_by_user=accepted, response={"mode": "DEFER", "value": None})
     row.update(ask_count=1, write_count=2)
