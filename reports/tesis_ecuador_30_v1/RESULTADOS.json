@@ -1,0 +1,1223 @@
+{
+  "margins_sha256": "6cd34231ddc60127367717cbebfd1ad898c167f5799ea8623819eaf3ae4484e5",
+  "pairs": 30,
+  "histories": 60,
+  "primary_difference": 0.17777777777777778,
+  "primary_pair_bootstrap_95": [
+    0.08888888888888889,
+    0.28888888888888886
+  ],
+  "net_wins_per_pair": {
+    "0": 20,
+    "1": 5,
+    "2": 4,
+    "3": 1
+  },
+  "matched_future_difference": 0.005555555555555573,
+  "root_to_pair": {
+    "ec-06050041e2ed9d922b": {
+      "pair": "EC20",
+      "variant": "ask_now",
+      "packet": "EC-packet-1"
+    },
+    "ec-0a88e719b246c1a36d": {
+      "pair": "EC14",
+      "variant": "save",
+      "packet": "EC-packet-3"
+    },
+    "ec-0b709b90a32c69a0f1": {
+      "pair": "EC13",
+      "variant": "save",
+      "packet": "EC-packet-3"
+    },
+    "ec-0ec55648e2b744ef63": {
+      "pair": "EC27",
+      "variant": "save",
+      "packet": "EC-packet-3"
+    },
+    "ec-18c45bfac617e6201a": {
+      "pair": "EC30",
+      "variant": "ask_now",
+      "packet": "EC-packet-3"
+    },
+    "ec-1c893e6d2d0a8021a8": {
+      "pair": "EC07",
+      "variant": "ask_now",
+      "packet": "EC-packet-2"
+    },
+    "ec-1e3ba3885cd26f6da5": {
+      "pair": "EC09",
+      "variant": "ask_now",
+      "packet": "EC-packet-2"
+    },
+    "ec-249ce418d3267dd8b1": {
+      "pair": "EC14",
+      "variant": "ask_now",
+      "packet": "EC-packet-3"
+    },
+    "ec-268a914e3a5dd9d1d9": {
+      "pair": "EC29",
+      "variant": "save",
+      "packet": "EC-packet-3"
+    },
+    "ec-2a257bdb5a60861e3a": {
+      "pair": "EC24",
+      "variant": "save",
+      "packet": "EC-packet-2"
+    },
+    "ec-2c56eeda0a50329096": {
+      "pair": "EC12",
+      "variant": "save",
+      "packet": "EC-packet-3"
+    },
+    "ec-3264efd88ee4bb250f": {
+      "pair": "EC21",
+      "variant": "ask_now",
+      "packet": "EC-packet-2"
+    },
+    "ec-3ac769f7eafa87e026": {
+      "pair": "EC26",
+      "variant": "ask_now",
+      "packet": "EC-packet-3"
+    },
+    "ec-3f9868662a8df998a9": {
+      "pair": "EC09",
+      "variant": "save",
+      "packet": "EC-packet-2"
+    },
+    "ec-3fde42c51e517e14dd": {
+      "pair": "EC08",
+      "variant": "ask_now",
+      "packet": "EC-packet-2"
+    },
+    "ec-4535b5c93918f5e4b0": {
+      "pair": "EC08",
+      "variant": "save",
+      "packet": "EC-packet-2"
+    },
+    "ec-4ceabb7d74674ec7dc": {
+      "pair": "EC04",
+      "variant": "save",
+      "packet": "EC-packet-1"
+    },
+    "ec-56b88c9a5364d427ea": {
+      "pair": "EC15",
+      "variant": "ask_now",
+      "packet": "EC-packet-3"
+    },
+    "ec-5a866606a2420c99eb": {
+      "pair": "EC16",
+      "variant": "ask_now",
+      "packet": "EC-packet-1"
+    },
+    "ec-6086ba5d05a6443b42": {
+      "pair": "EC06",
+      "variant": "ask_now",
+      "packet": "EC-packet-2"
+    },
+    "ec-60aca73c2b3e3bb4c1": {
+      "pair": "EC22",
+      "variant": "save",
+      "packet": "EC-packet-2"
+    },
+    "ec-6876e766280da2bb88": {
+      "pair": "EC17",
+      "variant": "save",
+      "packet": "EC-packet-1"
+    },
+    "ec-689d16ef8f2fa5c723": {
+      "pair": "EC07",
+      "variant": "save",
+      "packet": "EC-packet-2"
+    },
+    "ec-68b0dda5844cdcea1e": {
+      "pair": "EC23",
+      "variant": "save",
+      "packet": "EC-packet-2"
+    },
+    "ec-6eb2e1b28ae5dc1169": {
+      "pair": "EC19",
+      "variant": "save",
+      "packet": "EC-packet-1"
+    },
+    "ec-738483ac6678aea9c2": {
+      "pair": "EC15",
+      "variant": "save",
+      "packet": "EC-packet-3"
+    },
+    "ec-7499aa5e49a8662186": {
+      "pair": "EC10",
+      "variant": "ask_now",
+      "packet": "EC-packet-2"
+    },
+    "ec-776f26ad91e171979b": {
+      "pair": "EC18",
+      "variant": "ask_now",
+      "packet": "EC-packet-1"
+    },
+    "ec-7dab6d63d7c2e85bd8": {
+      "pair": "EC30",
+      "variant": "save",
+      "packet": "EC-packet-3"
+    },
+    "ec-819192d518e6f9582b": {
+      "pair": "EC28",
+      "variant": "save",
+      "packet": "EC-packet-3"
+    },
+    "ec-87158a510df14af2e0": {
+      "pair": "EC18",
+      "variant": "save",
+      "packet": "EC-packet-1"
+    },
+    "ec-9551ea9249cfd9c836": {
+      "pair": "EC19",
+      "variant": "ask_now",
+      "packet": "EC-packet-1"
+    },
+    "ec-976b0d9ffc0fb51ace": {
+      "pair": "EC26",
+      "variant": "save",
+      "packet": "EC-packet-3"
+    },
+    "ec-983170e8109095cca7": {
+      "pair": "EC01",
+      "variant": "save",
+      "packet": "EC-packet-1"
+    },
+    "ec-99a59e64c1c6033443": {
+      "pair": "EC04",
+      "variant": "ask_now",
+      "packet": "EC-packet-1"
+    },
+    "ec-a26c77813493bd00e5": {
+      "pair": "EC10",
+      "variant": "save",
+      "packet": "EC-packet-2"
+    },
+    "ec-a2f64552ed11ff8fca": {
+      "pair": "EC22",
+      "variant": "ask_now",
+      "packet": "EC-packet-2"
+    },
+    "ec-a82c86eeb8f97cdf0e": {
+      "pair": "EC24",
+      "variant": "ask_now",
+      "packet": "EC-packet-2"
+    },
+    "ec-a9aad1624d4efa5ef9": {
+      "pair": "EC20",
+      "variant": "save",
+      "packet": "EC-packet-1"
+    },
+    "ec-aa0b3a622ecefb31f9": {
+      "pair": "EC21",
+      "variant": "save",
+      "packet": "EC-packet-2"
+    },
+    "ec-aa368c612f2a8d3030": {
+      "pair": "EC01",
+      "variant": "ask_now",
+      "packet": "EC-packet-1"
+    },
+    "ec-ace145804730b795f4": {
+      "pair": "EC23",
+      "variant": "ask_now",
+      "packet": "EC-packet-2"
+    },
+    "ec-ad6d42cb9c0c2f0c45": {
+      "pair": "EC28",
+      "variant": "ask_now",
+      "packet": "EC-packet-3"
+    },
+    "ec-ade890b852c6e5676e": {
+      "pair": "EC29",
+      "variant": "ask_now",
+      "packet": "EC-packet-3"
+    },
+    "ec-ae71fb513b3da48fad": {
+      "pair": "EC05",
+      "variant": "ask_now",
+      "packet": "EC-packet-1"
+    },
+    "ec-b0fe4b513884bfe8d3": {
+      "pair": "EC25",
+      "variant": "ask_now",
+      "packet": "EC-packet-2"
+    },
+    "ec-b2041f5adea4976acd": {
+      "pair": "EC02",
+      "variant": "save",
+      "packet": "EC-packet-1"
+    },
+    "ec-b214b3d86d9bd3c97f": {
+      "pair": "EC16",
+      "variant": "save",
+      "packet": "EC-packet-1"
+    },
+    "ec-b5c2f8ae033451198a": {
+      "pair": "EC11",
+      "variant": "save",
+      "packet": "EC-packet-3"
+    },
+    "ec-b94ef3bc575a3a6417": {
+      "pair": "EC03",
+      "variant": "save",
+      "packet": "EC-packet-1"
+    },
+    "ec-c67137f3d72b29a434": {
+      "pair": "EC02",
+      "variant": "ask_now",
+      "packet": "EC-packet-1"
+    },
+    "ec-c979f991d80774a496": {
+      "pair": "EC06",
+      "variant": "save",
+      "packet": "EC-packet-2"
+    },
+    "ec-ccdffa20ebbe9e045f": {
+      "pair": "EC13",
+      "variant": "ask_now",
+      "packet": "EC-packet-3"
+    },
+    "ec-d11f3f857a3f649ca3": {
+      "pair": "EC05",
+      "variant": "save",
+      "packet": "EC-packet-1"
+    },
+    "ec-d4c43dc4faf62b9a39": {
+      "pair": "EC03",
+      "variant": "ask_now",
+      "packet": "EC-packet-1"
+    },
+    "ec-dc0309c34c5124eb8b": {
+      "pair": "EC11",
+      "variant": "ask_now",
+      "packet": "EC-packet-3"
+    },
+    "ec-e09eaad94637c6cb58": {
+      "pair": "EC12",
+      "variant": "ask_now",
+      "packet": "EC-packet-3"
+    },
+    "ec-e9c1762507585038bf": {
+      "pair": "EC27",
+      "variant": "ask_now",
+      "packet": "EC-packet-3"
+    },
+    "ec-ee094722a4d34c6f39": {
+      "pair": "EC17",
+      "variant": "ask_now",
+      "packet": "EC-packet-1"
+    },
+    "ec-f89936d9a3fe052872": {
+      "pair": "EC25",
+      "variant": "save",
+      "packet": "EC-packet-2"
+    }
+  },
+  "methods": {
+    "sft": {
+      "101": {
+        "macro": {
+          "future_supported": 0.6316666666666667,
+          "current_supported": 1.0,
+          "future_unsupported_reuse": 0.0,
+          "questions": 0.5,
+          "future_queries": 6.000000000000001,
+          "future_positive_queries": 3.0000000000000004,
+          "future_positive_supported": 0.79,
+          "future_correct_abstentions": 3.0000000000000004,
+          "asked_first": 0.31666666666666665,
+          "asked_second": 0.18333333333333332,
+          "asked_second_nonpositive_margin": 0.0
+        },
+        "packets": {
+          "EC-packet-1": {
+            "metrics": {
+              "future_supported": 0.625,
+              "current_supported": 1.0,
+              "future_unsupported_reuse": 0.0,
+              "questions": 0.5,
+              "future_queries": 6.000000000000001,
+              "future_positive_queries": 3.0000000000000004,
+              "future_positive_supported": 0.75,
+              "future_correct_abstentions": 3.0000000000000004,
+              "asked_first": 0.35,
+              "asked_second": 0.15,
+              "asked_second_nonpositive_margin": 0.0
+            }
+          },
+          "EC-packet-2": {
+            "metrics": {
+              "future_supported": 0.635,
+              "current_supported": 1.0,
+              "future_unsupported_reuse": 0.0,
+              "questions": 0.5,
+              "future_queries": 6.000000000000001,
+              "future_positive_queries": 3.0000000000000004,
+              "future_positive_supported": 0.81,
+              "future_correct_abstentions": 3.0000000000000004,
+              "asked_first": 0.15,
+              "asked_second": 0.35,
+              "asked_second_nonpositive_margin": 0.0
+            }
+          },
+          "EC-packet-3": {
+            "metrics": {
+              "future_supported": 0.635,
+              "current_supported": 1.0,
+              "future_unsupported_reuse": 0.0,
+              "questions": 0.5,
+              "future_queries": 6.000000000000001,
+              "future_positive_queries": 3.0000000000000004,
+              "future_positive_supported": 0.81,
+              "future_correct_abstentions": 3.0000000000000004,
+              "asked_first": 0.45,
+              "asked_second": 0.05,
+              "asked_second_nonpositive_margin": 0.0
+            }
+          }
+        },
+        "individual": {
+          "greedy_free_budget": {
+            "future_supported": 0.76,
+            "current_supported": 1.0,
+            "future_unsupported_reuse": 0.0,
+            "questions": 1.0,
+            "future_queries": 6.000000000000001,
+            "future_positive_queries": 3.0000000000000004,
+            "future_positive_supported": 1.56,
+            "future_correct_abstentions": 3.0000000000000004
+          },
+          "one_question_per_root": {
+            "future_supported": 0.76,
+            "current_supported": 1.0,
+            "future_unsupported_reuse": 0.0,
+            "questions": 1.0,
+            "future_queries": 6.000000000000001,
+            "future_positive_queries": 3.0000000000000004,
+            "future_positive_supported": 1.56,
+            "future_correct_abstentions": 3.0000000000000004
+          },
+          "both_timings_correct_native": 0.1,
+          "evaluable_flipped_pairs": 30,
+          "both_timings_correct_at_one_question": 0.1,
+          "first_question_rate_by_agenda": {
+            "ask_now": 0.8,
+            "save": 0.7
+          }
+        },
+        "correct_pairs": 3,
+        "hits": {
+          "EC01": 0,
+          "EC02": 0,
+          "EC03": 1,
+          "EC04": 0,
+          "EC05": 0,
+          "EC06": 0,
+          "EC07": 0,
+          "EC08": 0,
+          "EC09": 0,
+          "EC10": 0,
+          "EC11": 0,
+          "EC12": 0,
+          "EC13": 0,
+          "EC14": 0,
+          "EC15": 0,
+          "EC16": 0,
+          "EC17": 1,
+          "EC18": 0,
+          "EC19": 0,
+          "EC20": 0,
+          "EC21": 1,
+          "EC22": 0,
+          "EC23": 0,
+          "EC24": 0,
+          "EC25": 0,
+          "EC26": 0,
+          "EC27": 0,
+          "EC28": 0,
+          "EC29": 0,
+          "EC30": 0
+        },
+        "first_visit_margin_order": {
+          "correct": 18,
+          "tie": 3,
+          "reversed": 9
+        }
+      },
+      "202": {
+        "macro": {
+          "future_supported": 0.625,
+          "current_supported": 1.0,
+          "future_unsupported_reuse": 0.0,
+          "questions": 0.5,
+          "future_queries": 6.000000000000001,
+          "future_positive_queries": 3.0000000000000004,
+          "future_positive_supported": 0.75,
+          "future_correct_abstentions": 3.0000000000000004,
+          "asked_first": 0.3,
+          "asked_second": 0.2,
+          "asked_second_nonpositive_margin": 0.0
+        },
+        "packets": {
+          "EC-packet-1": {
+            "metrics": {
+              "future_supported": 0.625,
+              "current_supported": 1.0,
+              "future_unsupported_reuse": 0.0,
+              "questions": 0.5,
+              "future_queries": 6.000000000000001,
+              "future_positive_queries": 3.0000000000000004,
+              "future_positive_supported": 0.75,
+              "future_correct_abstentions": 3.0000000000000004,
+              "asked_first": 0.35,
+              "asked_second": 0.15,
+              "asked_second_nonpositive_margin": 0.0
+            }
+          },
+          "EC-packet-2": {
+            "metrics": {
+              "future_supported": 0.615,
+              "current_supported": 1.0,
+              "future_unsupported_reuse": 0.0,
+              "questions": 0.5,
+              "future_queries": 6.000000000000001,
+              "future_positive_queries": 3.0000000000000004,
+              "future_positive_supported": 0.6900000000000001,
+              "future_correct_abstentions": 3.0000000000000004,
+              "asked_first": 0.25,
+              "asked_second": 0.25,
+              "asked_second_nonpositive_margin": 0.0
+            }
+          },
+          "EC-packet-3": {
+            "metrics": {
+              "future_supported": 0.635,
+              "current_supported": 1.0,
+              "future_unsupported_reuse": 0.0,
+              "questions": 0.5,
+              "future_queries": 6.000000000000001,
+              "future_positive_queries": 3.0000000000000004,
+              "future_positive_supported": 0.81,
+              "future_correct_abstentions": 3.0000000000000004,
+              "asked_first": 0.3,
+              "asked_second": 0.2,
+              "asked_second_nonpositive_margin": 0.0
+            }
+          }
+        },
+        "individual": {
+          "greedy_free_budget": {
+            "future_supported": 0.7666666666666667,
+            "current_supported": 1.0,
+            "future_unsupported_reuse": 0.0,
+            "questions": 1.0,
+            "future_queries": 6.000000000000001,
+            "future_positive_queries": 3.0000000000000004,
+            "future_positive_supported": 1.6,
+            "future_correct_abstentions": 3.0000000000000004
+          },
+          "one_question_per_root": {
+            "future_supported": 0.7666666666666667,
+            "current_supported": 1.0,
+            "future_unsupported_reuse": 0.0,
+            "questions": 1.0,
+            "future_queries": 6.000000000000001,
+            "future_positive_queries": 3.0000000000000004,
+            "future_positive_supported": 1.6,
+            "future_correct_abstentions": 3.0000000000000004
+          },
+          "both_timings_correct_native": 0.2,
+          "evaluable_flipped_pairs": 30,
+          "both_timings_correct_at_one_question": 0.2,
+          "first_question_rate_by_agenda": {
+            "ask_now": 0.8,
+            "save": 0.6333333333333333
+          }
+        },
+        "correct_pairs": 6,
+        "hits": {
+          "EC01": 0,
+          "EC02": 0,
+          "EC03": 1,
+          "EC04": 0,
+          "EC05": 0,
+          "EC06": 0,
+          "EC07": 0,
+          "EC08": 1,
+          "EC09": 0,
+          "EC10": 0,
+          "EC11": 0,
+          "EC12": 0,
+          "EC13": 0,
+          "EC14": 1,
+          "EC15": 0,
+          "EC16": 0,
+          "EC17": 1,
+          "EC18": 0,
+          "EC19": 0,
+          "EC20": 0,
+          "EC21": 1,
+          "EC22": 0,
+          "EC23": 0,
+          "EC24": 0,
+          "EC25": 1,
+          "EC26": 0,
+          "EC27": 0,
+          "EC28": 0,
+          "EC29": 0,
+          "EC30": 0
+        },
+        "first_visit_margin_order": {
+          "correct": 18,
+          "tie": 1,
+          "reversed": 11
+        }
+      },
+      "303": {
+        "macro": {
+          "future_supported": 0.625,
+          "current_supported": 1.0,
+          "future_unsupported_reuse": 0.0,
+          "questions": 0.5,
+          "future_queries": 6.000000000000001,
+          "future_positive_queries": 3.0000000000000004,
+          "future_positive_supported": 0.75,
+          "future_correct_abstentions": 3.0000000000000004,
+          "asked_first": 0.43333333333333335,
+          "asked_second": 0.06666666666666667,
+          "asked_second_nonpositive_margin": 0.0
+        },
+        "packets": {
+          "EC-packet-1": {
+            "metrics": {
+              "future_supported": 0.635,
+              "current_supported": 1.0,
+              "future_unsupported_reuse": 0.0,
+              "questions": 0.5,
+              "future_queries": 6.000000000000001,
+              "future_positive_queries": 3.0000000000000004,
+              "future_positive_supported": 0.81,
+              "future_correct_abstentions": 3.0000000000000004,
+              "asked_first": 0.5,
+              "asked_second": 0.0,
+              "asked_second_nonpositive_margin": 0.0
+            }
+          },
+          "EC-packet-2": {
+            "metrics": {
+              "future_supported": 0.615,
+              "current_supported": 1.0,
+              "future_unsupported_reuse": 0.0,
+              "questions": 0.5,
+              "future_queries": 6.000000000000001,
+              "future_positive_queries": 3.0000000000000004,
+              "future_positive_supported": 0.6900000000000001,
+              "future_correct_abstentions": 3.0000000000000004,
+              "asked_first": 0.3,
+              "asked_second": 0.2,
+              "asked_second_nonpositive_margin": 0.0
+            }
+          },
+          "EC-packet-3": {
+            "metrics": {
+              "future_supported": 0.625,
+              "current_supported": 1.0,
+              "future_unsupported_reuse": 0.0,
+              "questions": 0.5,
+              "future_queries": 6.000000000000001,
+              "future_positive_queries": 3.0000000000000004,
+              "future_positive_supported": 0.75,
+              "future_correct_abstentions": 3.0000000000000004,
+              "asked_first": 0.5,
+              "asked_second": 0.0,
+              "asked_second_nonpositive_margin": 0.0
+            }
+          }
+        },
+        "individual": {
+          "greedy_free_budget": {
+            "future_supported": 0.7466666666666667,
+            "current_supported": 1.0,
+            "future_unsupported_reuse": 0.0,
+            "questions": 1.0,
+            "future_queries": 6.000000000000001,
+            "future_positive_queries": 3.0000000000000004,
+            "future_positive_supported": 1.48,
+            "future_correct_abstentions": 3.0000000000000004
+          },
+          "one_question_per_root": {
+            "future_supported": 0.7466666666666667,
+            "current_supported": 1.0,
+            "future_unsupported_reuse": 0.0,
+            "questions": 1.0,
+            "future_queries": 6.000000000000001,
+            "future_positive_queries": 3.0000000000000004,
+            "future_positive_supported": 1.48,
+            "future_correct_abstentions": 3.0000000000000004
+          },
+          "both_timings_correct_native": 0,
+          "evaluable_flipped_pairs": 30,
+          "both_timings_correct_at_one_question": 0,
+          "first_question_rate_by_agenda": {
+            "ask_now": 0.4666666666666667,
+            "save": 0.5
+          }
+        },
+        "correct_pairs": 0,
+        "hits": {
+          "EC01": 0,
+          "EC02": 0,
+          "EC03": 0,
+          "EC04": 0,
+          "EC05": 0,
+          "EC06": 0,
+          "EC07": 0,
+          "EC08": 0,
+          "EC09": 0,
+          "EC10": 0,
+          "EC11": 0,
+          "EC12": 0,
+          "EC13": 0,
+          "EC14": 0,
+          "EC15": 0,
+          "EC16": 0,
+          "EC17": 0,
+          "EC18": 0,
+          "EC19": 0,
+          "EC20": 0,
+          "EC21": 0,
+          "EC22": 0,
+          "EC23": 0,
+          "EC24": 0,
+          "EC25": 0,
+          "EC26": 0,
+          "EC27": 0,
+          "EC28": 0,
+          "EC29": 0,
+          "EC30": 0
+        },
+        "first_visit_margin_order": {
+          "correct": 10,
+          "tie": 7,
+          "reversed": 13
+        }
+      }
+    },
+    "sft-pares": {
+      "101": {
+        "macro": {
+          "future_supported": 0.6316666666666667,
+          "current_supported": 1.0,
+          "future_unsupported_reuse": 0.0,
+          "questions": 0.5,
+          "future_queries": 6.000000000000001,
+          "future_positive_queries": 3.0000000000000004,
+          "future_positive_supported": 0.79,
+          "future_correct_abstentions": 3.0000000000000004,
+          "asked_first": 0.43333333333333335,
+          "asked_second": 0.06666666666666667,
+          "asked_second_nonpositive_margin": 0.0
+        },
+        "packets": {
+          "EC-packet-1": {
+            "metrics": {
+              "future_supported": 0.625,
+              "current_supported": 1.0,
+              "future_unsupported_reuse": 0.0,
+              "questions": 0.5,
+              "future_queries": 6.000000000000001,
+              "future_positive_queries": 3.0000000000000004,
+              "future_positive_supported": 0.75,
+              "future_correct_abstentions": 3.0000000000000004,
+              "asked_first": 0.5,
+              "asked_second": 0.0,
+              "asked_second_nonpositive_margin": 0.0
+            }
+          },
+          "EC-packet-2": {
+            "metrics": {
+              "future_supported": 0.635,
+              "current_supported": 1.0,
+              "future_unsupported_reuse": 0.0,
+              "questions": 0.5,
+              "future_queries": 6.000000000000001,
+              "future_positive_queries": 3.0000000000000004,
+              "future_positive_supported": 0.81,
+              "future_correct_abstentions": 3.0000000000000004,
+              "asked_first": 0.35,
+              "asked_second": 0.15,
+              "asked_second_nonpositive_margin": 0.0
+            }
+          },
+          "EC-packet-3": {
+            "metrics": {
+              "future_supported": 0.635,
+              "current_supported": 1.0,
+              "future_unsupported_reuse": 0.0,
+              "questions": 0.5,
+              "future_queries": 6.000000000000001,
+              "future_positive_queries": 3.0000000000000004,
+              "future_positive_supported": 0.81,
+              "future_correct_abstentions": 3.0000000000000004,
+              "asked_first": 0.45,
+              "asked_second": 0.05,
+              "asked_second_nonpositive_margin": 0.0
+            }
+          }
+        },
+        "individual": {
+          "greedy_free_budget": {
+            "future_supported": 0.7766666666666667,
+            "current_supported": 1.0,
+            "future_unsupported_reuse": 0.0,
+            "questions": 1.0,
+            "future_queries": 6.000000000000001,
+            "future_positive_queries": 3.0000000000000004,
+            "future_positive_supported": 1.6600000000000001,
+            "future_correct_abstentions": 3.0000000000000004
+          },
+          "one_question_per_root": {
+            "future_supported": 0.7766666666666667,
+            "current_supported": 1.0,
+            "future_unsupported_reuse": 0.0,
+            "questions": 1.0,
+            "future_queries": 6.000000000000001,
+            "future_positive_queries": 3.0000000000000004,
+            "future_positive_supported": 1.6600000000000001,
+            "future_correct_abstentions": 3.0000000000000004
+          },
+          "both_timings_correct_native": 0.3,
+          "evaluable_flipped_pairs": 30,
+          "both_timings_correct_at_one_question": 0.3,
+          "first_question_rate_by_agenda": {
+            "ask_now": 0.8666666666666667,
+            "save": 0.6
+          }
+        },
+        "correct_pairs": 9,
+        "hits": {
+          "EC01": 0,
+          "EC02": 0,
+          "EC03": 1,
+          "EC04": 0,
+          "EC05": 0,
+          "EC06": 0,
+          "EC07": 1,
+          "EC08": 1,
+          "EC09": 0,
+          "EC10": 0,
+          "EC11": 0,
+          "EC12": 0,
+          "EC13": 1,
+          "EC14": 1,
+          "EC15": 0,
+          "EC16": 0,
+          "EC17": 1,
+          "EC18": 0,
+          "EC19": 0,
+          "EC20": 0,
+          "EC21": 0,
+          "EC22": 1,
+          "EC23": 0,
+          "EC24": 0,
+          "EC25": 1,
+          "EC26": 0,
+          "EC27": 1,
+          "EC28": 0,
+          "EC29": 0,
+          "EC30": 0
+        },
+        "first_visit_margin_order": {
+          "correct": 21,
+          "tie": 2,
+          "reversed": 7
+        }
+      },
+      "202": {
+        "macro": {
+          "future_supported": 0.635,
+          "current_supported": 1.0,
+          "future_unsupported_reuse": 0.0,
+          "questions": 0.5,
+          "future_queries": 6.000000000000001,
+          "future_positive_queries": 3.0000000000000004,
+          "future_positive_supported": 0.81,
+          "future_correct_abstentions": 3.0000000000000004,
+          "asked_first": 0.35,
+          "asked_second": 0.15,
+          "asked_second_nonpositive_margin": 0.0
+        },
+        "packets": {
+          "EC-packet-1": {
+            "metrics": {
+              "future_supported": 0.645,
+              "current_supported": 1.0,
+              "future_unsupported_reuse": 0.0,
+              "questions": 0.5,
+              "future_queries": 6.000000000000001,
+              "future_positive_queries": 3.0000000000000004,
+              "future_positive_supported": 0.87,
+              "future_correct_abstentions": 3.0000000000000004,
+              "asked_first": 0.3,
+              "asked_second": 0.2,
+              "asked_second_nonpositive_margin": 0.0
+            }
+          },
+          "EC-packet-2": {
+            "metrics": {
+              "future_supported": 0.625,
+              "current_supported": 1.0,
+              "future_unsupported_reuse": 0.0,
+              "questions": 0.5,
+              "future_queries": 6.000000000000001,
+              "future_positive_queries": 3.0000000000000004,
+              "future_positive_supported": 0.75,
+              "future_correct_abstentions": 3.0000000000000004,
+              "asked_first": 0.25,
+              "asked_second": 0.25,
+              "asked_second_nonpositive_margin": 0.0
+            }
+          },
+          "EC-packet-3": {
+            "metrics": {
+              "future_supported": 0.635,
+              "current_supported": 1.0,
+              "future_unsupported_reuse": 0.0,
+              "questions": 0.5,
+              "future_queries": 6.000000000000001,
+              "future_positive_queries": 3.0000000000000004,
+              "future_positive_supported": 0.81,
+              "future_correct_abstentions": 3.0000000000000004,
+              "asked_first": 0.5,
+              "asked_second": 0.0,
+              "asked_second_nonpositive_margin": 0.0
+            }
+          }
+        },
+        "individual": {
+          "greedy_free_budget": {
+            "future_supported": 0.77,
+            "current_supported": 1.0,
+            "future_unsupported_reuse": 0.0,
+            "questions": 1.0,
+            "future_queries": 6.000000000000001,
+            "future_positive_queries": 3.0000000000000004,
+            "future_positive_supported": 1.62,
+            "future_correct_abstentions": 3.0000000000000004
+          },
+          "one_question_per_root": {
+            "future_supported": 0.77,
+            "current_supported": 1.0,
+            "future_unsupported_reuse": 0.0,
+            "questions": 1.0,
+            "future_queries": 6.000000000000001,
+            "future_positive_queries": 3.0000000000000004,
+            "future_positive_supported": 1.62,
+            "future_correct_abstentions": 3.0000000000000004
+          },
+          "both_timings_correct_native": 0.26666666666666666,
+          "evaluable_flipped_pairs": 30,
+          "both_timings_correct_at_one_question": 0.26666666666666666,
+          "first_question_rate_by_agenda": {
+            "ask_now": 0.7,
+            "save": 0.5
+          }
+        },
+        "correct_pairs": 8,
+        "hits": {
+          "EC01": 0,
+          "EC02": 0,
+          "EC03": 1,
+          "EC04": 0,
+          "EC05": 0,
+          "EC06": 0,
+          "EC07": 0,
+          "EC08": 0,
+          "EC09": 0,
+          "EC10": 0,
+          "EC11": 0,
+          "EC12": 0,
+          "EC13": 0,
+          "EC14": 1,
+          "EC15": 0,
+          "EC16": 0,
+          "EC17": 1,
+          "EC18": 0,
+          "EC19": 0,
+          "EC20": 1,
+          "EC21": 1,
+          "EC22": 1,
+          "EC23": 0,
+          "EC24": 0,
+          "EC25": 1,
+          "EC26": 0,
+          "EC27": 1,
+          "EC28": 0,
+          "EC29": 0,
+          "EC30": 0
+        },
+        "first_visit_margin_order": {
+          "correct": 21,
+          "tie": 2,
+          "reversed": 7
+        }
+      },
+      "303": {
+        "macro": {
+          "future_supported": 0.6316666666666667,
+          "current_supported": 1.0,
+          "future_unsupported_reuse": 0.0,
+          "questions": 0.5,
+          "future_queries": 6.000000000000001,
+          "future_positive_queries": 3.0000000000000004,
+          "future_positive_supported": 0.79,
+          "future_correct_abstentions": 3.0000000000000004,
+          "asked_first": 0.5,
+          "asked_second": 0.0,
+          "asked_second_nonpositive_margin": 0.0
+        },
+        "packets": {
+          "EC-packet-1": {
+            "metrics": {
+              "future_supported": 0.625,
+              "current_supported": 1.0,
+              "future_unsupported_reuse": 0.0,
+              "questions": 0.5,
+              "future_queries": 6.000000000000001,
+              "future_positive_queries": 3.0000000000000004,
+              "future_positive_supported": 0.75,
+              "future_correct_abstentions": 3.0000000000000004,
+              "asked_first": 0.5,
+              "asked_second": 0.0,
+              "asked_second_nonpositive_margin": 0.0
+            }
+          },
+          "EC-packet-2": {
+            "metrics": {
+              "future_supported": 0.635,
+              "current_supported": 1.0,
+              "future_unsupported_reuse": 0.0,
+              "questions": 0.5,
+              "future_queries": 6.000000000000001,
+              "future_positive_queries": 3.0000000000000004,
+              "future_positive_supported": 0.81,
+              "future_correct_abstentions": 3.0000000000000004,
+              "asked_first": 0.5,
+              "asked_second": 0.0,
+              "asked_second_nonpositive_margin": 0.0
+            }
+          },
+          "EC-packet-3": {
+            "metrics": {
+              "future_supported": 0.635,
+              "current_supported": 1.0,
+              "future_unsupported_reuse": 0.0,
+              "questions": 0.5,
+              "future_queries": 6.000000000000001,
+              "future_positive_queries": 3.0000000000000004,
+              "future_positive_supported": 0.81,
+              "future_correct_abstentions": 3.0000000000000004,
+              "asked_first": 0.5,
+              "asked_second": 0.0,
+              "asked_second_nonpositive_margin": 0.0
+            }
+          }
+        },
+        "individual": {
+          "greedy_free_budget": {
+            "future_supported": 0.7766666666666667,
+            "current_supported": 1.0,
+            "future_unsupported_reuse": 0.0,
+            "questions": 1.0,
+            "future_queries": 6.000000000000001,
+            "future_positive_queries": 3.0000000000000004,
+            "future_positive_supported": 1.6600000000000001,
+            "future_correct_abstentions": 3.0000000000000004
+          },
+          "one_question_per_root": {
+            "future_supported": 0.7766666666666667,
+            "current_supported": 1.0,
+            "future_unsupported_reuse": 0.0,
+            "questions": 1.0,
+            "future_queries": 6.000000000000001,
+            "future_positive_queries": 3.0000000000000004,
+            "future_positive_supported": 1.6600000000000001,
+            "future_correct_abstentions": 3.0000000000000004
+          },
+          "both_timings_correct_native": 0.26666666666666666,
+          "evaluable_flipped_pairs": 30,
+          "both_timings_correct_at_one_question": 0.26666666666666666,
+          "first_question_rate_by_agenda": {
+            "ask_now": 0.9,
+            "save": 0.6333333333333333
+          }
+        },
+        "correct_pairs": 8,
+        "hits": {
+          "EC01": 0,
+          "EC02": 0,
+          "EC03": 1,
+          "EC04": 0,
+          "EC05": 0,
+          "EC06": 0,
+          "EC07": 1,
+          "EC08": 0,
+          "EC09": 0,
+          "EC10": 0,
+          "EC11": 0,
+          "EC12": 0,
+          "EC13": 0,
+          "EC14": 1,
+          "EC15": 0,
+          "EC16": 0,
+          "EC17": 1,
+          "EC18": 0,
+          "EC19": 0,
+          "EC20": 0,
+          "EC21": 1,
+          "EC22": 1,
+          "EC23": 0,
+          "EC24": 0,
+          "EC25": 1,
+          "EC26": 1,
+          "EC27": 0,
+          "EC28": 0,
+          "EC29": 0,
+          "EC30": 0
+        },
+        "first_visit_margin_order": {
+          "correct": 22,
+          "tie": 2,
+          "reversed": 6
+        }
+      }
+    }
+  },
+  "planner": {
+    "macro": {
+      "future_supported": 0.6683333333333333,
+      "current_supported": 1.0,
+      "future_unsupported_reuse": 0.0,
+      "questions": 0.5,
+      "future_queries": 6.000000000000001,
+      "future_positive_queries": 3.0000000000000004,
+      "future_positive_supported": 1.01,
+      "future_correct_abstentions": 3.0000000000000004,
+      "asked_first": 0.5,
+      "asked_second": 0.0,
+      "asked_second_nonpositive_margin": 0.0
+    },
+    "packets": {
+      "EC-packet-1": {
+        "metrics": {
+          "future_supported": 0.665,
+          "current_supported": 1.0,
+          "future_unsupported_reuse": 0.0,
+          "questions": 0.5,
+          "future_queries": 6.000000000000001,
+          "future_positive_queries": 3.0000000000000004,
+          "future_positive_supported": 0.99,
+          "future_correct_abstentions": 3.0000000000000004,
+          "asked_first": 0.5,
+          "asked_second": 0.0,
+          "asked_second_nonpositive_margin": 0.0
+        }
+      },
+      "EC-packet-2": {
+        "metrics": {
+          "future_supported": 0.675,
+          "current_supported": 1.0,
+          "future_unsupported_reuse": 0.0,
+          "questions": 0.5,
+          "future_queries": 6.000000000000001,
+          "future_positive_queries": 3.0000000000000004,
+          "future_positive_supported": 1.05,
+          "future_correct_abstentions": 3.0000000000000004,
+          "asked_first": 0.5,
+          "asked_second": 0.0,
+          "asked_second_nonpositive_margin": 0.0
+        }
+      },
+      "EC-packet-3": {
+        "metrics": {
+          "future_supported": 0.665,
+          "current_supported": 1.0,
+          "future_unsupported_reuse": 0.0,
+          "questions": 0.5,
+          "future_queries": 6.000000000000001,
+          "future_positive_queries": 3.0000000000000004,
+          "future_positive_supported": 0.99,
+          "future_correct_abstentions": 3.0000000000000004,
+          "asked_first": 0.5,
+          "asked_second": 0.0,
+          "asked_second_nonpositive_margin": 0.0
+        }
+      }
+    },
+    "individual": {
+      "greedy_free_budget": {
+        "future_supported": 0.8366666666666668,
+        "current_supported": 1.0,
+        "future_unsupported_reuse": 0.0,
+        "questions": 1.0,
+        "future_queries": 6.000000000000001,
+        "future_positive_queries": 3.0000000000000004,
+        "future_positive_supported": 2.02,
+        "future_correct_abstentions": 3.0000000000000004
+      },
+      "one_question_per_root": {
+        "future_supported": 0.8366666666666668,
+        "current_supported": 1.0,
+        "future_unsupported_reuse": 0.0,
+        "questions": 1.0,
+        "future_queries": 6.000000000000001,
+        "future_positive_queries": 3.0000000000000004,
+        "future_positive_supported": 2.02,
+        "future_correct_abstentions": 3.0000000000000004
+      },
+      "both_timings_correct_native": 0.9333333333333333,
+      "evaluable_flipped_pairs": 30,
+      "both_timings_correct_at_one_question": 0.9333333333333333,
+      "first_question_rate_by_agenda": {
+        "ask_now": 0.9333333333333333,
+        "save": 0.06666666666666667
+      }
+    },
+    "correct_pairs": 28,
+    "hits": {
+      "EC01": 1,
+      "EC02": 0,
+      "EC03": 1,
+      "EC04": 1,
+      "EC05": 1,
+      "EC06": 1,
+      "EC07": 1,
+      "EC08": 1,
+      "EC09": 1,
+      "EC10": 1,
+      "EC11": 0,
+      "EC12": 1,
+      "EC13": 1,
+      "EC14": 1,
+      "EC15": 1,
+      "EC16": 1,
+      "EC17": 1,
+      "EC18": 1,
+      "EC19": 1,
+      "EC20": 1,
+      "EC21": 1,
+      "EC22": 1,
+      "EC23": 1,
+      "EC24": 1,
+      "EC25": 1,
+      "EC26": 1,
+      "EC27": 1,
+      "EC28": 1,
+      "EC29": 1,
+      "EC30": 1
+    }
+  }
+}

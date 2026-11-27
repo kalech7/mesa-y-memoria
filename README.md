@@ -8,6 +8,9 @@ En 160 historias simuladas de tres visitas, con diez preguntas disponibles por c
 
 En un segundo reservado de 80 pares, con platos y frases nuevos, comparamos dos ajustes supervisados del mismo Qwen. Al cambiar únicamente la agenda, el modelo con entrenamiento por pares eligió las dos visitas correctas en el **12,92 % de los pares**, frente al **8,33 %** con SFT convencional. La regla que lee la agenda resolvió los 80 pares. El informe incluye los seis adaptadores seleccionados, los resultados por semilla y la verificación del piloto ejecutado en una A100. [Piloto v7](reports/tesis_timing_pares_a100_v7/INFORME.md)
 
+
+Los seis adaptadores se sometieron después a 30 pares nuevos de pedidos y agendas con referencias de Ecuador. SFT por pares acertó ambas visitas en el **27,78 %**, frente al **10,00 %** con SFT convencional. A igualdad de diez preguntas por veinte historias, la diferencia fue de **+0,56 puntos** de acierto futuro. El banco tiene revisión ciega por IA y una réplica exacta en A100. [Prueba de transferencia y datos](reports/tesis_ecuador_30_v1/INFORME.md)
+
 ## Probar en CPU
 
 Desde la raíz del repositorio, con Python 3.13 y `uv`, este comando comprueba el banco de historias, el simulador, las métricas y el comportamiento del chat. Las pruebas usan conversaciones sintéticas y decisiones controladas.
